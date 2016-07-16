@@ -11,5 +11,65 @@ output:
     toc_depth: 4
 ---
 
-## Cliff's Summary
+## Module Objective
 
+Describe the concept of ERM:
+
+* Define what does ERM mean
+* Describe the difference concepts of ERM
+    * Holistic approach
+    * Downside and upside risk
+    * Measurement of risk
+    * Unquantiiable risks
+    * Responses to risk and risk management
+    
+### ERM Considerations
+
+There is always a cost with reducing risk
+
+* Implementing EMR without embracing its ethos can increase the bureaucracy of the organization
+
+RM needs to complement existing competitive advantage of the organization
+
+* Need to consider the additional workload added to the BU with RM
+
+Need to understand the risk and business side of the organization before applying ERM
+
+## RM vs ERM
+
+RM $\neq$ ERM
+
+**Traditional RM:**
+
+Process of:  
+
+* *Identifying* the risks faced
+* *Assessing* the likelihood of these risks materializing and their impact
+* How to *deal with* each risk
+    * Retain? If so the risk needs to be monitored
+    * Remove, reduce or transfer the risk
+    
+Objective: Maximize risk adjusted return
+
+**ERM**
+
+Additional elements of ERM from traditional RM
+
+*Holistic approach*
+
+* RM techniques are applied consistently across the whole enterprise
+* From top down (lead by the board) $\Rightarrow$ Coordinate through risk management function (e.g. IRM) that is lead by a CRO $\Rightarrow$ Incorporate into the day to day operations of all personnel
+
+*Value creation*
+
+* Intregrate RM and measurement into the business processes and strategic decision making
+
+* Consider upside risk in addition to downside risk
+
+## Key Concepts of ERM
+
+**Holistic Approach**
+
+Considering the risks of the enterprise as a whole
+
+* Allows the concentration of risk 

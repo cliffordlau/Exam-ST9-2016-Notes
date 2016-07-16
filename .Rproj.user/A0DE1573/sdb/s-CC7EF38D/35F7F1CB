@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "---\ntitle: \"Module 1: What is ERM?\"\nauthor: \"C. Lau\"\ndate: \"`r format(Sys.time(), '%B %d, %Y')`\"\noutput: \n  html_document:\n    toc: true\n    toc_float:\n      collapsed: false\n      smooth_scroll: false\n    toc_depth: 4\n---\n\n## Cliff's Summary\n\n",
+    "contents" : "---\ntitle: \"Module 1: What is ERM?\"\nauthor: \"C. Lau\"\ndate: \"`r format(Sys.time(), '%B %d, %Y')`\"\noutput: \n  html_document:\n    toc: true\n    toc_float:\n      collapsed: false\n      smooth_scroll: false\n    toc_depth: 4\n---\n\n## Module Objective\n\nDescribe the concept of ERM:\n\n* Define what does ERM mean\n* Describe the difference concepts of ERM\n    * Holistic approach\n    * Downside and upside risk\n    * Measurement of risk\n    * Unquantiiable risks\n    * Responses to risk and risk management\n    \n### ERM Considerations\n\nThere is always a cost with reducing risk\n\n* Implementing EMR without embracing its ethos can increase the bureaucracy of the organization\n\nRM needs to complement existing competitive advantage of the organization\n\n* Need to consider the additional workload added to the BU with RM\n\nNeed to understand the risk and business side of the organization before applying ERM\n\n## RM vs ERM\n\nRM $\\neq$ ERM\n\n**Traditional RM:**\n\nProcess of:  \n\n* *Identifying* the risks faced\n* *Assessing* the likelihood of these risks materializing and their impact\n* How to *deal with* each risk\n    * Retain? If so the risk needs to be monitored\n    * Remove, reduce or transfer the risk\n    \nObjective: Maximize risk adjusted return\n\n**ERM**\n\nAdditional elements of ERM from traditional RM\n\n*Holistic approach*\n\n* RM techniques are applied consistently across the whole enterprise\n* From top down (lead by the board) $\\Rightarrow$ Coordinate through risk management function (e.g. IRM) that is lead by a CRO $\\Rightarrow$ Incorporate into the day to day operations of all personnel\n\n*Value creation*\n\n* Intregrate RM and measurement into the business processes and strategic decision making\n\n* Consider upside risk in addition to downside risk\n\n## Key Concepts of ERM\n\n**Holistic Approach**\n\nConsidering the risks of the enterprise as a whole\n\n* Allows the concentration of risk ",
     "created" : 1468679498807.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1987818158",
+    "hash" : "583027716",
     "id" : "35F7F1CB",
-    "lastKnownWriteTime" : 1468679545,
-    "last_content_update" : 1468679545700,
+    "lastKnownWriteTime" : 1468682135,
+    "last_content_update" : 1468682135895,
     "path" : "~/Documents/Exam ST9 2016 Notes/Part 1/01-What-Is-ERM.Rmd",
     "project_path" : "Part 1/01-What-Is-ERM.Rmd",
     "properties" : {
