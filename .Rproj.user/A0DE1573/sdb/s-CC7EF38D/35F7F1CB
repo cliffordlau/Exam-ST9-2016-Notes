@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Module 1: What is ERM?\"\nauthor: \"C. Lau\"\ndate: \"`r format(Sys.time(), '%B %d, %Y')`\"\noutput: \n  html_document:\n    toc: true\n    toc_float:\n      collapsed: false\n      smooth_scroll: false\n    toc_depth: 4\n---\n\n## Cliff's Summary\n\n",
+    "created" : 1468679498807.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1987818158",
+    "id" : "35F7F1CB",
+    "lastKnownWriteTime" : 1468679545,
+    "last_content_update" : 1468679545700,
+    "path" : "~/Documents/Exam ST9 2016 Notes/Part 1/01-What-Is-ERM.Rmd",
+    "project_path" : "Part 1/01-What-Is-ERM.Rmd",
+    "properties" : {
+        "docOutlineVisible" : "1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
