@@ -1,0 +1,121 @@
+---
+title: "Module 2: Why (E)RM?"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Describe the concept of ERM:
+
+* Describe the benefits of ERM
+
+## Benefits of RM
+
+**RM can benefit society**
+
+* Modern Society relies on the banking and financial systems to operate smoothly
+* Contagion risk
+
+**RM is part of the job of management**
+
+* The Board is supposed to optimise risk/return decisions for shareholders
+
+**Reduce earnings volatility**
+
+Predictable earnings:
+
+* $\uparrow$ MV of firm
+* $\uparrow$ Company's credit rating
+* $\downarrow$ Variability in employee costs
+* $\downarrow$ Capital requirements
+
+**Maximize shareholder value**
+
+Management can make better decisions given a better understandig of the risks the company faces $\Rightarrow$ $\downarrow$ cost of capital, $\uparrow$ risk/return trade off
+
+**Enhance job security and rewards**
+
+* RM is a required competence for senior management
+* Also benefits employee with stock options
+
+***
+
+Risk appetite and risk profile
+
+* Need a clear statement of risk appetite and profile to make decisions on which risk to accept or avoid
+* Risk appetite = risk a company is willing to accept on an ongoing basis
+* Risk profile = types of risks that a company faces and its current exposure to those risks
+
+## Benefits of ERM
+
+**1. $\uparrow$ risk transparency $\Rightarrow$ management more informed $\Rightarrow$ improve business performance**
+
+ERM takes responsibility for risk reporting across the whole organization to ensure that *all risks* are reported in a *consistent* and appropriate format to stakeholders thereby $\uparrow$ *risk transparency*
+
+$\Downarrow$
+
+ERM allows senior management to be more informed when making decisions due to:
+
+* Better understanding of risk exposure
+* Better comprehension of the links between growth, corporate risk and return
+* Better understanding of the impact of $\Delta$-ing external factors (e.g. interest rate)
+* More accureate accessment of a decisions's risk/return trade-offs
+* Align strategy more closely with risk appetite
+
+$\Downarrow$
+
+Improve business performance
+
+**2. Improve operational effectiveness**
+
+* *Co-ordinating* risk management activities across all parts of the organization
+* Encourage and facilitating the *sharing of risk information*
+* Identifying and assessing *links* between risks managed by various teams
+* Improving efficiency (w/ management time and business resources)
+
+**3. Enhance business performance**
+
+* More efficient use and allocation of capital
+* Minimize losses
+* Improve pricing, managing, transferring risks better
+* Optimizing risk mitigation strategies (e.g. natural hedges between BUs)
+* Reacting more quickly to opportunities (or risks)
+* Gain value from RM
+
+## Reasons to initiate ERM
+
+Stakeholder's expectation of effective risk management practice due to increased in available tools to assess and manage risk
+
+Company usually pressured to implement ERM due to:
+
+* Previous management failures
+* Near miss
+* High profile disaster in another organization
+* Regulator/auditor criticism or demands
+* Other stakeholders concerns
+
+## How ERM addes value
+
+Based on Lam Ch.21 case study
+
+* Investors will pay a premium for well governed companies
+    * On the flip side, they would avoid companies with poor governance standards
+* 
+
+Companies with strong governance structures:
+
+* Sought after by investors
+* Purchased at a premium (12-30%)
+* Tend to outperform companies with weaker governance
+* Lower volatility of returns, improved s/h value, financial stability, 16% equity premium (For insurance companies)
+* Perform better during stock market crashes (e.g. 2008, companies with excellent S&P EMR rating did better)
+
+Effect is amplified for larger companies
