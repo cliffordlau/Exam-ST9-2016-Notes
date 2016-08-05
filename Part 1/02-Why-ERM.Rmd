@@ -90,7 +90,7 @@ Improve business performance
 * Reacting more quickly to opportunities (or risks)
 * Gain value from RM
 
-## Reasons to initiate ERM
+## Reasons to Initiate ERM
 
 Stakeholder's expectation of effective risk management practice due to increased in available tools to assess and manage risk
 
@@ -102,13 +102,12 @@ Company usually pressured to implement ERM due to:
 * Regulator/auditor criticism or demands
 * Other stakeholders concerns
 
-## How ERM addes value
+## How ERM Addes Value
 
 Based on Lam Ch.21 case study
 
 * Investors will pay a premium for well governed companies
     * On the flip side, they would avoid companies with poor governance standards
-* 
 
 Companies with strong governance structures:
 

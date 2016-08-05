@@ -50,7 +50,7 @@ Market + credit = financial risks
 
 Definitions can be inconsistent
 
-<!-- ![](figures/...) -->
+![](figures/figure-03.01.png)
 
 ## Categorization of risk
 
