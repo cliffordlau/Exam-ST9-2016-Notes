@@ -66,9 +66,14 @@ Risk appetite and risk profile
 
 ## Benefits of ERM
 
-**1. $\uparrow$ risk transparency $\Rightarrow$ management more informed $\Rightarrow$ improve business performance**
+**1. Better Risk Reporting**
+
+$\uparrow$ risk transparency $\Rightarrow$ management more informed $\Rightarrow$ improve business performance
 
 ERM takes responsibility for risk reporting across the whole organization to ensure that *all risks* are reported in a *consistent* and appropriate format to stakeholders thereby $\uparrow$ *risk transparency*
+
+* Provide timely and concise information on the company's key risks
+* E.g. aggregate losses, policy exceptions, risk incidents, key exposures, early warning indicators etc
 
 $\Downarrow$
 
@@ -87,20 +92,35 @@ Improve business performance
 **2. Improve operational effectiveness**
 
 * *Co-ordinating* risk management activities across all parts of the organization
+    * E.g. corrdinate existing risk and oversight functions such as finance, audit/compliance and other specialist risk units
+    * CRO can provide top down coordination
 * Encourage and facilitating the *sharing of risk information*
 * Identifying and assessing *links* between risks managed by various teams
 * Improving efficiency (w/ management time and business resources)
 
 **3. Enhance business performance**
 
+ERM's support on key management decisions leads to:
+
 * More efficient use and allocation of capital
 * Minimize losses
+* Early warning of risk
 * Improve pricing, managing, transferring risks better
 * Optimizing risk mitigation strategies (e.g. natural hedges between BUs)
 * Reacting more quickly to opportunities (or risks)
-* Gain value from RM
+* Gain value from RM by understanding the true risk/return economics of a business $\Rightarrow$ Take more of the profitable risks that make sense
 
 **4. Integration Adds Value**
+
+ERM requires integration:
+
+* Integrated risk organization e.g. IRM that reports to the CEO and board
+* Integration of risk transfer strategies to account for diversification/concentration
+* Integration of risk management into the business processes of the company
+    * ERM optimizes business performance by: supporting/inflencing pricing, resource allocation, etc
+    * This is the stage where ERM is an offensive weapon
+
+***
 
 Risks faced by companies are highly interdependent $\Rightarrow$ Silo based RM is not efficient or effective
 
@@ -119,11 +139,7 @@ Integration of **strategy** and risk allows a company's managment to better unde
 
 * Driver of market value declines are driven by strategic risks 60% of the time, op risk 30% of the time and then financial risks
 
-
-
 ## Reasons to Initiate ERM
-
-Stakeholder's expectation of effective risk management practice due to increased in available tools to assess and manage risk
 
 Company usually pressured to implement ERM due to:
 
@@ -131,21 +147,27 @@ Company usually pressured to implement ERM due to:
 * Near miss
 * High profile disaster in another organization
 * Regulator/auditor criticism or demands
-* Other stakeholders concerns
+* Other influential stakeholders concerns (s/h, employees, rating agnecies, etc)
 
-## How ERM Addes Value
+(Ask MS, what in MR triggers the initiation of ERM?)
 
-Based on Lam Ch.21 case study
+Stakeholder's expectation of effective risk management practice due to increased in available tools to assess and manage risk
+
+* e.g. VaR and RAROC to measure risk
+* e.g. Credit derivatives and CAT bonds for risk risk transfer
+
+## Case Study: How ERM Addes Value
+
+Based on Lam Ch.21 case studies
 
 * Investors will pay a premium for well governed companies
     * On the flip side, they would avoid companies with poor governance standards
 
 Companies with strong governance structures:
 
-* Sought after by investors
-* Purchased at a premium (12-30%)
-* Tend to outperform companies with weaker governance
-* Lower volatility of returns, improved s/h value, financial stability, 16% equity premium (For insurance companies)
+* Sought after by investors at a premium (12-30%) and weak ones are avoided
+* Tend to outperform (ROE) companies with weaker governance
+* Lower volatility of returns, improved s/h value, financial stability, commands ~16% equity premium (For insurance companies)
 * Perform better during stock market crashes (e.g. 2008, companies with excellent S&P EMR rating did better)
 
 Effect is amplified for larger companies
