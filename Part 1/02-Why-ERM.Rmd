@@ -19,16 +19,20 @@ Describe the concept of ERM:
 
 ## Benefits of RM
 
-**RM can benefit society**
+**1. RM can benefit society**
 
 * Modern Society relies on the banking and financial systems to operate smoothly
 * Contagion risk
 
-**RM is part of the job of management**
+**2. RM is part of the job of management**
 
 * The Board is supposed to optimise risk/return decisions for shareholders
+* Investors/fund managers is several degrees away for effective risk management as it requires:
+    * Historical data on risk/return results, volatilities and correlations
+    * Risk exposure and concentration in the business
+    * Future business and investment plan that may alter the firm's risk profile
 
-**Reduce earnings volatility**
+**3. Reduce earnings volatility**
 
 Predictable earnings:
 
@@ -37,14 +41,20 @@ Predictable earnings:
 * $\downarrow$ Variability in employee costs
 * $\downarrow$ Capital requirements
 
-**Maximize shareholder value**
+**4. Maximize shareholder value**
 
 Management can make better decisions given a better understandig of the risks the company faces $\Rightarrow$ $\downarrow$ cost of capital, $\uparrow$ risk/return trade off
 
-**Enhance job security and rewards**
+* Better target investment returns and product pricing that reflects the underlying risks
+* Appropriate capital allocation to achieve optimal risk-adjusted return
+* Company has the appropriate skills to manage all of its risks to protect against large financial losses or damage to its reputation
+* Perfromance metrics and incentives are aligned with the enterprise's business and risk objectives
+* Key management decisions explicitly incorporate the element of risk
+
+**5. Enhance job security and rewards**
 
 * RM is a required competence for senior management
-* Also benefits employee with stock options
+* Benefits employee with stock options
 
 ***
 
@@ -89,6 +99,27 @@ Improve business performance
 * Optimizing risk mitigation strategies (e.g. natural hedges between BUs)
 * Reacting more quickly to opportunities (or risks)
 * Gain value from RM
+
+**4. Integration Adds Value**
+
+Risks faced by companies are highly interdependent $\Rightarrow$ Silo based RM is not efficient or effective
+
+* Missing the interdependencies, associated risks maybe not be captured and the big picture maybe be overlooked
+* Challenge of aggregating risk exposures across the organization
+
+ERM has integrated analyses, strategies, and reporting $\Rightarrow$ Addresses interdependencies and aggregate expsoures
+
+ERM supports the alignment of oversight functions (risk, audit, compliance) and rationalize risk assessment, risk mitigation, and reporting activities
+
+ERM consider how macro factors impact the organization's risk/return profile
+
+**System integration** allows for enterprise level data management, robust business and data analytics, straight through transaction processing, and more effective reporting and information sharing
+
+Integration of **strategy** and risk allows a company's managment to better understand and challenge the underlying assumptions and risks associated with the business strategy
+
+* Driver of market value declines are driven by strategic risks 60% of the time, op risk 30% of the time and then financial risks
+
+
 
 ## Reasons to Initiate ERM
 
