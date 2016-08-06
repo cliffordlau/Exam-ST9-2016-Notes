@@ -262,7 +262,7 @@ div.tocify {
 </ul>
 <p>Market + credit = financial risks</p>
 </div>
-<div id="categorization-of-risk" class="section level2">
+<div id="categorization-of-risk" class="section level2 tabset">
 <h2>Categorization of risk</h2>
 <p>List not necessarily complete</p>
 <p>Definitions are not necessarily set in stone and can be inconsistent depending on the context (e.g. market risk)</p>
@@ -345,6 +345,7 @@ Price elasticity</li>
 </tr>
 </tbody>
 </table>
+<hr />
 </div>
 <div id="economic-risk" class="section level3">
 <h3>Economic Risk</h3>
@@ -357,6 +358,7 @@ Price elasticity</li>
 <li>Inflation, interest and FX</li>
 <li>Accomodation costs</li>
 </ul>
+<hr />
 </div>
 <div id="interest-rate-risk" class="section level3">
 <h3>Interest Rate Risk</h3>
@@ -365,6 +367,7 @@ Price elasticity</li>
 <li>Impact on customer behavior or financial impact</li>
 </ul>
 <p>Subset of <a href="#mkt-risk">market risk</a> or <a href="#econ-risk">economic risk</a></p>
+<hr />
 </div>
 <div id="fx-risk" class="section level3">
 <h3>FX Risk</h3>
@@ -376,9 +379,209 @@ Price elasticity</li>
 <li>Economic exposure: prices of exported good affecting foreign sales</li>
 <li>Tranlsation exposure: consolidated accounts</li>
 </ul>
+<hr />
 </div>
 <div id="basis-risk" class="section level3">
 <h3>Basis Risk</h3>
+<p>Risk from differences in the movements of two comparable indices</p>
+<ul>
+<li>E.g. Different stock indices so that offsetting investments in a hedging strategy doesn’t experience exactly offsetting movements</li>
+</ul>
+<hr />
+</div>
+<div id="credit-counterparty-risk" class="section level3">
+<h3>Credit &amp; Counterparty Risk</h3>
+<p>Credit Risk:</p>
+<ul>
+<li>Risk that a counterparty to an agreement will be unable or unwilling to make the payments required</li>
+<li>A more narrow definition:<br />
+Risk that a borrower will partially or wholly default on repayment of debt</li>
+</ul>
+<p>Counterparty risk:</p>
+<ul>
+<li>Risk that another party to an agreement fails to perform its contractual obligations (or perform in a timely manner)</li>
+<li>e.g. default on derivatives transaction or failure of an outsourcing company</li>
+</ul>
+<p>Typically considered under the wider credit risk category or use interchangably</p>
+<ul>
+<li>Risk of loss due to contractual obligations not being met (quantity, quality, or timing) either in part or in full, whether due to inability of, or decision by, the counterparty</li>
+</ul>
+<p>Components of credit risk:</p>
+<ol style="list-style-type: decimal">
+<li>Probability of default (PD)</li>
+<li>Loss given default (LGD)</li>
+</ol>
+<p>Credit risk can sometimes include risks relating to variations in credit spreads in the market</p>
+<ul>
+<li>In Sweeting, <span class="math inline">\(\Delta\)</span> in asset value due to <span class="math inline">\(\Delta\)</span> credit spread is a market risk</li>
+</ul>
+<p>Example of credit risk (Lam):</p>
+<ul>
+<li>Late payment by creditors</li>
+<li>Financial loss due to counterparty failure to uphold agreement</li>
+<li>Loss of provision or receipt of services by a 3<sup>rd</sup> party (due to credit problems or bankruptcy)</li>
+</ul>
+<hr />
+</div>
+<div id="liquidity-risk" class="section level3">
+<h3>Liquidity Risk</h3>
+<p>Risk of not being able to meet short-term cashflow requirements</p>
+<p>Funding liqudity risk:<br />
+Risk of money markets not being able to supply funding to businesses when required</p>
+<p>Market liquidity risk:<br />
+Insufficient capacity in the market to handle asset transactions at the time when the deal is required (w/o material impact on price)</p>
+<hr />
+</div>
+<div id="insurance-risk" class="section level3">
+<h3>Insurance Risk</h3>
+<p>Risk arises from fluctuations in the timing, frequency and severity of insured events, relative to the expectations of the firm at the time of underwriting or pricing (Mortality, morbidity, P&amp;C risks)</p>
+<ul>
+<li>Can include persistency and expense risks for insurance companies</li>
+<li>Typically same as underwriting risk
+<ul>
+<li>Alternatively, u/w risk can mean risk of inappropriate selection and approval of insurance risks (for P&amp;C company this is typically bucketed under Op-Risk)</li>
+</ul></li>
+<li>Lam calls this actuarial risk</li>
+</ul>
+<p>Components of insurance risk</p>
+<ul>
+<li>Demographic risk
+<ul>
+<li>Mortality and longevity risks</li>
+<li>Morbidity risks (diagnosis of critical illness)</li>
+<li>Proportions married and age differences of partners</li>
+</ul></li>
+<li>Non-life insurance risk
+<ul>
+<li>Property or casualty risk</li>
+</ul></li>
+<li>Other insurance risk
+<ul>
+<li>Persistency risk (uncertainty in # of policies renewing)</li>
+<li>Expense risk (expense not being as expected)</li>
+</ul></li>
+</ul>
+<p>Further subcategory of non-life or demographic risk</p>
+<ul>
+<li>Underwriting risk (level risk):<br />
+Risk that underlying claims incidence (and severity) is not as expected</li>
+<li>Reserving risk
+<ul>
+<li>Volatility risk: uncertainty due to only having a finite pool of policies</li>
+<li>CAT risk</li>
+<li>Trend or cycle risk: risk of future changes in claims frequency and severity</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="operational-risk" class="section level3">
+<h3>Operational Risk</h3>
+<p>Risk of losses resulting from inadequate or failed internal processes, people and systems or from external events</p>
+<ul>
+<li>Basel definition includes legal risk but exclude strategic and reputational risk</li>
+</ul>
+<p>Components of Op-Risk:</p>
+<ul>
+<li>Process risk
+<ul>
+<li>e.g. efficieny vs effectiveness;</li>
+<li>Processing errors result in costs (customer turnover, loss of reputation, etc)</li>
+<li>Inadequate documentations lead to costs (miscommunications)</li>
+<li>Model and data risk</li>
+</ul></li>
+<li>People risk
+<ul>
+<li>e.g. Key positions remaining unfilled</li>
+<li>Wrong people are hired/retained</li>
+<li>Absenteeism</li>
+<li>Lack of risk awareness</li>
+<li>Incompetence</li>
+<li>Dishonesty</li>
+<li>Agency risk</li>
+<li>Moral hazard</li>
+<li>Adverse selection</li>
+</ul></li>
+<li>System/technology risk
+<ul>
+<li>Since it requires significant investment, compolex project management to introduce or change and effective oversight/governance</li>
+<li>Out dated funtionality</li>
+<li>Lack of sufficient access or capacity</li>
+<li>Unauthorized use or access to data</li>
+<li>Failure of technology</li>
+<li>Inadequate backup or disaster plan</li>
+<li>Software errors</li>
+</ul></li>
+<li>Event risk
+<ul>
+<li>Business continuity risk (inadequate contingency plans)</li>
+<li>Ineffective internal change management (effecting a merger)</li>
+<li>Ineffective external change management (adapting to regulations change)</li>
+</ul></li>
+<li>Business risk (including reputational risk)
+<ul>
+<li>Inappropriate business strategy</li>
+<li>Inadequate business plans</li>
+<li>Change in business environment</li>
+<li>Results not meeting stakeholder expectations</li>
+<li>Damage to reputation or brand value</li>
+</ul></li>
+<li>Crime risk (categoried under its origin)
+<ul>
+<li>People risk (dishonest staff); technology risk (hacking); legal risk</li>
+</ul></li>
+<li>Other examples
+<ul>
+<li>Deficient product <span class="math inline">\(\Rightarrow\)</span> liability claim</li>
+<li>Sub-optimal product development</li>
+<li>Human error <span class="math inline">\(\Rightarrow\)</span> CAT event</li>
+<li>Inappropriate corporate strategy</li>
+<li>Ineffective internal feedback mechanism</li>
+<li>Corporate culture that limits innovation and resists change</li>
+</ul></li>
+</ul>
+<hr />
+<p>Maybe move to Mod 29</p>
+<p>Pros and cons of outsourcing</p>
+<ul>
+<li>Pros:
+<ul>
+<li>Specialist organization can increase capacity, reduce costs, time, better quality etc.</li>
+<li>Transfer operational and other risks to the 3<sup>rd</sup> party</li>
+</ul></li>
+<li>Cons:
+<ul>
+<li>Introduce new risks e.g. legal</li>
+<li>Lose direct control over the risks now being experienced and managed in the outsourcer (product quality)</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="legal-risk" class="section level3">
+<h3>Legal Risk</h3>
+<p>Risk from the understanding of and adherence to legislation, including changes in accepted interpretation</p>
+<ul>
+<li>Breaching the law (lack of aweareness, understanding, changes in interpretation by courts, deliberate intent)</li>
+<li>Inability to demonstrate compliance</li>
+</ul>
+<p>Consequences: fines, change in credit rating, loss of resources, reputational damage</p>
+<p>Legal risks are threefold:</p>
+<ol style="list-style-type: decimal">
+<li>New legislation due to political or social pressures (can be +/-)
+<ul>
+<li>(+) Open up new business opportunities given that they responds to the new legislation before competitors</li>
+<li>(-) Additional compliance costs or prohibit some of an organization’s activities
+<ul>
+<li>Company should be aware at the earliest stage of the possibility of new legislation</li>
+</ul></li>
+</ul></li>
+<li><p>Provisions in important contracts could give risk to significant problems if certain circumstances where to occur</p></li>
+<li>Court judgements against an organization
+<ul>
+<li>e.g. Collapse of Equitable Life in UK</li>
+<li>Need to consider whether the risk of an adverse legal judgement is worthwhile or not</li>
+</ul></li>
+</ol>
+<p>Legal is typically under Op-Risk</p>
 </div>
 </div>
 

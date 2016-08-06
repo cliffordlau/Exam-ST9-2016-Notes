@@ -48,7 +48,7 @@ Risk hierarchy based on Basel or SII
 
 Market + credit = financial risks
 
-## Categorization of risk
+## Categorization of risk {.tabset}
 
 List not necessarily complete
 
@@ -98,6 +98,8 @@ Types of market risks
 | ALM | Unmatched interest rate sensitivity; FX; basis | Takes longer to close out; Can be hedged more frequently | Banks; Investment banks; Insurance co.; Energy firms |
 | Liquidity Risk | Inability to fund financial obligations without sizeable losses; Insufficient market capacity leading to adverse impact on market price when deal required | Short term | All companies and investors |
 
+***
+
 ### Economic Risk
 
 <a name="econ-risk"></a>
@@ -110,6 +112,8 @@ Risks arising from the impact of macro factors
 * Inflation, interest and FX
 * Accomodation costs
 
+***
+
 ### Interest Rate Risk
 
 Risk from $\Delta$ interest rates
@@ -117,6 +121,8 @@ Risk from $\Delta$ interest rates
 * Impact on customer behavior or financial impact
 
 Subset of [market risk](#mkt-risk) or [economic risk](#econ-risk)
+
+***
 
 ### FX Risk
 
@@ -130,4 +136,183 @@ Effect of FX rate movements:
 * Economic exposure: prices of exported good affecting foreign sales
 * Tranlsation exposure: consolidated accounts
 
+***
+
 ### Basis Risk
+
+Risk from differences in the movements of two comparable indices
+
+* E.g. Different stock indices so that offsetting investments in a hedging strategy doesn't experience exactly offsetting movements
+
+***
+
+### Credit & Counterparty Risk
+
+Credit Risk:
+
+* Risk that a counterparty to an agreement will be unable or unwilling to make the payments required
+* A more narrow definition:  
+Risk that a borrower will partially or wholly default on repayment of debt
+
+Counterparty risk:
+
+* Risk that another party to an agreement fails to perform its contractual obligations (or perform in a timely manner)
+* e.g. default on derivatives transaction or failure of an outsourcing company
+
+
+Typically considered under the wider credit risk category or use interchangably
+
+* Risk of loss due to contractual obligations not being met (quantity, quality, or timing) either in part or in full, whether due to inability of, or decision by, the counterparty
+
+Components of credit risk:
+
+1. Probability of default (PD)
+2. Loss given default (LGD)
+
+Credit risk can sometimes include risks relating to variations in credit spreads in the market
+
+* In Sweeting, $\Delta$ in asset value due to $\Delta$ credit spread is a market risk
+
+Example of credit risk (Lam):
+
+* Late payment by creditors
+* Financial loss due to counterparty failure to uphold agreement
+* Loss of provision or receipt of services by a 3^rd^ party (due to credit problems or bankruptcy)
+
+***
+
+### Liquidity Risk
+
+Risk of not being able to meet short-term cashflow requirements
+
+Funding liqudity risk:  
+Risk of money markets not being able to supply funding to businesses when required
+
+Market liquidity risk:  
+Insufficient capacity in the market to handle asset transactions at the time when the deal is required (w/o material impact on price)
+
+***
+
+### Insurance Risk
+
+Risk arises from fluctuations in the timing, frequency and severity of insured events, relative to the expectations of the firm at the time of underwriting or pricing (Mortality, morbidity, P&C risks)
+
+* Can include persistency and expense risks for insurance companies
+* Typically same as underwriting risk
+    * Alternatively, u/w risk can mean risk of inappropriate selection and approval of insurance risks (for P&C company this is typically bucketed under Op-Risk)
+* Lam calls this actuarial risk
+    
+Components of insurance risk
+
+* Demographic risk
+    * Mortality and longevity risks
+    * Morbidity risks (diagnosis of critical illness)
+    * Proportions married and age differences of partners
+* Non-life insurance risk
+    * Property or casualty risk
+* Other insurance risk
+    * Persistency risk (uncertainty in # of policies renewing)
+    * Expense risk (expense not being as expected)
+    
+Further subcategory of non-life or demographic risk
+
+* Underwriting risk (level risk):  
+Risk that underlying claims incidence (and severity) is not as expected
+* Reserving risk
+    * Volatility risk: uncertainty due to only having a finite pool of policies
+    * CAT risk
+    * Trend or cycle risk: risk of future changes in claims frequency and severity
+
+***
+    
+### Operational Risk
+
+Risk of losses resulting from inadequate or failed internal processes, people and systems or from external events
+
+* Basel definition includes legal risk but exclude strategic and reputational risk
+
+Components of Op-Risk:
+
+* Process risk
+    * e.g. efficieny vs effectiveness;
+    * Processing errors result in costs (customer turnover, loss of reputation, etc)
+    * Inadequate documentations lead to costs (miscommunications)
+    * Model and data risk
+* People risk
+    * e.g. Key positions remaining unfilled
+    * Wrong people are hired/retained
+    * Absenteeism
+    * Lack of risk awareness
+    * Incompetence
+    * Dishonesty
+    * Agency risk
+    * Moral hazard
+    * Adverse selection
+* System/technology risk
+    * Since it requires significant investment, compolex project management to introduce or change and effective oversight/governance
+    * Out dated funtionality
+    * Lack of sufficient access or capacity
+    * Unauthorized use or access to data
+    * Failure of technology
+    * Inadequate backup or disaster plan
+    * Software errors
+* Event risk
+    * Business continuity risk (inadequate contingency plans)
+    * Ineffective internal change management (effecting a merger)
+    * Ineffective external change management (adapting to regulations change)
+* Business risk (including reputational risk)
+    * Inappropriate business strategy
+    * Inadequate business plans
+    * Change in business environment
+    * Results not meeting stakeholder expectations
+    * Damage to reputation or brand value
+* Crime risk (categoried under its origin)
+    * People risk (dishonest staff); technology risk (hacking); legal risk
+* Other examples
+    * Deficient product $\Rightarrow$ liability claim
+    * Sub-optimal product development
+    * Human error $\Rightarrow$ CAT event
+    * Inappropriate corporate strategy
+    * Ineffective internal feedback mechanism
+    * Corporate culture that limits innovation and resists change
+
+***
+
+Maybe move to Mod 29
+
+Pros and cons of outsourcing
+
+* Pros:
+    * Specialist organization can increase capacity, reduce costs, time, better quality etc.
+    * Transfer operational and other risks to the 3^rd^ party
+* Cons:
+    * Introduce new risks e.g. legal
+    * Lose direct control over the risks now being experienced and managed in the outsourcer (product quality)
+    
+***
+
+### Legal Risk
+
+Risk from the understanding of and adherence to legislation, including changes in accepted interpretation
+
+* Breaching the law (lack of aweareness, understanding, changes in interpretation by courts, deliberate intent)
+* Inability to demonstrate compliance
+
+Consequences: fines, change in credit rating, loss of resources, reputational damage
+
+Legal risks are threefold:
+
+1. New legislation due to political or social pressures (can be +/-)
+    * (+) Open up new business opportunities given that they responds to the new legislation before competitors
+    * (-) Additional compliance costs or prohibit some of an organization's activities
+        * Company should be aware at the earliest stage of the possibility of new legislation
+        
+2. Provisions in important contracts could give risk to significant problems if certain circumstances where to occur
+
+3. Court judgements against an organization
+    * e.g. Collapse of Equitable Life in UK
+    * Need to consider whether the risk of an adverse legal judgement is worthwhile or not
+    
+Legal is typically under Op-Risk
+
+### 
