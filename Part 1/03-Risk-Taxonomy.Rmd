@@ -48,15 +48,17 @@ Risk hierarchy based on Basel or SII
 
 Market + credit = financial risks
 
-Definitions can be inconsistent
-
-![](figures/figure-03.01.png)
-
 ## Categorization of risk
 
 List not necessarily complete
 
-**Market risk**
+Definitions are not necessarily set in stone and can be inconsistent depending on the context (e.g. market risk)
+
+![](figures/figure-03.01.png)
+
+### Market risk
+
+<a name="mkt-risk"></a>
 
 * Risks from $\Delta$ investment market value
 * Correlation with investment markets (e.g. interest and inflation)
@@ -93,4 +95,39 @@ Types of market risks
 | Type | Cause | Characteristics | Exposed |
 | ---- | ---------------------- | ----------------- | ------------ |
 | Trading Risk | $\Delta$ prices or rates; Other market driven risks; Basis risks | Short term; Able to close-out or hedge in a few days | Investment bank; Dealers; Market-making energy fimrs; non-financials w/ trading book |
-| 
+| ALM | Unmatched interest rate sensitivity; FX; basis | Takes longer to close out; Can be hedged more frequently | Banks; Investment banks; Insurance co.; Energy firms |
+| Liquidity Risk | Inability to fund financial obligations without sizeable losses; Insufficient market capacity leading to adverse impact on market price when deal required | Short term | All companies and investors |
+
+### Economic Risk
+
+<a name="econ-risk"></a>
+
+Risks arising from the impact of macro factors
+
+* Aggregate supply and demand
+* Government policies (own and foreign e.g. trade barriers)
+* Unemployment levels
+* Inflation, interest and FX
+* Accomodation costs
+
+### Interest Rate Risk
+
+Risk from $\Delta$ interest rates
+
+* Impact on customer behavior or financial impact
+
+Subset of [market risk](#mkt-risk) or [economic risk](#econ-risk)
+
+### FX Risk
+
+Risk from exposure to movement in FX rates
+
+Subset of [market risk](#mkt-risk) or [economic risk](#econ-risk)
+
+Effect of FX rate movements:
+
+* Transaction exposure: foreign revenues expressed in the home currency
+* Economic exposure: prices of exported good affecting foreign sales
+* Tranlsation exposure: consolidated accounts
+
+### Basis Risk
