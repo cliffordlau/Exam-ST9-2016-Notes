@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Module 3: Risk Taxonomy?\"\nauthor: \"C. Lau\"\ndate: \"`r format(Sys.time(), '%B %d, %Y')`\"\noutput: \n  html_document:\n    toc: true\n    toc_float:\n      collapsed: false\n      smooth_scroll: false\n    toc_depth: 4\n---\n\n## Module Objective\n\nDefinitions and concepts of risks\n\nMeaning of risk and uncertainty\n\nUnderstanding of risk categories\n\n* Market, economic, interest rate, FX, basis, counterparty, liquidity, insurance, operational, legal, regulatory, political, agency, reputational, project, strategic, demographic, moral hazard\n\nRelationship between:\n\n* systematic risk and non-systematic risk\n* Specific risk and concentration risk\n\nHow contagion affects different stakeholders\n\n## Intro to Risk Taxonomy\n\nRisk taxonomy = definitions and categoriztions of risks\n\nRisk = \n\n* Uncertainty of possible future random events\n* Nature and degree of harm associated with each such event\n\nRisk hierarchy based on Basel or SII\n\n* Market risk: risks arising from changes in market values\n* Credit risk: risk of failure oif a 3rd party to make promised payments\n* Op risk: risk of loss resulting from deficient internal processes, people, or systems, or external events\n* Insurance risk: risk of accepting risks which turn out to be inappropriate or pricing accepted risks inappropriately\n* Strategic risk (from Lam)  \n* Regulatory risk (from Lam)\n\nMarket + credit = financial risks\n\nDefinitions can be inconsistent\n\n![](figures/figure-03.01.png)\n\n## Categorization of risk\n\nList not necessarily complete\n\n**Market risk**\n\n* Risks from $\\Delta$ investment market value\n* Correlation with investment markets (e.g. interest and inflation)\n* Investment market value $\\Delta$ on liabilities\n* Consequence of AL mismatch\n* e.g. equity, commodity, FX, interest rate, basis\n\nSometimes can be confused with risk of lower sales or profit margins from changes in market conditions\n\n* Here market = market where the products or services are sold\n\nMarket conditions are a fucntion of:\n\n* Market construction:  \nSize, barriers to entry\n* Market participant action:  \nStrategic choise (growth vs specialist penetration or diversification), method of implementation (expansion or acquisition)\n* Market participant interaction:  \nPrice elasticity\n\nDistinct elements of market risks:\n\n* Risk arising from movements in own stock price related to:\n    * acquisition strength and takeover risk\n    * efficiency in raising capital\n* Investment risks related to:\n    * Interest rate risk associated with holding liquid funds in fixed income\n    * ALM risk\n    * Effect on pension scheme liabilities\n* Uncertainty of input and output prices\n\nTypes of market risks\n\n| Type | Cause | Characteristics | Exposed |\n| ---- | ---------------------- | ----------------- | ------------ |\n| Trading Risk | $\\Delta$ prices or rates; Other market driven risks; Basis risks | Short term; Able to close-out or hedge in a few days | Investment bank; Dealers; Market-making energy fimrs; non-financials w/ trading book |\n| \n",
+    "created" : 1470410247799.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "75810044",
+    "id" : "3DB87A91",
+    "lastKnownWriteTime" : 1470410553,
+    "last_content_update" : 1470410553293,
+    "path" : "~/Documents/Exam ST9 2016 Notes/Part 1/03-Risk-Taxonomy.Rmd",
+    "project_path" : "Part 1/03-Risk-Taxonomy.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

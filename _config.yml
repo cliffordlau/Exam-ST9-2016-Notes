@@ -1,0 +1,13 @@
+name: "Exam ST9 Notes"
+description: "CAS Exam ST9 Notes"
+
+baseurl: /Exam-ST9-2016-Notes
+
+paginate: 40
+
+markdown: rdiscount
+permalink: pretty
+highlighter: rouge
+github: [Repository metadata]
+
+gems: [jekyll-paginate]
