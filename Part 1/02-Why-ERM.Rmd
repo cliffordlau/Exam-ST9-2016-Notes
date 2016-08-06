@@ -36,10 +36,10 @@ Describe the concept of ERM:
 
 Predictable earnings:
 
-* $\uparrow$ MV of firm
+* $\uparrow$ MV of firm (reduce risk of bankruptcy and tax liability)
 * $\uparrow$ Company's credit rating
-* $\downarrow$ Variability in employee costs
-* $\downarrow$ Capital requirements
+* $\downarrow$ Variability in employee costs (reduce swings in # of employees required)
+* $\downarrow$ Capital requirements (less risk capital is needed)
 
 **4. Maximize shareholder value**
 
@@ -94,9 +94,13 @@ Improve business performance
 * *Co-ordinating* risk management activities across all parts of the organization
     * E.g. corrdinate existing risk and oversight functions such as finance, audit/compliance and other specialist risk units
     * CRO can provide top down coordination
+    * Centralization enable firms to react quickly to emerging risk
+    * Prioritize various risks arising from various areas of an organization
 * Encourage and facilitating the *sharing of risk information*
 * Identifying and assessing *links* between risks managed by various teams
 * Improving efficiency (w/ management time and business resources)
+    * Cost savings from dealing with it firm wide
+    * Or just natural hedge
 
 **3. Enhance business performance**
 
@@ -106,6 +110,7 @@ ERM's support on key management decisions leads to:
 * Minimize losses
 * Early warning of risk
 * Improve pricing, managing, transferring risks better
+    * Achieving adequate risk-adjusted return
 * Optimizing risk mitigation strategies (e.g. natural hedges between BUs)
 * Reacting more quickly to opportunities (or risks)
 * Gain value from RM by understanding the true risk/return economics of a business $\Rightarrow$ Take more of the profitable risks that make sense

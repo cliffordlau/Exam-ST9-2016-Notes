@@ -147,6 +147,7 @@ Considering the risks of the enterprise as a whole; concern with all risk faced 
 RM techniques are applied consistently across the whole enterprise   (e.g. Common definitions, classifications and recording of risk)
 
 * This is necessary for RM to operate effectively
+* Ensure all risks are covered consistently in terms of the way they are identified, reported and treated
 * From top down (lead by the board) $\Rightarrow$ Coordinate through risk management function (e.g. IRM) that is lead by a CRO $\Rightarrow$ Incorporate into the day to day operations of all personnel
 
 Ensures that all risks faced by an enterprise are considered
