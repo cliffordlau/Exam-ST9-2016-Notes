@@ -54,7 +54,9 @@ List not necessarily complete
 
 Definitions are not necessarily set in stone and can be inconsistent depending on the context (e.g. market risk)
 
-![](figures/figure-03.01.png)
+![](figures/Exam ST9 - 1.png)
+
+![](figures/Exam ST9 - 2.png)
 
 ### Market risk
 
@@ -313,6 +315,231 @@ Legal risks are threefold:
     * e.g. Collapse of Equitable Life in UK
     * Need to consider whether the risk of an adverse legal judgement is worthwhile or not
     
-Legal is typically under Op-Risk
+Typically under Op-Risk
 
-### 
+***
+
+### Regulatory Risk
+
+Risk of losses arising from changes in legislation or regulation
+
+* May also cover compliance risk: losses due to failing to comply with existing legislation or rules
+
+Typically under Op-Risk
+
+***
+
+### Strategic Risk
+
+Risks relates to the achievement of an organization's overall strategic business plans and objective
+
+Covers all Op-Risk that might prevent an organization meeting its objectives
+
+Basel II exclude strategic risk from op-risk (included in Sweeting though)
+
+***
+
+### Reputational Risk
+
+Risk that events of circumstances could have an adverse impact on an organization's reputation or brand value
+
+Basel II exclude reputational risk from op-risk (included in Sweeting though)
+
+***
+
+### Project Risk
+
+Risk of failure relating to a specific undertaken by an organization
+
+Typically under Op-Risk
+
+***
+
+### Political Risk
+
+Encompasses a wide range of risks
+
+* Political decisions (social and fiscal) or indecision
+* Changes in government
+* Events related to political instability (terrorism and wars)
+
+Different levels of political risk
+
+* Micro level:  
+Affecting specific firms, industry sectors, geographic regions
+* Macro (national) level:  
+e.g. Nationalization of an industry
+* Macro (international) level:  
+e.g. Potentially conflicting actions of different gov on an organization that operates across many countries (complex system of tariffs and quotas)
+
+Boundary between risk categories can be blurred (e.g. action of a gov to devalue the currency will be both political and economic risk)
+
+***
+
+### Agency Risk
+
+Risk resulting from the misalignment of interest between different stakeholders
+
+* Can mean the specific risk that the management of an organization will not act in the best interest of other stakeholders
+
+(See Mod 11 for more)
+
+Can be under people risk
+
+***
+
+### Demographic Risk
+
+Risk arises from demographic changes such as mortality rates, impacting both customers and employment
+
+Can be under: 
+
+* Insurance risk
+* Op-Risk (e.g. Not being able to fill key staff positions)
+* Market risk (e.g. reduction in the size of the company's target market)
+
+***
+
+### Moral Hazard Risk
+
+Action of a party who behaves differently from the way they would behave if they were fully exposed to the consequences of that action
+
+Party behaves inappropriately or less carefully than they would otherwise, leaving the organiztion to bear some of the consequences of the action
+
+Related to information asymmetry, with the party causing the action generally having more information than the organization that bears the consequences
+
+***
+
+### Conduct Risk
+
+Risk that relate to directly to the relationship between a company and its customers
+
+* Can include operational failures (e.g. poor control of distribution and/or servicing), information asymmetries, keeping pace with regulatory requirements and customer needs, market conditions, product development activities and strategic objectives
+
+***
+
+### Other Risks
+
+List so far not exhaustive and they are non mutually exclusive either
+
+**Environmental Risk**
+
+Risk related to resources (regulation on use, depletion etc) and pollution (emission quotas, consequences of non-control)
+
+Consequences with pollution:
+
+* Fines, reputational damage, business interruption, global warming
+
+**Social Risk**
+
+Due to uncertainty over the future characteristics of a population
+
+* Age profile, eduational standards, health standards, economic wealth, attitudes and lifestyles
+
+**Pension Risk**
+
+Risk of losses to the sponsoring company due to unexpected shortfall of the value of the pension scheme's assets vs liabilities
+
+* e.g. from poor investment returns, improving mortality
+* Can derisk by switching to DC plans and buying-out liabilities
+
+***
+
+## Consistency of Categorization
+
+The precise categorization of a risk will be dependent on the context
+
+Different definitions of Market Risk
+
+* Risks related to $\Delta$ in investment market values and other factors correlated with such values (e.g. interest rates), or;
+* Risk related only to stock market prices or more broadly to include interest rate risk, or;
+* Riskof lower sales due to $\Delta$ in market conditions, where the market is where produces and services are sold
+
+Different definitions of Credit Risk
+
+* Risk of fluctuations in the value of corporate bonds due to changes in the credit spread can be either market or credit risk
+* Credit risk and counterparty risk are use interchangably sometimes
+
+Different definitions of Business Risk
+
+* All risks to which businesses are exposed
+* Subest of risks which are specific to the type of business undertaken (e.g. insurance risks for insurance co.)
+
+Other examples
+
+* Actuarial risk can be risk of an investor failing to meet their objectives or insurance risk
+* Insurance and u/w risk can the same thing sometimes
+* Op-Risk doesn't really have a single definition
+* Demographic risk can be an Op-Risk (people risk of not being able to fill key positions) or market risk (reduction in the size of the company's target market)
+* Crime risks can be bucket based on the nature of the crime
+* Earthquake will be an insurance risk for a P&C company while it'll be an external event under Op-Risk for a bank
+
+## Systematic & Non-Systematic Risk
+
+**Systematic risk**:  
+Risk that is not diversifiable or which cannot be fully diversified because it affects a large number of quantities of interest
+
+* Systemic can means the same but is often used more specifically to refer to the risk of problems spreading betweens entities following a trigger event (basically contagion risk)
+
+Example:
+
+* Market return, as the prices of all stocks are linked to some extent to the average market return
+* Industry specific risk can not be fully diversify as there is a limited number of sectors to prevent complete diversification
+* Pension liabilities that are linked to market interest rate
+
+**Non-systematic risk**:  
+Risk factors that are uncorrelated with or possibly independent from other sources of risk
+
+* These risk are largely diversifiable
+
+Example:
+
+* The $\alpha$ individual company return component of the return on individual shares
+* Typical insurance risks that we pool together
+
+**Situation-Dependent Risk**
+
+Risks might be uncorrelated in normal market conditions, but correlation might arise under extreme stress
+
+A lack of past correlation might just mean that they are non-systematic under the conditions prevailing during the period of observations
+
+**Concentration of Risk**
+
+Concentration of risk can arise from:
+
+* Inability to diversify risk (either self or externally imposed constraints)
+* Deliberate decisions (taking advantage of risk as a opportunity)
+* Poor risk management
+
+Concentration of risk was the contributory factor for many risk management disasters
+
+## Contagion
+
+Financial contagion:  
+Situations where financial losses in one company or sector or country lead to losses in another (can also be refer to as systemic risk like in Lam)
+
+There are market wide contagion risks that can affect and destabilise whole sectors, particularly financial institutions
+
+* Risk faced by institutions are often intertwined
+* Institutions, markets and countries' economies are often interdependent
+
+Example:
+
+* Failure of a commonly used financial infrastructure (like VISA cards)
+* Funding liquidity risk as we saw in 2008
+* Common market positions, where a change in share price results in further change (e.g. short squeeze)
+* Exposure to a common counterparty, where a failure in one organization causes another to fail or creates a lack of confidence in the sector
+    * E.g. Default of a company and lead to its creditors and suppliers experience financial diffiulties and create a chain reaction
+    * Therefore some institutions are "too big to fail"
+* Credit contagion when failure of one bank leads to losses at another; Market participants reduce the amount of credit available due to imperfect information about the scale and location of losses $\Rightarrow$ Increase the likelihood of further bank failure
+
+Loss of reputation and confidence can precipitate collapse
+
+* Event doesn't have to cripple the company but just triggers a death spiral
+* e.g. run on bank
+* Modern technology driven media can further increase the speed of collapse
+
+Contagion can arise from many investors using the same flawed logic
+
+* Financial economics has only been around for 100 years and some of its theories are still at a relatively early stage of development
+* E.g. Quant Fund crisis in 2007
