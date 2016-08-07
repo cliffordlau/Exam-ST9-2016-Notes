@@ -39,12 +39,23 @@ Risk =
 
 Risk hierarchy based on Basel or SII
 
-* Market risk: risks arising from changes in market values
-* Credit risk: risk of failure oif a 3rd party to make promised payments
-* Op risk: risk of loss resulting from deficient internal processes, people, or systems, or external events
-* Insurance risk: risk of accepting risks which turn out to be inappropriate or pricing accepted risks inappropriately
-* Strategic risk (from Lam)  
-* Regulatory risk (from Lam)
+* Market risk:  
+Risks arising from changes in market values
+* Credit risk:  
+Risk of failure of a 3rd party to meet its obligations
+* Op risk:  
+Risk of loss resulting from deficient internal processes, people, or systems, or external events
+* Insurance (Business) risk:  
+Risk of accepting risks which turn out to be inappropriate or pricing accepted risks inappropriately
+
+Additional major categoris from Lam
+
+* Strategic risk:  
+Risk that corporate and business strategies are flawed or ineffectively executed
+* Compliance risk:  
+Risk that the company may violate laws and regulations
+* Liquditiy risk:  
+Risk that a company cannot raise cash to meet its requirements in a timely and cost effective manner
 
 Market + credit = financial risks
 
@@ -53,6 +64,8 @@ Market + credit = financial risks
 List not necessarily complete
 
 Definitions are not necessarily set in stone and can be inconsistent depending on the context (e.g. market risk)
+
+It is important to consider the root cause in risk identification and assessment
 
 ![](figures/Exam ST9 - 1.png)
 
@@ -92,13 +105,18 @@ Distinct elements of market risks:
     * Effect on pension scheme liabilities
 * Uncertainty of input and output prices
 
-Types of market risks
+**Types of market risks**
 
 | Type | Cause | Characteristics | Exposed |
 | ---- | ---------------------- | ----------------- | ------------ |
 | Trading Risk | $\Delta$ prices or rates; Other market driven risks; Basis risks | Short term; Able to close-out or hedge in a few days | Investment bank; Dealers; Market-making energy fimrs; non-financials w/ trading book |
 | ALM | Unmatched interest rate sensitivity; FX; basis | Takes longer to close out; Can be hedged more frequently | Banks; Investment banks; Insurance co.; Energy firms |
 | Liquidity Risk | Inability to fund financial obligations without sizeable losses; Insufficient market capacity leading to adverse impact on market price when deal required | Short term | All companies and investors |
+
+![](figures/Exam ST9 - 3.png)
+
+Other market risk:  
+Option risks (prepayment of mortgage), exposures to other market prices (real estate prices), etc
 
 ***
 
@@ -118,7 +136,7 @@ Risks arising from the impact of macro factors
 
 ### Interest Rate Risk
 
-Risk from $\Delta$ interest rates
+Risk from $\Delta$ interest rates level or shae of the yield curve
 
 * Impact on customer behavior or financial impact
 
@@ -146,13 +164,17 @@ Risk from differences in the movements of two comparable indices
 
 * E.g. Different stock indices so that offsetting investments in a hedging strategy doesn't experience exactly offsetting movements
 
+Risk of changes in the relative rates of two indices
+
+* e.g. prime rate vs LIBOR
+
 ***
 
 ### Credit & Counterparty Risk
 
 Credit Risk:
 
-* Risk that a counterparty to an agreement will be unable or unwilling to make the payments required
+* Risk that a counterparty to an agreement will be unable or unwilling to make the payments required (Doesn't have to be bankruptcy)
 * A more narrow definition:  
 Risk that a borrower will partially or wholly default on repayment of debt
 
@@ -235,48 +257,59 @@ Risk of losses resulting from inadequate or failed internal processes, people an
 
 Components of Op-Risk:
 
-* Process risk
-    * e.g. efficieny vs effectiveness;
-    * Processing errors result in costs (customer turnover, loss of reputation, etc)
-    * Inadequate documentations lead to costs (miscommunications)
-    * Model and data risk
-* People risk
-    * e.g. Key positions remaining unfilled
-    * Wrong people are hired/retained
-    * Absenteeism
-    * Lack of risk awareness
-    * Incompetence
-    * Dishonesty
-    * Agency risk
-    * Moral hazard
-    * Adverse selection
-* System/technology risk
-    * Since it requires significant investment, compolex project management to introduce or change and effective oversight/governance
-    * Out dated funtionality
-    * Lack of sufficient access or capacity
-    * Unauthorized use or access to data
-    * Failure of technology
-    * Inadequate backup or disaster plan
-    * Software errors
-* Event risk
-    * Business continuity risk (inadequate contingency plans)
-    * Ineffective internal change management (effecting a merger)
-    * Ineffective external change management (adapting to regulations change)
-* Business risk (including reputational risk)
-    * Inappropriate business strategy
-    * Inadequate business plans
-    * Change in business environment
-    * Results not meeting stakeholder expectations
-    * Damage to reputation or brand value
-* Crime risk (categoried under its origin)
-    * People risk (dishonest staff); technology risk (hacking); legal risk
+**Process risk**
+
+* e.g. efficieny vs effectiveness;
+* Processing errors result in costs (customer turnover, loss of reputation, etc)
+* Inadequate documentations lead to costs (miscommunications)
+* Model and data risk
+
+**People risk**
+
+* e.g. Key positions remaining unfilled
+* Wrong people are hired/retained
+* Absenteeism
+* Lack of risk awareness
+* Incompetence
+* Dishonesty
+* Agency risk
+* Moral hazard
+* Adverse selection
+
+**System/technology risk**
+
+* Since it requires significant investment, compolex project management to introduce or change and effective oversight/governance
+* Out dated funtionality
+* Lack of sufficient access or capacity
+* Unauthorized use or access to data
+* Failure of technology
+* Inadequate backup or disaster plan
+* Software errors
+    
+**Event risk**
+
+* Business continuity risk (inadequate contingency plans)
+* Ineffective internal change management (effecting a merger)
+* Ineffective external change management (adapting to regulations change)
+    
+**Business risk** (including reputational risk)
+
+* Inappropriate business strategy
+* Inadequate business plans
+* Change in business environment
+* Results not meeting stakeholder expectations
+* Damage to reputation or brand value
+
+**Crime risk** (categoried under its origin)
+
+* People risk (dishonest staff); technology risk (hacking); legal risk
 * Other examples
-    * Deficient product $\Rightarrow$ liability claim
-    * Sub-optimal product development
-    * Human error $\Rightarrow$ CAT event
-    * Inappropriate corporate strategy
-    * Ineffective internal feedback mechanism
-    * Corporate culture that limits innovation and resists change
+* Deficient product $\Rightarrow$ liability claim
+* Sub-optimal product development
+* Human error $\Rightarrow$ CAT event
+* Inappropriate corporate strategy
+* Ineffective internal feedback mechanism
+* Corporate culture that limits innovation and resists change
 
 ***
 
@@ -325,7 +358,7 @@ Risk of losses arising from changes in legislation or regulation
 
 * May also cover compliance risk: losses due to failing to comply with existing legislation or rules
 
-Typically under Op-Risk
+Typically under Op-Risk as it can be argue that it is a secondary-order risk that is a consequence of other primary risk factors
 
 ***
 
