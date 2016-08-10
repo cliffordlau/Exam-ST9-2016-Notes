@@ -49,3 +49,44 @@ Support the analytics and reporting
 
 7. Stakeholder management:  
 Communicate and report on risk
+
+## Corporate Goverance
+
+The same Board principles below applies to other bodies of governance roles e.g. Board of a mutual co. or the trustees of a pension scheme
+
+**Corporate governance**:  
+The way in which the Board controls the company and the processes that it puts in place to ensure that the company is being run by the management in the best interests of shareholders
+
+**Board responsibilities** with regard to risk management
+
+Risk governance:
+
+* Setting the vision, strategy and risk culture of the organization
+* Establishing a framework for measuring, managing and monitoring the risks facing the organization
+* Reviewing the outcomes of and lessons learnt from the risk management process on an ongoing basis to achieve its goal of delivering long-term value to is investors
+
+Setting ERM policies:
+
+* Defining the company's risk appetite
+* Establishing what skills are needed to implement ERM strategies successfully, and implementing training programmes where these skills are deficient
+* Guiding decisions on the most appropriate approach to, and structure for, ERM within the organization including roles and responsibilities
+* Approving suitable internal controls and ERM policies, to ensure that ERM is being applied to the required standards, whether these standards are set internally or arise from legislation or regulation
+
+Determining risk compensation:
+
+* Aligning the interests of managment with investors through appropriate remuneration packages
+
+ERM initiative needs the full backing of the Board
+
+**Line mangers responsibilities** with regard to risk management
+
+Implement the ERM policies agreed by the Board
+
+* Setting up suitable risk management processes and integrating the risk information collected into business decisions
+
+Understand the risks that they are taking and are awareof the extent of their risk taking powers
+
+CRO is responsible for the excecution of the Board's risk management vision and strategy
+
+### ERM and the Board
+
