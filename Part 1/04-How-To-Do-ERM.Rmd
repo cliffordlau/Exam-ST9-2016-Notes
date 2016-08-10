@@ -129,3 +129,227 @@ Board should have an annual self-assessment check to assess its progress towards
 ## Codes of Conduct
 
 Development of corporate governance codes of conduct
+
+Investor concerns over company failures lead to the development of codes of conduct conerning best practice in the area of corporate governance
+
+Corporate goverance codes of conduct refer explicitly to RM and to the sysmtem of internal controls used to ensure that a company operate in a sound and secure way; The main aims of the internal controls these codes refer to are:
+
+* Ensuring accurate and adequate record-keeping
+* Preventing fraud and safeguarding the company's asset
+* Guaranteeing the accuracy of financial statements
+* Responding appropriately to risk
+* Ensuring compliance with law and supervisory guidance
+
+### Corporate Governance in the UK
+
+Cadbury Code of Best Practice main recommendations (aimed to improve confidence in financial reports in UK)
+
+* Full board meeting at regular intervals
+* Board should be aware of significant activities (M&A, capital projects)
+* NED (nonexec directors) should have key responsibility for certain control and monitoring functions
+* S/h should approve directors' service contracts in XS of 3 years
+* Directors' remuneration should be subject to review by a remuneration committee with a majority of NEDs
+* Company report should be balanced and understandable
+
+Key features of UK corporate goverance code
+
+* Applies to all UK listed companies
+* Corporate governance is not forced on companies by prescriptive rules
+    * Compliance is voluntary but need to be disclosed and explain non compliance
+* Companies are free to choose a suitable approach given their industry and size
+    * Need to explain material differences
+    
+Directors are required under the Companies Act to act in accordance with the company's articles of association and act in the best long term interest of the company while avoiding (or declare) any conflict of interest
+
+### Corporate Governance outside the UK
+
+Canada also adopted the method of voluntary compliance (UK standard) after the 1994 Dey report
+
+US follows a more statutory approach
+
+* SEC rules require disclosure of Board structure, compensation and role in RM
+* SOX require independent Board audit committees and at least one financial expert
+* Dodd Frank require bank Boards to have a risk subcommittee that includes RM export
+
+## Best Practice in Corporate Governance
+
+**Principles** for excellence in corporate governance
+
+* Communication with stakeholders
+    * Board has a duty to disclose certain into to stakeholders
+    * Leads to $\uparrow$ transparency of info for s/h
+    * Faciliates more informed decision making
+* Indenpendence of the Board
+    * Board should distanced from the day-to-day running of the company in order to better oversee and monitor its management
+* Board performance
+    * Board should engage in regular formal self assessments to rate its performance against any best practice codes is is subject to
+    * Use on external consultant can help to be unbias
+    * Should be regular independent reviews and training for new Board apointees
+* Board componesation arrangements
+    * Compensation should reflect the responsibility and risk of being a director (not over compensate)
+    * Reasonable proportion of the comp should be stock to align director's interest with s/h
+    * Also important to align with RM objectives for the implementation of ERM (e.g. bonus based on risk adjusted returns)
+* Fairness
+* Social responsibility
+
+### Risk Subcommittee
+
+BoD can delegate RM to a risk subcommittee (e.g. RMC)
+
+The risk committee charter will establish the following points and considerations
+
+**Purpose**:
+
+* Overseeing and challenging management's treatment of key risks;  
+* Setting risk policy
+* Gathering relevant information on risks
+    
+**Responsibility**:
+    
+* Ensuring a suitable ERM framwork exists within the company;  
+* Assess whether RM objectives have been achieved;  
+* Ensuring compliance with supervisory requirements for RM;  
+* Reporting on risk to the Board;  
+* Keep abreast of development in RM
+    
+**Membership**:
+
+* Require knowledge of the organizton and relevant experience;  
+* Objective;
+* Split between independent and non-independent directors
+
+**Frequency of meetings**
+
+**Criteria for performance assessment**
+
+**Resources available**:  
+
+* Which departments the subcommittee will work with;  
+* USe external consultants?
+
+### Audit subcommittee
+
+**Purpose**:
+
+* Give auditors direct access to the NEDs
+* Ensure the auditors remain independence
+* Emphasises the importance of the audit function to the rest of the business
+
+**Key roles**:
+
+* Monitor the integrity of financial statements
+* Monitor and review internal assurance functions (e.g. financial control, RM and IA)
+* Recommend, monitor, and review external auditor
+
+**Best practice**:
+
+* Should compose of NEDs
+* Ensure the independence of the audit committee
+
+## Corporate Governance in Financial Institutions
+
+Additional governance considerations for UK financial instituions stem from the Walker Review
+
+* Initiated in Feb 09 following the 08 crisis
+* Cover all financial insitutions (not just banks)
+
+**Key themese of recommendations**:
+
+* "Comply of explain" approach is still the best corporate governance practice
+* Need more challenge in BoD discussions
+    * Need the right mix of capabilities and experience on the BoD and more time commitment from NEDs
+* Need material increase on Board level risk oversight
+    * Especially risk monitoring, risk appetite, and tolerance
+    * Should establish risk subcommittee and CRO with enterprise wide authority and independence
+* Need better engagement between fund managers and the Board of investee
+* Board remuneration committees should cover other sr employees
+    * Remuneration should align with medium and longer term risk appetite and strategy of the entity
+    * Remuneration should be made publicly available on a banded basis
+    
+## Risk Culture
+
+Culture:  
+Defined by company's approach taken to its activities and describes the company's shared values, beliefs and behaviours.
+
+* Attitude of employees to business undertakings and the wya in which judgement is exercised
+* The way we do things around here
+
+Risk Culture:  
+Subset of overall culture related specifically to the approach taken to RM
+
+Good risk culture:  
+Culture in which people know and do the right thing even if there is no specific rule or policy telling them what to do, rather than acting in their own interests
+
+* Important component of an effective IRM framework
+
+***
+
+Board needs to ensure the organziation has a good risk culture that **encourages**
+
+* Consultative leadership
+* Participation in decision-making on risks
+* Openness
+* Accountability (rather than blame)
+* Organizational learning
+* Knowledge sharing
+* Good internal communication
+
+Having a right culture enabling everyone to participate in managing the more important risks
+
+Supportive risk culture is necessary for RM to be successful
+
+**Employees' role in RM**
+
+* Everyone should be involved in the identification of new and enhanced risks
+* RM process should be embedded in the mainstream management processes of the business
+    * Line managers should have responsibility for manageing the risk within their areas of responsibility, subject to reporting on the more important risks to a central point
+* Board should supervise the management of a short list of the most important strategic risks and opportunities
+
+RM should be approached as helping to achieve success
+
+* e.g. MS' slide on RM being the bowling bummers that help us get more strikes
+* Should not be a check box exercise of just to protect sr executives from criticism
+
+Risk conscious culture (that highlights the risk and opportunities) can sit alongside with a "can do" culture given good leadership
+
+* Need to encourage good communication about risk (openess that allows risk to be communicated up down sideways)
+* Easy reporting mechanism on:
+    * Perceptions of new or enhanced threats or opportunities
+    * Suggestions for mitgration of threats
+    * Existence of defective procedures
+    * Failure to operate established procedures properly
+
+Culture should encourage such reporting without inhibitions, though this maybe difficult to achieve
+
+(Ask MS how are we doing this here at MR? Risk communication)
+
+**Key features** of a **supportive risk culture**
+
+* Focus on developing positive employee behaviors w.r.t risk
+    *  With appropriate training for all employee
+    * Educate on both up and downside risk
+* Job description should include a requirement for proative responses to risk
+* Performance management should include RM objectives
+    * Tie incentives to RM performance objectives (w/ clear targets and measure of success)
+* Ensure that RM responsibilties are clearly defined and individuals are aware of their accountabilities
+* Introduce process to escalte risks
+* Develop environment of openness where employees will raise issues in the knowledge they will be heard and be open to new ideas
+* Avoid "blame culture"
+    * Focus on how to prevent it next time instead of what went wrong
+* Set the appropriate tone at the top
+    * BoD and Sr mgmt need to display appropriate risk behaviors
+* Praise those with good risk behavior (report on success)
+* Evaluate the risk culture
+    * Measure through questioning the workforce
+    
+**Culture can only be changed effectively**...
+
+* From the top (BoD and SM)
+* Incremental basis
+* As the profile of new recruites changes the views of the staff
+
+Risk culture can be taken as a measure of how well ERM has become integrated into the company's established way of doing things
+
+* Since it takes into account information on attitude to risk, awareness of risk, RM and risk behaviors among its employees
+
+Need a supportive risk culture to avoid the problem of bias (Risks are not reported in a true and honest way)
