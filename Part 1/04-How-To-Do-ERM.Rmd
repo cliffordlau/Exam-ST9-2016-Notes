@@ -1,0 +1,51 @@
+---
+title: "Module 3: How to do ERM - internal risk frameworks"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Framework for RM and control
+
+* Appropriate framework for ERM
+    * Shows how strong governance and compliance practices can support ERM
+* How to adopt best practice in ERM in compliance and corporate governance
+* Cultural aspects of risk assessment and management including the problems of bias
+    * Shows the importance of risk culture
+
+Cover good practice in terms of framework, governance and culture (in detail)
+
+Need to be able to evaluate the quality of these aspects with a hypothetical organization and to recommend an appropriate framework or improvements given specific circumstances
+
+## Internal Risk Framework Components
+
+Seven major components of ERM framework
+
+1. Corporate goverence:  
+Establish organizational processes and controls
+
+2. Line management:  
+Integrate risk management into business processes
+
+3. Portfolio management:  
+Aggregate risk exposures and identify diversification effects and concentrations of risk
+
+4. Risk transfer:  
+Mitigate excessive risk exposure cost effectively
+
+5. Risk analytics:  
+Measure, analyze and report on risk
+
+6. Data and technology resources:  
+Support the analytics and reporting
+
+7. Stakeholder management:  
+Communicate and report on risk
