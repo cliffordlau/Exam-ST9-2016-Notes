@@ -1,0 +1,21 @@
+---
+title: "Module 7: Risk Frameworks (Proprietary)"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Describe role of the credit agencies in the evaluation of RM functions, including the RM grading criteria used and discuss the relevance of these criteria
+
+New focus on the proprietary risk framework that is used by an organization for a specific purpose e.g. credit rating
+
+Module will explain how credit rating agencies (e.g. S&P) view insurance companies' RM systems when considering an appropriate rating for the company's debt or equity
+
