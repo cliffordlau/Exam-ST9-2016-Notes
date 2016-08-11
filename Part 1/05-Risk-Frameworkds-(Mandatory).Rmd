@@ -1,0 +1,318 @@
+---
+title: "Module 5: Risk Frameworks (Mandatory)"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Understand risk frameworks in regulatory environments
+
+* Role of regulators in EMR and effective management of the supervisor relationship
+* Basel Accord and SII frameworks incl. underlying principles and approaches to RM
+* Understand SOX and other regulatory risk frameworks and their underlying principles
+* Demonstrate an awareness of how different parts of an organization and different parts of a portfolio may be subject to different capital adequacy standards
+
+This discuss external risk frameworks (regulators and credit rating agency etc) that can influence an organization's approach to ERM
+
+External parties may prescribe or limit a company's activites or demand certain standards (e.g. capital requirement) to minimize risk to various stakeholers
+
+* External risk frameworks are usually applied as a whole
+* They can be mandatory (Basel Accords), advisory (ISO 31000) or voluntary (S&P credit rating criteria)
+
+## External superivision
+
+Prudential supervisory processess:
+
+* Oversight (e.g. financial)
+* Licensing
+* Requirement to maintain minimum standards (e.g operational)
+* Procedures of monitoring compliance with standards and licences
+* Processes to take action against those who fail to comply
+
+### Supervising and Controlling Parties
+
+Different parts of the organizations can be subject to different regulatory regimes and capital standards
+
+* International business are regulated by different territories
+* Subsidiaries that operate in different industry sectors (Finance vs manufacturing) or different areas within the same sector (banking vs insurance)
+* Subsidiaries or portfolios within the same sector that are subject to different regulatory requirements (insurer vs captive)
+* Subsidiaries that a new ventures or acquisitions and are at different lifecycle stages
+
+#### Categories of supervisors 
+
+In addition to government
+
+**Professional bodies** (e.g. IFA)
+
+Role:
+
+* Ensure members are adequately trained (through exams)
+* Ensure members maintain their competence, throgh CE
+* Some can discipline members that fail to maintain appropriate standards
+
+**Professional regulators** (e.g. CFA, FRC)
+
+Profession with statutory responsibilities are likely to be subject to external regulation
+
+Role:
+
+* Setting standards
+* Monitoring adherence to the standards
+* Disciplining non-adherence
+
+**Industry bodies** (e.g. BBA, ABI)
+
+Role:
+
+* Promote the interest of their members through lobbying and other activities (e.g. research projects)
+
+These bodies have a clear bias
+
+**Industry regulators** (e.g. PRA, FCA, LSE)
+
+Role:
+
+* Act on behalf of government to protect the public by controlling the activities of firms and individuals operating in a particular industry
+* Goal is to prevent problems occuring rather than punishing
+
+**Different regulatory regime**
+
+Functional regulation
+
+* Different authorities oversee different activities (e.g. UK)
+
+Unified regulation
+
+* Single regulator covers a broad range of activities (e.g Australia)
+* Pros:
+    * Easeir to regulate conglomerats
+    * Ensure consistency in approach across activities
+    * Limits incentive for regulatory arbitrage (firm picking the most favorable environment)
+    * Economies of scale
+    * Better sharing of ideas between regulatory staff
+    * Improved accountability (less change of buck-passing between regulators)
+
+### Supervisions of Insurers
+
+Aspects considered by a supervisor when developing their understanding of an insurer
+
+* Governance arrangements
+* Business plans
+* Financial reports
+* RM strategies and processes
+
+Reasons insurer should **engage proactively** with their supervisors
+
+* Insurer-regulator relationship should be a key component of an insurer's ERM framework
+* Regulatory enganges in risk-based regulation (focusing on riskiest companies) and by proactively engaging regulators, it helps to reduce the level of risk a supervisor places on a particular insurer
+* Regulators are also well place to advise on what is best practice (as they see a wide range of RM practices), more likely to benefit from such adivce with proactive engagement
+
+Ways to best engage with supervisors for an international insurer
+
+* Link the insurer's regulatory strategy with corporate strategy
+* Implement a transparent and comprehensive regulatory strategy and communicate to the regulator
+* Ensure that the principles of the insurer's regulatory strategy are understood, accepted and adopted throughout the organization
+* When feeding back to a regulator on its proposal, ensure feedback focuses on the important issues and is unbiased and practical
+* Adopt best practice before it becomes mandatory
+* Be proactive
+* Communicate regularly and openly
+
+### Supervision of UK Financial Services
+
+FCA and PRA
+
+LSE
+
+#### FCA and PRA
+
+Financial Conduct Authority:
+
+* Regulates the financial services industry in the UK
+* Aim: protect consumers; ensure stability of industry; promote healthy competition
+
+Prudential Regulation Authority:
+
+* Park of Bank of England
+* Responsible for prudential regulation and supervision of banks, building societies, credit unions, insurers, investment firms
+* Sets standards and supervises financial institutions at the level of the individual firm
+
+FCA and PRA was previously combined in the Financial Services Authority (FSA)
+
+FCA has the **UK Listing Authority (UKLA)** which:
+
+* Ensures that listed companies comply with certain standards set out in the Listing Rules
+* Requires that listed companies comply with certain disclosure rules on an ongoing basis
+* Ensures that companies either comply with the Combined Coe of Corporate Governance 2003, or state why they are not
+* Has power to suspend trading in a company's share or cancel their listing
+* So similar to SEC?
+
+#### London Stock Exchange (LSE)
+
+* Has 2 main traded markets: main market and alternative investment market (AIM)
+* There are >300 companies that are traded as "members" (i.e. they eal directly with one another through the exchange, other companies have to dal with member firms, who then hedge their own positions)
+* LSE is regulated by the Office of Fair Trading (OFT) and its servcies must comply with certain standards such as EU market standards set out in the Investment SErvices Directive (ISD)
+
+## Basel Accords
+
+Focus here is on the 3 pillars
+
+Banks are regulated by the country they are based in (e.g. PRA for UK) but countries alos adopt recommendations from European and international organizations
+
+Basel Committee on Banking Supervisions (BCS, under Bank for International Settlements BIS) publishes the Basel regulations (for supervising banks)
+
+**Key aim** for each of the Basel accords:
+ 
+* Basel I (1998): set minimum capital requirements for banks
+* Basel II (2004): intended to supersede Basel I
+* Basel III: developed post 2008 to works alongside Basel II and focuses primarily on specific liquidity, systemic and counterparty risks
+
+### 3 Pillars of the Basel Accords:
+
+***Pillar 1:***
+
+Minimum **regulatory capital** based on credit, market and op-risk exposed
+
+***Pillar 2:***
+
+Deals with the issues of **Supervisory review**, which relates to the bank's internal risk management processes  
+
+Supervisors will assess the banks's internal systems, processes and risk limits to ensure that the bank has set aside sufficient capital for its risks  
+
+Liquidity and concentration risk is a particular focus
+
+***Pillar 3:***
+
+Deals withthe level of **disclosure** that the bank is required to undertake to the public and the market  
+
+Purpose is to facilitate market discipline on firms through appropriate pricing for capital
+
+### Basel II Criticism
+
+Too much emphasis on a **single number** that aggregates a wide variety of risks
+
+Some risk (e.g. op-risk) are **difficult to quantify**
+
+Some risk (e.g. liqudity) are only given cursory consideration
+
+More complex calculations $\neq$ more reliable calculations
+
+**Costly** to implement particularly if banks want to use internal model (to take advantage of the more beneficial capital regimes)
+
+**Risk-herding**, since banks all measure risk the same way, they might tyr to protect themselves in the same way at the same time of crisis
+
+MV may undervalue certain assets (e.g. gov fixed income)
+
+Implied levels of confidence could be spurious as some securities (e.g. CDOs) have not existed for very long
+
+**Pro-cyclicality**, the systemic risk that assets may need to be sold if their market value falls, which forces price even lower
+
+Overconfident in risk control due to the complexity of the risk modeling
+
+### Basel III Responses
+
+Strengthens the capital requirements for banks
+
+* Limiting cross-holding in other financial institutions and associated to limited systemic risk
+
+Introduces a conservation buffer to provide breathing space in times of financial stress
+
+Changes the minimum ratios of Tier 1 and Tier 2 capital
+
+Allows some flexibiility in capital requirements in times of financial crisis to limit pro-cyclicality
+
+Criticisim: continue to use risk-weighting dependent upon subjective rating agency assessments
+
+## Solvency II
+
+Again main focus is on the 3 pillars
+
+SII is applicable to insurers operating in the EU with many similarity to Basel II
+
+### SII Goal
+
+Introduce economic **risk-based** solvency requirements
+
+More comprehensive requirement of both the **asset and liability** side risks
+
+Requirement to hold capital against **market, credit, op, underwriting risk**
+
+Emphasis on the fact that **capital is not the only (or best) way** to miliate against failures
+
+More **prospective** focus
+
+Streamlined approach which aims to recognise the **eonomic reality** of how groups operate
+
+### SII Pillars
+
+***Pillar 1***
+
+**Quantitative** requirements
+
+* Designed to capture u/w, credit, market, op, liquidity and event risks
+* Can use standard formula or internal model
+* Thresholds:
+    * Solvency Capital Requirement (SCR): below which regulatory action is taken
+    * Minimum Capital Requirement (MCR): below which authoriztion if foregone
+
+***Pillar 2***
+
+**Qualitative** requirements
+
+* Requirements on undertakings such as risk management well as supervisory activities
+* Carry out Own Risk and Solvency Assessment (ORSA) to quantify their ability to continue to meet the SCR and MCR in the near future
+
+***Pillar 3***
+
+Covers supervisory reporting and **disclosure**
+
+### ORSA
+
+Purpose:  
+Provide board and sr mgmt of an insurance company with an assessment of
+
+* Adequacy of its risk management
+* Current, and likely future solvency position
+
+ORSA requirements:
+
+* Identify the risk exposed
+* Identify the RM processes and controls in place
+* Quantify is ongoing ability to continue to meet is solvency capital requirements (both MCR and SCR)
+    * Projections of financial position over terms longer than that normally required to calculate regulatory capital reqirements
+* Analyse quantitatibe and qualitative elements of its business strategy
+* Identify the relationship between RM and the level and quality of financial resources needed and available
+
+ORSA is now part of the International Association of Insurance Supervisors (IAIS) standards
+
+* Overall principles are equivalent across jurisdictions with some different details
+
+ORSA can be a tool for:
+
+* Improving insurance business practice
+* Allowing requlators to enhance their assessments of the ability of insurance companies to withstan stress events
+
+### Basel II vs. SII
+
+Similarity:
+
+* 3 pillars and each deals with similar aspects of the company's risk (capital, supervisory and disclosure)
+
+* Largely risk-based (vs SI was volume based) e.g. allocate capital to business areas that run the highest risk (can deal with embeded options, guarantees, and other non-volume related risk)
+
+* Designed to be suitable for multi national firms
+
+* The approaches to regulation are consistent for both banking and insurance business
+
+Differences:
+
+* Basel II is based on the concept that market participants are dependent on one another and there is **significant contagion** risk in the banking sector
+
+* SII was not designed with systemic risk in mind as it is considered unlikely that the demise of one insurer will affect others
