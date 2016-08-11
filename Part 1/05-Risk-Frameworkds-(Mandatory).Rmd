@@ -22,14 +22,14 @@ Understand risk frameworks in regulatory environments
 
 This discuss external risk frameworks (regulators and credit rating agency etc) that can influence an organization's approach to ERM
 
-External parties may prescribe or limit a company's activites or demand certain standards (e.g. capital requirement) to minimize risk to various stakeholers
+External parties may prescribe or limit a company's activities or demand certain standards (e.g. capital requirement) to minimize risk to various stakeholders
 
 * External risk frameworks are usually applied as a whole
 * They can be mandatory (Basel Accords), advisory (ISO 31000) or voluntary (S&P credit rating criteria)
 
 ## External superivision
 
-Prudential supervisory processess:
+Prudential supervisory processes:
 
 * Oversight (e.g. financial)
 * Licensing
@@ -44,7 +44,7 @@ Different parts of the organizations can be subject to different regulatory regi
 * International business are regulated by different territories
 * Subsidiaries that operate in different industry sectors (Finance vs manufacturing) or different areas within the same sector (banking vs insurance)
 * Subsidiaries or portfolios within the same sector that are subject to different regulatory requirements (insurer vs captive)
-* Subsidiaries that a new ventures or acquisitions and are at different lifecycle stages
+* Subsidiaries that a new ventures or acquisitions and are at different life cycle stages
 
 #### Categories of supervisors 
 
@@ -55,7 +55,7 @@ In addition to government
 Role:
 
 * Ensure members are adequately trained (through exams)
-* Ensure members maintain their competence, throgh CE
+* Ensure members maintain their competence, through CE
 * Some can discipline members that fail to maintain appropriate standards
 
 **Professional regulators** (e.g. CFA, FRC)
@@ -81,7 +81,7 @@ These bodies have a clear bias
 Role:
 
 * Act on behalf of government to protect the public by controlling the activities of firms and individuals operating in a particular industry
-* Goal is to prevent problems occuring rather than punishing
+* Goal is to prevent problems occurring rather than punishing
 
 **Different regulatory regime**
 
@@ -93,7 +93,7 @@ Unified regulation
 
 * Single regulator covers a broad range of activities (e.g Australia)
 * Pros:
-    * Easeir to regulate conglomerats
+    * Easier to regulate conglomerates
     * Ensure consistency in approach across activities
     * Limits incentive for regulatory arbitrage (firm picking the most favorable environment)
     * Economies of scale
@@ -112,8 +112,8 @@ Aspects considered by a supervisor when developing their understanding of an ins
 Reasons insurer should **engage proactively** with their supervisors
 
 * Insurer-regulator relationship should be a key component of an insurer's ERM framework
-* Regulatory enganges in risk-based regulation (focusing on riskiest companies) and by proactively engaging regulators, it helps to reduce the level of risk a supervisor places on a particular insurer
-* Regulators are also well place to advise on what is best practice (as they see a wide range of RM practices), more likely to benefit from such adivce with proactive engagement
+* Regulatory engages in risk-based regulation (focusing on riskiest companies) and by proactively engaging regulators, it helps to reduce the level of risk a supervisor places on a particular insurer
+* Regulators are also well place to advise on what is best practice (as they see a wide range of RM practices), more likely to benefit from such advice with proactive engagement
 
 Ways to best engage with supervisors for an international insurer
 
@@ -150,21 +150,21 @@ FCA has the **UK Listing Authority (UKLA)** which:
 
 * Ensures that listed companies comply with certain standards set out in the Listing Rules
 * Requires that listed companies comply with certain disclosure rules on an ongoing basis
-* Ensures that companies either comply with the Combined Coe of Corporate Governance 2003, or state why they are not
+* Ensures that companies either comply with the Combined Code of Corporate Governance 2003, or state why they are not
 * Has power to suspend trading in a company's share or cancel their listing
 * So similar to SEC?
 
 #### London Stock Exchange (LSE)
 
 * Has 2 main traded markets: main market and alternative investment market (AIM)
-* There are >300 companies that are traded as "members" (i.e. they eal directly with one another through the exchange, other companies have to dal with member firms, who then hedge their own positions)
-* LSE is regulated by the Office of Fair Trading (OFT) and its servcies must comply with certain standards such as EU market standards set out in the Investment SErvices Directive (ISD)
+* There are >300 companies that are traded as "members" (i.e. they deal directly with one another through the exchange, other companies have to deal with member firms, who then hedge their own positions)
+* LSE is regulated by the Office of Fair Trading (OFT) and its services must comply with certain standards such as EU market standards set out in the Investment Services Directive (ISD)
 
 ## Basel Accords
 
 Focus here is on the 3 pillars
 
-Banks are regulated by the country they are based in (e.g. PRA for UK) but countries alos adopt recommendations from European and international organizations
+Banks are regulated by the country they are based in (e.g. PRA for UK) but countries also adopt recommendations from European and international organizations
 
 Basel Committee on Banking Supervisions (BCS, under Bank for International Settlements BIS) publishes the Basel regulations (for supervising banks)
 
@@ -172,7 +172,7 @@ Basel Committee on Banking Supervisions (BCS, under Bank for International Settl
  
 * Basel I (1998): set minimum capital requirements for banks
 * Basel II (2004): intended to supersede Basel I
-* Basel III: developed post 2008 to works alongside Basel II and focuses primarily on specific liquidity, systemic and counterparty risks
+* Basel III: developed post 2008 to works alongside Basel II and focuses primarily on specific liquidity, systemic and counterpart risks
 
 ### 3 Pillars of the Basel Accords:
 
@@ -184,13 +184,13 @@ Minimum **regulatory capital** based on credit, market and op-risk exposed
 
 Deals with the issues of **Supervisory review**, which relates to the bank's internal risk management processes  
 
-Supervisors will assess the banks's internal systems, processes and risk limits to ensure that the bank has set aside sufficient capital for its risks  
+Supervisors will assess the bank's internal systems, processes and risk limits to ensure that the bank has set aside sufficient capital for its risks  
 
 Liquidity and concentration risk is a particular focus
 
 ***Pillar 3:***
 
-Deals withthe level of **disclosure** that the bank is required to undertake to the public and the market  
+Deals with the level of **disclosure** that the bank is required to undertake to the public and the market  
 
 Purpose is to facilitate market discipline on firms through appropriate pricing for capital
 
@@ -200,13 +200,13 @@ Too much emphasis on a **single number** that aggregates a wide variety of risks
 
 Some risk (e.g. op-risk) are **difficult to quantify**
 
-Some risk (e.g. liqudity) are only given cursory consideration
+Some risk (e.g. liquidity) are only given cursory consideration
 
 More complex calculations $\neq$ more reliable calculations
 
 **Costly** to implement particularly if banks want to use internal model (to take advantage of the more beneficial capital regimes)
 
-**Risk-herding**, since banks all measure risk the same way, they might tyr to protect themselves in the same way at the same time of crisis
+**Risk-herding**, since banks all measure risk the same way, they might try to protect themselves in the same way at the same time of crisis
 
 MV may undervalue certain assets (e.g. gov fixed income)
 
@@ -226,9 +226,9 @@ Introduces a conservation buffer to provide breathing space in times of financia
 
 Changes the minimum ratios of Tier 1 and Tier 2 capital
 
-Allows some flexibiility in capital requirements in times of financial crisis to limit pro-cyclicality
+Allows some flexibility in capital requirements in times of financial crisis to limit pro-cyclicality
 
-Criticisim: continue to use risk-weighting dependent upon subjective rating agency assessments
+Criticism: continue to use risk-weighting dependent upon subjective rating agency assessments
 
 ## Solvency II
 
@@ -244,11 +244,11 @@ More comprehensive requirement of both the **asset and liability** side risks
 
 Requirement to hold capital against **market, credit, op, underwriting risk**
 
-Emphasis on the fact that **capital is not the only (or best) way** to miliate against failures
+Emphasis on the fact that **capital is not the only (or best) way** to militate against failures
 
 More **prospective** focus
 
-Streamlined approach which aims to recognise the **eonomic reality** of how groups operate
+Streamlined approach which aims to recognize the **eonomic reality** of how groups operate
 
 ### SII Pillars
 
@@ -260,7 +260,7 @@ Streamlined approach which aims to recognise the **eonomic reality** of how grou
 * Can use standard formula or internal model
 * Thresholds:
     * Solvency Capital Requirement (SCR): below which regulatory action is taken
-    * Minimum Capital Requirement (MCR): below which authoriztion if foregone
+    * Minimum Capital Requirement (MCR): below which authorization if foregone
 
 ***Pillar 2***
 
@@ -286,8 +286,8 @@ ORSA requirements:
 * Identify the risk exposed
 * Identify the RM processes and controls in place
 * Quantify is ongoing ability to continue to meet is solvency capital requirements (both MCR and SCR)
-    * Projections of financial position over terms longer than that normally required to calculate regulatory capital reqirements
-* Analyse quantitatibe and qualitative elements of its business strategy
+    * Projections of financial position over terms longer than that normally required to calculate regulatory capital requirements
+* Analyse quantitative and qualitative elements of its business strategy
 * Identify the relationship between RM and the level and quality of financial resources needed and available
 
 ORSA is now part of the International Association of Insurance Supervisors (IAIS) standards
@@ -297,7 +297,7 @@ ORSA is now part of the International Association of Insurance Supervisors (IAIS
 ORSA can be a tool for:
 
 * Improving insurance business practice
-* Allowing requlators to enhance their assessments of the ability of insurance companies to withstan stress events
+* Allowing regulators to enhance their assessments of the ability of insurance companies to withstand stress events
 
 ### Basel II vs. SII
 
@@ -305,14 +305,76 @@ Similarity:
 
 * 3 pillars and each deals with similar aspects of the company's risk (capital, supervisory and disclosure)
 
-* Largely risk-based (vs SI was volume based) e.g. allocate capital to business areas that run the highest risk (can deal with embeded options, guarantees, and other non-volume related risk)
+* Largely risk-based (vs SI was volume based) e.g. allocate capital to business areas that run the highest risk (can deal with embedded options, guarantees, and other non-volume related risk)
 
 * Designed to be suitable for multi national firms
 
 * The approaches to regulation are consistent for both banking and insurance business
 
-Differences:
+Differences: contagion risk
 
 * Basel II is based on the concept that market participants are dependent on one another and there is **significant contagion** risk in the banking sector
 
-* SII was not designed with systemic risk in mind as it is considered unlikely that the demise of one insurer will affect others
+* SII was not designed with systemic risk in mind as it is considered unlikely
+
+## Sarbanes Oxley
+
+The 2002 SOX legislation was driven by the sudden collapse of Enron and WorldCom due to serious failing in their accounting reports
+
+Goal of SOX was to improve the reliability of corporate disclosures to protect s/h
+
+Primary legislation, not voluntary code as in the UK
+
+***Key features*** of SOX:
+
+* Formation of the **Public Accounting Oversight Board** (PAOB)
+    * To inspect published account of quoted firms, and
+    * To prosecute any accountancy firm deems to be in breath of the regulations
+* **Increased accountability** of CEOs and CFOs of public companies
+    * Required to certify that the financial statements do not contain any untrue facts and are personally responsible for financial disclosures in the financial reports
+* Each published report must contain an internal control report (ICR) which commits management to maintain proper **internal controls** and review their effectiveness
+* Requirement for external auditors to **report on the assessment made by the management**
+* Made it illegal for management to interfere with the audit process
+* Make it illegal to destroy records or documents with intent to influence an investigation
+
+Key themes for management to consider as part of their **governance, risk and compliance** (GRC) system
+
+* Are controls identified and documented?
+* Are controls consistent across the business
+* Do controls address the critical factors? (i.e. the right controls in place?)
+* Do the controls include RM?
+* What testing procedures are required before signing off the ICR
+
+### COSO ERM Framework
+
+SOX requires demonstration of adequate internal controls
+
+* Many companies use COSO ERM framework (voluntary) to demonstrate the above
+
+COSO (Committee of Sponsoring Organizations of the Treadway Commission) issued a set of definitions and standards against which organizations can assess their internal control
+
+***Principles*** of the COSO framework
+
+* Risk represents opportunity as well as downside
+* ERM is a parallel and iterative process
+* Everyone at all levels has a role in RM
+* Any RM process is imperfect
+* Implementation of RM must balance cost with potential benefit
+
+***Dimensions*** of the COSO cube
+
+* ERM **components/process** (e.g. risk assessment, monitoring)
+* in each **business objective** covered by the framework (e.g. operational, strategic)
+* and at each **business level** of application (e.g. subsidiary, unit)
+
+![](figures/figure-04.01.png)
+
+## Swiss Solvency Test
+
+SST is a risk-based regulatory capital regime which has been fully in-forces in Switzerland since 1/1/2011
+
+* Market consistent approach
+* Similar requirements as SII Pillar 1
+* Difference
+    * Calibrates to 99% TVaR (instead of 99.5 VaR)
+    * Extreme scenarios have to be evaluated and the impact on the target capital has to be estimated
