@@ -188,3 +188,92 @@ Policy generally cover a similar time period to that of the company's business p
 
 ## Expressing Risk Appetite
 
+Risk appetite: degree of risk that an org. is willing to accept in order to achieve objectives
+
+* Reflect the org. capacity to absorb risk
+
+**Factors** that impact the company's risk appetite:
+
+* Objective and culture
+    * Consideration of the level and types or risk that are desired in order to meet objectives (including objecives of value creation and growth)
+* Current overall business environment
+* How successful the company is currently
+* Risk tolerance (i.e. how much risk the org. is prepared to retain or how much variability it is prepared to withstand)
+
+Cleary articulated risk appetite can then be translated into a desired risk profile for the org.
+
+* Not an easy task especially for multinational org. with numerous semi-autonomous subsidiaries
+
+Job of the risk mangers (and all managers):  
+Work towards the desired risk profile through taking actions at the org. level, at the level of individual LoB, and with reference to individual risk categories
+
+Key role of the RM function:  
+Establish at Board level the company's appetite for risk and to translate this guidance into a set of risk tolerances for the whole of the org.
+
+Difficult to set tolerances with many subsidiaries
+
+* One way to spread the risk appetite is to require business units to bid for a chunk of the company's overall risk appetite
+
+***Board's Role***
+
+Successful RM operation requires the active interest of the Board
+
+* Process of establishing risk appetite and risk tolerance is therefore part of this engagement
+
+Board's expression of its risk appetite need not to be complex, can be expressed as a short and clear set of statements related to one or more measure of risks
+
+* Company's solvency level
+* Credit rating
+* Earnings and ability to pay dividends
+* Economic value
+* etc
+
+The statement often needs to be translated into a more probabilistic statement as breaches can not be completely prevented
+
+e.g.  
+The solvency level *SCR* should stay above *140%*  with *99.5% probability over *one year* horizon  
+Probability that the company's credit rating is reduced from AAA to A or worse in the next 12 months should be < 1%  
+[Other examples](http://www.lloydsbankinggroup.com/globalassets/documents/investors/2014/2014_lbg_annual_report.pdf)
+
+Board may express their risk appetite using a combination of statements linked to several metrics
+
+Lam shoes one potential template for a risk appetite statement subdivided by risk type (strategic, financial, operational, compliance, reputational, etc)
+
+### Example of Risk Appetite Statements
+
+From [Lloyd's banking](http://www.lloydsbankinggroup.com/globalassets/documents/investors/2014/2014_lbg_annual_report.pdf)]
+
+Credit risk:
+
+Credit risk appetite is described and reported on a monthly basis through a suite of Board metrics derived from a combination of accounting and credit portfolio performance measures, which include the use of credit risk rating systems as inputs...
+
+The metrics cover but are not limited to geographic concentration, single name customer concentration, mortgage exposure, Loan to Value ratios (LTVs), higher risk sector concentration, limit utilisation, leveraged exposure, equity exposure, affordability and the quality of new lending
+
+Conduct risk:
+
+The Group has no appetite for systemic unfair customer outcomes arising from any of its activities: through product design, sales or other after sales processes
+
+Operational risk:
+
+The Group’s Operational risk appetite is designed to safeguard the interests of customers, internal and external stakeholders, and shareholders. Appetite is expressed through six high level statements summarised below, each of which are defined with limits and triggers approved by the Board, and are regularly monitored by executive and Board risk committees
+
+Financial loss: The Group does not expect to experience cumulative fraud or operational losses above a defined level of budgeted Group income, or individual losses above a defined amount
+
+### Different Stakeholders
+
+Different stakeholders have differnet risk tolerance (e.g. bondholders have lower risk tolerance than equity investors)
+
+Board might state different objectives each with different stakeholders in mind, e.g.
+
+* Reference to solvency level will be relevant to policyholders and regulators
+* Earnings and dividends will be relevant to others such as equity investors
+* As a variant, express the objective to maximize economic vallue for s/h subject to one or more constraints that focus on the p/h or regulators (e.g. keeping solvency level > than a threshold with a given probability)
+
+Risk tolerances of different stakeholders will be difficult to determine
+
+* Possible to use utility (or preference) function but that can be equally difficult to express
+
+## Translating Risk Appetite to Action
+
+## Establishing Risk Tolerances and Risk Limits
+
