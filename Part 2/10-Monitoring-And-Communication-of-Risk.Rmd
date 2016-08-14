@@ -1,0 +1,273 @@
+---
+title: "Module 10: Monitoring and Communication of Risk"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Discuss the framework for risk management and control within a company
+
+* Describe an appropriate framework for an organization's ERM
+* Describe governance issues including market conduct, audit, and legal risk
+* Discuss the cultural aspects of risk assessment and management including the problems of bias
+
+Describe how to determine a company's risk appetite, risk capacity and risk objectives
+
+Discuss the application of the RM control cycle, including the relevance of external influences and emerging risks
+
+***
+
+Information require to meet each accountabilities and responsibilities thus far is obtained by means of monitoring and communication processes within the organization
+
+This module will consider all the activities associated with the monitoring of:
+
+* Risk exposures
+* Risk processes
+
+## Monitoring Requirements
+
+***Data and Resources**
+
+Org. must **gather suitable data** (int. and ext.) on which to base its risk analysis to support the risk monitoring and communication process
+
+* Quality of the outcome of the RM process is dependent on the quality of data used
+
+Need to **invest in appropriate systems and technology** with **adequate HR to support** this process
+
+People need to have clear objectives and reporting lines
+
+***Documentation***
+
+RM process should be supported with thorough documentation using common templates cross business
+
+Things that should be properly documented
+
+* RM decisions made and reasons
+* Systems (e.g. system spec and user acceptance testing of IT systems)
+* Financial models (incl. assumptions and data used)
+* Risk management failures (incl. nature of failure and losses incurred)
+
+***Information***
+
+Substantial amount of information is needed to operate and manage risk effectively
+
+Information needs to be delivered in a **timely** manner and **reliable**
+
+There's trade off between collecting too much data so that processing it cannot be usefully digested and too little, so that it is uninformative
+
+***Communication***
+
+The way that information is collected and disseminated
+
+Types of communication
+
+* Internal (management info): about what is happening inside the business (e.g. CF position, sales, inventory levels)
+* External (inwards): what is happening outside the company (e.g. competitors' sales)
+* External (outwards): distributing information about the company to interested parties (e.g. media, s/h, regulators)
+* Informal: Word of mouth (or social media)
+* Formal: through corporate intranet, management information systems, reports and or corporate newsletters
+
+RM process and results must be communicated effectively to stakeholders to **enable them to monoitor** the RM strategies and complete the necessary feedback loops
+
+* Internal communications (e.g. to Board or relevant committees)
+    * So they are fully appraised on the risk being faced by the org. and how they are being dealt with
+* External communications (e.g. supervisory bodies, investors, analysts)
+    * Need to clearly articulate its risk management strategies to these key stakeholders to receive the full benefit of its investment in ERM
+    * Just need to be aware of sharing sensitive information
+
+Have a consistent risk language (taxonomy) to avoid problems such as duplication or omission of risk
+
+* Serve to increase the speed with which ERM becomes embedded in an organization, and is particularly important for multi-national companies, where the use of different terminology in different domains can confound the ERM process
+
+## Risk Metrics
+
+Risk metrics are included in regular risk reporting
+
+* Important part of the feedback loop so the Board can monitor the amount of risk being taken and whether risk policies are effective
+
+Suite of risk metrics are developed to support the implementation of the risk appetite framework
+
+* Designed to measure whether the company is operating within its risk tolerance limits
+* Easier to use in real business decisions
+* Risk appetite and risk tolerance statements are typically probabilistic statements relating to financial and non financial events $\therefore$ difficult and time consuming to measure
+
+Consist of quantitative and qualitative indicators of the level or risk in a specific part of the organization
+
+Each level of risk appetite statement may utilize a number of risk metrics (see mod 14 for more)
+
+Risk metrics can be found at a supporting level below the detail included in the risk tolerance and limit statements
+
+* e.g. IT systems downtime and staff turnover rates can be used as indicator of the level of op-risk to which the org. is exposed to
+* Quantitative or qualitative thresholds in these metrics may act as triggers to identify potential problem areas so that actions can be taken
+
+### Risk Metrics Examples
+
+Board set limit on the level of market risk
+
+RM function then implement this limit by conducting analysis to identify the key drivers of market risk that might lead to a breach of this limit (e.g. equity and interest rate risk)
+
+RM function than decide to monitor simple indicators such as the % of equity in the portfolio and the level of duration mismatch between asset and liabilities for a quick and early indication of changes in the risk profile that may lead to a breach of risk tolerance
+
+These indicators are the risk metrics
+
+## Key Risk Indicators
+
+Need to develop a range of quantitative and qualitative risk metrics to ensure that they have a board view of their risk exposures
+
+KRIs are risk metrics that form a key part of an organization's risk management framework
+
+* Design, implement, monitor and report of KRI is part of the EMR control cycle (from mod 8)
+
+Managers can use KRIs to identify when risk limits are close to being exceeded
+
+* Prompt actions designed to keep the organization within its risk tolerances
+
+Factors to consider on what KRIs to use:
+
+* Policies and regulations (e.g. regulatory limits)
+* Strategies and objectives (e.g. volatility of results)
+* Pass losses and incidents (to help judge what is significant)
+* Stakeholder requirements (e.g. variables monitored by credit rating agencies)
+* Risk assessments (some areas maybe require closer scrutiny than others)
+
+Desirable features of KRI:
+
+* Quantifiable (i.e. %, $, numbers)
+* Based on consistent methodologies and standards
+* Incorporate key risk drivers (exposure, probability, severity and correlation)
+* Tracked over time
+* Tied to objectives
+* Linked to an accountable individual
+* Useful in decision making
+* Able to be bench-marked externally
+* Timely
+* Cost effective to measure
+* Simple (not simplistic)
+* Balance of leading and lagging indicators
+
+## Risk Reporting
+
+### Feedback Loops
+
+Feedback loop is a process by which management and other stakeholders are informed of any significant issues or changes in the business and/or the environment
+
+Information about changes may come from sources that provide information about past events, the presents or expectations for the future
+
+Incorporating feedback loops is one way in which an org. can ensure that its ERM framework is able to identify and respond appropriately to such changes
+
+### Reporting Processes
+
+Effective reporting process is important to ensure stakeholder have the risk information they require
+
+* Ensure RM framework is embedded within an org.
+* Allow risk to be reflected in management decisions and for effective monitoring of risk levels
+
+Board and sr mgmt need info and feedback to assess how well the RM policies are working and what improvements need to be made
+
+Risk reporting should answer **5 key questions**
+
+* Are our business objectives as risk?
+* Are we in compliance with policies, laws and regulations?
+* What risk incidents have been escalated and require attention?
+* What KPIs or KRIs need attention?
+* What risk assessments need to be reviewed?
+
+Risk reporting should be:
+
+* Clear and relevant
+* Closely linked to the management of the org.'s risk appetite and risk tolerances
+* Link clearly to decisions that the org. needs to make
+* Include KRIs to provide sufficient information to allow clear and timely decision making
+
+Need to balance between the need to include all relevant information vs need for clarity and simplicity
+
+* Important that it includes information at the appropriate level of detail for the intended audience
+
+**Key components of risk report to a Board**
+
+* Qualitative and quantitative information
+* Summary of losses and incidents
+* Summary of business risks and the key discussions and decisions required from the Board
+* Narrative from management on important data and trends
+* KPIs against KRIs with important deviations and trends highlighted
+* Important events / milestones (e.g. regulatory visit)
+
+Risk reports to business managers can be more detailed with an emphasis on quantitative rather than qualitative analysis (more in mod 14)
+
+Risk report structure:
+
+* Split according to risk types and operating units
+* Include summaries of key risk areas (in tabular or graphical form)
+* Indication of likelihood and severity of impact of each key risk areas
+* Traffic light systems (RAG) are common way in which to highlight areas of focus
+
+Risk management actions should also be monitored and evaluated within the risk report (incl. clear statement of accountabilities) and consider the effectiveness of such actions against the status of each risk area
+
+Should also report on **new, emerging risks** and **trends over time**
+
+Data is typically abundant in a large org. but the difficulties is in how to best summarize and present the data to sr mgmt
+
+* Need to present sufficient data to ensure decision makers are well informed yet not so much data that they can't see the wood for the trees
+
+***Report Design***
+
+Best design using a top down approach
+
+* For a given audience, think about what information they need to make the decisions they are responsible for
+* Once identified, the information needs to be presented in a way that is easily understood
+
+Good:  
+Forward looking, dynamic, decisions-driven, online
+
+Bad:  
+Historically focused, silo-based, data driven, manually prepared, paper based, static
+
+Good reporting systems provide:
+
+* Single point of access to critical risk information collated from various risk systems and data sources
+* Role-based summary of risk to key decision makers with drill-down capabilities to more detailed information
+* Prioritized just-in-time information (e.g. from real-time alerts to quarterly summaries)
+* Mixture of qualitative/ quantitative, internal/external data
+* Opportunity for users to provide commentary, explanation or analysis of the information
+
+Bad reporting systems:
+
+* Simply collating data from silos
+* Overwhelming users with too much information
+* Providing too much qualitative data that does not aid decision making
+* Focusing on quantity rather than quality of information
+
+See example of [2001 GE Business cockpit](http://www.ge.com/annual01/letter/cockpit/)
+
+#### Balanced Scorecard / Dashboard
+
+Balanced scorecard
+
+* Integrates business and financial reporting
+* Risk assessment in the form of KRIs is usually incorporated (on top of KPIs)
+
+Area of assessment
+
+* Finance
+* Stakeholders (e.g. customers or clients)
+* Growth and learning
+* Internal business processes
+
+Similar to Lam's dashboard reporting
+
+* Can apply this broad balanced scorecard approach to reporting on the effectiveness of the ERM function
+
+Example of an ERM scorecard to assess an ERM function
+
+* Is the cost of risk minimized? (losses and mitigation/ management cost)
+* No surprises on regulatory/ policy violations?
+* Performance based feedback loops (e.g. risk assessments ex-ante vs actual losses / events ex-post)
+* ERM development milestones met?
