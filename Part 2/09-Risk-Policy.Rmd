@@ -15,7 +15,7 @@ output:
 
 Describe how to determine a company's risk appetite, risk capacity and risk objectives
 
-* Describe how a board might express and communicate its expectations and requirements by means of a **risk policy** (including risk appetitie statement)
+* Describe how a board might express and communicate its expectations and requirements by means of a **risk policy** (including risk appetite statement)
 * Consider how an organization may assess and describe its risk appetite
 * Consider how an organization maybe make use of a risk appetite statement when managing its risks (including establishing risk tolerances)
 
@@ -27,7 +27,7 @@ Will need to demonstrate how to articulate a desired risk appetite and profile; 
 Definitions varies, so best to focus on the underlying principles
 
 ***Risk Profile***  
-Complete description of the risk exposures of an organiztion
+Complete description of the risk exposures of an organization
 
 * Includes: Risk that might emerge in the future and that will affect the current business of the organization
 
@@ -48,7 +48,7 @@ A more detailed set of statements (from risk appetite), many quantitative or sta
 ***Risk Limits***  
 Group of guidelines that set limits on acceptable actions that might be taken today
 
-* Each BUs need to work withint the risk limits to be deemed working within it permitted risk tolerances
+* Each BUs need to work within the risk limits to be deemed working within it permitted risk tolerances
 * Risk limits is a component of risk capacity
 
 ***Risk Capacity***  
@@ -68,7 +68,7 @@ Regardless of the definitions, the key is to establish risk management policy wi
 * Breakdown of the upper bound and risk targets into more detailed statements
 * Detailed operational guidelines for managers so that they can ensure the boundaries are not breached
 
-The risk appetite (amount of risk the organiztion is willing to take) can be considered as the lower of the organization's risk capacity and its desired risk exposure/profile
+The risk appetite (amount of risk the organization is willing to take) can be considered as the lower of the organization's risk capacity and its desired risk exposure/profile
 
 * $\text{Risk Appetite} = \mathrm{min}[\text{Risk Capacity}, \text{Desired Risk Exposure/Profile}]$
 
@@ -78,7 +78,7 @@ Operationally, risk managers should ensure that the people they work with all ha
 
 ## Utility Functions
 
-Ultility function is an expression of risk aversion
+Utility function is an expression of risk aversion
 
 * Useful when considering a companies' risk appetite
 
@@ -88,15 +88,15 @@ $u: \mathbb{R} \rightarrow \mathbb{R}$
 
 Measure of happiness (or satisfaction) as a function of wealth ($W$)
 
-Different org. or indiv. will have their own utility funtion $u$
+Different org. or indiv. will have their own utility function $u$
 
 * Each will gain a certain amount of satisfaction from a given amount of wealth
 
-$\therefore$ Each will have a different attitude to potential gains or losses when presented with a certain risk/reward opporunity
+$\therefore$ Each will have a different attitude to potential gains or losses when presented with a certain risk/reward opportunity
 
 **Features**:
 
-* Monotonicaly increasing i.e. more is better
+* Monotonically increasing i.e. more is better
 * Concave down so the amount of marginal utility decreases with marginal increase in wealth e.g. people are risk averse
 
 **Absolute risk aversion**:
@@ -114,7 +114,7 @@ $r(W) = W \times a(W)$
 $u(W) = \alpha W - \dfrac{1}{2}W^2$
 
 * Maximize expected wealth subject to volatility
-* Increasing absolute and constand risk aversion i.e. $a(W)$ increase with $W$
+* Increasing absolute and constant risk aversion i.e. $a(W)$ increase with $W$
 
 ***Exponential***
 
@@ -178,7 +178,7 @@ Includes the following 3 sections
 
 ***Risk management processes and benchmarks***
 
-* Overview of each stage of the risk managment process
+* Overview of each stage of the risk management process
 * Risk appetite and tolerance statements
 * Risk policy standards, to ensure risk policies are consistent across the org.
 
@@ -195,12 +195,12 @@ Risk appetite: degree of risk that an org. is willing to accept in order to achi
 **Factors** that impact the company's risk appetite:
 
 * Objective and culture
-    * Consideration of the level and types or risk that are desired in order to meet objectives (including objecives of value creation and growth)
+    * Consideration of the level and types or risk that are desired in order to meet objectives (including objectives of value creation and growth)
 * Current overall business environment
 * How successful the company is currently
 * Risk tolerance (i.e. how much risk the org. is prepared to retain or how much variability it is prepared to withstand)
 
-Cleary articulated risk appetite can then be translated into a desired risk profile for the org.
+Clearly articulated risk appetite can then be translated into a desired risk profile for the org.
 
 * Not an easy task especially for multinational org. with numerous semi-autonomous subsidiaries
 
@@ -247,7 +247,7 @@ Credit risk:
 
 Credit risk appetite is described and reported on a monthly basis through a suite of Board metrics derived from a combination of accounting and credit portfolio performance measures, which include the use of credit risk rating systems as inputs...
 
-The metrics cover but are not limited to geographic concentration, single name customer concentration, mortgage exposure, Loan to Value ratios (LTVs), higher risk sector concentration, limit utilisation, leveraged exposure, equity exposure, affordability and the quality of new lending
+The metrics cover but are not limited to geographic concentration, single name customer concentration, mortgage exposure, Loan to Value ratios (LTVs), higher risk sector concentration, limit utilization, leveraged exposure, equity exposure, affordability and the quality of new lending
 
 Conduct risk:
 
@@ -255,19 +255,19 @@ The Group has no appetite for systemic unfair customer outcomes arising from any
 
 Operational risk:
 
-The Group’s Operational risk appetite is designed to safeguard the interests of customers, internal and external stakeholders, and shareholders. Appetite is expressed through six high level statements summarised below, each of which are defined with limits and triggers approved by the Board, and are regularly monitored by executive and Board risk committees
+The Group’s Operational risk appetite is designed to safeguard the interests of customers, internal and external stakeholders, and shareholders. Appetite is expressed through six high level statements summarized below, each of which are defined with limits and triggers approved by the Board, and are regularly monitored by executive and Board risk committees
 
 Financial loss: The Group does not expect to experience cumulative fraud or operational losses above a defined level of budgeted Group income, or individual losses above a defined amount
 
 ### Different Stakeholders
 
-Different stakeholders have differnet risk tolerance (e.g. bondholders have lower risk tolerance than equity investors)
+Different stakeholders have different risk tolerance (e.g. bondholders have lower risk tolerance than equity investors)
 
 Board might state different objectives each with different stakeholders in mind, e.g.
 
 * Reference to solvency level will be relevant to policyholders and regulators
 * Earnings and dividends will be relevant to others such as equity investors
-* As a variant, express the objective to maximize economic vallue for s/h subject to one or more constraints that focus on the p/h or regulators (e.g. keeping solvency level > than a threshold with a given probability)
+* As a variant, express the objective to maximize economic value for s/h subject to one or more constraints that focus on the p/h or regulators (e.g. keeping solvency level > than a threshold with a given probability)
 
 Risk tolerances of different stakeholders will be difficult to determine
 
@@ -275,5 +275,43 @@ Risk tolerances of different stakeholders will be difficult to determine
 
 ## Translating Risk Appetite to Action
 
-## Establishing Risk Tolerances and Risk Limits
+Need to have these done before developing a risk tolerance statement
 
+* Develop a risk management policy (w/ risk appetite statement)
+* Identify its exposure to material risk
+
+### Establishing Risk Tolerances and Risk Limits
+
+Sr risk mgr (w/ discussion w/ Board) needs to translate the higher level statements of risk appetite to more detailed set of risk tolerances and risk limits across the enterprise
+
+Risk tolerance statement: describes the level of risk that the insurer is willing to bear
+
+* Generally apply at the whole org. level
+* Connected with company's strategy
+* Based on similar time horizon to the company's business plan
+
+Needs to be done in a holistic way to take advantage of synergies and to avoid unanticipated concentration of risk
+
+Cover the company's attitude to all risks:
+
+* Quantifiable: might be expressed in probabilistic terms (e.g. no more than 0.5% that losses attributable to market risk should exceed $100M over the next 12mo)
+    * Should have a statement for each category or risk and a full set of statements for each combination of category of risk and BU
+* Non-quantifiable: still need a clear statement on what is acceptable (e.g. prohibit people with criminal records from assurance function, thereby constraining exposure to certain unquantifiable operational risk
+
+### Risk Limits
+
+Statements of risk limit is manifested through expressing the risk tolerance statement in a way that can be easily understood and implemented by all staff
+
+* Translates the risk tolerance levels into operational limits for each major category of risk, taking into accounts any links between these categories
+
+* Limits can be set a multiple levels within the org. and give guidance to managers of about the maximum level of risk their unit(s) may take
+
+### Using Risk Appetite, Tolerances and Limits
+
+Use of risk tolerance:
+
+* Assessing the viability of proposed projects
+
+Need to have system in place in order that new opportunities are not thwarted by local risk tolerance and risk limits
+
+A process needs to be in place that considers the impact of the opportunity at the org. level, with appropriate adjustment to the company's complete specification of risk tolerances and risk limits if the new opportunity is considered to be to the company's benefit
