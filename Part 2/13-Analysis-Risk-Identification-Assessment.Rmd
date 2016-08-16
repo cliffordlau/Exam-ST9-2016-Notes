@@ -183,3 +183,66 @@ See Lam App to Ch.23 with the risk assessment self eval checklist
 ;
 * How well developed and mature their risk identification and assessment is
 * Degree of integration of RM across the org.
+
+## Risk Identification and Recording
+
+### Risk Identification Tools
+
+***SWOT Analysis***
+
+Framework for generating ideas in a structured and comprehensive ways
+
+Consider strengths, weakness, opportunities, and threats
+
+Use to establish what risks the company faces
+
+***Risk Checklist***
+
+List of risk identified in the past or from external source
+
+Need to make sure the information is relevant and up to date
+
+***Risk Prompt List***
+
+List of different categories of risk to consder and examples of each
+
+* Can be produced at an industry wide level
+
+Similar to risk trigger questions
+
+List situations and events that have previously emergerd and that should be considered
+
+e.g. PEST(ELI) analysis that covers political, economic, social, technology (environmental, legal and industry) risks
+
+***Risk Taxonomy***
+
+Structured way of classifying risks and breaking them down into components
+
+help to ensure that those involved in the process have a common understanding of the terms used in risk identification
+
+Less project specific than a checklist and less industry specific than an industry prompt list
+
+***Case Studies***
+
+Can help to understand th eimpact of risks in a specific context
+
+***Process Analysis***
+
+Build flow charts that detail business process and links between them
+
+Help identify the risks that arise at each stage
+
+Particularly suited to op-risk
+
+***
+
+Advantages of the tools above:
+
+* Provide a clear structure for the risk identification process
+* Improve the quanlity of the output (vs a less structured process)
+
+Disadvantage of the tools above:
+
+* Results may still not be comprehensive (e.g. due to bias in the process or the participants)
+
+### Risk Identification Techniques
