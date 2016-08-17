@@ -1,0 +1,42 @@
+---
+title: "Module 14: Introduction to Risk Measurement"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Properties and limitations of common risk measures
+
+* VaR
+* TVaR
+* Probability of ruin
+* Expected shortfall
+
+Describe how to choose a suitable time horizon and risk discount rate
+
+***
+
+Consider how to evalute risk measures: **coherence** and **convexity**
+
+Examine a range of risk measures and discuss their benefits and limitations
+
+Also discuss time horizon and how to choose an appropriate risk discount rate
+
+Exam Note:  
+Need to be able to assess the overall corporate risk exposure from financial and non financial risk (qual. & quant.)  
+For quantitative, need to identify and apply the most appropriate risk metrics given a particular scenario
+
+## Evaluating Risk Measures
+
+Coherence and convexity
+
+### Axioms of Coherence
+
