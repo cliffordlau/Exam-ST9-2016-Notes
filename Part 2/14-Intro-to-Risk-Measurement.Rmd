@@ -40,3 +40,71 @@ Coherence and convexity
 
 ### Axioms of Coherence
 
+Axioms of Coherence is a list of properties a good risk measure should have
+
+Assume:
+
+* A number of risk portfolios
+* $L_i$: Losses on each portfolio that follows certain probability distributions
+
+Risk measure:
+
+* A real-valued function $F$ satisfying certain properties
+* It indicates the amount of capital that should be added to a risk portfolio with loss distribution $L$ to make it acceptable to the risk-controller
+
+***Axiom 1 - Monotonicity***
+
+If $L_1 \leq L_2$ then $F(L_1) \leq F(L_2)$
+
+If risk ptf 2 has greater losses under all future scenarios than risk ptf 1  
+Then monotonic risk measure will indicate a greater amount of capital should be held for risk ptf 2 (not specified how much more)
+
+***Axiom 2 - Subadditivity***
+
+$F(L_1 + L_2) \leq F(L_1) + F(L_2)$
+
+Merger of risk situations does not increase the overall level of risk
+
+* It may decrease the overall level of risk due to diversification (see convexity)
+
+Note:
+
+* Non subadditive risk measures incentivise the breaking up of organization or portfolios to reduce risk
+* Subadditivity makes decentralization of risk management systems possible
+    * Since constraints can be placed on BUs and if they stay within these constraints then the overall risk level cannot exceed the sum of the parts
+
+***Axiom 3 - Positive homogeneity***
+
+$F(k \times L) = k \times F(L)$ for any constant $k \geq 0$
+
+If we double the size of the loss situation we double the risk
+
+* No reduction being given for non-existent diversification
+
+***Axiom 4 - Translation invariance***
+
+$F(L + k) = F(L) + k$ for any constant $k$
+
+If we add (or subtract) and amount to (or from) the loss, then the capital requirement needed to mitigate the impact of the loss increase (decrease) by the same amount
+
+### Convex Risk Measures
+
+$F(\lambda L_1 + (1 - \lambda) L_2) \leq \lambda F(L_1) + (1- \lambda) F(L_2)$ where $\lambda \in [0,1]$
+
+Diversification can reduce risk and the amount of risk capital needed
+
+Convexity follows from the subadditivity and positive homogeneity axioms (maybe find out more from books)
+
+## Deterministic Approaches
+
+Deterministic approaches to measuring risk
+
+**Deterministic** measures:  
+*(Pros)* Simplistic;  
+*(Cons)* Gives a board indication of the level of risk
+
+**Probablistic** measures:  
+*(Pros)* Potentially more accurate;  
+*(Cons)* More complex (greater model risk);  
+*(Cons)* Can imply inappropriate levels of confidence (esp. with tail risk estimation)
+

@@ -250,7 +250,62 @@ For quantitative, need to identify and apply the most appropriate risk metrics g
 <p>Coherence and convexity</p>
 <div id="axioms-of-coherence" class="section level3">
 <h3>Axioms of Coherence</h3>
+<p>Axioms of Coherence is a list of properties a good risk measure should have</p>
+<p>Assume:</p>
+<ul>
+<li>A number of risk portfolios</li>
+<li><span class="math inline">\(L_i\)</span>: Losses on each portfolio that follows certain probability distributions</li>
+</ul>
+<p>Risk measure:</p>
+<ul>
+<li>A real-valued function <span class="math inline">\(F\)</span> satisfying certain properties</li>
+<li>It indicates the amount of capital that should be added to a risk portfolio with loss distribution <span class="math inline">\(L\)</span> to make it acceptable to the risk-controller</li>
+</ul>
+<p><strong><em>Axiom 1 - Monotonicity</em></strong></p>
+<p>If <span class="math inline">\(L_1 \leq L_2\)</span> then <span class="math inline">\(F(L_1) \leq F(L_2)\)</span></p>
+<p>If risk ptf 2 has greater losses under all future scenarios than risk ptf 1<br />
+Then monotonic risk measure will indicate a greater amount of capital should be held for risk ptf 2 (not specified how much more)</p>
+<p><strong><em>Axiom 2 - Subadditivity</em></strong></p>
+<p><span class="math inline">\(F(L_1 + L_2) \leq F(L_1) + F(L_2)\)</span></p>
+<p>Merger of risk situations does not increase the overall level of risk</p>
+<ul>
+<li>It may decrease the overall level of risk due to diversification (see convexity)</li>
+</ul>
+<p>Note:</p>
+<ul>
+<li>Non subadditive risk measures incentivise the breaking up of organization or portfolios to reduce risk</li>
+<li>Subadditivity makes decentralization of risk management systems possible
+<ul>
+<li>Since constraints can be placed on BUs and if they stay within these constraints then the overall risk level cannot exceed the sum of the parts</li>
+</ul></li>
+</ul>
+<p><strong><em>Axiom 3 - Positive homogeneity</em></strong></p>
+<p><span class="math inline">\(F(k \times L) = k \times F(L)\)</span> for any constant <span class="math inline">\(k \geq 0\)</span></p>
+<p>If we double the size of the loss situation we double the risk</p>
+<ul>
+<li>No reduction being given for non-existent diversification</li>
+</ul>
+<p><strong><em>Axiom 4 - Translation invariance</em></strong></p>
+<p><span class="math inline">\(F(L + k) = F(L) + k\)</span> for any constant <span class="math inline">\(k\)</span></p>
+<p>If we add (or subtract) and amount to (or from) the loss, then the capital requirement needed to mitigate the impact of the loss increase (decrease) by the same amount</p>
 </div>
+<div id="convex-risk-measures" class="section level3">
+<h3>Convex Risk Measures</h3>
+<p><span class="math inline">\(F(\lambda L_1 + (1 - \lambda) L_2) \leq \lambda F(L_1) + (1- \lambda) F(L_2)\)</span> where <span class="math inline">\(\lambda \in [0,1]\)</span></p>
+<p>Diversification can reduce risk and the amount of risk capital needed</p>
+<p>Convexity follows from the subadditivity and positive homogeneity axioms (maybe find out more from books)</p>
+</div>
+</div>
+<div id="deterministic-approaches" class="section level2">
+<h2>Deterministic Approaches</h2>
+<p>Deterministic approaches to measuring risk</p>
+<p><strong>Deterministic</strong> measures:<br />
+<em>(Pros)</em> Simplistic;<br />
+<em>(Cons)</em> Gives a board indication of the level of risk</p>
+<p><strong>Probablistic</strong> measures:<br />
+<em>(Pros)</em> Potentially more accurate;<br />
+<em>(Cons)</em> More complex (greater model risk);<br />
+<em>(Cons)</em> Can imply inappropriate levels of confidence (esp. with tail risk estimation)</p>
 </div>
 
 
