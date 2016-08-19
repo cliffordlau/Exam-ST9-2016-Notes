@@ -108,3 +108,460 @@ Deterministic approaches to measuring risk
 *(Cons)* More complex (greater model risk);  
 *(Cons)* Can imply inappropriate levels of confidence (esp. with tail risk estimation)
 
+### Notional Approach
+
+Broad-brush risk measures
+
+e.g. Apply risk weighting to the market value of assets (different weights for different asset classes) and sum total to compare to the value of liabilities to determine a notional ("risk-adjusted") financial position
+
+Advantage:
+
+* Simple to implement and interpret across a divers range of org.
+
+Disadvantages:
+
+* Potential undersirable use of a "catch all" weighting for (heterogeneous) undefined asset class
+* Possible distortions to the market caused by increased demand for asset classes
+* Treating short positions as if they where the exact opposite of the equivalent long position (in practice they might affect the capital requirements to different extents)
+* Non allowance for concentration risk
+    * Weight is applied to the asset class and doesn't distinguish between securities
+* Probability of the changes considered (in the values of assets and liabilities) is not quantified
+
+### Factor Sensitivity Approach
+
+Determines the degree to whih an org's financial position (e.g. solvency) is affected by the impact that change in a single underlying risk factor (e.g. short term interest rates) has on the value of assets and liabilities
+
+Advantage:
+
+* Increased understanding of the drivers of risk
+
+Disadvantage:
+
+* Not assessinga wider range of risks (since it focus on a single risk factor)
+* Being difficult to aggregate over different risk factors
+* Probability of the changes considered (in the values of assets and/or liabilities) is not quantified
+
+### Scenario Sensitivity Approach
+
+Similar to factor sensitivity
+
+* Consider the effect of changing a set of factors (in a consistent way)
+* e.g. recession: low interest rate, low inflation, depressed equity returns
+
+Probability of the changes considered (in the values of assets and liability) is not quantified
+
+## Probabilistic Approaches
+
+1. Deviation (incl. volatility)
+2. Value at Risk
+3. Probability of ruin
+4. Tail Value at Risk (Conditional Value at Risk)
+5. Expected shortfall
+
+### Deviation
+
+#### Standard Deviation
+
+Deviation measured **from the mean**
+
+For return $r_{X,t}$ on portfolio $X$ in time period $t$
+
+$SD$ measured over $T$ time period:
+
+$SD = \sqrt{\dfrac{1}{T}\sum \limits_{t=1}^T (r_{X,t} - \mu)^2}$
+
+where $\mu = \sum \limits_{t=1}^T \frac{1}{T}r_{X,t}$
+
+#### Tracking Error
+
+Deviation measured **relative to a benchmark** other than the mean
+
+For return on the benchmark portfolio ($B$) in time period $t$ is $r_{B,t}$
+
+Tracking error measured over $T$ time period:
+
+$TE = \sqrt{\dfrac{1}{T}\sum \limits_{t=1}^T(r_{X,t}-r_{B,t})^2}$
+
+**Example**:
+
+Judging the investment return by referencing what would have been achieved by passive investment in a benchmark portfolio
+
+Tracking error measure the risk inherent in an active investment strategy
+
+**Information Ratio** is a risk-adjusted return measure
+
+* Considers the size of the average XS return (aka average active return) as a proportion of the risk exposure as measured by tracking error
+* Useful for rankings as it is dimensionless (no units)
+
+**Ex post information ratio**
+
+* Using past returns on the actual and benchmark portfolios
+
+* $IR = \dfrac{\text{XS Return}}{\text{Tracking Error}}  = \dfrac{\dfrac{1}{T}\sum \limits_{t=1}^T(r_{X,t} - r_{B,t})}{\sqrt{\dfrac{1}{T}\sum \limits_{t=1}^T(r_{X,t} - r_{B,t})^2}}$
+
+**Ex ante information ratio**
+
+* Requires calculation of the potential prospective average XS return and tracking erros
+* Can use a factor based stochastic model
+
+***
+
+Common applications:  
+Returns on a portfolio of assets
+
+Can be performed:
+
+* Retrospectively (**ex post**):  
+Calculating past deviations based on actual historic asset allocations
+
+* Prospectively (**en ante**):  
+Based on current asset allocations but using either:
+    * Observed **historic covariances** of the returns on different asset classes (semi prospectively)
+    * Estimated **future covariances** (fully prospectively)
+    
+Recall:
+
+* Mean variance portfolio theory assumes that the s.d. of portfolio return is the only risk considered by investors (build efficient frontier based on $\mu$ and $\sigma$)
+
+***
+
+***Advantages***
+
+* Simplicity of calculation
+* Applicability to a wide range of financial risks
+* Can be aggregated given correlations
+    * $\mathrm{Var}(aX + bY) = a^2\mathrm{Var}(X) + b^2\mathrm{Var}(Y) + 2ab\mathrm{Cov}(X,Y)$
+
+***Disadvantages***
+
+* Difficult in interpreting comparisons other than in terms of simple ranking
+* Potentially misleading if the underlying distribution is skewed
+* Do not focus on tail risk and specifically, underestimates tail risk if the underlying distribution is leptokurtic (thick tail)
+* Aggregations of deviations can be misleading (e.g. if the component distributions are not normally distributed)
+
+### Value at Risk (VaR)
+
+VaR:  
+Maximum loss which is not exceed with a given high probability ($\alpha$) over a given time period
+
+$\mathrm{VaR}_{\alpha} = \inf \left \{ l \in \mathbb{R} : \Pr(L>l) \leq 1 - \alpha \right\}$
+
+* Sidenote: $\{x : P(x)\}$ means the set of all x for which $\P(x)$ is true; $\inf$ basically means the largest element of the set
+
+Time horizon:
+
+* Chosen to comply with any contractual and legislative constraints, or
+* Liquidity considerations
+* Typically a short period of time as the portfolio is usually only stable over short period (typically 1 yr for insurance and 1 day for banks)
+
+High confidence level is typically used for capital adquacy purposes
+
+* e.g. 99% over 10 days for Basel
+* Typically consider multiple confidence level
+
+***Advantages***
+
+* Simplicity of its expression
+* Intelligibility of its unit
+* Applicable to all types of risks
+* Applicable over all sources of risk (easy comparison between risk)
+* Easy to translation into a risk benchmark (e.g. risk limit)
+
+***Disadvantages***
+
+* Gives no indication of the distribution of losses XS VaR
+* Can underestimate asymmetric and fat tail risk
+* Can be very sensitive to the choices of data, parameters (e.g. $\alpha$, time horizon) and assumptions
+* Not a coherent risk measure (not sub-additive)
+* Can encourage "herding" if used in regulation $\Rightarrow$ increasing systemic risk
+
+#### Empirical Approach
+
+Given value $X_t$ of porfolio $X$ at time $t$
+
+Loss in period $t$ for portfolio $X$:
+
+$-(X_t - X_{t-1})$
+
+Losses observed over a total of $T$ periods are ranked from smallest ($L_{X,1}$) to largest ($L_{X,T}$)
+
+$VaR_{\alpha} = 
+  \begin{cases} 
+      L_{X, (T \times \alpha)} & \text{if } T \times \alpha \in \mathbb{Z} \\
+      \left[(T \times \alpha) - t_- \right] L_{X,t_+} + \left[t_+ - (T \times \alpha)\right]L_{X,t_-} & \text{else} \\
+  \end{cases}$
+  
+* Calculate with linera interpolation for the 2^nd^ case
+* $t_-$ and $t_+$ are the intergers immediately either side fo $T \times \alpha$
+
+**Advantages**
+
+* Simplicity
+* No requirement to specify the distribution of returns
+* Realism, focuses on the largest market movements observed
+
+**Disadvantages**
+
+* Reliance on past data having catpured all possible future scenarios
+* Implies past data is indicative of future experience
+* Does no faciliate stress or scenario testing
+* Practical difficulties and limitations of interpolation
+
+#### Parametric Approach
+
+Assumes that losses follow some specified statistical distribution
+
+Let $L$ be a r.v. that represents loss on a portfolio
+
+$F(x) = \Pr(L\leq x)$ is the CDF of $L$
+
+$VaR_{\alpha} = F^{-1}(\alpha)$
+
+e.g. $L \sim N(\mu, \sigma^2)$ then $VaR_{\alpha} = \mu + \sigma \times \Phi^{-1}(\alpha)$
+
+Parametization
+
+* Past data
+* Implied future volatility from option prices
+* For very short time horizon can assume 0 return ($\mu = 0$)
+* For long time horizon better to define losses w.r.t to log asset value: $L_{X,t} = -( \ln X_t - \ln X_{t-1}) = - r_{X,t}$
+    * Express in terms of return rather than loss
+
+**Advantages**
+
+* Ease of calculation
+* Reduced dependence on past data
+* Easy adjustment of parameters initially derived from past data
+
+**Disadvantages**
+
+* More difficult to explain than empirical
+* Parameters relies on past data
+* Difficult to ensure parameters are consistent
+* Assumes parameter remain constant
+* Risk of adopting an inappropriate distribution
+* Difficult to reflect complex inter dependencies
+    * Use a correlation matrix rather than copula
+
+#### Stochastic Approach
+
+Same way to determine $VaR$ as empirical but the data set used is not the past observed loss
+
+Data set:
+
+* Simulated using a chosen distribution
+    * e.g. multivariate normal
+* Bootstrapped: random sampling of past observed returns
+
+**Advantages**
+
+Can accomodate:
+
+* More complex features of the underlying loss dist^n^ (e.g. skew, leptokurtosis)
+* Wider ranges of future possibilities than the empirical method
+* Sensitivity testing (e.g. choice of dist^n^ and parameter values)
+
+**Disadvantages**
+
+* More difficult to explain than the other 2 approaches
+* Subjective and difficult choices of distribution and parameters
+* Gives a different answer each time (only slighly different ideally)
+* Potentially high computation time
+
+***
+
+Variants of $VaR$:
+
+* $VaR$ in terms of relative loss (e.g. relative to the expected loss)
+* $VaR$ in terms of percentage
+* $VaR$ in terms of returns rather than lossess (e.g. based on log asset values)
+* Different choices of time horizon
+* Different choices of confidence level
+
+### Probability of Ruin
+
+Probability that the net financial position falls below zero over a defined time horizon
+
+* Closely linked to $VaR$
+* e.g. if net financial position is < $VaR_{95\%}$ then the probability of ruin is > 5% over the same time horizon as the one we used in $VaR$
+
+### Tail Value at Risk (TVaR)
+
+Or conditional Value at Risk or expected shortfall
+
+Expected loss given that a loss over the specified $VaR$ has occured
+
+$TVaR_{\alpha} = CVaR_{\alpha} = \mathrm{E}\left[ L \mid L > VaR_{\alpha} \right]$
+
+***
+
+Comparing TVaR of VaR
+
+**Advantages**
+
+* Consider losses beyond VaR
+* Coherent risk measure
+    * Facilitates the aggregation of TVaR values arising from distinct parts of an org. to determine the overall TVaR
+
+**Disadvantages**
+
+* Choice of distribution and parameter is subjective and difficult
+* Highly sensitive to assumptions
+    * Significant concern as we are using uncertain information from further into the tail of the loss distribution
+
+***
+
+There are similar variant as VaR as well as other things like tail conditional expectation (TCE) or worst conditional expectation (WCE)
+
+#### Empirical Approach
+
+$TVaR_{\alpha} =
+  \begin{cases}
+    \dfrac{\sum \limits_{t = T \times \alpha}^T L_{X,t}}{\sum \limits_{t = T \times \alpha}^T I (t \geq T \times \alpha)} & \text{if } T \times \alpha \in \mathbb{Z} \\
+    \dfrac{\left(\sum \limits_{t = \lceil T \times \alpha \rceil}^T L_{X,t} \right) + [ t_+ - (T \times \alpha)]L_{X,t}}{\left(\sum \limits_{t = \lceil T \times \alpha \rceil}^T I (t \geq T \times \alpha)\right) + (\lceil T \times \alpha \rceil - T \times \alpha)} & \text{else} \\
+  \end{cases}$
+  
+* $I(t \geq T \times \alpha) = \begin{cases} 1 & \text{if } t \geq T \times \alpha \\ 0 & \text{else} \\ \end{cases}$
+
+#### Parametric Approach
+
+$TVaR_{\alpha} = \dfrac{1}{1 - \alpha} \int_{\alpha}^1 VaR_{u} du$
+
+e.g. For Gaussian loss distribution $TVaR_{\alpha} = \mu + \sigma \dfrac{\phi\big(\Phi^{-1}(\alpha)\big)}{1-\alpha}$
+
+* $\phi$ is the density function of the standard normal distribution
+
+#### Stochastic Approach
+
+Similar to the empirical approach but the data is based on simulation or bootstrap
+
+### Expected Shortfall (ES)
+
+Can use empirical, parametric, stochastic approach similar to VaR
+
+Same advantages and disadvantages as TVaR with the additional
+
+**Disadvantage**
+
+* Little intuitive meaning
+* Cannot be readily linked to the current valuation
+
+#### Empirical Approach
+
+$TVaR_{\alpha} =
+  \begin{cases}
+    \dfrac{\sum \limits_{t = T \times \alpha}^T L_{X,t}}{T} & \text{if } T \times \alpha \in \mathbb{Z} \\
+    \dfrac{\left(\sum \limits_{t = \lceil T \times \alpha \rceil}^T L_{X,t} \right) + [ t_+ - (T \times \alpha)]L_{X,t}}{T} & \text{else} \\
+  \end{cases}$
+  
+* Same as TVaR except the denominator is now $T$ (total # of losses observed not just the tail)
+
+#### Parametric Approach
+
+$ES_{\alpha} = \int_{\alpha}^1 VaR_u du = (1 - \alpha) TVaR_{\alpha}$
+
+e.g. For Gaussian $ES_{\alpha} = (1 - \alpha) \mu + \sigma \phi \big( \Phi^{-1}(\alpha)\big)$
+
+#### Stochastic Approach
+
+Once again similar to empirical approach but with data based on simulation or bootstrap
+
+### Practical Look at VaR and TVaR
+
+VaR is an industry standard for measuring and reporting market risk in trading portfolio
+
+* Can provide a consistent and comparable measure of risk
+
+VaR draws a line between everyay and exceptional losses
+
+Basic factors that VaR is based when quantifying market risk in trading portfolios
+
+* Exposure amount: size of the position at risk
+* Price volatility factor: best estimate of future daily volatility of market prices
+    * Includes correlations between market movements by way of a correlation matrix
+* Liquidity factor: time in days to liquidate a position in an orderly fashion and in adverse market conditions, which may be problematic
+
+Ratio of TVaR and VaR can use to indicate the skewness of a distribution (higher = asymmetric with a fatter tail)
+
+Switching from VaR to TVaR may not be advantageous if the underlying methodology is flawed
+
+* e.g. based on unadjusted historical data which is not appropriate for future application
+
+***Rules of Thumb***
+
+
+\11. \# of days that a mark-to-market loss might exceed $VaR_{\alpha}$ might be estimated as $[100\% - \alpha] \times 250$ where $\alpha$ is the confidence level and 250 is the number of trading days in a year
+
+\22. Let $X$ be losses over 1 day $X \sim N(\mu, \sigma)$  
+Then the *n*-day loss $\sim N(n\mu, n\sigma^2)$ and the *n*-day volatility is $\sqrt{n}\sigma$  
+Quick approximation of an *n*-day VaR:  
+1-day VaR $\times$ $\sqrt{n}$
+
+* Only rough approximation as losses are not iid and the expected loss not being zero (esp. for larger *n*)
+
+## Risk Management Time Horizon
+
+The longer the duration the higher the level of risk
+
+* Larger possible outcomes (e.g. insolvency)
+* What might happen in the intervening period (e.g. liquiditiy problems)
+
+Key factors in choicing time horizon
+
+* Time to recover from a loss event
+* Time to reinstate risk mitigation (e.g. re-establish a derivatives hedge)
+
+Financial risk exposure
+
+* Key issue is the liquidity of positions impacted by the decision taken or risk event
+* Risk in highly liquid investments can normally be reduced very quikcly
+
+For operational risk exposures
+
+* Time horizon can be thought of as the time required for a company to recover from an event (e.g. fire)
+
+## Risk Discount Rate
+
+From Risk Analysis and Management for Projects (RAMP): a strategic framework for managing project risk and its financial implications
+
+* Size of the discount rate will affect the appraised viability of those projects to which it applied
+* The higher the discount rate the lower will be the PV of earnings (or benefits) arising in the future and the greater the negative impact on project viability
+* Discount rate is determined pragmatically by the sponsor
+* Should take account of the sponsor's cost of capital, the rate of inflation, interest rates and rates of return on investments throughout the economy
+
+However (from Core Reading):
+
+* May no have suitable reference investments  
+(e.g. no risk free asset that matches certain liabilities)
+* Difficult to determine the risk free rate of interest  
+(e.g. due to gov securities benefiting form a liquidity premium)
+* Setting a discount rate that allows for the uncertainty of future asset values is problematic  
+(e.g. projection/simulation approach may be required)
+* Allowance for credi (e.g. default) risk should be made when settig the discount rate and default rates are linked to other risks which vary over time (e.g. inflation risk)
+
+Again from RAMP
+
+* Ultimately the choice of the discount rate will depend partly on issues such as the company's cost of funds and hurdle rates that the company sets for its investments
+* Some companies may wish to use a higher/lower discount rate for projects which they regard as having a higher/lower inherent risk (i.e. risk which is incapable of mitigation) than for their other projects
+* If this inherent risk varies significantly over different phases of the project, it may sometimes be appropriate to use different discount rates for each phase
+* High discount rate should not be seen as a substitute for a detailed risk analysis as this could lead to the rejection of profitable low risk projects in favor of more profitable projects that carry unaceptable levels of risk
+
+## Recall: CAPM
+
+$\begin{aligned} r_X &= r_f + \dfrac{\sigma_X \sigma_U \rho_{X,U}}{\sigma_U^2}(r_U - r_f)\\ &= r_f + \dfrac{\sigma_X}{\sigma_U} \rho_{X,U}(r_U - r_f)\\ &= r_f + \beta_X(r_U - r_f)\\ \end{aligned}$
+
+Where: $\beta_X = \dfrac{\sigma_X}{\sigma_U}\rho_{X,U}$
+
+$r_X$: expected return on asset $X$
+$r_f$: risk free rate of return
+$r_U$: return on the universe of investment opportunities
+
+On a graph with systematic risk ($\beta$) on the x-axis and $r_X$ on the y-axis, the Security Market Line (SML) has a y-axis intercept of $r_f$ and gradient $r_U - r_f$
+
+Project Market Line (PML) is obtained by reexpressing $r_X$ as the required return on project $X$ and re-expressing $U$ as the existing project portfolio
+
+Thte PML shows that a higher returns is required of a project which, in the context of other project opportunities, exposes and org. to greater uncertainty (higher value of $\dfrac{sigma_X}{sigm_U}) and/or has a lower diversification benefit (higher value of $\rho_{X,U}$)
+
+However, using the PML to determine the discount rate is problematic as the return on projects and the correlation between them may not be stable over their respective lifetimes
+
+In practice, it is difficult to find a relationship between the returns from projects anticipated by the PML and those actually achieved
