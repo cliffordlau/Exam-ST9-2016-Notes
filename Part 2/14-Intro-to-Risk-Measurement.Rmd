@@ -24,7 +24,7 @@ Describe how to choose a suitable time horizon and risk discount rate
 
 ***
 
-Consider how to evalute risk measures: **coherence** and **convexity**
+Consider how to evaluate risk measures: **coherence** and **convexity**
 
 Examine a range of risk measures and discuss their benefits and limitations
 
@@ -120,7 +120,7 @@ Advantage:
 
 Disadvantages:
 
-* Potential undersirable use of a "catch all" weighting for (heterogeneous) undefined asset class
+* Potential undesirable use of a "catch all" weighting for (heterogeneous) undefined asset class
 * Possible distortions to the market caused by increased demand for asset classes
 * Treating short positions as if they where the exact opposite of the equivalent long position (in practice they might affect the capital requirements to different extents)
 * Non allowance for concentration risk
@@ -129,7 +129,7 @@ Disadvantages:
 
 ### Factor Sensitivity Approach
 
-Determines the degree to whih an org's financial position (e.g. solvency) is affected by the impact that change in a single underlying risk factor (e.g. short term interest rates) has on the value of assets and liabilities
+Determines the degree to which an org's financial position (e.g. solvency) is affected by the impact that change in a single underlying risk factor (e.g. short term interest rates) has on the value of assets and liabilities
 
 Advantage:
 
@@ -137,7 +137,7 @@ Advantage:
 
 Disadvantage:
 
-* Not assessinga wider range of risks (since it focus on a single risk factor)
+* Not assessing wider range of risks (since it focus on a single risk factor)
 * Being difficult to aggregate over different risk factors
 * Probability of the changes considered (in the values of assets and/or liabilities) is not quantified
 
@@ -201,7 +201,7 @@ Tracking error measure the risk inherent in an active investment strategy
 
 **Ex ante information ratio**
 
-* Requires calculation of the potential prospective average XS return and tracking erros
+* Requires calculation of the potential prospective average XS return and tracking errors
 * Can use a factor based stochastic model
 
 ***
@@ -246,7 +246,7 @@ Maximum loss which is not exceed with a given high probability ($\alpha$) over a
 
 $\mathrm{VaR}_{\alpha} = \inf \left \{ l \in \mathbb{R} : \Pr(L>l) \leq 1 - \alpha \right\}$
 
-* Sidenote: $\{x : P(x)\}$ means the set of all x for which $\P(x)$ is true; $\inf$ basically means the largest element of the set
+* Side note: $\{x : P(x)\}$ means the set of all x for which $\P(x)$ is true; $\inf$ basically means the largest element of the set
 
 Time horizon:
 
@@ -254,7 +254,7 @@ Time horizon:
 * Liquidity considerations
 * Typically a short period of time as the portfolio is usually only stable over short period (typically 1 yr for insurance and 1 day for banks)
 
-High confidence level is typically used for capital adquacy purposes
+High confidence level is typically used for capital adequacy purposes
 
 * e.g. 99% over 10 days for Basel
 * Typically consider multiple confidence level
@@ -277,7 +277,7 @@ High confidence level is typically used for capital adquacy purposes
 
 #### Empirical Approach
 
-Given value $X_t$ of porfolio $X$ at time $t$
+Given value $X_t$ of portfolio $X$ at time $t$
 
 Loss in period $t$ for portfolio $X$:
 
@@ -291,8 +291,8 @@ $VaR_{\alpha} =
       \left[(T \times \alpha) - t_- \right] L_{X,t_+} + \left[t_+ - (T \times \alpha)\right]L_{X,t_-} & \text{else} \\
   \end{cases}$
   
-* Calculate with linera interpolation for the 2^nd^ case
-* $t_-$ and $t_+$ are the intergers immediately either side fo $T \times \alpha$
+* Calculate with linear interpolation for the 2^nd^ case
+* $t_-$ and $t_+$ are the integers immediately either side of $T \times \alpha$
 
 **Advantages**
 
@@ -302,9 +302,9 @@ $VaR_{\alpha} =
 
 **Disadvantages**
 
-* Reliance on past data having catpured all possible future scenarios
+* Reliance on past data having captured all possible future scenarios
 * Implies past data is indicative of future experience
-* Does no faciliate stress or scenario testing
+* Does no facilitate stress or scenario testing
 * Practical difficulties and limitations of interpolation
 
 #### Parametric Approach
@@ -355,7 +355,7 @@ Data set:
 
 **Advantages**
 
-Can accomodate:
+Can accommodate:
 
 * More complex features of the underlying loss dist^n^ (e.g. skew, leptokurtosis)
 * Wider ranges of future possibilities than the empirical method
@@ -365,7 +365,7 @@ Can accomodate:
 
 * More difficult to explain than the other 2 approaches
 * Subjective and difficult choices of distribution and parameters
-* Gives a different answer each time (only slighly different ideally)
+* Gives a different answer each time (only slightly different ideally)
 * Potentially high computation time
 
 ***
@@ -374,7 +374,7 @@ Variants of $VaR$:
 
 * $VaR$ in terms of relative loss (e.g. relative to the expected loss)
 * $VaR$ in terms of percentage
-* $VaR$ in terms of returns rather than lossess (e.g. based on log asset values)
+* $VaR$ in terms of returns rather than losses (e.g. based on log asset values)
 * Different choices of time horizon
 * Different choices of confidence level
 
@@ -389,7 +389,7 @@ Probability that the net financial position falls below zero over a defined time
 
 Or conditional Value at Risk or expected shortfall
 
-Expected loss given that a loss over the specified $VaR$ has occured
+Expected loss given that a loss over the specified $VaR$ has occurred
 
 $TVaR_{\alpha} = CVaR_{\alpha} = \mathrm{E}\left[ L \mid L > VaR_{\alpha} \right]$
 
@@ -472,7 +472,7 @@ VaR is an industry standard for measuring and reporting market risk in trading p
 
 * Can provide a consistent and comparable measure of risk
 
-VaR draws a line between everyay and exceptional losses
+VaR draws a line between everyday and exceptional losses
 
 Basic factors that VaR is based when quantifying market risk in trading portfolios
 
@@ -504,9 +504,9 @@ Quick approximation of an *n*-day VaR:
 The longer the duration the higher the level of risk
 
 * Larger possible outcomes (e.g. insolvency)
-* What might happen in the intervening period (e.g. liquiditiy problems)
+* What might happen in the intervening period (e.g. liquidity problems)
 
-Key factors in choicing time horizon
+Key factors in choosing time horizon
 
 * Time to recover from a loss event
 * Time to reinstate risk mitigation (e.g. re-establish a derivatives hedge)
@@ -514,7 +514,7 @@ Key factors in choicing time horizon
 Financial risk exposure
 
 * Key issue is the liquidity of positions impacted by the decision taken or risk event
-* Risk in highly liquid investments can normally be reduced very quikcly
+* Risk in highly liquid investments can normally be reduced very quickly
 
 For operational risk exposures
 
@@ -537,14 +537,14 @@ However (from Core Reading):
 (e.g. due to gov securities benefiting form a liquidity premium)
 * Setting a discount rate that allows for the uncertainty of future asset values is problematic  
 (e.g. projection/simulation approach may be required)
-* Allowance for credi (e.g. default) risk should be made when settig the discount rate and default rates are linked to other risks which vary over time (e.g. inflation risk)
+* Allowance for credit (e.g. default) risk should be made when setting the discount rate and default rates are linked to other risks which vary over time (e.g. inflation risk)
 
 Again from RAMP
 
 * Ultimately the choice of the discount rate will depend partly on issues such as the company's cost of funds and hurdle rates that the company sets for its investments
 * Some companies may wish to use a higher/lower discount rate for projects which they regard as having a higher/lower inherent risk (i.e. risk which is incapable of mitigation) than for their other projects
 * If this inherent risk varies significantly over different phases of the project, it may sometimes be appropriate to use different discount rates for each phase
-* High discount rate should not be seen as a substitute for a detailed risk analysis as this could lead to the rejection of profitable low risk projects in favor of more profitable projects that carry unaceptable levels of risk
+* High discount rate should not be seen as a substitute for a detailed risk analysis as this could lead to the rejection of profitable low risk projects in favor of more profitable projects that carry unacceptable levels of risk
 
 ## Recall: CAPM
 
@@ -558,9 +558,9 @@ $r_U$: return on the universe of investment opportunities
 
 On a graph with systematic risk ($\beta$) on the x-axis and $r_X$ on the y-axis, the Security Market Line (SML) has a y-axis intercept of $r_f$ and gradient $r_U - r_f$
 
-Project Market Line (PML) is obtained by reexpressing $r_X$ as the required return on project $X$ and re-expressing $U$ as the existing project portfolio
+Project Market Line (PML) is obtained by re expressing $r_X$ as the required return on project $X$ and re-expressing $U$ as the existing project portfolio
 
-Thte PML shows that a higher returns is required of a project which, in the context of other project opportunities, exposes and org. to greater uncertainty (higher value of $\dfrac{sigma_X}{sigm_U}) and/or has a lower diversification benefit (higher value of $\rho_{X,U}$)
+The PML shows that a higher returns is required of a project which, in the context of other project opportunities, exposes and org. to greater uncertainty (higher value of $\dfrac{\sigma_X}{\sigma_U}$) and/or has a lower diversification benefit (higher value of $\rho_{X,U}$)
 
 However, using the PML to determine the discount rate is problematic as the return on projects and the correlation between them may not be stable over their respective lifetimes
 

@@ -238,7 +238,7 @@ div.tocify {
 </ul>
 <p>Describe how to choose a suitable time horizon and risk discount rate</p>
 <hr />
-<p>Consider how to evalute risk measures: <strong>coherence</strong> and <strong>convexity</strong></p>
+<p>Consider how to evaluate risk measures: <strong>coherence</strong> and <strong>convexity</strong></p>
 <p>Examine a range of risk measures and discuss their benefits and limitations</p>
 <p>Also discuss time horizon and how to choose an appropriate risk discount rate</p>
 <p>Exam Note:<br />
@@ -316,7 +316,7 @@ Then monotonic risk measure will indicate a greater amount of capital should be 
 </ul>
 <p>Disadvantages:</p>
 <ul>
-<li>Potential undersirable use of a “catch all” weighting for (heterogeneous) undefined asset class</li>
+<li>Potential undesirable use of a “catch all” weighting for (heterogeneous) undefined asset class</li>
 <li>Possible distortions to the market caused by increased demand for asset classes</li>
 <li>Treating short positions as if they where the exact opposite of the equivalent long position (in practice they might affect the capital requirements to different extents)</li>
 <li>Non allowance for concentration risk
@@ -328,14 +328,14 @@ Then monotonic risk measure will indicate a greater amount of capital should be 
 </div>
 <div id="factor-sensitivity-approach" class="section level3">
 <h3>Factor Sensitivity Approach</h3>
-<p>Determines the degree to whih an org’s financial position (e.g. solvency) is affected by the impact that change in a single underlying risk factor (e.g. short term interest rates) has on the value of assets and liabilities</p>
+<p>Determines the degree to which an org’s financial position (e.g. solvency) is affected by the impact that change in a single underlying risk factor (e.g. short term interest rates) has on the value of assets and liabilities</p>
 <p>Advantage:</p>
 <ul>
 <li>Increased understanding of the drivers of risk</li>
 </ul>
 <p>Disadvantage:</p>
 <ul>
-<li>Not assessinga wider range of risks (since it focus on a single risk factor)</li>
+<li>Not assessing wider range of risks (since it focus on a single risk factor)</li>
 <li>Being difficult to aggregate over different risk factors</li>
 <li>Probability of the changes considered (in the values of assets and/or liabilities) is not quantified</li>
 </ul>
@@ -390,7 +390,7 @@ Then monotonic risk measure will indicate a greater amount of capital should be 
 </ul>
 <p><strong>Ex ante information ratio</strong></p>
 <ul>
-<li>Requires calculation of the potential prospective average XS return and tracking erros</li>
+<li>Requires calculation of the potential prospective average XS return and tracking errors</li>
 <li>Can use a factor based stochastic model</li>
 </ul>
 <hr />
@@ -436,7 +436,7 @@ Based on current asset allocations but using either:
 Maximum loss which is not exceed with a given high probability (<span class="math inline">\(\alpha\)</span>) over a given time period</p>
 <p><span class="math inline">\(\mathrm{VaR}_{\alpha} = \inf \left \{ l \in \mathbb{R} : \Pr(L&gt;l) \leq 1 - \alpha \right\}\)</span></p>
 <ul>
-<li>Sidenote: <span class="math inline">\(\{x : P(x)\}\)</span> means the set of all x for which <span class="math inline">\(\P(x)\)</span> is true; <span class="math inline">\(\inf\)</span> basically means the largest element of the set</li>
+<li>Side note: <span class="math inline">\(\{x : P(x)\}\)</span> means the set of all x for which <span class="math inline">\(\P(x)\)</span> is true; <span class="math inline">\(\inf\)</span> basically means the largest element of the set</li>
 </ul>
 <p>Time horizon:</p>
 <ul>
@@ -444,7 +444,7 @@ Maximum loss which is not exceed with a given high probability (<span class="mat
 <li>Liquidity considerations</li>
 <li>Typically a short period of time as the portfolio is usually only stable over short period (typically 1 yr for insurance and 1 day for banks)</li>
 </ul>
-<p>High confidence level is typically used for capital adquacy purposes</p>
+<p>High confidence level is typically used for capital adequacy purposes</p>
 <ul>
 <li>e.g. 99% over 10 days for Basel</li>
 <li>Typically consider multiple confidence level</li>
@@ -467,14 +467,14 @@ Maximum loss which is not exceed with a given high probability (<span class="mat
 </ul>
 <div id="empirical-approach" class="section level4">
 <h4>Empirical Approach</h4>
-<p>Given value <span class="math inline">\(X_t\)</span> of porfolio <span class="math inline">\(X\)</span> at time <span class="math inline">\(t\)</span></p>
+<p>Given value <span class="math inline">\(X_t\)</span> of portfolio <span class="math inline">\(X\)</span> at time <span class="math inline">\(t\)</span></p>
 <p>Loss in period <span class="math inline">\(t\)</span> for portfolio <span class="math inline">\(X\)</span>:</p>
 <p><span class="math inline">\(-(X_t - X_{t-1})\)</span></p>
 <p>Losses observed over a total of <span class="math inline">\(T\)</span> periods are ranked from smallest (<span class="math inline">\(L_{X,1}\)</span>) to largest (<span class="math inline">\(L_{X,T}\)</span>)</p>
 <p><span class="math inline">\(VaR_{\alpha} =  \begin{cases}  L_{X, (T \times \alpha)} &amp; \text{if } T \times \alpha \in \mathbb{Z} \\  \left[(T \times \alpha) - t_- \right] L_{X,t_+} + \left[t_+ - (T \times \alpha)\right]L_{X,t_-} &amp; \text{else} \\  \end{cases}\)</span></p>
 <ul>
-<li>Calculate with linera interpolation for the 2<sup>nd</sup> case</li>
-<li><span class="math inline">\(t_-\)</span> and <span class="math inline">\(t_+\)</span> are the intergers immediately either side fo <span class="math inline">\(T \times \alpha\)</span></li>
+<li>Calculate with linear interpolation for the 2<sup>nd</sup> case</li>
+<li><span class="math inline">\(t_-\)</span> and <span class="math inline">\(t_+\)</span> are the integers immediately either side of <span class="math inline">\(T \times \alpha\)</span></li>
 </ul>
 <p><strong>Advantages</strong></p>
 <ul>
@@ -484,9 +484,9 @@ Maximum loss which is not exceed with a given high probability (<span class="mat
 </ul>
 <p><strong>Disadvantages</strong></p>
 <ul>
-<li>Reliance on past data having catpured all possible future scenarios</li>
+<li>Reliance on past data having captured all possible future scenarios</li>
 <li>Implies past data is indicative of future experience</li>
-<li>Does no faciliate stress or scenario testing</li>
+<li>Does no facilitate stress or scenario testing</li>
 <li>Practical difficulties and limitations of interpolation</li>
 </ul>
 </div>
@@ -538,7 +538,7 @@ Maximum loss which is not exceed with a given high probability (<span class="mat
 <li>Bootstrapped: random sampling of past observed returns</li>
 </ul>
 <p><strong>Advantages</strong></p>
-<p>Can accomodate:</p>
+<p>Can accommodate:</p>
 <ul>
 <li>More complex features of the underlying loss dist<sup>n</sup> (e.g. skew, leptokurtosis)</li>
 <li>Wider ranges of future possibilities than the empirical method</li>
@@ -548,7 +548,7 @@ Maximum loss which is not exceed with a given high probability (<span class="mat
 <ul>
 <li>More difficult to explain than the other 2 approaches</li>
 <li>Subjective and difficult choices of distribution and parameters</li>
-<li>Gives a different answer each time (only slighly different ideally)</li>
+<li>Gives a different answer each time (only slightly different ideally)</li>
 <li>Potentially high computation time</li>
 </ul>
 <hr />
@@ -556,7 +556,7 @@ Maximum loss which is not exceed with a given high probability (<span class="mat
 <ul>
 <li><span class="math inline">\(VaR\)</span> in terms of relative loss (e.g. relative to the expected loss)</li>
 <li><span class="math inline">\(VaR\)</span> in terms of percentage</li>
-<li><span class="math inline">\(VaR\)</span> in terms of returns rather than lossess (e.g. based on log asset values)</li>
+<li><span class="math inline">\(VaR\)</span> in terms of returns rather than losses (e.g. based on log asset values)</li>
 <li>Different choices of time horizon</li>
 <li>Different choices of confidence level</li>
 </ul>
@@ -573,7 +573,7 @@ Maximum loss which is not exceed with a given high probability (<span class="mat
 <div id="tail-value-at-risk-tvar" class="section level3">
 <h3>Tail Value at Risk (TVaR)</h3>
 <p>Or conditional Value at Risk or expected shortfall</p>
-<p>Expected loss given that a loss over the specified <span class="math inline">\(VaR\)</span> has occured</p>
+<p>Expected loss given that a loss over the specified <span class="math inline">\(VaR\)</span> has occurred</p>
 <p><span class="math inline">\(TVaR_{\alpha} = CVaR_{\alpha} = \mathrm{E}\left[ L \mid L &gt; VaR_{\alpha} \right]\)</span></p>
 <hr />
 <p>Comparing TVaR of VaR</p>
@@ -647,7 +647,7 @@ Maximum loss which is not exceed with a given high probability (<span class="mat
 <ul>
 <li>Can provide a consistent and comparable measure of risk</li>
 </ul>
-<p>VaR draws a line between everyay and exceptional losses</p>
+<p>VaR draws a line between everyday and exceptional losses</p>
 <p>Basic factors that VaR is based when quantifying market risk in trading portfolios</p>
 <ul>
 <li>Exposure amount: size of the position at risk</li>
@@ -678,9 +678,9 @@ Quick approximation of an <em>n</em>-day VaR:<br />
 <p>The longer the duration the higher the level of risk</p>
 <ul>
 <li>Larger possible outcomes (e.g. insolvency)</li>
-<li>What might happen in the intervening period (e.g. liquiditiy problems)</li>
+<li>What might happen in the intervening period (e.g. liquidity problems)</li>
 </ul>
-<p>Key factors in choicing time horizon</p>
+<p>Key factors in choosing time horizon</p>
 <ul>
 <li>Time to recover from a loss event</li>
 <li>Time to reinstate risk mitigation (e.g. re-establish a derivatives hedge)</li>
@@ -688,7 +688,7 @@ Quick approximation of an <em>n</em>-day VaR:<br />
 <p>Financial risk exposure</p>
 <ul>
 <li>Key issue is the liquidity of positions impacted by the decision taken or risk event</li>
-<li>Risk in highly liquid investments can normally be reduced very quikcly</li>
+<li>Risk in highly liquid investments can normally be reduced very quickly</li>
 </ul>
 <p>For operational risk exposures</p>
 <ul>
@@ -712,20 +712,26 @@ Quick approximation of an <em>n</em>-day VaR:<br />
 (e.g. due to gov securities benefiting form a liquidity premium)</li>
 <li>Setting a discount rate that allows for the uncertainty of future asset values is problematic<br />
 (e.g. projection/simulation approach may be required)</li>
-<li>Allowance for credi (e.g. default) risk should be made when settig the discount rate and default rates are linked to other risks which vary over time (e.g. inflation risk)</li>
+<li>Allowance for credit (e.g. default) risk should be made when setting the discount rate and default rates are linked to other risks which vary over time (e.g. inflation risk)</li>
 </ul>
 <p>Again from RAMP</p>
 <ul>
 <li>Ultimately the choice of the discount rate will depend partly on issues such as the company’s cost of funds and hurdle rates that the company sets for its investments</li>
 <li>Some companies may wish to use a higher/lower discount rate for projects which they regard as having a higher/lower inherent risk (i.e. risk which is incapable of mitigation) than for their other projects</li>
 <li>If this inherent risk varies significantly over different phases of the project, it may sometimes be appropriate to use different discount rates for each phase</li>
-<li>High discount rate should not be seen as a substitute for a detailed risk analysis as this could lead to the rejection of profitable low risk projects in favor of more profitable projects that carry unaceptable levels of risk</li>
+<li>High discount rate should not be seen as a substitute for a detailed risk analysis as this could lead to the rejection of profitable low risk projects in favor of more profitable projects that carry unacceptable levels of risk</li>
 </ul>
 </div>
 <div id="recall-capm" class="section level2">
 <h2>Recall: CAPM</h2>
 <p><span class="math inline">\(\begin{aligned} r_X &amp;= r_f + \dfrac{\sigma_X \sigma_U \rho_{X,U}}{\sigma_U^2}(r_U - r_f)\\ &amp;= r_f + \dfrac{\sigma_X}{\sigma_U} \rho_{X,U}(r_U - r_f)\\ &amp;= r_f + \beta_X(r_U - r_f)\\ \end{aligned}\)</span></p>
 <p>Where: <span class="math inline">\(\beta_X = \dfrac{\sigma_X}{\sigma_U}\rho_{X,U}\)</span></p>
+<p><span class="math inline">\(r_X\)</span>: expected return on asset <span class="math inline">\(X\)</span> <span class="math inline">\(r_f\)</span>: risk free rate of return <span class="math inline">\(r_U\)</span>: return on the universe of investment opportunities</p>
+<p>On a graph with systematic risk (<span class="math inline">\(\beta\)</span>) on the x-axis and <span class="math inline">\(r_X\)</span> on the y-axis, the Security Market Line (SML) has a y-axis intercept of <span class="math inline">\(r_f\)</span> and gradient <span class="math inline">\(r_U - r_f\)</span></p>
+<p>Project Market Line (PML) is obtained by re expressing <span class="math inline">\(r_X\)</span> as the required return on project <span class="math inline">\(X\)</span> and re-expressing <span class="math inline">\(U\)</span> as the existing project portfolio</p>
+<p>The PML shows that a higher returns is required of a project which, in the context of other project opportunities, exposes and org. to greater uncertainty (higher value of <span class="math inline">\(\dfrac{\sigma_X}{\sigma_U}\)</span>) and/or has a lower diversification benefit (higher value of <span class="math inline">\(\rho_{X,U}\)</span>)</p>
+<p>However, using the PML to determine the discount rate is problematic as the return on projects and the correlation between them may not be stable over their respective lifetimes</p>
+<p>In practice, it is difficult to find a relationship between the returns from projects anticipated by the PML and those actually achieved</p>
 </div>
 
 
