@@ -16,3 +16,185 @@ output:
 Analyze univariate and multivariate financial and insurance data (incl. asste price, credit spreads and defaults, interest rates and insurance losses) using appropriate statistical methods
 
 Reommend a specific choice of model based on the results of both quantitative and qualitative analysis of financial or insurance data
+
+***
+
+Exam notes:
+
+* For the quantitative elements, it is required to demonstrate understanding of the ideas behind the methodologies and how they are implemented rather than learning the details of the theory
+* Should practice the methods in this module using suitable software
+* Techniques introduced here to model specific risk types of risk will be covered later
+* Focus of the exam is on testing the understanding of the material and their ability to apply the techniques described in the Core Reading in practical situations and scenarios
+* Formulae for any required probability distributions (incl. means, variance, generator functions and expressions of copulas), if not already given in the Formulae & Tables book will be provided in the question
+
+Should not get bogged down in the maths!
+
+Focus on gaining an appreciation of:
+
+* Shapes of the differing distributions (esp. their skewness and the fatness of their tails) so that when given observed data, you can suggest what distribution might be appropriate to fit
+* How to check if your observed data match a given distribution using relvant test statistics
+* How to simulate random numbers from these distributions for subsequent modeling
+* How observed data may be mixture of different but related distributions - hence the need to be able to combine distributions and achieve a specified degree of correlation
+
+## Recall: Prereq
+
+***Moments of a Distribution***
+
+$\mu_n$ is the n^th^ moment about the mean: $\mu_n = \mathrm{E}\left[(X - \mathrm{E}[X])^n\right]$
+
+Coefficient of skewness $= \omega = \dfrac{\mu_3}{\sigma^3}$
+
+Coefficient of kurtosis $= \kappa = \dfrac{\mu_4}{\sigma^4}$
+
+* $\kappa = 3$: Mesokurtic
+* $\kappa > 3$: Leptokurtic
+    * Slender peak, has fatter tails
+* $\kappa < 3$: Playkurtic
+
+Excess kurtosis $= \kappa -3$: measure of kurtosis relative to a mesokurtic distribution (e.g. the normal distribution)
+
+***Gamma Function***
+
+$\Gamma(y) = \int \limits_0^\infty s^{y-1}e^{-s}ds$ for $y>0$
+
+* $\Gamma(1) = 1$
+* $\Gamma(\alpha) = (\alpha -1)\Gamma(\alpha-1)$ for $\alpha > 1$
+* If $\alpha \in \mathbb{Z}$ then $\Gamma(\alpha) = (\alpha -1)!$
+* $\Gamma\left(\dfrac{1}{2}\right) = \sqrt{\pi}$
+
+***Matrix Algebra***
+
+* Transpose: $\mathbf{A}'$
+* Determinant: $\mid \mathbf{A} \mid$
+* Identity: $\mathbf{I}$
+* Inverse: $\mathbf{A}^{-1}$
+* Matrix of Cofactors: $F$ such that $\mathbf{A}^{-1} = \dfrac{1}{\mid \mathbf{A} \mid}F$
+* Orthogonal matrix: If satisfying $\mathbf{A}'\mathbf{A} = \mathbf{A} \mathbf{A}' = \mathbf{I}$
+* Covariance matrix: $\Sigma$
+* Correlation matrix: $\mathbf{R}$
+
+## Univariate Distribution
+
+Main univariate distributions for analysis of financial time series
+
+See also the standard distributions listed in the yellow pages of the Formulae and Tables for Examinations
+
+Tables contain relevant formulae for distributions marked with \#
+
+### Univariate Discrete Distributions
+
+* Binomial^\#^
+* Negative binomial ^\#^
+* Poisson^\#^
+
+Calculations with these distributions can get unwiedly as the number of observations becomes large
+
+* Use continuous approximations
+* Still important that the characteristics of the underlying distribution are understood
+
+### Univariate Continuous Distributions
+
+Distributions with values from $-\infty$ to $\infty$
+
+* Normal^\#^
+* Normal mixture
+* Student's t^\#^
+* Skewed t^\#^
+
+We can still use the above for variables with only non-negative values if the probability of a negative value is very small (e.g. mean is sufficiently positive and the variance is sufficiently low)
+
+Distributions with only non-negative values
+
+* Lognormal^\#^
+* Wald^\#^
+* $\chi^2$^\#^
+* Gamma^\#^ and inverse gamma
+* Generalized inverse gamma
+* Exponential^\#^
+* Fréchet
+* Pareto^\#^
+* Generalized Pareto
+
+Distribution with finite range
+
+* Uniform^\#^
+* Triangular
+
+### Binomial
+
+A $Bin(n,p)$ distribution is the sum of $n$ independent and identical Bernoulli ($p$) trials
+
+R.v. $X \sim Bin(n,p)$ is the \# of success that occur in the $n$ trials
+
+The limiting distribution of the binomial distribution as $n \rightarrow \infty$ is the **normal distribution**
+
+### Negative Binomial
+
+Type 1: R.v. $X$ is the \# of the trial on which the $r$^th^ success occurs, where $r \in \mathbb{Z}$
+
+Type 2: Let $Y$ be the \# of failures before the $r$^th^ success; $Y = X-r$, where $X$ is defined as above
+
+Geometric distribution is a special case of the Type 1 NB distribution with $r=1$
+
+Practical limitations of the Type 1 NB (also limitation of the binomial):
+
+* CDF is laborious to calculate
+* $n!$ becomes time consuming to calculate for large values of $n$
+
+Type 2 NB is in the *Tables* and the combinatorial factor is written in terms of the gamma function
+
+### Poisson
+
+Models the number of events (e.g. cliams) that occur in a specified interval of time, when the events occur one after another in time in a well defined manner that presumes:
+
+* Events occur singly, at a constant rate
+* Numbers of events that occur in separate (i.e. non-overlapping) time intervals are independent of one another
+* i.e. The events occur randomly at a rate of $\lambda$ per period
+* Such events are said to occur according to a poisson process
+
+[Poisson limit theorm](https://en.wikipedia.org/wiki/Poisson_limit_theorem)
+
+* Sequence of $Bin(n,p)$, as $n \rightarrow \infty$ and $p \rightarrow 0$ together such that the mena $np$ is held constant at the value $\lambda$
+* Limit leads to the distribution of the poisson variable with parameter $\lambda$
+* Subbing $\lambda = np$ into the PDF of the binomial distribution and taking the limits will produces the probability function of poisson
+
+Poisson can be used as an approxiamtion to the binomial if $p$ is small enough (e.g. with mortality rate)
+
+* Eliminates one of the practical problems with the binomial distribution but the CDF is still laborious summations
+
+### Gaussian
+
+Standard normal
+
+* PDF $\phi$ and CDF $\Phi$
+* Location parameter $\mu = 0$
+* Scaling parameter $\sigma = 1$
+
+Key features of the normal disbribution
+
+* $f(x) > 0$ for $-\infty < x < \infty$
+* Based on CLT, it will approximate the distribution of a sufficiently large number of iid r.v.
+* It can facilitate simple analytical solutions to complex problems (e.g. when it is used as an approximation to the binomial distribution)
+
+Applications:
+
+* Use for error term ($\epsilon_t \sim N(0,\sigma)$) when modeling random walk
+* Standard normal is the distribution of the test statistic $Z = \dfrac{X - \mu}{\sigma}$ used to determine whether the mean of the underlying population is significantly different to an assumed mean $\mu$ when the value of $\sigma$ is known
+  * Based on a single obervation $X$
+* Standard normal is the distribution of the test statistic $Z = \dfrac{\bar{X} - \mu}{\sigma / \sqrt{T}}$ used to determine whether the mean of the underlying population is significantly different from $\mu$, where $T$ is the number of observations and when the value of $\sigma$ is known
+  * Based on the sample mean $\bar{X}$
+  
+Test for normality:
+
+1. Graphical test e.g. QQ plots
+2. Statistical tests
+    * Jarque-Bera
+        * Calculate the skew $\omega$ and kurtosis $\kappa$ with no adjustment for sample bias (Use denominator of $T$)
+        * $JB = \dfrac{T}{6}\left(\omega^2 + \dfrac{\kappa}{4}\right)$
+        * Distribution of the test statistic tends to $\chi^2_2$ as the number of observations ($T$) tends to $\infty$
+    * Anderson-Darling
+    * Shapiro-Wilk
+    * D'Agostino
+    
+### Normal Mean-Variance Mixture
+

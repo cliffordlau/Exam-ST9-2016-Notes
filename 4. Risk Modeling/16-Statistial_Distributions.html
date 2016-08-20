@@ -231,6 +231,185 @@ div.tocify {
 <h2>Module Objective</h2>
 <p>Analyze univariate and multivariate financial and insurance data (incl. asste price, credit spreads and defaults, interest rates and insurance losses) using appropriate statistical methods</p>
 <p>Reommend a specific choice of model based on the results of both quantitative and qualitative analysis of financial or insurance data</p>
+<hr />
+<p>Exam notes:</p>
+<ul>
+<li>For the quantitative elements, it is required to demonstrate understanding of the ideas behind the methodologies and how they are implemented rather than learning the details of the theory</li>
+<li>Should practice the methods in this module using suitable software</li>
+<li>Techniques introduced here to model specific risk types of risk will be covered later</li>
+<li>Focus of the exam is on testing the understanding of the material and their ability to apply the techniques described in the Core Reading in practical situations and scenarios</li>
+<li>Formulae for any required probability distributions (incl. means, variance, generator functions and expressions of copulas), if not already given in the Formulae &amp; Tables book will be provided in the question</li>
+</ul>
+<p>Should not get bogged down in the maths!</p>
+<p>Focus on gaining an appreciation of:</p>
+<ul>
+<li>Shapes of the differing distributions (esp. their skewness and the fatness of their tails) so that when given observed data, you can suggest what distribution might be appropriate to fit</li>
+<li>How to check if your observed data match a given distribution using relvant test statistics</li>
+<li>How to simulate random numbers from these distributions for subsequent modeling</li>
+<li>How observed data may be mixture of different but related distributions - hence the need to be able to combine distributions and achieve a specified degree of correlation</li>
+</ul>
+</div>
+<div id="recall-prereq" class="section level2">
+<h2>Recall: Prereq</h2>
+<p><strong><em>Moments of a Distribution</em></strong></p>
+<p><span class="math inline">\(\mu_n\)</span> is the n<sup>th</sup> moment about the mean: <span class="math inline">\(\mu_n = \mathrm{E}\left[(X - \mathrm{E}[X])^n\right]\)</span></p>
+<p>Coefficient of skewness <span class="math inline">\(= \omega = \dfrac{\mu_3}{\sigma^3}\)</span></p>
+<p>Coefficient of kurtosis <span class="math inline">\(= \kappa = \dfrac{\mu_4}{\sigma^4}\)</span></p>
+<ul>
+<li><span class="math inline">\(\kappa = 3\)</span>: Mesokurtic</li>
+<li><span class="math inline">\(\kappa &gt; 3\)</span>: Leptokurtic
+<ul>
+<li>Slender peak, has fatter tails</li>
+</ul></li>
+<li><span class="math inline">\(\kappa &lt; 3\)</span>: Playkurtic</li>
+</ul>
+<p>Excess kurtosis <span class="math inline">\(= \kappa -3\)</span>: measure of kurtosis relative to a mesokurtic distribution (e.g. the normal distribution)</p>
+<p><strong><em>Gamma Function</em></strong></p>
+<p><span class="math inline">\(\Gamma(y) = \int \limits_0^\infty s^{y-1}e^{-s}ds\)</span> for <span class="math inline">\(y&gt;0\)</span></p>
+<ul>
+<li><span class="math inline">\(\Gamma(1) = 1\)</span></li>
+<li><span class="math inline">\(\Gamma(\alpha) = (\alpha -1)\Gamma(\alpha-1)\)</span> for <span class="math inline">\(\alpha &gt; 1\)</span></li>
+<li>If <span class="math inline">\(\alpha \in \mathbb{Z}\)</span> then <span class="math inline">\(\Gamma(\alpha) = (\alpha -1)!\)</span></li>
+<li><span class="math inline">\(\Gamma\left(\dfrac{1}{2}\right) = \sqrt{\pi}\)</span></li>
+</ul>
+<p><strong><em>Matrix Algebra</em></strong></p>
+<ul>
+<li>Transpose: <span class="math inline">\(\mathbf{A}'\)</span></li>
+<li>Determinant: <span class="math inline">\(\mid \mathbf{A} \mid\)</span></li>
+<li>Identity: <span class="math inline">\(\mathbf{I}\)</span></li>
+<li>Inverse: <span class="math inline">\(\mathbf{A}^{-1}\)</span></li>
+<li>Matrix of Cofactors: <span class="math inline">\(F\)</span> such that <span class="math inline">\(\mathbf{A}^{-1} = \dfrac{1}{\mid \mathbf{A} \mid}F\)</span></li>
+<li>Orthogonal matrix: If satisfying <span class="math inline">\(\mathbf{A}'\mathbf{A} = \mathbf{A} \mathbf{A}' = \mathbf{I}\)</span></li>
+<li>Covariance matrix: <span class="math inline">\(\Sigma\)</span></li>
+<li>Correlation matrix: <span class="math inline">\(\mathbf{R}\)</span></li>
+</ul>
+</div>
+<div id="univariate-distribution" class="section level2">
+<h2>Univariate Distribution</h2>
+<p>Main univariate distributions for analysis of financial time series</p>
+<p>See also the standard distributions listed in the yellow pages of the Formulae and Tables for Examinations</p>
+<p>Tables contain relevant formulae for distributions marked with #</p>
+<div id="univariate-discrete-distributions" class="section level3">
+<h3>Univariate Discrete Distributions</h3>
+<ul>
+<li>Binomial<sup>#</sup></li>
+<li>Negative binomial <sup>#</sup></li>
+<li>Poisson<sup>#</sup></li>
+</ul>
+<p>Calculations with these distributions can get unwiedly as the number of observations becomes large</p>
+<ul>
+<li>Use continuous approximations</li>
+<li>Still important that the characteristics of the underlying distribution are understood</li>
+</ul>
+</div>
+<div id="univariate-continuous-distributions" class="section level3">
+<h3>Univariate Continuous Distributions</h3>
+<p>Distributions with values from <span class="math inline">\(-\infty\)</span> to <span class="math inline">\(\infty\)</span></p>
+<ul>
+<li>Normal<sup>#</sup></li>
+<li>Normal mixture</li>
+<li>Student’s t<sup>#</sup></li>
+<li>Skewed t<sup>#</sup></li>
+</ul>
+<p>We can still use the above for variables with only non-negative values if the probability of a negative value is very small (e.g. mean is sufficiently positive and the variance is sufficiently low)</p>
+<p>Distributions with only non-negative values</p>
+<ul>
+<li>Lognormal<sup>#</sup></li>
+<li>Wald<sup>#</sup></li>
+<li><span class="math inline">\(\chi^2\)</span><sup>#</sup></li>
+<li>Gamma<sup>#</sup> and inverse gamma</li>
+<li>Generalized inverse gamma</li>
+<li>Exponential<sup>#</sup></li>
+<li>Fréchet</li>
+<li>Pareto<sup>#</sup></li>
+<li>Generalized Pareto</li>
+</ul>
+<p>Distribution with finite range</p>
+<ul>
+<li>Uniform<sup>#</sup></li>
+<li>Triangular</li>
+</ul>
+</div>
+<div id="binomial" class="section level3">
+<h3>Binomial</h3>
+<p>A <span class="math inline">\(Bin(n,p)\)</span> distribution is the sum of <span class="math inline">\(n\)</span> independent and identical Bernoulli (<span class="math inline">\(p\)</span>) trials</p>
+<p>R.v. <span class="math inline">\(X \sim Bin(n,p)\)</span> is the # of success that occur in the <span class="math inline">\(n\)</span> trials</p>
+<p>The limiting distribution of the binomial distribution as <span class="math inline">\(n \rightarrow \infty\)</span> is the <strong>normal distribution</strong></p>
+</div>
+<div id="negative-binomial" class="section level3">
+<h3>Negative Binomial</h3>
+<p>Type 1: R.v. <span class="math inline">\(X\)</span> is the # of the trial on which the <span class="math inline">\(r\)</span><sup>th</sup> success occurs, where <span class="math inline">\(r \in \mathbb{Z}\)</span></p>
+<p>Type 2: Let <span class="math inline">\(Y\)</span> be the # of failures before the <span class="math inline">\(r\)</span><sup>th</sup> success; <span class="math inline">\(Y = X-r\)</span>, where <span class="math inline">\(X\)</span> is defined as above</p>
+<p>Geometric distribution is a special case of the Type 1 NB distribution with <span class="math inline">\(r=1\)</span></p>
+<p>Practical limitations of the Type 1 NB (also limitation of the binomial):</p>
+<ul>
+<li>CDF is laborious to calculate</li>
+<li><span class="math inline">\(n!\)</span> becomes time consuming to calculate for large values of <span class="math inline">\(n\)</span></li>
+</ul>
+<p>Type 2 NB is in the <em>Tables</em> and the combinatorial factor is written in terms of the gamma function</p>
+</div>
+<div id="poisson" class="section level3">
+<h3>Poisson</h3>
+<p>Models the number of events (e.g. cliams) that occur in a specified interval of time, when the events occur one after another in time in a well defined manner that presumes:</p>
+<ul>
+<li>Events occur singly, at a constant rate</li>
+<li>Numbers of events that occur in separate (i.e. non-overlapping) time intervals are independent of one another</li>
+<li>i.e. The events occur randomly at a rate of <span class="math inline">\(\lambda\)</span> per period</li>
+<li>Such events are said to occur according to a poisson process</li>
+</ul>
+<p><a href="https://en.wikipedia.org/wiki/Poisson_limit_theorem">Poisson limit theorm</a></p>
+<ul>
+<li>Sequence of <span class="math inline">\(Bin(n,p)\)</span>, as <span class="math inline">\(n \rightarrow \infty\)</span> and <span class="math inline">\(p \rightarrow 0\)</span> together such that the mena <span class="math inline">\(np\)</span> is held constant at the value <span class="math inline">\(\lambda\)</span></li>
+<li>Limit leads to the distribution of the poisson variable with parameter <span class="math inline">\(\lambda\)</span></li>
+<li>Subbing <span class="math inline">\(\lambda = np\)</span> into the PDF of the binomial distribution and taking the limits will produces the probability function of poisson</li>
+</ul>
+<p>Poisson can be used as an approxiamtion to the binomial if <span class="math inline">\(p\)</span> is small enough (e.g. with mortality rate)</p>
+<ul>
+<li>Eliminates one of the practical problems with the binomial distribution but the CDF is still laborious summations</li>
+</ul>
+</div>
+<div id="gaussian" class="section level3">
+<h3>Gaussian</h3>
+<p>Standard normal</p>
+<ul>
+<li>PDF <span class="math inline">\(\phi\)</span> and CDF <span class="math inline">\(\Phi\)</span></li>
+<li>Location parameter <span class="math inline">\(\mu = 0\)</span></li>
+<li>Scaling parameter <span class="math inline">\(\sigma = 1\)</span></li>
+</ul>
+<p>Key features of the normal disbribution</p>
+<ul>
+<li><span class="math inline">\(f(x) &gt; 0\)</span> for <span class="math inline">\(-\infty &lt; x &lt; \infty\)</span></li>
+<li>Based on CLT, it will approximate the distribution of a sufficiently large number of iid r.v.</li>
+<li>It can facilitate simple analytical solutions to complex problems (e.g. when it is used as an approximation to the binomial distribution)</li>
+</ul>
+<p>Applications:</p>
+<ul>
+<li>Use for error term (<span class="math inline">\(\epsilon_t \sim N(0,\sigma)\)</span>) when modeling random walk</li>
+<li>Standard normal is the distribution of the test statistic <span class="math inline">\(Z = \dfrac{X - \mu}{\sigma}\)</span> used to determine whether the mean of the underlying population is significantly different to an assumed mean <span class="math inline">\(\mu\)</span> when the value of <span class="math inline">\(\sigma\)</span> is known</li>
+<li>Based on a single obervation <span class="math inline">\(X\)</span></li>
+<li>Standard normal is the distribution of the test statistic <span class="math inline">\(Z = \dfrac{\bar{X} - \mu}{\sigma / \sqrt{T}}\)</span> used to determine whether the mean of the underlying population is significantly different from <span class="math inline">\(\mu\)</span>, where <span class="math inline">\(T\)</span> is the number of observations and when the value of <span class="math inline">\(\sigma\)</span> is known</li>
+<li>Based on the sample mean <span class="math inline">\(\bar{X}\)</span></li>
+</ul>
+<p>Test for normality:</p>
+<ol style="list-style-type: decimal">
+<li>Graphical test e.g. QQ plots</li>
+<li>Statistical tests
+<ul>
+<li>Jarque-Bera
+<ul>
+<li>Calculate the skew <span class="math inline">\(\omega\)</span> and kurtosis <span class="math inline">\(\kappa\)</span> with no adjustment for sample bias (Use denominator of <span class="math inline">\(T\)</span>)</li>
+<li><span class="math inline">\(JB = \dfrac{T}{6}\left(\omega^2 + \dfrac{\kappa}{4}\right)\)</span></li>
+<li>Distribution of the test statistic tends to <span class="math inline">\(\chi^2_2\)</span> as the number of observations (<span class="math inline">\(T\)</span>) tends to <span class="math inline">\(\infty\)</span></li>
+</ul></li>
+<li>Anderson-Darling</li>
+<li>Shapiro-Wilk</li>
+<li>D’Agostino</li>
+</ul></li>
+</ol>
+</div>
+<div id="normal-mean-variance-mixture" class="section level3">
+<h3>Normal Mean-Variance Mixture</h3>
+</div>
 </div>
 
 
