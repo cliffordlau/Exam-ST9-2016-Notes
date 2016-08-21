@@ -1,0 +1,61 @@
+---
+title: "Module 17: Time Series Analysis"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Anlayze univariate and multivariate financial and insurance data (incl. asset prices, credit spreads and defaults, interest rates and insurance losses) using appropriate statistical methods
+
+Recommend a specific choice of model based on the results of both quantitatie and qualitative analysis of financial or insurance data
+
+***
+
+Discuss the fitting of distributions to a given set of data and analysis of time series processes
+
+Use of the techniueqs here to model specific types of risk will be covered in Part 4
+
+Similar focus and note as the previous section
+
+## Definitions
+
+### Strict Stationarity
+
+A process $\{X_t : t= 1,2,...,T\}$ is said to be strictly stationary if:
+
+* The joint distribution:  
+$X_r,X_{r+1},...,X_s$ and $X_{r+k}, X_{r+k+1},...,X_{s+k}$  
+are identical for all $r, s, k \in \mathbb{Z}$
+
+### Weak anc Covariance Stationarity
+
+A process $\{X_t : t= 0,1,2,...,T\}$ is said to be covariance stationary (or weakly stationary) if:
+
+* The mean of the process $m(T) = \mathrm{E}(X_t)$ is constant, and 
+* The covariance of the process:  
+$\mathrm{Cov}(X_r, X_{r+k}) = \mathrm{E}\left[\left(X_r - m(r)\right)\left(X_{r+k} - m(r+k)\right)\right]$  
+depends only on the time different $k$
+
+Weakly stationary of order *n* means that the moments of subsets of the process are defined and equal up to the *n*^th^ moment
+
+***Importance of stationarity*** in modeling financial time series
+
+* Stationarity means that the statistial properties of the process (incl. the moments and the relationships between observations in different periods) stay the same over time
+* Important as it determines the extend to which we can use past data to try to model the future
+* Strict stationarity is very restrictive and is unlikely true in real world data
+* The requirement can be relaxed and we can still analyze the data under weak stationarity
+
+Finite variance process strict stationarity $\Rightarrow$ Weak stationarity
+
+Infinite variance process strict stationarity $\Rightarrow \!\!\!\!\!\! \big/$ Weak stationarity
+
+### White Noise
+
