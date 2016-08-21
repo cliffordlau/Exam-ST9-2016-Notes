@@ -1,0 +1,27 @@
+---
+title: "Module 18: Copulas""
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Desmostrate understanding of the use of copulas as part of the process of modeling multivariate risks, including recommendation of an appropriate copula
+
+***
+
+ERM is interested in all the risk an org faces and ways they interact with each other
+
+Module focus on the theory and application of copulas
+
+Use of the techniques here to model specific types of risk will be covered in part 5
+
+## Recall: Prereq
+
