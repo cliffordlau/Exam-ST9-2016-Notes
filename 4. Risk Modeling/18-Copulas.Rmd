@@ -451,3 +451,110 @@ They are based on well-known multivariate distributions, but no simple closed-fo
 
 e.g. Gaussian copula (based on the normal distribution) and the *t* copula (based on *t* distribution)
 
+## Fréchet-Höffding Copulas
+
+Fundamental copulas:
+
+* Independence (or product) copula
+* Co-monotonicity (or minium) copula
+* Counter-monotonicity copula
+
+### Independence Copula
+
+Or product copula
+
+$\begin{align}
+  _{ind}C(F_{X_1}(x_1),...,F_{X_N}(x_N)) &= _{ind}C(u_1,...,u_N) \\
+  &= \prod \limits_{i=1}^N u_N \\
+  &= \prod \limits_{i=1}^N F_{X_i}(x_i)
+\end{align}$
+
+The joint distribution is equal to the produce of the individual distribution functions
+
+As the variables are independent, there is no upper or lower tail dependence  
+i.e. $_{L}\lambda = _{U}\lambda = 0$
+
+### Co-monotonicity Copula
+
+Or minimum copula
+
+$\begin{align}
+  _{min}C(F_{X_1}(x_1),...,F_{X_N}(x_N)) &=_{\mathrm{min}}C(u_1,...,u_N) \\
+  &= \mathrm{min}(u_1,...,y_N) \\
+  &= \mathrm{min}(F_{X_1}(x_1),...,F_{X_N}(x_N)) \\
+\end{align}$
+
+Co-monotonicity copula represents the perfect positive dependence between variables
+
+* i.e. all variables can be expressed as in increasing function (a monotonic transformation) of any given one of them $\therefore$ an increase in the value of one variable leads to an increase in the value of all the variables
+* $_{L}\lambda = _{U}\lambda = 1$
+
+### Counter-monotonicity Copula
+
+Or maximum copula
+
+Only defined in a 2 dimensions:
+
+$\begin{align}
+  _{max}C(F_{X_1}(x_1),F_{X_2}(x_2)) &=_{\mathrm{min}}C(u,v) \\
+  &= \mathrm{max}(u+v-1,0) \\
+  &= \mathrm{max}(F_{X_1}(x_1) + F_{X_2}(x_2)-1,0) \\
+\end{align}$
+
+Counter-monotonoicity Copula represents perfect negative dependence between two variables
+
+* i.e. a positive change in one will always  be coupled with a negative movement in the other
+
+Tail dependency between the variables will only manifest itself when the variables are at opposite ends
+
+* i.e. when one is high and on is low and no special relationship whne both are low or both are high
+
+$\therefore$ $_{L}\lambda = _{U}\lambda = 0$
+
+### Fréchet-Höffding Bounds
+
+$\mathrm{max}\left\{ \left( \sum \limits_{i=1}^N u_i \right) +1 -N, 0\right\} \leq C(u_1,u_2,...,u_N) \leq \mathrm{min}\{u1,u2,...,u_N\}$
+
+In the bivariate case the co-monotonicity and counter-monotonicity copulas represent the extremes of the possible levels of association between variables
+
+$\therefore$ they are the upper and lower bound for all copulas (aka the Fréchet-Höffding Bounds)
+
+* Co-monotonicity = upper bound
+* Counter-monotonicity = lower bound
+* See visuals from Sweeting p. 203 204
+* Even though the counter-monotonicity copula is not defined above 2 dimensions, the Fréchet-Höffding Bounds do exists
+
+### Fréchet-Höffding Family and Mixture
+
+The fundamentl copulas are specific cases of the general Fréchet-Höffding family of copulas which are of the form
+
+$\begin{align}
+  _{F}C(F_{X_1}(x_1),...,F_{X_N}(x_N)) = & p \mathrm{max} \left(\left(\sum \limits_{i=1}^N F_{X_i}(x_i)\right)-1 ,0 \right) \\
+  &+ (1-p-q)\prod \limits{i=1}^N F_{X_i}(x_i) \\
+  &+ q \mathrm{min}(F_{X_1}(x_1),...,F_{X_N}(x_N))\\
+\end{align}$
+
+* $N\geq 2$
+* $0 \leq p \leq 1$
+* $0 \leq q \leq 1$
+* $p+q\leq1$
+* If $N>2$ then $p=0$ (as counter-mono copula only exists in 2-D)
+
+In the bivariate case:
+
+$_{F}C(u,v) = p \mathrm{max}(u+v-1,0) + (1-p-q)uv + q min(u,v)$
+
+**Mixture copula** is defined when
+
+* One of $p$ or $q$ = 0
+* The other is $>0$
+
+(Appendix of the CMP has more discussions on the attainable correlations)
+
+### Copula CDF Visualization
+
+![](figures/figure-18.04.png)
+![](figures/figure-18.05.png)
+![](figures/figure-18.06.png)
+
+Note how the co-monotonicity copula represents an upper bound to copulas and the counter-monotonicity copula represents the lower bound
