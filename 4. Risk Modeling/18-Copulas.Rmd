@@ -308,3 +308,146 @@ $\bar{F}(x,y) = P[X > x, Y > y] = \bar{C}[\bar{F}_X(x), \bar{F}_Y(y)]$
 
 So the survival copula expresses the joint survival probability in terms of the marginal survival probabilities
 
+Relationship between the survival copulas and the ordinary copulas
+
+$\bar{C}(1-u,1-v) = 1 - u- v + C(u,v)$
+
+Derivation of the above:
+
+$P[X \leq x \text{ or } Y \leq y] = 1 - P[X > x, Y>y]$
+
+So: $1 - P[X > x, Y>y] = P[X\leq x] + P[Y\leq y] - P[X\leq x, Y \leq y]$
+
+In terms of copula: $1 - \bar{C}[\bar{F}_X(x), \bar{F}_Y(y)] = F_X(x) + F_Y(y) - C[F_X(x), F_Y(y)]$
+
+Rearranging:$\bar{C}[\bar{F}_X(x), \bar{F}_Y(y)] = 1- F_X(x) - F_Y(y) + C[F_X(x), F_Y(y)]$
+
+And we get the above formula
+
+The graphic below illustrate the relationship on a copulat density plot in terms of two variables $X_1$ and $X_2$
+
+![](figures/figure-18.02.png)
+
+### Copula Density Functino
+
+Copula density function describes the rate of change of the copula CDF
+
+Calculated by partial differentiation w.r.t each of the variables
+
+$c(u_1,...,u_N) = \dfrac{\partial C(u_1,...,u_n)}{\partial u_1 ... \partial u_N}$
+
+If all distribution functions are continuous
+
+$c(u_1,...u_N) = \dfrac{f(x_1,...,x_N)}{f(x_1)f(x_2)...f(x_N)}$
+
+## Concordance (or Association)
+
+Identify at different forms of association (e.g. linear correlation with Pearson's $\rho$) and use this categorization to select suitable potential candiate copulas from the list of established copulas (or develop bespoke copula function)
+
+### Dependence vs Concordance (or Association)
+
+Concordance does not implay that one variable directly influences the other (i.e does not imply that one is dependent upon the other)
+
+The linear and rank correlation measures (from mod 15) indicate concordance (or association) but do not imply dependence
+
+***Axioms for a good measure of concordance***
+
+Scarsini's properties of a good measure of concordance, $M_{X,Y}$, between 2 variables ($X$ and $Y$) that are linked by a specified copula $C(F_X(x),F_Y(y))$:
+
+* Completeness of domain:  
+$M_{X,Y}$ is defined for all values of $X$ and $Y$, with $X$ and $Y$ being continuous
+* Symmetry:  
+$M_{X,Y} = M_{Y,X}$
+* Coherence:  
+If $C_{X,Y}(u_1, u_2) \geq C_{W,Z}(u_1, u_2)$ for all $u_1, u_2 \in [0,1]$ then $M_{X,Y} \geq M_{W,Z}$
+* Unit range:  
+$-1\ leq M_{X,Y} \leq 1$ and the extremes of this range should be feasible
+* Independence:  
+If $X$ and $Y$ are independent then $M_{X,Y} = 0$
+* Consistency:  
+If $X = -Z$ then $M_{X,Y} = -M_{X,Y}$
+* Convergence:  
+If $x_1, x_2,..., x_T$ and $y_1, y_2,...,y_T$ are each sequences of $T$ observations (of the r.v. $X$ and $Y$) with joint distribution function $_{T}F(x,y)$ and copula $_{T}C(F_X(x), F_Y(y))$ then if $_{T}C(F_X(x), F_Y(y))$ tends to $C(F_X(x), F_Y(y))$ as the number of observations ($T$) increases we should also have $_{T}M_{X,Y}$ tending to $M_{X,Y}$
+
+Properties above imply other properties of good measures of concordance:
+
+* If $g(X)$ and $h(Y)$ are monotonic transformations of $X$ and $Y$ then $M_{g(X),h(Y)} = M_{X,Y}$
+* If $X$ and $Y$ are co-monotonic then $M_{X,Y} = 1$
+* IF $X$ and $Y$ are counter monotonic then $M_{X,Y} = -1$
+
+Spearman's $\rho$ and Kendall's $\tau$ both satisfy these criteria for a good measure of concordance
+
+Pearson's $\rho$ only fulfils all the criteria when all the marginal distributions are elliptical
+
+* e.g. a perfect non-linear relationship (e.g. $Y =\ln X$) will not result in $\rho = 1$
+
+### Tail Dependence
+
+Copulas can be used to describe the full relationship between the marginal distributions
+
+Tail dependencies are of particular interest in RM as they describe joint concentrations of risk where they might be of particular concern (at the extremes of the marginal distributions)
+
+Coefficient of the lower tail dependence:
+
+$\begin{align}
+  _L\lambda_{X,Y} &= \lim \limits_{u \rightarrow 0^+} P\left(X \leq F_X^{-1}(u) \mid Y \leq F_Y^{-1}(u) \right) \\
+  &= \lim \limits_{u \rightarrow 0^+} \dfrac{C(u,u)}{u}\\
+\end{align}$
+
+Coefficient of the upper tail dependence:
+
+$\begin{align}
+  _U\lambda_{X,Y} &= \lim \limits_{u \rightarrow 1^-} P\left(X > F_X^{-1}(u) \mid Y > F_Y^{-1}(u) \right) \\
+  &= \lim \limits_{u \rightarrow 0^+} \dfrac{\bar{C}(u,u)}{u}\\
+\end{align}$
+
+Visually, on a copula density plot:
+
+![](figures/figure-18.03.png)
+
+Level of tail dependences exhibited by a particular set of data will help to indicate which copula(s) might be appropriate to consider fitting
+
+Because each copula has a specific degree of tail dependence which may be parameterized
+
+**Derivation** of the above formulas
+
+$\begin{align}
+  _{L}\lambda_{X,Y} &= \lim \limits_{u \rightarrow 0^+} P\left(X \leq F_X^{-1}(u) \mid Y \leq F_Y^{-1}(u) \right) \\
+  &= \lim \limits_{u \rightarrow 0^+} \dfrac{P\left(X \leq F_X^{-1}(u), Y \leq F_Y^{-1}(u) \right)}{P(Y \leq F_Y^{-1}(u))} \\
+  &= \lim \limits_{u \rightarrow 0^+} \dfrac{P\left(F_X(X) \leq u, F_Y(Y) \leq u \right)}{P(F_Y(Y) \leq u)} \\
+  &= \lim \limits_{u \rightarrow 0^+} \dfrac{C(u,u)}{C(1,u)}\\
+  &= \lim \limits_{u \rightarrow 0^+} \dfrac{C(u,u)}{C(1,u)}\\
+\end{align}$
+
+$\begin{align}
+  _{U}\lambda_{X,Y} &= \lim \limits_{u \rightarrow 1^-} P\left(X > F_X^{-1}(u) \mid Y > F_Y^{-1}(u) \right) \\
+  &= \lim \limits_{u \rightarrow 1^-} \dfrac{P\left(X > F_X^{-1}(u), Y > F_Y^{-1}(u) \right)}{P(Y > F_Y^{-1}(u))} \\
+  &= \lim \limits_{u \rightarrow 1^-} \dfrac{P\left(F_X(X) > u, F_Y(Y) > u \right)}{P(F_Y(Y) > u)} \\
+  &= \lim \limits_{u \rightarrow 1^-} \dfrac{C(1-u,1-u)}{1-u}\\
+  &= \lim \limits_{u \rightarrow 0^+} \dfrac{\bar{C}(u,u)}{C(u)}\\
+\end{align}$
+
+The final equality above follows as a result of replace $1-u$ with $u4 and noting that letting $u \rightarrow 0^+$ in the limit of the new expression is the same as letting $u \rightarrow 1^-$ in the previous expresion
+
+## Three Main Types of Copulas
+
+***Fundamental Copulas***
+
+They represent the three basic dependencies that a set of variables can display
+
+* Independence, perfect positive dependence, perfect negative dependence
+
+They can combined to form a wider family of copula functions called the *Fréchet-Höffding* family
+
+***Explict Copulas***
+
+They have simple closed-form expression
+
+We will look at the general calss of *Archimedean copulas* e.g. Clayton copula
+
+***Implicit Copulas***
+
+They are based on well-known multivariate distributions, but no simple closed-form expression exists
+
+e.g. Gaussian copula (based on the normal distribution) and the *t* copula (based on *t* distribution)
+
