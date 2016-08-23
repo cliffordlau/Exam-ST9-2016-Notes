@@ -13,7 +13,7 @@ output:
 
 ## Module Objective
 
-Desmostrate understanding of the use of copulas as part of the process of modeling multivariate risks, including recommendation of an appropriate copula
+Demonstrate understanding of the use of copulas as part of the process of modeling multivariate risks, including recommendation of an appropriate copula
 
 ***
 
@@ -74,7 +74,7 @@ $\mathrm{Var}(X+Y) = \mathrm{Var}(X) + \mathrm{Var}(Y) + 2\mathrm{Cov}(X, Y)$
 
 ### Joint Distribution Functions
 
-For ERM we need to model all the risks an org. faces and their interdependencies
+For ERM we need to model all the risks an org. faces and their inter-dependencies
 
 One way to do so is with a joint distribution function for all the risk
 
@@ -92,7 +92,7 @@ $f_{X_1}(x_1) = \int \limits_{x_2} \dots \int \limits_{x_N} f_{X_1,X_2,...,X_N}(
 
 The joint distribution will combine information from the marginal risk distribution with other information on the way in which the risks interrelate or depend on one another
 
-The joint distribution expresses this depedence of interrelated factos on one another but it does so **implicity** (You can't immediately see the nature of the interdependence by looking at the formula for the join distribution function)
+The joint distribution expresses this dependence of interrelated factors on one another but it does so **implicity** (You can't immediately see the nature of the interdependence by looking at the formula for the join distribution function)
 
 **Copula** can reflect this interdependence of factors **explicity**
 
@@ -103,8 +103,8 @@ Expresses a multivariate cumulative distribution functions in terms of the indiv
 
 $P(X_i \leq x_i ; i = 1...N) = F_{X_1,...,X_N}(x_1,...,x_N) = C_{X_1,...,X_N}\left[F_{X_1}(x_1),...,F_{X_N}(x_N)\right]$
 
-* Where $C[\dots]$ is the relevant copulat function
-* The joint distribution function is epxressed explicitly in terms of the marginal distirubtions and the copula function
+* Where $C[\dots]$ is the relevant copula function
+* The joint distribution function is expressed explicitly in terms of the marginal distributions and the copula function
 
 **Key Idea**:
 
@@ -112,7 +112,7 @@ $\left\{\left\{\begin{array}{c}\text{Marginal distribution of} \\ \text{each ris
 
 Can think of copula as a CDF in many dimensions. It takes marginal probabilities and combines them so as to produce a joint probability
 
-*N*-dimenion copula:
+*N*-dimension copula:
 
 $C(\mathbf{U}) = C(u_1,u_2,...,u_N) = P(U_1 \leq u_1,...,U_N \leq u_N)$
 
@@ -122,7 +122,7 @@ $C(\mathbf{U}) = C(u_1,u_2,...,u_N) = P(U_1 \leq u_1,...,U_N \leq u_N)$
 ***Key beneftis***
 
 * We can deconstruct the joint distribution of a set of variables into components (marginal + copulas)
-* We can adjust each component independtly of the others
+* We can adjust each component independently of the others
     * e.g. if the marginal distribution change shape w/o affecting the relative order of the data values within each set of observations
     * And in this case the copula does not change (property of invariance)
     
@@ -166,7 +166,7 @@ Consider how copulas relate to probability distributions and review the concept 
 
 Increasing the range of values for the variables must increase the probability of observing a combination within that range
 
-$C(u_1,u_2,...,u_N)$ is an increasing function of each input varialbe
+$C(u_1,u_2,...,u_N)$ is an increasing function of each input variable
 
 * e.g. $C(u_1,u_2,u_3^*,u_4) > C(u_1,u_2,u_3,u_4)$ for $u^*_3 > u_3$
 * Extension of the result for a univariate probability distribution function where:  
@@ -174,7 +174,7 @@ $F(X^*) = P(X \leq x^*) > P(X \leq x) = F(x)$ if $x^* > x$
 
 **Property 2**
 
-If we "intergrate out" all the other variables (by setting CDFs equal to the maximum value of 1 so as to include all possible values), we will just have the marginal distribution of variable $i$
+If we "integrate out" all the other variables (by setting CDFs equal to the maximum value of 1 so as to include all possible values), we will just have the marginal distribution of variable $i$
 
 $C(1,...,1,u_i,1,...,1) = u_i$ for $i=1,2,...,d$ and $u_i \in [0,1]$
 
@@ -236,7 +236,7 @@ $\exists \: C : \forall \: x_1,...,x_N \in [-\infty, \infty]$
 
 $F(x_1,...,x_N) = C(F_1(x_1),...,F_N(x_N))$
 
-Sklar's theorm sates that if the marginal cumulative distributions are continuous, then $C$ is unique
+Sklar's theorem sates that if the marginal cumulative distributions are continuous, then $C$ is unique
 
 Conversely, if $C$ is a copula and $F_1,...,F_N$ are univariate CDF, then the function $F$ ($F(x_1,...,x_N) = C(F_1(x_1),...,F_N(x_N))$) is a joint cumulative distribution function with marginal CDF $F_1,...,F_N$
 
@@ -279,7 +279,7 @@ $\hat{F}(2.7,1,4) = \dfrac{1}{11} \times 3 = \dfrac{3}{11} = 0.273$
 
 ***Method 2***
 
-Apply a continuity corretion and define:
+Apply a continuity correction and define:
 
 $\begin{align}
   F(x,y) &= \Pr(X_t \leq x, Y_t \leq y) \\
@@ -324,7 +324,7 @@ Rearranging:$\bar{C}[\bar{F}_X(x), \bar{F}_Y(y)] = 1- F_X(x) - F_Y(y) + C[F_X(x)
 
 And we get the above formula
 
-The graphic below illustrate the relationship on a copulat density plot in terms of two variables $X_1$ and $X_2$
+The graphic below illustrate the relationship on a copula density plot in terms of two variables $X_1$ and $X_2$
 
 ![](figures/figure-18.02.png)
 
@@ -342,11 +342,11 @@ $c(u_1,...u_N) = \dfrac{f(x_1,...,x_N)}{f(x_1)f(x_2)...f(x_N)}$
 
 ## Concordance (or Association)
 
-Identify at different forms of association (e.g. linear correlation with Pearson's $\rho$) and use this categorization to select suitable potential candiate copulas from the list of established copulas (or develop bespoke copula function)
+Identify at different forms of association (e.g. linear correlation with Pearson's $\rho$) and use this categorization to select suitable potential candidate copulas from the list of established copulas (or develop bespoke copula function)
 
 ### Dependence vs Concordance (or Association)
 
-Concordance does not implay that one variable directly influences the other (i.e does not imply that one is dependent upon the other)
+Concordance does not imply that one variable directly influences the other (i.e does not imply that one is dependent upon the other)
 
 The linear and rank correlation measures (from mod 15) indicate concordance (or association) but do not imply dependence
 
@@ -377,7 +377,7 @@ Properties above imply other properties of good measures of concordance:
 
 Spearman's $\rho$ and Kendall's $\tau$ both satisfy these criteria for a good measure of concordance
 
-Pearson's $\rho$ only fulfils all the criteria when all the marginal distributions are elliptical
+Pearson's $\rho$ only fulfills all the criteria when all the marginal distributions are elliptical
 
 * e.g. a perfect non-linear relationship (e.g. $Y =\ln X$) will not result in $\rho = 1$
 
@@ -427,7 +427,7 @@ $\begin{align}
   &= \lim \limits_{u \rightarrow 0^+} \dfrac{\bar{C}(u,u)}{C(u)}\\
 \end{align}$
 
-The final equality above follows as a result of replace $1-u$ with $u4 and noting that letting $u \rightarrow 0^+$ in the limit of the new expression is the same as letting $u \rightarrow 1^-$ in the previous expresion
+The final equality above follows as a result of replace $1-u$ with $u4 and noting that letting $u \rightarrow 0^+$ in the limit of the new expression is the same as letting $u \rightarrow 1^-$ in the previous expression
 
 ## Three Main Types of Copulas
 
@@ -443,7 +443,7 @@ They can combined to form a wider family of copula functions called the *Fréche
 
 They have simple closed-form expression
 
-We will look at the general calss of *Archimedean copulas* e.g. Clayton copula
+We will look at the general class of *Archimedean copulas* e.g. Clayton copula
 
 ***Implicit Copulas***
 
@@ -456,7 +456,7 @@ e.g. Gaussian copula (based on the normal distribution) and the *t* copula (base
 Fundamental copulas:
 
 * Independence (or product) copula
-* Co-monotonicity (or minium) copula
+* Co-monotonicity (or minimum) copula
 * Counter-monotonicity copula
 
 ### Independence Copula
@@ -507,7 +507,7 @@ Counter-monotonoicity Copula represents perfect negative dependence between two 
 
 Tail dependency between the variables will only manifest itself when the variables are at opposite ends
 
-* i.e. when one is high and on is low and no special relationship whne both are low or both are high
+* i.e. when one is high and on is low and no special relationship when both are low or both are high
 
 $\therefore$ $_{L}\lambda = _{U}\lambda = 0$
 
@@ -526,7 +526,7 @@ $\therefore$ they are the upper and lower bound for all copulas (aka the Fréche
 
 ### Fréchet-Höffding Family and Mixture
 
-The fundamentl copulas are specific cases of the general Fréchet-Höffding family of copulas which are of the form
+The fundamental copulas are specific cases of the general Fréchet-Höffding family of copulas which are of the form
 
 $\begin{align}
   _{F}C(F_{X_1}(x_1),...,F_{X_N}(x_N)) = & p \mathrm{max} \left(\left(\sum \limits_{i=1}^N F_{X_i}(x_i)\right)-1 ,0 \right) \\
@@ -597,7 +597,7 @@ The definition of the pseudo-inverse function ensures that $\sum \limits_{i=1}^N
 
 **Limitations**
 
-* Small number of parametes $(< 3)$ $\Rightarrow$ Application to heterogeneous groups of variables is limited
+* Small number of parameters $(< 3)$ $\Rightarrow$ Application to heterogeneous groups of variables is limited
 
 ### Fitting Archimedean Copulas
 
@@ -645,7 +645,7 @@ e.g. **bivariate case**: $_{Gu}C_{\alpha}(u,v) = \exp \left[ - \left((-\ln(u))^{
 
 ***Application of Gumbel***
 
-The upper tail dependency (but no lower tail dependency) of the Gumbel makes it suitable for modeling situtations where associations increase for extreme high values (but not for extreme low values)
+The upper tail dependency (but no lower tail dependency) of the Gumbel makes it suitable for modeling situations where associations increase for extreme high values (but not for extreme low values)
 
 * e.g. modeling losses from a credit portfolio where losses are recorded as (+) values
 
@@ -661,7 +661,7 @@ $_{Fr}C_{\alpha}(u_1,...,u_N) = - \dfrac{1}{\alpha} \ln \left( 1 + \dfrac{\prod 
 
 If $N>$ then this is only defined for $\alpha > 0$
 
-* Else it does not satistfy the fundamental conditions required for a copula
+* Else it does not satisfy the fundamental conditions required for a copula
 
 ***Bivariate case***:
 
@@ -676,7 +676,7 @@ $_{Fr}C_{\alpha}(u,v) = - \dfrac{1}{\alpha} \ln \left( 1 + \dfrac{ (e^{-\alpha u
 
 * Application is limited by it characteristics
 * No tail dependency, symmetric form
-* Can be consider when modeling joint and las survivor annuities and exchange rate movements
+* Can be consider when modeling joint and last survivor annuities and exchange rate movements
 
 ### Clayton Copula
 
@@ -714,7 +714,7 @@ $_{GC}C_{\alpha,\beta}(u,v) = \left( \left\{ (u^{-\alpha} - 1)^{\beta} + (v^{-\a
 
 ***Special case***
 
-* $\beta = 1$: Stanard Clayton copula
+* $\beta = 1$: Standard Clayton copula
 
 ***Application of generalized Clayton***
 
@@ -725,13 +725,132 @@ $_{GC}C_{\alpha,\beta}(u,v) = \left( \left\{ (u^{-\alpha} - 1)^{\beta} + (v^{-\a
 
 Appendix provides precise information on the dependence measure of the Archimedean copulas
 
-Important to note that the degree of tail dependency (where it exisits) is a function of the parameter(s) of the copula
+Important to note that the degree of tail dependency (where it exists) is a function of the parameter(s) of the copula
 
 ![](figures/figure-18.07.png)
 ![](figures/figure-18.08.png)
 ![](figures/figure-18.09.png)
 
-Difficult to see the differences between the example distribution fucntions above
+Difficult to see the differences between the example distribution functions above
 
 Density functions below are more helpful
 
+![](figures/figure-18.10.png)
+![](figures/figure-18.11.png)
+![](figures/figure-18.12.png)
+
+Note that the level of tail dependency is determined by a parameter $\alpha$
+
+## Implicit Copulas
+
+### Normal Copula
+
+Let $\mathbf{X}$ be a vector of $N$ standard normal r.v. $\therefore$ $\mathbf{X}$ has multivariate normal distribution $N(\mathbf{0,R})$, where $\mathbf{R}$ is the correlation matrix of the individual r.v.
+
+* Applying the Gaussian copula to normal marginal distributions will results in a multivariate normal distribution
+
+***Noraml Copula***
+
+$\begin{align}
+  _{Ga}C_{\mathbf{R}}(\mathbf{u}) &= P(\Phi (X_1) \leq u_1,...,\Phi (X_N) \leq u_N) \\
+  &= P(X_1 \leq \Phi^{-1}(u_1),...,X_N \leq \Phi^{-1}(u_N)) \\
+  &= \boldsymbol{\Phi}_{\mathbf{R}}(\Phi^{-1}(u_1),...,\Phi^{-1}(u_N)) \\
+\end{align}$
+
+* $\Phi$ is the distribution function of a standard normal r.v.
+* $\boldsymbol{\Phi}_{\mathbf{R}}$ is the joint normal distribution function of $\mathbf{X}$ based on the $N(N-1)/2$ correlation coefficients in $\mathbf{R}$
+
+In general a correlation matrix will be
+
+* A symmetric matrix  
+(since $\mathrm{Corr}(X_j, X_k) = \mathrm{Corr}(X_k, X_j)$ for all $j$ and $k$)
+* With 1s on the leading diagonal  
+(since $\mathrm{Corr}(X_j, X_j)$ for all $j$)
+* $\therefore$ $N$ dimension matrix has $N(N-1)/2$ elements
+
+***Special cases***
+
+$\mathbf{R} = \mathbf{I}_N$ ($N$-dimensional identity matrix)
+
+* Becomes the independence copula (since no linear correlation between the variables)
+
+$\mathbf{R}$ is a matrix consisting entirely of 1s
+
+* Becomes the minimum (co-monotonicity) copula (since there is a perfect linear relationship)
+
+***Bivariate case***
+
+$_{Ga}C_{\rho}(u,v) = \Phi_{\rho}(\Phi^{-1}(u),\Phi^{-1}(v))$
+
+*Special case* for the bivariate case ($N=2$) with $\rho = -1$
+
+* Becomes the maximum (counter-monotonicity) copula (since there is a perfect negative linear correlation between the variables)
+
+In 2-D the Gaussian copula allows the joint distribution to reflect any dependence between the variables from perfect (+) to (-) dependence depending on the $\rho$ $\Rightarrow$ Gaussian is a **comprehensive** copula (very versatile)
+
+Gaussian copula can be described as an integral:
+
+$_{Ga}C_{\rho}(u_1, u_2) = \dfrac{1}{2 \pi \sqrt{1-\rho^2}} \int \limits_{-\infty}^{\Phi^{-1}(u_1)} \int \limits_{-\infty}^{\Phi^{-1}(u_2)} e^{-z} ds dt$
+
+* $z = \dfrac{1}{2(1-\rho^2)} (s^2 + t^2 - 2 \rho s t)$
+* Shows that in 2-D the Gaussian copula is fully determined by the correlation between the 2 variables ($\rho$)
+
+***Nature of tail dependencies***
+
+In 2-D: if $\mid \rho \mid < 1$ then the Gaussian copula has zero tail dependencies
+
+***Disadvantage***
+
+* Lack of tail dependency
+* Defined by a single parameter
+
+### Student's t
+
+***Overcoming Normal's Disadvantage***
+
+* Has 2 parameter
+* Enables the degree of dependence at the extremes of the marginals to be controlled independently of the correlation matrix by varying the number of d.f
+    
+Let $\mathbf{X}$ be a vector of $N$ r.v. taken from a multivariate *t* with $\gamma$ d.f., 0 mean and correlation matrix $\mathbf{R}$
+
+* $\mathbf{X} \sim t(\gamma, \mathbf{0}, \mathbf{R})$
+
+Then *t*-copula:
+
+$_t C_{\gamma, \mathbf{R}}(\mathbf{u}) = t_{\gamma, \mathbf{R}}(t_{\gamma}^{-1}(u_1),...,t_{\gamma}^{-1}(u_N))$
+
+* $t_{\gamma}$ is the distribution function of a univariate *t*-random variable with $\gamma$ d.f.
+* $t_{\gamma, \mathbf{R}}$ is the joint CDF of the vector $\mathbf{X}$
+
+***Special cases***
+
+If $\mathbf{R} = \mathbf{I}_N$ (*N*-dimensional identity matrix)
+
+* Does **NOT** become the independence copula
+* $\because$ r.v. from an uncorrelated multivariate *t*-distribution are not independent
+
+If $\mathbf{R}$ is a matrix consisting entirely of 1s
+
+* Becomes the minimum (co-monotonicity) copula
+
+$\gamma = \infty$
+
+* Becomes the Gaussian copula
+
+***Bivariate case***
+
+$_t C_{\gamma,\rho}(u_1, u_2) = \dfrac{1}{2 \pi \sqrt{1-\rho^2}} \int \limits_{-\infty}^{t_{\gamma}^{-1}(u_1)} \int \limits_{-\infty}^{t_{\gamma}^{-1}(u_2)} \left(1 + \dfrac{s^2 +t^2 - 2\rho s t}{2\gamma(1-\rho^2)} \right)^{\frac{\gamma + 2}{2}} ds dt$
+
+***Nature of tail dependencies***
+
+* For finite values of $\gamma$ the Student's *t* copula has both upper and lower tail dependencies
+* The smaller the value of $\gamma$, the greater the level of association at the extremes of the marginals
+    * Increased association is present in all 4 extreme corners of the copula distribution (not just upper and lower tail dependencies)
+
+![](figures/figure-18.13.png)
+![](figures/figure-18.14.png)
+
+Similarly, it is easier to see the difference with the density functions below
+
+![](figures/figure-18.15.png)
+![](figures/figure-18.16.png)
