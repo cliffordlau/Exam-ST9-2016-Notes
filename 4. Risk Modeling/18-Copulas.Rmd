@@ -558,3 +558,180 @@ $_{F}C(u,v) = p \mathrm{max}(u+v-1,0) + (1-p-q)uv + q min(u,v)$
 ![](figures/figure-18.06.png)
 
 Note how the co-monotonicity copula represents an upper bound to copulas and the counter-monotonicity copula represents the lower bound
+
+## Archimedean Copulas
+
+Important class of explicit copulas in closed form functions
+
+### Generator Functions and Their Pseudo-Inverse
+
+A valid generator function:
+
+$\psi: [0,1] \rightarrow [0, \infty]$ is a continuous and strictly decreasing function on $[0,1]$ with $\psi(1) = 0$ and $\psi(0) \leq \infty$
+
+**Pseudo-inverse*** of $\psi$ with the domain $[0,\infty]$
+
+$\psi^{[-1]}(x) = \begin{cases} \psi^{-1}(x) & 0 \leq x \leq \psi(0) \\ 0 & \psi(0) < x \leq \infty \\ \end{cases}$
+
+* This ensures that for generator functions with $\psi(0) < \infty$, the inverse of $\psi$ is defined on the whole domain $[0,\infty]$
+* If $\psi(0) = \infty$ then the pseudo-inverse is always equal to the "ordinary" inverse and the generator function is called a strict generator function
+
+### Archimedean Copulas
+
+Archimedean class copulas have form:
+
+$C(u_1,...,u_N) = \psi^{[-1]}\left( \sum \limits_{i=1}^N \psi(u_i) \right)$
+
+Where $\psi$ is a valid generator function which is additionally convex, i.e. $\dfrac{d^2}{dx^2}\psi(x) \geq 0$
+
+For bivariate: $C(u,v) = \psi^{[-1]}(\psi(u)+ \psi(v))$
+
+The definition of the pseudo-inverse function ensures that $\sum \limits_{i=1}^N \psi(u_i)$, the value of the Archimedean copula will be a valid probability (?)
+
+### Characteristics of Archimedean Copulas
+
+**Advantage**
+
+* Relatively simple to use
+* Closed-form probability distributions and so avoid the need for integration
+
+**Limitations**
+
+* Small number of parametes $(< 3)$ $\Rightarrow$ Application to heterogeneous groups of variables is limited
+
+### Fitting Archimedean Copulas
+
+Kendall's $\tau$ is a function of the parameters of the copula (for Archimedian copulas)
+
+For **single parameter** form:
+
+* Calculate Kendall's $\tau$ for the observations and solving to find $\alpha$
+
+For **multiple parameters** form:
+
+* Can't solve with just $\tau$ due to a one-to-many relationship between $\tau$ and the possible consistent set of parameter values
+
+(See copulas summary in appendix)
+
+### Gumbel Copula
+
+***Generator function***:
+
+$_{Gu} \phi _{\alpha}(u) = (-\ln u)^{\alpha}$ for $1 \leq \alpha > \infty$
+
+Gumbel copula from generator function:
+
+1. Find inverse solve for $u$:  
+$\begin{align}
+  k &= (- \ln(u))^{\alpha} \\
+  -k^{\frac{1}{\alpha}} &= \ln (u) \\
+  u &= \exp \left( -k^{\frac{1}{\alpha}} \right) \\
+  \psi^{-1}(u) &= \exp \left( -u^{\frac{1}{\alpha}} \right) \\
+\end{align}$
+
+2. Plug in $C(u_1,...,u_N) = \psi^{[-1]}\left( \sum \limits_{i=1}^N \psi(u_i) \right)$:  
+$\begin{align}
+  _{Gu}C_{\alpha}(u_1,...,u_N) &= \psi^{[-1]}\left( \sum \limits_{i=1}^N \psi(u_i) \right) \\
+  &= \psi^{[-1]}\left( \sum \limits_{i=1}^N (-\ln(u_i))^{\alpha} \right) \\
+  &= \exp \left[ -\left( \sum \limits_{i=1}^N (-\ln(u_i))^{\alpha} \right)^{1/\alpha}\right] \\
+\end{align}$
+
+e.g. **bivariate case**: $_{Gu}C_{\alpha}(u,v) = \exp \left[ - \left((-\ln(u))^{\alpha} + (- \ln(v))^{\alpha} \right)^{1/\alpha}\right]$
+
+**Special cases** of the Gumbel:
+
+* $\alpha = 1$: Independence copula
+* $\alpha \rightarrow \infty$: co-monotonic (minimum) copula
+
+***Application of Gumbel***
+
+The upper tail dependency (but no lower tail dependency) of the Gumbel makes it suitable for modeling situtations where associations increase for extreme high values (but not for extreme low values)
+
+* e.g. modeling losses from a credit portfolio where losses are recorded as (+) values
+
+### Frank Copula
+
+***Generator function***:
+
+$_{Fr}\psi_{\alpha}(u) = - \ln \left( \dfrac{e^{-\alpha i} - 1}{e^{-\alpha} -1}\right)$ for $\alpha \in \mathbb{R}$
+
+***Multivariate Frank Copula***:
+
+$_{Fr}C_{\alpha}(u_1,...,u_N) = - \dfrac{1}{\alpha} \ln \left( 1 + \dfrac{\prod \limits_{i=1}^N (e^{-\alpha u_i}-1)}{(e^{-\alpha}-1)^{N-1}} \right)$
+
+If $N>$ then this is only defined for $\alpha > 0$
+
+* Else it does not satistfy the fundamental conditions required for a copula
+
+***Bivariate case***:
+
+$_{Fr}C_{\alpha}(u,v) = - \dfrac{1}{\alpha} \ln \left( 1 + \dfrac{ (e^{-\alpha u}-1)(e^{-\alpha v}-1)}{(e^{-\alpha}-1)} \right)$
+
+**Special cases** of the multidimensional Frank:
+
+* $N =2, \alpha = -\infty$: Counter-monotonicity (maximum) copula
+* $\alpha \rightarrow \infty$: Co-monotonicity (minimum) copula
+
+***Application of Frank***
+
+* Application is limited by it characteristics
+* No tail dependency, symmetric form
+* Can be consider when modeling joint and las survivor annuities and exchange rate movements
+
+### Clayton Copula
+
+***Generator function***
+
+$_{Cl}\psi_{\alpha}(u) = \dfrac{1}{\alpha}(u^-{\alpha} - 1)$
+
+***Multivariate Clayton copula***
+
+$_{Cl}C_{\alpha}(u_1,...,u_N)=\left( \left\{ \sum \limits_{i=1}^N u_i^{-\alpha} \right\} -N +1 \right)^{-\frac{1}{\alpha}}$
+
+***Bivariate case***
+
+$_{Cl}C_{\alpha}(u,v) = \left(u^{-\alpha} + v^{-\alpha}-1 \right)^{\frac{1}{\alpha}$
+
+***Application of Clayton***
+
+* Absence of upper tail dependency but potential lower tail dependency (when $\alpha >0$)
+* Suitable for modeling situations where associations increase for extreme lower values (but not for higher values)
+* e.g. modeling returns from a portfolio of investments, where negative returns are likely to occur simultaneously on a number of investments
+
+### Generalized Clayton Copula
+
+***Generator function***
+
+$_{GC}\psi_{\alpha,\beta}(u) = \dfrac{1}{\alpha^{\beta}}(u^{-\alpha}-1)^{\beta}$ for $\alpha \geq 0$ $\beta \geq 1$
+
+***Multivariate generalized Clayton***
+
+$_{GC}C_{\alpha,\beta}(u_1,...,u_N) = \left( \left\{ \sum \limits_{i=1}^N \left[ (u_i^{-\alpha} - 1)^{\beta} \right] \right}^{\frac{1}{\beta}} \right)^{-\frac{1}{\alpha}}$
+
+***Bivariate case***
+
+$_{GC}C_{\alpha,\beta}(u,v) = \left( \left\{ (u^{-\alpha} - 1)^{\beta} + (v^{-\alpha} - 1)^{\beta} \right}^{\frac{1}{\beta}} \right)^{-\frac{1}{\alpha}}$
+
+***Special case***
+
+* $\beta = 1$: Stanard Clayton copula
+
+***Application of generalized Clayton***
+
+* Has both upper and lower tail dependencies
+* Can be adjusted independently using the two parameters of the copula function
+
+***
+
+Appendix provides precise information on the dependence measure of the Archimedean copulas
+
+Important to note that the degree of tail dependency (where it exisits) is a function of the parameter(s) of the copula
+
+![](figures/figure-18.07.png)
+![](figures/figure-18.08.png)
+![](figures/figure-18.09.png)
+
+Difficult to see the differences between the example distribution fucntions above
+
+Density functions below are more helpful
+
