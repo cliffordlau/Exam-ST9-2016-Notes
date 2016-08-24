@@ -231,7 +231,7 @@ div.tocify {
 <h2>Module Objective</h2>
 <p>Recommend a specific choice of model based on the results of both quantitative and qualitative analysis of financial or insurance data</p>
 <hr />
-<p>Short list a number of possible (candidat) models (based on certain features of the data)</p>
+<p>Short list a number of possible (candidate) models (based on certain features of the data)</p>
 <ul>
 <li>E.g. tail dependence shown in the data will indicate which choices of copula</li>
 </ul>
@@ -273,11 +273,11 @@ div.tocify {
 <p>Generally this is done by using estimates of the rank correlation of the data</p>
 <ul>
 <li>Set the true, underlying correlation of the copula to = these estimated correlations</li>
-<li>Specific circumstances will influene the choice of whether to use Kendall’s <span class="math inline">\(\tau\)</span> or Spearman’s <span class="math inline">\(\rho\)</span></li>
+<li>Specific circumstances will influence the choice of whether to use Kendall’s <span class="math inline">\(\tau\)</span> or Spearman’s <span class="math inline">\(\rho\)</span></li>
 </ul>
 <p><strong><em>For Archimedean copulas</em></strong></p>
 <ul>
-<li>Gumbel, Clayton, and Frank are all characterized by <span class="math inline">\(\alpha\)</span> via their generators <span class="math inline">\(\therefore\)</span> estiamte the value of <span class="math inline">\(\alpha\)</span> based on the observed data</li>
+<li>Gumbel, Clayton, and Frank are all characterized by <span class="math inline">\(\alpha\)</span> via their generators <span class="math inline">\(\therefore\)</span> estimate the value of <span class="math inline">\(\alpha\)</span> based on the observed data</li>
 <li>See mod 18 for relationships between <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\tau\)</span></li>
 <li>So estimate the value of <span class="math inline">\(\tau\)</span> with the data and use the formulas to set it equal to the expression of <span class="math inline">\(\alpha\)</span> and then solve</li>
 <li>e.g. Gumbel: <span class="math inline">\(\tau = 1 - \dfrac{1}{\alpha} \Rightarrow \alpha = \dfrac{1}{1 - \tau}\)</span></li>
@@ -316,7 +316,7 @@ Expresses the joint probability of the actual observations (<span class="math in
 <span class="math inline">\(\ln L = \sum \limits_{t=1}^T \ln f(x_t)\)</span></p>
 <ul>
 <li><span class="math inline">\(f(x)\)</span> is the marginal PDF of <span class="math inline">\(X\)</span></li>
-<li>Effectively maximizing the joint porbability <span class="math inline">\(L=\prod_{t=1}^T f(x_t)\)</span></li>
+<li>Effectively maximizing the joint probability <span class="math inline">\(L=\prod_{t=1}^T f(x_t)\)</span></li>
 <li>Involve solving several simultaneous equations of the form <span class="math inline">\(\partial (\ln (L)) / \partial p_i = 0\)</span> where <span class="math inline">\(p_i (i=1,...,N)\)</span> is one of the <span class="math inline">\(N\)</span> parameters of the candidate distribution</li>
 </ul>
 </div>
@@ -338,9 +338,9 @@ Expresses the joint probability of the actual observations (<span class="math in
 <p>Recall: If all distribution functions are continuous then:</p>
 <p><span class="math inline">\(c(u_1,...u_N) = \dfrac{f(x_1,...,x_N)}{f(x_1)f(x_2)...f(x_N)}\)</span></p>
 <p>And if these marginal density function are available in closed form then the probabilities can be expressed in terms of the unknown parameters (<span class="math inline">\(\boldsymbol{\theta}\)</span>) and the log likelihood function maximized</p>
-<p>Alternatively the values of <span class="math inline">\(u_{n,t} = F(X_{n,t})\)</span> can be derived empirically from the observations and used to calculate the log likelihood function for the cnadidate copula, maximizing to determine the optimum paramter values</p>
+<p>Alternatively the values of <span class="math inline">\(u_{n,t} = F(X_{n,t})\)</span> can be derived empirically from the observations and used to calculate the log likelihood function for the candidate copula, maximizing to determine the optimum parameter values</p>
 <p><strong><em>Gaussian copula</em></strong></p>
-<p>MLE of the sample covariance matrix:</p>
+<p>MLE of the sample co variance matrix:</p>
 <p><span class="math inline">\(\hat{\boldsymbol{\Sigma}} = \dfrac{1}{T} \sum \limits_{t=1}^T \boldsymbol{\Phi}_t^{-1} \left(\boldsymbol{\Phi}_t^{-1}\right)'\)</span></p>
 <ul>
 <li><span class="math inline">\(\boldsymbol{\Phi}_t^{-1} = \left[ \Phi^{-1}\left( F \left( x_{1,t} \right) \right), \Phi^{-1}\left( F \left( x_{2,t} \right) \right),..., \Phi^{-1}\left( F \left( x_{N,t} \right) \right) \right]'\)</span></li>
@@ -352,7 +352,7 @@ Expresses the joint probability of the actual observations (<span class="math in
 <h4>Choosing between candidate copulas</h4>
 <ol style="list-style-type: decimal">
 <li>Determined optimum parameter values for each candidate copula</li>
-<li>Compare the values of the ML functions (evaluting using the observations and the relevant optium parameters) to select the optimal overall model</li>
+<li>Compare the values of the ML functions (evaluating using the observations and the relevant optimum parameters) to select the optimal overall model</li>
 </ol>
 </div>
 </div>
@@ -378,28 +378,28 @@ Expresses the joint probability of the actual observations (<span class="math in
 <ul>
 <li>Linear relationship between variables (variables with non-linear relationships need to be first transform before fitting)</li>
 <li>Inverse of the data exists<br />
-(i.e. has full column rank, no colunn is a linear transformation or combination of any others)</li>
-<li>Error terms are not corrleated with each other<br />
+(i.e. has full column rank, no column is a linear transformation or combination of any others)</li>
+<li>Error terms are not correlated with each other<br />
 (i.e. no serial correlation exists that has not been modeled by the explanatory variables)</li>
-<li>Error terms have a constand and finite variance <span class="math inline">\(\sigma^2\)</span></li>
+<li>Error terms have a constant and finite variance <span class="math inline">\(\sigma^2\)</span></li>
 <li>Error terms are normally distributed (needed for the significance tests)</li>
 </ul>
 </div>
 <div id="generalized-least-squares" class="section level4">
 <h4>Generalized Least Squares</h4>
-<p>For GLS, the variance of the error terms is not necessarily assumed to be constand and they don’t have to be uncorrelated with each other</p>
-<p>Let varianes and covariances of the error terms = <span class="math inline">\(\sigma^2 \boldsymbol{\Omega}\)</span></p>
+<p>For GLS, the variance of the error terms is not necessarily assumed to be constant and they don’t have to be uncorrelated with each other</p>
+<p>Let variances and covariances of the error terms = <span class="math inline">\(\sigma^2 \boldsymbol{\Omega}\)</span></p>
 <ul>
 <li><span class="math inline">\(\sigma^2\)</span>: constant</li>
 <li><span class="math inline">\(\boldsymbol{\Omega}\)</span>: Matrix of weightings</li>
 </ul>
 <p>Then:</p>
 <ul>
-<li><strong>Uncorrelated error</strong> terms with non-constand variance can be modeled by setting: <span class="math inline">\(\boldsymbol{\Omega} = diag(\Omega_{1,1}, \Omega_{2,2},...,\Omega_{T,T})\)</span>
+<li><strong>Uncorrelated error</strong> terms with non-constant variance can be modeled by setting: <span class="math inline">\(\boldsymbol{\Omega} = diag(\Omega_{1,1}, \Omega_{2,2},...,\Omega_{T,T})\)</span>
 <ul>
 <li>A diagonal matrix with entries that adjust(scale) <span class="math inline">\(\sigma^2\)</span> appropriately over time</li>
 </ul></li>
-<li>Error terms with <strong>serial correlation</strong> but constand variance can be modeled by including correlations between observations in the off-diagonal entries of <span class="math inline">\(\boldsymbol{\Omega}\)</span> and setting the diagonal entries all to 1</li>
+<li>Error terms with <strong>serial correlation</strong> but constant variance can be modeled by including correlations between observations in the off-diagonal entries of <span class="math inline">\(\boldsymbol{\Omega}\)</span> and setting the diagonal entries all to 1</li>
 <li>Both <strong>heteroskedastic</strong> and <strong>serial correlation</strong><br />
 <span class="math inline">\(\sigma^2 \Omega = \sigma^2  \begin{bmatrix} \Omega_{1,1} &amp; \rho_{1,2} &amp; \dots &amp; \rho_{1,T} \\ \rho_{2,1} &amp; \Omega_{2,2} &amp; \dots &amp; \rho_{2,T} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ \rho_{T,1} &amp; \rho_{T,2} &amp; \dots &amp; \Omega_{T,T} \\  \end{bmatrix} =  \begin{bmatrix} \sigma^2_1 &amp; \sigma_{1,2} &amp; \dots &amp; \sigma_{1,T} \\ \sigma_{2,1} &amp; \sigma^2_2 &amp; \dots &amp; \sigma_{2,T} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ \sigma_{T,1} &amp; \sigma_{T,2} &amp; \dots &amp; \sigma^2_T \\  \end{bmatrix}\)</span></li>
 </ul>
@@ -413,7 +413,7 @@ Expresses the joint probability of the actual observations (<span class="math in
 </ul>
 <p>Can use F-test<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> to test the overall regression results (if the error terms are normally distributed)</p>
 <ul>
-<li><span class="math inline">\(H_0\)</span> is that all regression coefficiens are zero</li>
+<li><span class="math inline">\(H_0\)</span> is that all regression coefficients are zero</li>
 </ul>
 <p><strong><em>Test of the individual regression coefficients</em></strong></p>
 <p>Test whether each variable is significant by estimating the variance of the error terms <a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
@@ -468,7 +468,7 @@ Used to test whether the addition of these variables results in significantly im
 <h3>Singular Value Decomposition</h3>
 <p><strong>Advantage</strong> of PCA</p>
 <ul>
-<li>Readily faciliates stochastic projections</li>
+<li>Readily facilitates stochastic projections</li>
 </ul>
 <p><strong>Disadvantage</strong> of PCA</p>
 <ul>
@@ -477,7 +477,7 @@ Used to test whether the addition of these variables results in significantly im
 </ul>
 <p><strong>Advantage</strong> of SVD over PCA</p>
 <ul>
-<li>Based on a least squares optimzation but does not require identification of the covariance matrix</li>
+<li>Based on a least squares optimization but does not require identification of the covariance matrix</li>
 <li>Operates on the original data with no requirement to identify independent variables upon which to base a regression</li>
 </ul>
 <p><strong>Assumptions</strong> for using SVD</p>
@@ -491,9 +491,72 @@ Used to test whether the addition of these variables results in significantly im
 <ul>
 <li>Where each matrices cannot be expressed as a linear combination of each others</li>
 </ul>
-<p>And in turn, each orthogonal matrices an be brokend down as produce of 2 vectors:</p>
+<p>And in turn, each orthogonal matrices an be broken down as produce of 2 vectors:</p>
 <p><span class="math inline">\(\begin{bmatrix}  X_{1,1} &amp; X_{1,2} &amp; \dots &amp; X_{1,N} \\  X_{2,1} &amp; X_{2,2} &amp; \dots &amp; X_{2,N} \\  \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\  X_{M,1} &amp; X_{M,2} &amp; \dots &amp; X_{M,N} \\ \end{bmatrix} = \sum \limits_{i=1}^R L_i \begin{bmatrix}  U_{1,i} \\  U_{2,i} \\  \vdots \\  U_{M,i} \\ \end{bmatrix} \begin{bmatrix}  V_{1,i} &amp; V_{2,i} \dots V_{N,i} \\ \end{bmatrix}\)</span></p>
+<p><strong>Singular values</strong> <span class="math inline">\(L_i\)</span>:</p>
+<ul>
+<li>Square roots of the eigenvectors of <span class="math inline">\(\mathbf{X}\mathbf{X}'\)</span></li>
+<li><span class="math inline">\(L_1\)</span> is the largest with ever decreasing subsequent value down to <span class="math inline">\(L_R\)</span></li>
+</ul>
+<p><strong>Left singular vectors</strong>: <span class="math inline">\(\mathbf{U}_i\)</span></p>
+<p><strong>Right singular vectors</strong>: <span class="math inline">\(\mathbf{V}_i\)</span></p>
+<p>The 3 components above are found from the original dataset using an iterative method (rather than covariance matrix as in PCA)</p>
+<p>Similar to PCA, a large proportion of the variation in a series of data might be explained by a small number of factors so the iterative process might be terminated before all the singular vectors have been determined e.g. when <span class="math inline">\(L_r\)</span> is sufficiently small <span class="math inline">\(\Rightarrow\)</span> We can make good predictions of future data values based on a small subset of the other variables</p>
+<p>(See more details in appendix)</p>
+<div id="svd-application-example" class="section level4">
+<h4>SVD Application Example</h4>
+<p>Lee-Carter model for mortality rates</p>
+<p>Assumes that mortality rates at all ages (<span class="math inline">\(x\)</span>) are determined by: <span class="math inline">\(\ln(m_{x,t}) = \alpha_x+ \beta_x \kappa_t + \epsilon_{x,t}\)</span></p>
+<ul>
+<li><span class="math inline">\(\alpha_x\)</span>: age specific parameter that indicates the average level of <span class="math inline">\(\ln(m_{x,t})\)</span> over time <span class="math inline">\(t\)</span></li>
+<li><span class="math inline">\(\beta_x\)</span>: age specific parameter that characterises the sensitivity of <span class="math inline">\(\ln(m_{x,t})\)</span> to changes in a mortality index <span class="math inline">\(\kappa_t\)</span></li>
+<li><span class="math inline">\(\epsilon_{x,t}\)</span>: Error term the captures all remaining variations</li>
+</ul>
+<p>Parameters on the r.h.s are unobservable (can’t use OLS or PCA)</p>
+<p>Use SVD</p>
+<ol style="list-style-type: decimal">
+<li>Set the <span class="math inline">\(\hat{\alpha}_x\)</span> to the average of <span class="math inline">\(\ln m_{x,t}\)</span> over the sample period</li>
+<li>Apply SVD to the matrix of <span class="math inline">\(\left\{ \ln m_{x,t} - \hat{\alpha}_x \right\}\)</span></li>
+<li>The resulting first left and right singular vectors enable estimation of <span class="math inline">\(\beta_x\)</span> and <span class="math inline">\(\kappa_t\)</span> respectively</li>
+</ol>
+<p>(CMP has more details on the matrices…)</p>
 </div>
+</div>
+</div>
+<div id="model-selection" class="section level2">
+<h2>Model Selection</h2>
+<p>For a complex model to be worth using we need to make sure the additional complexity is justified by having <strong>significant</strong> improvement in the ML</p>
+<ul>
+<li>If choosing simply by highest log likelihood then model with largest # of parameters will prevail (esp. when simpler models are nested within the largest model)</li>
+</ul>
+<p>AIC and BIC penalize for extra parameters (while BIC is more punitive <span class="math inline">\(\Rightarrow\)</span> less complex models)</p>
+<p>Other tests such as <span class="math inline">\(chi^2\)</span> test</p>
+<p><strong><em>Graphical diagnostic tests</em></strong></p>
+<ul>
+<li>QQ plots</li>
+<li>Histograms with superimposed fitted density functions</li>
+<li>Empirical CDFs with superimposed fitted CDFs</li>
+<li>Autocorrelation functions of time series data (ACFs)</li>
+</ul>
+<p>Should be able to use the above plot and states whether or not a given plot is consistent with a stated hypothesis or model</p>
+<ul>
+<li>If consistent, should propose additional quantitative tests</li>
+<li>If not, should be able to interpret the plot and suggest alternative models</li>
+</ul>
+<p>Need to be able to recommend a specific choice of copula by applying both quantitative and qualitative analysis using different models</p>
+<ul>
+<li>Quantitative: test of goodness of fit, AIC, BIC</li>
+<li>Qualitative: graphical comparisons of data with candidate copulas</li>
+</ul>
+</div>
+<div id="model-validation" class="section level2">
+<h2>Model Validation</h2>
+<p>Model should be fitting using training set and then fit with the testing set of comparable size</p>
+<p>Type of test depends on the form of the model</p>
+<p><strong>Backtesting</strong>:<br />
+Fitting a time series model to data from one time period and then testing how well it predicts observed values from a subsequent period</p>
+<p><strong>Cross-sectional models</strong>:<br />
+Based on dependent variables, can be fitted using one set of the data (training set) and tested using an independent data set (not necessarily from a different time period)</p>
 </div>
 <div class="footnotes">
 <hr />
@@ -518,10 +581,10 @@ Used to test whether the addition of these variables results in significantly im
 <li><span class="math inline">\(s\)</span> is called the standard error of the regression</li>
 </ul>
 <p>Sample covariance matrix for the vector of estimates <span class="math inline">\(\mathbf{b}\)</span> is <span class="math inline">\(\mathbf{S_b}= s^2(\mathbf{X}'\mathbf{X})^{-1}\)</span></p>
-<p>Sqaure root of the <span class="math inline">\(n\)</span>th element of the diagonal in $_b is <span class="math inline">\(s_{b_n}\)</span>, the standard error of the estimate <span class="math inline">\(b_n\)</span></p>
+<p>Square root of the <span class="math inline">\(n\)</span>th element of the diagonal in $_b is <span class="math inline">\(s_{b_n}\)</span>, the standard error of the estimate <span class="math inline">\(b_n\)</span></p>
 <p>Assuming normally distributed error term, we can use the t-test with the following statistics:<br />
 <span class="math inline">\(\dfrac{b_n - \beta_n}{s_{b_n}} \sim t_{T-N}\)</span><br />
- Typical confidence leve is 90%<a href="#fnref4">↩</a></p></li>
+ Typical confidence level is 90%<a href="#fnref4">↩</a></p></li>
 </ol>
 </div>
 

@@ -17,7 +17,7 @@ Recommend a specific choice of model based on the results of both quantitative a
 
 ***
 
-Short list a number of possible (candidat) models (based on certain features of the data)
+Short list a number of possible (candidate) models (based on certain features of the data)
 
 * E.g. tail dependence shown in the data will indicate which choices of copula
 
@@ -59,11 +59,11 @@ Parameterization of copulas
 Generally this is done by using estimates of the rank correlation of the data
 
 * Set the true, underlying correlation of the copula to = these estimated correlations
-* Specific circumstances will influene the choice of whether to use Kendall's $\tau$ or Spearman's $\rho$
+* Specific circumstances will influence the choice of whether to use Kendall's $\tau$ or Spearman's $\rho$
 
 ***For Archimedean copulas***
 
-* Gumbel, Clayton, and Frank are all characterized by $\alpha$ via their generators $\therefore$ estiamte the value of $\alpha$ based on the observed data
+* Gumbel, Clayton, and Frank are all characterized by $\alpha$ via their generators $\therefore$ estimate the value of $\alpha$ based on the observed data
 * See mod 18 for relationships between $\alpha$ and $\tau$
 * So estimate the value of $\tau$ with the data and use the formulas to set it equal to the expression of $\alpha$ and then solve
 * e.g. Gumbel: $\tau = 1 - \dfrac{1}{\alpha} \Rightarrow \alpha = \dfrac{1}{1 - \tau}$
@@ -100,7 +100,7 @@ Expresses the joint probability of the actual observations ($x_1,...,x_T$) occur
 $\ln L = \sum \limits_{t=1}^T \ln f(x_t)$
 
 * $f(x)$ is the marginal PDF of $X$
-* Effectively maximizing the joint porbability $L=\prod_{t=1}^T f(x_t)$
+* Effectively maximizing the joint probability $L=\prod_{t=1}^T f(x_t)$
 * Involve solving several simultaneous equations of the form $\partial (\ln (L)) / \partial p_i = 0$ where $p_i (i=1,...,N)$ is one of the $N$ parameters of the candidate distribution
 
 #### N-dimensional copulas
@@ -131,11 +131,11 @@ $c(u_1,...u_N) = \dfrac{f(x_1,...,x_N)}{f(x_1)f(x_2)...f(x_N)}$
 
 And if these marginal density function are available in closed form then the probabilities can be expressed in terms of the unknown parameters ($\boldsymbol{\theta}$) and the log likelihood function maximized
 
-Alternatively the values of $u_{n,t} = F(X_{n,t})$ can be derived empirically from the observations and used to calculate the log likelihood function for the cnadidate copula, maximizing to determine the optimum paramter values
+Alternatively the values of $u_{n,t} = F(X_{n,t})$ can be derived empirically from the observations and used to calculate the log likelihood function for the candidate copula, maximizing to determine the optimum parameter values
 
 ***Gaussian copula***
 
-MLE of the sample covariance matrix:
+MLE of the sample co variance matrix:
 
 $\hat{\boldsymbol{\Sigma}} = \dfrac{1}{T} \sum \limits_{t=1}^T \boldsymbol{\Phi}_t^{-1} \left(\boldsymbol{\Phi}_t^{-1}\right)'$
 
@@ -170,7 +170,7 @@ $\begin{align}
 #### Choosing between candidate copulas
 
 1. Determined optimum parameter values for each candidate copula
-2. Compare the values of the ML functions (evaluting using the observations and the relevant optium parameters) to select the optimal overall model
+2. Compare the values of the ML functions (evaluating using the observations and the relevant optimum parameters) to select the optimal overall model
 
 ## Fitting a Model to Data
 
@@ -196,26 +196,26 @@ $\mathbf{b} = \left(\hat{\beta}_1, \hat{\beta}_2, ... ,\hat{\beta}_N \right)' = 
 
 * Linear relationship between variables (variables with non-linear relationships need to be first transform before fitting)
 * Inverse of the data exists  
-(i.e. has full column rank, no colunn is a linear transformation or combination of any others)
-* Error terms are not corrleated with each other  
+(i.e. has full column rank, no column is a linear transformation or combination of any others)
+* Error terms are not correlated with each other  
 (i.e. no serial correlation exists that has not been modeled by the explanatory variables)
-* Error terms have a constand and finite variance $\sigma^2$
+* Error terms have a constant and finite variance $\sigma^2$
 * Error terms are normally distributed (needed for the significance tests)
 
 #### Generalized Least Squares
 
-For GLS, the variance of the error terms is not necessarily assumed to be constand and they don't have to be uncorrelated with each other
+For GLS, the variance of the error terms is not necessarily assumed to be constant and they don't have to be uncorrelated with each other
 
-Let varianes and covariances of the error terms = $\sigma^2 \boldsymbol{\Omega}$
+Let variances and covariances of the error terms = $\sigma^2 \boldsymbol{\Omega}$
 
 * $\sigma^2$: constant
 * $\boldsymbol{\Omega}$: Matrix of weightings
 
 Then:
 
-* **Uncorrelated error** terms with non-constand variance can be modeled by setting: $\boldsymbol{\Omega} = diag(\Omega_{1,1}, \Omega_{2,2},...,\Omega_{T,T})$
+* **Uncorrelated error** terms with non-constant variance can be modeled by setting: $\boldsymbol{\Omega} = diag(\Omega_{1,1}, \Omega_{2,2},...,\Omega_{T,T})$
     * A diagonal matrix with entries that adjust(scale) $\sigma^2$ appropriately over time
-* Error terms with **serial correlation** but constand variance can be modeled by including correlations between observations in the off-diagonal entries of $\boldsymbol{\Omega}$ and setting the diagonal entries all to 1
+* Error terms with **serial correlation** but constant variance can be modeled by including correlations between observations in the off-diagonal entries of $\boldsymbol{\Omega}$ and setting the diagonal entries all to 1
 * Both **heteroskedastic** and **serial correlation**  
 $\sigma^2 \Omega = \sigma^2
   \begin{bmatrix}
@@ -243,7 +243,7 @@ Coefficients of determination[^Cod] ($R^2$) can be used to determine the overall
 
 Can use F-test[^Ftest] to test the overall regression results (if the error terms are normally distributed)
 
-* $H_0$ is that all regression coefficiens are zero
+* $H_0$ is that all regression coefficients are zero
 
 [^Cod]: $R^2 = \dfrac{SSR}{SST} = 1 - \dfrac{SSE}{SST} \in [0,1]$
     
@@ -282,12 +282,12 @@ If we assume normally distributed errors, we can use the t-test
     
     Sample covariance matrix for the vector of estimates $\mathbf{b}$ is $\mathbf{S_b}= s^2(\mathbf{X}'\mathbf{X})^{-1}$
     
-    Sqaure root of the $n$th element of the diagonal in $\mathbf{S}_b is $s_{b_n}$, the standard error of the estimate $b_n$
+    Square root of the $n$th element of the diagonal in $\mathbf{S}_b is $s_{b_n}$, the standard error of the estimate $b_n$
     
     Assuming normally distributed error term, we can use the t-test with the following statistics:  
     $\dfrac{b_n - \beta_n}{s_{b_n}} \sim t_{T-N}$\
     
-    Typical confidence leve is 90%
+    Typical confidence level is 90%
 
 ### Methods based on Likelihood Functions
 
@@ -340,7 +340,7 @@ Fit data to independent parameters weighting their relative importance by the si
 
 **Advantage** of PCA
 
-* Readily faciliates stochastic projections
+* Readily facilitates stochastic projections
 
 **Disadvantage** of PCA
 
@@ -349,7 +349,7 @@ Fit data to independent parameters weighting their relative importance by the si
 
 **Advantage** of SVD over PCA
 
-* Based on a least squares optimzation but does not require identification of the covariance matrix
+* Based on a least squares optimization but does not require identification of the covariance matrix
 * Operates on the original data with no requirement to identify independent variables upon which to base a regression
 
 
@@ -366,7 +366,7 @@ If $\mathbf{X}$ has column rank $R$ then it can be expressed as the linear combi
 
 * Where each matrices cannot be expressed as a linear combination of each others
 
-And in turn, each orthogonal matrices an be brokend down as produce of 2 vectors:
+And in turn, each orthogonal matrices an be broken down as produce of 2 vectors:
 
 $\begin{bmatrix}
   X_{1,1} & X_{1,2} & \dots & X_{1,N} \\
@@ -403,3 +403,58 @@ Similar to PCA, a large proportion of the variation in a series of data might be
 #### SVD Application Example
 
 Lee-Carter model for mortality rates
+
+Assumes that mortality rates at all ages ($x$) are determined by: $\ln(m_{x,t}) = \alpha_x+ \beta_x \kappa_t + \epsilon_{x,t}$
+
+* $\alpha_x$: age specific parameter that indicates the average level of $\ln(m_{x,t})$ over time $t$
+* $\beta_x$: age specific parameter that characterises the sensitivity of $\ln(m_{x,t})$ to changes in a mortality index $\kappa_t$
+* $\epsilon_{x,t}$: Error term the captures all remaining variations
+
+Parameters on the r.h.s are unobservable (can't use OLS or PCA)
+
+Use SVD
+
+1. Set the $\hat{\alpha}_x$ to the average of $\ln m_{x,t}$ over the sample period
+2. Apply SVD to the matrix of $\left\{ \ln m_{x,t} - \hat{\alpha}_x \right\}$
+3. The resulting first left and right singular vectors enable estimation of $\beta_x$ and $\kappa_t$ respectively
+
+(CMP has more details on the matrices...)
+
+## Model Selection
+
+For a complex model to be worth using we need to make sure the additional complexity is justified by having **significant** improvement in the ML
+
+* If choosing simply by highest log likelihood then model with largest \# of parameters will prevail (esp. when simpler models are nested within the largest model)
+
+AIC and BIC penalize for extra parameters (while BIC is more punitive $\Rightarrow$ less complex models)
+
+Other tests such as $chi^2$ test
+
+***Graphical diagnostic tests***
+
+* QQ plots
+* Histograms with superimposed fitted density functions
+* Empirical CDFs with superimposed fitted CDFs
+* Autocorrelation functions of time series data (ACFs)
+
+Should be able to use the above plot and states whether or not a given plot is consistent with a stated hypothesis or model
+
+* If consistent, should propose additional quantitative tests
+* If not, should be able to interpret the plot and suggest alternative models
+
+Need to be able to recommend a specific choice of copula by applying both quantitative and qualitative analysis using different models
+
+* Quantitative: test of goodness of fit, AIC, BIC
+* Qualitative: graphical comparisons of data with candidate copulas
+
+## Model Validation
+
+Model should be fitting using training set and then fit with the testing set of comparable size
+
+Type of test depends on the form of the model
+
+**Backtesting**:  
+Fitting a time series model to data from one time period and then testing how well it predicts observed values from a subsequent period
+
+**Cross-sectional models**:  
+Based on dependent variables, can be fitted using one set of the data (training set) and tested using an independent data set (not necessarily from a different time period)
