@@ -13,3 +13,393 @@ output:
 
 ## Module Objective
 
+Recommend a specific choice of model based on the results of both quantitative and qualitative analysis of financial or insurance data
+
+***
+
+Short list a number of possible (candidat) models (based on certain features of the data)
+
+* E.g. tail dependence shown in the data will indicate which choices of copula
+
+This module focus on how each candidate model might be fitted to the data set
+
+1. Select the method of fitting
+2. Evaluate the goodness of fit
+    * For the model as a whole
+    * For each of the explanatory variables
+    * Use both quantitative and qualitative methods
+3. Final model selection
+
+First consider the fitting of a distribution to a given data set, then go on to look at the fitting of more complex models to a data set
+
+Exam note:
+
+* Key objective is to be able to recommend a specific choice of model or models for further analysis of specific problems
+* Recommendation needs to be made on the basis of a variety of quantitative measures as well as qualitative analysis
+
+## Fitting a Distribution to Data
+
+### Method of Moments
+
+#### Univariate Distribution
+
+Parameterization of Univariate Distribution
+
+Establish the parameters of a distribution empirically by looking at the sample moments and equating these to the population (or true) moments
+
+E.g. for a distribution with 3 parameters and $n$ data points $x_1,...,x_n$
+
+* Set $\mathrm{E}(X) = \dfrac{1}{n} \sum x_i$; $\mathrm{E}(X^2) = \dfrac{1}{n} \sum x_i^2$; $\mathrm{E}(X^3) = \dfrac{1}{n} \sum x_i^3$
+* Solve the equations simultaneously to obtain the parameter values needed to specify the distribution
+
+#### Copulas
+
+Parameterization of copulas
+
+Generally this is done by using estimates of the rank correlation of the data
+
+* Set the true, underlying correlation of the copula to = these estimated correlations
+* Specific circumstances will influene the choice of whether to use Kendall's $\tau$ or Spearman's $\rho$
+
+***For Archimedean copulas***
+
+* Gumbel, Clayton, and Frank are all characterized by $\alpha$ via their generators $\therefore$ estiamte the value of $\alpha$ based on the observed data
+* See mod 18 for relationships between $\alpha$ and $\tau$
+* So estimate the value of $\tau$ with the data and use the formulas to set it equal to the expression of $\alpha$ and then solve
+* e.g. Gumbel: $\tau = 1 - \dfrac{1}{\alpha} \Rightarrow \alpha = \dfrac{1}{1 - \tau}$
+
+#### Features of the method of moments
+
+***Advantages***
+
+* Generally more straightforward to use than other alternatives
+
+***Disadvantages***
+
+* Parameters not necessarily the most likely ones
+* Parameter values may be outside their acceptable ranges
+
+### Maximum Likelihood
+
+#### Features of MLE
+
+**Advantages**
+
+* Only generates parameter values that are within the acceptable ranges
+* Any bias in the parameter estimates reduces as the number of observations increases
+* Distribution of each parameter estimate tends toward the normal distribution
+
+#### Univariate Distribution
+
+Parameterization of Univariate Distribution
+
+**likelihood function**:  
+Expresses the joint probability of the actual observations ($x_1,...,x_T$) occurring, given the choice of candidate distribution
+
+**Maximize** (w.r.t. each parameter) the **log likelihood function**  
+$\ln L = \sum \limits_{t=1}^T \ln f(x_t)$
+
+* $f(x)$ is the marginal PDF of $X$
+* Effectively maximizing the joint porbability $L=\prod_{t=1}^T f(x_t)$
+* Involve solving several simultaneous equations of the form $\partial (\ln (L)) / \partial p_i = 0$ where $p_i (i=1,...,N)$ is one of the $N$ parameters of the candidate distribution
+
+#### N-dimensional copulas
+
+Parameterization of N-dimensional copulas
+
+For MLE we require the density function of the copula $c(u_1,...,u_N) = \dfrac{\partial^N C(u_1,...,u_n)}{\partial u_1 ... \partial u_N}$
+
+* $N$ is the number of variables (= dimensions of the copula)
+* $u_n = F(x_n)$ for $n= 1,...,N$
+
+Evaluate the log-likelihood function using the $T$ observations
+
+$\begin{align}
+  \ln\left(L(\boldsymbol{\theta})\right) =& \ln \left(\prod_{t=1}^T c_{\theta}(u_{1,t},  u_{2,t},...,u_{N,t})\right) \\
+  =& \sum \limits_{t=1}^T \ln \left(c_{\theta}(u_{1,t},  u_{2,t},...,u_{N,t})\right) \\
+\end{align}$
+
+Maximization gets more complex as the number of variables increase
+
+* In practice this is done using a suitable computer package and the application of numerical methods
+
+***Obtaining the copula density fucntion***
+
+Recall: If all distribution functions are continuous then:
+
+$c(u_1,...u_N) = \dfrac{f(x_1,...,x_N)}{f(x_1)f(x_2)...f(x_N)}$
+
+And if these marginal density function are available in closed form then the probabilities can be expressed in terms of the unknown parameters ($\boldsymbol{\theta}$) and the log likelihood function maximized
+
+Alternatively the values of $u_{n,t} = F(X_{n,t})$ can be derived empirically from the observations and used to calculate the log likelihood function for the cnadidate copula, maximizing to determine the optimum paramter values
+
+***Gaussian copula***
+
+MLE of the sample covariance matrix:
+
+$\hat{\boldsymbol{\Sigma}} = \dfrac{1}{T} \sum \limits_{t=1}^T \boldsymbol{\Phi}_t^{-1} \left(\boldsymbol{\Phi}_t^{-1}\right)'$
+
+* $\boldsymbol{\Phi}_t^{-1} = \left[ \Phi^{-1}\left( F \left( x_{1,t} \right) \right), \Phi^{-1}\left( F \left( x_{2,t} \right) \right),..., \Phi^{-1}\left( F \left( x_{N,t} \right) \right) \right]'$
+
+E.g. Derivation of the sample covariance matrix when $t=1$ and $N=2$ if the marginal distributions are $N(0,1)$
+
+$\begin{align}
+  \hat{\boldsymbol{\Sigma}} &= \boldsymbol{\Phi}_t^{-1} \left(\boldsymbol{\Phi}_t^{-1}\right)' \\
+  &= \begin{bmatrix}
+      \Phi^{-1}_{X_1} \left( F_{X_1} \left( x_{1} \right) \right) \\
+      \Phi^{-1}_{X_2} \left( F_{X_2} \left( x_{2} \right) \right) \\
+    \end{bmatrix}
+    \begin{bmatrix}
+      \Phi^{-1}_{X_1} \left( F_{X_1} \left( x_{1} \right) \right) &
+      \Phi^{-1}_{X_2} \left( F_{X_2} \left( x_{2} \right) \right) \\
+    \end{bmatrix} \\
+  &= \begin{bmatrix}
+      \left(\Phi^{-1}_{X_1} \left( F_{X_1} \left( x_{1} \right) \right)\right)^2 &
+      \Phi^{-1}_{X_1} \left( F_{X_1} \left( x_{1} \right) \right)
+      \Phi^{-1}_{X_2} \left( F_{X_2} \left( x_{2} \right) \right) \\
+      \Phi^{-1}_{X_2} \left( F_{X_2} \left( x_{2} \right) \right)
+      \Phi^{-1}_{X_1} \left( F_{X_1} \left( x_{1} \right) \right) &
+      \left(\Phi^{-1}_{X_2} \left( F_{X_2} \left( x_{2} \right) \right)\right)^2 \\
+    \end{bmatrix} \\
+  & =\begin{bmatrix}
+      x^2_1 & x_1x_2 \\
+      x_2x_1 & x^2_2 \\
+    \end{bmatrix}
+\end{align}$
+
+#### Choosing between candidate copulas
+
+1. Determined optimum parameter values for each candidate copula
+2. Compare the values of the ML functions (evaluting using the observations and the relevant optium parameters) to select the optimal overall model
+
+## Fitting a Model to Data
+
+### Least Squares Regression
+
+Model the r.v. $Y_t$ (for $t=1,2,...,T$) with $N$ independent explanatory variables $X_{t,n}$ ($n=1,2,...,N$)
+
+$Y_t = \beta_1 X_{t,1} + \beta_2 X_{t,2} + \dots + \beta_N X_{t,N} + \epsilon_t
+
+* $\mathbf{Y} = \mathbf{X} \boldsymbol{\beta} + \boldsymbol{\epsilon}$
+* $\epsilon_t$ quantifies the degree to which the variables $X_{t,n}$ fail to fully explain the dependent variable $Y_t$
+* $\beta_1$ can be a constant if we set $X_{t,1}$ to be a fixed amount for all $t$
+
+#### Ordinary Least Squares
+
+For OLS the $\beta_n$s are selected to minimize the SSE:  
+$\boldsymbol{\epsilon}'\boldsymbol{\epsilon} = \epsilon^2_1 + \epsilon^2_2 + \dots + \epsilon^2_T$
+
+Closed form solution for the minimization problem:  
+$\mathbf{b} = \left(\hat{\beta}_1, \hat{\beta}_2, ... ,\hat{\beta}_N \right)' = (\mathbf{X}'\mathbf{X})^{-1}\mathbf{X}'\mathbf{Y}$
+
+***Assumptions***
+
+* Linear relationship between variables (variables with non-linear relationships need to be first transform before fitting)
+* Inverse of the data exists  
+(i.e. has full column rank, no colunn is a linear transformation or combination of any others)
+* Error terms are not corrleated with each other  
+(i.e. no serial correlation exists that has not been modeled by the explanatory variables)
+* Error terms have a constand and finite variance $\sigma^2$
+* Error terms are normally distributed (needed for the significance tests)
+
+#### Generalized Least Squares
+
+For GLS, the variance of the error terms is not necessarily assumed to be constand and they don't have to be uncorrelated with each other
+
+Let varianes and covariances of the error terms = $\sigma^2 \boldsymbol{\Omega}$
+
+* $\sigma^2$: constant
+* $\boldsymbol{\Omega}$: Matrix of weightings
+
+Then:
+
+* **Uncorrelated error** terms with non-constand variance can be modeled by setting: $\boldsymbol{\Omega} = diag(\Omega_{1,1}, \Omega_{2,2},...,\Omega_{T,T})$
+    * A diagonal matrix with entries that adjust(scale) $\sigma^2$ appropriately over time
+* Error terms with **serial correlation** but constand variance can be modeled by including correlations between observations in the off-diagonal entries of $\boldsymbol{\Omega}$ and setting the diagonal entries all to 1
+* Both **heteroskedastic** and **serial correlation**  
+$\sigma^2 \Omega = \sigma^2
+  \begin{bmatrix}
+    \Omega_{1,1} & \rho_{1,2} & \dots & \rho_{1,T} \\
+    \rho_{2,1} & \Omega_{2,2} & \dots & \rho_{2,T} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    \rho_{T,1} & \rho_{T,2} & \dots & \Omega_{T,T} \\
+  \end{bmatrix} =
+  \begin{bmatrix}
+    \sigma^2_1 & \sigma_{1,2} & \dots & \sigma_{1,T} \\
+    \sigma_{2,1} & \sigma^2_2 & \dots & \sigma_{2,T} \\
+    \vdots & \vdots & \ddots & \vdots \\
+    \sigma_{T,1} & \sigma_{T,2} & \dots & \sigma^2_T \\
+  \end{bmatrix}$
+  
+Closed form solution of minimizing the SSE:  
+$\mathbf{b} = (b_1,b_2,...,b_N)' = (\mathbf{X}'\boldsymbol{\Omega}^{-1}\mathbf{X})^{-1}\mathbf{X}'\boldsymbol{\Omega}^{-1}\mathbf{Y}$
+
+***Test of the overall fit***
+
+Coefficients of determination[^Cod] ($R^2$) can be used to determine the overall fit
+
+* Higher values = better fit
+* Use adjusted coefficient of determination[^AdjCod] ($R_{\alpha}^2$), which does not automatically increase just by adding extra parameters
+
+Can use F-test[^Ftest] to test the overall regression results (if the error terms are normally distributed)
+
+* $H_0$ is that all regression coefficiens are zero
+
+[^Cod]: $R^2 = \dfrac{SSR}{SST} = 1 - \dfrac{SSE}{SST} \in [0,1]$
+    
+    Where:
+
+    $\begin{array}{c,c,c,c,c,c}
+      &SST &= &SSR &+ &SSE \\
+      & \sum \limits_{t=1}^T(Y_t - \bar{Y})^2 &= &\sum \limits_{t=1}^T(\hat{Y}_t - \bar{Y})^2 &+ &\sum \limits_{t=1}^T(\underbrace{Y_t - \hat{Y}_t}_{\epsilon_t^2})^2 \\
+    \end{array}$
+    
+    * $SST$: = total sum of squares
+    * $SSR$ = sum of squares explained by regression
+    * $SSE$ = sum of squares error (unexplained deviations)
+    * Average of the observation: $\bar{Y} = \dfrac{1}{T}\sum \limits_{t=1}^T Y_t$
+    * Predicted value: $\hat{Y}_t = \sum \limits_{n=1}^N b_n x_{t,n}$
+    
+[^AdjCod]: $R_{\alpha}^2 = 1 - \dfrac{SSE/(T-N)}{SST/(T-1)} = 1 - \dfrac{T-1}{T-N}(1-R^2)$
+
+[^Ftest]: $\dfrac{SSR/(N-1)}{SSE/(T-N)} = dfrac{R^2/(N-1)}{(1-R^2)/(T-N)} \sim F^{N-1}_{T-N}$
+
+***Test of the individual regression coefficients***
+
+Test whether each variable is significant by estimating the variance of the error terms [^SSquare]
+
+If we assume normally distributed errors, we can use the t-test
+
+* $H_0$ is the $\beta_n$ is 0
+* test is for the level of significant by which the coefficient ($b_n$) differs from zero
+
+[^SSquare]: $s^2 = \dfrac{SSE}{T-N}$
+    
+    Where:
+    
+    * Deduction of the number of explanatory variables ($N$) in the denominator ensures that the estimate is unbiased
+    * $s$ is called the standard error of the regression
+    
+    Sample covariance matrix for the vector of estimates $\mathbf{b}$ is $\mathbf{S_b}= s^2(\mathbf{X}'\mathbf{X})^{-1}$
+    
+    Sqaure root of the $n$th element of the diagonal in $\mathbf{S}_b is $s_{b_n}$, the standard error of the estimate $b_n$
+    
+    Assuming normally distributed error term, we can use the t-test with the following statistics:  
+    $\dfrac{b_n - \beta_n}{s_{b_n}} \sim t_{T-N}$\
+    
+    Typical confidence leve is 90%
+
+### Methods based on Likelihood Functions
+
+#### Likelihood ratio test
+
+Similar when fitting distributions but iterative techniques maybe required
+
+**Nested models**:  
+If the second model contains all the independent variables of the first plus some additional variables
+
+**Likelihood ratio test**:  
+Used to test whether the addition of these variables results in significantly improved explanatory power
+
+* $H_0$ is that it is not the case
+* Test statistics: $LR = -2 \ln(L_1/L_2) \sim \chi^2_{N_2 - N_1}$
+    * $L_1$ and $L_2$ are the values of the likelihood functions for the 2 models
+    * $N_1$ and $N_2$ are the \# of independent variables in each model incl. the constants
+    
+#### Information Criteria (IC)
+
+Use to compare alternative models
+
+IC are not restricted to the comparison of nested models as is the case with likelihood ratio tests
+
+IC only enable the ranking of alternative models
+
+* Does not quantify the statistical significant of any differences between the alternatives
+
+**Akaike Information Criterion** (AIC)
+
+$AIC = 2N - 2 \ln(L)$
+
+**Bayesian Information Critersion** (BIC)
+
+$BIC = N \ln(T) - 2 \ln(L)$
+
+$N$: \# of independent variables in the model
+
+$T$: \# of observations
+
+Lower the value of AIC the better the fit of the model to the data
+
+BIC penalizes the introduction of another independent variable more severely and so its used tends to result in less complex models being selected compared to when using AIC
+
+### Principal Component Analysis
+
+Fit data to independent parameters weighting their relative importance by the size of their eigenvalues (Mod 16)
+
+### Singular Value Decomposition
+
+**Advantage** of PCA
+
+* Readily faciliates stochastic projections
+
+**Disadvantage** of PCA
+
+* Model parameters do not necessarily have any intuitive interpretation (limited explanatory power)
+* Requires identification of the covariance matrix for the chosen $N$ independent explanatory variables
+
+**Advantage** of SVD over PCA
+
+* Based on a least squares optimzation but does not require identification of the covariance matrix
+* Operates on the original data with no requirement to identify independent variables upon which to base a regression
+
+
+**Assumptions** for using SVD
+
+* SVD determine the best linear relationship between the values of a set of $N$ variables $X_{1,t},X_{2,t},...,X_{N,t}$ at each time $t$
+* If we assume the relationship continues i.e. if we have a new row of data for time $N+1$, we can use this relationship to predict the value of one or more "missing" future data values for these variables
+
+***Process of applying SVD*** to a set of $M$ observations of $N$ variables
+
+Let $\mathbf{X}$ ($M \times N$ matrix) be a set of $M$ observations of $N$ variables
+
+If $\mathbf{X}$ has column rank $R$ then it can be expressed as the linear combination of $R$ orthogonal matrices
+
+* Where each matrices cannot be expressed as a linear combination of each others
+
+And in turn, each orthogonal matrices an be brokend down as produce of 2 vectors:
+
+$\begin{bmatrix}
+  X_{1,1} & X_{1,2} & \dots & X_{1,N} \\
+  X_{2,1} & X_{2,2} & \dots & X_{2,N} \\
+  \vdots & \vdots & \ddots & \vdots \\
+  X_{M,1} & X_{M,2} & \dots & X_{M,N} \\
+\end{bmatrix} =
+\sum \limits_{i=1}^R L_i
+\begin{bmatrix}
+  U_{1,i} \\
+  U_{2,i} \\
+  \vdots \\
+  U_{M,i} \\
+\end{bmatrix}
+\begin{bmatrix}
+  V_{1,i} & V_{2,i} \dots V_{N,i} \\
+\end{bmatrix}$
+
+**Singular values** $L_i$:
+
+* Square roots of the eigenvectors of $\mathbf{X}\mathbf{X}'$
+* $L_1$ is the largest with ever decreasing subsequent value down to $L_R$
+
+**Left singular vectors**: $\mathbf{U}_i$
+
+**Right singular vectors**: $\mathbf{V}_i$
+
+The 3 components above are found from the original dataset using an iterative method (rather than covariance matrix as in PCA)
+
+Similar to PCA, a large proportion of the variation in a series of data might be explained by a small number of factors so the iterative process might be terminated before all the singular vectors have been determined e.g. when $L_r$ is sufficiently small $\Rightarrow$ We can make good predictions of future data values based on a small subset of the other variables
+
+(See more details in appendix)
+
+#### SVD Application Example
+
+Lee-Carter model for mortality rates

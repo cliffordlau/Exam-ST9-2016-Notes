@@ -229,6 +229,300 @@ div.tocify {
 
 <div id="module-objective" class="section level2">
 <h2>Module Objective</h2>
+<p>Recommend a specific choice of model based on the results of both quantitative and qualitative analysis of financial or insurance data</p>
+<hr />
+<p>Short list a number of possible (candidat) models (based on certain features of the data)</p>
+<ul>
+<li>E.g. tail dependence shown in the data will indicate which choices of copula</li>
+</ul>
+<p>This module focus on how each candidate model might be fitted to the data set</p>
+<ol style="list-style-type: decimal">
+<li>Select the method of fitting</li>
+<li>Evaluate the goodness of fit
+<ul>
+<li>For the model as a whole</li>
+<li>For each of the explanatory variables</li>
+<li>Use both quantitative and qualitative methods</li>
+</ul></li>
+<li>Final model selection</li>
+</ol>
+<p>First consider the fitting of a distribution to a given data set, then go on to look at the fitting of more complex models to a data set</p>
+<p>Exam note:</p>
+<ul>
+<li>Key objective is to be able to recommend a specific choice of model or models for further analysis of specific problems</li>
+<li>Recommendation needs to be made on the basis of a variety of quantitative measures as well as qualitative analysis</li>
+</ul>
+</div>
+<div id="fitting-a-distribution-to-data" class="section level2">
+<h2>Fitting a Distribution to Data</h2>
+<div id="method-of-moments" class="section level3">
+<h3>Method of Moments</h3>
+<div id="univariate-distribution" class="section level4">
+<h4>Univariate Distribution</h4>
+<p>Parameterization of Univariate Distribution</p>
+<p>Establish the parameters of a distribution empirically by looking at the sample moments and equating these to the population (or true) moments</p>
+<p>E.g. for a distribution with 3 parameters and <span class="math inline">\(n\)</span> data points <span class="math inline">\(x_1,...,x_n\)</span></p>
+<ul>
+<li>Set <span class="math inline">\(\mathrm{E}(X) = \dfrac{1}{n} \sum x_i\)</span>; <span class="math inline">\(\mathrm{E}(X^2) = \dfrac{1}{n} \sum x_i^2\)</span>; <span class="math inline">\(\mathrm{E}(X^3) = \dfrac{1}{n} \sum x_i^3\)</span></li>
+<li>Solve the equations simultaneously to obtain the parameter values needed to specify the distribution</li>
+</ul>
+</div>
+<div id="copulas" class="section level4">
+<h4>Copulas</h4>
+<p>Parameterization of copulas</p>
+<p>Generally this is done by using estimates of the rank correlation of the data</p>
+<ul>
+<li>Set the true, underlying correlation of the copula to = these estimated correlations</li>
+<li>Specific circumstances will influene the choice of whether to use Kendall’s <span class="math inline">\(\tau\)</span> or Spearman’s <span class="math inline">\(\rho\)</span></li>
+</ul>
+<p><strong><em>For Archimedean copulas</em></strong></p>
+<ul>
+<li>Gumbel, Clayton, and Frank are all characterized by <span class="math inline">\(\alpha\)</span> via their generators <span class="math inline">\(\therefore\)</span> estiamte the value of <span class="math inline">\(\alpha\)</span> based on the observed data</li>
+<li>See mod 18 for relationships between <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\tau\)</span></li>
+<li>So estimate the value of <span class="math inline">\(\tau\)</span> with the data and use the formulas to set it equal to the expression of <span class="math inline">\(\alpha\)</span> and then solve</li>
+<li>e.g. Gumbel: <span class="math inline">\(\tau = 1 - \dfrac{1}{\alpha} \Rightarrow \alpha = \dfrac{1}{1 - \tau}\)</span></li>
+</ul>
+</div>
+<div id="features-of-the-method-of-moments" class="section level4">
+<h4>Features of the method of moments</h4>
+<p><strong><em>Advantages</em></strong></p>
+<ul>
+<li>Generally more straightforward to use than other alternatives</li>
+</ul>
+<p><strong><em>Disadvantages</em></strong></p>
+<ul>
+<li>Parameters not necessarily the most likely ones</li>
+<li>Parameter values may be outside their acceptable ranges</li>
+</ul>
+</div>
+</div>
+<div id="maximum-likelihood" class="section level3">
+<h3>Maximum Likelihood</h3>
+<div id="features-of-mle" class="section level4">
+<h4>Features of MLE</h4>
+<p><strong>Advantages</strong></p>
+<ul>
+<li>Only generates parameter values that are within the acceptable ranges</li>
+<li>Any bias in the parameter estimates reduces as the number of observations increases</li>
+<li>Distribution of each parameter estimate tends toward the normal distribution</li>
+</ul>
+</div>
+<div id="univariate-distribution-1" class="section level4">
+<h4>Univariate Distribution</h4>
+<p>Parameterization of Univariate Distribution</p>
+<p><strong>likelihood function</strong>:<br />
+Expresses the joint probability of the actual observations (<span class="math inline">\(x_1,...,x_T\)</span>) occurring, given the choice of candidate distribution</p>
+<p><strong>Maximize</strong> (w.r.t. each parameter) the <strong>log likelihood function</strong><br />
+<span class="math inline">\(\ln L = \sum \limits_{t=1}^T \ln f(x_t)\)</span></p>
+<ul>
+<li><span class="math inline">\(f(x)\)</span> is the marginal PDF of <span class="math inline">\(X\)</span></li>
+<li>Effectively maximizing the joint porbability <span class="math inline">\(L=\prod_{t=1}^T f(x_t)\)</span></li>
+<li>Involve solving several simultaneous equations of the form <span class="math inline">\(\partial (\ln (L)) / \partial p_i = 0\)</span> where <span class="math inline">\(p_i (i=1,...,N)\)</span> is one of the <span class="math inline">\(N\)</span> parameters of the candidate distribution</li>
+</ul>
+</div>
+<div id="n-dimensional-copulas" class="section level4">
+<h4>N-dimensional copulas</h4>
+<p>Parameterization of N-dimensional copulas</p>
+<p>For MLE we require the density function of the copula <span class="math inline">\(c(u_1,...,u_N) = \dfrac{\partial^N C(u_1,...,u_n)}{\partial u_1 ... \partial u_N}\)</span></p>
+<ul>
+<li><span class="math inline">\(N\)</span> is the number of variables (= dimensions of the copula)</li>
+<li><span class="math inline">\(u_n = F(x_n)\)</span> for <span class="math inline">\(n= 1,...,N\)</span></li>
+</ul>
+<p>Evaluate the log-likelihood function using the <span class="math inline">\(T\)</span> observations</p>
+<p><span class="math inline">\(\begin{align}  \ln\left(L(\boldsymbol{\theta})\right) =&amp; \ln \left(\prod_{t=1}^T c_{\theta}(u_{1,t}, u_{2,t},...,u_{N,t})\right) \\  =&amp; \sum \limits_{t=1}^T \ln \left(c_{\theta}(u_{1,t}, u_{2,t},...,u_{N,t})\right) \\ \end{align}\)</span></p>
+<p>Maximization gets more complex as the number of variables increase</p>
+<ul>
+<li>In practice this is done using a suitable computer package and the application of numerical methods</li>
+</ul>
+<p><strong><em>Obtaining the copula density fucntion</em></strong></p>
+<p>Recall: If all distribution functions are continuous then:</p>
+<p><span class="math inline">\(c(u_1,...u_N) = \dfrac{f(x_1,...,x_N)}{f(x_1)f(x_2)...f(x_N)}\)</span></p>
+<p>And if these marginal density function are available in closed form then the probabilities can be expressed in terms of the unknown parameters (<span class="math inline">\(\boldsymbol{\theta}\)</span>) and the log likelihood function maximized</p>
+<p>Alternatively the values of <span class="math inline">\(u_{n,t} = F(X_{n,t})\)</span> can be derived empirically from the observations and used to calculate the log likelihood function for the cnadidate copula, maximizing to determine the optimum paramter values</p>
+<p><strong><em>Gaussian copula</em></strong></p>
+<p>MLE of the sample covariance matrix:</p>
+<p><span class="math inline">\(\hat{\boldsymbol{\Sigma}} = \dfrac{1}{T} \sum \limits_{t=1}^T \boldsymbol{\Phi}_t^{-1} \left(\boldsymbol{\Phi}_t^{-1}\right)'\)</span></p>
+<ul>
+<li><span class="math inline">\(\boldsymbol{\Phi}_t^{-1} = \left[ \Phi^{-1}\left( F \left( x_{1,t} \right) \right), \Phi^{-1}\left( F \left( x_{2,t} \right) \right),..., \Phi^{-1}\left( F \left( x_{N,t} \right) \right) \right]'\)</span></li>
+</ul>
+<p>E.g. Derivation of the sample covariance matrix when <span class="math inline">\(t=1\)</span> and <span class="math inline">\(N=2\)</span> if the marginal distributions are <span class="math inline">\(N(0,1)\)</span></p>
+<p><span class="math inline">\(\begin{align}  \hat{\boldsymbol{\Sigma}} &amp;= \boldsymbol{\Phi}_t^{-1} \left(\boldsymbol{\Phi}_t^{-1}\right)' \\  &amp;= \begin{bmatrix}  \Phi^{-1}_{X_1} \left( F_{X_1} \left( x_{1} \right) \right) \\  \Phi^{-1}_{X_2} \left( F_{X_2} \left( x_{2} \right) \right) \\  \end{bmatrix}  \begin{bmatrix}  \Phi^{-1}_{X_1} \left( F_{X_1} \left( x_{1} \right) \right) &amp;  \Phi^{-1}_{X_2} \left( F_{X_2} \left( x_{2} \right) \right) \\  \end{bmatrix} \\  &amp;= \begin{bmatrix}  \left(\Phi^{-1}_{X_1} \left( F_{X_1} \left( x_{1} \right) \right)\right)^2 &amp;  \Phi^{-1}_{X_1} \left( F_{X_1} \left( x_{1} \right) \right)  \Phi^{-1}_{X_2} \left( F_{X_2} \left( x_{2} \right) \right) \\  \Phi^{-1}_{X_2} \left( F_{X_2} \left( x_{2} \right) \right)  \Phi^{-1}_{X_1} \left( F_{X_1} \left( x_{1} \right) \right) &amp;  \left(\Phi^{-1}_{X_2} \left( F_{X_2} \left( x_{2} \right) \right)\right)^2 \\  \end{bmatrix} \\  &amp; =\begin{bmatrix}  x^2_1 &amp; x_1x_2 \\  x_2x_1 &amp; x^2_2 \\  \end{bmatrix} \end{align}\)</span></p>
+</div>
+<div id="choosing-between-candidate-copulas" class="section level4">
+<h4>Choosing between candidate copulas</h4>
+<ol style="list-style-type: decimal">
+<li>Determined optimum parameter values for each candidate copula</li>
+<li>Compare the values of the ML functions (evaluting using the observations and the relevant optium parameters) to select the optimal overall model</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="fitting-a-model-to-data" class="section level2">
+<h2>Fitting a Model to Data</h2>
+<div id="least-squares-regression" class="section level3">
+<h3>Least Squares Regression</h3>
+<p>Model the r.v. <span class="math inline">\(Y_t\)</span> (for <span class="math inline">\(t=1,2,...,T\)</span>) with <span class="math inline">\(N\)</span> independent explanatory variables <span class="math inline">\(X_{t,n}\)</span> (<span class="math inline">\(n=1,2,...,N\)</span>)</p>
+<p>$Y_t = <em>1 X</em>{t,1} + <em>2 X</em>{t,2} + + <em>N X</em>{t,N} + _t</p>
+<ul>
+<li><span class="math inline">\(\mathbf{Y} = \mathbf{X} \boldsymbol{\beta} + \boldsymbol{\epsilon}\)</span></li>
+<li><span class="math inline">\(\epsilon_t\)</span> quantifies the degree to which the variables <span class="math inline">\(X_{t,n}\)</span> fail to fully explain the dependent variable <span class="math inline">\(Y_t\)</span></li>
+<li><span class="math inline">\(\beta_1\)</span> can be a constant if we set <span class="math inline">\(X_{t,1}\)</span> to be a fixed amount for all <span class="math inline">\(t\)</span></li>
+</ul>
+<div id="ordinary-least-squares" class="section level4">
+<h4>Ordinary Least Squares</h4>
+<p>For OLS the <span class="math inline">\(\beta_n\)</span>s are selected to minimize the SSE:<br />
+<span class="math inline">\(\boldsymbol{\epsilon}'\boldsymbol{\epsilon} = \epsilon^2_1 + \epsilon^2_2 + \dots + \epsilon^2_T\)</span></p>
+<p>Closed form solution for the minimization problem:<br />
+<span class="math inline">\(\mathbf{b} = \left(\hat{\beta}_1, \hat{\beta}_2, ... ,\hat{\beta}_N \right)' = (\mathbf{X}'\mathbf{X})^{-1}\mathbf{X}'\mathbf{Y}\)</span></p>
+<p><strong><em>Assumptions</em></strong></p>
+<ul>
+<li>Linear relationship between variables (variables with non-linear relationships need to be first transform before fitting)</li>
+<li>Inverse of the data exists<br />
+(i.e. has full column rank, no colunn is a linear transformation or combination of any others)</li>
+<li>Error terms are not corrleated with each other<br />
+(i.e. no serial correlation exists that has not been modeled by the explanatory variables)</li>
+<li>Error terms have a constand and finite variance <span class="math inline">\(\sigma^2\)</span></li>
+<li>Error terms are normally distributed (needed for the significance tests)</li>
+</ul>
+</div>
+<div id="generalized-least-squares" class="section level4">
+<h4>Generalized Least Squares</h4>
+<p>For GLS, the variance of the error terms is not necessarily assumed to be constand and they don’t have to be uncorrelated with each other</p>
+<p>Let varianes and covariances of the error terms = <span class="math inline">\(\sigma^2 \boldsymbol{\Omega}\)</span></p>
+<ul>
+<li><span class="math inline">\(\sigma^2\)</span>: constant</li>
+<li><span class="math inline">\(\boldsymbol{\Omega}\)</span>: Matrix of weightings</li>
+</ul>
+<p>Then:</p>
+<ul>
+<li><strong>Uncorrelated error</strong> terms with non-constand variance can be modeled by setting: <span class="math inline">\(\boldsymbol{\Omega} = diag(\Omega_{1,1}, \Omega_{2,2},...,\Omega_{T,T})\)</span>
+<ul>
+<li>A diagonal matrix with entries that adjust(scale) <span class="math inline">\(\sigma^2\)</span> appropriately over time</li>
+</ul></li>
+<li>Error terms with <strong>serial correlation</strong> but constand variance can be modeled by including correlations between observations in the off-diagonal entries of <span class="math inline">\(\boldsymbol{\Omega}\)</span> and setting the diagonal entries all to 1</li>
+<li>Both <strong>heteroskedastic</strong> and <strong>serial correlation</strong><br />
+<span class="math inline">\(\sigma^2 \Omega = \sigma^2  \begin{bmatrix} \Omega_{1,1} &amp; \rho_{1,2} &amp; \dots &amp; \rho_{1,T} \\ \rho_{2,1} &amp; \Omega_{2,2} &amp; \dots &amp; \rho_{2,T} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ \rho_{T,1} &amp; \rho_{T,2} &amp; \dots &amp; \Omega_{T,T} \\  \end{bmatrix} =  \begin{bmatrix} \sigma^2_1 &amp; \sigma_{1,2} &amp; \dots &amp; \sigma_{1,T} \\ \sigma_{2,1} &amp; \sigma^2_2 &amp; \dots &amp; \sigma_{2,T} \\ \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\ \sigma_{T,1} &amp; \sigma_{T,2} &amp; \dots &amp; \sigma^2_T \\  \end{bmatrix}\)</span></li>
+</ul>
+<p>Closed form solution of minimizing the SSE:<br />
+<span class="math inline">\(\mathbf{b} = (b_1,b_2,...,b_N)' = (\mathbf{X}'\boldsymbol{\Omega}^{-1}\mathbf{X})^{-1}\mathbf{X}'\boldsymbol{\Omega}^{-1}\mathbf{Y}\)</span></p>
+<p><strong><em>Test of the overall fit</em></strong></p>
+<p>Coefficients of determination<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> (<span class="math inline">\(R^2\)</span>) can be used to determine the overall fit</p>
+<ul>
+<li>Higher values = better fit</li>
+<li>Use adjusted coefficient of determination<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> (<span class="math inline">\(R_{\alpha}^2\)</span>), which does not automatically increase just by adding extra parameters</li>
+</ul>
+<p>Can use F-test<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> to test the overall regression results (if the error terms are normally distributed)</p>
+<ul>
+<li><span class="math inline">\(H_0\)</span> is that all regression coefficiens are zero</li>
+</ul>
+<p><strong><em>Test of the individual regression coefficients</em></strong></p>
+<p>Test whether each variable is significant by estimating the variance of the error terms <a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></p>
+<p>If we assume normally distributed errors, we can use the t-test</p>
+<ul>
+<li><span class="math inline">\(H_0\)</span> is the <span class="math inline">\(\beta_n\)</span> is 0</li>
+<li>test is for the level of significant by which the coefficient (<span class="math inline">\(b_n\)</span>) differs from zero</li>
+</ul>
+</div>
+</div>
+<div id="methods-based-on-likelihood-functions" class="section level3">
+<h3>Methods based on Likelihood Functions</h3>
+<div id="likelihood-ratio-test" class="section level4">
+<h4>Likelihood ratio test</h4>
+<p>Similar when fitting distributions but iterative techniques maybe required</p>
+<p><strong>Nested models</strong>:<br />
+If the second model contains all the independent variables of the first plus some additional variables</p>
+<p><strong>Likelihood ratio test</strong>:<br />
+Used to test whether the addition of these variables results in significantly improved explanatory power</p>
+<ul>
+<li><span class="math inline">\(H_0\)</span> is that it is not the case</li>
+<li>Test statistics: <span class="math inline">\(LR = -2 \ln(L_1/L_2) \sim \chi^2_{N_2 - N_1}\)</span>
+<ul>
+<li><span class="math inline">\(L_1\)</span> and <span class="math inline">\(L_2\)</span> are the values of the likelihood functions for the 2 models</li>
+<li><span class="math inline">\(N_1\)</span> and <span class="math inline">\(N_2\)</span> are the # of independent variables in each model incl. the constants</li>
+</ul></li>
+</ul>
+</div>
+<div id="information-criteria-ic" class="section level4">
+<h4>Information Criteria (IC)</h4>
+<p>Use to compare alternative models</p>
+<p>IC are not restricted to the comparison of nested models as is the case with likelihood ratio tests</p>
+<p>IC only enable the ranking of alternative models</p>
+<ul>
+<li>Does not quantify the statistical significant of any differences between the alternatives</li>
+</ul>
+<p><strong>Akaike Information Criterion</strong> (AIC)</p>
+<p><span class="math inline">\(AIC = 2N - 2 \ln(L)\)</span></p>
+<p><strong>Bayesian Information Critersion</strong> (BIC)</p>
+<p><span class="math inline">\(BIC = N \ln(T) - 2 \ln(L)\)</span></p>
+<p><span class="math inline">\(N\)</span>: # of independent variables in the model</p>
+<p><span class="math inline">\(T\)</span>: # of observations</p>
+<p>Lower the value of AIC the better the fit of the model to the data</p>
+<p>BIC penalizes the introduction of another independent variable more severely and so its used tends to result in less complex models being selected compared to when using AIC</p>
+</div>
+</div>
+<div id="principal-component-analysis" class="section level3">
+<h3>Principal Component Analysis</h3>
+<p>Fit data to independent parameters weighting their relative importance by the size of their eigenvalues (Mod 16)</p>
+</div>
+<div id="singular-value-decomposition" class="section level3">
+<h3>Singular Value Decomposition</h3>
+<p><strong>Advantage</strong> of PCA</p>
+<ul>
+<li>Readily faciliates stochastic projections</li>
+</ul>
+<p><strong>Disadvantage</strong> of PCA</p>
+<ul>
+<li>Model parameters do not necessarily have any intuitive interpretation (limited explanatory power)</li>
+<li>Requires identification of the covariance matrix for the chosen <span class="math inline">\(N\)</span> independent explanatory variables</li>
+</ul>
+<p><strong>Advantage</strong> of SVD over PCA</p>
+<ul>
+<li>Based on a least squares optimzation but does not require identification of the covariance matrix</li>
+<li>Operates on the original data with no requirement to identify independent variables upon which to base a regression</li>
+</ul>
+<p><strong>Assumptions</strong> for using SVD</p>
+<ul>
+<li>SVD determine the best linear relationship between the values of a set of <span class="math inline">\(N\)</span> variables <span class="math inline">\(X_{1,t},X_{2,t},...,X_{N,t}\)</span> at each time <span class="math inline">\(t\)</span></li>
+<li>If we assume the relationship continues i.e. if we have a new row of data for time <span class="math inline">\(N+1\)</span>, we can use this relationship to predict the value of one or more “missing” future data values for these variables</li>
+</ul>
+<p><strong><em>Process of applying SVD</em></strong> to a set of <span class="math inline">\(M\)</span> observations of <span class="math inline">\(N\)</span> variables</p>
+<p>Let <span class="math inline">\(\mathbf{X}\)</span> (<span class="math inline">\(M \times N\)</span> matrix) be a set of <span class="math inline">\(M\)</span> observations of <span class="math inline">\(N\)</span> variables</p>
+<p>If <span class="math inline">\(\mathbf{X}\)</span> has column rank <span class="math inline">\(R\)</span> then it can be expressed as the linear combination of <span class="math inline">\(R\)</span> orthogonal matrices</p>
+<ul>
+<li>Where each matrices cannot be expressed as a linear combination of each others</li>
+</ul>
+<p>And in turn, each orthogonal matrices an be brokend down as produce of 2 vectors:</p>
+<p><span class="math inline">\(\begin{bmatrix}  X_{1,1} &amp; X_{1,2} &amp; \dots &amp; X_{1,N} \\  X_{2,1} &amp; X_{2,2} &amp; \dots &amp; X_{2,N} \\  \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\  X_{M,1} &amp; X_{M,2} &amp; \dots &amp; X_{M,N} \\ \end{bmatrix} = \sum \limits_{i=1}^R L_i \begin{bmatrix}  U_{1,i} \\  U_{2,i} \\  \vdots \\  U_{M,i} \\ \end{bmatrix} \begin{bmatrix}  V_{1,i} &amp; V_{2,i} \dots V_{N,i} \\ \end{bmatrix}\)</span></p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><span class="math inline">\(R^2 = \dfrac{SSR}{SST} = 1 - \dfrac{SSE}{SST} \in [0,1]\)</span></p>
+<p>Where:</p>
+<p><span class="math inline">\(\begin{array}{c,c,c,c,c,c}  &amp;SST &amp;= &amp;SSR &amp;+ &amp;SSE \\  &amp; \sum \limits_{t=1}^T(Y_t - \bar{Y})^2 &amp;= &amp;\sum \limits_{t=1}^T(\hat{Y}_t - \bar{Y})^2 &amp;+ &amp;\sum \limits_{t=1}^T(\underbrace{Y_t - \hat{Y}_t}_{\epsilon_t^2})^2 \\ \end{array}\)</span></p>
+<ul>
+<li><span class="math inline">\(SST\)</span>: = total sum of squares</li>
+<li><span class="math inline">\(SSR\)</span> = sum of squares explained by regression</li>
+<li><span class="math inline">\(SSE\)</span> = sum of squares error (unexplained deviations)</li>
+<li>Average of the observation: <span class="math inline">\(\bar{Y} = \dfrac{1}{T}\sum \limits_{t=1}^T Y_t\)</span></li>
+<li>Predicted value: <span class="math inline">\(\hat{Y}_t = \sum \limits_{n=1}^N b_n x_{t,n}\)</span></li>
+</ul>
+<a href="#fnref1">↩</a></li>
+<li id="fn2"><p><span class="math inline">\(R_{\alpha}^2 = 1 - \dfrac{SSE/(T-N)}{SST/(T-1)} = 1 - \dfrac{T-1}{T-N}(1-R^2)\)</span><a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p><span class="math inline">\(\dfrac{SSR/(N-1)}{SSE/(T-N)} = dfrac{R^2/(N-1)}{(1-R^2)/(T-N)} \sim F^{N-1}_{T-N}\)</span><a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p><span class="math inline">\(s^2 = \dfrac{SSE}{T-N}\)</span></p>
+<p>Where:</p>
+<ul>
+<li>Deduction of the number of explanatory variables (<span class="math inline">\(N\)</span>) in the denominator ensures that the estimate is unbiased</li>
+<li><span class="math inline">\(s\)</span> is called the standard error of the regression</li>
+</ul>
+<p>Sample covariance matrix for the vector of estimates <span class="math inline">\(\mathbf{b}\)</span> is <span class="math inline">\(\mathbf{S_b}= s^2(\mathbf{X}'\mathbf{X})^{-1}\)</span></p>
+<p>Sqaure root of the <span class="math inline">\(n\)</span>th element of the diagonal in $_b is <span class="math inline">\(s_{b_n}\)</span>, the standard error of the estimate <span class="math inline">\(b_n\)</span></p>
+<p>Assuming normally distributed error term, we can use the t-test with the following statistics:<br />
+<span class="math inline">\(\dfrac{b_n - \beta_n}{s_{b_n}} \sim t_{T-N}\)</span><br />
+ Typical confidence leve is 90%<a href="#fnref4">↩</a></p></li>
+</ol>
 </div>
 
 
