@@ -1,0 +1,24 @@
+---
+title: "Module 22: Assessment of Market Risks"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Discuss the assessment of different types of market risks
+
+***
+
+All risk (credit, op, insurance, etc) should be analysed and model together and in a consistent fashion
+
+* e.g. risk affecting both assets and liabilities should be analyse together
+
+In addition to analysing risk at a particular time horizon, their evolution over time should also be examined (e.g. dynamic solvency testing)
