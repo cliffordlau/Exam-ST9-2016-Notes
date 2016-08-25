@@ -11,7 +11,7 @@
 
 <meta name="author" content="C. Lau" />
 
-<meta name="date" content="2016-08-24" />
+<meta name="date" content="2016-08-25" />
 
 <title>Module 22: Assessment of Market Risks</title>
 
@@ -222,7 +222,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Module 22: Assessment of Market Risks</h1>
 <h4 class="author"><em>C. Lau</em></h4>
-<h4 class="date"><em>August 24, 2016</em></h4>
+<h4 class="date"><em>August 25, 2016</em></h4>
 
 </div>
 
@@ -236,6 +236,194 @@ div.tocify {
 <li>e.g. risk affecting both assets and liabilities should be analyse together</li>
 </ul>
 <p>In addition to analysing risk at a particular time horizon, their evolution over time should also be examined (e.g. dynamic solvency testing)</p>
+<hr />
+<p>Additional notes on Task list:</p>
+<ul>
+<li>Sweeting 14.2.5 Black Scholes is excluded but can read for review</li>
+<li>Might be assumed to be pre-requisite knowledge</li>
+<li>Good to just know the underlying assumptions</li>
+</ul>
+</div>
+<div id="assessing-market-risk" class="section level2">
+<h2>Assessing Market Risk</h2>
+<div id="features-of-equity-market-returns" class="section level3">
+<h3>Features of Equity Market Returns</h3>
+<p>Time series can be used to model equity and other returnss</p>
+<p><strong><em>Key characteristics of financial time series analysis of historic equity market return</em></strong><br />
+<a name="ts-char"></a></p>
+<p>For return on <strong>individual equities</strong>:</p>
+<ul>
+<li>Returns are rarely <em>iid</em></li>
+<li>Volatility vary over timer</li>
+<li>Extreme returns appear in clusters (<strong>volatility clustering</strong>)</li>
+<li>Return series are <strong>leptokurtic</strong> (heavy tail, non symmetric)</li>
+</ul>
+<p>For return on <strong>protfolios of equities</strong>:</p>
+<ul>
+<li>Correlations exist between returns of different series (e.g. different equities) at the same point in time (true for other asset classes as well)</li>
+<li>Correlations between different series vary over time</li>
+<li>Multivariate returns data show little evidence of cross-correlation (i.e. between time periods <span class="math inline">\(t\)</span> and <span class="math inline">\(t+1\)</span>)</li>
+<li>Multivariate series of absolute or squared returns <strong>do</strong> show strong evidence of cross-correlation</li>
+<li>Extreme returns in one series often conincide with extreme returns in several other series (i.e. level of dependence are higher during periods of high volatility)</li>
+</ul>
+<p>Models we typically use do (incorrectly) assume that log-returns are <em>iid</em></p>
+<ul>
+<li>Random walk for the development of log-prices in discrete time</li>
+<li>Geometric Brownian motion model for the development of prices in continuous time</li>
+</ul>
+<p>There are little serial correlation but returns do follow trends over short periods</p>
+<ul>
+<li>Correction do happen over the longer terms but any such correlation is insufficient to support significant profit taking</li>
+</ul>
+<p>Overall it is very difficult to predict the return in the next period given only the history of the process</p>
+<p><span class="math inline">\(\therefore\)</span> best estimate of tomorrow’s return given the daily return up to today is 0</p>
+<p>As the time period over which we calculate the return increases, the features noted <a href="#ts-char">above</a> tend to become less pronouced</p>
+<ul>
+<li>Volatility clustering is less marked and returns appear to be more <em>iid</em> and less heavy tailed (as expected from CLT)</li>
+</ul>
+<dl>
+<dt>Volatility</dt>
+<dd><p>Conditional standard deviation of returns given historical data</p>
+</dd>
+<dt>Volatility clustering</dt>
+<dd><p>When extreme values tend to be followed by other extreme values (not necessarily of the same sign)</p>
+</dd>
+</dl>
+<p>Serial correlation between absolute or squared returns is consistent with the phenomenon of volatility clustering</p>
+<p>Volatility clustering supports the idea that conditional s.d. are changing in a way that is to some extent predictable</p>
+<ul>
+<li>This is the justification for the <span class="math inline">\(ARCH\)</span> and <span class="math inline">\(GARCH\)</span> previously</li>
+</ul>
+<p><strong><em>Daily financial returns data has XS kurtosis</em></strong></p>
+<dl>
+<dt>Kurtosis</dt>
+<dd><p>“Peakedness” of a distribution</p>
+</dd>
+</dl>
+<p>Kurtosis for daily financial return is higher than that of a normal distribution</p>
+<ul>
+<li>Higher kurtosis means more of the variance is due to infrequent extreme deviations (vs frequent modestly-sized deviations)</li>
+</ul>
+<p>Distribution of daily financial returns data is leptokurtic</p>
+<ul>
+<li>i.e. more acute peak around the mean (higher probability than a normally distributed variable of value near the mean) and fatter tails (higher probability than a normally distributed variable of extreme values)</li>
+</ul>
+<p>Observed data suggest that the distribution of daily financial return has tails that decay more slowly than those of a normal distribution</p>
+<p><span class="math inline">\(\Rightarrow\)</span> We tend to get more extreme values from returns data than we would for normally distributed data</p>
+<ul>
+<li>The kurtosis falls as the period over which we are measuring returns increases (e.g. to monthly) which is consistent with volatility clustering</li>
+</ul>
+</div>
+<div id="modeling-market-risks" class="section level3">
+<h3>Modeling Market Risks</h3>
+<p>Can be modeled with the full range techniques from Mod 15</p>
+<ul>
+<li>e.g. historical simulation, forward looking factor (or data) based approach</li>
+</ul>
+<p>e.g. Forward looking factor based approach to modeling corporate bond yields might describe the complex links between variables such as:</p>
+<ol style="list-style-type: decimal">
+<li>Risk-free yield</li>
+<li>Coupon rates</li>
+<li>Credit spread</li>
+</ol>
+<p>Need to be aware not to project history blindly into the future by recognizing an unsustainable trend</p>
+<p>Should also use the past to model the uncertainty of yields rather than their absolute level</p>
+<p><strong><em>Data-based modeling using the multivariate normal distribution</em></strong></p>
+<p>Forward looking data based approaches may assume that changes in the log returns are linke by multivariate normal distribution</p>
+<p>Steps for modeling:</p>
+<ol style="list-style-type: decimal">
+<li>Pick the <strong>frequency</strong> of calculation (daily, weekly, etc)</li>
+<li>Pick the <strong>time-frame</strong> of historical data to be used (trade off between <code>volume</code> and <code>relevance</code>)</li>
+<li>For each asset class, choose the total return index <span class="math inline">\(S_t\)</span> to use</li>
+<li>For each asset class, calculate the log-return <span class="math inline">\(X_t = \ln \left(\dfrac{S_t}{S_{t-1}}\right)\)</span></li>
+<li>Calculate the average returns and variance of each asset class and the co-variance between each class (and sub-set of classes)</li>
+<li>Simulate a series of returns with the same characteristicss based on a multivariate normal distribution</li>
+</ol>
+<p>The last 2 requires some matrix math (Cholesky decomposition of an unbiased estimator of <span class="math inline">\(\boldsymbol{\Sigma})\)</span>, based on the historical data)</p>
+<p><strong>Limitations</strong></p>
+<ul>
+<li>As noted previously (Mod 16), multivariate normal is not a good description of reality in RM applications</li>
+<li>Can involve extensive calculations particularly as the number of asset classes increases</li>
+</ul>
+<p><strong><em>Factor-based modeling using PCA</em></strong></p>
+<p>PCA (from Mod 19) can reduce the computational overhead when compared to application of the multivariate normal distribution</p>
+<p>Goal of the PCA is to determine only the main factors that contribute to deviations from the average returns and ignroe the factors with less influence <span class="math inline">\(\Rightarrow\)</span> Reducing the complexity (dimensionality) of the analysis</p>
+<p>PCA is particulary useful when projecting returns on <code>bonds</code> (with a variety of durations)</p>
+<ul>
+<li>Changes in bond yields can be explained largely by shifts in just a few factors (i.e. level and shape of yield curve)</li>
+</ul>
+<p>Factor-based approach has the same simulation process as the data-based approach, with the final steps being:</p>
+<ol start="6" style="list-style-type: decimal">
+<li>Derive the matrix of deviations from the average returns by deducting the average return in each period for each asset class</li>
+<li>Derive the PC that explain a sufficiently high proportion of the deviations from average past returns</li>
+<li>Project this number of <em>iid</em> normal r.v. using the associated eigenvalues as the variances</li>
+<li>Weight these projected series of deviations by the appropriate element of the relevant eigenvectors</li>
+<li>Add these weighted projected deviations to the expected returns from each asset class</li>
+</ol>
+<p><strong><em>Altenative Modeling Approaches</em></strong></p>
+<ul>
+<li>Other multivariate distribution</li>
+<li>Combine non-normal marginal distributions using an appropriate copula</li>
+</ul>
+<p>However, volume of extreme data may be insufficient to form a strong view as to the best choice of distributions</p>
+</div>
+<div id="assessing-market-risk-under-the-basel-accords" class="section level3">
+<h3>Assessing Market Risk under the Basel Accords</h3>
+<p>Recall from Mod 5, Basel II requires banks to hold additional capital if they invest their capital in risky assets</p>
+<p>For this purpose, market risk may be quantified by using an internal model of the assets to calculate a 10-day 99% VaR</p>
+<ul>
+<li>This lead to a regulatory capital requirement under Pillar I (which is a multiple of this VaR loss)</li>
+<li>Banks can also use standardized approach rather than internal VaR model</li>
+</ul>
+</div>
+<div id="expected-returns" class="section level3">
+<h3>Expected Returns</h3>
+<p>Historic data may not give a realistic view of future experience</p>
+<ul>
+<li><span class="math inline">\(\Rightarrow\)</span> need to incorporate changes in fundamentals or other subjective viewpoints</li>
+<li>Need to incorporate the effect of tax</li>
+</ul>
+<div id="risk-free-government-bonds" class="section level4">
+<h4>(Risk-free) Government bonds</h4>
+<p>Reasonable estimate of the expected return is the gross redemption yield on the government bond of a similar term as the projection period</p>
+<p>Other relevant factors:</p>
+<ul>
+<li><p><strong>Term premium</strong>: part of the risk premium that is a function of term</p>
+<p>Term premium will varies by market and investors</p></li>
+<li><p><strong>Purchasing power parity</strong>: So that for risk-free overseas government bonds, the domestic risk-free rate is suitable</p>
+<p>In theory purchasing power parity will compensate for any difference in yield</p></li>
+<li><p><strong>Bootstrapping</strong>: Can be used to calculate the implied forward spot yield curves based on the gross redemption yields of the bonds in a portfolio</p>
+<p>Such detailed analysis may be spurious in the context of a stochastic modeling exercise</p></li>
+</ul>
+</div>
+<div id="corporate-bonds" class="section level4">
+<h4>Corporate Bonds</h4>
+<p>For bonds with a risk of default the expected return will be higher due to the credit spread</p>
+<dl>
+<dt>Credit spread</dt>
+<dd><p>Measure of the difference between the yield on a risky and a risk-free security typically a corporate bond and a government bond respectively</p>
+</dd>
+</dl>
+<ul>
+<li><span class="math inline">\(\Delta\)</span> in value of an asset due to changes in the credit spread is considered a market risk by Sweeting (Others can include it in credit risk)</li>
+</ul>
+<p>Credit spread reflects the following factors:</p>
+<ol style="list-style-type: decimal">
+<li><strong><span class="math inline">\(\mathrm{E}[\Pr(Default)]\)</span></strong> and <span class="math inline">\(\mathrm{E}[LGD]\)</span></li>
+<li>Any risk premium attached to the risk of default<br />
+(i.e. uncertainty surrounding the expected probability of default and the expected loss given default)</li>
+<li><strong>liquidity</strong> premium<br />
+(i.e. more difficult to sell the corporate bond when required (at an acceptable price))</li>
+</ol>
+<p>Item 1. can be measured by considering default history while 2. and 3. are difficult to separate</p>
+<dl>
+<dt>LGD</dt>
+<dd><p>Residual value of bond after default has happened</p>
+<p>Loss will typically be partial esp. if the corporation has not gone bankrupt</p>
+</dd>
+</dl>
+</div>
+</div>
 </div>
 
 

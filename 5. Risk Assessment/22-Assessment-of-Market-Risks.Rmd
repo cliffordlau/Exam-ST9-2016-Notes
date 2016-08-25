@@ -22,3 +22,262 @@ All risk (credit, op, insurance, etc) should be analysed and model together and 
 * e.g. risk affecting both assets and liabilities should be analyse together
 
 In addition to analysing risk at a particular time horizon, their evolution over time should also be examined (e.g. dynamic solvency testing)
+
+***
+
+Additional notes on Task list:
+
+* Sweeting 14.2.5 Black Scholes is excluded but can read for review
+* Might be assumed to be pre-requisite knowledge
+* Good to just know the underlying assumptions
+
+## Assessing Market Risk
+
+### Features of Equity Market Returns
+
+Time series can be used to model equity and other returnss
+
+***Key characteristics of financial time series analysis of historic equity market return***  
+<a name="ts-char"></a>
+
+For return on **individual equities**:
+
+* Returns are rarely *iid*
+* Volatility vary over timer
+* Extreme returns appear in clusters (**volatility clustering**)
+* Return series are **leptokurtic** (heavy tail, non symmetric)
+
+For return on **protfolios of equities**:
+
+* Correlations exist between returns of different series (e.g. different equities) at the same point in time (true for other asset classes as well)
+* Correlations between different series vary over time
+* Multivariate returns data show little evidence of cross-correlation (i.e. between time periods $t$ and $t+1$)
+* Multivariate series of absolute or squared returns **do** show strong evidence of cross-correlation
+* Extreme returns in one series often conincide with extreme returns in several other series (i.e. level of dependence are higher during periods of high volatility)
+
+Models we typically use do (incorrectly) assume that log-returns are *iid*
+
+* Random walk for the development of log-prices in discrete time
+* Geometric Brownian motion model for the development of prices in continuous time
+
+There are little serial correlation but returns do follow trends over short periods
+
+* Correction do happen over the longer terms but any such correlation is insufficient to support significant profit taking
+
+Overall it is very difficult to predict the return in the next period given only the history of the process
+
+$\therefore$ best estimate of tomorrow's return given the daily return up to today is 0
+
+As the time period over which we calculate the return increases, the features noted [above](#ts-char) tend to become less pronouced
+
+* Volatility clustering is less marked and returns appear to be more *iid* and less heavy tailed (as expected from CLT)
+
+Volatility
+
+:   Conditional standard deviation of returns given historical data
+
+Volatility clustering
+
+:   When extreme values tend to be followed by other extreme values (not necessarily of the same sign)
+
+Serial correlation between absolute or squared returns is consistent with the phenomenon of volatility clustering
+
+Volatility clustering supports the idea that conditional s.d. are changing in a way that is to some extent predictable
+
+* This is the justification for the $ARCH$ and $GARCH$ previously
+
+***Daily financial returns data has XS kurtosis***
+
+Kurtosis
+
+:   "Peakedness" of a distribution
+
+Kurtosis for daily financial return is higher than that of a normal distribution
+
+* Higher kurtosis means more of the variance is due to infrequent extreme deviations (vs frequent modestly-sized deviations)
+
+Distribution of daily financial returns data is leptokurtic
+
+* i.e. more acute peak around the mean (higher probability than a normally distributed variable of value near the mean) and fatter tails (higher probability than a normally distributed variable of extreme values)
+
+Observed data suggest that the distribution of daily financial return has tails that decay more slowly than those of a normal distribution
+
+$\Rightarrow$ We tend to get more extreme values from returns data than we would for normally distributed data
+
+* The kurtosis falls as the period over which we are measuring returns increases (e.g. to monthly) which is consistent with volatility clustering
+
+### Modeling Market Risks
+
+Can be modeled with the full range techniques from Mod 15
+
+* e.g. historical simulation, forward looking factor (or data) based approach
+
+e.g. Forward looking factor based approach to modeling corporate bond yields might describe the complex links between variables such as:
+
+1. Risk-free yield
+2. Coupon rates
+3. Credit spread
+
+Need to be aware not to project history blindly into the future by recognizing an unsustainable trend
+
+Should also use the past to model the uncertainty of yields rather than their absolute level
+
+***Data-based modeling using the multivariate normal distribution***
+
+Forward looking data based approaches may assume that changes in the log returns are linke by multivariate normal distribution
+
+Steps for modeling:
+
+1. Pick the **frequency** of calculation (daily, weekly, etc)
+2. Pick the **time-frame** of historical data to be used (trade off between `volume` and `relevance`)
+3. For each asset class, choose the total return index $S_t$ to use
+4. For each asset class, calculate the log-return $X_t = \ln \left(\dfrac{S_t}{S_{t-1}}\right)$
+5. Calculate the average returns and variance of each asset class and the co-variance between each class (and sub-set of classes)
+6. Simulate a series of returns with the same characteristicss based on a multivariate normal distribution
+
+The last 2 requires some matrix math (Cholesky decomposition of an unbiased estimator of $\boldsymbol{\Sigma})$, based on the historical data)
+
+**Limitations**
+
+* As noted previously (Mod 16), multivariate normal is not a good description of reality in RM applications
+* Can involve extensive calculations particularly as the number of asset classes increases
+
+***Factor-based modeling using PCA***
+
+PCA (from Mod 19) can reduce the computational overhead when compared to application of the multivariate normal distribution
+
+Goal of the PCA is to determine only the main factors that contribute to deviations from the average returns and ignroe the factors with less influence $\Rightarrow$ Reducing the complexity (dimensionality) of the analysis
+
+PCA is particulary useful when projecting returns on `bonds` (with a variety of durations)
+
+* Changes in bond yields can be explained largely by shifts in just a few factors (i.e. level and shape of yield curve)
+
+Factor-based approach has the same simulation process as the data-based approach, with the final steps being:
+
+6. Derive the matrix of deviations from the average returns by deducting the average return in each period for each asset class
+7. Derive the PC that explain a sufficiently high proportion of the deviations from average past returns
+8. Project this number of *iid* normal r.v. using the associated eigenvalues as the variances
+9. Weight these projected series of deviations by the appropriate element of the relevant eigenvectors
+10. Add these weighted projected deviations to the expected returns from each asset class
+
+***Altenative Modeling Approaches***
+
+* Other multivariate distribution
+* Combine non-normal marginal distributions using an appropriate copula
+
+However, volume of extreme data may be insufficient to form a strong view as to the best choice of distributions
+
+### Assessing Market Risk under the Basel Accords
+
+Recall from Mod 5, Basel II requires banks to hold additional capital if they invest their capital in risky assets
+
+For this purpose, market risk may be quantified by using an internal model of the assets to calculate a 10-day 99\% VaR
+
+* This lead to a regulatory capital requirement under Pillar I (which is a multiple of this VaR loss)
+* Banks can also use standardized approach rather than internal VaR model
+
+### Expected Returns
+
+Historic data may not give a realistic view of future experience
+
+* $\Rightarrow$ need to incorporate changes in fundamentals or other subjective viewpoints
+* Need to incorporate the effect of tax
+
+#### (Risk-free) Government bonds
+
+Reasonable estimate of the expected return is the gross redemption yield on the government bond of a similar term as the projection period
+
+Other relevant factors:
+
+* **Term premium**: part of the risk premium that is a function of term
+
+    Term premium will varies by market and investors
+    
+* **Purchasing power parity**: So that for risk-free overseas government bonds, the domestic risk-free rate is suitable
+
+    In theory purchasing power parity will compensate for any difference in yield
+    
+* **Bootstrapping**: Can be used to calculate the implied forward spot yield curves based on the gross redemption yields of the bonds in a portfolio
+
+    Such detailed analysis may be spurious in the context of a stochastic modeling exercise
+    
+#### Corporate Bonds
+
+For bonds with a risk of default the expected return will be higher due to the credit spread
+
+Credit spread
+
+:   Measure of the difference between the yield on a risky and a risk-free security typically a corporate bond and a government bond respectively
+
+* $\Delta$ in value of an asset due to changes in the credit spread is considered a market risk by Sweeting (Others can include it in credit risk)
+
+Credit spread reflects the following factors:
+
+1. **$\mathrm{E}[\Pr(Default)]$** and $\mathrm{E}[LGD]$
+2. Any risk premium attached to the risk of default  
+(i.e. uncertainty surrounding the expected probability of default and the expected loss given default)
+3. **liquidity** premium  
+(i.e. more difficult to sell the corporate bond when required (at an acceptable price))
+
+Item 1. can be measured by considering default history while 2. and 3.  are difficult to separate
+
+LGD
+
+:   Residual value of bond after default has happened
+
+* Loss will typically be partial esp. if the corporation has not gone bankrupt (e.g. but has been forced to reschedule payments)
+
+***Common measures of credit spread***
+
+1. **Nominal spread**: Difference between the gross redemption yields of risky and risk free bonds
+2. **Static spread**: Addition to the risk free rate at which discounted cash flows from risky bond will equate to its price
+    * This measures allows for the term structure of the underlying risk free rate and the term premium
+3. **Option-adjusted spread**: Further adjust the discount rate through the use of stochastic modeling to allow for any options embedded in the bond
+    * The more market-consistent measure
+    
+***Reasons why observed market credit spreads are generally higher than based on historical default on bonds***
+
+Difference can be put down to risk premia in respect of:
+
+* Higher volatility of returns relative to the risk-free asset (**credit beta**)
+* Higher uncertainty of returns, particularly the possibility of unprecedented extreme events
+* Greater skewness of the future returns (more significant downside) due to the possibility of default
+* Lower marketability of corporate debt and the associated higher costs of trade
+* Differences in taxation
+
+Potential negative correlation between credit spreads and interest rates may offset the above to some extent for investors focusing on absolute returns (i.e. those exposed to both interest and credit risk)
+
+When assessing credit risks, the risk premia above should be modeled as **expected volatility** in returns and also be reflected in liquidity planning (rather than affect the modeled expected return)
+
+Note that not all government bonds are risk-free so it is important to clarify the reference asset
+
+#### Assets other than Bonds
+
+Methods to determine risk premium is different as other assets such as equity and property have uncertain income
+
+Historical risk premiums can be calculated by:  
+**Deducting** the *observed return* on `risk free asset` from the *observed return* on the `risky asset`, **averaging** over the periods that data is available
+
+* Need to **further adjust** the average to reflect any `changes that might be expected in the future` (could be subjective or based on fundamental structual changes in the asset classes)
+
+* For **overseas** investments, important to consider volatility in each asset's `domestic currency` and allow **seperately** for `exchange rate risk` in the **correlation** calculation
+
+***CAPM***
+
+CAPM[^capm] gives a structure for analysing risk premiums and ensuring their consistency
+
+[^capm]: $r_x = r_f + \beta_X(r_U - r_f)$
+
+    Links the expected return $r_X$ on asset $X$ to:
+    
+    * $r_f$: Risk free rate of return
+    * $r_U$: Return on the universe of investment opportunities
+    * $\beta_X$: The associated variances and covariances of returns
+    
+    Where:
+    
+    * $\beta_X = \dfrac{\sigma_X}{\sigma_U}\rho_{X,U}$
+    * $\sigma_X$, $\sigma_U$ are the respective s.d.
+    * $\rho_{X,U}$ is the linear correlation between the returns on $X$ and the universe of investment opportunities
+    
+### Benchmarks
