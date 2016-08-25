@@ -235,7 +235,7 @@ div.tocify {
 <ul>
 <li>e.g. risk affecting both assets and liabilities should be analyse together</li>
 </ul>
-<p>In addition to analysing risk at a particular time horizon, their evolution over time should also be examined (e.g. dynamic solvency testing)</p>
+<p>In addition to analyzing risk at a particular time horizon, their evolution over time should also be examined (e.g. dynamic solvency testing)</p>
 <hr />
 <p>Additional notes on Task list:</p>
 <ul>
@@ -248,7 +248,7 @@ div.tocify {
 <h2>Assessing Market Risk</h2>
 <div id="features-of-equity-market-returns" class="section level3">
 <h3>Features of Equity Market Returns</h3>
-<p>Time series can be used to model equity and other returnss</p>
+<p>Time series can be used to model equity and other returns</p>
 <p><strong><em>Key characteristics of financial time series analysis of historic equity market return</em></strong><br />
 <a name="ts-char"></a></p>
 <p>For return on <strong>individual equities</strong>:</p>
@@ -264,7 +264,7 @@ div.tocify {
 <li>Correlations between different series vary over time</li>
 <li>Multivariate returns data show little evidence of cross-correlation (i.e. between time periods <span class="math inline">\(t\)</span> and <span class="math inline">\(t+1\)</span>)</li>
 <li>Multivariate series of absolute or squared returns <strong>do</strong> show strong evidence of cross-correlation</li>
-<li>Extreme returns in one series often conincide with extreme returns in several other series (i.e. level of dependence are higher during periods of high volatility)</li>
+<li>Extreme returns in one series often coincide with extreme returns in several other series (i.e. level of dependence are higher during periods of high volatility)</li>
 </ul>
 <p>Models we typically use do (incorrectly) assume that log-returns are <em>iid</em></p>
 <ul>
@@ -277,7 +277,7 @@ div.tocify {
 </ul>
 <p>Overall it is very difficult to predict the return in the next period given only the history of the process</p>
 <p><span class="math inline">\(\therefore\)</span> best estimate of tomorrow’s return given the daily return up to today is 0</p>
-<p>As the time period over which we calculate the return increases, the features noted <a href="#ts-char">above</a> tend to become less pronouced</p>
+<p>As the time period over which we calculate the return increases, the features noted <a href="#ts-char">above</a> tend to become less pronounced</p>
 <ul>
 <li>Volatility clustering is less marked and returns appear to be more <em>iid</em> and less heavy tailed (as expected from CLT)</li>
 </ul>
@@ -329,7 +329,7 @@ div.tocify {
 <p>Need to be aware not to project history blindly into the future by recognizing an unsustainable trend</p>
 <p>Should also use the past to model the uncertainty of yields rather than their absolute level</p>
 <p><strong><em>Data-based modeling using the multivariate normal distribution</em></strong></p>
-<p>Forward looking data based approaches may assume that changes in the log returns are linke by multivariate normal distribution</p>
+<p>Forward looking data based approaches may assume that changes in the log returns are linked by multivariate normal distribution</p>
 <p>Steps for modeling:</p>
 <ol style="list-style-type: decimal">
 <li>Pick the <strong>frequency</strong> of calculation (daily, weekly, etc)</li>
@@ -337,7 +337,7 @@ div.tocify {
 <li>For each asset class, choose the total return index <span class="math inline">\(S_t\)</span> to use</li>
 <li>For each asset class, calculate the log-return <span class="math inline">\(X_t = \ln \left(\dfrac{S_t}{S_{t-1}}\right)\)</span></li>
 <li>Calculate the average returns and variance of each asset class and the co-variance between each class (and sub-set of classes)</li>
-<li>Simulate a series of returns with the same characteristicss based on a multivariate normal distribution</li>
+<li>Simulate a series of returns with the same characteristics based on a multivariate normal distribution</li>
 </ol>
 <p>The last 2 requires some matrix math (Cholesky decomposition of an unbiased estimator of <span class="math inline">\(\boldsymbol{\Sigma})\)</span>, based on the historical data)</p>
 <p><strong>Limitations</strong></p>
@@ -347,8 +347,8 @@ div.tocify {
 </ul>
 <p><strong><em>Factor-based modeling using PCA</em></strong></p>
 <p>PCA (from Mod 19) can reduce the computational overhead when compared to application of the multivariate normal distribution</p>
-<p>Goal of the PCA is to determine only the main factors that contribute to deviations from the average returns and ignroe the factors with less influence <span class="math inline">\(\Rightarrow\)</span> Reducing the complexity (dimensionality) of the analysis</p>
-<p>PCA is particulary useful when projecting returns on <code>bonds</code> (with a variety of durations)</p>
+<p>Goal of the PCA is to determine only the main factors that contribute to deviations from the average returns and ignore the factors with less influence <span class="math inline">\(\Rightarrow\)</span> Reducing the complexity (dimensionality) of the analysis</p>
+<p>PCA is particularly useful when projecting returns on <code>bonds</code> (with a variety of duration)</p>
 <ul>
 <li>Changes in bond yields can be explained largely by shifts in just a few factors (i.e. level and shape of yield curve)</li>
 </ul>
@@ -419,11 +419,193 @@ div.tocify {
 <dl>
 <dt>LGD</dt>
 <dd><p>Residual value of bond after default has happened</p>
-<p>Loss will typically be partial esp. if the corporation has not gone bankrupt</p>
+</dd>
+</dl>
+<ul>
+<li>Loss will typically be partial esp. if the corporation has not gone bankrupt (e.g. but has been forced to reschedule payments)</li>
+</ul>
+<p><strong><em>Common measures of credit spread</em></strong></p>
+<ol style="list-style-type: decimal">
+<li><strong>Nominal spread</strong>: Difference between the gross redemption yields of risky and risk free bonds</li>
+<li><strong>Static spread</strong>: Addition to the risk free rate at which discounted cash flows from risky bond will equate to its price
+<ul>
+<li>This measures allows for the term structure of the underlying risk free rate and the term premium</li>
+</ul></li>
+<li><strong>Option-adjusted spread</strong>: Further adjust the discount rate through the use of stochastic modeling to allow for any options embedded in the bond
+<ul>
+<li>The more market-consistent measure</li>
+</ul></li>
+</ol>
+<p><strong><em>Reasons why observed market credit spreads are generally higher than based on historical default on bonds</em></strong></p>
+<p>Difference can be put down to risk premia in respect of:</p>
+<ul>
+<li>Higher volatility of returns relative to the risk-free asset (<strong>credit beta</strong>)</li>
+<li>Higher uncertainty of returns, particularly the possibility of unprecedented extreme events</li>
+<li>Greater skewness of the future returns (more significant downside) due to the possibility of default</li>
+<li>Lower marketability of corporate debt and the associated higher costs of trade</li>
+<li>Differences in taxation</li>
+</ul>
+<p>Potential negative correlation between credit spreads and interest rates may offset the above to some extent for investors focusing on absolute returns (i.e. those exposed to both interest and credit risk)</p>
+<p>When assessing credit risks, the risk premia above should be modeled as <strong>expected volatility</strong> in returns and also be reflected in liquidity planning (rather than affect the modeled expected return)</p>
+<p>Note that not all government bonds are risk-free so it is important to clarify the reference asset</p>
+</div>
+<div id="assets-other-than-bonds" class="section level4">
+<h4>Assets other than Bonds</h4>
+<p>Methods to determine risk premium is different as other assets such as equity and property have uncertain income</p>
+<p>Historical risk premiums can be calculated by:<br />
+<strong>Deducting</strong> the <em>observed return</em> on <code>risk free asset</code> from the <em>observed return</em> on the <code>risky asset</code>, <strong>averaging</strong> over the periods that data is available</p>
+<ul>
+<li><p>Need to <strong>further adjust</strong> the average to reflect any <code>changes that might be expected in the future</code> (could be subjective or based on fundamental structural changes in the asset classes)</p></li>
+<li><p>For <strong>overseas</strong> investments, important to consider volatility in each asset’s <code>domestic currency</code> and allow <strong>seperately</strong> for <code>exchange rate risk</code> in the <strong>correlation</strong> calculation</p></li>
+</ul>
+<p><strong><em>CAPM</em></strong></p>
+<p>CAPM<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> gives a structure for analyzing risk premiums and ensuring their consistency</p>
+</div>
+</div>
+<div id="benchmarks" class="section level3">
+<h3>Benchmarks</h3>
+<p>Market risk should be measured relative to a suitable benchmark<br />
+(Typically based on market indices or the investor’s liabilities)</p>
+<p><strong>Features</strong> of a good benchmark</p>
+<ul>
+<li>Unambiguous</li>
+<li>Investable and tractable</li>
+<li>Measurable on a reasonably frequent basis</li>
+<li>Appropriate (e.g. to the investor’s objectives)</li>
+<li>Reflective of current investment opinion (positive, negative, neutral)</li>
+<li>Specified in advance</li>
+</ul>
+<p>Might be appropriate to <strong>measure against</strong> benchmark that:</p>
+<ul>
+<li>Contains a high proportion of the assets held in the portfolio</li>
+<li>Has a similar investment style (growth or value, etc)</li>
+<li>Has a low turnover constituents</li>
+<li>Has investible position sizes</li>
+<li>Behaves in a similar way to the portfolio<br />
+(i.e. shows a strong (+) correlation between portfolio return (<span class="math inline">\(r_X\)</span>) and the benchmark return (<span class="math inline">\(r_B\)</span>) in XS of the market return (<span class="math inline">\(r_U\)</span>))<br />
+(i.e. <span class="math inline">\(\rho(r_X - r_U, r_B - r_U) \gg 0\)</span>)</li>
+<li>Has low correlation between the <strong>difference</strong> of the <code>portfolio return and the benchmark return</code> and <code>benchmark return and the market return</code><br />
+(i.e. <span class="math inline">\(\rho(r_X - r_B, r_B - r_U) \approx 0\)</span>)</li>
+</ul>
+<p>If the benchmark is to be based on the liabilities then the reference point is often a set of cashflows (or notional assets) that represent the actual (uncertain) liabilities</p>
+<p>Risks and return can both be defined and measured with reference to the chosen benchmark(s)</p>
+<dl>
+<dt>Strategic risk</dt>
+<dd><p>Risk of poor performance of the benchmark against which the manager’s performance will be judged (the strategic benchmark) relative to the liability-based benchmark</p>
+</dd>
+<dt>Active risk</dt>
+<dd><p>Risk of poor performance of the manager’s actual portfolio relative to the manager’s (strategic) benchmark</p>
+</dd>
+<dt>Active return</dt>
+<dd><p>Difference between the return on the actual (active) portfolio and the return on the manager’s (strategic) benchmark</p>
 </dd>
 </dl>
 </div>
 </div>
+<div id="assessing-interest-rate-risk" class="section level2">
+<h2>Assessing Interest Rate Risk</h2>
+<p>Basic 1-factor approaches are useful for simulating short-term, single interest rates</p>
+<p>Need more complex models for modeling multiple points on a yield curve or changes to the shape of a yield curve</p>
+<p>Exam Note: Need to be familiar with manipulating interest rates (e.g. forward rates and yield curves)</p>
+<ul>
+<li>See Sweeting 14.3.1 and 14.3.2 for revision</li>
+</ul>
+<div id="two-factor-models" class="section level3">
+<h3>Two-factor Models</h3>
+<p><strong>Brennan-Schwartz</strong> model</p>
+<ul>
+<li>Considers <span class="math inline">\(\Delta\)</span> in spot rates at 2 maturities</li>
+<li><p>e.g. short term (<span class="math inline">\(r_{1,t}\)</span>) and long-term (<span class="math inline">\(r_{2,t}\)</span>) at time <span class="math inline">\(t\)</span></p>
+<p><span class="math inline">\(\Deltar_{1,t} = [\alpha_a + \beta_1(r_{2,t-1} - r_{1,t-1})] \Delta t + r_{1,t-1}\epsilon_{1,t}\)</span> <span class="math inline">\(\Deltar_{2,t} = [(\alpha_2 + \beta_2r_{1,t-1} - \gamma_2r_{2,t-1}] \Delta t + r_{2,t-1}\epsilon_{2,t}\)</span></p></li>
+</ul>
+<p><strong>Model assumptions</strong></p>
+<ul>
+<li><p>Changes in short-term rates vary in line with the steepness of the yield curve<br />
+(the differential between long and short term rates)</p>
+<ul>
+<li>i.e. <span class="math inline">\(\alpha_1 + \beta_1(r_{2,t-1}-r_{1,t-1})\)</span> for some <span class="math inline">\(\alpha_1\)</span> and <span class="math inline">\(\beta_1\)</span></li>
+</ul></li>
+<li><p>Volatility of short term rates varies <span class="math inline">\(\propto\)</span> the most recent level of short term rates</p>
+<ul>
+<li>i.e. <span class="math inline">\(\epsilon_{1,t} r_{1,t-1}\)</span></li>
+</ul></li>
+<li><p>Changes in long term rates vary in population to the square of the level of long term rates (i.e. <span class="math inline">\(\gamma_2 r^2_{2,t-1}\)</span> for some <span class="math inline">\(\gamma_2\)</span>), but are also influenced by the short-term rates through the produce team <span class="math inline">\(\beta_2 r_{1,t-1}r_{2,t-1}\)</span></p></li>
+</ul>
+<p><strong>Limitations</strong>:</p>
+<ul>
+<li>Constraint to 2 factors</li>
+<li>Difficult to select the appropriate parameters</li>
+</ul>
+</div>
+<div id="pca-approach" class="section level3">
+<h3>PCA Approach</h3>
+<p>PCA can be applied to <code>gross redemption yields</code> (or log to avoid negatives), <code>forward yields</code> or <code>bond prices</code> to determine the main factors that contribute to changes</p>
+<p>For <code>GRYs</code> the process is similar to the market risk:</p>
+<ol style="list-style-type: decimal">
+<li>Pick <strong>frequency</strong></li>
+<li>Pick <strong>time-frame</strong> of historical data to use</li>
+<li>Take the GRYs for bonds of different durations and calculate the average interest rate for the series</li>
+<li>Deduct the average interest rate (to derive the deviation)</li>
+</ol>
+<p>A set of factors is chosen and weighted, then projected using independent r.v. (normal) to produce expected interest rates for each term</p>
+<p>For <code>bond prices</code> (<span class="math inline">\(p_t\)</span>), first calculate <strong>log returns</strong> <span class="math inline">\(\ln (p_t/p_{t-1})\)</span> and then the deviations from average log-returns are analyzed</p>
+</div>
+</div>
+<div id="assessing-exchange-rate-risk" class="section level2">
+<h2>Assessing Exchange Rate Risk</h2>
+<p>FX risk shares similarities to <strong>interest rate</strong> risk</p>
+<p>Can be modeled in terms of the returns on short-term interest-bearing deposits denominated in different currencies</p>
+<p>FX rates reflect different interest rates and the expectation of appreciation or depreciation of the currency</p>
+<p>FX risk can be hedged away using currency forward agreements (See Mod 27), hence there is no additional currency return to be gained (or modeled) if working in a single denomination</p>
+<p>No-arbitrage argument:</p>
+<p><span class="math inline">\(\dfrac{e_0}{e_t}(1+r_{Y,t}) = r + r_{X,t}\)</span></p>
+<ul>
+<li>$r_{X,t} and <span class="math inline">\(r_{Y,t}\)</span> are the annual effective spot interest rates in 2 countries at time <span class="math inline">\(t\)</span></li>
+<li><span class="math inline">\(e_t\)</span> is the expected FX rate at time <span class="math inline">\(t\)</span></li>
+</ul>
+</div>
+<div id="contagion-systemic-risks" class="section level2">
+<h2>Contagion/ Systemic Risks</h2>
+<p>Contagion risks are usually seen as an extension of market risk, but can also apply to other risk (e.g. credit) where the default of one org can cause its creditors and supplier to experience financial difficulties</p>
+<p>Contagion risks can be modeled as the <strong>interaction</strong> between different financial series</p>
+<ul>
+<li>Certain series may be linked for extreme negative values</li>
+<li>The increase level of dependence suggest we should use copula</li>
+</ul>
+<p><strong><em>Approaches to modeling contagion risks</em></strong></p>
+<p><strong>Single financial series</strong></p>
+<p>Contagion can be considered a <strong>feedback risk</strong><br />
+(i.e. there is some serial correlation that can be modeled)</p>
+<p>However, that would presents an arbitrage opportunity which in theory should be eliminated by arbitrageurs <span class="math inline">\(\therefore\)</span> such serial correlation effects are usually ignored when modeling</p>
+<p><strong>Between related financial series</strong></p>
+<p>Fitting a <em>t</em>-copula using correlation parameter <span class="math inline">\(\rho\)</span> that is situation dependent</p>
+<p>i.e. <span class="math inline">\(\rho = \rho_0 + D_1 \rho_1 + D_2 \rho_2\)</span></p>
+<ul>
+<li>Where the normal level of dependency <span class="math inline">\(\rho_0\)</span> is adjusted by additional dependency <span class="math inline">\(\rho_1\)</span> and <span class="math inline">\(\rho_2\)</span> in different states</li>
+<li><span class="math inline">\(D_i\)</span> are the states indicator:
+<ul>
+<li>e.g. <span class="math inline">\(D_1 = 1\)</span> during financial crisis and 0 otherwise; <span class="math inline">\(D_2=1\)</span> in the aftermath of a financial crisis and 0 otherwise</li>
+</ul></li>
+</ul>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><span class="math inline">\(r_x = r_f + \beta_X(r_U - r_f)\)</span></p>
+<p>Links the expected return <span class="math inline">\(r_X\)</span> on asset <span class="math inline">\(X\)</span> to:</p>
+<ul>
+<li><span class="math inline">\(r_f\)</span>: Risk free rate of return</li>
+<li><span class="math inline">\(r_U\)</span>: Return on the universe of investment opportunities</li>
+<li><span class="math inline">\(\beta_X\)</span>: The associated variances and covariances of returns</li>
+</ul>
+<p>Where:</p>
+<ul>
+<li><span class="math inline">\(\beta_X = \dfrac{\sigma_X}{\sigma_U}\rho_{X,U}\)</span></li>
+<li><span class="math inline">\(\sigma_X\)</span>, <span class="math inline">\(\sigma_U\)</span> are the respective s.d.</li>
+<li><span class="math inline">\(\rho_{X,U}\)</span> is the linear correlation between the returns on <span class="math inline">\(X\)</span> and the universe of investment opportunities</li>
+</ul>
+<a href="#fnref1">↩</a></li>
+</ol>
 </div>
 
 
