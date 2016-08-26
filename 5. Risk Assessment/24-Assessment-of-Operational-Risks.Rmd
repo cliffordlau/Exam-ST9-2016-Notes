@@ -14,3 +14,271 @@ output:
 ## Module Objective
 
 Discuss the assessment of operational, liquidity and insurance risks
+
+## Need to Assess Op-Risk
+
+***Interest in the active management*** of op-risk has been kick-started in recent times by:
+
+1. Advent of ERM
+2. Introduction of new regulatory capital requirements
+3. Increased emphasis on sophisticated quantitative models for other types of risks
+4. There is no inherent upside to op-risk
+
+Reasons why a more ***formal approach is advantageous***:
+
+5. Op-risk has been the main driver behind many cases of major financial disaster
+6. Op-risk is inter-linked with credit and market risk; important to minimize the likelihood of op-risk failure during already stressed market conditions
+7. Op-risk may otherwise be treated differently in different areas of the company; Can lead to key risks being over looked and decisions being taken based on inaccurate information or an incorrect assessment of a BU's risk-adjusted return
+
+***Benefit*** of `consistent` and `effective` op-risk management (that is distinct from the general benefits arising from management of other types of risks)
+
+* **Minimize impact of reputational damage** from incident linked to op-loss
+    * These incidents are more likely to give the company the appearance of being badly managed and ill-equipped to deal with errors than other risk events
+* **Minimizes** `day-to-day losses` and **reduces the potential** for more `extreme and costly incidents`
+* Improves ability to `meet business objectives` (less time spend on crisis management)
+* **Strengthens** `overall ERM process and framework`
+
+Op-risk management is still very much a developing area but is widely accepted that all companies should be considering this issue
+
+A `comprehensive approach` should be adopted, but the focus should primarily be on the **management of op-risk** (later module) rather than attempt to (spuriously) precisely measure the risk present
+
+## Assessing Operational Risk
+
+Organizations have only recently started gathering operational loss data
+
+Based on initial analysis of publicly available data:
+
+* Distribution is skewed to the right
+* Severities have a heavy tailed distribution
+* Losses occur randomly in time
+* Loss frequency may vary considerably over time
+
+***2 types of losses to distinguish***
+
+1. Small day-to-day mistake made in the course of business
+
+    May be modelled e.g. using statistical distributions or high-claim-frequency non-life reserving techniques
+
+2. Infrequent, large events (e.g. major frauds or failed projects)
+
+    Require methods such as extreme value techniques (fitting GPD)
+    
+***Model approach***
+
+* **Bottom up model**:  
+Estimates the operational risk capital by **starting the analysis at a low level of detail** (i.e. looking at each category of op-risk in return) and then aggregating the results
+
+* **Top down model**:  
+Use `readily available data` and `fairly simple calculations` to give a **general picture of the operational risk** of a company
+
+* Insurance companies are more likely to practice to use a high level scenario analysis technique from a top down perspective
+
+### Bottom-up Models
+
+Estimates the operational risk capital by **starting the analysis at a low level of detail** (i.e. looking at each category of op-risk in return) and then aggregating the results
+
+#### Statistical Analysis
+
+Need model that cope well with the outer tail of the loss distribution
+
+EVT (Mod 20) may be suitable for assessing infrequent, potentially catastrophic risks
+
+* Reasonable to assume the inflation adjusted loss amount at least have a common severity distribution
+* Some suggests the GPD as one of the most useful tools to fit loss distribution in the extreme tails
+* However EVT may be appropriate but this approach is **not widely use** due to the **lack of internal data**
+
+Given sufficient data to come up with an estimated loss distribution, then Monte Carlo might be used to estimate op-risk capital for a given CI
+
+#### Scenario Analysis
+
+Useful technique due to the potential **linkage** between `op-risk` and `other risk`
+
+***Steps for applying scenario analysis to op-risk assessment***
+
+1. Group risk exposures into broad categories
+
+    e.g. risk invovling financial fraud; system errors, etc
+    
+    Require input from a wide range of senior individuals in the organization
+    
+2. Develop plausible adverse scenario for each group of risk
+
+    Need to be plausible to determine the consequence of the risk event
+    
+    The scenario is deemed to be representative of all risk in the group
+    
+3. Calculate the consequence of the risk event occurring for each scenario
+
+    Also will involve senior staff input
+    
+    Financial consequences could include: redress paid to those affected; cost of correcting systems and records; regulatory fees and fines; opportunity costs while any changes are made; etc
+    
+    In practice the mid-point of a range of possible values is usually taken
+    
+4. Total costs calculated are taken as the financial cost of all risks represented by the chosen scenario
+
+5. Assessment of likelihood and severity made by a scenario analysis can be displayed on a risk map
+
+***Benefits** of scenario analysis
+
+* Captures opinions, concerns and experience of risk managers
+* Not rely heavily on availability/accuracy/relevance of historical data
+* Provide opportunity to identify hard to predict, high-impact events
+* Identify and improve understanding of cause and effect relationship
+* Reduce risk-reward arbitrage opportunities
+
+#### Pros and Cons
+
+***Advantage*** of bottom-up model
+
+* Give a more robust picture of company's overall risk
+
+***Limitations***
+
+1. Difficult to break down reported aggregate losses into their constituent components
+2. Little robust internal historical data, esp. for low probability and high impact events
+3. Application of external data is difficult due to difference between companies
+
+***Basel advanced measurement approach*** (AMA)
+
+Under the Basel AMA, op-risk is assessed using internal models (stat analysis) and scenario analysis  
+(Subject to approval and continual checking by the supervisory authorities)
+
+Standard is a 1-year holding period of a 99.9% CI
+
+* Consistent with the Basel standard for credit risk analysis (mod 30)
+
+Loss from op-risk are categorized into `8 business lines` (e.g. retail banking, agency service, etc) and further into `7 loss-event types` (e.g. internal fraud, damage to physical assets etc)
+
+3 specific areas that need credible data (on probability and expected size of potential losses)
+
+* Internal data on repetitive high frequency losses over a 3-5 years period
+* External data on non-repetitive, low frequency losses
+* Suitable stress scenarios to consider
+
+Overall, statistical methods are difficult to apply due to the lack of data (as banks have only recently started such information gathering)
+
+#### Factor-based models
+
+Simpler approach (due to lack of data) that assumed losses are related to the volume of transactions and to apply a weighting to the actual or expected volume of transactions (e.g. Basel indicator and standardized approaches)
+
+***Disadvantage***: Op-risk exposure may no be proportional to business volumes (might not a good proxy)
+
+***Basel indicator approach*** (BIA)
+
+Operational risk capital ($K_{BIA}$)
+
+$K_{BIA} = \dfrac{\sum \limits_{t=1}^3 \alpha \: max(GI_t,0)}{\sum \limits_{t=1}^3 I(GI_t >0)}$
+
+* $GI_t$: Gross income in the prior year $t$
+* Basel Committee suggest that $\alpha$ should be 15%
+
+***Basel standardized approach***(SA)
+
+Similar to BIA except that gross income is split down and attributed to each of 8 business lines with a different multiplier each
+
+$K_{SA} = \dfrac{1}{3} \sum \limits_{t=1}^3 max \left(\sum \limits_{j=1}^8 \beta_j GI_{j,t}, 0\right)$
+
+* $\beta_j$ is between 12% and 18% depending on the business
+* $GI_{j,t}$ is the gross income for business line $j$ in the prior year $t$
+
+### Top-down Models
+
+Use `readily available data` and `fairly simple calculations` to give a **general picture of the operational risk** of a company
+
+Look at 4 models, but they all fail to capture successfully low probability high consequence risk events
+
+#### 1. Implied Capital Model
+
+Operational risk capital = total risk capital - non-op-risk capital
+
+***Advantages**:  Simple and forward looking
+
+***Limitations**
+
+* Total risk capital needs to be estimated (not easy)
+* Inter-relationship between the different types of risks are ignored
+* Does not capture cause and effect scenarios (i.e. where op-risk arises in the company and its specific impact)
+
+#### 2. Income Volatility Model
+
+Looks at income volatility as the primary factor determining capital allocation
+
+Operational risk income volatility = total income-volatility - non-op-risk income-volatility
+
+Relative ***advantage*** over method 1.
+
+* Better data availability in respect of total income volatility than for the total risk capital needed for the previous model
+
+***Limitations***
+
+* Ignores the rapid evolution of companies and industries (over time the income volatility of companies will change)  
+(i.e. not forward looking)
+* Focus on income rather than value  
+(Does not capture the "softer" measures of risk, such as opportunity cost and the value of reputation/brand)
+
+#### 3. Economic Pricing Model
+
+CAPM. assumes that all market information is included in a company's share price and so the impact of any publicized op-loss can be identified by looking at the movement in a company's share price and stripping out the overall market movement
+
+Relative ***advantage*** over method 2.
+
+* Includes both the aggregate effect of specific risk events and the "softer" issues (e.g. opportunity cost and/or damage to reputation/brand)
+
+***Limitations***
+
+* No information is provided on losses due to specific risks (only aggregate)
+* Level of op-risk capital is unaffected by any controls put in place (little motivation to improve the risk management process)
+* Tail-end risks are not accounted for thoroughly
+* Does not help anticipate incidents of operational risk as there is no consideration of individual risks in isolation
+
+#### 4. Analogue Model
+
+Use data from similar companies to derive operational risk capital
+
+Useful if there is little internal data available (but debatable how accurately one company mirrors another in terms of risk profile)
+
+## Operational Risk Assessment Process
+
+Systematic process for managing a company's op-risk
+
+* Risk policy and organization (focus of the module)
+* Risk identification and assessment (focus of the module)
+* Capital allocation and performance measurement (cover in later module)
+* Risk mitigation and control (cover in later module)
+* Risk transfer and finance (cover in later module)
+
+#### Risk Policy and Organization
+
+A comprehensive operational risk management policy should include:
+
+1. `Principles` for operational risk management
+2. Definitions and `taxonomy` for op-risk
+3. `Objectives` and `goals` of op-risk management
+4. Op-risk management `processes and tools`
+5. `Org structure`, as it applies to operational risk management
+6. `Roles and responsibilities` of different business areas involved in operational risk management
+
+#### Risk Identification and Assessment
+
+Need a wide range of tools and techniques as it covers a broad range of issues
+
+***1. Loss incident databases***
+
+Help a company to **learn** from previous loss incidents, analyse **trends** and support**root causes analysis** of op-losses and any mitigation strategies applied
+
+***2. Controls self-assessment***
+
+Internal analysis of the key risks and their controls and management implications
+
+***3. Risk mapping***
+
+(Discussed in Mod 13) Ranks the company's key risk exposures by severity and frequency
+
+Helps prioritize risk and ensure resources are targeted to the most important risks
+
+***4. Risk indicators and minimum acceptable performance triggers***
+
+Quantitative measures can be set up (e.g. \# of customer complaints) and used to establish goals and levels of minimum acceptable performance (MAP)
+
+Action plans should be in place to deal with any non attainment of the MAP
