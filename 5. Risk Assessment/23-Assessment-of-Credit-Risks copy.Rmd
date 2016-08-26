@@ -1,0 +1,533 @@
+---
+title: "Module 23: Assessment of Credit Risks"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Evaluate credit risk
+
+* Describe what is meant by credit spread, and describe components of credit spread
+* Discuss different approaches to modeling credit risk
+
+***
+
+Consider the main ares of work for actuaries in respect of the analysis of credit risk
+
+* Modeling credit default probabilities for a company using different types of models
+* Modeling credit risk exposure in a diversified portfolio
+* Analysis of credit spreads
+
+There are details on the different types of credit risk models (technical)
+
+* Should focus on understanding the broad application of the concepts (pros and cons, and difficulties involved)
+
+Subjects such as Metron model is just for completeness and revision
+
+Exam note:
+
+* Need to know how to analyze and perform calculations relating to credit risk within fixed interest securities
+
+Mod 28 will discuss the applications of some credit derivative tools
+
+Stuff **excluded** from Sweeting 14.5.3:
+
+* Quantitative credit models
+* Probit and logit models
+* Discriminant analysis
+* *k* nearest neighbor approach
+* Support vector machines
+
+## Recall: Prereq
+
+***Hazard Rates***
+
+`Rate` that a defined event **occurs at a specified time** on members of a defined group **given** that the `event hasn't yet occured` to the members of that group
+
+$\mu(x)$: Force of mortality, hazard rate
+
+$\mu(x) \lim \limits_{k \rightarrow 0^+} \dfrac{1}{k} \times \Pr[T \leq x +k \mid T> x]$
+
+Probability of surviving $t$ years
+
+$_{t}P_x = \exp \left\{ -\int \limits_{s=0}^t \mu_{x+s} ds \right\}$
+
+## Nature of Credit Risk
+
+### Components of Credit Risk
+
+Credit Risk
+
+:   Risk of loss due to **contractual obligations not being met** (in terms of `quantity`, `quality`, or `timing`) either in part of in full, whether due to inability of, or decision by, the counterparty
+
+***Credit risk components***
+
+**1. Default risk**
+
+* Depends on the credit standing of the counterparty
+* Default can be any of the following:
+    * Payment is missed
+    * Financial ratio dropped below certain level
+    * Legal proceedings start against the credit issuer
+    * PV of assets fall below the liabilities due to economic factors
+
+**2. Credit spread risk**
+
+* Credit spread:  
+Measure of the difference between the yield on a risky and risk-free security
+* Credit spread risk:  
+Risk of changes in value of an assets due to changes in the credit spread  
+(Reflecting a change in actual or perceived creditworthiness)
+
+***
+
+Components of **default risk** of a `single counterparty`
+
+1. Probability of default
+2. Loss given default
+
+Components of **default risk** of a `credit portfolio`
+
+1. Probability of default of each counterparty
+**2. LGD in respect of each counterparty (function of exposure and recoveries)
+3. Level and nature of **interactions** between various `credit exposures` and other `(non-credit) risks` in a portfolio
+
+***Exposure***
+
+Can be clear and straightforward (e.g. loan or invoice) but not always (e.g. derivatives)
+
+For `derivatives`, the **value fluctuate** with market movement so even though the exposure at an exact point in time may be known, it should not be treated as the full extent of the exposure to the counterparty
+
+* Might need to make an estimate of the average exposure or model the possible future exposure using Monte Carlo
+
+***Recovery***
+
+* **Can take a long time** to obtain and usually require legal proceedings
+* Can be strengthened with `collateral` or 3^rd^ party guarantees
+
+### Credit and Market Risk
+
+Sweeting explicitly defines credit risk excluding credit spread risk
+
+But even so market risk and credit risk are **not indepdenent** and the inter relationship needs to be considered in the risk assessment; e.g.
+    
+* Pension schemes are exposed to market risks and are dependent on the credit risk of the sponsor
+* Credit risk associated with long term loans are dependent on changes in the yield curve
+    
+**General techniques to minimize credit risk**
+
+* Diversify exposure across multiple counterparties
+* Monitor exposure regularly
+* Take immediate action when default occurs
+* (more in Mod 28)
+
+### Obtaining Information
+
+Availability of relevant and reliable information is a particular problem for assessing credit risk
+
+* Creditor has an information asymmetry about the risks they are creating
+* e.g. Mortgagee knows much better about their personal situation and ability to repay the mortgage than the bank
+
+***Source of information***
+
+* **Credit issuer**  
+(e.g. credit rating agencies will carry out in depth interviews with the institutions they rate)
+* **Counterparty**  
+(e.g. banks will have standardized questionnaires for new borrowers)
+* **Publicly available data**  
+(e.g. information disclosed under Basel disclosure rules or stock exchange listing rules)
+* **Proprietary database**  
+(e.g. companies such as Experian hold vast amounts of data on individual's credit histories)
+
+Need to be aware of the **trade off** between `cost of obtaining more information` and the `benefit of improved analysis`
+
+## Assessing Credit Risk
+
+There are both qualitative and quantitative methods
+
+### Qualitative Credit Models
+
+Can generate subjective assessment of default and credit spread risk
+
+Assessments are based on relevant factors:
+
+* **Nature** of the `contractural obligation`  
+(e.g. loan's seniority)
+* Level and nature of any **security**  
+(e.g.  parental guarantees, collateral)
+* **Nature** of the `borrower`  
+(e.g. company's industry sector or individual's employment status)
+* **economic indicators**  
+(e.g. inflation rates)
+* **Financial ratios**  
+(e.g. company's gearing)
+* **face to face meetings** with the credit issuer and/or counterparty
+
+Assessment should consider how the risk may change over time (e.g. over the life of the contract or over an economic cycle)
+
+Recall example of S&P's process from Mod 7
+
+Assessment will ultimately consider `risk of default` and `perceived creditworthiness` of the counterparty over the `time-horizon` of interest
+
+***Advantages***
+
+A wide range of (subjective) factors can be incorporated into the assessment
+
+***Disadvantages***
+
+1. **Excessive subjectivity**
+2. **Lack of consistency** between ratings (between sector, analyst, etc)
+3. **Meaning of subjective ratings may change** over the economic cycle or as a result of changes in the economic environment
+4. **Ratings may fail to respond** to changes in the economic cycle or circumstances of the counterparty (particularly there is often a reluctance to change a credit rating)
+    * A decision making bias (anchoring)
+    
+### Quantitative Credit Models
+
+Rely on taking financial data and converting into some form of credit measure (e.g. PD)
+
+Types of credit models:
+
+1. **Credit-scoring**  
+Forecast the likelihood of a counterparty defaulting at a particular point in time given certain `fundamental information` about the counterparty
+
+    e.g. **empirical models**: analyse the incidence of default in the past for companies with a certain level of gearing, cashflow, profits etc;  
+    **expert models**: use the opinions of experts to assess the likelihood of default
+    
+2. **Structural modesl**(firm value)  
+Estimate the likelihood of default using market information such as the company's `share price` and the **volatility** of its `share price` (rather than fundamental financial data)
+
+    e.g. **Merton** and **KMV** models
+    
+3. **Reduced form models**  
+Does not model the mechanism leading to default; Model it as a statistical process that typically depends upon economic variables
+
+    e.g. Includes all **credit migration models** that estimate how a counterpatyr's credit rating might behave over time; By combining credit ratings and default probabilities (e.g. from a structural model) enable estimation of the overall likelihood of default in a particular future time period
+    
+4. **Credit portfolio models**  
+Use to estimate credit exposures across several counterparties and may allow for diversification effect of uncorrelated creditors (or the aggregate effect of correlated ones)
+
+    e.g. **Multivariate structural** and **multivariate credit migration** models
+    
+5. **Credit exposure models**  
+For estimating complex credit exposures that are not straightforward to calculate
+
+    e.g. **Monte Carlo** for estimtating the expected and maximum credit exposures
+    
+***Common difficulties***
+
+* Lack of publicly available data on default experience
+* Skweness of the distribution of credit loss
+* Correlation of defaults between different counterparties
+
+### Sources of Model Risk
+
+Models above are typically combined to get the default risk (e.g. credit migration model for credit ratings forecast and structural models to determine the PD)
+
+Model risk from **model combinations** can be significant as the results can vary significantly depending on the mixing distribution model selected (esp. for the extreme tail)
+
+* Important to understand the significance of each of the modeling assumptions when testing the model risk
+
+Another source of risk is **recovery percentages** given default
+
+* Difficult to estimate but have a large effect on the results
+
+## Structural Models
+
+### Merton Model
+
+Based on model proposed by Merton in 1974 and uses `option pricing theory` along with `equity share price volatility` to derive information on the value of the company's total assets and hence the value of its debt
+
+From the s/h p.o.v. the equity of a company is a call option on its total assets
+
+* If the total asset > debt at the time the debt has to be repaid, then the s/h will repay the debt and own the company's total assets
+* If assets < debt, the s/h will walk away
+
+Similarly: Value of debt =  value of risk-free bond - value of a put option on the company's total asset
+
+* If assets > debt, bondholders will get the same amount at maturity as the holder of a risk-free bond
+* If asset < debt, bond holder will lose the difference between the value of the company's total assets at redemption and the value of the debt
+
+We can use the black scholes formula for the value of the equity shares:
+
+$S_0 = X_0 \Phi(d_1) - B e^{-rT} \Phi(d_2)$
+
+* $S_t$: Value of equity at time $t$
+* $X_t$: Value of asset at time $t$
+* $T$: Time of redemption
+* $r$: Continuously compounded risk free rate
+* $B$: Nominal value of the debt
+* $d_1 = \dfrac{\ln(X_0/B) + (r+\sigma^2_X/2)T}{\sigma_X \sqrt{T}}$
+* $d_2 = d_1 - \sigma_X \sqrt{T}$
+* $\sigma_X$ volatility of the company's total asset (over the period to time $T$)
+
+Note that past volatility is observable but we need an estimate of future volatility
+
+* Need volatility of `assets` rather than the equity shares
+* Can use historic volatility or implied volatility from options on the equity shares
+
+Equation needs to be solve with both $X_t$ and $\sigma_X$ (which is normally impossible)
+
+So we use Ito's Lemma to get a second equation with the same two unknown and solve simultaneously
+
+$\sigma_S S_0 = \Phi(d_1) \sigma_X X_0$
+
+* $\Sigma_S$ is the volatility of equity share which is observable
+
+***Probability (at time 0) of default occurring at time $T$***
+
+$P(X_t \leq B) = \Phi(-d_2) = 1- \Phi(-d_2)$
+
+***Value of debt (at time 0)***
+
+$B_0 = B e^{-rT} - [Be^{-rT} \Phi(-d_2) - X_0 \Phi(-d_1)]$
+
+***Implied *T*-year spot rate ($b$)***
+
+$B_0 = Be^{-bT}$
+
+***Implied credit spread relative to risk free debt***
+
+$b-r$
+
+***Advantages***
+
+* Allows us to estimate an appropriate credit spread for a bond (even if the bond is unquoted)
+
+***Limitations***
+
+Assumes:
+
+* Markets are `frictionless` with `continuous trading`
+* Risk free rate is `deterministic`
+* $X_t$ follows a `log-normal random walk` with `fixed rate of growth` and `fixed volatility`  
+(i.e independent of the company's financial structure like level of gearing, which is unrealistic)
+* $X_t$ is an observable trading security  
+(rarely a correct assumption)
+* Bond is a ZCB with only one default opportunity
+* Default results in liquidation  
+(Not necessarily the case in real life)
+
+Another limitation: results can be affected significantly by changes in market sentiment in the absence of any real changes in a counterparty's prospects
+
+### KMV Model
+
+Based on the same concept as Merton where a company will default when $X_t$ falls below $B$ (or $\tilde{B}$ which is based on the term structure of all the company's liabilities, e.g. often taken as the liabilities falling within one year)
+
+**Distance to default**  
+Number of s.d. that the company's assets have to fall in value before they breach $\tilde{B}$
+
+$DD_0 = \dfrac{X_0 - \tilde{B}}{\sigma_X X_0}$
+
+Using empirical data on company defaults and how these defaults link with the $DD$, the model is used to estimate the likelihood of default for any given company over the coming year
+
+***Advantages** over Merton
+
+* Coupon paying bonds can be modeled
+* More complex liability structures can be accommodated as the system uses the average coupon and the overall gearing level (rather than assuming ZCB)
+* $X_0$ is not assumed to be observable and is derived from the value of the company's equity shares
+
+However, can similarly be affected significantly by changes in market sentiment in the absence of any real changes in a counterparty's prospects
+
+## Credit-Migration Models
+
+For longer term exposure (> 1 year) credit migration models estimate how the credit rating might change over time
+
+***Estimating the PD in each future year***
+
+3 steps modeling process
+
+1. Historical data used to determine transition probability and recorded in a `rating transition probability matrices`
+2. Apply the matrices to the counterparty's current rating to estimate the likelihood of each possible rating in each future year
+3. Using the PD for a company of a given rating to estimate the chance of default in each future year
+
+***Advantages***
+
+* Volatile equity markets should not overly impact the results
+* Model does not rely on publicly traded share information
+
+***Disadvantages***
+
+Mostly due to reliance on:
+
+* Credit migration process following a time homogeneous Markov chain
+* There being a credit rating that reflects the company's default likelihood through the business cycle (rather than reflecting the default chance in the current economic environment)
+
+Therefore:
+
+* Time homogeneity assumption has been criticized using empirical evidence and appears unintuitive (e.g. recently downgrade company is more likely to be downgraded again than company that has been at the rating for a long time)
+* Assumes default probabilities for each rating in each future year can be estimated
+* Assumes that the likelihood of default can be determined solely by the company's credit rating
+* Low number of distinct credit ratings (compared to the number of rated orgs) results in low level of granularity in the default estimates
+* Rankings of organizations by the different credit rating agencies do not always coincide
+* Not all organizations have obtained a (costly) credit rating
+* Ratings are sometimes unavailable (withdrawn) e.g. if data required for rating has not been made available
+
+Simpler form of credit migration model assumes that credit migration follows a `martingale process`
+
+* However (for highest rating), it is incorrect to assume that the expected rating one time period on is the same as in the current period $\Rightarrow$ Multi year periods results is a very rough estimates for default
+
+***CreditMetrics*** (Single bond)
+
+Estimates the value of a bond in one year's time for each of its possible future ratings and deduces the bond's expected future value
+
+Combining this information with the transition probabilities produces an estimate of the variance of the bond's value in one year's time
+
+## Credit Portfolio Models
+
+Models to estimate behavior of a credit portfolio
+
+Key challenge is to understand the relationships between the various credit exposures so as to model the appropriate behavior (e.g. jointly-fat tails)
+
+### Multivariate Structural Models
+
+Can use a multivariate version of Merton (or KMV)
+
+Use a multivariate normal or *t* with the appropriate correlation matrices to model the logarithm of these asset values (and volatility)
+
+Can use an explicit copula as well
+
+### Multivariate Credit-Migration Models
+
+Extending the credit migration models and assume each org in the portfolio has asset values that behave independently and log-normally we can derive a model of the number of organization that default in each year
+
+Combine with exposure, recoveries we can derive a default distribution via simulation
+
+***CreditMetrics*** (portfolio)
+
+Assumes that equity returns can be modeled using country specific indices and independent firm specific volatility
+
+Monte Carlo simulations of these indices and firm specific volatility are used to derive potential:
+
+* movements in equity values
+* Corresponding changes in the overall value of each org's assets
+* Associated changes in rating
+* Implied changes in the value of the bonds in the portfolio (incl. the default experience)
+
+Risk measures can then be applied to the simulated valuations
+
+**Assumptions**
+
+* Each credit rating has an associated PD
+* Change in rating is a function of change in the value of an org's assets and the volatility of the value of those assets
+* Value of the assets of each org in the portfolio behaves log-normally
+* Correlation between the asset values (of different orgs) can be estimated from the correlation between the corresponding equity values
+* Equity returns can be modeled using country specific indices and (independent) firm-specific volatility
+
+***Econometric and Actuarial Models***
+
+**Econometric models**  
+Estimate the default occurrence using combinations of macro economic variables such as the interest rates, inflation etc
+
+**Actuarial models**  
+Use average default rates and volatility for the portfolio together with a broad brush estimate of future losses (does not require simulation)
+(e.g. CreditRisk+)
+
+These two models do not model the asset value going forward but try to estimate default rates for firms using external (e.g economic) or empirical data
+
+***Common Shock Models***
+
+For a portfolio of bonds, the probability of no defaults can be modeled using copulas (e.g. Marshall Olkin copula)
+
+The process can be simplified if we assume each bond's default follows a Poisson process
+
+***
+
+For a portfolio of $N$ bonds and $M = 2^N-1$ distinct shocks
+
+* **Shock**: an event that could occur that would knock out a particular subset of bonds
+* $N$ of the shocks affect just 1 bond, ${N}\choose{2}$ affect 2 bond etc
+
+Probability that **all bonds survive** to time $T$
+
+$\Pr(\text{no defaults}) = \exp \left\{ - \sum \limits_{m=1}^M \lambda_{\{m\}} T \right\}$
+
+* Let $\lambda_i$ be the probability of the shock that affects just the $i$^th^ bond
+* Let $\lambda_{ij}$ (for $i \neq j$) be the probability of the shock that affects just the $i$^th^ and $j$^th^ bonds
+* Etc..
+* e.g. for $N =3$, $M=7$ the values of $\lambda_{\{m\}}$ for $m=1$ to $7$ form the set $\{ \lambda_{1},\lambda_{2},\lambda_{3},\lambda_{12},\lambda_{23},\lambda_{13},\lambda_{123}\}$
+
+Probability that **only one bonds defaults**:
+
+$\Pr(\text{Exactly one default}) = \sum \limits_{n=1}^N \underbrace{\left[1- \exp\left\{ -\lambda_n T\right\}\right]}_{(1)} \underbrace{\exp\left\{ -\left[ \left(\sum \limits_{m=1}^M \lambda_{\{m\}} T\right) - \lambda_n T \right] \right\}}_{(2)}$
+
+1. Probability that bond $n$ defaults by itself
+2. Probability that none of the other shocks (i.e. default combinations) occur
+
+Further expansion is possible but becomes computationally demanding
+
+### Time-Until-Default Models
+
+Model the incidence of defaults by using copulas to describe the relationship between the times of default of bonds in a portfolio
+
+***Default times***
+
+For a portfolio of bonds the survival CDF $\bar{F}(t)$ can be described in terms of the hazard rate $h(t)$:
+
+$\begin{align}
+  \bar{F}(t) &= \exp\left\{ -\int \limits_{s=0}^t h(s) ds \right\} & \\
+  &= e^{-ht} & \text{for constant hazard rate }h\\
+\end{align}$
+
+For constant hazard rate the default time PDF is an exponential with parameter $h$
+
+$\begin{align}
+  f(t) &= \dfrac{\delta F(t)}{\delta t} = \dfrac{\delta [ 1- \bar{F}(t)]}{\delta t} \\
+  &= he^{-ht}\\
+\end{align}$
+
+Hazard rate can be estimated in various ways (incl. Merton model, published credit ratings, default history)
+
+These all enable calculation of an implied default probability $\alpha$ over a particular time horizon
+
+* Setting $\alpha$ to the default CDF $F(t) = 1 - e^{-ht}$ we can solve for $h = \dfrac{-\ln(1-\alpha)}{t}$
+
+***Linking Default Time***
+
+Having modeled the default time above we can link them using suitably parameterized copula functions
+
+The combined model enables calculation of the aggregate default rate for a bond portfolio
+
+Normal copula is a common choice but a higher tail dependencies (e.g. Gumbel) may be more appropriate
+
+## Recoveries
+
+Two common measures of recovery
+
+1. **Price after default**
+
+    Short term measure
+    
+2. **Ultimate recovery**
+
+    Typically much larger than price after default and is not usually known until after 1 or 2 years after default
+    
+    Difference due to market over reacting to the collapse while the receiver takes time to extract as much value as possible from the company's residual assets
+    
+Loss given default depends primarily on
+
+* Seniority of the debt
+
+    Affects how the debt ranks compared to other debt  
+    The more senior the debt the higher call it has on any remaining assets and hence a higher recover rate
+
+* Availability of collateral
+
+    Lender can take possession and seek the asset in the event of default  
+    The more liquid and marketable the collateral the more value it has to the lender
+
+Secondary factors:
+
+* Nature of the industry
+* Point in the economic cycle
+* Legal jurisdiction
+* Rights and actions of the other creditors
+
+Future recovery rates may be modeled based on historical recovery rates (and volatility)
