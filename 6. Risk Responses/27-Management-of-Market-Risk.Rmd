@@ -12,3 +12,550 @@ output:
 ---
 
 ## Module Objective
+
+Discuss the management of market risk
+
+* Develop and recommend strategies for the reduction of market risk using financial derivatives
+* Demonstrate an awareness of the practical issues related to dynamic hedging using market instruments
+
+***
+
+Exam Note:
+
+* Need to be able to recommend strategies for dealing with market risk (e.g. how to apply appropriate hedging strategies)
+
+## Market Risk Management
+
+Market risk in financial institutions is typically **linked** with `credit risk` and `op risk`, both may worsen when markets are subdued or in turmoil
+
+Market risk management strategies include:
+
+* **Diversification**: holding a range of assets so as to limit losses within a portfolio investment strategy - ensuring it is appropriate for the liabilities of the org
+* **Hedging**: use derivatives to manage risk
+
+***Diversity***: `definition` and `measurement`
+
+* Can be measured in  
+**absolute** term (e.g. breadth, balance of assets in each class, economic sector or geography) or  
+**relative** term (i.e. compared to the diversity of a suitable benchmark)
+
+* Use **factor analysis** (e.g. SVD) to determine how broad a range of economic and financial variables influence the market value of the portfolio
+
+***Key activities*** of market risk management
+
+1. Set and monitor **policies**
+2. Set and monitor **limits** (for `overall` and each `asset class`, `individual security` and `counterparty`)
+3. **Reporting**
+4. **Capital management**
+5. Implementing **risk-portfolio** strategies (e.g. matching, hedging)
+
+### Policies
+
+Documented market risk policies to ensure all market risks are `identified`, `measured`, `monitored`, `controlled` and regularly `reported`
+
+* Policies should reflect the complexity of businesses and be tailored to the activities of the company
+
+Policies should **cover**:
+
+* **Roles and responsibilities**:  
+Person responsible for developing, implementing, monitoring and reviewing policies
+* **Delegation of authority and limits**:  
+Who is permitted to execute market risk positions and to what extent
+Trading (`front office`) and settlement (`back office`) functions should be segregated
+* **Risk measurement and reporting**:  
+How risks are measured and reported, particularly critical issues such as a limit violation
+* **Valuation and back-testing**:  
+How positions are valued (esp. when no market price exist)
+* **Hedging policy**:  
+What risk to hedge, the products, limits and strategies for hedging and how the effectiveness is measured
+* **Liquidity policy**:  
+How to measure liquidity and what the contingency plan is during distress
+* **Exception management**:  
+How to handle and exceptions
+
+Be aware that no policies or risk measuring will protect fully against rogue traders or incompetence (but that's consider op-risk)
+
+### Best Practices
+
+| Level | Basic | Standard | Best |
+| --------------- | --------------- | --------------- | --------------- |
+| Market risk factors | Evaluates **earning impact** of `interest rate` and `FX changes`, perform **gap analysis** | **Central management** of interest rate and FX risk through `internal transfer pricing`; Considers **internal hedges** | Seeks **competitive advantage** by `exploiting mispriced securities` and `better intelligence` |
+| Modeling | **Spreadsheet** | **Robust capabilities** incl. `sensitivity analysis` and `simulation` | **Sophisticated tools**, incl. `hot-spot analysis`, `best hedge analysis`, `best replicating portfolio` and `implied view` | 
+| Market risk function | `Policy`, `analysis` and `reporting` | **Actively manages the b/s** to optimize return given risk constraints | **Corporate control and profit centre**: seeks to maximize profits within risk limits |
+
+Even the best practice companies with the most sophisticated tools need to apply common sense judgement and integrity to their management of risks
+
+## Derivatives
+
+Gain or loss from a derivative depends on changes in the market price of underlying assets or index such as `interst rate`, `FX rate`, `commodity`, `equity`, etc
+
+Derivative **redistribute** risk from those who wish to `hedge` to those who are prepared to `accept` the risk in return for the possibility of a large reward (i.e. speculators)
+
+4 main types of derivatives:
+
+* **Options**: right but not the obligation (for 1 party) to exercise the contract in return for payment of a premium
+* **Forwards**: obligation (for both parties) to complete a transaction on a future data at a known prize
+* **Futures**: standardized forward contract traded on an exchange
+* **Swaps**: obligation (for both parties) to exchange a series of cash flows
+
+#### Exchange-traded Derivatives
+
+Futures (and some options) are exchange-traded contracts
+
+Characteristics
+
+* **Standardized** assets and indices and only for specific delivery dates as determined by the exchange
+* Trading is done through the exchange based on market prices  
+(which may be subject to a minimum price movement or *ticks*)
+* Deals are settled through a **clearing-house**
+    * Clearing-house takes on the counterparty risk as they act as both the buyer and seller of the contract
+* Reduced counterparty risk for the clearing house by the pooling of many contracts; Collateral were required from the trading parties
+* Highly liquid market (i.e. prices being minimally affected by large transaction) with comparatively low transaction cost
+
+#### Over-the-counter Derivatives
+
+Characteristics of OTC markets:
+
+* Trading is done at the convenience of the parties
+* No money changes hands until the delivery date
+* Price is negotiated between the parties (one that take on the risk of counterparty defaulting)
+* Very flexible (underlying and delivery data)
+    * Generally provided by banks to address the specific needs of a company, or other institution, usually for an option of a swap
+* Documentation is usually based on standard terms and conditions, such as those published by the International Swaps and Derivatives Associations (ISDA)
+
+***Types of OTC contracts***
+
+* Forwards and swaps
+* Some other types of options as well but regulators are aiming to increase transparency by moving more derivatives trading onto exchanges
+
+Main ***factors*** that influences the ***price*** of an OTC contract
+
+* **Spot price** of the underlying
+* **Time to delivery**
+* Expectations of **interest rates** over this period
+* Expected **income yield** on the underlying over this period
+* Residual **counterparty risk** (allowing for effect of any collateral)
+    * There is a high degree of counterparty risk with OTC contracts
+    * Collateral is typical
+    * Greater `residaul counterparty risk` and the more `bespoke` the contract $\Rightarrow$ the higher the price (due to admin cost, default risk and difficulty in hedging)
+* **Cost of carry** (incl. opportunity cost of providing collateral; cost of storage if a commodity)
+
+#### Collateral
+
+May be held by one or both parties to provide protection from the costs of any potential default (cash deposit or other securities)
+
+***Exchange-traded contracts***
+
+**Mark-to-market** process
+
+1. Cash is deposited by the counterparty into a margin account at the start of an exchange traded contract (**initial margin**)
+    * Determined based on the size and anticipate volatility of the contract
+2. Clearing house periodically (e.g. daily) considers whether to add or remove amounts from the margin account based on the intervening movement in the price of the underlying
+    * The additional or deduction reflect the respective P&L position of the counterparty (**marking-to-market** process)
+3. If the margin account drops below a specific level (**maintenance margin**), the counterparty much top-up the account to the starting level by adding to the margin account (**variation margin**)
+
+Exchanges may accept securities (rather than cash) as collateral
+
+* Where the acceptable securities and proportion of their face value that counts as collateral is specified
+
+Amount of collateral required may be reduced to account for the degree of diversification in the counterparty's total set of positions with that exchange
+
+***OTC contracts***
+
+Requirements for collateralization are typically specified in a credit support annex (CSA) such as that published by the ISDA
+
+* Types of security that can act as collateral
+* When collateral must be calculated and transferred
+* Minimum transfer amount, below which no transfer is required
+
+### Advantages and Risk
+
+***Advantages***
+
+* It maybe cheaper and easier to deal in a derivative than the underlying assets
+* Very flexible and exposure can be changes quickly without the need to deal in the underlying asset  
+(e.g. investment allocation can be changed quickly while still holding the original assets)
+
+***Caveat***
+
+* Hedging strategies can be **ineffective** and may even result in losses
+* By hedging a risk we also might **eliminate potential gains**
+* **Costly** process, involving `transaction cost`, `spreads`, `premiums` and management `time and effort`
+* Requires experienced staff
+
+Potential risk exposed from derivatives
+
+* Credit
+* Settlement
+* Aggregation
+* Operational
+* Liquidity
+* Legal
+* Reputational
+* Concentration
+* Basis
+
+### Basis and Basis Risk
+
+For future contracts:
+
+$\underbrace{\text{Basis}}_{B_t} = \underbrace{\text{Price of an asset}}_{S_t} - \underbrace{\text{Price of the future}}_{F_t}$
+
+**Basis risk**: risk that the basis changes over time; arise in practice due to...
+
+* Hedger is uncertain as to the exact date when the asset will be bought or sold
+* Hedger requires the futures contract to be closed out well before its expiration date
+* Hedger requires the future position to be rolled over at, or prior t, expiration (because the futures contract is shorter than the desired period of the hedge)
+* Differences in income, benefits and/or costs between the futures contract and the underlying asset are not known precisely in advance
+
+Forward is bespoke to reflect the exact risk being hedged but futures are standardized hence may be difficult to match the risk exactly
+
+**Cross hedging risk** (component of basis risk):
+
+* Price risk resulting from the asset whose price is to be hedged is not exactly the same as the asset underlying the futures contract
+
+Basis reduces to zero as expiry approaches if there is no cross-hedging risk and no uncertainty as to the associated cashflows (income, benefits or costs)
+
+***Example***
+
+Asset is currently held but must be sold in a year at the market price
+
+* A 2 years future is available on the same underlying asset
+* No associated cashflows other than the payment of margin
+
+Hedging strategy:
+
+* $t=0$: Sell the future contract 
+* $t=1$: Sell the asset and close out the hedge (or by buying the same futures contract)
+
+$F_0 - F_1 + S_1 = F_0 + B_1$
+
+* Exposed to basis risk as the total cash flow is a function of the uncertain basis at $t=1$
+* Here we are ignoring the TVM...
+
+### Pricing Futures and Forwards
+
+Difference between the spot price of the underlying and the corresponding futures contract price is largely driven by differences in the amounts and timing of the associated expected cashflows
+
+Fair price ($F_0$) of a future on an asset (currently priced at a spot rate of $S_0$) while ignoring transaction costs:
+
+$F_0 = S_0 e^{rT}$
+
+* $r$: risk free rate and $T$ is the time to expiry of the contract
+
+If underlying asset provides an income ($I$):  
+(Not received from holding the future contract)
+
+$F_0 = (S_0 - I)e^{rT}$
+
+If the income is in the form of a continuous yield $q$:
+
+$F_o = S_0 e^(r-q)T$
+
+Cost of carry can be considered as negative income and dealt with similarly
+
+#### Spot and Future Prices Relationship
+
+**Normal backwardation**:  
+Future price is below the expected value of the future spot price
+
+* May occur due to the market expecting the income on the asset to outweigh any costs (hence a preference to hold the asset) or due to high demand for short position in the future (e.g from the asset holder protecting the value of their assets)
+
+**Contango**:  
+Future price exceeds the expected future spot price
+
+* May arise due to demand for long positions in the future (e.g. storage costs of the underlying commodity are particularly high)
+
+### Hedging using Futures and Forwards
+
+\# of contracts required to hedge the market risk of a portfolio  $=\dfrac{\text{Value of the portfolio}}{\text{Value of one contract}}$
+
+To allow for basis risk, need to adjust for **differences in the relative volatility** of the portfolio and the future using the `optimal hedge ratio`
+
+Optimal hedge ratio ($h$): $h = \rho \dfrac{\sigma_S}{\sigma_F}$
+
+* Ratio of the size of the position taken in futures contracts to the size of the exposure
+* $\sigma_S$: s.d. of $\Delta S$, the change in spot prices over the life of the hedge
+* $\sigma_F$: s.d. of $\Delta F$, the change in future prices over the life of the hedge
+* $\rho$ is the correlation coefficient the two
+
+***Example*** Cross hedging oil futures
+
+* Airlines are exposed to the risk of changes in aviation fuel prices
+* No aviation fuel futures
+* Hedge with heating oil futures as they move in almost the same way as crude oil (but allows for the costs and capacity constraints in the oil refining process)
+
+### Managing FX or Currency Risk
+
+Currency hedging:
+
+* **Currency forward**:  
+Agree to buy/sell foreign currency at an agreed rate at a future date
+    * Forward price: based on current (spot) rate of exchange adjusted for the different in interest rates between two currencies
+* **Currency swap**:  
+Effectively a series of currency forwards
+* **Currency future**:  
+Similar to currency forward but via exchange
+* **Currency option**:  
+Company buys the right to buy/sell foreign currency at an agreed date for an agreed price
+    * Allows to lock into a particular FX rate but can benefit from favorable FX rate changes
+    
+Taking currency risk does not provide any additional systematic return 
+
+* $\Rightarrow$ For overseas bonds, currency exposures are typically hedged
+* $\Rightarrow$ For overseas equities the situation is more complex (e.g. due to the need to establish an exposures), so hedging is either approximate or not attempted
+
+**Purchasing power parity** of exchange rate:  
+In the long term, FX change in line with the difference in the inflation rates of the 2 relevant economies (thus mitigating the need to hedge currency risk)
+
+**Cashflow management** techniques can be used to manage currency risk as well:
+
+* **Netting**: use revenue in a particular currency to meet any amounts owing in the same currency (residual amount may still need to be hedged)
+* **Leading and lagging**: attempt to bring forward (`lead`) or delay (`lag`) foreign currency cashflows in order to exploit expected movements in FX rates
+
+## Hedging Exposure to Options
+
+Will go through the key points on the Greeks
+
+Exam note:
+
+* Need to be able to recommend suitable hedging strategies given numerical information about the `delta`, `gamma` and `vega` of a portfolio and relevant derivatives where there are one or two underlying indices or asset prices
+
+### Delta, Gamma, Vega Hedging: Single Underlying
+
+Consider a portfolio:
+
+* Value: $V$
+* Depends non-linearly on a single underlying $x$ and it's volatility $\sigma$
+
+Liquid traded derivatives available:
+
+* Prices: $D_1,...,D_n$ that depends on $x$ and $\sigma$
+
+$Delta_p$: Partial derivative w.r.t $x$
+
+$Gamma_p$: 2^nd^ partial derivative w.r.t $x$
+
+$Vega_p$: Partial derivative w.r.t. $\sigma$
+
+Portfolio is delta, gamma, vega hedged if we buy $u_1,..,u_n$ unites of $D_1,...D_n$ such that:
+
+* $Delta_p + u_1 Delta_1 + \dots + u_n Delta_n = 0$
+* $Gamma_p + u_1 Gamma_1 + \dots + u_n Gamma_n = 0$
+* $Vega_p + u_1 Vega_1 + \dots + u_n Vega_n = 0$
+
+Typically this can be achieved with only $n=3$ derivatives but there might be liquidity or regulatory constraints that make other derivatives useful
+
+***Greeks***
+
+* **Delta** ($\Delta$) of a portfolio is the rate of change in its value $V$ relative to changes in the price of the underlying $S$
+
+    $\Delta = \dfrac{\partial V}{\partial S}$
+
+    A portfolio containing options is **Delta hedged** (neutral) when it consist of positions with offsetting (+) and (-) deltas and the net delta of the portfolio is 0
+    
+* **Gamma** ($\Gamma$) is the rate of change of $\Delta$ with the price of the underlying
+
+    $\Gamma = \dfrac{\partial^2 V}{\partial S^2} = \dfrac{\partial \Delta}{\partial S}$
+    
+    Measures the curvature (convexity) of the relationship between the derivative price and the price of the underlying asset
+    
+* **Vega** ($\nu$) is the rate of change of the price of the derivative w.r.t a change in the assumed level of volatility of the underlying ($\sigma$)
+
+    $\nu = \dfrac{\partial V}{\partial \sigma}$
+    
+    $\sigma$ is the assumed level volatility as the value of this parameter cannot be observed directly
+    
+    As the price of derivative depends directly on the assumed volatility of the price of the underlying, if the volatility of the price of the underlying changes, then so must the price of the derivative
+    
+***Example**: Delta and Vega neutral
+
+Option portfolio:
+
+* $\Delta_p = 2,000$
+* $\nu_p = 6,000$
+
+Options and assets available for hedge:
+
+* Underlying stock ($\Delta = 1$, $\nu = 0$)
+* Traded option ($\Delta = 0.5$, $\nu = 10$)
+
+Steps:
+
+1. For vega neutral: sell $\dfrac{60,000}{10}$ contracts of the traded option
+2. Now $\Delta = 2,000 - 0.5 \times 6,000 = -1,000$ so we need 1,000 shares of the underlying stock
+
+More formally, given:
+
+* $(\Delta_p;\Delta_1;\Delta_2) = (2,000; 1; 0.5)$
+* $(\nu_p; \nu_1; \nu_2) = (60,000; 0; 10)$
+
+Need:
+
+* $0 = \Delta_p + n_1 \Delta_1 + n_2 \Delta_2$
+* $0 = \nu_p + n_1 \nu_1 + n_2 \nu_2$
+
+Plug in the above and solved we get the same answer
+
+### Delta, Gamma, Vega Hedging: Many Underlying
+
+More often a portfolio is linked to the value of many underlying indices or asset prices ($m$)
+
+* Portfolio value depends upon the underlying index values, their volatilities and their correlations
+* This requires potentially hedging $m$ delta, $\dfrac{1}{2} m(m+1)$ gammas, $\dfrac{1}{2} m(m+1)$ vegas
+* To achieve neutrality this can require over $m^2$ derivatives
+
+Further explanation on the number of derivatives needed
+
+* $V$ depends on $x_1,...,x_m$ and there are $m$ deltas ($\dfrac{\partial V}{\partial x_i}$)
+* Gamma is the 2^nd^ derivatives and so differentiating w.r.t to any pair of variables we get $\dfrac{\partial V}{\partial x_i \partial x_j}$ and there are $\dfrac{1}{2}m(m+1)$ pairs
+* Vega is the derivatives w.r.t. the entries in the $m \times m$ covariance matrix for the $m$ variables (e.g. $\dfrac{\partial V}{\partial C_{1,2}}$ where $C_{1,2}$ is the covariance between variables 1 and 2) so there are $\dfrac{1}{2}m(m+1)$ pairs
+
+**Impractical** to maintain `gamma and vega neutral`:
+
+* Requires a large number of derivatives
+* Individual traders tend to have responsibility for trading in all derivatives linked to a single underlying quantity only
+    * They will be given limits on how far they can deviate from the greek neutrality
+    * The overall portfolio manager then has responsibility for managing the total Greeks
+
+Delta can be easily neutralized daily at low cost using future contracts
+
+* Gamma and vega will be adjusted less frequently
+
+### Dynamic Hedging
+
+Day to day hedging activity undertaken by writers of options
+
+* Option writing institutions will employ traders to ensure that their portfolios remain delta neutral
+
+Linear hedging instruments
+
+* E.g. futures and forwards
+* Can easily be hedged by finding offsetting transactions (e.g. just finding long/short position)
+
+Options
+
+* More difficult to hedge
+* Few customers are prepared to write options given the substantial downside risk in a short call or put
+
+Dynamic hedging is used to manage the risk from writing options
+
+* Re balance the option portfolio using forwards, futures and asset holding to remain delta neutral (on a daily basis)
+* Trader is exposed to risk and can make losses between rebalancing points (also incur cost at each rebalance)
+
+Gamma risk
+
+* Large gamma $\Rightarrow$ substantial rebalancing will be required to maintain the delta neutrality
+* Gamma reflects exposure to the risks associated with `jumps in prices` as well as to the risk of `hedging at discrete time` points rather than continuously
+* Higher the gamma, the greater of the above risks as well as higher transaction costs associated with rebalancing
+* $\therefore$ low gamma is preferable
+
+Vega risk
+
+* How sensitive the portfolio is to changes in the volatility of the underlying index of asset price
+* Higher vega the greater the risk associated with an incorrectly specified volatility
+
+Managing Gamma and Vega
+
+* Due to lack of traded derivatives or poor liquidity, it is difficult to achieve gamma and vega neutral in practice
+* Typically **managed using limits** that will limit the volume of options that a trader can write as well as for the whole institution
+
+Considerations to those outlined above for option writers apply to institutions as well
+
+## Interest Rate Risk
+
+Component of market risk arises when assets and/or liabilities are sensitive to changes in interest rates
+
+Types of interest rate risk:
+
+* **Direct exposure**: direct effect on the `size` of company's cashflows (e.g. rise in interest rates increase the cost of a floating rate loan)
+* **Indirect exposure**: affect the `value` of future cashflows (e.g. change in interest rates altering the PV of future payments due on an annuity portfolio)
+
+### Direct Exposure
+
+Direct exposure can be hedged using `forward rate agreement` (FRA) or can be limited by using `interest rate caps and floors`
+
+#### FRAs
+
+OTC, FRA commits 2 parties to exchange some interest rate dependent payments at a future data (or over a future period)
+
+Payments are calculated by applying `2 different pre-agreed forms of interest rates` (e.g. one fixed and one floating) to the `same specified monetary amount` (the principal or nominal) over the `agreed period`
+
+* Generally respective payments are netted off
+* In their example the FRA is like swaps
+
+#### Caps and Floors
+
+OTC, provide insurance against the rate of interest on an underlying floating rate note rising above a certain level (**cap cap**)
+
+**Interest rate floor** provides a payoff when the interest rate on an underlying floating rate note falls below a certain rate
+
+Common example:
+
+* Home mortgages have an arrangement where there is a clause that caps the borrower's interest payments if the bank's standard variable mortgage rate goes above a specific level
+* Floor provide insurance against a fall in floating rate, which might be useful for those receiving the floating rate (e.g. a saver)
+
+### Indirect Exposure
+
+Common techniques:
+
+* Cashflow matching
+* Immunization
+* Hedging using model points
+
+#### Cashflow matching
+
+Assets and liabilities with exactly matching cashflow (size and timing)
+
+Key factors:
+
+* Nature of the liabilities (e.g. whether the cashflows are fixed or linked to prices or interest rates)
+* Term
+* Currency
+
+**Practical challenges**
+
+* Might not have suitable assets  
+(e.g. No suitable term or cross-hedging risk may be introduced)
+* Future cashflows may not be known
+* Expected future cashflows may change frequently making it costly to alter the portfolio
+
+Complete matching is rarely possible in practice
+
+* In practice it is usually approximate matching
+* Can view pure matching as the benchmark position
+
+Also might not be desirable to eliminate all risks  
+
+2 means by which interest rate risk might be mitigated
+
+* Interest rate swap exchanges of payments based on a fixed interest rate for those based on a floating interest rate
+* Swaption gives the buyer the right to enter into a swap in return for paying a premium (can eliminate the downside interest rate risk while retaining the upside)
+
+#### Immunization
+
+Similar purpose to matching: reduce the risk of failing to meet the liabilities as they fall due, arising from a change in investment conditions (particularly a change in interest rates)
+
+Use when pure matching is no possible (e.g. investment income is initially greater than the net liability outgo, then the liabilities cannot be matched but can be immunized)
+
+**Conditions for immunization**
+
+1. PV of liability cashflow = PV of asset cashflow
+2. Discounted mean term of the asset cashflows = the liabilities' (matching duration)
+3. Convexity of the asset cashflows > liabilities'
+
+**Limitations** (inaddition to matching)
+
+1. Only ensure the PV of assets $\nless$ PV liability
+2. Only protects against changes in interest rate
+3. Only works for small changes in interest rates
+4. Only works for parallel shifts in the yield curve
+5. Requires regular rebalancing of the assets
+
+#### Hedging useing Model Points
+
+May be acceptable to hedge cashflows at key reference points in the future
+
+Process of using interest rate simulation to construct a set of possible future values for the liabilities at such key reference points (e.g. 5, 10, 15 year etc)
+
+Similarly, a set of future cashflows from some series of swaps or bonds is created and an optimum set of swaps can be chosen (using least squares) so as to minimize the difference between the swap cashflows and the liability cashflows
