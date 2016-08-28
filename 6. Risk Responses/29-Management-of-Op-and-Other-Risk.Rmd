@@ -12,3 +12,329 @@ output:
 ---
 
 ## Module Objective
+
+Discuss the management of operational, liquidity, insurance and other key risks
+
+***
+
+need to be able to recommend simple strategies to managing specific types of op-risk
+
+Note that the Emerging IT risk from Lam was covered in Mod 13
+
+## Controlling Specific Types of Op-Risk
+
+Op-risk is the most dangerous risk that companies must control
+
+* e.g. Rogue traders at Société Générale, Barings, NAB and AIB
+* Baring and other case studies in Mod 32
+
+Need an op-risk framework that is integrated into the business
+
+* More important to control the op-risk through a sound RM process (i.e. `identity`, `assess`, `report`) than trying to quantify the risks
+
+***Controls***
+
+Key to manage op-risk is to have **sufficient controls** in the business
+
+**Controls**: Combination of **information**, **assessment** and **response**  
+(i.e. what information do we have that we can use to decide what course of action to take)
+
+***Desirable characteristics of controls***
+
+1. Focus on **results**
+2. In place for **both** `measurable` and `non-measurable` events
+3. **Standardized** for efficient communication
+4. **High quality** so as to improve management
+5. **Few**, rather than many
+6. **Meaningful** and **appropriate**
+7. **Timely** so as to give sufficient warning
+8. **Simple** so they are easily understood
+
+Recall discussions of external control frameworks (e.g. COSO) in Mod 5-7
+
+### Outsourcing
+
+Companies now outsource non-core activities to 3^rd^ party
+
+**Risks** that outsourcing brings:
+
+* Possible **failure** of the 3^rd^ party to deliver its commitments
+* **Reduced control** it has over the `processes` and `people` in the 3^rd^ party
+
+**Considerations** for entering into an outsourcing agreement
+
+1. **Regulatory evnironment** and the **status** of the 3^rd^ party
+2. **Financial standing** of the 3^rd^ party
+3. **Competency**, **business continuity plans** and **risk processes** of the 3^rd^ party
+4. **Legal agreement** with the 3^rd^ party (incl. `right to terminate`, 3^rd^ party's `right to sub-contract`)
+5. How it will **monitor** the 3^rd^ party
+
+### External Events
+
+Need to pay attention to the innumerable external risks that can disrupt the operation of the business
+
+1. **Loss of IT** or telephony capacity
+2. **Loss** of `people` and `skills`
+3. **Bad PR** or negative publicity
+4. **Disruption** to `supply chain`
+5. **Natural disaster**: Fire/flooding/high winds
+6. **Protest** from pressure groups (e.g. animal rights)
+7. **Terrorist** damage
+
+### Business Continuity and Crisis Management
+
+**Business continuity**:  
+Includes **safeguarding** the business's `reputation`, `brand` and other `value creating activities`
+
+***Business Continuity Plan (BCP)***
+
+* Response to the business interruptions risk identified
+* Need to be test regularly
+* Can be used to reassure stakeholders that business interruption risks can be managed
+* May result in pre-emptive actions including: offsite backup, redundant office block and computer systems ready
+
+***Crisis Management Plan (CMP)***
+
+* Ensure a clear and organized response in the event of a significant incident
+* Crisis Management Group will take control of an issue and co-ordinate action
+
+***
+
+High degree of preparedness ensures that a company can take advantage of unexpected gains, or stem losses in the event of a critical incident
+
+Business may also purchase consequential loss insurance so as to obtain compensation for loss of profits during the period of business disruption
+
+### Regulatory and Legal Risks
+
+Impact can be significant, incl. `fines`, `reputational damage` and `loss of authorization to trade`
+
+Actives to ***manage regulatory and legal risk***:
+
+1. **Keep abreast of change** to `regulations` and `laws` and to be aware of impending changes and their **likely impact**
+2. **Influence** changes through `lobbying` activities (directly or indirectly through industry bodies)
+
+### Technology Risk
+
+Technology and cyber-crime risk management actions:
+
+1. Keeping systems **up-to-date**  
+(balance functionality with costs)
+2. Routine **maintenance**  
+(esp for IT solutions developed in house)
+3. Thorough **testing** (for robustness and compatibility) when introducing new IT systems
+4. Quick response **IT helpdesk** to deal with minor IT issues
+5. **Training** staff  
+(e.g. not to open suspicious email)
+6. **Restrictions** on employees' use of `social media` applications or use of `devices` (e.g. USB drives) that might circumvent IT security
+7. Implementing and testing **security software and routines** such as `firewall`, `backups` and `regular password changes` to prevent cyber attacks and ensure data can be rapidly recovered in the event of loss
+
+e.g. phishing attacks can be mitigate by using separate computers
+
+### Crime Risk
+
+Management of this should reflect the severity
+
+* Covers a wide spectrum from petty theft to major fraud
+
+It is possible to spend more money managing the risk of small losses than is saved by the control
+
+* However some business take the view that rules to prevent even minor dishonesty (such as taking stationary) should be rigorously enforced as evidence of the company's zero-tolerance culture
+
+### People Risk
+
+#### Employment-Related
+
+**People risk**: incl. behavior of the business to its people as well as the behavior of the people to the business
+
+Employment related people risk can be managed through appropriate:
+
+* **Recruitment processes**
+    * Cost effective recruitment of the right individuals
+    * Enforceable contracts of employment
+* **Competency management processes**
+    * Training requirements (incl. new employee induction, CPD and professional qualifications)
+    * Risk training increases the understanding of risk management in the business
+* **Appraisals and performance management processes**
+    * Talent management (i.e. promotion and transfer)
+    * Retention of the right employee
+    * identification of poor performers, subsequent support and possible disciplinary action
+    * NEDs should regularly appraise their skills, knowledge and expertise and undertake professional development where necessary
+* **Relationship management**
+    * With employee related collective bodies (e.g. unions)
+    
+#### Adverse Selection
+
+Similar to insurance where the need to distinguish between different customers who present different risk in order to prevent being selected against
+
+* e.g. bank that offers free banking to all customers runs the risk of being adversely selected by low-balance, high activity customers
+
+***Managing adverse selection***
+
+Risk of adverse selection can be managed by careful **underwriting** and **product design** and **pricing**
+
+#### Moral Hazard
+
+**Mora hazard** can occur when one person makes the decision about how much risk to take while someone else bears the cost if things go wrong
+
+* Closely related to agency risk
+* In insurance, it is the risk that an insured, having obtained cover, may act in a way that is of detriment to the insurer (e.g. fail to act with due caution)
+
+***Managing moral hazard***
+
+* Making the consequences unattractive (e.g. co-insurance)
+* Prevention (e.g. ensuring insurable interest in life insurance)
+
+#### Agency risk
+
+Recall discussion from Mod 11
+
+***Managing agency risk***
+
+* "Sticks": (e.g. corporate governance policies)
+* "Carrots": (e.g. alignment of agents interest perhaps through share-based remuneration)
+
+BUs maybe incentivised to improve op-risk management if operational risk is included in the allocation of economic capital (hence reducing their capital charges)
+
+### Bias
+
+Recall problem of bias in Mod 13
+
+To avoid bias:
+
+* Checks and balance should be built into the system
+* Assessments should be subjected to competent and genuinely independent checking
+* Consider introducing an optimism bias into the appraisal of capital projects
+* Educate people about the problem of unintentional bias
+
+### Process Risk (Change Management)
+
+Introduction of changes into the business processes or IT systems introduces the risk to the business that the new processes or systems fail or be poorly implemented
+
+***Managing process risk***
+
+* Undertaking pilot studies
+* Precise definition of the requirements of any new solution to best meet the needs of the whole enterprise
+* Designing systems that can be easily maintained, enhanced and upgraded
+* Careful deployment of the new systems with user education
+
+Stress test of any new process or system should be done both in isolation of and within the larger structure into which it is to be placed
+
+Having been introduced, processes should be reviewed regularly for effectiveness
+
+### Model Risk and Data Risk
+
+Recall discussion from Mod 21
+
+***Managing model risk***
+
+* Have documented processes for model building and testing
+* Have clear audit trails and change management routines
+* Use models only for their intended purpose
+
+***Managing data risk***
+
+* Limit what can be entered to what is valid
+* Check data entry
+* Re-check data on transfer and in particular, de-duplicate
+
+[Optional reading](#http://www.derivativesstrategy.com/magazine/archive/1997/0697fea1.asp)
+
+### Reputational Risk
+
+***Defense against reputational risk***
+
+* Sound ERM framework
+* Business continuity and crisis management plans and processes
+* Strong relationships with key stakeholders
+
+## Operational Risk Mitigation and Control
+
+There is no upside to op-risk but a cost-benefit analysis may result in some operational risks being accepted rather than mitigated
+
+#### Risk Transfer
+
+For critical op-risk a company must decide whether to retain the risk or transfer (or both)
+
+* Ceding the risk should lead to lower expected losses and reduced volatility
+* Ceding will incur the cost of insurance premium and additional counterparty risk
+
+***Enterprise wide process for op-risk transfer***:
+
+1. **Identify** op-risk exposure
+2. **Quantify** their probabilities, severities and economic capital requirements
+3. **Integrate** the op-risk with credit and market risk to establish an **enterprise wide risk profile**
+4. Establish op-risk **limits**
+5. Implement internal **controls**
+6. Develop `risk transfer` and `financing` **strategies**
+7. **Evaluate alternative** `providers` and `structures` based on a cost/benefit analysis
+    * Company may compare the ceded risk-adjusted return on capital to the cost of equity to see if the strategy enhances s/h value
+    
+#### Retained Op-Risk
+
+Some companies self-insure against op-losses by establishing reserves
+
+* Cost of the reserve and cost of other risk management actions should be factored into produce pricing based on target risk adjusted return
+
+#### Best Practices
+
+| Level | Basic | Standard | Best |
+| --------------- | --------------- | --------------- | ---------------|
+| Operational risks | `Loss indicators` are reported | Full set of risk indicators by BUs with **goals** and **minimum acceptable performance** targets; **Early warning** indicators developed | **Broad definition** of op-risk; **Internal** and **external** `early warning` indicators; **Economic capital** allocated to op-risk |
+| Systems | Losses are **tracked** | Op-risk database **linked** to `industry` database | **Qualitative** and **quantitative** tools incl. scenario and simulation risk models |
+| Op-risk function | `Op-risk manager` and `committee` in place; `Audit` and `compliance` **police the policies** | **Team of risk professionals**; **Response and contingency plans** developed; Audit is independent | `Insurance function` **fully integrated** with op-risk function |
+
+## Management of Other Risks
+
+Consider management of liquidity, systemic, demographic and insurance risks
+
+### Liquidity Risk
+
+Requires a company to actively monitor its liquidity requirements
+
+* It must know how much cash it will need in the short/medium term
+* Check it has sufficient cash-like assets
+
+Monitoring must be both within and across legal entities
+
+* Differing transferability of liquidity assets (or fungibility) due to exchange and other regulatory barriers is a particular difficulty for multi nationals
+
+***Methods of managing mark liquidity risk***
+
+* Varying investment strategy
+* Using swaps
+* Having a contingency fund consisting of high-quality, liquid assets
+
+***Methods of managing mark funding risk***  
+(Should be considered alongside credit risks for banks)
+
+* Diversifying sources of funding (by type and term)
+* Continuously monitoring the ability to raise additional capital
+* Contingency sources of funding from their banks (e.g. line of credit) to draw upon in times of stress
+
+### Systemic Risk
+
+Business can manage some systemic risks by ensuring it deals with a wide range of counterparties (avoid concentration)
+
+* Internal limits can ensure undue exposure to a specific counterparty/industry sectors is limited
+
+Activities to **reduce or eliminate feedback risk** (spread of risk through a financial system)
+
+* Investing only in exchange-traded instruments, so as to pool counterparty risk
+* Suspension of trading on the stock exchange by circuit breakers if there is a large market movement
+* Governments of central banks intervening to prop up a bank (by acting as a lender of last resort) or reduce financial consequences (e.g. by reducing interest rate)
+* Regulations that require establishment of additional reserve (e.g. Basel III requires companies to build up additional reserves in the good times)
+* Avoid regulations that increase pro-cyclicality (e.g. solvency regulation that encourage all similar organization to adopt similar investment and risk-mitigation strategies)
+* Physically separating types of business (e.g. the separation of investment banking and retail banking under the US 1933 Glass-Steagall Act, which was repealed but is now being actively pursued following the financial crisis)
+
+### Demographic Risk and Non-life Insurance Risk
+
+***Managing demographic or non-life insurance risk***
+
+* Before the risk is accepted (e.g. through underwriting)
+* After the risk has been accepted
+    * Risk transfer (e.g. reinsurance, annuities, longevity swap, securitization)
+    * Reduce risk concentration (e.g. by growing business)
+    * Improved diversification (e.g. by LoB)
+    * Implied hedging (e.g. mortality and longevity)
+    
+Many of the ART (Mod 26 are designed to manage these risk)
