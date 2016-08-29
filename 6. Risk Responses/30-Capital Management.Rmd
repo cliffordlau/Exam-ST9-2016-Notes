@@ -12,3 +12,865 @@ output:
 ---
 
 ## Module Objective
+
+Understand capital calculations
+
+* Concept of economic measures of value and capital and their uses in corporate decision-making process
+* Develop a capital model for a representative financial firm
+
+Understand how to allocate capital across an organization
+
+***
+
+Reasons a business hold capital
+
+* Manage its cashflow (**working capital**)
+* Facilitate growth/new ventures (**development capital**)
+* Cover unexpected losses arising from exposure to risk (**risk capital**)
+
+Will look at the concept of risk capital and consider a number of methods of assessing and allocating this capital
+
+Company will typically hold (as a minimum) the **larger of**:
+
+* Company's own assessment of the risk capital required (i.e. to cover unexpected losses from exposure to risk), sometimes referred to as **economic capital**
+* Risk capital determined by 3^rd^ parties as being required to be held by the company (**regulatory** or **required capital**)
+    * Capital required by regulators (e.g. based on the Basel or SII formula)
+    * Capital required by rating agencies to maintain a given credit rating
+    
+We will consider both the development of capital models and issues relating to the allocation of capital across separate parts or segments of an organization
+
+Module focuses on the concept of economic capital, but the principles (modeling techniques and capital allocation approaches) can apply similarly to regulatory required capital
+
+Recall Mod 7's S&P paper "Insurance Criteria: Evaluating the Enterprise Risk Management Practices of Insurance Companies" discussed capital models, their potential shortcomings
+
+* Can use for review
+
+## Capital
+
+### Definitions of Capital
+
+Main concern is with **risk capital** (or **economic capital**, or simply just capital)
+
+Common definitions of capital in use:  
+Capital should provide sufficient surplus to **cover adverse outcomes** with a given level of **risk tolerance** over a specified **time horizon**
+
+#### Adverse Outcomes
+
+3 main interpretations of ***adverse outcomes*** result in the following **definition of capital**:
+
+1. Surplus needed to cover all potential outgoings, reductions in assets and/or increases in a company's liabilities at a given level of risk tolerance over a specified time horizon
+2. Surplus needed to maintain a given level of solvency at a given level of risk tolerance over a specified time horizon
+3. The XS of the value of the assets over the value of the liabilities at a given level of risk tolerance at a specified time horizon
+    * This definition focuses on the values of the assets and liabilities **at** the specific time horizon; rather than the funding position (cashflow or surplus) of the company **throughout** the time period concerned
+    
+#### Risk Tolerance
+
+**Metrics** used to set an appropriate level of risk tolerance
+
+* A certain ** percentile** of the loss distribution
+* Extreme loss **values**
+* Possibility of some key **indicator** (e.g. credit rating) falling outside an acceptable level
+
+#### Other Definitions
+
+There may be other ways to assess capital requirements within an org, such as 
+
+* Regulatory standard formula (or other prescribed calculations)
+* Rating agency factor-based models
+
+Where relevant these are also an important part of the capital management process
+
+### Capital Models
+
+CMs can be used for a number of purpose within an org
+
+* e.g. regulatory capital setting or considering economic capital requirements (ECM)
+
+Best-practice models are also able to allocate the capital across the company
+
+#### Generic Capital Models
+
+Used by capital providers and regulators to gain a **consistent assessment** of capital requirement across different firms
+
+Typically very simple in application (e.g. factor-table approaches determine capital as a multiple of business volume)
+
+Generic model are ***becoming more complex***:
+
+* **Increase sophistication** of risk management practices adopted internally at companies
+* **Previous models failed** to deal properly with all risks
+* Increasing **pressure on companies to optimize** their capital resources
+
+#### Internal Capital Models
+
+Internal CM is use to simulate a company specific view of the capital needed
+
+* Aim is to cover **all risks** faced by a company in a **consistent** way allowing for the **interaction** between the various risks
+
+Internal CMs can also be used to calculate regulatory capital (instead of using generic CM), but will require detailed scrutiny by the regulator
+
+***Use of internal CM***:
+
+* Model is a subjective tool and the results should be used with care
+
+* Internal CM can help to provide a **sound basis for** the **development of a risk management strategy** `targeting the agreed risk objectives` (e.g. reducing earnings volatility)
+
+* **Determining** company or product **risk profile**:  
+Can be just one part of a wider RM process
+
+* **Capital budgeting**:  
+Ensure capital are allocated appropriately to establish the optimal business mix and establishing capital outflow/inflow policies
+
+* Capital needed in **M&A**:  
+One way to assess the level of risk is potential M&A and divestment transaction
+
+* **Insurance pricing**:  
+Assess the true cost of issuing a product by comparing the rate of return on the capital held to back the product against the pricing hurdle rate used in setting premiums
+
+* **Risk tolerances/constraints**:  
+Monitor requirements and to impose constraints on the level of risk permissible for certain lines of business or considering reinsurance programs
+
+* Setting **investment strategy**:  
+Measure the effectiveness of any AL-matching strategies
+
+* Calculate **risk-adjusted rate of return on capital**:  
+See [section 3](#risk-opt)
+
+* **Performance measurement**:  
+Used to determine the appropriate level of capital to used in Embedded Value calculations (i.e. the calculations required for the formal reporting by insurance companies)
+
+* **Incentive compensation**:  
+Incentivise management (although not that common yet)
+
+* **Alternative to rating agency/regulatory requirements**:  
+The required levels of capital set by external bodies may not be an acceptable monitoring measure
+
+* **Disaster planning**
+
+***
+
+Internal CM typically comprises of an **asset** and **liability** model, which may be **dynamic** in nature
+
+***Key outputs*** of an internal CM:
+
+* Forecast **future b/s**, **P&L account** or **cashflow** statements
+
+***Desirable features***
+
+* Asset model allows for **correlations** between different asset classes over time
+* Liability model considers **reinsurance** and **correlations** between classes of risk
+* Asset and liability model should be **integrated** and allow for **correlation** between asset and liabilities
+* Model is **dynamic**
+
+***Dynamic asset-liability model*** has the following benefits:  
+(Asset and liability cashflows are linked by equivalent economic variables)
+
+* **Improved understanding** of the dynamics of the current strategy
+* Consideration of the impacts of implementing **different strategies** (i.e. mix of business)
+* Examination of the impact of using different **source of capital**
+* Useful for **due diligence** for corporate transaction
+* Assesses the **risk-adjusted performance** of different BUs
+* Determines an **optimal asset mix**
+* Helps understand the impact of **extreme events**
+* Useful in producing Financial Condition Reports
+
+Regulators require long term projections of the capital needs of the business and these are often incorporated into a **Financial Condition Rerport** (FCR)
+
+* A formal assessment of the financial viability of the insurer
+* FCR includes output from internal CM and other hard-to-quantify factors (e.g. reputational risk and effectiveness of the ERM framework)
+
+#### Internal vs Generic Models
+
+Likely to have similar underlying assumptions and parameters but likely to have different risk measures and calibrations associated with them
+
+* e.g. 1-in-200 year is typical of regulatory capital but 1-in-500 year calibration might be more appropriate for setting economic capital
+
+***Key differences***
+
+* Views as to **volatility** of various `classes of business`
+* Allowances for **diversification** between risk type
+* **Objectives** of the model
+* **Inclusion of different risk types** or **different treatment** of the same risks
+* Different views regarding the **availability of certain types of assets** as capital
+
+Within regulatory and economic capital models there may also be different scenarios run to allow for some of the accounting requirements of specific countries that are not appropriate when considering either regulatory or economic capital requirements
+
+### Capitla Modeling Process
+
+***6 stages required in operating a successful capital model***:
+
+1. **Identify purpose**:
+
+    Clear purpose is required for the model
+      
+    Influence matters such as:
+        
+    * Whether or not it is assumed that the business remains open to new business of simply run off
+    * Whether contingent management actions will be modeled
+    * Level of resourcing required and the accuracy of the results
+    
+2. **Identify and rank risks**:
+
+    The dominant risks will vary by insurer, including: `CAT`, `underwriting`, `reserving`, `pricing`, `liquidity`, `market`, `credit`, and `operational` risks
+
+3. **Choose the simulation approach for each risk**:
+
+    **Deterministic** (e.g. stress scenarios), or **Stochastic** (e.g. parametric, empirical) depending on `cost/time` considerations and `benefits gained`
+    
+4. **Defined the risk metrics**:
+
+    Include VaR or Tail VaR, the time horizon and the confidence interval
+    
+5. **Select the modeling criteria**:
+
+    Should use multiple criteria such as:
+      
+    * Exit value as measured by absolute ruin
+    * Attaining a certain investment rating
+    * Some ongoing business criteria as measured by superivsory intervention
+
+6. **Decide on the method of implementation**:
+
+    Type of model should be appropriate to the nature, scale and complexity of the insurer's business
+      
+    Could be a set of univariate models together with a method by which to combine them (e.g. copula) or a single fully integrated model
+
+### Use of a Capital Model in ORSA
+
+IAA Note (Key Feature 7):  
+"As part of the ORSA and insurer should analyse its ability to continue in business, and the risk management and financial resources required to do so over a **longer time horizon** than typically used to determine regulatory capital requirements"
+
+Such continuity analysis should address a combination of **quantitative** and **qualitative** elements in the medium and longer term business strategy of the insurer and include projections of the insurer's `future financial position` and modeling of the insurer's `ability to meet future regulatory capital requirements`
+
+***Factors to consider when using a capital model as part of such a continuity analysis***
+
+* What **time period** should be used
+    * Longer time periods means the models results need more interpretation and the model's limitation need to be clearly articulated
+    * Different models may need to be developed for the longer term
+* Should the financial position of the insurer be assessed at a particular point in time, or once specific liabilities have run off
+* What capital reduction/injection policies can be assumed
+* What management actions need to be modeled
+    * In general (e.g. premium setting, asset allocation, discretionary benefits, dividend policy and risk mitigation)
+    * In times of crisis
+* How reliable are the insurer's long term forecasts?
+
+### Benefits of Effective Capital Management
+
+Principle of capitalism:  
+Market will allocate capital to activities by their propensity to provide a return on that capital, allowing for potential risks
+
+IAA Note (Key Feature 6):  
+"As part of its ORSA and insurer should determine the overall financial resources it needs to manage its business given its own `risk tolerance` and `business plans` and to demonstrate that supervisory requirements are met. The insurer's risk management actions should be based on consideration of its `economic capital`, `supervisory capital` requirements and `financial resources`"
+
+Capital management is more than a company simply holding more capital to cover possible losses
+
+Effective capital management can turn help transform risk into increased s/h value
+
+* **Pricing competitively**:  
+Ensure an adequate return on capital
+* **Reserving**:  
+Improve estimates of reserves needed for outstanding claims
+* **Performance management**:  
+Enabling business outcomes to be measured and processes to be adapted accordingly
+* **Risk Management**:  
+Establishing their overall level of `risk tolerance`, `identifying` and `assessing` risks present and keeping all risks under control
+
+## Calculating Capital Requirements
+
+Capital requirements is a function of 2 quantities:
+
+1. Desired solvency standard
+2. Its risk
+
+Higher solvency standard or more risk means more capital needs to be held
+
+### Theoretical Method of Calculating Capital Requirements
+
+$K_t$: Capital required at time $t$ is the difference between value of assets ($A_t$) and liabilities ($L_t$)
+
+* $K_0 = A_0 - L_0$ where $K_0 \geq 0$ is known with certainty
+* $K_t = A_t - L_t$ is an unknown r.v.
+
+To avoid ruin, $K_t$ must be greater than 0 for all $t\geq 0$
+
+Strategy to avoid ruin may be to set $K_0$ at a high enough level so as to ensure:
+
+* $\Pr(K_t \geq kL_t) \geq 1 - \alpha$
+* or equivalently $\Pr(A_t - (1+k)L_t \geq 0) \geq 1 - \alpha$
+* Where $\alpha$ is the **risk tolerance level** and $k\geq0$ is a **comfort ratio**
+
+We would expect $K_t$ varies as follows:
+
+* More volatile assets (relative to the liabilities) increase the required capital
+* Higher expected return on assets (relative to the liabilities) reduces the required capital
+* Higher positive correlation between the asset and liability reduces the required capital
+
+***Limitation*** of the approach
+
+* Difficulty in obtaining consistent valuations for both asset and liabilities  
+(Whether they be all market-to-market or market-to model)
+* Need to select an appropriate risk measure  
+(Ruin is not the only one)
+* Difficulty in formulating the necessary assumptions  
+(e.g. how assets and capital will be invested)
+* Large number of parameters needed  
+(Increases exponentially with the number of variables)
+* Difficulty in deriving  robust estimates of the various parameters needed  
+(Correlations and variance etc)
+* Consideration of $K_t$ only at discrete points in time  
+(Possible that ruin occurs between these time points)
+
+### Practical Methods of calculating capital
+
+Basic **bottom-up** approach generalized from the preceding example:
+
+1. Generate stand-alone distributions of changes in the enterprise's value due to each source of risk
+2. Combine the distribution  
+(allowing for any diversification effects)
+3. Calculate the total capital for the combined distribution at the desired standard for the selected risk metric(s) (e.g. SCR)
+4. Attribute capital to each activity based on the amount of risk generated by each activity
+
+All models should allow for the correlation between risk factors
+
+* Allowance could be made implicitly or explicitly
+* Adjustment could be a **micro** (i.e. determining covariance matrices between all risk) or at a **macro** level (i.e. considering the correlation between certain risk types only)
+
+Following sections will discuss different methods to assess capital requirements
+
+#### Probability of Ruin
+
+**Ruin**: when the market value of a company's liabilities > MV of asset
+
+Capital can be assessed as the amount of additional assets required to ensure that the probability of ruin is less than a specified target level
+
+***Advantages***
+
+* This approach has similar characteristics to using VaR as a risk measure in that it is easy to understand and communicate
+
+***Disadvantages***
+
+* Does not consider the severity of any ruin events
+
+#### Economic Cost of Ruin
+
+**Economic cost of ruin**:  
+Amount key stakeholder (e.g p/h of an insurance company or depositors with a bank) can be expected to lose in the event of ruin
+
+* Can be expressed as an absolute amount or as a proportion (e.g. ratio of p/h benefits)
+
+**Advantage**
+
+* Consider more than just the probability of ruin
+
+**Disadvantages**
+
+* Practical problems associated with calculating the economic cost of ruin
+
+#### Other methods
+
+Other methods to assess capital requirements
+
+* **Full economic scenarios**
+    * A chosen set of economic scenarios is detailed (e.g. interest rate, inflation, etc)
+    * Each BU estimates their profitability under each scenario
+    * Results are then aggregated across all units and assessed under a given risk measure (e.g. VaR)
+* **Stress test**
+    * One of more highly adverse economic scenarios are set as the basis for assessing economic capital
+* **Factor tables**
+    * Tables of capital requirement per unit risk exposure by risk type are published by supervisors
+    * Capital requirement is then calculated as the number of units of each activity undertaken by the business multiplied by the relevant factor from the table
+* **Stochastic models**
+    * Either univariate or multivariate
+    * Scenarios are generated at random and capital calculated on the basis of the results of these scenarios
+* **Statistical methods**
+    * Mean, variance, co-variance of the loss distribution are estimated and combined with the normal distribution to estimate capital
+* **Credit risk methods**
+    * Historical data from rating agencies is used, or
+    * Merton model approach
+* **Operational risk methods**
+    * Company and industry data is used and combined with "expert opinion" to enable quantitative results to be obtained
+* **Option pricing theory/ Black Scholes**
+    * Effective where the risk event can be assumed to occur only at one certain point in time
+    * Loss situation is considered to be an option and appropriate models used to calculate its value
+    
+### Regulatory Capital: Basel Accords
+
+Recall (Mod 5) that the Basel capital requirements are set out in 3 pillars
+
+* Pillar 1 imposes a minimum regulatory capital requirement determined by the amount of credit, market and operational risk to which the bank is exposed
+
+#### Credit Risk
+
+One of the most important risk for a bank
+
+* Was the main target under Basel I
+* Basel II adopts a similar approach to Basel I when estimating the credit risk in a bank's balance sheet
+
+Bank calculates the **risk-weighted** value of its assets (categorized by credit quality)
+
+* OECD Gov bonds are excluded as being deemed free from credit risk
+* Other risky assets are given varying risk-weightings
+
+2 methods of categorizing and risk-weighting assets
+
+1. **Standard approach**
+
+    Factor table approach: where almost every credit rating relates to a risk-weighting category and risk weighting
+    
+2. **Internal Rating Based** (IRB) approach
+
+    Basel II allows banks to categorized and risk weight their assets based upon credit ratings determined by using their own IRB mode
+    
+    A thorough credit assessment is required, and the methodology needs to be approved by the regulator
+    
+After determining the risk-weighting for each asset, the bank can calculate the total value of its asset portfolio allowing for these risk-weighting $\Rightarrow$ Minimum capital required to be held is based on the risk-weighted value of assets
+
+Benefits of diversification within the portfolio is **not** allowed
+
+Many off-b/s credit related assets (e.g. securitized loans) must be treated as on b/s to avoid regulatory arbitrage
+
+#### Market Risk
+
+Banks may invest their capital in risky securities and Basel II requires banks to hold additional capital if such additional risks are taken on
+
+* Usually measured by modeling the assets and calculating a 10 day 99% (or 1% tail) VaR
+* This lead to a regulatory capital requirement under Pillar I, which is a multiple of this VaR loss
+
+Banks can also use a standardized approach rather than use an internal VaR model
+
+#### Operational Risk
+
+New and controversial aspect to the Basel II Pillar I calculation
+
+Difficult to measure, but capital has to be set aside to cover risk of `technological failure`, `mismanagement`, `fraud`, `litigation`, and other `operational risk`
+
+The calculation leads to a regulatory capital requirement where the capital held is calculated as a function of the **gross income*8 over the previous **three years**
+
+Basel II **definitio** of Op-risk:  
+Risk of loss resulting from inadequate or failed internal processes, people, and systems or from external events
+
+* Includes `legal` risk but exclude `strategic` and `reputational` risk
+* Op-risk has no potential upside unlike many of the other risk
+
+Recall (Mod 24), the alternative approaches for calculating regulatory op-risk capital under Basel II:
+
+* Basic Indicator Approach
+* Standardized Approach
+* Advanced Measurement Approach
+
+#### Minimum Capital
+
+Under Basel II a bank's capital is in tiers
+
+* **Tier 1**: Bank's equity and disclosed reserves
+* **Tier 2**: Other reserves and various debt instruments
+* **Tier 3**: Certain types of shorter-dated capital (e.g. unsecured, subordinated debt with a minimum maturity of 2 years)
+
+Certain b/s assets such as `goodwill` are not allowed as sources of capital
+
+**Minimum capital** under Basel II:  
+\% of total risk-weighted assets (RWAs)
+
+* Total RWAs = (RWAs of credit risk + capital for market and op risk) $\times$ 12.5
+
+Starting 1/1/2015 Basel III strengthened the requirements to :
+
+* Tier 1 & 2 capital $\geq$ 8% of RWAs
+* Tier 1 capital $\geq$ 6% of RWAs (with common equity at least 4.5% of RWAs)
+* Conservative buffer (that a bank can draw upon during times of financial stress) of 2.5% RWAs (fully phased in 1/1/2019)
+* Additional deductions from common equity, which includes investments in financial institutions and deferred tax assets (fully phased in 1/1/2018)
+
+***Aim of Basel III***
+
+* **Reduce pro-cyclicality** by allowing capital requirements to fall in times of financial stress
+* **Reduce systemic risk** by limiting the degree to which holdings in other banks can be allowed for in a bank's equity
+
+Does **not** deal with the **concentration risk** arising when banks pursue similar business strategies
+
+### Regulatory Capital: Solvency II
+
+Under SII, Pillar 1 is calculated using the twin peak approach
+
+* **First peak** is a market consistent valuation, the **Solvency Capital Requirement** (SCR)
+    * Failure to maintain regulatory capital > SCR will result in action by the regulator
+* **Second peak** is a more basic valuation based on the SI **Minimum Capital Requirement** (MCR)
+    * Firm failing to maintain regulatory capital > MCR will lose it authorization
+    
+All assets are taken ad **fair value**
+
+Capital consists of the XS of assets over liabilities and is classed as tier 1 to 3 depending on how readily the capital can be called upon
+
+#### Solvency Capital Requirement
+
+SCR Must be achievable with 99.5% confidence over 1 year horizon and maybe based on **standard formula** or approved **internal model**
+
+***Standard formula***
+
+* Based on specific **deterministic** basis but with some stochastic elements (e.g. valuation of guarantees)
+* Market risk:  
+**Limited admissibility** of some assets plus a number of **stress test**
+* Credit risk:  
+**Limiting exposure** to individual counterparties
+* Underwriting risk:  
+Require additional solvency margins, generally calculated by reference to business volumes (e.g. premiums) or risks (e.g. claims incurred, sums assured)
+
+***Internal Model*** must satisfy certain standards including:
+
+* **Use test**:  
+Company must actually use the model in its decision making and risk management systems
+* **Statistical quality standards**:  
+Ensure assumptions are realistic and reliable
+* **Calibration standard**:  
+Ensure the output can be used to properly calculate the SCR
+* P&L attribution
+* Validation standards
+* Documentation standards
+
+#### Minimum Capital Requirement
+
+MCR is €3 plus a margin based on premium or reserve
+
+* Must be achievable with 80-90% confidence over 1 year horizon
+* Failure to maintain the MCR will result in withdrawal of the company's authorization
+
+Recall the qualitative requirements of Pillar 2 from Mod 5
+
+## Risk Optimization {#risk-opt}
+
+Recall (Mod 26) the objective of risk management is to **optimzie** the balance between `risk and return` (not simply minimizing risk)
+
+* Optimality is judged by reference to **risk appetite**
+
+Understanding return on capital is one way of ensuring that the company is putting its limited capital resources to the best use
+
+### Risk-adjusted Return on Capital
+
+$RAROC = \dfrac{\text{Risk-adjusted return}}{\text{Capital}}$
+
+* Can be calculated for the enterprise as a whole
+* Can be used to compare different and diverse business activities  
+(i.e. to identify activities that are creating or destroying s/h value by comparing RAROC vs cost of capital)
+* Can be based on actual or expected return or capital
+
+There is no single definition of either `return` or `capital` so RAROC is not well defined
+
+#### Economic Income Created
+
+EIC captures the **quantity** of return generated by a unit of activity:
+
+$EIC = (RAROC - hurdle rate) \times Capital$
+
+* Hurdle rate: standard against which business activities must be measured
+* If a proposed activity does not offer a RAROC above the hurdle rate then that is one basis upon which it might be rejected
+
+***Considerations when determining an appropriate hurdle rate***
+
+1. Reflect the cost of capital (e.g. WACC)
+2. Allow not only for the risks inherent within a proposal, but also the degree to which those risk diversify existing risks
+
+EIC is a monetary amount and can be used to encourage marginal growth opportunities
+
+* i.e. those activities that do add value, yet may not meet RAROC targets
+
+### Shareholder Value and Shareholder Value Added
+
+SHV and SVA assess the intrinsic economic value of a business as a going concern (i.e. over an extended period)
+
+SHV captures the **PV of all future cashflows** (i.e. as a perpetuity):
+
+$\begin{align}
+  SHV &= \text{Discounted value of all future cashflows}
+  &= Capital \times \left( \dfrac{RAROC - g}{hurdle - g} \right)
+\end{align}$
+
+* $g$: prospective growth rate of the business (usually over 3-5 years)
+
+SVA measures the extent that **SHV exceeds the capital invested**
+
+$\begin{align}
+  SVA &= \text{Discounted value of economic value added}
+  &= Capital \times \left( \dfrac{RAROC - g}{hurdle - g} -1 \right)
+\end{align}$
+
+## Capital Allocation
+
+After the overall required capital is calculated, next is to translate this in a fair way into capital requirements at the level of individual business units, produce and other segments
+
+* `Important for business planning`, `performance measurement` and `pricing`
+* There is no single way of achieving this allocation of capital, with a combination of methodologies generally resulting in a better overall approach
+
+***Notional allocation of risk capital***
+
+We generally consider a **notional** allocation of **risk capital** (output from model), **not** a **physical** distribution of **money** (in the sense of working capital)
+
+* Exception is if we are looking at allocation across regulated entities (e.g. different geographies) then capital will be physically allocated (but then each entity will have its own regulatory capital requirement and allocation issues)
+
+The notionally allocated capital amounts are important, as the values are then **applied to management processes**, which in turn will have a significant impact on business decision-making
+
+* e.g. total allocated capital may be used as a basis for `pricing`, `risk control limits`, and `performance measurement` etc
+
+***How alloation of capital affects decision making***
+
+Capital allocation process link `risk` to `performance measurement`
+
+* e.g. BU's success should be measured relative to the risk it takes in its operations, which should in turn reflect the amount of capital the company is willing to allocate to the BU
+
+Amount of capital that is allocated to each BU:
+
+* **Determines** the BU's **performance** (e.g. under RAROC)
+* Could **affect**, directly, or indirectly, the **remuneration** of the unit's managers and consequently, their level of motivation and behavior
+* Dictates the amount of **business the BU can write**  
+(as each product written consumes capital and the total amount of capital is limited)
+* Determines in part the **price** at which business can be written  
+(e.g. a minimum price might be determined by a stipulated minimum RAROC)
+
+### Allowing for Concentration/Diversification of Risk
+
+Allocation needs to allow for concentration / diversification of risk between the BUs
+
+* Not all business areas have the same degree of risk
+* Some allocation of capital may result in the less risky areas subsidizing the more risky area
+
+#### Adjustments for Correlation and Dependency
+
+Important to remember that the level of dependency might be different during times of stress
+
+As required capital is typically calculated with reference to extreme events, tail dependency will have to be considered carefully
+
+Often the case that total required capital as well as the related capital allocation is very sensitive to the choice of dependency structure (e.g. copula) used to aggregate the risks
+
+#### Diversification Benefit
+
+The diversification benefit can be shared across the business and is a key consideration when allocating capital across the company
+
+* Some approaches calculate the capital for each BU followed by an adjustment for the benefit of diversification and the adjustment is retained at the level of the enterprise and is not passed on to the individual units
+* Alternative approach is to calculate the capital required at the enterprise level and then allocates the diversification benefit across all units
+
+Fair approach is important as the allocation impacts the pricing and subsequent measures of performance
+
+* Appropriate method for allocation depends on a number of factors such as the purpose of the allocation and the stakeholders to the process
+* However, a significant element of judgement to ensure that a suitable answer is obtained
+
+### Allocation Methods
+
+This is an area of continuing development and no specific methodology is currently an industry standard
+
+Care should always be taken to consider the purpose of the allocation and the practical implications of the chosen methodology before results are used
+
+#### General Allocation Principles
+
+Method of allocation should have regard to the use to which the results will be put and should consider desirable properties of the results (e.g. stability over time)
+
+There is no one method that is best suited in all cases
+
+* Should compare results from several methods
+* Use judgement when recommending or setting the final allocation
+
+There can be conflict between desired properties of capital allocation exercises (e.g. the financial principle of marginal pricing contrasted with fairness between BUs)
+
+* Different methodologies will each fulfill different desired properties to a greater or lesser extent, making it very important to consider the purpose of the allocation and the practical impact of the methodologies before a final selection is made
+
+#### Capital Allocation Approaches
+
+Approaches to allocate total capital to BUs
+
+* Total capital could be retained fully by the company centrally in the main corporate business line
+* Allocate using some **risk measure**
+* **Marginal approach**:  
+Each LoB receives the change in capital as the result of adding it to the diversified portfolio
+* Allocate using some **game theory approach**
+* Allocate on some **pro-rate basis**  
+(e.g. weighted by reserves or PV of future expected revenue from the business area)
+* Calculate capital for each LoB individually on a **stand-alone** basis and any remaining capital retained in the main corporate business line
+
+#### Hold Total Capital Centrally
+
+Approach of not allocating capital
+
+* Will lead to a lack of understanding of the impact of each LoB's action on the capital requirements of the business
+* Can lead to potential over-investment in risky BUs
+
+#### Allocation Using a Risk Measure
+
+Allocate capital by reference to some measure of risk; one example below
+
+Allocation based on ***Euler principle*** (Sweeting Sec 18.8)
+
+Euler's homogeneous function theorem states:
+
+If $f(u_1,...,u_n)$ is homogeneous, then
+
+$f(u_1,...,u_n) = u_1 \left. \dfrac{\partial f}{\partial u_1} \right|_{(u_1,...,u_n)} + \dots + u_n \left. \dfrac{\partial f}{\partial u_n} \right|_{(u_1,...,u_n)}$ $\dots (1)$
+
+* The vertical bar and subscript means that each partial derivative is evaluated at $(u_1,...,u_n)$
+* Theorem can be generalized to higher orders of homogeneity but we are only interested in order 1
+
+Suppose that the organization has $n$ BUs and that each unit $i$ has an associated random loss variable $L_i$ $\Rightarrow$ Total loss is $L = L_1 + \dots + L_n$
+
+For a coherent risk measure $F$ (which satisfy the axiom of positive homogeneity):
+
+$F(kL) = kF(L)$ for any $k>0$
+
+Here, the risk measure $F$ is a measure of capital required
+
+Consider there are $p_i$ units (instead of having on unit of each loss $L_i$) and let $L(\mathbf{p}) = p_1 L_1 + \dots + p_n L_n$
+
+From (1) it can be seen that
+
+$F(L) = \left. \dfrac{\partial F(L)}{\partial p_1} \right |_{\mathbf{p}=1} + \dots + \left. \dfrac{\partial F(L)}{\partial p_n} \right |_{\mathbf{p}=1}$
+
+* where $\mathbf{p}=1$ means $(p_1,...,p_n) = (1,...,1)$
+
+So if $F(L)$ is the total capital then a possible subdivision is to have a capital requirement of $C_i$ for BU $i$, where $C_i = \left. \dfrac{\partial F(L)}{\partial p_i} \right |_{\mathbf{p}=1}$
+
+***Example***
+
+Note the 2 risk measure used below satisfy the positive homogeneity axiom but not always satisfy the subadditivity axiom
+
+It can be shown that the total capital requirement equals the sum of the individual allocations: $F(L) = C_1 + \dots + C_n$
+
+**Standard deviation** risk measure:
+
+* $F(L) = c \sqrt{Var(L)}$
+* $C_i = c \dfrac{Cov(L_i,L)}{\sqrt{Var(L)}}$
+
+**VaR** risk measure:
+
+* $\rho(L) = VaR_{\alpha}(L)$
+* Assuming that $(L_1,...,L_n)$ has a joint density $L$ then $C_i = \mathrm{E}[L_i \mid  L = VaR_{\alpha}(L)]$
+
+**Expected shortfall** risk measure:
+
+* Assuming that $(L_1,...,L_n)$ has a joint density $L$ then $C_i = \mathrm{E}[L_i \mid  L \geq VaR_{\alpha}(L)]$
+
+*** 
+
+There are other methodologies that use risk measures calculations as the basis for capital allocation and the methods vary in complexity:
+
+* Simple proportional spread:  
+(Overall capital is allocated in proportion to the risk measure applied to each line in isolation)
+* Complicated numerical implementations requiring complex modeling:  
+(Use of co-measure or the consideration of capital as a shared asset)
+
+Results from different approaches can be very different, even for the same risk measure
+
+#### Allocation by Marginal Capitl Costs
+
+Capital is allocated to LoBs in accordance with the marginal additional capital required for writing that business (given that the other LoB are already in place)
+
+**Advantage**
+
+* Corresponds to the financial principle of **marginal pricing**  
+(Whereby a business will want to write additional business that covers its marginal costs)
+* Can be argued that this method allocates the true capital to each BU
+
+**Disadvantage**
+
+* Potentially unfair as it is dependence on the order of consideration
+* Complicated to calculate and does not ensure that the total capital is allocated  
+(i.e. sum of the marginal capital requirements $\neq$ sum of the total)
+
+#### Allocation using Game Theory
+
+**Shapley method**
+
+* Allocates capital with reference to an average of the marginal capital requirements
+* Assuming that the segment under consideration is added to the overall portfolio first, second, third and so on
+
+**Advantage**
+
+* This ensure that equality between BUs is achieved regardless of the order in which they are added
+
+**Disadvantage**
+
+* Computationally intensive for all but the smallest of portfolio
+* Similar answer can be achieved using other methods that are easier to implement
+
+#### Allocation using Pro-rata Approach
+
+Allocation according to some basis:
+
+* e.g. business reserves or premium income
+
+**Advantage**
+
+* All capital will be allocated
+
+**Disadvantage**
+
+* Unless the basis is risk-based, large amounts of capital might be allocated to BUs that generate little risk
+
+#### Allocation using Stand-alone Approach
+
+Treating each BU in isolation
+
+* Capital allocated is unaffected by the presence of other BUs
+
+**Disadvantage**
+
+* Takes no account of any diversification benefits resulting in XS capital being allocated to BUs which act as diversification to other units
+
+### Other Considerations
+
+#### Coherence of Selected Risk Measure
+
+Recall (Mod 14) on coherent risk measures
+
+Use of coherent risk measures is particularly relevant when considering capital allocation
+
+***Conditions for a risk measure to be coherent***
+
+1. **Translation invariance**:  
+If we add an amount to the observed loss, then the capital requirement needed to mitigate the impact of loss increases by the same amount
+2. **Subadditivity**:  
+Merger of risk situations does not increase the overall level of risk
+3. **Positive homogeneity**:  
+If we double the size of the loss situations we double the risk
+4. **Monotonicity**:  
+Greater expected loss requires a greater amount of capital to be held
+
+Subadditivity is considered a desirable property for risk measure as it will exhibit diversification benefits as risk portfolios are combined
+
+* If the risks to which an org is exposed are given, then subadditivity can be considered from a different perspective
+
+An org would typically wish to calculate capital required at the aggregate level, however it might be much more convenient to calculate capital required at the level of individual LoBs
+
+If a coherent (so subadditive) risk measure is used, then sum of the capital required for each LoB will exceed the capital that would be calculated for the aggregate business
+
+* This means that the risk tolerance levels for each LoB, based on the chosen coherent risk measure, can be separated out
+* If these tolerances are adhered to, then a related risk tolerance at the level of the org using the same risk measure will be satisfied automatically
+
+$\therefore$ subadditivity makes decentralization of risk management systems possible since constraints can be placed on BUs and if they stay within these constraints then the overall risk level cannot exceed the sum of the parts
+
+Note that VaR is not subadditive so care must be taken when aggregating results of models based on VaR
+
+It is desirable to use a **different risk measure** from that used in assessing the `overall capital` requirement when performing a capital `allocation` exercise, e.g.
+
+* Capital requirement maybe based on a **high** target percentile in the tail
+* But the diversified capital may be allocated down to individual product lines or companies within the group by reference to a **lower** percentile to prevent **over-allocation** to LoB with extreme outcomes  
+(e.g. CAT-prone general insurance classes)
+
+Important to consider the **purpose** of the exercise and the implications of the results before making a final selection
+
+#### Additional Capital
+
+Org may hold more capital than its capital model suggests is needed
+
+* e.g. it may require the XS capital to support its credit rating or take advantage of business opportunities in the future
+
+XS capital may also be allocated between segments (e.g. pro rata to the allocation of risk-based capital or to certain components of it)
+
+* Careful consideration should be given to the purpose of the exercise in this case, in order to ensure that the method chosen adequately meets its objectives
+
+#### Changes Over Time
+
+In reality, capital assessment and allocation can change dramatically from year to year
+
+* Can be due to modification of capital models from year to year as part of a standard development cycle as new techniques emerge
+* Results can be highly sensitive to the underlying choice of risk allocation and the correlation model which are not always transparent to all stakeholders
+* There aspects can create practical issues in terms of communication and gaining buy-in from business units and stakeholders
+
+#### Implementation
+
+Implementing capital allocation in practice requires strong communication skills and a good understanding of the conflicts that the implementation can create
+
+Understanding how these conflict should be managed and minimized is itself a part of a strong ERM framework
