@@ -1,0 +1,89 @@
+---
+title: "Module 32: Case Studies"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Demostrate the application of ERM to real and hypothetical contexts
+
+* Discuss important past examples of both good risk management practices and risk failure, and discuss how better risk management might have prevented these failures
+* Analyse hypothetical examples ex ante and discuss how the situations described benefti from risk management
+
+***
+
+Need to be able to apply the principle described in earlier modules, in the context of both `real` and `imaginary` situations and for both `financial` and `non-financial` organizations
+
+Purpose of the module is to demonstrate the application of ERM to real-life situations
+
+* Most important module for ST9
+* **Expectation from ST9**:
+    * Discuss past examples of good risk management practices
+    * Discuss past examples of risk failures
+    * Discuss how better risk management might have prevented these failures
+    
+**Important** to read the case studied in the Core Reading and are prepared to discuss the key learning points and outcomes of these real-life examples
+
+* Need to be able to apply these lessons and the broader knowledge gained throughout the course to hypothetical situations ex ante
+* Discribe how risk management may be applied in any given situation
+* This include the analysis of financial statements
+
+### Reading the Case Studies
+
+Tips:
+
+* Read the case study in full
+* Read again more critically
+
+Questions to consider on 2^nd^ pass:
+
+* Why is this case study interesting from ST9's perspective?
+* How would you describe the companies' risk management practices?
+* What types of risks is this case study concentrating on?
+* What were the key risk management failure and/or successes in this case?
+* Could any failures have been foreseen or mitigated by better risk management practices?
+* What are the key lessons to be learnt from this case study?
+* Did the company learn from its failures, or benefit from its good practices?
+* Can you relate any of these lessons to your own business or other businesses you work with?
+
+### Task list
+
+Sweeting
+
+* Ch. 20: P. 505-526
+
+Lam
+
+* Ch. 1: "Cautionary tales" P.12-20
+* Ch. 8: "Case Study: Honeywell" and "Barclays" P.124-125
+* Ch. 12: Credit Risk Management "Case Study: EDC" P.200-207
+* Ch. 13: Market Risk Management "Case Study: Market Risk Management at Chase" P.230-236
+* Ch. 14: Operational Risk Management "Case Study: Heller Financial" P.264-270
+* Ch. 17: Energy Firms "Lessons learned from Enron" and "Lessons learned from the BP oil spill" P.313-316
+* Ch. 18: Nonfinancial Corporations "Case Study: Microsoft", "Ford", "Airbus and Boeing" P.333-337
+* Ch. 22: Role of the Board "Case Study: JP Morgan Chase" P.386-388
+* Ch. 2: "Lessons learned" P.21-29
+
+## Case Study Summaries
+
+Should consider the relative important of all categories of risk
+
+Should identify the **root causes** of a major loss or failure
+
+* e.g. root cause of the failure of Barings Bank was an op-risk, inadequate internal management controls; while the collapse of the bank was ultimately caused by a different op-risk (Kobe EQ) and market risk but the collapse would not have happened if proper internal controls had been in place
+
+Sweeting cases are largy self-explanatory
+
+Useful to be familiar with the details on the case, the key is to **understand the lessons** from each case study and **to be able to relate** those to other institutions
+
+Notes below provide more detail on some of the case studies and provide references for you to do further research
+
+### Global Financial Crisis
