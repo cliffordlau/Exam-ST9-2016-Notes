@@ -1,0 +1,33 @@
+---
+title: "Module 31: ERM Implementation"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Module Objective
+
+Discuss the framework for risk management and control within a company
+
+* Discuss how to adopt best practice in ERM in compliance and corporate governance
+
+***
+
+Focus on the process for implementing ERM successfully in an org
+
+Themes in the module is similar to the prior modules, but in the context of an org's implementation, over time, of an ERM framework
+
+Adoption of ERM must not be thought of as a one off exercise
+
+It should be treated as a dynamic process, which is regularly reviewed, updated in light of internal changes and changes in the external business environment and improved as best pracrtice regarding thinking in ERM evolves
+
+## Application of ERM to Business
+
+### Implementation Project Management
+
