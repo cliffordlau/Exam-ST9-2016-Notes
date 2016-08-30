@@ -13,3 +13,101 @@ output:
 
 ## Module Objective
 
+Understand the principal terms in ERM
+
+***
+
+Module is a glossary of the principal terms that are relevant to ST9
+
+List may not be exhaustive and is expected to be able to apply knowledge from earlier subjects and earlier in the course where appropriate
+
+## Glossary
+
+### Agency Risk
+
+Results from the misalignment of interest between different stakeholders
+
+The term is sometimes used to refer to specific risk that the management of an organization will not act in the best interests of other stakeholders
+
+### Alternative Risk Transfer (ART)
+
+ART is an umbrella term fro non-traditional methods by which organization can transfer risk to 3^rd^ parties
+
+Boradly these products combine traditional insurance and reinsurance protection with financial risk protection, often utilizing the capital markets
+
+### AS/NZS 4360
+
+AS/NZA 4360 is the best practice risk management published by Standards Australia, the leading non-government standards development body in Australia
+
+It has been widely adopted around the world
+
+### Basel II
+
+Basel II is an international capital adequacy framework for banking organizations which aimed to be more risk sensitive than the previous Basel I requirements
+
+It is based on a 3 pillar approach and has been adopted by the EU and other countries
+
+Some aspsects are likely to be strengthened under proposals for Basel III
+
+### Basis Risk
+
+Basis risk is the risk arising from differenes in the movements of two comparable indices
+
+e.g. different stock market indices, so that offsetting investments in a hedging strategy will not experience exactly offsetting movements
+
+### Chief Risk Officer (CRO)
+
+Often reporting to the CEO or CFO, the CRO role has responsibility for overall leadership and development of ERM within an organization
+
+### Coefficient of Tail Dependence
+
+This is a measure of the correlation between the tails of distributions
+
+It is a relevance when considering the relationship between risks under extreme scenarios, which can differ from the relationship under normal conditions
+
+### Coherent Risk Measure
+
+A risk measure is said to be coherent if it satisfies a number of conditions which are deemed to represent a good measure of risk, particulary relating to its aggregation properties
+
+### Concentration of Risk
+
+Concentration of risk occurs when it is not possible to (or it has been decided not to) diversify across a range of different exposures
+
+### Contagion
+
+Contagion is the knock-on effect arising when one risk event generates another
+
+Financial contagion is a situation where financial losses in one company or sector or country lead to losses in another
+
+### Copula
+
+A copula is used to describe the dependence structure within multivariate distributions
+
+Copulas can be used to enhance understanding of dependence between risk factors and to build multivariate models for risk management purposes
+
+### Corporate Governance
+
+This is the system whereby Boards of directors, or governing bodies, are responsible for the governance of their organizations upon appointment by shareholders
+
+### Correlation
+
+Correlation is the degree to which statistical distributions (and so risks) are related to each other
+
+There are different types of measure of such dependence including linear correlations, rand correlation (which is concerned with the ordering of data rather than numerical values) and coefficients of tail dependence
+
+### COSO ERM Framework
+
+The Committee of Sponsoring Organizations of the Treadway Commission (COSO) is a US private sector organization which issues definitions and standards against which organizations can assess their internal control systems
+
+In 2004 it published its "Enterprise Risk Management - Integrated Framework" in order to encourage increased focus on ERM practices
+
+### Counterparty Risk
+
+Counterparty risk is the risk that another party to a transaction or agreement fails to perform its contractual obligations, including failure to perform them in a timely manner
+
+### Credit Risk
+
+Credit risk in its general sense is the risk that a counterparty to an agreement will be unable or unwilling to make the payments required under that agreement
+
+Some organizations define credit risk more narrowly as the risk that a borrower will partially or wholly default on repayment of debt (interest and/or capital payments), and it may also include risks retlating to variations in credit spreads in the markets
+
