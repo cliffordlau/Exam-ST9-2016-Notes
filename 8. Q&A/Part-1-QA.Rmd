@@ -1,0 +1,67 @@
+---
+title: "Part 1: Question and Answer"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Development Questions
+
+1. Definition of ERM
+  
+    * No single definitions
+    * Application of risk management across the whole enterprise in a **structured** and **consistent** way
+    * Consider **all risks** faced by an enterprise and how the risk **interact** with each other
+    * Take into account interactions when deciding on how to deal with the risk
+    * **Intergrate** risk measurement and management into business processes $\Rightarrow$ Risk information can **influence all strategic business decisions**
+
+***
+
+2. Counterpoint to the "ERM fad", importance of ERM, and benefits
+  
+    * ERM is natural evolution of risk management
+    * Discuss benefits of RM
+    * Discuss benefits of formal risk communication
+    * In the long run, alternative to ERM is crisis managment
+    * How ERM adds value
+        * Consider upside risk
+        * Aid in exploiting any opportunities identifies before competitors
+        * Understanding current level of risk can identify potentional scope to take on more risk
+
+***
+
+3. Definition of market, credit and op-risk
+
+    * See notes
+
+***
+
+4. Describe types of legal risks and how to identify, assess and monitor its exposure
+
+    * New legistation or change
+
+        e.g. new market from deregulation; additional compliance costs
+      
+        Keep in touch with developments in the legal and supervisory environment
+
+        * Monitor lobby groups, political development, countr judegements, foreign country legistlative development
+      
+    * Contract provisions
+
+        e.g. poor contract wording; conditional clauses
+      
+        Review contracts; can model how the conditional clauses might be triggered
+      
+    * Legal rulings
+
+        e.g. legal cost; changing process from ruling; loss of reputation
+
+***
+
+5. 

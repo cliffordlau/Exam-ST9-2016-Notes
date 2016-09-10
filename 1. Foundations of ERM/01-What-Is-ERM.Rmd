@@ -22,7 +22,7 @@ Describe the concept of ERM:
     * Measurement of risk
     * Quantifiable risks
     * Responses to risk and risk management
-    
+
 ## ERM Considerations
 
 There is always a **cost** with reducing risk
