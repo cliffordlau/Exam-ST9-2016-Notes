@@ -23,58 +23,78 @@ Module will explain how credit rating agencies (e.g. S&P) view insurance compani
 
 Background of the general role of credit rating agencies in providing information to investors and their approaches to analysis of risk
 
-### Intro to Credit Ratings
+## Intro to Credit Ratings
 
 ***Credit Ratings***
 
-* Issued by a credit rating agency as an indication of creditworthiness
-* Ratings can be assigned to both the issuer and the particular issue itself
-* Not supposed to predictive of default probabilities but provide broad rankings of default risk
+* Issued by a credit rating agency as an **indication of creditworthiness**
 
-***S&P, Moody'sand Fitch***
+* Ratings can be assigned to both the `issuer` and the `particular issue` itself
+
+* **Not supposed to predictive of default probabilities** but provide **broad rankings of default risk**
+
+***S&P, Moody's and Fitch***
 
 * Specialize focus on the provision of high quality, objective credit analysis
-* Access both hard accounting data and soft assessments (e.g. management quality)
+
+* Access both `hard accounting data` and `soft assessments` (e.g. management quality)
+
 * Each has its own classification of ratings
 
-Goal of having a good rating rating is to borrow as cheaply as possible
+**Goal** of having a good rating rating is to **borrow as cheaply as possible**
 
 ***Shortcomings of credit ratings***
 
-* Rating agencies are paid by the debt issuer $\Rightarrow$ Pressure to assign good ratings
+*  Rating agencies are paid by the debt issuer  
+$\hookrightarrow$ Pressure to assign good ratings
+
 * Conflict of interest is somewhat offset by the need to maintain credibility with users
 
-### S&P Approach For Rating RM Practices
+## S&P Approach For Rating RM Practices
 
-**Benefits** of a robust EMR framework:
+***Benefits of a robust EMR framework***:
 
-* Allows a prospective view of the company's capital needs
-* Can be highly tailored to suit each individual company
-* Benefits of diversification (of business, products, locations, etc) can be recognized
+* Allows a **prospective view** of the company's `capital needs`
 
-**Three risk elements** of S&P's rating framework
+* Can be **highly tailored** to suit each individual company
 
-1. Sovereign risk analysis
-    * e.g. tax, currency control
-2. Business risk analysis 
-    * e.g. industry prospects, lack of diversification, dis-economies of scale, competitive strength, operations risks, management quality and structure
-3. Financial risk analysis
-    * e.g. profit level, cashflow, capital structure and flexibility
+* **Benefits of diversification** (of business, products, locations, etc) can be recognized
+
+### Three risk elements 
+
+...of S&P's rating framework
+
+1. **Sovereign** risk analysis
+
+    e.g. tax, currency control
     
-### Assessment of EMR Capability
+2. **Business risk** analysis 
 
-The assessment process is still in its infancy; Will develop as ERM practices develop
+    e.g. industry prospects, lack of diversification, dis-economies of scale, competitive strength, operations risks, management quality and structure
 
-Programs that have been tested or operated in adverse situations will be judged more favorably
+3. **Financial risk** analysis
 
-**Two features** that determine the significance of the categorization of ERM capability within its overall credit rating
+    e.g. profit level, cashflow, capital structure and flexibility
+    
+### S&P Assessment of EMR Capability
 
-1. How complex the risks are that the insurer accepts
-    * Complex risk = one that can change significantly in a short period
-    * e.g. long term contracts that cover multiple contingencies
-2. Amount of available capital and ease of access to it
-    * i.e. capability to absorb risk
-    * Need to consider that access to capital can dry up quite quickly in poor market conditions
+The assessment process is **still in its infancy**; Will develop as ERM practices develop
+
+Programs that have been **tested** or **operated in adverse situations** will be **judged more favorably**
+
+**Two features** that determine the *significance* of the categorization of ERM capability within its overall credit rating
+
+1. **Complexity of the risks** that the insurer accepts
+    
+    * **Complex risk**: one that can *change significantly* in a *short period*
+            
+        e.g. long term contracts that cover multiple contingencies
+
+2. **Amount of available capital** and **ease of access** to it
+
+    i.e. capability to absorb risk
+    
+    * Need to consider that access to **capital can dry up** quite quickly in *poor market* conditions
     
 ### S&P Approach to Measuring ERM Capability
 
@@ -84,37 +104,46 @@ Programs that have been tested or operated in adverse situations will be judged 
 
 Indicators of positive risk management culture
 
+
 * **Communication** of risk through all levels of the company
+
 * **Documenting** and **analysis** of **past errors**
+
 * **Consistency** of risk management across all pars of the business
+
 * **Incentivizing** of good RM practices within the firm
 
 Other areas of evaluation
 
-* Governance structure
-* Risk tolerance statements
-* Capabilities of individual risk managers
+* **Governance** structure
+
+* **Risk tolerance** statements
+
+* *Capabilities* of **individual risk managers**
 
 ***2. Risk Control***
 
-Rating considerations
+Rating considerations:
 
-* How well the risk identification procedures are carried out
-* How well risks are monitored on an ongoing basis
-* How the risk retention limits will be adhered to and the consequences for non compliance
-* Execution of the RM process
+* How well the **risk identification procedures** are carried out
+
+* How well risks are **monitored** on an ongoing basis
+
+* How the **risk retention limits** will be **adhered** to and the 
+**consequences** for *non compliance*
+
+* **Execution** of the RM process
 
 ***3. Extreme Event Management***
 
 Low frequency high severity events
 
-Company must prove that it considers various possible events
+Company must prove that it **considers various possible events**  
+(e.g. Terrorism, natural disaster, reputational incidents etc)
 
-* e.g. Terrorism, natural disaster, reputational incidents etc
+* Adopts an appropriate course to *measure* the **potential impact** and **prepare** for the events
 
-And adopts an appropriate course to measure the potential impact and prepare for the events
-
-* Should have **early warning** indicator reporting and CAT insurance as mitigators
+    Should have **early warning** indicator reporting and **CAT insurance** as mitigators
 
 ***4. Risk Models and Capital Models***
 
@@ -123,21 +152,35 @@ Models that determine how much (risk) capital a company should have to withstand
 Rating considerations:
 
 * The **models used**, **inputs and assumptions** and the modeling **formulae**
+
 * Good model should be **consistent** across all business areas and regions
-* Modification of standard formulae to better suit the particular LoB the company operates in
+
+* **Modification** of standard formula to better suit the particular LoB the company operates in
 
 ***5. Strategic Risk Management***
 
-Assess the focus that the organization puts on the risks to its key corporate goals
+Assess the *focus* that the organization puts on the risks to its **key corporate goals**
 
 6 positive features in strategic risk management
 
-1. Clear decision making with regards to the retained risks; and whether the company should refocus to avoid or diversify the risks
-2. Clear strategy for assets investment
-    * Focusing on the allocation across broad categories (e.g. equities vs bonds) and across countries
-3. Pricing strategy that reflects risk/return trade off; Clear standards set of acceptable risk/return profiles
-4. Appropriate capital allocation between the different BUs based on the capital model
-5. Appropriate dividend policy
+1. *Clear decision making* w.r.t. the **retained risks**
+
+    Whether the company should refocus to `avoid` or `diversify` the risks
+
+2. *Clear strategy* for **assets investment**
+
+    Focusing on the allocation across `broad categories` (e.g. equities vs bonds) and across `countries`
+
+3. **Pricing strategy** that *reflects* **risk/return trade off**
+
+    Clear standards set of acceptable risk/return profiles
+
+4. *Appropriate* **capital allocation** between the different BUs based on the capital model
+
+5. *Appropriate* **dividend policy**
+    
     * Influenced by the level of risk-adjusted return on retained capital
+    
     * Should be able to discuss how the dividend decision was made
-6. Good risk-adjusted returns should be rewarded within the company
+
+6. Good risk-adjusted returns should be **rewarded** within the company
