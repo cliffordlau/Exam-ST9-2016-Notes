@@ -30,143 +30,247 @@ How contagion affects different stakeholders
 
 ## Intro to Risk Taxonomy
 
-Risk taxonomy = definitions and categorizations of risks
+**Risk taxonomy**:  
+Definitions and categorizations of risks
 
-Risk = 
+**Risk**:
 
-* Uncertainty of possible future random events
-* Nature and degree of harm associated with each such event
+* **Uncertainty** of possible future random events
+* **Nature** and **degree of harm** associated with each such event
 
-Risk hierarchy based on Basel or SII
+**Risk hierarchy** based on `Basel` or `SII`
 
-* Market risk:  
+* **Market risk**:  
 Risks arising from changes in market values
-* Credit risk:  
+* **Credit risk**:  
 Risk of failure of a 3rd party to meet its obligations
-* Op risk:  
+* **Op risk**:  
 Risk of loss resulting from deficient internal processes, people, or systems, or external events
-* Insurance (Business) risk:  
+* **Insurance (Business) risk**:  
 Risk of accepting risks which turn out to be inappropriate or pricing accepted risks inappropriately
 
 Additional major categorize from Lam
 
-* Strategic risk:  
+* **Strategic risk**:  
 Risk that corporate and business strategies are flawed or ineffectively executed
-* Compliance risk:  
+* **Compliance risk**:  
 Risk that the company may violate laws and regulations
-* Liquidity risk:  
+* **Liquidity risk**:  
 Risk that a company cannot raise cash to meet its requirements in a timely and cost effective manner
 
-Market + credit = financial risks
-
-## Categorization of risk {.tabset}
+## Categorization of risk
 
 List not necessarily complete
 
 Definitions are not necessarily set in stone and can be inconsistent depending on the context (e.g. market risk)
 
-It is important to consider the root cause in risk identification and assessment
+It is important to *consider* the **root cause** in `risk identification` and `assessment`
 
 ![](figures/Exam ST9 - 1.png)
 
 ![](figures/Exam ST9 - 2.png)
 
-### Market risk
+### Financial Risk {.tabset}
+
+Market + credit = financial risks
+
+***Components of financial risk***
+
+#### Market risk
 
 <a name="mkt-risk"></a>
 
-Market risk
+***Market risk***
 
-* Risk from exposure to capital market
-* Risks from $\Delta$ investment market value, or features correlation with investment markets (e.g. interest and inflation)
-* Include investment market value $\Delta$ on liabilities
-* Consequence of AL mismatch
+* Risk from *exposure* to **capital market**
+
+* Risks from $\Delta$ **investment market value**, or features **correlation with investment markets** (e.g. interest and inflation)
+
+* Include investment MV $\Delta$ on **liabilities**
+
+* Consequence of **AL mismatch**
+
 * e.g. equity, commodity, FX, interest rate, basis
 
+**Alt Definition**  
 Sometimes can be confused with risk of lower sales or profit margins from changes in market conditions
 
 * Where here market = market where the products or services are sold
 
-Market conditions are a function of:
+***Market conditions are a function of***:
 
-* Market construction:  
+* **Market construction**:  
 Size, barriers to entry
-* Market participant action:  
-Strategic choice (growth vs specialist penetration or diversification), method of implementation (expansion or acquisition)
-* Market participant interaction:  
+
+* **Market participant** *action*:  
+
+    * *Strategic choice*  
+    (growth vs specialist penetration or diversification)
+        
+    * *Method of implementation*  
+    (expansion or acquisition)
+    
+* **Market participant** *interaction*:  
 Price elasticity
 
-Distinct elements of market risks:
+***Distinct elements of market risks***:
 
-* Risk arising from movements its own stock price related to:
-    * acquisition strength and takeover risk
-    * efficiency in raising capital
-* Investment risks related to:
-    * Interest rate risk associated with holding liquid funds in fixed income
-    * ALM risk
-    * Effect on pension scheme liabilities
-* Uncertainty of input and output prices
+* Risk arising from movements of its **own stock price** related to:
+    
+    * Acquisition strength
+    
+    * Takeover risk
+    
+    * *Efficiency* in **raising capital**
 
-**Types of market risks**
+* **Investment risks** related to:
 
-| Type | Cause | Characteristics | Exposed |
-| ---- | ---------------------- | ----------------- | ------------ |
-| Trading Risk | $\Delta$ prices or rates; Other market driven risks; Basis risks | Short term; Able to close-out or hedge in a few days | Investment bank; Dealers; Market-making energy firms; non-financials w/ trading book |
-| ALM | Unmatched interest rate sensitivity; FX; basis | Takes longer to close out; Can be hedged more frequently | Banks; Investment banks; Insurance co.; Energy firms |
-| Liquidity Risk | Inability to fund financial obligations without sizable losses; Insufficient market capacity leading to adverse impact on market price when deal required | Short term | All companies and investors |
+    * **Interest rate risk** associated with holding liquid funds in fixed income
+        
+    * **ALM risk**
+        
+    * Effect on **pension** scheme liabilities
+
+* *Uncertainty* of **input** and **output prices**
+
+***Types of market risks***
+
+**1. Trading Risk**
+
+* **Cause**
+
+    `Prices or rates change`
+    
+    `Other market driven risks`
+    
+    `Basis risks`
+    
+* **Characteristics**
+
+    `Short term`
+    
+    `Able to close-out or hedge in a few days`   
+
+* **Companies Exposed**
+
+    `Investment bank`
+    
+    `Dealers`
+    
+    `Market-making energy firms`
+    
+    `Non-financials w/ trading book`
+    
+**2. ALM**
+
+* **Cause**
+
+    `Unmatched interest rate sensitivity`
+    
+    `FX`
+    
+    `Basis`
+    
+* **Characteristics**
+
+    `Takes longer to close out`
+    
+    `Can be hedged more frequently`
+
+* **Companies Exposed**
+
+    `Banks`
+    
+    `Investment banks`
+    
+    `Insurance co.`
+    
+    `Energy firms`
+    
+**3. Liquidity**
+
+* **Cause**
+
+    `Inability to fund financial obligations without sizable losses`
+    
+    `Insufficient market capacity`  
+    Leading to adverse impact on market price when deal required
+    
+* **Characteristics**
+
+    `Short Term`
+    
+* **Companies Exposed**
+
+    `All companies and investors`
+
+<!-- | Type | Cause | Characteristics | Exposed | -->
+<!-- | ---- | ---------------------- | ----------------- | ------------ | -->
+<!-- | **Trading Risk** | $\Delta$ prices or rates; <span style="color:grey">Other market driven risks</span>; Basis risks | Short term; Able to close-out or hedge in a few days | `Investment bank`; `Dealers`; `Market-making energy firms`; `Non-financials w/ trading book` | -->
+<!-- | ALM | Unmatched interest rate sensitivity; <span style="color:grey">FX</span>; basis | Takes longer to close out; Can be hedged more frequently | `Banks`; `Investment banks`; `Insurance co.`; `Energy firms` | -->
+<!-- | Liquidity Risk | Inability to fund financial obligations without sizable losses; <span style="color:grey">Insufficient market capacity leading to adverse impact on market price when deal required</span> | Short term | `All companies and investors` | -->
 
 ![](figures/Exam ST9 - 3.png)
 
-Other market risk:  
-Option risks (prepayment of mortgage), exposures to other market prices (real estate prices), etc
+Other market risk:
+
+* Option risks (prepayment of mortgage)
+
+* Eposures to other market prices (real estate prices), etc
 
 ***
 
-### Economic Risk
+#### Economic Risk
 
 <a name="econ-risk"></a>
 
-Risks arising from the impact of macro factors
+Risks arising from the impact of **macro factors**
 
-* Aggregate supply and demand
-* Government policies (own and foreign e.g. trade barriers)
-* Unemployment levels
-* (Salary) Inflation, interest and FX
-* Accommodation costs
+* Aggregate **supply and demand**
+
+* **Government policies** (own and foreign e.g. trade barriers)
+
+* **Unemployment** levels
+
+* (Salary) **Inflation**, **interest** and **FX**
+
+* **Accommodation costs**
 
 Closely related to market risk
 
 ***
 
-### Interest Rate Risk
+#### Interest Rate Risk
 
-Risk from unanticipated  $\Delta$ in interest rates level or shape of the yield curve
+Risk from *unanticipated* $\Delta$ in interest rates **level** or **shape** of the yield curve
 
-* Impact on customer behavior or financial impact
+* Impact on **customer behavior** or **financial impact**
 
 Subset of [market risk](#mkt-risk) or [economic risk](#econ-risk)
 
 ***
 
-### FX Risk
+#### FX Risk
 
-Risk from exposure to movement in FX rates
+Risk from exposure to *movement* in FX rates
 
 * Arise when CF received are in a currency different from the CF due
 
 Subset of [market risk](#mkt-risk) or [economic risk](#econ-risk)
 
-Effect of FX rate movements:
+***Effect*** of FX rate movements:
 
-* Transaction exposure: foreign revenues expressed in the home currency
-* Economic exposure: prices of exported good affecting foreign sales
-* Translation exposure: consolidated accounts
+* **Transaction exposure**: foreign revenues expressed in the home currency
+
+* **Economic exposure**: prices of exported good affecting foreign sales
+
+* **Translation exposure**: consolidated accounts
 
 ***
 
-### Basis Risk
+#### Basis Risk
 
-Risk from differences in the movements of two comparable indices
+Risk from differences in the *movements* of two **comparable indices**
 
 * E.g. Different stock indices so that offsetting investments in a hedging strategy doesn't experience exactly offsetting movements
 
@@ -176,25 +280,29 @@ Risk of changes in the relative rates of two indices
 
 ***
 
-### Credit & Counterparty Risk
+#### Credit & Counterparty Risk
 
-Credit Risk:
+***Credit Risk***:
 
-* Risk that a counter-party to an agreement will be unable or unwilling to make the payments required (Doesn't have to be bankruptcy)
+* Risk that a counter-party to an agreement will be **unable** or **unwilling** to make the *payments required*  
+(Doesn't have to be bankruptcy)
+
 * A more narrow definition:  
-Risk that a borrower will partially or wholly default on repayment of debt; Only covers default and not spread risk
+Risk that a borrower will partially or wholly **default on repayment of debt**
 
-Counter-party risk:
+    * Only covers default and not spread risk
 
-* Risk that another party to an agreement fails to perform its contractual obligations (or perform in a timely manner)
+***Counter-party risk***:
+
+* Risk that another party to an agreement **fails to perform** its *contractual obligations* (or perform in a *timely manner*)
+
 * e.g. default on derivatives transaction or failure of an outsourcing company
 
+* Typically considered under the wider credit risk category or use interchangeably
 
-Typically considered under the wider credit risk category or use interchangeably
+* **Full definition**: Risk of loss due to contractual obligations not being met (quantity, quality, or timing) either in part or in full, whether due to inability of, or decision by, the counter-party
 
-* Risk of loss due to contractual obligations not being met (quantity, quality, or timing) either in part or in full, whether due to inability of, or decision by, the counter-party
-
-Components of credit risk:
+***Components of credit risk***:
 
 1. Probability of default (PD)
 2. Loss given default (LGD)
@@ -203,7 +311,7 @@ Credit risk can sometimes include risks relating to variations in credit spreads
 
 * In Sweeting, $\Delta$ in asset value due to $\Delta$ credit spread is a market risk
 
-Example of credit risk (Lam):
+***Example of credit risk*** (Lam):
 
 * Late payment by creditors
 * Financial loss due to counter-party failure to uphold agreement
@@ -211,61 +319,88 @@ Example of credit risk (Lam):
 
 ***
 
-### Liquidity Risk
+#### Liquidity Risk
 
-Risk of not being able to meet short-term cashflow requirements
+Risk of not being able to meet **short-term cashflow** requirements
 
-Funding liquidity risk:  
-Risk of money markets not being able to supply funding to businesses when required
+**Funding liquidity risk**:  
+Risk of `money markets` *not being able* to **supply funding** to businesses when required
 
-Market liquidity risk:  
-Insufficient capacity in the market to handle asset transactions at the time when the deal is required (w/o material impact on price)
+**Market liquidity risk**:  
+**Insufficient capacity** in the `market` to handle asset transactions at the time when the deal is required (w/o material impact on price)
 
 ***
 
 ### Insurance Risk
 
-Risk arises from fluctuations in the timing, frequency and severity of insured events, relative to the expectations of the firm at the time of underwriting or pricing (Mortality, morbidity, P&C risks)
+Risk arises from **fluctuations** in the `timing`, `frequency` and `severity` of insured events
 
-* Can include persistency and expense risks for insurance companies
-* Typically same as underwriting risk
-    * Alternatively, u/w risk can mean risk of inappropriate selection and approval of insurance risks (for P&C company this is typically bucketed under Op-Risk)
+* Relative to the expectations of the firm at the time of underwriting or pricing (Mortality, morbidity, P&C risks)
+
+* Can include **persistency** and **expense** risks for insurance companies
+
+* Typically = underwriting risk
+    
+    * Alternatively, u/w risk can mean risk of **inappropriate selection** and approval of insurance risks  
+    (For P&C company this is typically bucketed under Op-Risk)
+    
 * Lam calls this actuarial risk
     
-Components of insurance risk
+***Components of insurance risk***
 
-* Demographic risk
-    * Mortality and longevity risks
-    * Morbidity risks (diagnosis of critical illness)
-    * Proportions married and age differences of partners
-* Non-life insurance risk
-    * Property or casualty risk
+* **Demographic risk**
+    * `Mortality` and `longevity risks`
+    * `Morbidity` risks (diagnosis of critical illness)
+    * Proportions married and age differences of partners etc
+
+* **Non-life** insurance risk
+
+    Property or casualty risk
+
 * Other insurance risk
-    * Persistency risk (uncertainty in # of policies renewing)
-    * Expense risk (expense not being as expected)
+    * **Persistency** risk  
+    (Uncertainty in # of policies renewing)
+    * **Expense** risk  
+    (Expense not being as expected)
     
-Further subcategory of non-life or demographic risk
+***Further subcategory*** of non-life or demographic risk
 
-* Underwriting risk (level risk):  
-Risk that underlying claims incidence (and severity) is not as expected
-* Reserving risk
-    * Volatility risk: uncertainty due to only having a finite pool of policies (process variance)
-    * CAT risk
-    * Trend or cycle risk: risk of future changes in claims frequency and severity
+* **Underwriting risk** (level risk):
+
+    Risk that underlying claims incidence (and severity) is not as expected
+
+* **Reserving risk**
+    * **Volatility risk**: uncertainty due to only having a finite pool of policies  
+    (Process variance)
+    * **CAT** risk
+    * **Trend or cycle** risk: risk of future changes in claims frequency and severity
+
+***
+
+#### Demographic Risk
+
+Risk arises from demographic changes  
+(e.g. mortality rates, impacting both customers and employment)
+
+Can be under: 
+
+* Insurance risk
+* Op-Risk (e.g. Not being able to fill key staff positions)
+* Market risk (e.g. reduction in the size of the company's target market)
 
 ***
     
-### Operational Risk
+### Operational Risk {.tabset}
 
-Risk of losses resulting from inadequate or failed internal processes, people and systems or from external events
+Risk of losses resulting from **inadequate** or **failed** `internal processes`, `people` and `systems` or from `external events`
 
 * Basel definition includes legal risk but exclude strategic and reputational risk
 
-Components of Op-Risk:
+***Components of Op-Risk***:
 
-**Process risk**
+#### Process risk
 
-Ineffective (fail to achieve objective) or inefficient (excessive cost) processes
+**Ineffective** (fail to achieve objective) or **inefficient** (excessive cost) processes
 
 * Natural conflict between optimizing the two
 
@@ -276,9 +411,11 @@ Examples:
 * Inadequate documentations lead to costs (e.g. managing master agreements or communication with clients)
 * Model and data risk (e.g. knight capital's automatic trading algorithm)
 
-**People risk**
+***
 
-Staff constraints, incompetence, dishonesty or poor risk culture
+#### People risk
+
+**Staff constraints**, **incompetence**, **dishonesty** or **poor risk culture**
 
 Examples:
 
@@ -289,11 +426,13 @@ Examples:
 * Moral hazard
 * Adverse selection
 
-**System/technology risk**
+***
 
-Op-risk events due to systems failures, includes
+#### System/technology risk
 
-* System availability, data integrity, systems capacity, unauthorized access and business recovery
+Op-risk events due to **systems failures**, includes
+
+* System `availability`, `data integrity`, `systems capacity`, `unauthorized access` and `business recovery`
 
 It gives rise to risk because it requires significant investment, complex project management to introduce or change and effective oversight/governance
 
@@ -306,10 +445,12 @@ Examples:
 * Inadequate backup or disaster plan
 * Software errors
 * Faulty financial models
-    
-**Event risk**
+ 
+***
+   
+#### Event risk
 
-Risk of loss due to single events that are unlikely but may have serious consequences
+Risk of loss due to **single event** that are unlikely but may have serious consequences
 
 Can have implications for all other types of risk
 
@@ -319,14 +460,18 @@ Examples:
 * Business continuity risk (inadequate contingency plans)
 * Ineffective internal change management (effecting a merger)
 * Ineffective external change management (adapting to regulations change)
-    
-**Business risk** (including reputational risk)
 
-Risk of loss that corresponds to unexpected changes in the competitive environment or to trends that damage the franchise and or operating economics of a business
+***
 
-Includes front office issues and is essentially risk that revenues will not over costs within a given period of time
+#### Business risk 
 
-This is heavily influenced by external factors
+(including reputational risk)
+
+Risk of loss that corresponds to *unexpected changes* in the **competitive environment** or to **trends** that damage the franchise and or operating economics of a business
+
+Includes front office issues and is essentially risk that **revenues will not over costs** within a given period of time
+
+This is *heavily influenced* by **external factors**
 
 Examples:
 
@@ -336,7 +481,11 @@ Examples:
 * Results not meeting stakeholder expectations
 * Damage to reputation or brand value
 
-**Crime risk** (categorize under its origin)
+***
+
+#### Crime risk
+
+(Categorize under its origin)
 
 * People risk (dishonest staff); technology risk (hacking); legal risk
 * Other examples
@@ -348,99 +497,115 @@ Examples:
 
 ***
 
-### Legal Risk
+#### Legal Risk
 
-Risk from the understanding of and adherence to legislation, including changes in accepted interpretation
+Risk from the **understanding** of and **adherence** to legislation, including changes in accepted interpretation
 
-* Breaching the law (lack of awareness, understanding, changes in interpretation by courts, deliberate intent)
-* Inability to demonstrate compliance
+* **Breaching** the law (`lack of awareness`, `understanding`, `changes in interpretation` by courts, `deliberate intent`)
+* *Inability* to **demonstrate compliance**
 
-Consequences: fines, change in credit rating, loss of resources, reputational damage
+**Consequences**:  
+`Fines`, `change in credit rating`, `loss of resources`, `reputational damage`
 
-Legal risks are threefold:
+***Legal risks are threefold***:
 
-1. New legislation due to political or social pressures (can be +/-)
-    * (+) Open up new business opportunities given that they responds to the new legislation before competitors
-    * (-) Additional compliance costs or prohibit some of an organization's activities
-        * Company should be aware at the earliest stage of the possibility of new legislation
+1. **New legislation** due to political or social pressures (can be +/-)
+
+    (+) Open up new business opportunities given that they responds to the new legislation before competitors
         
-2. Provisions in important contracts could give risk to significant problems if certain circumstances where to occur
+    (-) Additional compliance costs or prohibit some of an organization's activities
 
-3. Court judgement against an organization
+    * Company should be aware at the earliest stage of the possibility of new legislation
+        
+2. **Provisions in important contracts** could give risk to significant problems if certain circumstances where to occur
+
+3. **Court judgement** against an organization
     * e.g. Collapse of Equitable Life in UK
     * Need to consider whether the risk of an adverse legal judgement is worthwhile or not
-    
-Typically under Op-Risk
 
 ***
 
-### Regulatory Risk
+#### Regulatory Risk
 
-Risk of losses arising from changes in legislation or regulation
+Risk of losses arising from *changes* in **legislation** or **regulation**
 
-* May also cover compliance risk: losses due to failing to comply with existing legislation or rules
+* May also cover **compliance risk**:  
+Losses due to failing to comply with existing legislation or rules
 
 Typically under Op-Risk as it can be argue that it is a secondary-order risk that is a consequence of other primary risk factors
 
 ***
 
-### Strategic Risk
+#### Strategic Risk
 
-Risks relates to the achievement of an organization's overall strategic business plans and objective
+Risks relates to the *achievement* of an organization's overall **strategic business plans** and **objective**
 
-Covers all Op-Risk that might prevent an organization meeting its objectives
+* Covers all Op-Risk that might prevent an organization meeting its objectives
 
 Basel II exclude strategic risk from op-risk (included in Sweeting though)
 
-Need to measure and manage strategic uncertainties such as business plan assumptions, competitor responses, tech changes etc
+Need to *measure* and *manage* **strategic uncertainties**  
+(e.g. `business plan assumptions`, `competitor responses`, `tech changes` etc)
 
-Need to have feedback mechanisms and contingency plans to ensure the company's strategy is sound over time
+***Mitigation***:  
+Need to have **feedback mechanisms** and **contingency plans** to ensure the company's strategy is sound over time
 
 ***
 
-### Reputational Risk
+#### Reputational Risk
 
-Risk that events of circumstances could have an adverse impact on an organization's reputation or brand value
+Risk that events of circumstances could have an *adverse impact* on an organization's **reputation** or **brand** value
 
 Basel II exclude reputational risk from op-risk (included in Sweeting though)
 
 ***
 
-### Project Risk
+#### Project Risk
 
-Risk of failure relating to a specific undertaken by an organization
-
-Typically under Op-Risk
+Risk of *failure* relating to a **specific undertaken** by an organization
 
 ***
 
-### Political Risk
+### Other Risk {.tabset}
+
+List so far not exhaustive and they are non mutually exclusive either
+
+#### Political Risk
 
 Encompasses a wide range of risks
 
-* Political decisions (social and fiscal) or indecision
-* Changes in government
-* Events related to political instability (terrorism and wars)
+* *Political* **decisions** (social and fiscal) or **indecision**
 
-Different levels of political risk
+* *Changes* in **government**
 
-* Micro level:  
-Affecting specific firms, industry sectors, geographic regions
-* Macro (national) level:  
-e.g. Nationalization of an industry
-* Macro (international) level:  
-e.g. Potentially conflicting actions of different gov on an organization that operates across many countries (complex system of tariffs and quotas)
+* Events related to **political instability** (terrorism and wars)
 
-Boundary between risk categories can be blurred (e.g. action of a gov to devalue the currency will be both political and economic risk)
+***Different levels*** of political risk
+
+* **Micro level**:
+
+    Affecting specific firms, industry sectors, geographic regions
+
+* **Macro** (*national*) level:
+
+    e.g. Nationalization of an industry
+    
+* **Macro** (*international*) level:
+
+    e.g. Potentially conflicting actions of different government on an organization that operates across many countries (complex system of tariffs and quotas)
+
+Boundary between risk categories can be blurred  
+(e.g. action of a government to devalue the currency will be both political and economic risk)
 
 ***
 
-### Agency Risk
+#### Agency Risk
 
-Risk resulting from the misalignment of interest between different stakeholders
+Risk resulting from the **misalignment of interest** between different `stakeholders`
 
-* Can mean the specific risk that the management of an organization will not act in the best interest of other stakeholders
-* (Systemic) bias, like overconfidence
+* Can mean the specific risk that the `management` of an organization will **not act in the best interest** of other `stakeholders`
+
+* **(Systemic) bias** e.g. overconfidence
 
 (See Mod 11 for more)
 
@@ -448,81 +613,90 @@ Can be under people risk (Op-Risk)
 
 ***
 
-### Demographic Risk
+#### Moral Hazard Risk
 
-Risk arises from demographic changes such as mortality rates, impacting both customers and employment
+Action of a party who **behaves differently** from the way they would behave **if** they were *fully exposed* to the consequences of that action
 
-Can be under: 
+Party *behaves* **inappropriately** or **less carefully** than they would otherwise, leaving the organization to bear some of the consequences of the action
 
-* Insurance risk
-* Op-Risk (e.g. Not being able to fill key staff positions)
-* Market risk (e.g. reduction in the size of the company's target market)
+Related to **information asymmetry**, with the party causing the action generally having more information than the organization that bears the consequences
 
 ***
 
-### Moral Hazard Risk
+#### Conduct Risk
 
-Action of a party who behaves differently from the way they would behave if they were fully exposed to the consequences of that action
+Risk that relate to directly to the **relationship** between a `company` and its `customers`
 
-Party behaves inappropriately or less carefully than they would otherwise, leaving the organization to bear some of the consequences of the action
+* Can include:
 
-Related to information asymmetry, with the party causing the action generally having more information than the organization that bears the consequences
-
-***
-
-### Conduct Risk
-
-Risk that relate to directly to the relationship between a company and its customers
-
-* Can include operational failures (e.g. poor control of distribution and/or servicing), information asymmetries, keeping pace with regulatory requirements and customer needs, market conditions, product development activities and strategic objectives
+    **Operational failures** (e.g. poor control of distribution and/or servicing)
+    
+    **Information asymmetries**
+    
+    **Keeping pace** with `regulatory requirements` and `customer needs`, `market conditions`, `product development activities` and `strategic` objectives
 
 ***
 
-### Other Risks
+#### Environmental Risk
 
-List so far not exhaustive and they are non mutually exclusive either
+Risk related to **resources** (`regulation on use`, `depletion` etc) and **pollution** (`emission quotas`, `consequences of non-control`)
 
-**Environmental Risk**
+***Consequences*** with pollution:
 
-Risk related to resources (regulation on use, depletion etc) and pollution (emission quotas, consequences of non-control)
-
-Consequences with pollution:
-
-* Fines, reputational damage, business interruption, global warming
-
-**Social Risk**
-
-Due to uncertainty over the future characteristics of a population
-
-* Age profile, educational standards, health standards, economic wealth, attitudes and lifestyles
-
-**Pension Risk**
-
-Risk of losses to the sponsoring company due to unexpected shortfall of the value of the pension scheme's assets vs liabilities
-
-* e.g. from poor investment returns, improving mortality
-* Can derisk by switching to DC plans or buying-out liabilities or annuity contracts with insurance company
-
-**Culture Risk**
-
-* Corporate culture that limits innovation and resists change
-
-**Residual Risk**
-
-Risk that remain once any action has been taken to treat the risks
+* `Fines`, `reputational damage`, `business interruption`, `global warming`
 
 ***
 
-Maybe move to Mod 29
+#### Social Risk
 
-Pros and cons of **outsourcing**
+Due to uncertainty over the **future characteristics of a population**
+
+* `Age profile`, `educational standards`, `health standards`, `economic wealth`, `attitudes` and `lifestyles`
+
+***
+
+#### Pension Risk
+
+Risk of losses to the sponsoring company due to **unexpected shortfall** of the value of the pension scheme's **assets vs liabilities**
+
+* e.g. from `poor investment returns`, `improving mortality`
+
+***Mitigation***  
+
+* Can derisk by switching to **DC plans** or **buying-out liabilities** or **annuity contracts** with insurance company
+
+***
+
+#### Culture Risk
+
+Corporate culture that **limits innovation** and **resists change**
+
+***
+
+#### Residual Risk
+
+**Risk that remain** once any action has been taken to treat the risks
+
+***
+
+#### Outsourcing Risk
+
+See more in Mod 29
+
+***Pros and cons*** of outsourcing
 
 * Pros:
-    * Specialist organization can increase capacity, reduce costs, time, better quality etc.
-    * Transfer operational and other risks to the 3^rd^ party
+
+    * Specialist organization can **increase capacity**, **reduce costs**, time, **better quality** etc.
+    
+    * **Transfer operational and other risks** to the 3^rd^ party
+
 * Cons:
-    * Introduce new risks e.g. legal
-    * Lose direct control over the risks now being experienced and managed in the outsource (product quality)
+
+    * **Introduce new risks** e.g. legal
+    
+    * **Lose direct control** over the risks now being experienced and managed in the outsource  
+    (e.g. product quality)
 
 ***
 
@@ -530,37 +704,48 @@ Pros and cons of **outsourcing**
 
 The precise categorization of a risk will be dependent on the context
 
-Different definitions of Market Risk
+Different definitions of ***Market Risk***
 
-* Risks related to $\Delta$ in investment market values and other factors correlated with such values (e.g. interest rates), or;
-* Risk related only to stock market prices or more broadly to include interest rate risk, or;
-* Risk of lower sales due to $\Delta$ in market conditions, where the market is where produces and services are sold
+* Risks related to $\Delta$ in **investment market values** and other factors **correlated** with such values (e.g. interest rates), or;
 
-Different definitions of Credit Risk
+* Risk related only to **stock market prices** or more broadly to include interest rate risk, or;
 
-* Risk of fluctuations in the value of corporate bonds due to changes in the credit spread can be either market or credit risk
+* Risk of **lower sales** due to $\Delta$ in **market conditions**, where the market is where produces and services are sold
+
+Different definitions of ***Credit Risk***
+
+* Risk of fluctuations in the value of corporate bonds due to changes in the **credit spread** can be either market or credit risk
+
 * Credit risk and counter-party risk are use interchangeably sometimes
 
-Different definitions of Business Risk
+Different definitions of ***Business Risk***
 
-* All risks to which businesses are exposed
-* Subset of risks which are specific to the type of business undertaken (e.g. insurance risks for insurance co.)
+* **All risks** to which businesses are exposed
 
-Other examples
+* Subset of risks which are specific to the type of **business undertaken**  
+(e.g. insurance risks for insurance co.)
+
+***Other examples***
 
 * Actuarial risk can be risk of an investor failing to meet their objectives or insurance risk
+
 * Insurance and u/w risk can the same thing sometimes
+
 * Op-Risk doesn't really have a single definition
+
 * Demographic risk can be an Op-Risk (people risk of not being able to fill key positions) or market risk (reduction in the size of the company's target market)
+
 * Crime risks can be bucket based on the nature of the crime
+
 * Earthquake will be an insurance risk for a P&C company while it'll be an external event under Op-Risk for a bank
 
 ## Systematic & Non-Systematic Risk
 
-**Systematic risk**:  
-Risk that is not diversifiable or which cannot be fully diversified because it affects a large number of quantities of interest
+***Systematic risk***:
 
-* Systemic can means the same but is often used more specifically to refer to the risk of problems spreading between entities following a trigger event (basically contagion risk)
+Risk that is **not diversifiable** or which cannot be fully diversified because it affects a large number of quantities of interest
+
+* **Systemic** can means the same but is often used more specifically to refer to the **risk of problems spreading between entities** following a trigger event (basically [contagion risk](#contagion))
 
 Example:
 
@@ -568,8 +753,9 @@ Example:
 * Industry specific risk can not be fully diversify as there is a limited number of sectors to prevent complete diversification
 * Pension liabilities that are linked to market interest rate
 
-**Non-systematic risk**:  
-Risk factors that are uncorrelated with or possibly independent from other sources of risk
+***Non-systematic risk***:
+
+Risk factors that are **uncorrelated** with or possibly independent from other sources of risk
 
 * These risk are largely diversifiable
 
@@ -578,49 +764,64 @@ Example:
 * The $\alpha$ individual company return component of the return on individual shares
 * Typical insurance risks that we pool together
 
-**Situation-Dependent Risk**
+***Situation-Dependent Risk***
 
-Risks might be uncorrelated in normal market conditions, but correlation might arise under extreme stress
+Risks might be uncorrelated in normal market conditions, but **correlation might arise under extreme stress**
 
 A lack of past correlation might just mean that they are non-systematic under the conditions prevailing during the period of observations
 
-**Concentration of Risk**
+***Concentration of Risk***
 
 Concentration of risk can arise from:
 
-* Inability to diversify risk (either self or externally imposed constraints)
-* Deliberate decisions (taking advantage of risk as a opportunity)
-* Poor risk management
+* **Inability** to diversify risk  
+(Either self or externally imposed constraints)
+
+* **Deliberate** decisions  
+(Taking advantage of risk as a opportunity)
+
+* **Poor risk management**
 
 Concentration of risk was the contributory factor for many risk management disasters
 
-## Contagion
+## Contagion {#contagion}
 
-Financial contagion:  
-Situations where financial losses in one company or sector or country lead to losses in another (can also be refer to as systemic risk like in Lam)
+***Financial contagion***:  
+Situations where financial losses in one company or sector or country lead to losses in another
 
-There are market wide contagion risks that can affect and destabilize whole sectors, particularly financial institutions
+There are market wide contagion risks that can *affect* and *destabilize* whole sectors, *particularly* `financial institutions`
 
-* Risk faced by institutions are often intertwined
-* Institutions, markets and countries' economies are often interdependent
+* Risk faced by institutions are often **intertwined**
+* Institutions, markets and countries' economies are often **interdependent**
 
-Example:
+***Example***:
 
-* Failure of a commonly used financial infrastructure (like VISA cards)
-* Funding liquidity risk as we saw in 2008
-* Common market positions, where a change in share price results in further change (e.g. short squeeze)
-* Exposure to a common counter-party, where a failure in one organization causes another to fail or creates a lack of confidence in the sector
-    * E.g. Default of a company and lead to its creditors and suppliers experience financial difficulties and create a chain reaction
+* Failure of a **commonly used financial infrastructure** (like VISA cards)
+
+* **Funding liquidity** risk as we saw in 2008
+
+* **Common market positions**, where a change in share price results in further change (e.g. short squeeze)
+
+* Exposure to a **common counter-party**, where a failure in one organization causes another to fail or creates a lack of confidence in the sector
+
+    * e.g. Default of a company and lead to its creditors and suppliers experience financial difficulties and create a chain reaction
+    
     * Therefore some institutions are "too big to fail"
-* Credit contagion when failure of one bank leads to losses at another; Market participants reduce the amount of credit available due to imperfect information about the scale and location of losses $\Rightarrow$ Increase the likelihood of further bank failure
+    
+* Credit contagion when failure of one bank leads to losses at another
 
-Loss of reputation and confidence can precipitate collapse
+    Market participants **reduce the amount of credit available** due to **imperfect information** about the `scale` and `location of losses`
+    
+    $\hookrightarrow$ Increase the likelihood of further bank failure
 
-* Event doesn't have to cripple the company but just triggers a death spiral
-* e.g. run on bank
+***Loss of reputation and confidence*** can precipitate collapse
+
+* Event doesn't have to cripple the company but just triggers a death spiral  
+(e.g. run on bank)
+
 * Modern technology driven media can further increase the speed of collapse
 
-Contagion can arise from many investors using the same flawed logic
+Contagion can arise from many ***investors using the same flawed logic***
 
-* Financial economics has only been around for 100 years and some of its theories are still at a relatively early stage of development
-* E.g. Quant Fund crisis in 2007
+* Financial economics has only been around for 100 years and some of its theories are still at a relatively early stage of development  
+(e.g. Quant Fund crisis in 2007)
