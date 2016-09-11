@@ -64,4 +64,160 @@ output:
 
 ***
 
-5. 
+5. Financial contagion
+
+    * See notes
+    * List out the different examples from Mod 3 Contagion section
+    
+***
+
+6. Credit spread (Market or credit risk)
+
+    * Describe why it should be market but it's not universal
+
+***
+
+7. How to classify the risk category for IT hacking
+
+    * Why it could be social, tech, op, or legal
+    
+***
+
+8. Examples of:
+
+    Financial risks with differing level sof volatility
+      
+    Financial risk with foreign investment not concerned with currency movement
+      
+    2 types of interest rate risk (Check with module again)
+    
+    * credit card vs mortgage
+    * Inability to transfer currency across national borders
+    * Effect of a change in short term interest rates by a central bank
+    * Effect of an increase in interest rates on consumers' disposable income
+    
+***
+
+9. <span style="background:yellow">Recommendations of the Cadbury Report into corporate governance</span>
+
+    * See Mod 4 notes
+    * $\star$ The purpose listed in the solution is worth reading through though mostly straightforward
+    
+***
+
+10. <span style="background:yellow">Arguement for: highlevel principle based rules vs detailed prescriptive rules for corporate governance</span>
+
+    * Principles based:
+    
+        * Corporate landscape too diverse, no one set of rules will be suitable in all circumstances
+        * Detailed rule can cause moral hazard, whereby professionals feel less inclined to behave in a moral way, and are tempted to see the rules as hurdles to overcome
+        
+    * Detailed percriptive based:
+    
+        * Easier to enforce and police
+        * Give public confidence that annual reports and executive behavior are being controlled and monitored
+        * More level playing field as all players have to comply with the same rules
+        
+***
+
+11. Best practice w.r.t ensuring independence of the Board
+
+    * BoD majority NED
+    * Subcommittees exclusively NEDs
+    * CEO not the chair of the board (else give rationale)
+    * BoD should meet regularly without the CEO
+    * NED should meed independently of EDs at least annually
+
+***
+
+12. Best practice w.r.t. Board compensation arrangements
+
+    * Set objects for CEO and appraise aginst
+        * Should include reference to ris management
+    * Majority should be in terms of shares
+        * With vesting schedules and clawback provisions
+    * Board remuneration should should be disclosed
+    
+***
+
+13. <span style="background:yellow">Describe the following</span>
+
+    * **Listing Rules**
+      
+        What companies must achieve before listing shares
+        
+        Incl. corporate governance, accounting, and disclosure issues
+        
+        Have to continue to comply
+        
+    * **UKLA**
+        
+        Branch of FCA that deals with managing the listing of new companies on the UK stock exchange and ongoing monitoring of companies already listed
+        
+    * **AIM**
+      
+        Stock market that list many smaller companies whose shares are too thinely traded to justify inclusion on the main stock market
+        
+        Enables smaller companies to gain access to capital from the London markets
+      
+    * **Office of Fair Trading**
+      
+        Body that monitors and regulates the stock exchange itself
+        
+        Looks into issues of liquidity, membership restrictions, membership fees, M&A
+        
+***
+  
+14. <span style="background:yellow">Why might UKLA delist a company</span>
+
+    * Misleading information on the company's performance
+    * Failure to comply with the listing criteria (e.g. frequently published information, directors' share dealings, minimum 25% of the shares freely available in the market etc)
+    * Inappropriate behavior (e.g. treating s/h unfairly)
+    
+***
+
+15. <span style="background:yellow">6 Advantages of SII over SI</span>
+
+    1. More entity specific, more sensitive to the risks exposed
+    2. Deal with asset side as well
+    3. Capture market, credit and op-risk (inaddition to insurance risk)
+    4. Risk mitigation techniques are taken into account (not everything is capital related)
+    5. More prospective (account for future business plan and potential CAT)
+    6. Diversification across sector
+    7. Consistent with Basel
+    8. Consistent across EU (good for multinationals)
+
+***
+
+16. COSO Framework
+
+    * See Mod 5 COSO Cube
+    * All the dimensions and all the items
+
+***
+
+17. 8 Stage of RAMP
+
+    * Module 6
+    1. Launch
+    2. Risk identification
+    3. Risk analysis
+    4. Financial evaluation
+    5. Risk mitigation
+    6. go/no-go decision
+    7. Risk control
+    8. Closedown
+    
+***
+
+18. how to measure extreme events and 4 potential events
+
+    * Based on Mod 7
+    * Model
+    * Stress and scenario testing
+    * Imagine potential scenarios (not just past events)
+    * Look at effect on key variables (e.g reputation, liquidity, gearing, asset cover, income cover, capital)
+    * Impact of reinsurance
+    * Example events: terrorism, natural disaster, IT failures, power failures, market crash
+    
+### Exam Style Questions
