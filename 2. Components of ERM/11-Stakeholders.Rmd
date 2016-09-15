@@ -77,400 +77,581 @@ Someone who **supports** and **participates** in the **survival** and **success*
 * Express considered views on the company  
 (e.g. `corporate governance`, `Board composition`, `remuneration`)
 
-* (8optionally*) manage their **proxy voting**
+* (*optionally*) manage their **proxy voting**
 
-Shareholder becomes more influential and vocal on controversial issues when they subcontract their responsibilities to such organization
+***Benefits***: 
 
-Concerns on the role of proxy advisers:
+* Shareholder becomes **more influential** and vocal on controversial issues when they subcontract their responsibilities to such organization
 
-* Power but **no responsibility**: they can influence a high proportion of voting rights but have no interest in the outcome of the vote
-* Potential for **conflict of interest**: some firms provide consulting and other services to the companies on which they are making voting recommendations
-* **"Tick-box" (quantitative) methodology**: common template is applied to all firms with little considerations being given to qualitative aspects of the individual circumstances of each company being assessed
+***Concerns*** on the role of proxy advisers:
+
+* Power but **no responsibility**: 
+
+    They can influence a high proportion of voting rights but have no interest in the outcome of the vote
+    
+* Potential for **conflict of interest**:  
+
+    Some firms provide consulting and other services to the companies on which they are making voting recommendations
+    
+* **"Tick-box" (quantitative) methodology**: 
+
+    Common template is applied to all firms with little considerations being given to qualitative aspects of the individual circumstances of each company being assessed
 
 ### Customers and Policyholders
 
-Characteristics and Roles:
+***Characteristics and Roles:***
 
-* Seek both good value for money and security of the company
-*  Very weak individually but collectively can have greater power
-    * Especially when supported by consumer advocacy groups
-* Have different perspectives depending on the type of org.
-    * Bank customers: similar risk appetite as debtholders
-    * Building society account holders: similar risk appetite as shareholders
-    * Insurance company p/h: can be either pure customers or shareholders (mutual company)
+* Seek both **good value** for money and **security** of the company
+
+*  Very **weak individually**
+
+    * *Collectively* can have greater power especially when supported by consumer advocacy groups
+
+* Have different **perspectives depending on the type** of org.
+
+    * `Bank customers` risk appetite $\approx$ **debtholders**
+
+    * `Building society account holders` risk appetite $\approx$ shareholders
+
+    * `Insurance company p/h`: `pure customers` or `shareholders` (mutual company)
     
 #### Aspects of Customer Management
 
-***Acquiring*** new customers (and retaining)
+***Acquiring*** and ***retaining*** customers
 
-* Can increase value by improvements in attracting and retaining the right customers
-* Company in practice have high customer turnover
+* Can increase value by improvements in *attracting* and *retaining* the **right customers**
+
 * Retention is particularly important as it is cheaper to retain
-* Long term customers are particularly valuable as they tend to purchase larger quantities, less price sensitive and more likely to recommend the company
 
-***Retaining*** customer **loyalty**
+    * Company in *practice* have **high customer turnover**
+  
+    * **Long term customers** are particularly valuable:
 
-* Dissatisfied customers will leave and might dissuade potential customers from purchasing
-* Not sufficient to merely satisfy a customer, need to perform sufficiently well to retain the customer's loyalty (i.e. continues to purchase from the company)
+        * Tend to **purchase larger quantities**
+        
+        * **Less price sensitive**
+        
+        * More **likely to recommend** the company
+
+**Retaining** customer ***loyalty***
+
+* Dissatisfied customers: 
+
+    * Will leave
+    
+    * Might dissuade potential customers from purchasing
+
+* Need to perform sufficiently well to retain the customer's loyalty  
+(i.e. continues to purchase from the company)
+
+    * Not sufficient to merely satisfy a customer
 
 ***Knowing*** your customer
 
-Customer surveys, feedback and data mining
+* Customer surveys, feedback and data mining
 
-Keep in mind of customer privacy
+* Keep in mind of customer privacy
 
 Effective ***crisis management***
 
-Crisis generally damages reputation unless handled well (with might actually enhance it)
+* Crisis generally **damages reputation unless handled well**  
+(with might actually enhance it)
 
-Company should have contingency plans in place before a crisis occurs
+* Company should have **contingency plans** in place before a crisis occurs
 
-* Should not try to cover it up, should be honest
-* Act swiftly and resolve it
-* Keep stakeholders informed
-* Focus on the long-term future of the business rather than minimizing short term cost
+* When a crisis strikes:
+
+    * Should **be honest**; do not try to cover it up
+    
+    * **Act swiftly** and resolve it
+    
+    * **Keep stakeholders informed**
+    
+    * **Focus on the long-term** future of the business rather than minimizing short term cost
 
 ### Directors
 
-Characteristics and Roles:
+***Characteristics and Roles***:
 
-* Need to balance the needs of other stakeholders w/ their own personal goals (which may be influenced by the form of remuneration)
+* Need to **balance** the **needs of other stakeholders** and their own **personal goals**  
+(Which may be influenced by the form of remuneration)
+
     * NED can conflict with shareholders with things such as need to maintain their directorship and remuneration
-* Have significant duty of care in terms of risk management
-* Need to fully understand the business and are able and willing to challenge management decisions
-* Need to ensure that the company remains compliant with all relevant regulation
-* NED: responsible purely for safeguarding the interests of shareholders
-* ED: hold roles within the firm and can be considered to an extend as employees
-* Share similar risk perspectives as shareholders (they are shareholder's agents)
-    * Additional responsibility of determining the value of the assets and liabilities of the company
-* ED being employees will share the same risk perspectives as employees
+
+* Have significant **duty of care** in terms of *risk management*
+
+* Need to fully **understand the business**
+
+* *Able* and *willing* to **challenge management decisions**
+
+* Need to ensure that the **company remains compliant** with all relevant **regulation**
+
+* Risk perspectives $\approx$ `shareholders`  
+(since they are shareholder's agents)
+
+    * Additional responsibility:  
+    Determining the **value** of the `assets` and `liabilities` of the company
+
+* **NED**:  
+Responsible *purely* for **safeguarding the interests of shareholders**
+
+* **ED**:  
+**Hold roles within the firm** and can be considered to an extend as **employees**
+
+    * ED risk perspectives $\approx$ `employees`  
+(since they are employees)
 
 ### Employees
 
-Characteristics and Roles:
+***Characteristics and Roles***:
 
-* Should be part of the day-to-day ERM process (not just ERM and IA)
-* Job security and benefits is directly related to the profitability and security of the company
-* Part of the company's op-risk (management and retention of staff and their inherent expertise)
+* Should be part of the **day-to-day ERM process** (not just ERM and IA)
 
-Employees that may present higher levels of agency risk
+* Seek **Job security** and **benefits**
 
-* Employees further down the organization org. chart
-* Members of unions (may organize strikes, demand standardized wage arrangements and can influence employee's morale)
-* Free agents
+    * Directly related to the **profitability** and **security** of the **company**
+    
+* Part of the **company's op-risk**  
+(e.g. management and retention of staff and their inherent expertise)
+
+    * Employees with higher levels of **agency risk**
+
+        * **Low level** employees
+        
+        * **Members of unions**
+        
+              (They may organize strikes, demand standardized wage arrangements and can influence employee's morale)
+              
+        * **Free agents**
 
 #### Aspects of Employee Management
 
-3 key aspects of employee management and the potential effects of each
+3 **key aspects** of employee management and the **potential effects** of each
 
-***Recruitment***
+1. ***Recruitment***
 
-Companies need to identify and recruit the right individuals
+    * Companies need to identify and recruit the right individuals
+      
+    * `Cash compensation`, `incentives` and `benefits` are important
 
-Cash compensation, incentives and benefits are important
+2. ***Retention, promotion and training***
 
-***Retnetion, promotion and training***
+    * **Turnover can be costly**: Skills and knowledge are lost (or strengthen a competitor)
+      
+    * **Career development programmes** and **continual training**: Can improve `employee morale`, `retention` and `productivity`
+      
+    * Important that employees **feel valued** and that their **achievements are recognized**
 
-Turnover can be costly as skills and knowledge are lost (or strengthen a competitor)
+3. ***Dismissal and resignations***
 
-Employee morale, retention and productivity can be improved by career development programmes and continual training
+    * **Large scale redundancies**:
+    
+        * Adversely **affect morale**
+        
+        * Can lead to **voluntary resignations** by other  
+        (perhaps highly value employees)
+      
+    * **Managed programme of dismissals** (up or out) can increase employee motivation
+      
+    * **Exit interviews** are good ways to find out why employees are leaving and can address these issues for the future
 
-Important that employees feel valued and that their achievements are recognized
+***Key groups*** of employees to **align their interest with shareholders**
 
-***Dismissal and resignations***
+* Central risk function and CRO
 
-Large scale redundancies adversely affect morale and can lead to voluntary resignations by other (perhaps highly value employees)
+    Assess the level of risk across the org. and enforce risk management policies)
 
-Managed programme of dismissals (up or out) can increase employee motivation
+* **Pricing** teams
 
-Exit interviews are good ways to find out why employees are leaving and can address these issues for the future
-
-***
-
-Key groups of employees to align their interest with shareholders
-
-* Central risk function and CRO (assess the level of risk across the org. and enforce risk management policies)
-* Pricing teams (instrumental in ensuring the profitability of the company)
+    Instrumental in ensuring the profitability of the company
 
 Important to align their interests with those of the shareholders through proportionate rewards for taking appropriate risk
 
 ### Regulators
 
-Characteristics and Roles:
+***Characteristics and Roles***:
 
-* Ensure companies comply with the relevant regulatory standards
-* Protect the stability of markets
-* Balance is key, needs to be sufficient controls to protect other stakeholders (customers and p/h) but can not be so restrictive that the market is constrained and can not operate freely and efficiently
-* Need appropriate intervention process that ensures that issues are dealt with in good time but also allows opportunity for correction and improvement (avoid closing down operations unnecessarily)
-* More details in Mod 5
+* Ensure **compliance** with the relevant regulatory standards
 
-**Post 2008 Regulatory/Superivsory Change**
+* Protect the **stability of markets**
 
-Regulators haven taken a much greater interest in companies' RM practices and capital requirements and stress tests have become more stringent since 2008
+* **Balance is key**
 
-Companies are subjected to more regulation from multiple sources (e.g. gov and stock exchange) $\therefore$ Boards are more actively involved in the oversight of risk (esp. strategic risk)
+    Needs to be **sufficient controls** to protect `other stakeholders` (customers and p/h) 
+      
+    Can not be so restrictive that the market is constrained and can not **operate freely and efficiently**
+
+* Need appropriate **intervention process**
+
+    To ensures that issues are dealt with in good time but also allows opportunity for correction and improvement (avoid closing down operations unnecessarily)
+
+* More details in Module 5
+
+***Post 2008 Regulatory/Superivsory Change***
+
+* Much greater interest in companies' `RM practices` and `capital requirements`
+
+* `Stress tests` have become more stringent
+
+* Companies are subjected to **more regulation from **multiple sources**  
+(e.g. gov and stock exchange)
+
+    $\therefore$ Boards are more actively involved in the oversight of risk (esp. strategic risk)
 
 * Updated SEC disclosure requirements
+
 * Temporary bans on short-selling
-* Dodd Frank
-    * New regulators: Consumer Financial Protection Bureau in US
-    * Requirements for banks to have an orderly liquidation plan
-* Replacement of the FSA with PRA and FCA in UK (mod 5)
-* Greater likelihood that a company's regulatory capital requirement will exceed those determined by their own internal model
+
+* **Dodd Frank**
+    
+    * **New regulators**: Consumer Financial Protection Bureau in US
+    
+    * Requirements for banks to have an **orderly liquidation plan**
+
+* Replacement of the FSA with **PRA and FCA** in UK (See module 5)
+
+* Greater likelihood that a company's `regulatory capital` requirement will *exceed* those determined by their own `internal model`
 
 ### Government
 
-Characteristics and Roles:
+***Characteristics and Roles***:
 
-* Set regulations and legislation
-* Intervene when companies get into trouble
-    * Lender of last resort
-    * Nationalization of a company that would otherwise fail
+* *Set* **regulations** and **legislation**
 
-4 key risks faced by governments
+* **Intervene** when companies get into trouble
+    
+    * **Lender of last resort**
+    
+    * **Nationalization of a company** that would otherwise fail
 
-* Insufficient tax revenues
-* Inappropriate insolvencies (failure of strategically important org. lead to contagion risk)
-* Regulatory arbitrage
-* Electoral losses
+***4 key risks faced by governments***
+
+1. Insufficient tax revenues
+
+2. Inappropriate insolvencies  
+(failure of strategically important org. lead to contagion risk)
+
+3. Regulatory arbitrage
+
+4. Electoral losses
 
 ### Professional Advisors
 
-Characteristics and Roles:
+***Characteristics and Roles***:
 
-External auditors
+* **External auditors**
+  
+    * Perform **annual reviews** of accounts
+  
+    * *Assessments* of the **inherent risks** and the ways in which those risks are being managed
+  
+        * Effectiveness depend on the degree of disclosures and the extent to which issues are hidden by the management of a company
 
-* Perform annual reviews of accounts
-* Assessments of the inherent risks and the ways in which those risks are being managed
-    * Effectiveness depend on the degree of disclosures and the extent to which issues are hidden by the management of a company
-* Duty to report openly and honestly on the state of the company on behalf of shareholders and regulators
+  * **Duty to report openly and honestly** on the state of the company on behalf of shareholders and regulators
 
-Other professional advisers
-
-* Request from management to investigate and report on specific matters (e.g. provide assurance or otherwise to the various stakeholders)
-* Bring independent technical expertise and industry bench-marking information
+* **Other professional advisers**
+  
+    * **Request from management** to *investigate* and *report* on specific matters  
+    (e.g. provide assurance or otherwise to the various stakeholders)
+    
+    * Bring **independent technical expertise** and industry **bench-marking information**
+    
     * Management doesn't have to act on their findings
 
-3 risk faced by professional advisers:
+***3 risk faced by professional advisers***:
 
-* Reputational risk
-* Risk of litigation
-* Conflict of interest (e.g. same accounting firm providing both audit services and consulting services to the same client)
+1. **Reputational** risk
+
+2. Risk of **litigation**
+
+3. **Conflict of interest**  
+(e.g. same accounting firm providing both audit services and consulting services to the same client)
 
 ### Credit Rating Agencies
 
-Characteristics and Roles:
+***Characteristics and Roles***:
 
-* Act as gatekeepers to companies wishing to raise capital
-* Strong influence on share price and can influence the view of external observers
-* Nowadays place much greater emphasis on risk management
-* Conflict of interest from needing to protect reputation and the way their income is generated
+* Act as **gatekeepers** to companies wishing to **raise capital**
 
-2 risk faced by credit rating agencies
+* Strong **influence** on `share price` and can influence the `view of external observers`
 
-* Reputational risk
-* Conflict of interest
+* Nowadays place much **greater emphasis on risk management**
+
+* **Conflict of interest**: Needing to protect `reputation` and the way their `income` is generated
+
+***2 risk faced by credit rating agencies***
+
+1. Reputational risk
+
+2. Conflict of interest
 
 ### Creditors
 
-Characteristics and Roles:
+***Characteristics and Roles***:
 
-* Require repayment of the monies own to them
-* Mostly interest in the security of the company over the repayment term
-* Not concern about specific risks as long as debt are paid
+* **Require repayment** of the money owe to them
+
+* Mostly *interest* in the **security of the company** over the repayment term
+  
+    * Not concern about specific risks as long as debt are paid
+
 * In difficulty, might waive interest payments in order to secure repayment of part of the capital
 
-Key risk for bondholders
+***Key risk for bondholders***
 
-* Depends on debt seniority, presence of security or covenants
+* Depends on debt **seniority**, presence of **security** or **covenants**
+
 * Private debt (e.g. bank facility) is less liquid and more risky
-* Debt finance considerations
-    * Taxation (interest being tax deductible)
-    * Risk of insolvency
-    * Agency cost
-    
-Trade creditors risk
 
-* Lack of power to have their debt repaid
+* Debt finance choice considerations
+
+    * **Taxation** (interest being tax deductible)
+
+    * Risk of **insolvency**
+
+    * **Agency cost**
+    
+***Trade creditors risk***
+
+* **Lack of power** to have their debt repaid
 
 ### Subcontractors and Suppliers
 
-Characteristics and Roles:
+***Characteristics and Roles***:
 
-* Affect directly by the failure of a company or its processes
-    * Both in respect of future income and being potential creditors
-* Companies themselves are exposed to the risk of failure of subcontractors and suppliers (esp. when cost of replacement is high)
+* *Affect directly* by the **failure** of a `company` or its `processes`
+    
+    * Both in respect of **future income** and being **potential creditors**
+
+* Companies themselves are exposed to the **risk of failure** of `subcontractors` and `suppliers` (esp. when cost of replacement is high)
 
 ### Trustees and Beneficiaries of the Pension Scheme
 
-Characteristics and Roles:
+***Characteristics and Roles***:
 
-* Demand security of the pension scheme (dependent on the overall financial security of the sponsoring company)
-* Need to balance scheme security with the cost of benefit provision
-    * Can choose to close a weak scheme rather than increase contributions (might not be in the best interest of active members)
+* Demand **security of the pension scheme** (dependent on the overall financial security of the sponsoring company)
 
-Risk perspectives of **DC scheme members**
+* Need to *balance* **scheme security** with the **cost of benefit provision**
 
-* That of a p/h of investor
-* Share similarities with creditors (e.g. if employer's contribution are unpaid)
+    e.g. Can choose to close a weak scheme rather than increase contributions  
+    (Might not be in the best interest of active members)
 
-Risk perspectives of **DB scheme members**
+Risk perspectives of ***DC scheme members***
 
-* More similar to that of debtholders or customers
-* Scheme sponsor's perspective is that of an equity provider in that they benefit from any surplus but may need to provide additional funds
+* = policyholder or investor
 
-Risk perspectives of **scheme trustees**
+* $\approx$ creditors  
+(e.g. if employer's contribution are unpaid)
 
-* Same perspective as members (as they are member agents)
-* May have conflict of interest depending on their other relationships to the scheme
+Risk perspectives of ***DB scheme members***
+
+* $\approx$ debtholders or customers
+* Scheme sponsor's perspective = equity provider 
+
+    They benefit from any surplus but may need to provide additional funds
+
+Risk perspectives of ***scheme trustees***
+
+* = members (as they are member agents)
+
+* May have **conflict of interest** depending on their other relationships to the scheme
 
 ### General Public
 
-Characteristics and Roles:
+***Characteristics and Roles***:
 
-* Interest through being most of the above (s/h, bond/h, employees, pension scheme members, existing/future customers, taxpayers or the dependents of any of these stakeholders)
-* Can be heavily influenced in their assessment of org. and of risk events by the way in which they are reported
+* Interest through being most of the above  
 
-Speed and geographical spread of the distribution of information has increased from internet and related technologies
+    `S/h`, `bond/h`, `employees`, `pension scheme members`, `existing/future customers`, `taxpayers` or the `dependents` of any of these stakeholders
 
-In can be debate that media have a duty to ensure that reporting is responsible and in the public interest
+* **Assessment** of `the org.` and `risk events` is heavily **influenced by the way they are reported**
 
-* Irresponsible reporting can exacerbate the reaction of those with limited access to other information or with limited expertise and can escalate the problems
+    * Speed and geographical spread of the distribution of information has increased from internet and related technologies
+
+    * In can be debate that media have a duty to ensure that reporting is responsible and in the public interest
+
+        **Irresponsible reporting** can exacerbate the reaction of those with limited access to other information or with limited expertise and can **escalate the problems**
 
 ### Business Partnerships
 
-**Benfits** of a strategic alliance:
+***Benfits of a strategic alliance***:
 
-* Faster product development
-* Access to new markets
-* Sharing of financial risks
-* Benefit from economies of scale
+* **Faster** product development
+
+* **Access** to new markets
+
+* ••Sharing** of financial **risks**
+
+* Benefit from **economies of scale**
 
 **Potential pitfall** of a strategic alliance:
 
-* Conflicts of interest
-* Waste of resources
-* Damage to reputation
-* Loss of intellectual capital and disputes over intellectual property
+* **Conflicts of interest**
 
-Many business partnerships fail to achieve their objectives
+* **Waste** of *resources*
 
-Ways to maximize chance of success
+* *Damage* to **reputation**
 
-* Only form an alliance if it really is the best options
-    * Only to meet a specific goal that can best be met through an alliance
-    * Best if significant control is required but a full merger is unnecessary
-* Find the right alliance partner
-    * Need a decision making team and should reach agreement on the goals of the alliance
-    * Should develop a set of criteria against which potential partners can be evaluated and a ranked list of potential partners
-    * Whole team should meet and grade each potential partner
-* Monitoring the progress of the alliance carefully
-    * Standard financial measure may not be appropriate initially
-        * Focus on quality of work etc
-    * Alliance should not be starved of resources and staff turnover needs to be low
-    * Work of the alliance may need to be reviewed and refocused regularly
+* *Loss of* `intellectual capital` or *disputes* over `intellectual property`
+
+Ways to ***maximize chance of success***
+
+1. Only form an alliance if it really is the best options
+
+    * Only to **meet a specific goal** that can best be met through an alliance
+
+    * Best if **significant control is required** but a full merger is unnecessary
+
+2. Find the right alliance partner
+
+    * Need a decision making team and should reach **agreement on the goals** of the alliance
+
+    * Should develop a set of **evaluation criteria** against which potential partners can be evaluated and a **ranked** list of potential partners
+
+    * **Entire team** should meet and grade each potential partner
+
+3. **Monitoring the progress** of the alliance carefully
+
+    * Standard financial measure may not be appropriate initially  
+    (e.g. Focus on quality of work etc)
+
+    * Alliance should have **sufficient resources** and **low staff turnover**
+
+    * Work of the alliance may need to be **reviewed and refocused regularly**
 
 ## Conflicts between Stakeholders
 
-Conflict between stakeholders will arise due to different objectives
+Conflict between stakeholders will arise **due to different objectives**
 
-* Companies should develop a clear understanding of each stakeholder's interest
-* Interests should be aligned where possible, with this information recorded and disseminated amongst the stakeholders
-* Stakeholder interest and requirements should be reflected in the corporate business plan
+* Companies should develop a clear **understanding of each stakeholder's interest**
+
+* Interests should be **aligned where possible**, with this information recorded and disseminated amongst the stakeholders
+
+* Stakeholder `interest` and `requirements` should be **reflected in the corporate business plan**
 
 ### Agency Risk
 
 Board runs the business for the benefit of the owners (e.g. s/h)
 
-Separation of management and ownership an be **beneficial**
+***Benefits*** of **separation of management and ownership** 
 
 * Have those with expertise in running a business to have decision making responsibilities without investing capital
+
 * Investors can invest without getting involved with day-to-day running of the company
-* Continuity of management despite frequent change in owners
 
-***
+* **Continuity of management** despite frequent change in owners
 
-**Agency risk**:  
-When interest of the owner and agent are not fully aligned, the agent may not always act in the interest of owners
+***Agency risk***:  
+When **interest** of the `owner` and `agent` are **not fully aligned**, the agent may not always act in the interest of owners
 
-* Similar concept: problem of agency, principal-agent problem, agency dilemma
-* Difficulties that arise under conditions of incomplete and asymmetric information when a principal hires an agent
+* Similar concept: `problem of agency`, `principal-agent problem`, `agency dilemma`
 
-Manager may have different interest to shareholders
+* Difficulties that arise under conditions of **incomplete and asymmetric information** when a principal hires an agent
 
-* Can arise due to the way in which management team is compensated
-* Reward short term profits rather than long term investment
+***Managers Remuneration***
 
-Executive comp. is an important consideration and an end objective of an ERM framework should be ensuring that compensation schemes take into account risk in an appropriate manner
+* Managers may have **different interest** to shareholders
+
+    * Can arise due to the way in which management team is compensated
+
+    * Reward short term profits rather than long term investment
+
+* Executive comp. is an important consideration
+
+    * An end objective of an ERM framework:
+    
+        Ensuring that **compensation schemes** take into **account risk* in an appropriate manner
 
 * e.g. Ibanker who are rewarded for good results yet the downside for poor performance is limited
 
-**Agency Cost**:  
-Cost arising from agency risk
-
-* Can include costs associated with mitigating agency risk
-* e.g. developing astute and robust rmuneration and reward schemes, monitoring the actions of others and seeking to influence their actions
-* Include actual losses from these actions
-
-Conflicts or agency risks arise in many situations
+***Situations*** where conflicts or agency risks may arise
 
 * Remuneration of key employees
+
 * Financing decisions
+
 * Situations involving a dominant CEO
+
 * Management decisions
+
+***Agency Cost***:  
+Cost arising from agency risk
+
+* Can *include* **costs** associated with **mitigating** agency risk
+
+    e.g. developing astute and robust remuneration and reward schemes;  
+    monitoring the actions of others and seeking to influence their actions
+
+* Include **actual losses** from these actions
 
 ### Remuneration of Key Employees
 
-Agency risk played a role in 2008 crisis
+***Agency risk played a role in 2008 crisis***
 
-* Underlying misalignment of the interest of employees, management and shareholder in banking due to the short term and asymmetric nature of employee and management reward structure
-* e.g. Employees were given bonuses based on the growth in the total amount loaned $\therefore$ curtailing lending can put loan officer's career at risk
-* Shareholder's interest for the bank was to only lend to fundamentally sound borrowers
-* Competitive forces (such as one bank offering 100% mortgages) exacerbating the lending spiral and drove expansion into higher risk (sub prime) lending
-* e.g. US NINJA loan and UK 120% mortgages
+* Underlying **misalignment of the interest** of `employees`, `management` and `shareholder` in banking
+
+    Due to the **short term** and **asymmetric** nature of employee and management **reward structure**
+
+    e.g. Employees were given bonuses based on the growth in the total amount loaned  
+    $\therefore$ Curtailing lending can put loan officer's career at risk
+
+    * Shareholder's interest for the bank was to only lend to fundamentally sound borrowers
+
+* **Competitive forces** (such as one bank offering 100% mortgages) **exacerbating** the lending spiral and drove expansion into higher risk (sub prime) lending  
+(e.g. US NINJA loan and UK 120% mortgages)
 
 ### Financing
 
-Potential conflict between providers of finance
+***Conflict between providers of finance**
 
 * Lenders (banks, bondholders) and the providers of equity capital (s/h)
-* Difference between the lender's short-term desire for security and the s/h's long term interest in the sound development of the company
+
+* Difference between the lender's `short-term` **desire for security** and the s/h's `long term` **interest in the sound development** of the company
 
 ### Dominant CEO Risk
 
-Risk that the CEO surrounds themselves with "yes" people
+Risk that the CEO surrounds themselves with **"yes" people**
 
 * Who try to win favor with the CEO irrespective of the risks that their decisions generate for shareholders and other stakeholders
 
-Can exist further down the hierarchy in the form of a very dominant manager or team leader
+* Can exist further down the hierarchy in the form of a very dominant manager or team leader
 
-Example:
+***Example***:
 
-* Equitable Life and the Mirror Group (Mod 32) and Confederation Life
+* `Equitable Life` and the `Mirror Group` (Module 32) and `Confederation Life`
+
 * The latter collapsed in 1994 with losses estimated $1.3 bn after a high risk investment strategy set by its domineering Chairman
 
 ### Low-risk Management Decisions
 
-Mangers try to ensure their personal job security by making low risk investment decisions
+Mangers try to ensure their personal **job security** by **making low risk investment decisions**
 
 * Similarly penalize the company's long term profitability and the s/h return
-* Manager may resist M&A that might threaten their own prospects
+
+* Manager may **resist M&A** that might threaten their own prospects
+
     * e.g. Yahoo's resist of takeover by MS in 2008
 
 ### Regulators and Government
 
-Remuneration and career prospects of regulator and politicians may be misaligned with the interest of the general public
+Remuneration and career prospects of `regulator` and `politicians` may be **misaligned with the interest of the general public**
 
-Example:
+***Example***:
 
-* Financial crisis typically lead to greater regulation and higher remuneration of regulators
-* Absence of direct penalties to regulators from failure to regulate the market and market participants properly can result in dysfunction
-* Can further misalign their interest with those of the market and the general public
+* Regulators **rewarded by financial crisis**:  
 
-Debate is on-going on the role of (lack of) regulation as a contributor to the global crisis
+    Crisis typically lead to **greater regulation** and **higher remuneration** of regulators
+
+* **Absence** of direct **penalties to regulators from failure** to regulate the market and market participants properly can result in dysfunction
+
+* Can further **misalign** their interest with those of the `market` and the `general public`
+
+Debate is on-going on the ***role of (lack of) regulation as a contributor to the global crisis***
 
 * Can be argues that some UK regulators have been "punished" as the regulatory system is subsequently restructured
 
-Politician's inherent interest to get re-elected, they can aim to support policies that upset the least number of people in the short term rather than those that are the best long term solutions
+***Line of least resistence***
+
+* Politician's inherent interest to get re-elected, they can aim to support policies that upset the least number of people in the short term rather than those that are the best long term solutions
 
 * Pursuing the "line of lease resistance" rather than the "line of greatest advantage"
