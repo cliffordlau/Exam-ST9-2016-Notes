@@ -20,51 +20,64 @@ Understand the relevance of ERM to all stakeholders
 
 ***
 
-Consider the objectives of various stakeholders and their interest in ERM
+Consider the **objectives** of various `stakeholders` and their **interest in ERM**
 
-* Also consider how these interest may conflict
+* Also consider how these **interest may conflict**
 
 This module covers different areas relating to the implementation of the ERM process within an org., including an understanding of the wide range of stakeholders to whom ERM is relevant and issues arising from this
 
-Exam note:  
-For any given scenario, needs to be able to identify the main stakeholders and discuss their roles  
-Need to be able to analyze a scenario from the RM perspective of a specified stakeholder and to compare and contrast this with the RM perspective of another class of stakeholder
+***Exam note:***
+
+* For any given scenario, needs to be able to **identify** the **main stakeholders** and discuss their **roles**
+
+* Need to be able to analyze a scenario from the **RM perspective of a specified stakeholder**
+
+* **Compare** and **contrast** this with the RM perspective of another class of stakeholder
 
 ## Stakeholders
 
 There is typically a wide range of stakeholders for whom risk measurement and management is highly relevant
 
-Stakeholder:  
-Someone who supports and participates in the survival and success of a company
+***Stakeholder***:  
+Someone who **supports** and **participates** in the **survival** and **success** of a company
 
-Company need to improve risk transparency as stakeholders nowadays want more information about risks than they did in the past
+* Stakeholders nowadayws requires more risk transparency
 
-Stakeholders can be categorized based on their relationship to the company
+* Stakeholders can be *categorized* based on their **relationship to the company**
 
 | Category  | Relationship                               | Example |
 | --------- | ----------------------| ---------------------|
-| Principal | Contribute capital and/or expect a return  | Shareholders, debt-holders, customers, government, insurance market, financial market |
-| Agency    | Paid by principals to perform a specific role on their behalf | Company directors, pension scheme trustees and administrators, company managers, employees, auditors, investment managers | 
-| Controlling | Supervise the principals or their agents | Professional bodies, regulators, industry bodies, government |
-| Advisory | Advise the principal or their agents | Actuaries, lawyers, credit rating agencies, investment advisers, shareholder service providers |
-| Incidental | Affected by the behavior and actions of the principal or their agents | Creditors, suppliers and other business partners, general public, media |
+| **Principal** | Contribute capital and/or expect a return  | `Shareholders`; `debt-holders`; `customers`; `government`; `insurance market`; `financial market` |
+| **Agency**    | Paid by principals to perform a specific role on their behalf | `Company directors`; `pension scheme` trustees and administrators; `company managers`; `employees`; `auditors`; `investment managers` | 
+| **Controlling** | Supervise the principals or their agents | `Professional bodies`, `regulators`, `industry bodies`, `government` |
+| **Advisory** | Advise the principal or their agents | `Actuaries`; `lawyers`; `credit rating agencies`; `investment advisers`; `shareholder service providers` |
+| **Incidental** | Affected by the behavior and actions of the principal or their agents | `Creditors`; `suppliers`; `other business partners`; `general public`; `media` |
 
 ### Shareholders
 
-Characteristics and Roles:
+***Characteristics and Roles***:
 
-* Seek a good return on their investment (dividends and share value) taking into account the inherent degree of risk
-* Strong interest in protecting against any events that could cause a collapse in the share price
-* Equally may week value creation through risk-taking
-* May prefer short term gain (public s/h) or long term investment (private s/h)
-* Relies on directors and auditors to safeguard their investment
-* Have limited power (unless majority holding) until problems become significant
+* **Seek a good return** on their investment (dividends and share value) taking into account the inherent degree of risk
+  
+    * Strong interest in protecting against serious downside  
+    (e.g. any events that could cause a collapse in the share price)
+  
+    * Equally may seek value creation through risk-taking
+  
+    * May prefer `short term` gain (public s/h) or `long term` investment (private s/h)
+
+* **Relies** on `directors` and `auditors` to safeguard their investment (except)
+
+* Have **limited power** (unless majority holding) until problems become significant
 
 ***Shareholder service providers / proxy advisors***
 
 * Act on behalf of shareholders
-* Express considered views on the company (e.g. corporate governance, Board composition, remuneration)
-* (optionally) manage their proxy voting
+
+* Express considered views on the company  
+(e.g. `corporate governance`, `Board composition`, `remuneration`)
+
+* (8optionally*) manage their **proxy voting**
 
 Shareholder becomes more influential and vocal on controversial issues when they subcontract their responsibilities to such organization
 
