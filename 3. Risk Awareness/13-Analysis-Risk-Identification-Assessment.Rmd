@@ -663,11 +663,41 @@ Emerging risk could include ***potential impact*** of:
 
 Due to increase reliance on computers and internet
 
-1. Cyber security
+1. ***Cyber security***
 
-2. Cloud computing
+    Cyber crimis rapidly evolving and becoming increasing sophisticated (crime involving the use of a computer over a network)
+    
+    * **Financial theft**:
+    
+        e.g. hacker accessing bank accounts to steal money
+        
+    * **Data theft**:
+    
+        e.g. accessing customer data, confidential business information or proprietary technology
+        
+    * **Attempts to disrupt a business**:
+    
+        e.g. Denial of service attacks
 
-3. Social media
+2. ***Cloud computing***
+
+    Use of external computing resources (hardware, software, and data) in order to reduce costs and provide more flexible and efficient computing
+    
+    * Shares similiar risk to outsourcing
+    
+    * Reduce amount of control over the data and increases the reliance on the risk management capabilities of the 3^rd^ party provider
+
+3. ***Social media***
+
+    Rise of social media offers upside opportunities including acting as an early warning indicator of emerging issues
+      
+    Introduces new risks
+    
+        * May open door for viruses and malware to be easily introduced to corporate network
+        
+        * Reputational risk is increased as brand image can be rapidly destroyed by a careless communication
+        
+        * Productivity maybe impared as employees become distracted by social media
 
 ### Identification and Analysis
 
