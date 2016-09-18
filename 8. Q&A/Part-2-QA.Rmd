@@ -15,14 +15,47 @@ output:
 
 1. Risk tolerance vs risk limits
 
-    * See notes
+    * See Module 9 Section "Terminology"
     
 ***
 
 2. CRO key skills; Criteria by which a CRO maybe designated as a "risk expert"
 
-    * 
+    * See Module 12 Section "CRO" $\rightarrow$ "Key Skills Required"
+    
+    * **Dodd-Frank** criteria for risk expert
+        
+        1. Understanding risk management governance
+        
+            Incl. setting risk appetitie, risk policies and reporting
+            
+        2. Knowledge of relevant regulation and legislation
+        
+        3. Experience of identifying, assessing and managing risks
+        
+        4. Knowledge of ERM and business interdependencies
+        
+        5. Ability to lead, advise and Board and challenge on risk strategies and plans
+        
+        6. Experience in risk management tools and applications, including qualitative models and risk measures
+        
+        7. Understanding of usefulness and limitations of risk management strategies
+        
+***
 
+3. Three lines of defence
 
+    * See Module 8 Section "Organizational Structures Supporting ERM" $\rightarrow$ "3 Lines of Defence"
+    
+***
 
+4. 7 risk concepts every employees should be familiar
+
+    * See Module 13 Section "Risk Concepts and Initial Risk Assessment Techniques" $\rightarrow$ "Risk Concepts" 
+
+***
+
+5. Contents and structure of a typical risk management policy
+
+    * See Module 9 Section "Risk Management Policy"
 ## Exam Style Questions
