@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Part 2 (Module 8 - 14): Q&A\"\nauthor: \"C. Lau\"\ndate: \"`r format(Sys.time(), '%B %d, %Y')`\"\noutput: \n  html_document:\n    toc: true\n    toc_float:\n      collapsed: false\n      smooth_scroll: false\n    toc_depth: 4\n---\n\n## Development Questions\n\n1. Risk tolerance vs risk limits\n\n    * See notes\n    \n***\n\n2. CRO key skills; Criteria by which a CRO maybe designated as a \"risk expert\"\n\n    * \n\n\n\n## Exam Style Questions",
+    "created" : 1474214633994.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "98751217",
+    "id" : "F3B05D58",
+    "lastKnownWriteTime" : 1474214951,
+    "last_content_update" : 1474214951996,
+    "path" : "~/Git Repos/Exam ST9 2016 Notes/8. Q&A/Part-2-QA.Rmd",
+    "project_path" : "8. Q&A/Part-2-QA.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
