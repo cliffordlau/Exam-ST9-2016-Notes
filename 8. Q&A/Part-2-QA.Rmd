@@ -57,5 +57,204 @@ output:
 
 5. Contents and structure of a typical risk management policy
 
-    * See Module 9 Section "Risk Management Policy"
+    * See Module 9 Section "Risk Management Policy" $\rightarrow$ "IAA Appendix 6"
+    
+***
+
+6. Areas of consideration in an internal audit of a risk management process
+
+    * See Module 12 Section "Audit" $\rightarrow$ "Internal Audit"
+    
+***
+
+7. Company's responsibilities to other stakeholders from an ERM perspective (besides value creation)
+
+    * **Take risk in a controlled way** so that the business reminas viable for all its stakeholders in the long term
+    
+    * Being responsible for meeting the expectations of other stakeholders
+    
+        * **Economic responsibility**: to creditors and customers
+        
+        * **Legal responsibility**: to the government, regulators or the law
+        
+        * **Ethical responsibility**: to society in general
+        
+        * **Discretionary responsibility**: to the community (e.g. donating employee's expertise and time to worthy causes)
+    
+***
+
+8. \( a \) Quantify risk with frequency and severity; ( b ) Reduce risk concentration
+
+    a. If all the events are independent of each other then combining the probabiliyt and severity and aggregating the results across all such events will give the expected level of harm (one possible risk measure)
+    
+    b. Monitor financial risk through risk limits; manage op-risk through check and balances, separation of op-units and redundant systems
+    
+***
+
+9. Cyclical risk managment procss
+
+    * See Module 8 Section "Risk Management Control Cycles" $\rightarrow$ "ERM Process"
+
+***
+
+10. Define and distinguish between `risk appetite`, `risk profile`, and `risk capacity`
+
+    * See Module 9 Section "Terminology"
+    
+    * Risk appetite: describes the level of risk that an org. wishes to take
+    
+    * Risk profile: describes the level of risk that the org. is actually taking or will actually take
+    
+    * Risk capacity: describes the level of risk with which the org. can cope
+    
+***
+
+11. <span style="background:yellow">Purpose of **risk management policy** and **risk tolerance statement**</span> 
+
+    a. Purpose of risk management policy (Module 9 Section "Risk Management Policy" and other)
+    
+        * Set out how an org. will manage each category of risk to whihc it is exposed
+            * Polices towards using risk mitigation tools  
+            (e.g. reinsurance and ALM) 
+  
+            * Links to `capital management`, `company's objectives and strategy`, and `company's current circumstances`\
+            
+        * Cover similar time period as the business plan
+        
+        * After developing a risk management policy and identifying its exposure to material risk, the insurer can develop a risk tolerance statement
+        
+    b. Purpose of risk tolerance statement (Module 9 Section "Translating Risk Appetite to Action")
+    
+        * See Module 9 Section "Translating Risk Appetite to Action" $\rightarrow$ "Establishing Risk Tolerances and Risk Limits"
+
+***
+
+12. Why bias may present in project appraisal
+
+    * See Module 13 Section "Bias" $\rightarrow$ "Establishing Risk Tolerances and Risk Limits"
+
+***
+
+13. Describe VaR and expression when losses are normally distributed
+
+    * See Module 14 Section "Probabilistic Approaches" $\rightarrow$ "Value at Risk (VaR)"
+    
+***
+
+14. Defined TVaR and outline its use as a risk measure
+
+    * See Module 14 Section "Probabilistic Approaches" $\rightarrow$ "Tail Value at Risk (TVaR)"
+    
+    * Show mathematical definition and in word
+    
+    * Related to Expected Shortfall
+    
+    * Coherent risk measure
+    
+***
+
+15. Meaning of time horizon in a risk model and key considerations
+
+    * See Module 14 Section "Risk Management Time Horizon"
+    
+***
+
+16. RAMP framework for determining the level of risk discount rate
+
+    * See Module 14 Section "Risk Discount Rate"
+    
+***
+
+17. Derive VaR for normal distributed losses
+
+    We want $\Pr(X \leq VaR_{\alpha}) = \alpha$
+    
+    $\begin{align}
+      \Pr(X \leq VaR_{\alpha}) &= \Pr \left( \dfrac{X - \mu}{\sigma} \leq \dfrac{VaR_{\alpha} - \mu}{\sigma} \right) \\
+      &= \Pr \left( Z \leq \dfrac{VaR_{\alpha} - \mu}{\sigma} \right) \\
+      &= \alpha \\
+    \end{align}$
+    
+    Where $Z \sim N(\mu, \sigma^2)$:
+    
+    $\Phi \left( \dfrac{VaR_{\alpha} - \mu}{\sigma} \right) = \alpha$
+    
+    Rearrange to get :
+    
+    $\dfrac{VaR_{\alpha} - \mu}{\sigma} = \Phi^{-1}(\alpha)$
+    
+    Finally:
+    
+    $VaR_{\alpha} = \mu + \sigma \Phi^{-1}(\alpha)$
+
+***
+
+18. Calculate VaR for nomrally distributed losses
+
+    i. 1 Year 99% VaR: $\Phi^{-1}(0.99) \times \text{volatility} \times \text{holding}
+    
+    ii. 10 day 99% VaR given 10 day 95% VaR = \$25m
+    
+        $25 \times \dfrac{\Phi^{-1}(0.99)}{\Phi^{-1}(0.95)} = \$35.36m$
+        
+    iii. 95% VaR with 10m portfolio where average return is 6% and there is a 5% chance that the value of the portfolio will fall by more than 10% over a year
+    
+        $0.06 \times \$10m - (-0.1) \times \$10m$
+        
+***
+
+19. CAPM
+
+    i. Significance of $\beta$
+    
+        $\beta_i = \dfrac{\mathrm{Cov}(R_i, R_M)}{\mathrm{Var}(M)} = \dfrac{\sigma_{iM}}{\sigma_M^2}$
+        
+        Measure systematic risk
+        
+        Indicates how the expected return on a given investment is correlated to the expected return from the market as a whole
+        
+    ii. Calculate expected return of portfolio using CAPM
+    
+        Plug and play
+        
+***
+
+20. <span style="background:yellow">Shortfall-to-quantile ratio</span>
+
+    * $\dfrac{ES_{\alpha}}{VaR_{\alpha}}$
+    
+    * For normal distribution: $\lim \limits_{\alpha \rightarrow 1} \dfrac{ES_{\alpha}}{VaR_{\alpha}} =1$
+    
+    * For t-distribution with $\nu$ d.f.: $\lim \limits_{\alpha \rightarrow 1} \dfrac{ES_{\alpha}}{VaR_{\alpha}} = \dfrac{\nu}{\nu - 1}$
+    
+    * Since $\dfrac{\nu}{\nu - 1} > 1:
+    
+        For a heavy tailed distribution (e.g. t distribution) there is a greater difference between VaR and ES than in the normal distribution
+        
+        So VaR is a more risky measure to use if the loss distribution is heavy tailed, as there is a greater chance that large loss amounts are overlooked
+        
+        Risk can be mitigated to some degree by increasing the $\alpha$ at which VaR is calculated
+        
+***
+
+21. <span style="background:yellow">Advantages of having front line employees manage risk rather than management</span>
+
+    * Pros:
+    
+        * Dedicated RM team does not have the time and resource to identify, assess and manage every risk
+        
+        * Employees are the people most likely to understand the risks in their area of expertise
+        
+        * In theory, all risk would then be managed automatically
+        
+    * Caveat:
+    
+        * Employees need to be trained and educated to do this
+        
+        * Need to understand some risk concepts such as correlation, exposure, probability, etc
+        
+22. Areas of emerging IT risks
+
+    * See Module 13 Section "Emerging Risk" $\rightarrow$ "Emerging IT Risks"
+    
 ## Exam Style Questions
