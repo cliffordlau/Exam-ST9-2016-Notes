@@ -63,6 +63,7 @@ A more *detailed* set of statements (from risk appetite), many `quantitative` or
 Group of `guidelines` that set limits on *acceptable actions* that might be taken today
 
 * Each BUs need to work within the risk limits to be deemed working within it permitted risk tolerances
+
 * Risk limits can be a component of risk capacity
 
 ***Risk Capacity***  
