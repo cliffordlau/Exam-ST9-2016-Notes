@@ -612,6 +612,12 @@ Switching from VaR to TVaR may not be advantageous if the underlying methodology
 
 ## Risk Management Time Horizon
 
+***Time horizon***:  
+
+* Broadly the length of time you are exposed to a particular risk
+
+* How long it takes or how difficult it is to reverse the impact of a decision or an event
+
 ***Level of risk increase with time horizon***
 
 * Larger possible outcomes  
@@ -630,12 +636,15 @@ Switching from VaR to TVaR may not be advantageous if the underlying methodology
 
 * Key issue is the **liquidity of positions impacted** by the decision taken or risk event
 
-* Risk in highly liquid investments can normally be reduced very quickly
+* Risk in highly liquid (e.g. gilts) investments can normally be reduced very quickly
+
+    On the other hand, derivatives, junk bonds, etc may take longer to sell
 
 ***Operational risk exposure***
 
 * Time horizon can be thought of as the **time required for a company to recover** from an event  
-(e.g. fire)
+
+    (e.g. earthquake vs short-term power outage)
 
 ## Risk Discount Rate
 
