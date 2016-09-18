@@ -253,7 +253,7 @@ Policy generally cover a **similar time period** to that of the company's `busin
         
         b. Categories of Risk and Definitions
 
-            \[Example risks for an insurer:
+            Example risks for an insurer:
 
             * Operational
             
@@ -271,7 +271,7 @@ Policy generally cover a **similar time period** to that of the company's `busin
             
             * Legal and compliance
             
-            * Financial]
+            * Financial
             
         c. Potential Benefits of ERM
         
@@ -279,7 +279,7 @@ Policy generally cover a **similar time period** to that of the company's `busin
 
     3. ***Risk Management Structure***
     
-        \[Include organisational chart along with details on the roles of each position.]
+        Include organisational chart along with details on the roles of each position.
         
         a. Risk management organisational structure
 
@@ -309,7 +309,7 @@ Policy generally cover a **similar time period** to that of the company's `busin
 
     4. ***Risk Identification and Assessment Process***
     
-        \[Define the enterprise identification and assessment process.]
+        Define the enterprise identification and assessment process.
 
         a. Overview of the risk assessment process
 
@@ -333,11 +333,11 @@ Policy generally cover a **similar time period** to that of the company's `busin
         
         e. Step 4 – Perform Detailed Risk Analysis
         
-        f. Step 5 – Identify and Assess Current Risk Management Actions /Identify Appropriate Level of Risk Tolerance Given [Insurer]’s Risk Appetite
+        f. Step 5 – Identify and Assess Current Risk Management Actions /Identify Appropriate Level of Risk Tolerance Given Insurer’s Risk Appetite
 
             i. Identify and Assess Current Risk Mitigating Actions
             
-            ii. Identify Appropriate Level of Risk Tolerance Given [Insurer]’s Risk Appetite
+            ii. Identify Appropriate Level of Risk Tolerance Given Insurer’s Risk Appetite
             
         g. Step 6 – Identify Components, Causes and Risk Indicators (applicable
 to Top Risks only)
@@ -349,7 +349,7 @@ Audit Committee
 
     5. ***Risk Reporting***
 
-        \[Define the risk reporting process and include example template where applicable.]
+        Define the risk reporting process and include example template where applicable.
         
         a. Format and timing of the risk reporting
 
@@ -526,6 +526,8 @@ Senior risk manager (w/ discussion w/ Board) needs to translate the higher level
 Describes the **level of risk** that the insurer is **willing to bear**
 
 * Generally apply at the whole **org. level**
+
+    Can also apply to specific categories or risk or specific BUs
 
 * *Connected* with company's **strategy**
 
