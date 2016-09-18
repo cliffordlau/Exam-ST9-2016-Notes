@@ -611,6 +611,24 @@ IA **review the risk management process** (on top of checking financial transact
 
 * Review the **effectiveness of risk management decisions** and **investigate risk management failures**
 
+***IA on risk management process***:
+
+* The way in which risks are **identified**
+
+    Both on a high-level basis and day-to-day
+
+* The way in which risk are **communicate** from the CRF to BUs
+
+    And the other way around
+
+* **Methods of risk assessment**
+
+    Including the models and assumptions used to quantify risks
+    
+* Choices and **effectiveness** of **risk response**
+
+* Investigations of **risk management failures**
+
 ###External Audit
 
 Validation of the RM process by a separate entity
