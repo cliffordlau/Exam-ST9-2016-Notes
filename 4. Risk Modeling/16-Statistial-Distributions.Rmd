@@ -15,253 +15,363 @@ output:
 
 Analyze univariate and multivariate financial and insurance data (incl. asset price, credit spreads and defaults, interest rates and insurance losses) using appropriate statistical methods
 
-Recommend a specific choice of model based on the results of both quantitative and qualitative analysis of financial or insurance data
+**Recommend a specific choice of model** based on the results of both `quantitative` and `qualitative` analysis of financial or insurance data
 
 ***
 
 Exam notes:
 
-* For the quantitative elements, it is required to demonstrate understanding of the ideas behind the methodologies and how they are implemented rather than learning the details of the theory
+* For the quantitative elements, it is required to **demonstrate understanding of the ideas behind** the methodologies and **how they are implemented** rather than learning the details of the theory
+
 * Should practice the methods in this module using suitable software
+
 * Techniques introduced here to model specific risk types of risk will be covered later
-* Focus of the exam is on testing the understanding of the material and their ability to apply the techniques described in the Core Reading in practical situations and scenarios
+
+* Focus of the exam is on testing the **understanding of the material** and their **ability to apply the techniques** described in the Core Reading in practical situations and scenarios
+
 * Formula for any required probability distributions (incl. means, variance, generator functions and expressions of copulas), if not already given in the Formulae & Tables book will be provided in the question
 
 Should not get bogged down in the maths!
 
-Focus on gaining an appreciation of:
+***Focus on gaining an appreciation of***:
 
-* Shapes of the differing distributions (esp. their skewness and the fatness of their tails) so that when given observed data, you can suggest what distribution might be appropriate to fit
-* How to check if your observed data match a given distribution using relevant test statistics
-* How to simulate random numbers from these distributions for subsequent modeling
-* How observed data may be mixture of different but related distributions - hence the need to be able to combine distributions and achieve a specified degree of correlation
+* **Shapes** of the differing distributions (esp. their skewness and the fatness of their tails) so that when given observed data, you can **suggest what distribution might be appropriate to fit**
+
+* How to **check if your observed data match a given distribution** using relevant test statistics
+
+* How to **simulate random numbers from these distributions** for subsequent modeling
+
+* How observed data may be mixture of different but related distributions - hence the need to be able to **combine distributions and achieve a specified degree of correlation**
 
 ## Recall: Prereq
 
-***Moments of a Distribution***
+### Moments of a Distribution
 
 $\mu_n$ is the n^th^ moment about the mean: $\mu_n = \mathrm{E}\left[(X - \mathrm{E}[X])^n\right]$
 
-Coefficient of skewness $= \omega = \dfrac{\mu_3}{\sigma^3}$
+Coefficient of ***skewness*** $= \omega = \dfrac{\mu_3}{\sigma^3}$
 
-Coefficient of kurtosis $= \kappa = \dfrac{\mu_4}{\sigma^4}$
+Coefficient of ***kurtosis*** $= \kappa = \dfrac{\mu_4}{\sigma^4}$
 
-* $\kappa = 3$: Mesokurtic
-* $\kappa > 3$: Leptokurtic
-    * Slender peak, has fatter tails
-* $\kappa < 3$: Playkurtic
+* $\kappa = 3$: **Mesokurtic**
 
-Excess kurtosis $= \kappa -3$: measure of kurtosis relative to a mesokurtic distribution (e.g. the normal distribution)
+* $\kappa > 3$: **Leptokurtic**
 
-***Gamma Function***
+    Slender peak, has fatter tails
+
+* $\kappa < 3$: **Playkurtic**
+
+**Excess kurtosis** $= \kappa -3$:  
+Measure of kurtosis relative to a mesokurtic distribution (e.g. the normal distribution)
+
+### Gamma Function
 
 $\Gamma(y) = \int \limits_0^\infty s^{y-1}e^{-s}ds$ for $y>0$
 
 * $\Gamma(1) = 1$
+
 * $\Gamma(\alpha) = (\alpha -1)\Gamma(\alpha-1)$ for $\alpha > 1$
+
 * If $\alpha \in \mathbb{Z}$ then $\Gamma(\alpha) = (\alpha -1)!$
+
 * $\Gamma\left(\dfrac{1}{2}\right) = \sqrt{\pi}$
 
-***Matrix Algebra***
+### Matrix Algebra
 
 * Transpose: $\mathbf{A}'$
+
 * Determinant: $\mid \mathbf{A} \mid$
+
 * Identity: $\mathbf{I}$
+
 * Inverse: $\mathbf{A}^{-1}$
-* Matrix of Cofactors: $F$ such that $\mathbf{A}^{-1} = \dfrac{1}{\mid \mathbf{A} \mid}F$
+
+* Matrix of Cofactors: $F$ such that $\mathbf{A}^{-1} = 
+\dfrac{1}{\mid \mathbf{A} \mid}F$
+
 * Orthogonal matrix: If satisfying $\mathbf{A}'\mathbf{A} = \mathbf{A} \mathbf{A}' = \mathbf{I}$
+
 * Covariance matrix: $\boldsymbol{\Sigma}$
+
 * Correlation matrix: $\mathbf{R}$
 
 ## Univariate Distribution
 
-Main univariate distributions for analysis of financial time series
+Will discuss the main univariate distributions for analysis of financial time series
 
 See also the standard distributions listed in the yellow pages of the Formulae and Tables for Examinations
 
-Tables contain relevant formula for distributions marked with \#
+*Tables* contain relevant formula for distributions marked with \#
 
 ### Univariate Discrete Distributions
 
-* Binomial^\#^
-* Negative binomial ^\#^
-* Poisson^\#^
+* [Binomial^\#^](#bin)
 
-Calculations with these distributions can get unwieldy as the number of observations becomes large
+* [Negative binomial ^\#^](#NB)
 
-* Use continuous approximations
-* Still important that the characteristics of the underlying distribution are understood
+* [Poisson^\#^](#poi)
+
+***Challenge***
+
+* **Calculations can get unwieldy** as the *number of observations becomes large* (Bin and NB)
+
+* *Solution*:
+      
+    Use **continuous approximations**
+      
+    Still important that the characteristics of the underlying distribution are understood
 
 ### Univariate Continuous Distributions
 
-Distributions with values from $-\infty$ to $\infty$
+***Distributions with values from $-\infty$ to $\infty$***
 
-* Normal^\#^
-* Normal mixture
-* Student's t^\#^
-* Skewed t^\#^
+* [Normal^\#^](#normal)
 
-We can still use the above for variables with only non-negative values if the probability of a negative value is very small (e.g. mean is sufficiently positive and the variance is sufficiently low)
+* [Normal mixture](#normal-mix)
 
-Distributions with only non-negative values
+* [Student's t^\#^](#t-dist)
 
-* Lognormal^\#^
-* Wald^\#^
-* $\chi^2$^\#^
-* Gamma^\#^ and inverse gamma
-* Generalized inverse gamma
-* Exponential^\#^
-* Fréchet
-* Pareto^\#^
-* Generalized Pareto
+* [Skewed t^\#^](#skew-t)
 
-Distribution with finite range
+**Note**:
 
-* Uniform^\#^
-* Triangular
+* Can still be used for variables with only non-negative values if the probability of a negative value is very small  
+(e.g. mean is sufficiently positive and the variance is sufficiently low)
 
-### Binomial
+***Distributions with only non-negative values***
 
-A $Bin(n,p)$ distribution is the sum of $n$ independent and identical Bernoulli ($p$) trials
+* [Lognormal^\#^](#lognormal)
 
-R.v. $X \sim Bin(n,p)$ is the \# of success that occur in the $n$ trials
+* [Wald^\#^](#wald)
 
-The limiting distribution of the binomial distribution as $n \rightarrow \infty$ is the **normal distribution**
+* [$\chi^2$^\#^](#chi)
 
-### Negative Binomial
+* [Gamma^\#^ and inverse gamma](#gamma)
 
-Type 1: R.v. $X$ is the \# of the trial on which the $r$^th^ success occurs, where $r \in \mathbb{Z}$
+* [Generalized inverse gamma](#gig)
 
-Type 2: Let $Y$ be the \# of failures before the $r$^th^ success; $Y = X-r$, where $X$ is defined as above
+* [Exponential^\#^](#exp)
 
-Geometric distribution is a special case of the Type 1 NB distribution with $r=1$
+* [Fréchet](#frechet)
 
-Practical limitations of the Type 1 NB (also limitation of the binomial):
+* [Pareto^\#^](#pareto)
 
-* CDF is laborious to calculate
+* [Generalized Pareto](#gen-pareto)
+
+***Distribution with finite range***
+
+* [Uniform^\#^](#uniform)
+
+* [Triangular](#triangular)
+
+### Binomial{#bin}
+
+$Bin(n,p)$ = $\sum$ of $n$ independent and identical Bernoulli ($p$) trials
+
+$X \sim Bin(n,p)$ is the \# of success that occur in the $n$ trials
+
+***Limiting distribution*** 
+
+* Binomial distribution as $n \rightarrow \infty$ is the **normal distribution**
+
+### Negative Binomial{#NB}
+
+***Type 1***: 
+
+* $X$ is the \# of the trial on which the $r$^th^ success occurs, where $r \in \mathbb{Z}$
+
+***Type 2***:
+
+* $Y$ be the \# of failures before the $r$^th^ success
+
+    $Y = X-r$, where $X$ is defined as above
+
+***Geometric distribution***
+
+* Special case of the **Type 1** NB distribution with $r=1$
+
+***Practical limitations*** of the Type 1 NB (also limitation of the binomial):
+
+* CDF is **laborious to calculate**
+
 * $n!$ becomes time consuming to calculate for large values of $n$
 
-Type 2 NB is in the *Tables* and the combinatorial factor is written in terms of the gamma function
+**Note**:
 
-### Poisson
+* Type 2 NB is in the *Tables* and the combinatorial factor is written in terms of the `gamma function`
 
-Models the number of events (e.g. claims) that occur in a specified interval of time, when the events occur one after another in time in a well defined manner that presumes:
+### Poisson{#poi}
 
-* Events occur singly, at a constant rate
-* Numbers of events that occur in separate (i.e. non-overlapping) time intervals are independent of one another
-* i.e. The events occur randomly at a rate of $\lambda$ per period
-* Such events are said to occur according to a Poisson process
+Models the **number of events** (e.g. claims) that occur in a **specified interval of time**when the events occur one after another in time in a well defined manner that presumes:
+
+* Events occur **singly**, at a **constant rate**
+
+* Numbers of events that occur in separate (i.e. non-overlapping) time intervals are **independent of one another**
+
+    i.e. The events occur randomly at a rate of $\lambda$ per period
+
+* Such events are said to occur according to a **Poisson process**
 
 [Poisson limit theorm](https://en.wikipedia.org/wiki/Poisson_limit_theorem)
 
 * Sequence of $Bin(n,p)$, as $n \rightarrow \infty$ and $p \rightarrow 0$ together such that the mean $np$ is held constant at the value $\lambda$
+
 * Limit leads to the distribution of the Poisson variable with parameter $\lambda$
+
 * Subbing $\lambda = np$ into the PDF of the binomial distribution and taking the limits will produces the probability function of Poisson
 
-Poisson can be used as an approximation to the binomial if $p$ is small enough (e.g. with mortality rate)
+Poisson can be used as an **approximation to the binomial** if $p$ is small enough (e.g. with mortality rate)
 
 * Eliminates one of the practical problems with the binomial distribution but the CDF is still laborious summations
 
-### Gaussian
+### Gaussian{#normal}
 
-Standard normal
+***Standard normal $N(0,1)$***
 
 * PDF $\phi$ and CDF $\Phi$
+
 * Location parameter $\mu = 0$
+
 * Scaling parameter $\sigma = 1$
 
-Key features of the normal distribution
+***Key features*** of the normal distribution
 
 * $f(x) > 0$ for $-\infty < x < \infty$
-* Based on CLT, it will approximate the distribution of a sufficiently large number of iid r.v.
-* It can facilitate simple analytical solutions to complex problems (e.g. when it is used as an approximation to the binomial distribution)
 
-Applications:
+* Based on **CLT**, it will approximate the distribution of a sufficiently large number of iid r.v.
 
-* Use for error term ($\epsilon_t \sim N(0,\sigma)$) when modeling random walk
-* Standard normal is the distribution of the test statistic $Z = \dfrac{X - \mu}{\sigma}$ used to determine whether the mean of the underlying population is significantly different to an assumed mean $\mu$ when the value of $\sigma$ is known
-  * Based on a single observation $X$
-* Standard normal is the distribution of the test statistic $Z = \dfrac{\bar{X} - \mu}{\sigma / \sqrt{T}}$ used to determine whether the mean of the underlying population is significantly different from $\mu$, where $T$ is the number of observations and when the value of $\sigma$ is known
-  * Based on the sample mean $\bar{X}$
+* It can facilitate simple analytical solutions to complex problems  
+(e.g. when it is used as an **approximation to the binomial distribution**)
+
+***Applications***:
+
+* Use for **error term** ($\epsilon_t \sim N(0,\sigma)$) when modeling random walk
+
+* Standard normal is the distribution of the **test statistic** $Z = \dfrac{X - \mu}{\sigma}$ 
+
+    Used to determine whether the mean of the underlying population is significantly different to an assumed mean $\mu$ when the value of $\sigma$ is known
+
+  * Based on a **single observation** $X$
+
+* Standard normal is the distribution of the **test statistic** $Z = \dfrac{\bar{X} - \mu}{\sigma / \sqrt{T}}$
+
+    Used to determine whether the mean of the underlying population is significantly different from $\mu$, where $T$ is the number of observations and when the value of $\sigma$ is known
+
+  * Based on the **sample mean** $\bar{X}$
   
-Test for normality:
+***Test for normality***:
 
-1. Graphical test e.g. QQ plots
-2. Statistical tests
-    * Jarque-Bera
-        * Calculate the skew $\omega$ and kurtosis $\kappa$ with no adjustment for sample bias (Use denominator of $T$)
-        * $JB = \dfrac{T}{6}\left(\omega^2 + \dfrac{\kappa}{4}\right)$
-        * Distribution of the test statistic tends to $\chi^2_2$ as the number of observations ($T$) tends to $\infty$
-    * Anderson-Darling
-    * Shapiro-Wilk
-    * D'Agostino
+1. **Graphical test**
+
+    e.g. QQ plots
+
+2. **Statistical tests**
     
-### Normal Mean-Variance Mixture
+    a. Jarque-Bera
+    
+        * Calculate the skew $\omega$ and kurtosis $\kappa$ with no adjustment for sample bias (Use denominator of $T$)
+    
+        * $JB = \dfrac{T}{6}\left(\omega^2 + \dfrac{\kappa}{4}\right)$
+    
+        * Distribution of the test statistic tends to $\chi^2_2$ as the number of observations ($T$) tends to $\infty$
+    
+    b. Anderson-Darling
+    
+    c. Shapiro-Wilk
+    
+    d. D'Agostino
+    
+### Normal Mean-Variance Mixture{normal-mix}
 
 $X = m(W) + \sqrt{W}\beta Z$
 
 * $W$: Strictly positive r.v.
+
 * $Z \sim N(0,1)$
+
 * $Z \perp\!\!\perp W$
+
 * $m(\cdot)$: Some function
+
 * $\beta$: Scale factor
 
-***Benefit*** (compare to just normal)
-
-Randomness in both the mean and variance
+***Benefit*** (compare to just normal): **Randomness in both** the `mean` and `variance`
     
 * For a given value of $W$, $X \sim N\left(m(W),W\beta^2\right)$
+
 * So the distribution of $X$ depend on the value of $W$
+
 * Mean is a function of $W$; Variance $\propto$ $W$
-* $W$ is not fixed and can be think of as the underlying variable that affects the mean and variance $X$
+
+* $W$ is not fixed and can be think of as the **underlying variable that affects the mean and variance** $X$
 
 ***Special cases***
 
-Generalized hyperbolic distribution:
+1. **Generalized hyperbolic distribution**:
 
-* $m(W) = \alpha + \delta W$
-* $W \sim GIG(\beta_1, \beta_2, \gamma_{GIG})$
-* GIG = Generalized inverse Gaussian
+    * $m(W) = \alpha + \delta W$
+    
+    * $W \sim GIG(\beta_1, \beta_2, \gamma_{GIG})$
+    
+    * GIG = [Generalized inverse Gaussian](#gig)
 
-Generalized t
+2. [**Generalized t**](#t-dist)
 
-* $m(W) = \alpha$
-* $\gamma / W \sim \chi^2_{\gamma}$
+    * $m(W) = \alpha$
 
-Skewed t
+    * $\gamma / W \sim \chi^2_{\gamma}$
 
-* $m(W) = \mu + \delta W$
-* $\delta$: Skewness parameter
-* $\gamma / W \sim \chi^2_{\gamma}$
+3. [**Skewed t**](#skew-t)
 
-### t (Student's, Standard and General)
+    * $m(W) = \mu + \delta W$
+    
+    * $\delta$: Skewness parameter
+    
+    * $\gamma / W \sim \chi^2_{\gamma}$
+
+### *t* (Student's, Standard and General){#t-dist}
 
 $X = \alpha + \beta Y$
 
-* $X \sim$ Generalized t w/ $\gamma$ degrees of freedom
-  * $\alpha$: Location parameter
-  * $\beta$: Scaling parameter
-* $Y \sim$ Student's t or standard t w/ $\gamma$ degrees of freedom
+* $X \sim$ Generalized *t* w/ $\gamma$ degrees of freedom
 
-Exam note: Formula in the *Table* is for standard t ($\alpha = 0$ and $\beta = 1$)
+* $\alpha$: Location parameter
 
-CDF of the t can not be determined analytically except when $\gamma=1$ (Cauchy distribution)
+* $\beta$: Scaling parameter
 
-t is leptokurtic (fatter tail) makes this an important distribution for risk modeling
+* $Y \sim$ Student's *t* or standard *t* w/ $\gamma$ degrees of freedom
 
-* Kurtosis of the standard t is > than the normal
+**Exam note**: 
 
-The degrees of freedom ($\gamma$) is also a shape parameter  
-(determines the kurtosis)
+* Formula in the *Table* is for standard *t* ($\alpha = 0$ and $\beta = 1$)
 
-Tails of the *t* follow a power law
+***Characteristics***:
 
-* Probability of an event falling approximately in inverse proportion to the size of the event raised to the power of $\gamma + 1$
-* For large $y$ you can ignore the 1 in the PDF, which is then $\propto y^{-(\gamma + 1)}$; So for the Cauchy distribution this is the inverse square of the size of the event
+* CDF of the *t* can not be determined analytically
 
-***Standard t as nomral mixture***
+    Except when $\gamma=1$ (**Cauchy distribution**)
 
-Define standard t in terms of a ratio of $N(0,1)$ and $\chi^2$
+* *t* is *leptokurtic* (fatter tail)
+
+    Makes this an important distribution for risk modeling
+
+* Kurtosis of the standard *t* is > than the normal
+
+* The degrees of freedom ($\gamma$) is also a **shape parameter**  
+
+    i.e. $\gamma$ determines the kurtosis
+
+***Tails*** of the *t* follow a **power law**
+
+* `Probability` of an event falling approximately in **inverse proportion** to the `size` of the event **raised to the power** of $\gamma + 1$
+
+* For large $y$ you can ignore the 1 in the PDF, which is then $\propto y^{-(\gamma + 1)}$
+
+    So for the Cauchy distribution this is the inverse square of the size of the event
+
+***Standard t as normal mixture***
+
+*Define* standard *t* in terms of a **ratio** of $N(0,1)$ and $\chi^2$
 
 $t_{\gamma} = \dfrac{N(0,1)}{\sqrt{\chi^2_{\gamma} \big/ \gamma}}$
 
@@ -271,169 +381,247 @@ Rewrite the to has the same form as a mixture distribution
 
 $t_{\gamma} = \underbrace{0}_{m(W)} + \sqrt{\underbrace{\dfrac{\gamma}{\chi^2_{\gamma}}}_{W}} \times \underbrace{1}_{\beta} \times N(0,1)$
 
-* $W \sim$ inverse gamma
+* $W \sim$ [inverse gamma](#gamma)
 
 ***Simulation***
 
 $Y = \alpha + \beta \dfrac{Z}{\sqrt{W \big / \gamma}}$
 
-* Normal mixture and has generalized t with parameters $\alpha$, $\beta$, and $\gamma$
+* **Normal mixture** and has generalized *t* with parameters $\alpha$, $\beta$, and $\gamma$
+
 * $Z \sim N(0,1)$
+
 * $W \sim \chi^2_{\gamma}$
+
 * $Z \perp\!\!\perp W$
+
 * $\mathrm{VaR}(Y) \propto 1 \big / W$
 
 ***Statistical test of a sample mean***
 
-Testing whether a sample mean ($\bar{X}$) is statistically different from the hypothesized mean ($\mu$) of the source population is performed using the test statistic:
+$Z = \dfrac{\bar{X} - \mu}{s \big / \sqrt{T}}$
 
-$Z = \dfrac{\bar{X} - \mu}{s \big / \sqrt{T}}$, where $s$ is the s.d of the sample
+* $s$ is the s.d of the sample
 
-Test statistic follows the standard t with d.f. $\gamma = T-1$
+* Testing whether a sample mean ($\bar{X}$) is statistically different from the hypothesized mean ($\mu$) of the source population is performed using the test statistic:
 
-Rewriting $Z$
+* Test statistic follows the standard *t* with d.f. $\gamma = T-1$
 
 $Z = \dfrac{\bar{X} - \mu}{s \big / \sqrt{T}} \Bigg / 
 \sqrt{\dfrac{(T-1)s^2 \big/ \sigma^2}{T-1}}$
 
+* Rewriting $Z$ from above
+
 * $\dfrac{\bar{X} - \mu}{s \big / \sqrt{T}} \sim N(0,1)$
+
 * $(T-1)s^2 \big/ \sigma^2 \sim \chi^2_{T-1}$
-* $Z$ is a ratio of standard normal to the square root of a chi-sq divided by the \# of d.f.
-* As noted above, that is the standard t
 
-### Skewed t
+* $Z$ is a **ratio** of \{`standard normal`\} to the \{*square root* of a `chi-sq` *divided* by the \# of `d.f.`\}
 
-Same parameters as the general *t* but with the addition of a skew parameter $\delta$ (general t = skewed t with $\delta = 0$)
+    As noted above, that is the standard *t*
 
-**Comparison of $N(0,1)$, standard *t* and skewed *t* **
+### Skewed t{#skew-t}
+
+Same parameters as the general *t* but with the **addition of a skew parameter** $\delta$ 
+
+* General *t* = skewed *t* with $\delta = 0$
+
+***Comparison*** of $N(0,1)$, standard *t* and skewed *t*
 
 ![](figures/figure-16.01.png)
 
-If $\delta < 0$ the distribution is left skewed (longer lower tail); $\delta > 0$ is right skewed
+* $\delta < 0$ the distribution is left skewed (longer lower tail); 
+
+* $\delta > 0$ is right skewed (longer right tail)
 
 ***Simulation***
 
 $Y = \alpha + \beta \dfrac{Z}{\sqrt{W \big / \gamma}} + \delta \dfrac{1}{W \big / \gamma}$
 
 * (Normal mixture) skewed *t* with parameters $\alpha$, $\beta$, $\gamma$ and $\delta$
-* Mean is $m(w) = \alpha + \delta \dfrac{1}{W \big / \gamma}$
-* Variance (from the $Z$ term) $\propto 1\big/W$
+
+* **Mean** is $m(w) = \alpha + \delta \dfrac{1}{W \big / \gamma}$
+
+* **Variance** (from the $Z$ term) $\propto 1\big/W$
+
 * $Z \sim N(0,1)$
+
 * $W \sim \chi^2_{\gamma}$
+
 * $Z \perp\!\!\perp W$
 
-### Lognormal
+### Lognormal{#lognormal}
 
-$Y = \ln X \sim$ Normal then $X$ is lognormal
+$Y = \ln X \sim$ Normal
 
-Applications of the lognormal
+$\hookrightarrow$ $X$ is lognormal
 
-* Applicable to may insurance situation since it takes only positive values
-* Can be used to model financial variables (e.g. asset return) w/ assumptions that the log of the variable will follow a random walk with drift $\ln X_t = \mu + \ln X_{t-1} + \epsilon_t$ and the returns are iid
+***Applications*** of the lognormal
 
-### Wald (or Inverse Gaussian)
+* Applicable to may insurance situation since it takes **only positive values**
 
-Wald distribution describes the time taken for a Brownian motion process to reach a given value
+* Can be used to model **financial variables** (e.g. asset return)
 
-Wald is a special case of GIG
+    *Assumptions*
+    
+    * **Log of the variable** will follow a **random walk**
+    
+    * **Drift**: $\ln X_t = \mu + \ln X_{t-1} + \epsilon_t$
+    
+    * Returns are **iid**
 
-Only takes positive values and have positive skew
+### Wald (or Inverse Gaussian){#wald}
 
-It's call inverse Gaussian because its PDF has a similar form to the normal distribution but with $1/x$ included in the power
+***Wald distribution***:  
+Describes the **time** taken for a **Brownian motion** process to **reach a given value**
 
-Key benefits of the Wald is its aggregation properties
+* **Special case** of GIG
 
-* For $X \sim Wald(\alpha, \gamma)$ then $nX \sim Wald(n\alpha, n\gamma)$ for $n>0$
-* For $X_n \sim Wald(\alpha w_n, \gamma w^2_n)$ and $X_i \perp\!\!\perp X_j$ then $\sum \limits_{n=1}^N X_n \sim Wald \left( \alpha \sum \limits_{n=1}^N w_n , \gamma \left(\sum \limits_{n=1}^N w_n\right)^2\right)$
+* Only takes **positive values** and have **positive skew**
 
-### Chi-Squared
+* PDF has a similar form to the normal distribution but with $1/x$ included in the power
 
-$chi^2_{\gamma}$ is the distribution of the sum of $\gamma$ $X \sim N(0,1)$ and so can be simulated as such
+    $\therefore$ It's call inverse Gaussian
 
-$chi^2_{\gamma}$ is a special case of the gamma distribution
+***Key benefits*** of the Wald is its **aggregation properties**
 
-The link between the mean ($\mu = \gamma > 0$) and variance ($\sigma^2 = 2\gamma$) limits the application of this distribution
+* For $X \sim Wald(\alpha, \gamma)$
+
+    $\hookrightarrow$ $nX \sim Wald(n\alpha, n\gamma)$ for $n>0$
+
+* For $X_n \sim Wald(\alpha w_n, \gamma w^2_n)$ and $X_i \perp\!\!\perp X_j$
+
+    $\hookrightarrow$ $\sum \limits_{n=1}^N X_n \sim Wald \left( \alpha \sum \limits_{n=1}^N w_n , \gamma \left(\sum \limits_{n=1}^N w_n\right)^2\right)$
+
+### Chi-Squared{#chi}
+
+$\chi^2_{\gamma}$:
+
+* Sum of $\gamma$ $X \sim N(0,1)$
+
+* So can be simulated as such
+
+* Special case of the [gamma distribution](#gamma)
+
+***Limitations***
+
+* The link between the `mean` ($\mu = \gamma > 0$) and `variance` ($\sigma^2 = 2\gamma$) limits the application of this distribution
 
 ***Chi-squared test***
 
-Can be applied where observations can each be associated with just one of $N$ categories
+Can be applied where observations can each be *associated with just one* of $N$ categories
 
-* Tests examines whether a set of assumed probabilities are incorrect
+* Tests *examines whether* a **set of assumed probabilities are incorrect**
 
-Let the actual number of observations in the n^th^ category be $T_n$ and $T = \sum \limits_{n=1}^N T_n$
+*Let*: 
 
-Let $p_n$ be the assumed probability such that the expected number of observations in category $n$ is $Tp_n$
+* The **actual number of observations** in the *n*^th^ category be $T_n$
 
-Test statistic: $k = \left( \sum \limits_{n=1}^N X_n^2\right) \sim \chi^2_{N-1}$
+    $T = \sum \limits_{n=1}^N T_n$
+
+* $p_n$ be the **assumed probability**
+
+    Such that the **expected number of observations** in category $n$ is $Tp_n$
+
+**Test statistic**: 
+
+$k = \left( \sum \limits_{n=1}^N X_n^2\right) \sim \chi^2_{N-1}$
 
 * Where $X_n = \dfrac{(T_n - Tp_n)}{\sqrt{Tp_n(1-p_n)}}$
 
-Too large a value suggest that the set of assumed probabilities is incorrect
+* Too large a value suggest that the set of assumed probabilities is incorrect
 
-### Exponential
+### Exponential{#exp}
 
-Has a single scale parameter $\beta$
+Has a **single scale** parameter $\beta$
 
-Distribution provides the expected waiting times between the events of a Poisson process
+Distribution provides the **expected waiting times** between the **events of a Poisson process**
 
-**Limitations to ERM** due to its characteristics
+***Limitations to ERM*** due to its characteristics
 
-* Monotonically decreasing nature
-* Single parameter
-* Low probabilities associated with extreme values
+1. Monotonically decreasing nature
+
+2. Single parameter
+
+3. Low probabilities associated with extreme values
 
 ### Gamma and Inverse-Gamma
 
-***Gamma***
+#### Gamma{#gamma}
 
-Gamma family has 2 positive parameters and is a versatile family
+Gamma family has **2 positive parameters** and is a versatile family
 
 * PDF can take significantly different shapes depending on the parameters
 
-Special cases:
+***Special cases***:
 
-* Exponential is when $\gamma = 1$
-* $\chi^2_{2\gamma}$ is when $\beta = 2$
+* $\gamma = 1$ $\Rightarrow$ [Exponential](#exp)
 
-Probabilities fro a gamma is not given in the *Tables* but can be obtained by turning a gamma probability into a $\chi^2$:
+* $\beta = 2$ $\Rightarrow$ $\chi^2_{2\gamma}$
 
-* $X \sim Gamma(\beta, \gamma) \equiv \dfrac{2X}{\beta} \sim \chi^2_{2\gamma}$
+**Exam Notes**:
 
-Aggregation properties:
+* Probabilities for a gamma is not given in the *Tables* but can be obtained by turning a gamma probability into a $\chi^2$:
 
-* If $X_n \sim Gamma(\beta, \gamma_n)$ are all *iid* then $\sum \limits_{n=1}^N X_n \sim Gamma\left(\beta, \sum \limits_{n=1}^N \gamma_n \right)$
-* If $X \sim Gamma(\beta, \gamma)$ then $nX \sim Gamma(n\beta, \gamma)$ if $n > 0$
+    $X \sim Gamma(\beta, \gamma) \equiv \dfrac{2X}{\beta} \sim \chi^2_{2\gamma}$
 
-***Inverse-Gamma***
+***Aggregation properties***:
+
+* If $X_n \sim Gamma(\beta, \gamma_n)$ are all *iid*
+
+    $\hookrightarrow$ $\sum \limits_{n=1}^N X_n \sim Gamma\left(\beta, \sum \limits_{n=1}^N \gamma_n \right)$
+
+* If $X \sim Gamma(\beta, \gamma)$
+
+    $\hookrightarrow$ $nX \sim Gamma(n\beta, \gamma)$ if $n > 0$
+
+#### Inverse-Gamma{#inv-gamma}
 
 If $Y \sim Gamma$ then $X = \dfrac{1}{Y} \sim$ Inverse-Gamma
 
-Both gamma and inverse gamma can be fitted by equating sample and population moments and solving for the distribution's parameters
+***Fitting***
 
-### Generalized Inverse Gaussian (GIG)
+* **Equating** `sample` and `population moments` and solving for the distribution's parameters
 
-GIG offers significant flexibility with regard to its shape with 3 parameters: $\gamma$ $\beta_1$ and $\beta_2$
+* Works for both gamma and inverse gamma
 
-Special limiting cases:
+### Generalized Inverse Gaussian (GIG){#gig}
 
-* $\beta_1=0$: $Gamma(2\beta_2, \gamma)$
-* $1/\beta_2 \rightarrow 0$: GIG tends to $InverseGamma(\beta_1 / 2, -\gamma)$
-* $\gamma = - \frac{1}{2}$: Wald
+GIG offers **significant flexibility** with regard to its shape with **3 parameters**: 
 
-### Fréchet
+* $\gamma$ $\beta_1$ and $\beta_2$
 
-Only has a single parameter
+***Special limiting cases***:
 
-Special case of the generalized extreme value distribution
+* $\beta_1=0$
 
-### Pareto
+    $\hookrightarrow$ $Gamma(2\beta_2, \gamma)$
 
-Two parameters
+* $1/\beta_2 \rightarrow 0$
 
-Key features
+    $\hookrightarrow$ GIG tends to $InverseGamma(\beta_1 / 2, -\gamma)$
+
+* $\gamma = - \frac{1}{2}$:
+
+    $\hookrightarrow$ Wald
+
+### Fréchet{#frechet}
+
+Only has a **single parameter**
+
+*Special case* of the **generalized extreme value distribution**
+
+### Pareto{#pareto}
+
+**Two parameters**
+
+***Key features***
 
 * Monotonically decreasing
-* Tail follows a power law with the shape parameter ($\gamma$) determining the power
+
+* Tail follows a **power law**
+
+    Shape parameter ($\gamma$) determining the power
 
 ***Simulation***
 
@@ -441,39 +629,58 @@ $X = \dfrac{\beta}{U^{\frac{1}{\gamma}}}$
 
 * $U \sim U(0,1)$
 
-Corresponding CDF is $F(x) = 1 - \left( \dfrac{\beta}{x}\right)^{\gamma}$ for $x > \beta$, as $1 - \left( \dfrac{\beta}{\beta \big/ u^{\frac{1}{\gamma}}}\right)^{\gamma} = u$ and by definition $F(x) \sim U(0,1)$
+**Side Notes**:
 
-Formula for Pareto CDF in Sweeting and *Table* actually corresponds to $X = \dfrac{\beta}{U^{\frac{1}{\gamma}}} - \beta$
+* Corresponding CDF is $F(x) = 1 - \left( \dfrac{\beta}{x}\right)^{\gamma}$ for $x > \beta$, as $1 - \left( \dfrac{\beta}{\beta \big/ u^{\frac{1}{\gamma}}}\right)^{\gamma} = u$ and by definition $F(x) \sim U(0,1)$
 
-### Generalized Pareto
+* Formula for Pareto CDF in Sweeting and *Table* actually corresponds to $X = \dfrac{\beta}{U^{\frac{1}{\gamma}}} - \beta$
 
-Three parameter
+### Generalized Pareto{#gen-pareto}
 
-* More flexible modeling tool
-* Applied in extreme value theory (mod 20)
+***Three parameter***
 
-Note:
+* **More flexible** modeling tool
+
+* Applied in **extreme value theory** (Module 20)
+
+***Note***:
 
 * Gamma in the Pareto corresponds to the gamma in the generalized form
+
 * $\beta$ in the Pareto corresponds to $\beta \gamma$ in the generalized form shown in Sweeting
 
-Relationships:
+***Relationships***:
 
-* $\gamma = 0$: Exponential
-* $\gamma > 0$: Pareto
+* $\gamma = 0$: 
 
-### Uniform
+    $\hookrightarrow$ Exponential
+    
+* $\gamma > 0$: 
+
+    $\hookrightarrow$ Pareto
+
+### Uniform{#uniform}
 
 Assigns equal probability to all outcomes in a range $[\beta_1, \beta_2]$
 
 Everything is in the *Tables* where $a = \beta_1$ and $b = \beta_2$
 
-### Triangular
+### Triangular{#triangular}
 
-Can be used in cases where in additional to the upper and lower values, the most likely value is known
+Can be used in cases where in additional to the upper and lower values, the **most likely value is known**
 
-* Distribution has lower limit $\beta_1$, mode $\alpha$ and upper limit $\beta_2$
-* Mean is the average of the parameter values $\mu = \frac{1}{3}(\beta_1 + \alpha +\beta_2)$
+* Distribution has:
+
+    `lower limit` $\beta_1$
+    
+    `mode` $\alpha$
+    
+    `upper limit` $\beta_2$
+
+* **Mean** is the **average of the parameter values** 
+
+    $\mu = \frac{1}{3}(\beta_1 + \alpha +\beta_2)$
+
 * Can be positively or negatively skewed
 
 ## Multivariate

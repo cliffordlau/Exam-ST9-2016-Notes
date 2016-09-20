@@ -13,210 +13,266 @@ output:
 
 ## Module Objective
 
-Discuss the extend of which of the risk we discusses before (Mod 3?) can be amenable to quantitative analysis
+Discuss the extend of which of the risk we discusses before (Module 3) can be amenable to quantitative analysis
 
-Risk aggregation and correlation
+Risk **aggregation** and **correlation**
 
 * Enterprise-wide risk aggregation techniques incorporating the use of correlation
+
 * Measures of correlation and relative merits of each for modeling purpose
 
-Use of scenario analysis and stress testing in the risk measurement process (pros and cons of each)
+Use of **scenario analysis** and **stress testing** in the risk measurement process   
+(pros and cons of each)
 
 ***
 
-To what extent which quantitative analysis might be feasible for different risk type
+To what extent which **quantitative analysis** might be **feasible** for different risk type
 
-Basic concepts of correlation and scenario/ stress testing
+Basic concepts of **correlation** and **scenario/ stress testing**
 
 ## Recall: Multi-factor Model
 
 $Y_{n,t} = \beta_{0,n} + \left( \sum \limits_{i} \beta_{i,n} X_{i,t} \right) + \epsilon_{n,t}$
 
-* $Y_{n,t}$: Value of the n^th^ variable at time $t$
-* $X_{i,t}$: Value of the i^th^ factor at time $i$
-* $\beta_{i,n}$: Weight give to the i^th^ factor in respect of the n^th variable
-* $\epsilon_{n,t}$: Error term (difference between modeled and actual)
+* $Y_{n,t}$:
+    
+    Value of the n^th^ variable at time $t$
 
-Factors are found using regression analysis
+* $X_{i,t}$:
+
+    Value of the i^th^ factor at time $i$
+
+* $\beta_{i,n}$:
+
+    Weight give to the i^th^ factor in respect of the n^th variable
+
+* $\epsilon_{n,t}$:
+
+    Error term (difference between modeled and actual)
+
+Factors are determined based on regression analysis
 
 ## Risk Quantification
 
+Risk has to be **quantifiable** for it to be *assessed* and *analyzed* through **mathematical models**
+
+Ideally model should be backed up by **good quality historical data** and that can lead to the use of statistical analysis
+
+* If not we can still use **scenarios** and **stress test**
+
 ### Methods of Quantifying Risk
 
-Risk has to be quantifiable for it to be assessed and analyzed through mathematical models
+Different methods of quantifying risk are applicable to different types of risk
 
-Ideally model should be backed up by good quality historical data and that can lead to the use of statistical analysis
+Below are the major types of risk faced by an insurance company and the main techniques used to quantify the risks
 
-* If not we can still use scenarios and stress test
+#### Enterprise Risk
 
-Different ways to quantify risk for different risk types
+***Dynamic Financial Analysis***
 
-***Enterprise Risk: Dynamic Financila Analysis***
+* Modeling risk that the **enterprise as a whole** exposed and the **relationship between** these risks
 
-* Modeling risk that the enterprise as a whole exposed and the relationship between these risks
-* Output from the model is typically cashflow information used to produce projected b/s and p&l accounts
-* Method of assessing company's capital is typically a form of dynamic financial analysis (mod 30)
+* **Output** from the model:
 
-***Enterprise Risk: Financial Condition Reports***
+    Typically **cashflow** information used to produce projected `b/s` and `p&l accounts`
 
-* Report of the current solvency position of a company and is possible future development
-* Needs to consider the risk it is exposed
-* Projections of the expected level and profitability of new business (incl. unusual features it may have)
-    * For insurers, this is dependent on the underwriting process
+* e.g. Method of assessing company's capital (Module 30)
 
-***Underwriting Risk: Underwriting Modeling or Reviews***
+***Financial Condition Reports***
 
-Insurance ad underwriting risk are quantitative by nature so quantitative models are used to assess
+* Report of the **current solvency position** of a company and its **possible future development**
 
-Insurance risk:  
-Risk arises from fluctuations in the timing, frequency and severity of insured events relative to the expectations at the time of u/w-ing or pricing (incl. mortality, morbidity, property and casualty)
+* **Key considerations (inputs?)**
+
+    * Risks the company is exposed
+
+    * Projections of the **expected level** and **profitability** of **new business** (incl. unusual features it may have)
+    
+        For insurers, this is dependent on the underwriting process
+
+#### Underwriting Risk
+
+***Underwriting Modeling or Reviews***
+
+Insurance and underwriting risk are quantitative by nature so **quantitative models** are used to assess
+
+***Insurance risk***:
+
+* Risk arises from **fluctuations** in the `timing`, `frequency` and `severity` of insured events **relative to the expectations** at the time of u/w-ing or pricing (incl. mortality, morbidity, property and casualty)
 
 * Can incl. peresistency and expense risks
+
 * U/w risk is typically = to insurance risk
-    * Can sometimes mean the risk of inappropriate selection and approval of insurance risk
     
-e.g. Modeling the u/w-ing risk of a life insurance company issuing a policy to a smoker for a premium relevant to a non-smoker
+    * Can sometimes mean the risk of inappropriate selection and approval of insurance risk
+
+***Example***: Modeling the u/w-ing risk of a life insurance company issuing a policy to a smoker for a premium relevant to a non-smoker
 
 * First measure the loss to the insurance company as the difference in the expected PV of the premiums charged
+
 * Combine the above with a probability of occurrence will yield an underwriting model
 
-***Market Risks: VaR, TVaR, Interest Rate Models, Scenario Tests***
+#### Market Risks
 
 Market and economic risk have been subject to more quantitative analysis than the other risks
 
-Interest rate models have considered short-term, long-term interest rates and full yield curve
+***Interest rate models***:
 
-FX risk (currency movements) and basis risk (extent to which a particular position reflects the position required) also lends it selves well to quantitative analysis
+* Considered `short-term`, `long-term` interest rates and `full yield curve`
 
-Typically use time series (Mod 17) and risk measures like VaR and TVaR
+* **FX risk** (currency movements) and **basis risk** (extent to which a particular position reflects the position required) also lends it selves well to quantitative analysis
 
-Will typically also involve scenario testing
+***Methods***:
 
-***Credit Risk: Credit Risk Models***
+* Typically use **time series** (Module 17) and risk measures like **VaR** and **TVaR**
 
-Model typically concern with the credit risk of a single entity (rather than a credit portfolio)
+* Will typically also involve **scenario testing**
 
-Risk is usually assess using both quantitative and non-quantitative criteria (more on mod 23)
+#### Credit Risk
 
-***Liquidity Risk: Asset Liability Modeling***
+***Credit Risk Models***
 
-Can be modeled quantitatively but haven't been done much in the past
+* Model typically concern with the credit risk of a **single entity** (rather than a credit portfolio)
 
-Asset liability modeling:  
+* Risk is usually assess using both **quantitative** and **non-quantitative** criteria (Module 23)
 
-* Method of projecting both the assets and liabilities of an institution within the same model (w. consistent assumptions)
-* To assess how well the asset match the liabilities and to understand the probable evolution of future cashflows
-* For liquidity risk, we are interested in the level of cash held in each period to ensure that short-term liabilities can continue to be met with a desired level of confidence
+#### Liquidity Risk
 
-***Operational Risk: Internal and External Loss Data, Scenario Analysis, Simulations***
+Can be modeled quantitatively but have not been done much in the past
+
+***Asset liability modeling***:
+
+* Method of projecting **both the assets and liabilities** of an institution **within the same model** (w. consistent assumptions)
+
+* To assess how well the **asset match the liabilities** and to understand the **probable evolution of future cashflows**
+
+***Asset liability modeling for liquidity risk***:
+
+* We are interested in the level of cash held in each period to ensure that short-term liabilities can continue to be met with a desired level of confidence
+
+#### Operational Risk
 
 Difficult to deal with quantitatively
 
 Potential risks are difficult to model with statistical distributions and the worst case typically involve insolvency
 
-Increasingly orgs are collecting historical data on op-risk loss to further along quantitative analysis (see mod 24)
+***Internal and external loss data***
 
-Can use external loss data
+* Orgs. start collecting historical data on op-risk loss to further along quantitative analysis (Module 24)
 
-* Provide information of situations the company has not faced (supplement)
-* Benchmark internal data
+* Use of **external loss data**
+  
+    * Provide information of situations the company has not faced
+  
+    * Benchmark internal data
 
-Regardless, quantitative analysis will never be substitute for the use of worst case scenarios (only one is required to take down the company)
+***Scenario analysis and simulations***
 
-Sec 3 will discuss scenario analysis and simulations
+* Quantitative analysis will never be substitute for the use of **worst case scenarios** 
 
-***Other Risk Types***
+    As only one is required to take down the company
 
-Legal; Regulatory; Agency; Reputational; Moral hazard; Political; Project; Strategic
+* Sec 3 will discuss [scenario analysis](#scen-analysis) and [simulations](#stochastic)
 
-* Affected similarly to op-risk
+#### Other Risk Types
 
-Demographic risk is a quantitative risk but methods where relatively crude until recently
+`Legal`; `Regulatory`; `Agency`; `Reputational`; `Moral hazard`; `Political`; `Project`; `Strategic`
+
+* Similar to op-risk
+
+`Demographic risk`: is a quantitative risk but methods where relatively crude until recently
 
 ### Issues in Risk Quantification
 
-***Extreme Events***
+#### Extreme Events
 
 For risk quantification we are interested in the extreme events in addition to the expected events
 
-**Black swan events**:
+***Black swan events***:
 
-* One-off events that are very rare, hard to predict and high impact
-* Typically events that are only predictable with hindsight
+* One-off events that are **very rare**, **hard to predict** and **high impact**
+
+* Typically events that are **only predictable with hindsight**
+
 * e.g. 2008 credit crunch
 
-Impossible to predict precisely but they are events with largest impacts and is likely to be of most interest and require mitigation
+* **Impossible to predict precisely** but they are events with **largest impacts** and is likely to be of **most interest and require mitigation**
 
-**Processes** that could help response to black swan events
+***Processes*** that could help **response** to black swan events
 
-* Use previous experiences and incorporate learning points from past events into ERM strategy with an aim to become better able to react appropriately to surprising events
-* Develop and emerging risk register of potential future issues
+* Use previous experiences and **incorporate learning points from past events** into ERM strateg
 
-Need to **focus on the tails** of probability distributions
+    Aim to become better able to **react appropriately to surprising events**
 
-* Avoid simplifying assumptions (e.g. normal distribution)
-* Extreme value theory (mod 20)
+* Develop and emerging **risk register** of potential future issues
 
-***Data Limitation***
+Need to ***focus on the tails*** of probability distributions
 
-Data might be limited in volume and/or heterogeneous
+* Avoid simplifying assumptions (e.g. avoid using normal distribution)
 
-Can supplement with alternative data source but can also introduce new issues (e.g. lower reliability)
+* Extreme value theory (Module 20)
 
-***Interdependence of Risks***
+#### Data Limitation
 
-Imperative to consider the interrelationships between risks (key to ERM)
+Data might be **limited in volume** and/or **heterogeneous**
+
+Can **supplement** with alternative data source 
+
+* But can also **introduce new issues** (e.g. lower reliability)
+
+#### Interdependence of Risks
+
+Imperative to consider the **interrelationships between risks**  
+(key to ERM)
 
 Need to model many different risk factors and their dependencies within the same model (multivariate distribution)
 
-* More in Sec 2 or Mod 16 for multivariate distributions
+* More in [Section 2](#Correlation) or Module 16 for multivariate distributions
 
-***Unquantifiable Risks***
+#### Unquantifiable Risks
 
-Some risks are unquantifiable (many of the op-risk)
+Some risks are **unquantifiable** (many of the op-risk)
 
 Generally a rough estimate can still be made or a range of scenarios considered
 
-* Difficulties is in quantifying the probability
+* Difficulties is in **quantifying the probability**
 
-Can use risk ranges, risk buckets to analyze (due to the lack of granularity) and display the results in a risk map (mod 13)
+Can use **risk ranges**, **risk buckets** to analyze (due to the lack of granularity) and display the results in a **risk map** (Module 13)
 
-## Correlation
+## Correlation {#Correlation}
 
-Correlation: Measure of how different variables relate or associate to each other
+***Correlation***:  
+Measure of how different variables relate or associate to each other
 
-For ERM, we're interested in how different risk respond to changes in a given risk factor
+For ERM, we're interested in how different risk *respond* to **changes in a given risk factor**
 
-* If different risk responded similarly, then that is evidence of a concentration of risk (which will require careful monitoring and management)
+* If different risk *responded similarly*, then that is evidence of a **concentration of risk** (which will require careful monitoring and management)
 
 ### Linear Correlation: Pearon's Rho
 
-Pearson's $rho$
+***Pearson's $\boldsymbol{\rho}$***
 
 * $\in [-1, 1]$
-* Measure of linear dependencies between the the variables
-    * e.g. if $Y = aX + b$ then $\mid\rho(X,Y)\mid = 1$
+
+* Measure of **linear dependencies** between the the variables
+    
+    e.g. if $Y = aX + b$ then $\mid\rho(X,Y)\mid = 1$
+
 * $\pm 1$ means perfect linear correlation (positive linear and negative linear)
 
-***
-
-For r.v. $X$ and $Y$
+***Pearson's $\boldsymbol{\rho}$ for r.v. $X$ and $Y$***
 
 $\rho_{X,Y} = \dfrac{\sigma_{X,Y}}{\sigma_X \sigma_Y} = \dfrac{\mathrm{Cov}(X,Y)}{\sqrt{\mathrm{Var}(X)\mathrm{Var}(Y)}}$
 
 * $\mathrm{Cov}(X,Y) = \mathrm{E} \left[ (X - \mathrm{E}[X])(Y - \mathrm{E}[Y]) \right] = \mathrm{E}(XY) - \mathrm{E}(X) \mathrm{E}(Y)$
 
-For discrete sample size $T$
+***Sample correlation coefficient*** for discrete sample size $T$:
 
-**Sameple correlation coefficient**:
-
-$$r_{X,Y} = \dfrac{S_{X,Y}}{S_X S_Y} = \dfrac{\dfrac{1}{T-1} \sum \limits_{t=1}^T (X_t - \bar{X})(Y_t - \bar{Y})}{\left[\sqrt{\dfrac{1}{T-1}\sum \limits_{t=1}^T(X_t - \bar{X})^2}\right]\left[\sqrt{\dfrac{1}{T-1}\sum \limits_{t=1}^T(Y_t - \bar{Y})^2}\right]}$$
+$r_{X,Y} = \dfrac{S_{X,Y}}{S_X S_Y} = \dfrac{\dfrac{1}{T-1} \sum \limits_{t=1}^T (X_t - \bar{X})(Y_t - \bar{Y})}{\left[\sqrt{\dfrac{1}{T-1}\sum \limits_{t=1}^T(X_t - \bar{X})^2}\right]\left[\sqrt{\dfrac{1}{T-1}\sum \limits_{t=1}^T(Y_t - \bar{Y})^2}\right]}$
 
 * $s_X$ and $s_Y$ are sample s.d.
 
-***
-
-**Example**
+***Example***
 
 | $t$ | $X_t$ | $Y_t$ | $(X_t - \bar{X})^2$ | $(Y_t - \bar{Y})^2$ | $(X_t - \bar{X})(Y_t - \bar{Y})$ |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -226,68 +282,77 @@ $$r_{X,Y} = \dfrac{S_{X,Y}}{S_X S_Y} = \dfrac{\dfrac{1}{T-1} \sum \limits_{t=1}^
 | 4 | 64 | 85 | 2.25 | 473.06 | -2.63 |
 | $\sum$ | 250 | 253 | 225.00 | 993.74 | -235.50| 
 
-$\bar{X} = 250 / 4 = 62.5$
+* $\bar{X} = 250 / 4 = 62.5$
 
-$\bar{Y} = 253 / 4 = 63.25$
+* $\bar{Y} = 253 / 4 = 63.25$
 
-$r_{X,Y} = \dfrac{-235.5}{3} \left/ \middle(\sqrt{\dfrac{225}{3}} \times \sqrt{\dfrac{992.74}{3}}\right) = -0.498$
-
-***
+* $r_{X,Y} = \dfrac{-235.5}{3} \left/ \middle(\sqrt{\dfrac{225}{3}} \times \sqrt{\dfrac{992.74}{3}}\right) = -0.498$
 
 ***Advantages***
 
-Value of the linear correlation coefficient is unchanged under the operation of **strictly increasing linear transformation**
+* Value of the linear correlation coefficient is unchanged under the operation of **strictly increasing linear transformation**
 
-* i.e. $\rho(a+bX, c+dY) = \rho(X,Y)$ where $b, d > 0$
+    i.e. $\rho(a+bX, c+dY) = \rho(X,Y)$ where $b, d > 0$
 
 ***Limitations***
 
-Value of the linear correlation coefficient is **not** unchanged under operation of a generally **(non-linear)** strictly increasing transformation
+* Value of the linear correlation coefficient is **not** unchanged under operation of a generally **(non-linear)** strictly increasing transformation
 
-Only a valid measure of correlation if the marginal distribution are jointly elliptical (e.g. multivariate normal)
+* Only a valid measure of correlation if the **marginal distribution are jointly elliptical** (e.g. multivariate normal)
 
-Linear correlation is not defined where $\mathrm{Var}(X)$ or $\mathrm{Var}(Y)$ is infinite
+* Linear correlation is **not defined** where $\mathrm{Var}(X)$ or $\mathrm{Var}(Y)$ is **infinite**
 
-* Can't be used for some heavy tailed distributions
+    $\therefore$ Can not be used for some heavy tailed distributions
 
-$rho = 0$ does not imply that there is no relationship between variables (only there is **no linear** relationship)
+* $\rho = 0$ does not imply that there is no relationship between variables
 
-It is not guaranteed that we can put together a joint distribution for any given r.v. $X$, $Y$, and $\rho$
+    Only there is **no linear** relationship
 
-* Some $\rho$ might be unattainable i.e. incompatible with the marginal distributions
-* Value of the linear correlation is dependent on the **joint and marginal distribution**
+* There is no guarantee that we can put together a joint distribution for any given r.v. $X$, $Y$, and $\rho$
+
+    * Some $\rho$ might be unattainable  
+    (i.e. incompatible with the marginal distributions)
+
+    * This is a problem copula will solve
+
+* Value of the linear correlation is **dependent** on the **joint and marginal distribution**
+
+    * This is a problem rank correlation will solve
+
 * See appendix for more
 
 ### Rank Correlation
 
-Calculate by looking at the position of each item of observed data when ordered (rather than the values of the data themselves)
+Calculate by looking at the **position of each item** of observed data when **ordered** (rather than the values of the data themselves)
 
-The 2 main ones are Spearman's $\rho$ and Kendall's $\tau$
+The 2 main rank correlation measures are:
+
+1. Spearman's $\rho$
+
+2. Kendall's $\tau$
 
 ***Advantages*** over linear correlation
 
-Rank correlation of a bivariate distribution is **independent of the marginal distribution** $\therefore$ has more attractive properties
+* Rank correlation of a bivariate distribution is **independent of the marginal distribution**
+
+    $\therefore$ has more attractive properties
 
 #### Spearman's Rho
 
-For r.v. $X$ and $Y$ w/ marginal distribution functions $F_X$ and $F_Y$
+***Spearman's $\rho$*** for r.v. $X$ and $Y$ w/ marginal distribution functions $F_X$ and $F_Y$
 
-Spearman's $rho$: $_{s}\rho(X,Y) = \rho \left( F_X(X), F_Y(Y)\right)$
+$_{s}\rho(X,Y) = \rho \left( F_X(X), F_Y(Y)\right)$
 
 * $_{s}\rho$ is the linear correlation of the distribution functions of the two r.v.
 
-For 2 r.v. $X$ and $Y$ and sample size $T$:
-
-**Spearman's sample $\rho$**
+***Spearman's sample $\rho$*** for 2 r.v. $X$ and $Y$ and sample size $T$:
 
 $$_{s}r_{X,Y} = 1 - \dfrac{6}{T(T^2-1)}\sum \limits_{t=1}^T(V_t - W_t)^2$$
 
 * $V_t$ and $W_t$ are the rankings of $X_t$ and $Y_t$
 * Can number the rankings in either direction as long as it is consistent
 
-***
-
-**Examples**
+***Examples***
 
 | $t$ | $X_t$ | $Y_t$ | $V_t$ | $W_t$ | $(V_t-W_t)^2$ | 
 | :---: | :---: | :---: | :---: | :---: | :-----: |
@@ -297,40 +362,34 @@ $$_{s}r_{X,Y} = 1 - \dfrac{6}{T(T^2-1)}\sum \limits_{t=1}^T(V_t - W_t)^2$$
 | 4 | 64 | 85 | 3 | 4 | 1 |
 |   |    |    |   |   | $\sum = 14$ | 
 
-$_{s}r_{X,Y} = 1 - \dfrac{6}{4 \times 15} 14 = -0.4$
+* $_{s}r_{X,Y} = 1 - \dfrac{6}{4 \times 15} 14 = -0.4$
 
 #### Kendall's Tau
 
-For r.v. $X$ and $Y$
-
-Kendall's $\tau$:
+***Kendall's $\tau$*** for r.v. $X$ and $Y$
 
 $\tau(X,Y) = \mathrm{E} \left[ \text{sign} \left( (X - \tilde{X})(Y - \tilde{Y})\right)\right]$
 
-$(\tilde{X}, \tilde{Y})$is an independent copy of $(X,Y)$
+* $(\tilde{X}, \tilde{Y})$is an independent copy of $(X,Y)$
 
-* A new pair of r.v. with the same joint distribution as $(X,Y)$ but statistically independent of $(X,Y)$
+    A new pair of r.v. with the same joint distribution as $(X,Y)$ but statistically independent of $(X,Y)$
 
-For 2 r.v. Kendall's sample $\tau$:
+***Kendall's sample $\tau$*** for 2 r.v. Kendall's sample $\tau$
 
-**Kendall's sample $\tau$**
-
-$$t_{X,Y} = \dfrac{2}{T(T-1)}(p_c - p_d)$$
+$t_{X,Y} = \dfrac{2}{T(T-1)}(p_c - p_d)$
 
 * $p_c$ and $p_d$ are the number of concordant and discordant pairs
 * $(X_1, Y_1)$ and $(X_2, Y_2)$ is concordant if $X_2 - X_1$ and $Y_2 - Y_1$ have the same sign; otherwise they are discordant
 
-**Alternative definition of $p_c - p_d$**
-
-Easier to calculate but awkward to define algebraically
+***Alternative definition of $p_c - p_d$***
 
 $p_c - p_d = \sum \limits_{t=1}^{T-1} \sum \limits_{s=t-1}^T \left( I \left(W_s' > W_t' \right)-I \left( W_s'<W_t' \right) \right)$
 
-$W'$ are the rankings of $Y$ re-sequenced so that the corresponding rankings of $X$ ($V'$) are strictly increasing
+* $W'$ are the rankings of $Y$ re-sequenced so that the corresponding rankings of $X$ ($V'$) are strictly increasing
 
-***
+* Easier to calculate but awkward to define algebraically
 
-**Example 1**
+***Example 1***
 
 | $t$ | $X_t$ | $Y_t$ | vs $t = 1$ | vs $t=2$ | vs $t=3$ |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -339,11 +398,11 @@ $W'$ are the rankings of $Y$ re-sequenced so that the corresponding rankings of 
 | 3 | 72 | 45 | $D(+,-)$ | $D(+,-)$ |   |
 | 4 | 64 | 85 | $C(+,+)$ | $C(+,+)$ | $D(-,+)$  |
 
-$p_c - p_d = 2 - 4 = -2$
+* $p_c - p_d = 2 - 4 = -2$
 
-$t_{X,Y} = \dfrac{2}{4(4-1)}(-2) = -0.33$
+* $t_{X,Y} = \dfrac{2}{4(4-1)}(-2) = -0.33$
 
-**Example 2**
+***Example 2: Alternative Method***
 
 | $t$ | $X_t$ | $Y_t$ | $V_t$ | $W_t$ | $V_t'$ | $W_t'$ | $\sum \limits_{s=t+1}^T \left( I \left(W_s' > W_t' \right)-I \left( W_s'<W_t' \right) \right)$ |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -353,20 +412,25 @@ $t_{X,Y} = \dfrac{2}{4(4-1)}(-2) = -0.33$
 | 4 | 64 | 85 | **3** | 4 | **4** | 1 |    |
 |   |    |    |       |   |       |   | $\sum = -2$ |
 
-First row is -1 because two of $Y$'s re-sequenced ranks ($W'$) in subsequent rows are lower than 3 (implying that they are not in the same sequence as $X$), therefore contributing -2 to the calculation and one of $Y$'s re sequenced ranks in subsequent rows is higher than 3, contributing +1
-
-***
+* First row is -1 because two of $Y$'s re-sequenced ranks ($W'$) in subsequent rows are lower than 3 (implying that they are not in the same sequence as $X$), therefore contributing -2 to the calculation and one of $Y$'s re sequenced ranks in subsequent rows is higher than 3, contributing +1
 
 #### Properties of Rank Correlation
 
 Properties for both Kendall's $\tau$ and Spearman's $\rho$
 
 * $\in [-1, 1]$
-* Symmetric (i.e. $\tau(X,Y) = \tau(Y,X)$)
+
+* Symmetric  
+(i.e. $\tau(X,Y) = \tau(Y,X)$)
+
 * 0 if r.v. are independent
-* 1 if ranks of $X$ and $Y$ are perfectly aligned (comonotonic)
-* -1 if ranks of $X$ and $Y$ are precisely in reverse (countermonotonic)
+
+* 1 if ranks of $X$ and $Y$ are perfectly aligned (**comonotonic**)
+
+* -1 if ranks of $X$ and $Y$ are precisely in reverse (**countermonotonic**)
+
 * $\left(\dfrac{3}{2} \tau - \dfrac{1}{2} \right) \leq \: _{s}\rho \leq \left(\dfrac{1}{2} + \tau - \dfrac{1}{2} \tau ^2 \right)$ if $\tau \geq 0$
+
 * $\left(\dfrac{3}{2} \tau + \dfrac{1}{2} \right) \geq \: _{s}\rho \geq \left(-\dfrac{1}{2} + \tau + \dfrac{1}{2} \tau ^2 \right)$ if $\tau < 0$
 
 ### Tail Correlation
@@ -374,221 +438,301 @@ Properties for both Kendall's $\tau$ and Spearman's $\rho$
 We can focus on the relationships between variables only at the tail
 
 1. Calculate correlation based only on the lowest and highest $k\%$ of observation in a sample
-2. Calculate tail dependence (mod 18)
-    * Definition of tail is subjective (cut off point)
-    * Results can be highly sensitive to the cut off and potentially unreliable (due to insufficient data points)
+
+2. Calculate tail dependence (Module 18)
+    
+    * **Definition of tail** is subjective  
+    (e.g. cut off point)
+    
+    * Results can be **highly sensitive** to the **cut off** and potentially unreliable (due to insufficient data points)
     
 ## Deterministic Modeling
 
-Deterministic model use set(s) of predetermined assumptions
+Deterministic model use set(s) of **predetermined assumptions**
 
 * Each set of assumptions uniquely determines the value to be taken by each variable in the model
-* For each set of assumptions, the output from the model is fully determined (no random element)
+
+* For each set of assumptions, the output from the model is **fully determined**  
+(i.e. no random element)
+
     * Contrast the unpredictable output of a truly stochastic model (not based on pseudo randomness)
 
-Prudence is allowed for through the particular choice of assumptions e.g. by adding margins to best estimate assumptions
+Prudence is allowed for through the particular choice of assumptions  
+(e.g. by adding margins to best estimate assumptions)
 
 ### Deterministic Modeling Approaches
 
 #### Sensitivity Analysis
 
-Varying each input assumption one at a time to quantify the effect each has independently on the model's output
+*Varying* each **input assumption** **one at a time** to quantify the effect each has independently on the model's output
 
 * Can perform for all input or just the key ones
 
 ***Reasones to use sensitivity analysis*** as part of risk assessment:
 
-1. Develop an understanding of the risk faced
+1. Develop an **understanding of the risk faced**
+    
     * Important for company to have an awareness of how risks might impact it in different circumstances
+  
     * Do do by changing the assumptions used
-2. Provide insight into the dependence of the output on subjective assumptions
-    * Most model inputs are subject
+
+2. Provide insight into the **dependence of the output** on **subjective assumptions**
+    
+    * Most model inputs are subjective
+  
     * Model is only as accurate and reliable as the data and assumptions that goes it
+  
     * Quality of the model is dependent on the knowledge and experience of whose judgement it relies
-    * Varying the model's inputs can show how sensitive the model is to changes in those inputs $\therefore$ focus attention on the most important assumptions and make clear the model's reliance upon judgement
-3. Satisfy supervisory authority's requirements
-    * E.g. VaR doesn't consider the most extreme events and so supervisory bodies may specify that companies should investigate the effect of more significant change in their assumptions to ensure that they have considered the full range of possibilities for future outcomes
+  
+    * Varying the model's inputs can **show how sensitive the model is to changes in those inputs**
+    
+        $\therefore$ focus attention on the most important assumptions and make clear the model's reliance upon judgement
+    
+3. Satisfy **supervisory authority's requirements**
+
+    e.g. VaR doesn't consider the most extreme events and so supervisory bodies may specify that companies should investigate the effect of more significant change in their assumptions to ensure that they have considered the full range of possibilities for future outcomes
     
 ***Limitation***
 
-There are no probabilities assigned to each of the options used
+* There are **no probabilities assigned** to each of the options used
 
 * Options are merely viewed as possibilities of what might happens on certain circumstances
 
+#### Scenario Analysis {#scen-analysis}
 
-#### Secneario Analysis
-
-Similar to sensitivity analysis except we change multiple inputs simultaneously
+Similar to sensitivity analysis except we **change multiple inputs simultaneously**
 
 * Concerned with looking at the results from a model under various scenarios
-* A scenario is a set of model inputs that represents a plausible and internally-consistent set of future conditions
+
+* A scenario is **a set of model inputs** that *represents* a **plausible and internally-consistent set of future conditions**
 
 ***4 Steps for conducting a scenario analysis***
 
-1. Decide top down on the scenarios to be modeled
-    * Can be based on historical event (but not limited to)
-    * Ask participants for the worst plausible event they can imagine e.g. collapse of a major financial institution, EQ, oil shortage etc
-2. Establish the impact on risk factors (i.e. model inputs) then run the models to get a feel for the overall effect
-3. Take action based on results
-    * Review results and put in place plans to minimize the effect
-    * Look to identify early warning indicators that a certain scenario may become reality
-4. Review the scenarios to ensure they remain relevant over time
+1. **Decide top down on the scenarios** to be modeled
+  
+    * Can be based on **historical event** (but not limited to)
+  
+    * Ask participants for the **worst plausible event they can imagine**
+    
+        e.g. collapse of a major financial institution, EQ, oil shortage etc
+        
+    * Important to **draw on expertise from across the business** in order to generate meaningful scenarios and resultant changes in variables
 
-Important to draw on expertise from across the business in order to generate meaningful scenarios and resultant changes in variables
+2. *Establish* the **impact on risk factors** (i.e. model inputs) then run the models to get a **feel for the overall effect**
+
+3. **Take action based on results**
+  
+    * Review results and put in place **plans to minimize the effect**
+  
+    * Look to **identify early warning indicators** that a certain scenario may become reality
+
+4. Review the scenarios to *ensure* they **remain relevant over time**
 
 ***Advantages***
 
-* Facilitates the evaluation of the potential impact of plausible future events on an org
+* Facilitates the *evaluation* of the **potential impact of plausible future events** on an org
+
 * Not restricted to consideration of what has actually happened
-    * Can assess vulnerabilities to high impact low probability events
-* Provides useful additional information to supplement traditional models based on statistical information
-* Facilitate the production of action plan to deal with possible future catastrophes by assessing the possible impact both pre and post implementation of a specified mitigation strategy
+
+    * Can **assess vulnerabilities** to **high impact low probability events**
+
+* Provides useful additional information to **supplement traditional models** based on *statistical information*
+
+* Facilitate the production of **action plan to deal with possible future catastrophes** by assessing the possible impact both pre and post implementation of a specified mitigation strategy
 
 ***Disadvantages***
 
-* Potentially complex process
-* Relies on successful generation of hypothetical extreme but plausible events
-* Uncertain whether the full set of scenarios considered is representative or exhaustive
-* Absence of any assigned probabilities to any of the scenarios (similar to sensitivity analysis)
+* Potentially **complex** process
+
+* *Relies* on **successful generation of hypothetical extreme but plausible events**
+
+* *Uncertain* whether the full set of scenarios considered is **representative or exhaustive**
+
+* **Absence of any assigned probabilities** to any of the scenarios (similar to sensitivity analysis)
 
 #### Stress Testing
 
-Similar to scenario and sensitivity testing but focuses only on extreme scenarios or very large changes in input assumptions
+Similar to scenario and sensitivity testing but **focuses only on extreme scenarios** or **very large changes in input assumptions**
 
-2 main categories of stress test:
+***2 main categories of stress test***:
 
-1. Top down stress scenario test
-    * Look at a particular scenario and varying all risk factors in a mutually consistent fashion
-2. Bottom up stress variable tests
-    * Consider the effect of a significant adverse change in a crucial factor (or a narrow range of crucial factors)
+1. **Top down** stress scenario test
+  
+    * Look at a **particular scenario** and varying all risk factors in a mutually consistent fashion
+
+2. **Bottom up** stress variable tests
+  
+    * Consider the effect of a *significant adverse change* in a **crucial factor** (or a narrow range of crucial factors)
     
 ***Advantages***
 
 * Ability for supervisors to **compare** the impact of the same stresses on **differeing org.**
-* Explicit **examination of extreme events** which might not otherwise be considered (e.g. if a stochastic approach was adopted)
+
+* *Explicit* **examination of extreme events** which might not otherwise be considered (e.g. if a stochastic approach was adopted)
+
 * Use in **assessing the suitability of any response strategies**
+  
     * First assessing the expected (gross) impact of the stress in absence of any response, and then the expected (net) impact in the presence of the proposed response
     
-**Limitations**
+***Limitations***
 
-* Subjective as to which assumptions to stress and the degree of stress to consider
+* **Subjective** as to which **assumptions to stress** and the **degree of stress** to consider
+  
     * Even issued by supervisors, the company still needs to modify or augment them to suit their circumstances
-* Assigns no probability to the events considered
-* Only looks at extreme situations, so needs to be coupled with other techniques (e.g. simulations) in order to understand the full range of outcomes
+
+* **Assigns no probability** to the events considered
+
+* **Only looks at extreme situations**
+
+    So needs to be coupled with other techniques (e.g. simulations) in order to understand the full range of outcomes
 
 ### Links to Other Processes
 
 ***Business Continuity Management***
 
-Program to ensure a business can continue to operate in the face of disaster or extreme events (usually in the context of operational risk)
+* Program to *ensure* a **business can continue to operate** in the face of disaster or extreme events (usually in the context of operational risk)
 
-Simulate emergencies to test what participants' reactions would be to an extreme event then use scenario analysis to determine their likely long run impacts
+* Simulate emergencies to **test what participants' reactions would be** to an extreme event then use scenario analysis to determine their likely long run impacts
 
 ***Back testing***
 
-Way to validate the models currently in use within an org.
+* Way to **validate the models** currently in use within an org.
 
-Running a model using historic data (so we effectively use a scenario that has already happened) and comparing the model output with what actually happened
+* **Running a model using historic data** (so we effectively use a scenario that has already happened) and **comparing the model output with what actually happened**
+  
+    * Discrepancies can be investigated and their causes remedied
+  
+    * Back testing is required under Basel II and results can impact the bank's capital requirements
 
-* Discrepancies can be investigated and their causes remedied
-* Back testing is required under Basel II and results can impact the bank's capital requirements
+## Stochastic Modeling {#stochastic}
 
-## Stochastic Modeling
+Stochastic model is used **when the inputs to a model is uncertain**
 
-Stochastic model is used when the inputs to a model is uncertain
+***Key benefits***:
 
-Key benefits: provides a probability distribution for the model outputs
-
-* Run the model repeatedly (each run is a simulation) and accumulating the results to give a distribution of potential outcomes
-* From the outcome distribution we can estimate the mean, variance, probabilities associated with the outcome being more or less than a certain value
+* Provides a **probability distribution for the model outputs**
+  
+    * Run the model repeatedly (each run is a simulation) and accumulating the results to give a distribution of potential outcomes
+  
+    * From the outcome distribution we can estimate the `mean`, `variance`, `probabilities` associated with the outcome being more or less than a certain value
 
 ### Historical Simulation (Bootstrapping)
 
-Each simulation is generated through direct reference to historical data (e.g. random sampling)
+Each simulation is generated through **direct reference to historical data** (e.g. random sampling)
 
 ***Advantages***
 
-* Applicable to many situations as long as suitable past data is available
+* **Applicable to many situations** as long as suitable past data is available
+
 * **Does no require large amounts** of past data if the sampling is done with replacement
+
 * **Does not require** the specification of probability **distribution for the inputs**
-* Reflects the **characteristics** of the past data (incl. non-linearity, non-normality, interdependencies etc) without the need for parameterization
+
+* *Reflects* the **characteristics** of the past data (incl. non-linearity, non-normality, interdependencies etc) without the need for parameterization
 
 ***Disadvantages***
 
 * Can not be performed in the absence of any **relevant past data**
-* Assumes that **past data is indicative** of the future
+
+* *Assumes* that **past data is indicative** of the future
+
 * Does not take into account **inter-temporal links** between pasts data items (e.g. auto correlation)
-* May **underestimate uncertainty** (past might not capture what potentially can happen) and so in practice should generally be used with other methods (e.g. stress test) so as to consider a greater range of outcomes
+
+* May **underestimate uncertainty** (past might not capture what potentially can happen)
+
+    In practice should generally be used with other methods (e.g. stress test) so as to consider a greater range of outcomes
 
 ### Forward-looking Approaches
 
 #### Monte Carlo Simulation
 
-Simulation based on random numbers to generate input values and the model is run using these values (e.g. using $U(0,1)$ and look up $F^{-1}(u)$)
+Simulation based on random numbers to generate input values and the model is run using these values  
+(e.g. using $U(0,1)$ and look up $F^{-1}(u)$)
 
 ***Advantages***
 
-* Computers packages is widely available and can be easily adopted and update
+* Computers packages is widely available and can be **easily adopted and update**
+
 * Increasing the number of simulation increases the accuracy of the output by reducing the estimation error
-* Possible to simulate the interdependence of risk
-* Widely understood technique as the math is simple
+
+* Possible to simulate the **interdependence** of risk
+
+* **Widely understood** technique as the math is simple
+
 * Can be used to model complex financial instruments (e.g. non-linear, non-normal payoff) like derivatives
 
 ***Disadvantages***
 
-* Random selection of parameter values may lead to a set of simulations which is not representative of the full range of possibilities (unless the set is sufficiently large)
-* Large sets of simulation may be time consuming to perform (but you can use methods such as latin hypercube to reduce the calculation burden)
+* Random selection of parameter values may lead to a set of **simulations which is not representative of the full range of possibilities** (unless the set is sufficiently large)
+
+* Large sets of simulation may be **time consuming** to perform
+
+    Can use methods such as latin hypercube to reduce the calculation burden)
 
 #### Data-based vs Factor-based
 
-Factor based approach:  
-**Causal links** between variables are **described explicitly** within the model
+***Factor based approach***:
 
-Data based approach:  
-Focuses more on **modeling the key variables** rather than the factors which drive them
+* **Causal links** between variables are **described explicitly** within the model
+
+***Data based approach***:  
+
+* Focuses more on **modeling the key variables** rather than the factors which drive them
 
 * Causality is not the main focus
 
-**Example** with equity returns
+***Example*** with equity returns
 
-* Data based: model with time series with past equity returns and volatility as inputs
-* Factor based: need to model with a layered set of nested models (cascade of models)
+* **Data based**: model with time series with past equity returns and volatility as inputs
+
+* **Factor based**: need to model with a layered set of nested models (cascade of models)
+      
     * Inner model produce values for inflation
+    
     * Next layer model interest rates using inflation as input
+    
     * Equity dividends might be modeled using the 2 above as inputs
+    
     * Finally equity returns might be modeled using dividend and interest rates as inputs
     
-**Advantages** of the factor based approach
+***Advantages*** of the factor based approach
 
-* Discipline imposed on understanding what drives the key variables
-* Making the relationship between the drivers explicit
+* Discipline imposed on **understanding what drives the key variables**
 
-**Disadvantages** of the factor based approach
+* Making the **relationship** between the drivers **explicit**
 
-* Additional effort required may not be justifiable
+***Disadvantages*** of the factor based approach
+
+* Additional **effort required may not be justifiable**
 
 ### Pseudo-random numbers
 
-Appear no to follow a pattern but are the result of an underlying mathematical process
+Appear not to follow a pattern but are the result of an underlying mathematical process
 
-For the purpose of simulation, the pseudo random numbers should:
+For the purpose of simulation, the **pseudo random numbers should**:
 
-* Be replicable (for checking)
-* repeat only after a long period (create valid lengthy simulations)
-* Be uniformly distributed over a large number of dimensions
-* Exhibit no serial correlations
+1. Be **replicable** (for checking)
+
+2. **Repeat only after a long period** (create valid lengthy simulations)
+
+3. Be **uniformly distributed** over a** large number of dimensions**
+
+4. Exhibit **no serial correlations**
 
 E.g. use digits generated using a very large prime number (Mersenne twister that is based on $2^N -1$)
 
 ### Market Consistency
 
-Output from models can often be compared to observable values in the market (e.g. market prices, implied volatility and implied correlations)
+Output from models can often be **compared to observable values in the market**  
+(e.g. market prices, implied volatility and implied correlations)
 
-Differences between market values and modeled values should be
+***Differences between market values and modeled values*** should be
 
-* Explained, or
-* Identified as being indicative of possible error (e.g. model error, data error)
+* **Explained**, or
 
-One possible explanation for difference is that market values may at times not only represent the market's long term views
+* **Identified** as being indicative of possible error  
+(e.g. model error, data error)
 
-* e.g. be affected by short-term supply of demand effects that are not indicative of long term value
+One possible explanation for difference is that **market values may at times not only represent the market's long term views**
+
+* e.g. be affected by **short-term supply of demand effects that are not indicative of long term value**
