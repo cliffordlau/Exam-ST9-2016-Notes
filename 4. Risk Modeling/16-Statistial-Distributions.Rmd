@@ -685,9 +685,9 @@ Can be used in cases where in additional to the upper and lower values, the **mo
 
 ## Multivariate
 
-Multivariate distributions are simpler than copulas (more flexible)
+Multivariate distributions are **simpler than copulas** (more flexible)
 
-Appropriate if limited data is available and/or a lower level of accuracy/flexibility is required
+*Appropriate if* **limited data** is available and/or a **lower level of accuracy/flexibility** is required
 
 ### Multivariable Normal
 
@@ -698,37 +698,53 @@ $\mathbf{X} = (X_1,...,X_N)'$ a column vector of r.v. has multivariate normal di
 $\mathbf{X} = \boldsymbol{\alpha} + \mathbf{C}\mathbf{Z}$
 
 * $\boldsymbol{\alpha} = (\alpha_{X_1},...,\alpha_{X_N})'$  
-N-dimensional column vector of location parameters (i.e. means)
+
+    N-dimensional column vector of **location** parameters  
+    (i.e. means)
+
 * $\mathbf{Z} = (Z_1,...,Z_k)'$  
-Vector of *iid* standard univariate normal r.v.
+
+    Vector of *iid* **standard univariate normal** r.v.
+
 * $\boldsymbol{\Sigma}$: covariance matrix  
-Containing the scale and co-scale parameters (i.e. the variances and covariances)
+
+    Containing the **scale** and **co-scale** parameters  
+    (i.e. the variances and covariances)
+
 * $\mathbf{C}$: $N \times k$ matrix of constants such that $\mathbf{C}\mathbf{C}' = \boldsymbol{\Sigma}$
 
-Mean:
+***Mean***:
 
 * $\mathrm{E}(\mathbf{X}) = \hat{\alpha}'$ since $\mathbf{Z}$ are standard normals
 
-Covariance:
+***Covariance***:
 
 * $\mathrm{Cov}(\mathbf{X}) = \mathrm{Cov}(\mathbf{C}\mathbf{Z}) = \mathbf{C} \mathrm{Cov}(\mathbf{Z}) \mathbf{C}' = \mathbf{C}\mathbf{C}' =\boldsymbol{\Sigma}$
+
 * Since $Z_i \perp\!\!\perp Z_j$ so $\mathrm{Cov}(\mathbf{Z})$ is the $k \times k$ identify matrix
 
-The distribution is completely characterized by its mean vector and covariance matrix
+***Parameters***
 
-Components of $\mathbf{X}$ are mutually independent iff $\boldsymbol{\Sigma}$ is diagonal (i.e. all off diagonal entries are 0)
+* Distribution is completely characterized by its `mean vector` and `covariance matrix`
 
-If the location parameters are all 0 and the scale parameters are all 1 then $\mathbf{X}$ has standard multivariate normal distribution
+* Components of $\mathbf{X}$ are mutually independent **iff** $\boldsymbol{\Sigma}$ is diagonal  
+(i.e. all off diagonal entries are 0)
 
-* Correlation matrix $\boldsymbol{\Sigma} = \mathbf{R}$
+* If the location parameters are all 0 and the scale parameters are all 1 
+
+    $\hookrightarrow$ $\mathbf{X}$ has standard multivariate normal distribution
+
+    $\hookrightarrow$ Correlation matrix $\boldsymbol{\Sigma} = \mathbf{R}$ (Correlation matrix)
 
 ***Key limitations*** for purpose of risk management
 
-* Tails of the univariate marginal distributions are too thin
-* Joint tails do not assign enough weight to joint extreme outcomes
-* Distribution has a strong form of symmetry (elliptical symmetry)
+* **Tails** of the univariate marginal distributions are **too thin**
 
-Contour plot of the bivariate normal PDF and CDF
+* **Joint tails** do *not assign enough* weight to **joint extreme outcomes**
+
+* Distribution has a **strong form of symmetry** (elliptical symmetry)
+
+***Contour plot of the bivariate normal PDF and CDF***
 
 ![](figures/figure-16.02.png)
 
@@ -736,9 +752,9 @@ Contour plot of the bivariate normal PDF and CDF
 
 ### Testing for Multivariate Normality
 
-Sidenote:
+***Nomenclature***:
 
-Nomenclature is to use Greek ($\boldsymbol{\Sigma}$, and \boldsymbol{\rho}) for statistics of the distributions and use Roman letters ($\mathbf{S}$, $\mathbf{R}$) for sample statistics
+* We use Greek ($\boldsymbol{\Sigma}$, and \boldsymbol{\rho}) for statistics of the distributions and use Roman letters ($\mathbf{S}$, $\mathbf{R}$) for sample statistics
 
 ***Standard Estimators of Covariance and Correlation***
 
@@ -748,99 +764,121 @@ $T$ observations $\mathbf{X}_1,...\mathbf{X}_T$ from a $d$-dimensional vector
 
 #### Sample mean
 
-Standard method of moments estimator of the location vector $\boldsymbol{\alpha}$
-
 $\begin{align}
     \bar{\mathbf{X}} &= \dfrac{1}{T}\sum \limits_{t=1}^T \mathbf{X}_t \\
     &= \left(\dfrac{1}{T}\sum \limits_{t=1}^T X_{t1}, \dfrac{1}{T}\sum \limits_{t=1}^T X_{t2},...,\dfrac{1}{T}\sum \limits_{t=1}^T X_{td}\right) \\
     &= (\bar{X_1}, \bar{X_2},...,\bar{X_d})'\\
   \end{align}$
+
+* Standard ***method of moments estimator*** of the location vector $\boldsymbol{\alpha}$
   
-$\bar{\mathbf{X}}$ is an unbiased estimator for $\mathbf{X}$
+* $\bar{\mathbf{X}}$ is an unbiased estimator for $\mathbf{X}$
 
 #### Sample covariance matrix
 
-Standard method of moments estimator of the covariance matrix $\boldsymbol{\sigma}$
-
 $\mathbf{S} = \dfrac{1}{T} \sum \limits_{t=1}^T (\mathbf{X}_t - \bar{\mathbf{X}})(\mathbf{X}-\bar{\mathbf{X}})'$
 
-$i$,$j$^th^ entry of the sample correlation matrix $\mathbf{R}$ is:
+* Standard ***method of moments estimator*** of the covariance matrix $\boldsymbol{\sigma}$
 
-$r_{ij} = \dfrac{s_{ij}}{\sqrt{s_{ii}s_{jj}}}$
+* $\mathbf{S}$ is a biased estimator of $\boldsymbol{\sigma}$
 
-* $s_{ij}$ is the $i$,$j$^th entry of the sample covariance matrix $\mathbf{S}$
+$\mathbf{S}_u = \dfrac{T\mathbf{S}}{T - 1} = \dfrac{1}{T - 1} \sum \limits_{t=1}^T ( \mathbf{X}_t - \mathbf{\bar{X}})( \mathbf{X}_t - \mathbf{\bar{X}})'$
+
+* $\mathbf{S}_u$ is an unbiased estimator for $\mathbf{X}$
+
+$i$,$j$^th^ entry of the ***sample correlation matrix*** $\mathbf{R}$ is:
+
+* $r_{ij} = \dfrac{s_{ij}}{\sqrt{s_{ii}s_{jj}}}$
+
+* $s_{ij}$ is the $i$,$j$^th^ entry of the **sample covariance matrix** $\mathbf{S}$
 
 Remember that the properties of $\bar{\mathbf{X}}$, $\mathbf{S}$, and $\mathbf{R}$ depend on the true multivariate distribution of the observations
 
 #### Mahalanobis Distance
 
-With the standard estimators $\bar{\mathbf{X}}$, $\mathbf{S}$, $\boldsymbol{\alpha}$, and $\boldsymbol{\Sigma}$ we can calculate
+$D_t$ is the ***Mahalanobis distance*** between $\mathbf{X}_t$ and $\bar{\mathbf{X}}$ at time $t$
 
-$D^2_t = (\mathbf{X}_t - \bar{\mathbf{X}})'\mathbf{S}^{-1}(\mathbf{X}_t - \bar{\mathbf{X}})$ for $t = 1,...,T$
+* $D^2_t = (\mathbf{X}_t - \bar{\mathbf{X}})'\mathbf{S}^{-1}(\mathbf{X}_t - \bar{\mathbf{X}})$ for $t = 1,...,T$
 
-$D_t$ is the **Mahalanobis distance** between $\mathbf{X}_t$ and $\bar{\mathbf{X}}$ at time $t$
+* Calculate with the standard estimators $\bar{\mathbf{X}}$, $\mathbf{S}$, $\boldsymbol{\alpha}$, and $\boldsymbol{\Sigma}$
 
-For Large $T$ we would expect $D_1^2,...D_T^2$ to behave approximately like and *iid* sample from a $\chi^2_N$ distribution (where $N$ is the dimension of the vector), so we can construct QQ-plots using this distribution
+* For **Large $T$**:
 
-**Mahalanobis angle** between $(\mathbf{X}_s - \bar{\mathbf{X}})$ and $(\mathbf{X}_t - \bar{\mathbf{X}})$:
+    We would expect $D_1^2,...D_T^2$ to behave approximately like and *iid* sample from a $\chi^2_N$ distribution (where $N$ is the dimension of the vector)
+    
+    $\hookrightarrow$ We can construct QQ-plots using this distribution
 
-$D_{s,t} = (\mathbf{X}_s - \bar{\mathbf{X}})'\mathbf{S}^{-1}(\mathbf{X}_t - \bar{\mathbf{X}})$ for $s,t = 1,...,T$
+$D_{s,t}$ ***Mahalanobis angle*** between $(\mathbf{X}_s - \bar{\mathbf{X}})$ and $(\mathbf{X}_t - \bar{\mathbf{X}})$:
 
-$D_t$ and $D_{s,t}$ are used to calculate the skewness and kurtosis of the sample (and used in tests of multivariate normality)
+* $D_{s,t} = (\mathbf{X}_s - \bar{\mathbf{X}})'\mathbf{S}^{-1}(\mathbf{X}_t - \bar{\mathbf{X}})$ for $s,t = 1,...,T$
 
-**Skew-type parameter**: $w_N = \dfrac{1}{T^2}\sum \limits_{s=1}^T \sum \limits_{t=1}^T D_{s,t}^3$
+***Applications***
 
-**Mardia's skew test statistic**: $MST = \dfrac{T}{6}w_N \sim \chi^2_{N(N+1)(N+2)/6}$
+* $D_t$ and $D_{s,t}$ are used to calculate the **skewness** and **kurtosis** of the **sample** (and used in tests of multivariate normality)
 
-**Kurtosis-type parameter**: $k_N = \dfrac{1}{T}\sum\limits_{t=1}^T D_t^4$
+* **Skew-type parameter**:
 
-**Mardia's kurtosis test statistic**: $MKT = \dfrac{k_N - N(N+2)}{\sqrt{8N(N+2)/T}} \sim N(0,1)$
+    $w_N = \dfrac{1}{T^2}\sum \limits_{s=1}^T \sum \limits_{t=1}^T D_{s,t}^3$
+
+* **Mardia's skew test statistic**:
+
+    $MST = \dfrac{T}{6}w_N \sim \chi^2_{N(N+1)(N+2)/6}$
+
+* **Kurtosis-type parameter**:
+
+    $k_N = \dfrac{1}{T}\sum\limits_{t=1}^T D_t^4$
+
+* **Mardia's kurtosis test statistic**:
+
+    $MKT = \dfrac{k_N - N(N+2)}{\sqrt{8N(N+2)/T}} \sim N(0,1)$
 
 ### Generating Multivariate Normal R.V.
 
 #### Cholesky Decomposition
 
-Method of decomposing a matrix
+***Method of decomposing a matrix***
 
-* Then used to generate a set of correlated normal variable from a set of independent standard normal variables
+* Used to generate a set of correlated normal variable from a set of independent standard normal variables
 
-Positive definite matrices are always invertible and can be written in the form: $\mathbf{M} = \mathbf{C}\mathbf{C}'$
+* **Positive definite matrices** are always **invertible**
 
-* $\mathbf{C}$ is some lower triangular matrix with positive diagonal entries $\begin{bmatrix}
-    c_{1,1} & 0 & 0 & \dots & 0 \\
-    c_{2,1} & c_{2,2} & 0 & \dots  & 0 \\
-    c_{3,1} & c_{3,2} & \ddots &   & \vdots \\
-    \vdots & \vdots &  &  & 0 \\
-    c_{N,1} & c_{N,2} & \dots & & c_{N,N} \\
-  \end{bmatrix}$
+    $\hookrightarrow$ Can be written in the form: $\mathbf{M} = \mathbf{C}\mathbf{C}'$
+
+    * $\mathbf{C}$ is some lower triangular matrix with positive diagonal entries
+    
+        $\begin{bmatrix}
+          c_{1,1} & 0 & 0 & \dots & 0 \\
+          c_{2,1} & c_{2,2} & 0 & \dots  & 0 \\
+          c_{3,1} & c_{3,2} & \ddots &   & \vdots \\
+          \vdots & \vdots &  &  & 0 \\
+          c_{N,1} & c_{N,2} & \dots & & c_{N,N} \\
+        \end{bmatrix}$
   
-$\mathbf{C}\mathbf{C}'$ is the Cholesky decomposition for $\mathbf{M}$
+    * $\mathbf{C}\mathbf{C}'$ is the Cholesky decomposition for $\mathbf{M}$
 
-* $\mathbf{C}$ is the Cholesky factor and is denoted $\mathbf{M}^{1/2}$
-
-***
-
-To generate a vector $\mathbf{X}$ with distribution $N_N(\boldsymbol{\alpha}, \boldsymbol{\Sigma})$ where \boldsymbol{\Sigma} is positive definite matrix
-
-**Step 1**
-
-Perform a Cholesky decomposition of $\boldsymbol{\Sigma}$ to obtain the Cholesky factor $\boldsymbol{\Sigma}^{1/2}$
-
-**Step 2**
-
-Generate a vector $\mathbf{Z} = (Z_1,...,Z_N)'$ of independent standard normal variables
-
-You can do this using the Polar method or the Box-Muller method
-
-* Algorithms for these methods are given on P.39 of the *Tables*
-
-**Step 3**
-
-Set $\mathbf{X} = \boldsymbol{\mu} + \boldsymbol{\Sigma}^{1/2} \mathbf{Z}$
+        $\mathbf{C}$ is the Cholesky factor and is denoted $\mathbf{M}^{1/2}$
 
 ***
 
-**Example**
+***Simlulation*** using Choleksy decomposition
+
+* To generate a vector $\mathbf{X}$ with distribution $N_N(\boldsymbol{\alpha}, \boldsymbol{\Sigma})$ where \boldsymbol{\Sigma} is positive definite matrix
+
+* **Step 1**
+
+    Perform a Cholesky decomposition of $\boldsymbol{\Sigma}$ to obtain the Cholesky factor $\boldsymbol{\Sigma}^{1/2}$
+
+* **Step 2**
+
+    Generate a vector $\mathbf{Z} = (Z_1,...,Z_N)'$ of independent standard normal variables
+
+    * Using the Polar method or the Box-Muller method (Algorithms for these methods are given on P.39 of the *Tables*)
+
+* **Step 3**
+
+    Set $\mathbf{X} = \boldsymbol{\mu} + \boldsymbol{\Sigma}^{1/2} \mathbf{Z}$
+    
+***Example***
 
 For $N = 2$ and $\boldsymbol{\Sigma} = \begin{bmatrix} 1 & \rho \\ \rho & 1 \\ \end{bmatrix}$
 
@@ -860,25 +898,27 @@ $\mathbf{X} = \boldsymbol{\Sigma}^{1/2} \mathbf{Z} =
   \rho Z_1 + \sqrt{1-\rho^2}Z_2 \\
 \end{bmatrix}$
 
-If $\mathbf{Z}$ is ta column vector of independent standard normal variables then $\mathbf{X}$ is a column vector of standard normal variables with correlation coefficient $\rho$
+* If $\mathbf{Z}$ is ta column vector of independent standard normal variables
+
+    $\hookrightarrow$ $\mathbf{X}$ is a column vector of standard normal variables with correlation coefficient $\rho$
 
 #### Principal Component Analysis
 
-PCA (eignevalue decomposition) breaks down each variable's divergence from its mean into a weighted average of independent volatility factors
+PCA (**eignevalue decomposition**) breaks down each variable's **divergence from its mean** into a *weighted average* of **independent volatility factors**
 
-* Similar to factor based or multi factor modeling techniques in mod 15
+* Similar to factor based or multi factor modeling techniques in Module 15
 
 ***Theory of spectral decomposition***:
 
-For any covariance matrix $\boldsymbol{\Sigma} \: \exists \: \mathbf{V} : \boldsymbol{\Lambda} = \mathbf{V}'\boldsymbol{\Sigma}\mathbf{V}$ is a diagonal matrix
+* For any covariance matrix $\boldsymbol{\Sigma} \: \exists \: \mathbf{V} : \boldsymbol{\Lambda} = \mathbf{V}'\boldsymbol{\Sigma}\mathbf{V}$ is a diagonal matrix
 
-Column vectors of $\mathbf{V}$ are the **eigenvectors** of $\boldsymbol{\Sigma}$
+* **Column** vectors of $\mathbf{V}$ are the **eigenvectors** of $\boldsymbol{\Sigma}$
 
-Values of the diagonal of $\boldsymbol{\Lambda}$ are the **eigenvalues** of $\boldsymbol{\Sigma}$
+* Values of the **diagonal** of $\boldsymbol{\Lambda}$ are the **eigenvalues** of $\boldsymbol{\Sigma}$
 
-Each pair of corresponding eigenvectors and eigenvalues is described as **principal component**
+***Principal component***: Each pair of corresponding eigenvectors and eigenvalues
 
-**Example**: the second PC
+***Example***: the second PC
 
 $\Delta_2 = \mathbf{V}_2' \boldsymbol{\Sigma} \mathbf{V}_2 = 
 \begin{bmatrix}
@@ -900,7 +940,7 @@ $\Delta_2 = \mathbf{V}_2' \boldsymbol{\Sigma} \mathbf{V}_2 =
   V_{N,2} \\
 \end{bmatrix}$
 
-The principal components can be calculated iteratively using the power method
+* The principal components can be calculated **iteratively** using the **power method**
 
 Define $\mathbf{L} = \begin{bmatrix}
     \sqrt{\Delta_1} & 0 & 0 & \dots & 0 \\
@@ -908,93 +948,159 @@ Define $\mathbf{L} = \begin{bmatrix}
     0 & 0 & \ddots &   & \vdots \\
     \vdots & \vdots &  &  & 0 \\
     0 & 0 & \dots & 0 & \sqrt{\Delta_N} \\
-  \end{bmatrix}$ to be the diagonal matrix containing the square roots of the eigenvalues
+  \end{bmatrix}$ to be the diagonal matrix containing the **square roots of the eigenvalues**
   
-**Simulation using principal components**:
+***Simulation*** using principal components:
 
-Start by generating a vector $\mathbf{Z} = (Z_1,...Z_N)'$ of independent standard normal variables
+* **Step 1**:
 
-$\mathbf{X} = \mathbf{V}\mathbf{L}\mathbf{Z} + \boldsymbol{\mu}$ is then a vector of correlated random variables
+    Generating a vector $\mathbf{Z} = (Z_1,...Z_N)'$ of independent standard normal variables
 
-The resulting vector will be affected by the precise method chosen to generate the principal components
+* **Step 2**:
 
-e.g. $\boldsymbol{\mu}$, $\mathbf{L}$, and $\mathbf{V}$ may or may  not be derived from the sample means and sample covariance matrix
+    $\mathbf{X} = \mathbf{V}\mathbf{L}\mathbf{Z} + \boldsymbol{\mu}$ is then a vector of correlated random variables
 
-The influence of the principal components on the result decreases e.g. the second PC has less influence than the first
+    The resulting vector will be affected by the precise method chosen to generate the principal components
 
-In some applications this means that a large proportion of the variability can be simulated by a smaller proportion of the total number of principal components.
+    * e.g. $\boldsymbol{\mu}$, $\mathbf{L}$, and $\mathbf{V}$ may or may  not be derived from the sample means and sample covariance matrix
 
-In this case, fewer eigenvalues and eigenvectors are used, and fewer independent r.v. need to be generated $\therefore$ reducing the dimensionality of the problem
+***Dimension reduction***
+
+* The influence of the principal components on the result decreases e.g. the second PC has less influence than the first
+
+* In some applications this means that a large proportion of the variability can be simulated by a smaller proportion of the total number of principal components.
+
+    In this case, fewer eigenvalues and eigenvectors are used, and fewer independent r.v. need to be generated
+    
+    $\therefore$ reducing the dimensionality of the problem
 
 ### Multivariate Normal Mean-Variance Mixture
 
-Let:
+*Let*:
 
-* $\mathbf{Z}$ be a column vector the $k$ elements of which are standard normal r.v.
-* $W$ be some strictly positive r.v. that is independent of $W$ (?)
-* $\mathbf{m}(W)$ be a function of $W$ resulting in a column vector of $N$ elements
-* $\mathbf{B}$ is an $N \times k$ matrix of co-scale parameters such that $\mathbf{B}\mathbf{B}'$ is in the form of a covariance matrix
+* $\mathbf{Z}$:
 
-Then $\mathbf{X}$ is said to have a multivariate normal mean-variance mixture distribution if $\mathbf{X} = \mathbf{m}(W) + \sqrt{W}\mathbf{B}\mathbf{Z}$. In which case we have: $X \mid W = w \sim N_N(\mathbf{m})(w), w\mathbf{B}\mathbf{B}')$
+    Column vector the $k$ elements of which are **standard normal** r.v.
 
-Special cases:
+* $W$:
+
+    Some **strictly positive** r.v. that is **independent** of $W$ (?)
+
+* $\mathbf{m}(W)$:
+
+    Function of $W$ resulting in a column vector of $N$ elements
+
+* $\mathbf{B}$:
+
+    $N \times k$ matrix of **co-scale parameters** such that $\mathbf{B}\mathbf{B}'$ is in the form of a covariance matrix
+
+*Then* $\mathbf{X}$ is said to have a multivariate normal mean-variance mixture distribution if:  
+
+$\mathbf{X} = \mathbf{m}(W) + \sqrt{W}\mathbf{B}\mathbf{Z}$
+
+* In which case we have: $X \mid W = w \sim N_N\left(\mathbf{m}(w), w\mathbf{B}\mathbf{B}'\right)$
+
+***Special cases***:
 
 * Generalized hyperbolic distribution
-    * $\mathbf{m}(W) = \boldsymbol{\alpha} + \boldsymbol{\delta}W$ and $W$ has a generalized inverse Gaussian distribution
-* Multivariate t
-    * $\mathbf{m}(W) = \boldsymbol{\alpha}$ and $\gamma / W$ is $chi^2_{\gamma}$
-* Skewed t
-    * $\mathbf{m}(W) = \mu + \delta W$ (? not vector?)($\delta$ is the skewness parameter) and $\gamma / W$ is $chi^2_{\gamma}$
     
-### Multivariate t
+    * $\mathbf{m}(W) = \boldsymbol{\alpha} + \boldsymbol{\delta}W$
+    
+        $W$ has a generalized inverse Gaussian distribution
 
-An *N*-dimensional multivariate t is described by parameters for location ($\boldsymbol{\alpha}$), scale ($\mathbf{B}$) and shape (degrees of freedom $\gamma$)
+* Multivariate *t*
+
+    * $\mathbf{m}(W) = \boldsymbol{\alpha}$
+    
+        $\gamma / W$ is $\chi^2_{\gamma}$
+
+* Skewed *t*
+
+    * $\mathbf{m}(W) = \mu + \delta W$
+    
+        (? not vector?)
+        
+        ($\delta$ is the skewness parameter)
+    
+        $\gamma / W$ is $\chi^2_{\gamma}$
+    
+### Multivariate *t*
 
 $\mathbf{X} \sim t_N(\gamma. \boldsymbol{\alpha}, \mathbf{B})$
 
-Contour plot of the bivariate t, highlighting the key differences between it and the bivariate normal (from earlier)
+* An *N*-dimensional multivariate *t* is described by parameters for:
+
+    Location ($\boldsymbol{\alpha}$)
+
+    Scale ($\mathbf{B}$) 
+
+    Shape (degrees of freedom $\gamma$)
+
+***Contour plot*** of the bivariate *t*, highlighting the key differences between it and the bivariate normal (from earlier)
 
 ![](figures/figure-16.04.png)
 
-The contours shown above are the same as those shown earlier for the multivariate Gaussian
+* The contours shown above are the same as those shown earlier for the multivariate Gaussian
 
-In this case the increasing gaps, as we move away from the center, indicate the relatively fatter tails of the multivariate t
+* In this case the increasing gaps, as we move away from the center, indicate the relatively fatter tails of the multivariate t
 
-Significance of the **shape parameter** $\gamma$
+Significance of the ***shape parameter*** $\gamma$
 
-* Fatness of the tail is determined by $\gamma$ selected
-* The smaller d.f. the fatter the tails
+* **Fatness of the tail** is determined by $\gamma$ selected
+
+* The **smaller d.f. the fatter the tails**
+
 * As $\gamma \rightarrow \infty$ the distribution tends to the multivariate normal
+
 * Multivariate *t* has a fatter tail than multivariate normal in 2 senses:
-    1. Marginal distributions have higher probabilities associated with extreme values compared to the normal
-    2. Each combination of jointly extreme values has higher probabilities than the multivariate normal
+
+    1. **Marginal distributions** have **higher probabilities associated with extreme values** compared to the normal
+
+    2. Each combination of **jointly extreme values** has **higher probabilities** than the multivariate normal
     
-Matrix of (co-)scale parameters $\neq$ as the covariance matrix
+***Notes***:
 
-* $\mathrm{Cov}(\mathbf{X}) = \boldsymbol{\Sigma} = \dfrac{\gamma}{\gamma -2} \mathbf{B}$
+* Matrix of (co-)scale parameters $\neq$ as the covariance matrix
 
-The standard multivariate t is defined only by scale and shape parameters and is denoted $\mathbf{X} \sim t_{\gamma, \mathbf{R}}$ where $\mathbf{R}$ is the correlation matrix
+    $\mathrm{Cov}(\mathbf{X}) = \boldsymbol{\Sigma} = \dfrac{\gamma}{\gamma -2} \mathbf{B}$
 
-#### Generating Multivariate t R.V
+* The standard multivariate *t* is defined only by `scale` and `shape` parameters
+
+    Denoted $\mathbf{X} \sim t_{\gamma, \mathbf{R}}$ where $\mathbf{R}$ is the correlation matrix
+
+#### Generating Multivariate *t* r.v
 
 Similar to the multivariate normal and starts by generating a vector $\mathbf{Z} = (Z_1,...,Z_N)'$ of independent standard normal variables
 
-Let:
+*Let*:
 
-* $\mathbf{B}^{\mathbf{D}}$ be a diagonal matrix consisting of the scale parameters of the marginal t
+* $\mathbf{B}^{\mathbf{D}}$ be a diagonal matrix consisting of the scale parameters of the marginal *t*
+
 * $X^2_{\gamma}$ be the value of a r.v. distributed $\chi^2_{\gamma}$
 
-If $\mathbf{X} = \dfrac{1}{\sqrt{X^2_{\gamma} \big / \gamma}} \mathbf{B}^{\mathbf{D}} + \boldsymbol{\alpha}$ then $\mathbf{X} \sim t_N(\gamma, \boldsymbol{\alpha}, \mathbf{B})$ so confirming that the multivariate t can be defined in terms of a normal mixture distribution
+$\mathbf{X} = \dfrac{1}{\sqrt{X^2_{\gamma} \big / \gamma}} \mathbf{B}^{\mathbf{D}} \mathbf{Z} + \boldsymbol{\alpha}$
+
+* $\mathbf{X} \sim t_N(\gamma, \boldsymbol{\alpha}, \mathbf{B})$ 
+
+* Defining multivariate *t* in terms of a normal mixture distribution
 
 ### Multivariate Skewed t
 
-An *N*-dimensional skewed multivariate t is described by parameters for location ($\boldsymbol{\alpha}$), scale ($\mathbf{B}$), shape (degree of freedom $\gamma$) and skew ($\boldsymbol{\delta}$)
+An *N*-dimensional **skewed** multivariate *t* is described by parameters for:
 
-As for the non-skewed case, the (co-) scale matrix described the correlations between the variables, but is not equivalent to the covariance matrix
+* location ($\boldsymbol{\alpha}$)
 
-$\mathrm{CoV}{\mathbf{X}} = \boldsymbol{\Sigma} = \dfrac{\gamma}{\gamma -2}\mathbf{B} + \boldsymbol{\delta}\boldsymbol{\delta}' \dfrac{2\gamma ^2}{(\gamma - 2)^2(\gamma - 4)}$
+* Scale ($\mathbf{B}$)
 
-Skewed multivariate t r.v. can be generated similarly to the non skewed case using
+* Shape (degree of freedom $\gamma$)
+
+* Skew ($\boldsymbol{\delta}$)
+
+As for the **non-skewed** case, the (co-) scale matrix described the correlations between the variables, but is not equivalent to the covariance matrix
+
+* $\mathrm{CoV}{\mathbf{X}} = \boldsymbol{\Sigma} = \dfrac{\gamma}{\gamma -2}\mathbf{B} + \boldsymbol{\delta}\boldsymbol{\delta}' \dfrac{2\gamma ^2}{(\gamma - 2)^2(\gamma - 4)}$
+
+Skewed multivariate t r.v. can be ***generated*** similarly to the non skewed case:
 
 $\mathbf{X} = \dfrac{1}{\sqrt{X^2_{\gamma} \big / \gamma}} \mathbf{B}^{\mathbf{D}}\mathbf{Z} + \boldsymbol{\alpha} + \dfrac{1}{X^2_{\gamma} \big / \gamma} \boldsymbol{\delta}$
 
@@ -1002,18 +1108,27 @@ $\mathbf{X} = \dfrac{1}{\sqrt{X^2_{\gamma} \big / \gamma}} \mathbf{B}^{\mathbf{D
 
 ***Spherical***
 
-Multivariate spherical distribution is one where the marginal distributions are:
+**Multivariate spherical distribution** is one where the **marginal distributions** are:
 
-* Identical, symmetric, uncorrelated with each other (uncorrelated, not necessarily independent)
-* e.g. multivariate standard normal and normal mixture
+* **Identical**, **symmetric**, **uncorrelated** with each other  
+(uncorrelated, not necessarily independent)
+
+    e.g. multivariate standard normal and normal mixture
 
 ***Elliptical***
 
-If any chosen (fixed) probability can be described by an elliptical relationship between the variables then the distribution is said to be elliptical
+If any chosen (fixed) probability can be described by an **elliptical relationship** between the variables then the distribution is said to be elliptical
 
-* In 2 dimensions, for a given (fixed) correlation ($\rho_{X,Y}$) the variables have an elliptical distribution if $x^2 + y^2 - 2\rho_{x,y}xy = c$ where $c$ is a constant
-    * In other words, each constant probability contour describes an ellipse in $(X,Y)$ -space
+* In **2 dimensions**, for a given (fixed) correlation ($\rho_{X,Y}$) the variables have an elliptical distribution if:
+
+    $x^2 + y^2 - 2\rho_{x,y}xy = c$ where $c$ is a constant
+
+    * In other words, each constant probability contour describes an ellipse in $(X,Y)$ space
+
     * The special case where the correlation is 0 results in a spherical distribution
-* e.g. multivariate normal with distinct marginal distribution
-* Definition can extend to higher dimensions
-    * *N*-dimensional elliptical distribution is one where each constant-probability contour is an *N*-dimensional ellipse
+
+    e.g. multivariate normal with distinct marginal distribution
+
+* Definition can extend to **higher dimensions**
+    
+    * *N*-dimensional elliptical distribution is one where each **constant-probability contour** is an *N*-dimensional ellipse
