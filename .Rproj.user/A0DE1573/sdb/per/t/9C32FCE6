@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Part 3 (Module 15 - 19): Q&A\"\nauthor: \"C. Lau\"\ndate: \"`r format(Sys.time(), '%B %d, %Y')`\"\noutput: \n  html_document:\n    toc: true\n    toc_float:\n      collapsed: false\n      smooth_scroll: false\n    toc_depth: 4\n---\n\n## Development Questions\n\n1. Derive \n\n## Applied Calculation Questions\n\n## Exam Style Questions",
+    "created" : 1474578919513.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "299178311",
+    "id" : "9C32FCE6",
+    "lastKnownWriteTime" : 1474587795,
+    "last_content_update" : 1474587795106,
+    "path" : "~/Git Repos/Exam ST9 2016 Notes/8. Q&A/Part-3-QA.Rmd",
+    "project_path" : "8. Q&A/Part-3-QA.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
