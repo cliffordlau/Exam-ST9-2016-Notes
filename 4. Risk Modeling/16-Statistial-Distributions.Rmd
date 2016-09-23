@@ -93,7 +93,17 @@ $\Gamma(y) = \int \limits_0^\infty s^{y-1}e^{-s}ds$ for $y>0$
 
 * Covariance matrix: $\boldsymbol{\Sigma}$
 
-* Correlation matrix: $\mathbf{R}$
+* Correlation matrix[^corr-matrix]: $\mathbf{R}$
+
+[^corr-matrix]: ***Correlation Matrix***
+
+    Valid correlation matrix is always positive semi-definite
+    
+    A matrix $\mathbf{M}$ is positive semi-definite if $\mathbf{a'Ma} \geq 0$ for all non-zero vectors $\mathbf{a}$
+    
+    Alternatively, a matrix $\mathbf{M}$ is positive semi-definite if the eignevalues of $\mathbf{M}$ are all greater than or equal to zero
+    
+    Note the difference here is the we are using $\geq$ 0 (whereas positive definite is strictly > 0)
 
 ## Univariate Distribution
 
