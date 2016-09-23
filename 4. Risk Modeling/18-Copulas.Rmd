@@ -822,7 +822,7 @@ $_{Cl}C_{\alpha}(u_1,...,u_N)=\left( \left\{ \sum \limits_{i=1}^N u_i^{-\alpha} 
 
 ***Bivariate case***
 
-$_{Cl}C_{\alpha}(u,v) = \left(u^{-\alpha} + v^{-\alpha}-1 \right)^{\frac{1}{\alpha}}$
+$_{Cl}C_{\alpha}(u,v) = \left(u^{-\alpha} + v^{-\alpha}-1 \right)^{-\frac{1}{\alpha}}$
 
 ***Application of Clayton***
 

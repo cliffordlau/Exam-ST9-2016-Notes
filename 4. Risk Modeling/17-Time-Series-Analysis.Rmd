@@ -503,7 +503,7 @@ $X_t = \sigma_t Z_t$
 
     $\hookrightarrow$ $\Delta X_t^2 = \alpha_0 - (1- \alpha_1)V_{t-1} + V_t$
 
-* sSimilar to $ARIMA(0,1,1)$ model for $\{X_t^2\}$
+* Similar to $ARIMA(0,1,1)$ model for $\{X_t^2\}$
 
     Although $\{V_t\}$ is **not white noise**
 
@@ -527,7 +527,7 @@ $\{X_t\}$ is an $ARMA(p,q)$ with $GARCH(r,s)$ errors if:
 
 *With*:
 
-* $\alpha_0 >0$, $\alpha_i \geq >0$ for $i = 1,2,...,r$
+* $\alpha_0 >0$, $\alpha_i \geq 0$ for $i = 1,2,...,r$
 
 * $\beta_j \geq 0$ for $j=1,2,...,s$
 
