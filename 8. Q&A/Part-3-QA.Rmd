@@ -346,7 +346,7 @@ output:
         
         $\begin{align}
           \mathrm{Cov}(\mathbf{X}) &= \mathrm{E}\left( \left( \sqrt{w} A \mathbf{Z} \right) \left( \sqrt{w} A \mathbf{Z} \right)^T \right) \\
-          &= wAE(\mathbf{Z}\mathbf{Z}^T)A^T \\
+          &= wA\mathrm{E}(\mathbf{Z}\mathbf{Z}^T)A^T \\
           &= wAA^T \text{ as } \mathrm{E}(\mathbf{Z}\mathbf{Z}^T) = \mathbf{I}_k\\
           &= w \boldsymbol{\Sigma} \\
         \end{align}$
@@ -372,8 +372,123 @@ output:
 
     i. Expressing $X_t$ in terms of $Z_t$ and $Z_{t-1}$, show that for a $GARCH(1,1)$ process $\mathrm{E}(X^2_t) = \dfrac{\alpha_0}{1-\alpha_1 -\beta_1}$
     
+        Write out $X_t$ by plugging in the formula above and then squared and take the expectation
         
+        $\mathrm{E}\left(X_t^2\right) = \alpha_0 \mathrm{E}\left(Z_t^2\right) + \alpha_1 \mathrm{E}\left(Z_{t-1}^2\right) \mathrm{E}\left(\sigma_{t-1}^2\right)\mathrm{E}\left(Z_{t}^2\right) + \beta_1\mathrm{E}\left(\sigma_{t-1}^2\right)\mathrm{E}\left(Z_{t}^2\right)$
+        
+        We know $\mathrm{E}\left(Z_{t}^2\right) = 1$ since $Z_t$ is strict white noise with mean 0 and variance 1 so we get the below
+        
+        $\mathrm{E}\left(X_t^2\right) = \alpha_0 + \alpha_1  \mathrm{E}\left(\sigma_{t-1}^2\right) + \beta_1\mathrm{E}\left(\sigma_{t-1}^2\right)$
+        
+        We also have $\mathrm{E}\left(X_t^2\right) = \mathrm{E}\left(\sigma_t^2\right)\mathrm{E}\left(Z_t^2\right) = \mathrm{E}\left(\sigma_t^2\right)$
+        
+        And we get:
+        
+        $\mathrm{E}\left(X_t^2\right) = \alpha_0 + \alpha_1  \mathrm{E}\left(X_{t-1}^2\right) + \beta_1\mathrm{E}\left(X_{t-1}^2\right)$
+        
+        And then by definition of strict stationary we have $\mathrm{E}\left(X_t^2\right) = \mathrm{E}\left(X_{t-1}^2\right)$
+        
+        $\mathrm{E}\left(X_t^2\right) = \alpha_0 + \alpha_1  \mathrm{E}\left(X_{t}^2\right) + \beta_1\mathrm{E}\left(X_{t}^2\right)$
+        
+        After some rearranging we get the desired results
+        
+    ii. Conditions for weakly stationary and state the variance
+    
+        See Module 17 Section "GARCH"
+        
+        Condition is $\alpha_1 + \beta_1 <1$ and the variance is $\dfrac{\alpha_0}{1-\alpha_1-\beta_1}$
+        
+    iii. Forth moment of the $GARCH(1,1)$ process
+    
+        Need to have $\mathrm{E}\left( X_t^4 \right) < \infty$
+        
+        Need to have $\mathrm{E}\left[\left( \alpha_1 Z_t^2 + \beta_1 \right)^2\right] <1$
+        
+        * Not sure where this is from
+        
+    iv. Given formula for $\mathrm{E}\left( X_t^4 \right)$, derive and expression for the kurtosis of $X_t$
+    
+        Kurtosis = $\kappa = \dfrac{\mathrm{E}\left( X_t^4 \right)}{\left(\mathrm{E}\left( X_t^2 \right)\right)^2}$
+        
+        Just plug in the formula given and the one from part ii
+        
+    v. Explain $IGARCH$ model
+    
+        $IGARCH$ is a $GARCH$ model where the sum of the coefficients is equal to 1
+        
+        $\sum \limits_{i=1}^p \alpha_i + \sum \limits_{j=1}^q \beta_j = 1$
+        
+17. Mostly dealing with Module 19 Fitting Models
 
+    i. When using maximum likelihood method to fit and *N*-dimensional copula to a set of data observed over time, explain why the marginal distributions of the data $F(x_{n,t})$ for $n=1,...N$ are first estimated and then values of $u_{n,t} = F(x_{n,t})$ are dervived empirically from the observations
+    
+        * Data from a copula are rarely observed directly in practice, so the approach of estimating the marginal distribution first must be adoped
+        
+        * Information on the marginal distributions is necessary in order to put together a full multivariate model, so the approach of estimating the marginal distributions first may be adopted because of the extra insight it gives into the risks faced
+        
+    ii. <span style="background:yellow">Methods to estimate marginal distributions of the observed data</span?
+    
+        **Parametric estimation**
+        
+        * Select a suitable parametric model and use the observed data to establish the parameter values using MLE
+        
+        **Non-parametric estimation**
+        
+        * Makes no assumption about the form of the marginal distribution
+        
+        * Estimate the marginal distribution from the data directly
+        
+            $\hat{F}(x) = \dfrac{1}{T+1} \sum \limits_{t=1}^T I(X_t \leq x)$
+            
+        **Extreme value approach**
+        
+        * Use non-parametric estimation to give the marginal distribution for the main part of the range of the data
+        
+        * Model the tails of the distribution separately, using an appropriate extreme value distribution such as the generalized Pareto distribution
+        
+    iii. Given the Clayton distribution function, derive the log-likelihood function from 10 observations
+    
+        First we derive the density for Clayton (partial derivatives w.r.t. both $u_1$ and $u_2$), and after some math we get:
+        
+        $\begin{align}
+          _{Cl}c_{\alpha} &= \dfrac{\partial}{\partial u_2} \left\{ -\dfrac{1}{\alpha} \left( u_1^{-\alpha} + u_2^{-\alpha} - 1 \right)^{-(1+1/\alpha)} \times -\alpha u_1^{-(\alpha+1)} \right\} \\
+          &= (\alpha + 1)\left( u_1^{-\alpha} + u_2^{-\alpha} -1 \right)^{-(2+1/\alpha)}(u_{1}u_{2})^{-(\alpha+1)}
+        \end{align}$
+        
+        The likelihood function for 10 years of observations
+        
+        $L = \prod \limits_{t=1}^10 (\alpha + 1)\left( u_{1,t}^{-\alpha} + u_{2,t}^{-\alpha} -1 \right)^{-(2+1/\alpha)}(u_{1,t}u_{2,t})^{-(\alpha+1)}$
+        
+        Take the log and then do some math to get the desired results
+        
+    iv. How the log-likelihood function could be used to estimate the value of the parameter $\alpha$
+    
+        1. The derivative of the log likelihood is calcuate
+        
+        2. Value of $\alpha$ that sets this derivative to zero is the MLE
+        
+            Practically this will be done using numerical methods and a suitable computer package
+        
+18. Show that the counter-monotonicity copula is the joint distribution function of the r.v. $U_1$ and $U_2 = 1 - U_1$
+
+    $\begin{align}
+      \Pr(U_1 \leq u_1, U_2 \leq u_2) &= \Pr(U_1 \leq u_1, 1 - U_1 \leq u_2) \\
+      &= \Pr(U_1 \leq u_1, 1 - u_2 \leq U_1) \\
+      &= \Pr(1-u_2 \leq U_1 \leq u_1)
+    \end{align}$
+    
+    If $u_q \leq 1 - u_2$ then this gives the value 0
+    
+    Else, $u_1 - (1 - u_2) = u_1 + u_2 -1$
+    
+    $\therefore$ $\Pr(U_1 \leq u_1, U_2 \leq u_2) = max(u_1 + u_2 - 1, 0)$
+    
+    Which is the counter monotonicity copula
+    
+    
+        
+        
+        
 ## Applied Calculation Questions
 
 ## Exam Style Questions

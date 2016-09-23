@@ -397,7 +397,7 @@ div.tocify {
 <li><p>Find the distribution of <span class="math inline">\(\mathbf{X} \mid W\)</span> and derive its mean and variance</p>
 <p>This is a <span class="math inline">\(d\)</span> dimensional multivariate normal distribution</p>
 <p><span class="math inline">\(\mathrm{E}(\mathbf{X})\)</span> is easy, you just plug in the formula and get <span class="math inline">\(\boldsymbol{\mu}\)</span></p>
-<p><span class="math inline">\(\begin{align}  \mathrm{Cov}(\mathbf{X}) &amp;= \mathrm{E}\left( \left( \sqrt{w} A \mathbf{Z} \right) \left( \sqrt{w} A \mathbf{Z} \right)^T \right) \\  &amp;= wAE(\mathbf{Z}\mathbf{Z}^T)A^T \\  &amp;= wAA^T \text{ as } \mathrm{E}(\mathbf{Z}\mathbf{Z}^T) = \mathbf{I}_k\\  &amp;= w \boldsymbol{\Sigma} \\ \end{align}\)</span></p>
+<p><span class="math inline">\(\begin{align}  \mathrm{Cov}(\mathbf{X}) &amp;= \mathrm{E}\left( \left( \sqrt{w} A \mathbf{Z} \right) \left( \sqrt{w} A \mathbf{Z} \right)^T \right) \\  &amp;= wA\mathrm{E}(\mathbf{Z}\mathbf{Z}^T)A^T \\  &amp;= wAA^T \text{ as } \mathrm{E}(\mathbf{Z}\mathbf{Z}^T) = \mathbf{I}_k\\  &amp;= w \boldsymbol{\Sigma} \\ \end{align}\)</span></p>
 <p>So the conditional distribution of <span class="math inline">\(\mathbf{X} \mid (W=w)\)</span> is <span class="math inline">\(N_d(\boldsymbol{\mu},w\boldsymbol{\Sigma})\)</span> where <span class="math inline">\(\boldsymbol{\Sigma} = AA^T\)</span></p>
 <p>The mean is unaffected by the weighting variable <span class="math inline">\(W\)</span> but the variance is dependent on <span class="math inline">\(W\)</span></p>
 <p><span class="math inline">\(\boldsymbol{\mu}\)</span> and <span class="math inline">\(\boldsymbol{\Sigma}\)</span> are sometimes called the location vector and dispersion matrix of the distribution</p></li>
@@ -409,8 +409,75 @@ div.tocify {
 </ol></li>
 <li><p>Given a process <span class="math inline">\(\left\{ X_t : t = ...,-2, -1, 0 ,1, 2,... \right\}\)</span> is a <span class="math inline">\(GARCH(p,q)\)</span> process if it is strictly stationary and is of the form <span class="math inline">\(X_t = \sigma_t Z_t\)</span> where <span class="math inline">\(\sigma_t = \sqrt{\alpha_0 + \sum \limits_{i=1}^p \alpha_i X_{t-i}^2 + \sum \limits_{j=1}^q \beta_j \sigma_{t-j}^2}\)</span></p>
 <ol style="list-style-type: lower-roman">
-<li>Expressing <span class="math inline">\(X_t\)</span> in terms of <span class="math inline">\(Z_t\)</span> and <span class="math inline">\(Z_{t-1}\)</span>, show that for a <span class="math inline">\(GARCH(1,1)\)</span> process <span class="math inline">\(\mathrm{E}(X^2_t) = \dfrac{\alpha_0}{1-\alpha_1 -\beta_1}\)</span></li>
+<li><p>Expressing <span class="math inline">\(X_t\)</span> in terms of <span class="math inline">\(Z_t\)</span> and <span class="math inline">\(Z_{t-1}\)</span>, show that for a <span class="math inline">\(GARCH(1,1)\)</span> process <span class="math inline">\(\mathrm{E}(X^2_t) = \dfrac{\alpha_0}{1-\alpha_1 -\beta_1}\)</span></p>
+<p>Write out <span class="math inline">\(X_t\)</span> by plugging in the formula above and then squared and take the expectation</p>
+<p><span class="math inline">\(\mathrm{E}\left(X_t^2\right) = \alpha_0 \mathrm{E}\left(Z_t^2\right) + \alpha_1 \mathrm{E}\left(Z_{t-1}^2\right) \mathrm{E}\left(\sigma_{t-1}^2\right)\mathrm{E}\left(Z_{t}^2\right) + \beta_1\mathrm{E}\left(\sigma_{t-1}^2\right)\mathrm{E}\left(Z_{t}^2\right)\)</span></p>
+<p>We know <span class="math inline">\(\mathrm{E}\left(Z_{t}^2\right) = 1\)</span> since <span class="math inline">\(Z_t\)</span> is strict white noise with mean 0 and variance 1 so we get the below</p>
+<p><span class="math inline">\(\mathrm{E}\left(X_t^2\right) = \alpha_0 + \alpha_1 \mathrm{E}\left(\sigma_{t-1}^2\right) + \beta_1\mathrm{E}\left(\sigma_{t-1}^2\right)\)</span></p>
+<p>We also have <span class="math inline">\(\mathrm{E}\left(X_t^2\right) = \mathrm{E}\left(\sigma_t^2\right)\mathrm{E}\left(Z_t^2\right) = \mathrm{E}\left(\sigma_t^2\right)\)</span></p>
+<p>And we get:</p>
+<p><span class="math inline">\(\mathrm{E}\left(X_t^2\right) = \alpha_0 + \alpha_1 \mathrm{E}\left(X_{t-1}^2\right) + \beta_1\mathrm{E}\left(X_{t-1}^2\right)\)</span></p>
+<p>And then by definition of strict stationary we have <span class="math inline">\(\mathrm{E}\left(X_t^2\right) = \mathrm{E}\left(X_{t-1}^2\right)\)</span></p>
+<p><span class="math inline">\(\mathrm{E}\left(X_t^2\right) = \alpha_0 + \alpha_1 \mathrm{E}\left(X_{t}^2\right) + \beta_1\mathrm{E}\left(X_{t}^2\right)\)</span></p>
+<p>After some rearranging we get the desired results</p></li>
+<li><p>Conditions for weakly stationary and state the variance</p>
+<p>See Module 17 Section “GARCH”</p>
+<p>Condition is <span class="math inline">\(\alpha_1 + \beta_1 &lt;1\)</span> and the variance is <span class="math inline">\(\dfrac{\alpha_0}{1-\alpha_1-\beta_1}\)</span></p></li>
+<li><p>Forth moment of the <span class="math inline">\(GARCH(1,1)\)</span> process</p>
+<p>Need to have <span class="math inline">\(\mathrm{E}\left( X_t^4 \right) &lt; \infty\)</span></p>
+<p>Need to have <span class="math inline">\(\mathrm{E}\left[\left( \alpha_1 Z_t^2 + \beta_1 \right)^2\right] &lt;1\)</span></p>
+<ul>
+<li>Not sure where this is from</li>
+</ul></li>
+<li><p>Given formula for <span class="math inline">\(\mathrm{E}\left( X_t^4 \right)\)</span>, derive and expression for the kurtosis of <span class="math inline">\(X_t\)</span></p>
+<p>Kurtosis = <span class="math inline">\(\kappa = \dfrac{\mathrm{E}\left( X_t^4 \right)}{\left(\mathrm{E}\left( X_t^2 \right)\right)^2}\)</span></p>
+<p>Just plug in the formula given and the one from part ii</p></li>
+<li><p>Explain <span class="math inline">\(IGARCH\)</span> model</p>
+<p><span class="math inline">\(IGARCH\)</span> is a <span class="math inline">\(GARCH\)</span> model where the sum of the coefficients is equal to 1</p>
+<p><span class="math inline">\(\sum \limits_{i=1}^p \alpha_i + \sum \limits_{j=1}^q \beta_j = 1\)</span></p></li>
 </ol></li>
+<li><p>Mostly dealing with Module 19 Fitting Models</p>
+<ol style="list-style-type: lower-roman">
+<li><p>When using maximum likelihood method to fit and <em>N</em>-dimensional copula to a set of data observed over time, explain why the marginal distributions of the data <span class="math inline">\(F(x_{n,t})\)</span> for <span class="math inline">\(n=1,...N\)</span> are first estimated and then values of <span class="math inline">\(u_{n,t} = F(x_{n,t})\)</span> are dervived empirically from the observations</p>
+<ul>
+<li><p>Data from a copula are rarely observed directly in practice, so the approach of estimating the marginal distribution first must be adoped</p></li>
+<li><p>Information on the marginal distributions is necessary in order to put together a full multivariate model, so the approach of estimating the marginal distributions first may be adopted because of the extra insight it gives into the risks faced</p></li>
+</ul></li>
+<li><p><span style="background:yellow">Methods to estimate marginal distributions of the observed data&lt;/span?</p>
+<p><strong>Parametric estimation</strong></p>
+<ul>
+<li>Select a suitable parametric model and use the observed data to establish the parameter values using MLE</li>
+</ul>
+<p><strong>Non-parametric estimation</strong></p>
+<ul>
+<li><p>Makes no assumption about the form of the marginal distribution</p></li>
+<li><p>Estimate the marginal distribution from the data directly</p>
+<p><span class="math inline">\(\hat{F}(x) = \dfrac{1}{T+1} \sum \limits_{t=1}^T I(X_t \leq x)\)</span></p></li>
+</ul>
+<p><strong>Extreme value approach</strong></p>
+<ul>
+<li><p>Use non-parametric estimation to give the marginal distribution for the main part of the range of the data</p></li>
+<li><p>Model the tails of the distribution separately, using an appropriate extreme value distribution such as the generalized Pareto distribution</p></li>
+</ul></li>
+<li><p>Given the Clayton distribution function, derive the log-likelihood function from 10 observations</p>
+<p>First we derive the density for Clayton (partial derivatives w.r.t. both <span class="math inline">\(u_1\)</span> and <span class="math inline">\(u_2\)</span>), and after some math we get:</p>
+<p><span class="math inline">\(\begin{align}  _{Cl}c_{\alpha} &amp;= \dfrac{\partial}{\partial u_2} \left\{ -\dfrac{1}{\alpha} \left( u_1^{-\alpha} + u_2^{-\alpha} - 1 \right)^{-(1+1/\alpha)} \times -\alpha u_1^{-(\alpha+1)} \right\} \\  &amp;= (\alpha + 1)\left( u_1^{-\alpha} + u_2^{-\alpha} -1 \right)^{-(2+1/\alpha)}(u_{1}u_{2})^{-(\alpha+1)} \end{align}\)</span></p>
+<p>The likelihood function for 10 years of observations</p>
+<p><span class="math inline">\(L = \prod \limits_{t=1}^10 (\alpha + 1)\left( u_{1,t}^{-\alpha} + u_{2,t}^{-\alpha} -1 \right)^{-(2+1/\alpha)}(u_{1,t}u_{2,t})^{-(\alpha+1)}\)</span></p>
+<p>Take the log and then do some math to get the desired results</p></li>
+<li><p>How the log-likelihood function could be used to estimate the value of the parameter <span class="math inline">\(\alpha\)</span></p>
+<ol style="list-style-type: decimal">
+<li><p>The derivative of the log likelihood is calcuate</p></li>
+<li><p>Value of <span class="math inline">\(\alpha\)</span> that sets this derivative to zero is the MLE</p>
+<p>Practically this will be done using numerical methods and a suitable computer package</p></li>
+</ol></li>
+</ol></li>
+<li><p>Show that the counter-monotonicity copula is the joint distribution function of the r.v. <span class="math inline">\(U_1\)</span> and <span class="math inline">\(U_2 = 1 - U_1\)</span></p>
+<p><span class="math inline">\(\begin{align}  \Pr(U_1 \leq u_1, U_2 \leq u_2) &amp;= \Pr(U_1 \leq u_1, 1 - U_1 \leq u_2) \\  &amp;= \Pr(U_1 \leq u_1, 1 - u_2 \leq U_1) \\  &amp;= \Pr(1-u_2 \leq U_1 \leq u_1) \end{align}\)</span></p>
+<p>If <span class="math inline">\(u_q \leq 1 - u_2\)</span> then this gives the value 0</p>
+<p>Else, <span class="math inline">\(u_1 - (1 - u_2) = u_1 + u_2 -1\)</span></p>
+<p><span class="math inline">\(\therefore\)</span> <span class="math inline">\(\Pr(U_1 \leq u_1, U_2 \leq u_2) = max(u_1 + u_2 - 1, 0)\)</span></p>
+<p>Which is the counter monotonicity copula</p></li>
 </ol>
 </div>
 <div id="applied-calculation-questions" class="section level2">
