@@ -840,7 +840,7 @@ $D_{s,t}$ ***Mahalanobis angle*** between $(\mathbf{X}_s - \bar{\mathbf{X}})$ an
 
 * Used to generate a set of correlated normal variable from a set of independent standard normal variables
 
-* **Positive definite matrices** are always **invertible**
+* **Positive definite matrices**[^pos-def] are always **invertible**
 
     $\hookrightarrow$ Can be written in the form: $\mathbf{M} = \mathbf{C}\mathbf{C}'$
 
@@ -857,6 +857,12 @@ $D_{s,t}$ ***Mahalanobis angle*** between $(\mathbf{X}_s - \bar{\mathbf{X}})$ an
     * $\mathbf{C}\mathbf{C}'$ is the Cholesky decomposition for $\mathbf{M}$
 
         $\mathbf{C}$ is the Cholesky factor and is denoted $\mathbf{M}^{1/2}$
+
+[^pos-def]: ***Positive definite matrix***
+
+    A matrix $\mathbf{M}$ is positive definite if $\mathbf{a'Ma} > 0$ for all non-zero vertors $\mathbf{a}$
+    
+    Alternatively, a matrix $\mathbf{M}$ is positive definitie if the eigenvalues of $\mathbf{M}$ are all greater than zero
 
 ***
 
