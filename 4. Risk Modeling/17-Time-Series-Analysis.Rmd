@@ -43,13 +43,13 @@ A process $\{X_t : t= 1,2,...,T\}$ is said to be ***strictly stationary*** if:
 
 A process $\{X_t : t= 0,1,2,...,T\}$ is said to be **covariance stationary** (or **weakly stationary**) if:
 
-1. The **mean** of the process $m(T) = \mathrm{E}(X_t)$ is **constant**, and 
+1. The **mean** of the process $m(T) = \mathrm{E}(X_t) = \mu$ is **constant**, and 
 
 2. The **covariance** of the process:  
 
-    $\mathrm{Cov}(X_r, X_{r+k}) = \mathrm{E}\left[\left(X_r - m(r)\right)\left(X_{r+k} - m(r+k)\right)\right]$  
+    $\mathrm{Cov}(X_r, X_{r+k}) = \mathrm{E}\left[\left(X_r - m(r)\right)\left(X_{r+k} - m(r+k)\right)\right] = \gamma_k$  
 
-    **depends only on the time different** $k$
+    Covariance **depends only on the time different (lag)** $k$ between the terms
 
 ***Weakly stationary*** of order *n* $\Rightarrow$ the moments of subsets of the process are **defined and equal** *up to* the *n*^th^ moment
 
