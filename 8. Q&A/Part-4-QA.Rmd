@@ -1,0 +1,20 @@
+---
+title: "Part 4 (Module 20 - 25): Q&A"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Development Questions
+
+1. 
+
+## Applied Calculation Questions
+
+## Exam Style Questions
