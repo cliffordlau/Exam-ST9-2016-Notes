@@ -90,7 +90,7 @@
 
 <meta name="author" content="C. Lau" />
 
-<meta name="date" content="2016-09-20" />
+<meta name="date" content="2016-09-23" />
 
 <title>Module 17: Time Series Analysis</title>
 
@@ -301,7 +301,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Module 17: Time Series Analysis</h1>
 <h4 class="author"><em>C. Lau</em></h4>
-<h4 class="date"><em>September 20, 2016</em></h4>
+<h4 class="date"><em>September 23, 2016</em></h4>
 
 </div>
 
@@ -331,10 +331,10 @@ div.tocify {
 <h3>Weak and Covariance Stationarity</h3>
 <p>A process <span class="math inline">\(\{X_t : t= 0,1,2,...,T\}\)</span> is said to be <strong>covariance stationary</strong> (or <strong>weakly stationary</strong>) if:</p>
 <ol style="list-style-type: decimal">
-<li><p>The <strong>mean</strong> of the process <span class="math inline">\(m(T) = \mathrm{E}(X_t)\)</span> is <strong>constant</strong>, and</p></li>
+<li><p>The <strong>mean</strong> of the process <span class="math inline">\(m(T) = \mathrm{E}(X_t) = \mu\)</span> is <strong>constant</strong>, and</p></li>
 <li><p>The <strong>covariance</strong> of the process:</p>
-<p><span class="math inline">\(\mathrm{Cov}(X_r, X_{r+k}) = \mathrm{E}\left[\left(X_r - m(r)\right)\left(X_{r+k} - m(r+k)\right)\right]\)</span></p>
-<p><strong>depends only on the time different</strong> <span class="math inline">\(k\)</span></p></li>
+<p><span class="math inline">\(\mathrm{Cov}(X_r, X_{r+k}) = \mathrm{E}\left[\left(X_r - m(r)\right)\left(X_{r+k} - m(r+k)\right)\right] = \gamma_k\)</span></p>
+<p>Covariance <strong>depends only on the time different (lag)</strong> <span class="math inline">\(k\)</span> between the terms</p></li>
 </ol>
 <p><strong><em>Weakly stationary</em></strong> of order <em>n</em> <span class="math inline">\(\Rightarrow\)</span> the moments of subsets of the process are <strong>defined and equal</strong> <em>up to</em> the <em>n</em><sup>th</sup> moment</p>
 <p><strong><em>Importance of stationarity</em></strong> in modeling financial time series</p>
@@ -759,7 +759,7 @@ div.tocify {
 <p><span class="math inline">\(\sum \limits_{i=1}^p \alpha_i + \sum \limits_{j=1}^q \beta_j = 1\)</span></p></li>
 <li><p>For an <span class="math inline">\(IGRACH(1,1)\)</span> process <span class="math inline">\(\beta_1 = 1 - \alpha_1\)</span></p>
 <p><span class="math inline">\(\hookrightarrow\)</span> <span class="math inline">\(\Delta X_t^2 = \alpha_0 - (1- \alpha_1)V_{t-1} + V_t\)</span></p></li>
-<li><p>sSimilar to <span class="math inline">\(ARIMA(0,1,1)\)</span> model for <span class="math inline">\(\{X_t^2\}\)</span></p>
+<li><p>Similar to <span class="math inline">\(ARIMA(0,1,1)\)</span> model for <span class="math inline">\(\{X_t^2\}\)</span></p>
 <p>Although <span class="math inline">\(\{V_t\}\)</span> is <strong>not white noise</strong></p></li>
 </ul>
 </div>
@@ -779,7 +779,7 @@ div.tocify {
 </ul>
 <p><em>With</em>:</p>
 <ul>
-<li><p><span class="math inline">\(\alpha_0 &gt;0\)</span>, <span class="math inline">\(\alpha_i \geq &gt;0\)</span> for <span class="math inline">\(i = 1,2,...,r\)</span></p></li>
+<li><p><span class="math inline">\(\alpha_0 &gt;0\)</span>, <span class="math inline">\(\alpha_i \geq 0\)</span> for <span class="math inline">\(i = 1,2,...,r\)</span></p></li>
 <li><p><span class="math inline">\(\beta_j \geq 0\)</span> for <span class="math inline">\(j=1,2,...,s\)</span></p></li>
 <li><p><span class="math inline">\(\sum \limits_{i=1}^r \alpha_i + \sum \limits_{j=1}^s \beta_j &lt; 1\)</span></p></li>
 </ul>

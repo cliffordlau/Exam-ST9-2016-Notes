@@ -90,7 +90,7 @@
 
 <meta name="author" content="C. Lau" />
 
-<meta name="date" content="2016-09-20" />
+<meta name="date" content="2016-09-22" />
 
 <title>Module 16: Statistical Distributions</title>
 
@@ -301,7 +301,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Module 16: Statistical Distributions</h1>
 <h4 class="author"><em>C. Lau</em></h4>
-<h4 class="date"><em>September 20, 2016</em></h4>
+<h4 class="date"><em>September 22, 2016</em></h4>
 
 </div>
 
@@ -364,7 +364,7 @@ Measure of kurtosis relative to a mesokurtic distribution (e.g. the normal dist
 <li><p>Matrix of Cofactors: <span class="math inline">\(F\)</span> such that <span class="math inline">\(\mathbf{A}^{-1} = \dfrac{1}{\mid \mathbf{A} \mid}F\)</span></p></li>
 <li><p>Orthogonal matrix: If satisfying <span class="math inline">\(\mathbf{A}'\mathbf{A} = \mathbf{A} \mathbf{A}' = \mathbf{I}\)</span></p></li>
 <li><p>Covariance matrix: <span class="math inline">\(\boldsymbol{\Sigma}\)</span></p></li>
-<li><p>Correlation matrix: <span class="math inline">\(\mathbf{R}\)</span></p></li>
+<li><p>Correlation matrix<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>: <span class="math inline">\(\mathbf{R}\)</span></p></li>
 </ul>
 </div>
 </div>
@@ -964,7 +964,7 @@ Describes the <strong>time</strong> taken for a <strong>Brownian motion</strong>
 <p><strong><em>Method of decomposing a matrix</em></strong></p>
 <ul>
 <li><p>Used to generate a set of correlated normal variable from a set of independent standard normal variables</p></li>
-<li><p><strong>Positive definite matrices</strong> are always <strong>invertible</strong></p>
+<li><p><strong>Positive definite matrices</strong><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> are always <strong>invertible</strong></p>
 <p><span class="math inline">\(\hookrightarrow\)</span> Can be written in the form: <span class="math inline">\(\mathbf{M} = \mathbf{C}\mathbf{C}'\)</span></p>
 <ul>
 <li><p><span class="math inline">\(\mathbf{C}\)</span> is some lower triangular matrix with positive diagonal entries</p>
@@ -1166,6 +1166,19 @@ Describes the <strong>time</strong> taken for a <strong>Brownian motion</strong>
 </ul></li>
 </ul>
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><strong><em>Correlation Matrix</em></strong></p>
+<p>Valid correlation matrix is always positive semi-definite</p>
+<p>A matrix <span class="math inline">\(\mathbf{M}\)</span> is positive semi-definite if <span class="math inline">\(\mathbf{a'Ma} \geq 0\)</span> for all non-zero vectors <span class="math inline">\(\mathbf{a}\)</span></p>
+<p>Alternatively, a matrix <span class="math inline">\(\mathbf{M}\)</span> is positive semi-definite if the eignevalues of <span class="math inline">\(\mathbf{M}\)</span> are all greater than or equal to zero</p>
+<p>Note the difference here is the we are using <span class="math inline">\(\geq\)</span> 0 (whereas positive definite is strictly &gt; 0)<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><strong><em>Positive definite matrix</em></strong></p>
+<p>A matrix <span class="math inline">\(\mathbf{M}\)</span> is positive definite if <span class="math inline">\(\mathbf{a'Ma} &gt; 0\)</span> for all non-zero vertors <span class="math inline">\(\mathbf{a}\)</span></p>
+<p>Alternatively, a matrix <span class="math inline">\(\mathbf{M}\)</span> is positive definitie if the eigenvalues of <span class="math inline">\(\mathbf{M}\)</span> are all greater than zero<a href="#fnref2">↩</a></p></li>
+</ol>
 </div>
 
 
