@@ -33,7 +33,27 @@ Important to model the tail of a distribution accurately due to the potentially 
 
 ### Low Freq/ High Sev Events
 
-Low frequency $\Rightarrow$ Little data to model their effects accurately
+***Extreme events***:
+
+* Outcomets that have a **low probability* of occurence but involve **very large sums of money**
+
+* Low frequency $\Rightarrow$ Little data to model their effects accurately
+
+* Occur in the **right hand tail** of the loss distribution
+
+* For insurance:
+
+    * Result of a single cause that has a high financial cost
+    
+        (e.g. personal injury claim or complete destruction of a building)
+        
+    * Accumulation of events with a related cause
+    
+        (e.g. flood damage to a large number of houses in one town)
+        
+* Extreme events can occur in contexts other than insurance claims
+
+    e.g. financial losses caused by stock market crash or default of a company on the "credit crunch"
 
 ***Example***:
 
@@ -43,6 +63,24 @@ Low frequency $\Rightarrow$ Little data to model their effects accurately
 
 * 9/11 and other natural disasters like 2013 Philippines typhoon
 
+***Extreme events should be consider separately***
+
+* Typical risk events fall within the main body of the fitted loss distribution
+
+* Extreme events fall in the right hand tail of the distribution
+
+    Arise through a different cause than the smaller losses
+    
+    $\therefore$ They are considered to come from a different statistical distribution
+    
+* Important to assess correctly as it involve the highest monetary amounts
+
+* Models of extreme events are important for assessing the impact on a company of unexpected conditions and can help with disaster reovery, business continuity planning etc
+
+* Typically there is a lack of past data on extreme events and so a different approach to modeling needs to be taken
+
+    (e.g. dreaming up "doomsday" type scenarios)
+    
 ***Challenge of modeling the tail***
 
 1. We can model the tail by modeling the full distribution but need make sure the **form of the distribution is correct in the tails**
