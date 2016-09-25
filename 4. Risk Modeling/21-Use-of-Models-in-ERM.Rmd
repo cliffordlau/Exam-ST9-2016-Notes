@@ -250,29 +250,31 @@ Overall objective is to achieve a **balanced** (not unduly exaggerated or smooth
 
 ***Steps*** of **developing** and **applying** a model:
 
-* Specify the **purpose** of the investigation
+1. Specify the **purpose** of the investigation
 
-* Collect **data** and group or modify if necessary
+2. Collect **data** and group or modify if necessary
 
-* Choose the **form** of the model, identify **parameters** and **variables**
+3. Choose the **form** of the model, identify **parameters** and **variables**
 
-* **Estimate** the required `parameters` and any `correlations` between them
+4. **Estimate** the required `parameters` and any `correlations` between them
 
-* Check the **goodness of fit**
+5. Check the **goodness of fit**
 
     (fit different model if poor fit)
 
-* Ensure that the model is **able to project all required outputs** 
+6. Ensure that the model is **able to project all required outputs** 
 
     (e.g. cash flow, etc and incl. interactions between them)
 
-* **Run** the model with the selected estimated variables (or stochastic variables)
+7. **Run** the model with the selected estimated variables (or stochastic variables)
 
-* **Output** in appropriate format
+8. **Output** in appropriate format
 
     (e.g. summarized for stochastic models)
 
-* Assess the **sensitivity** of results to different deterministic variable values
+9. Assess the **sensitivity** of results to different deterministic variable values
+
+10. **Monitor** the results of the model and its application and make **refinements** as required
 
 If cash flow projection over a ***long time horizon*** is required
 
