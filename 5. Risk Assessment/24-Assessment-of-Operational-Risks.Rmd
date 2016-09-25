@@ -215,11 +215,11 @@ Useful technique due to the potential **linkage** between `op-risk` and `other r
 
 * 3 specific **areas that need credible data** (on probability and expected size of potential losses)
 
-1. Internal data on **repetitive high frequency losses** over a 3-5 years period
+    1. Internal data on **repetitive high frequency losses** over a 3-5 years period
 
-2. External data on **non-repetitive, low frequency losses**
+    2. External data on **non-repetitive, low frequency losses**
 
-3. Suitable **stress scenarios** to consider
+    3. Suitable **stress scenarios** to consider
 
 * Overall, statistical methods are difficult to apply due to the lack of data
 
