@@ -31,13 +31,13 @@ Discuss the assessment of operational, liquidity and insurance risks
 
 Reasons why a more ***formal approach is advantageous***:
 
-5. Op-risk has been the **main driver** behind many cases of major **financial disaster**
+6. Op-risk has been the **main driver** behind many cases of major **financial disaster**
 
-6. Op-risk is **inter-linked** with `credit` and `market risk`
+7. Op-risk is **inter-linked** with `credit` and `market risk`
 
     Important to **minimize the likelihood of op-risk failure** during already **stressed market** conditions
 
-7. Op-risk may **otherwise be treated differently** in different areas of the company
+8. Op-risk may **otherwise be treated differently** in different areas of the company
 
     Can lead to key risks being over looked and decisions being taken based on inaccurate information or an incorrect assessment of a BU's risk-adjusted return
 
