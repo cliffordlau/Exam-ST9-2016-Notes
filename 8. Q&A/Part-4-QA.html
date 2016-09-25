@@ -229,6 +229,147 @@ div.tocify {
 
 <div id="development-questions" class="section level2">
 <h2>Development Questions</h2>
+<ol style="list-style-type: decimal">
+<li><p>Main sources of uncertainty when using models in ERM</p>
+<ul>
+<li><p>See Module 21 Section “Sources of uncertainty”</p></li>
+<li><p>Parameter uncertainty, model uncertainty and stochastic uncertainty</p></li>
+</ul></li>
+<li><p>List the steps involved in developing and applying a model</p>
+<ul>
+<li>See Module 21 Section “Modeling Process”</li>
+</ul></li>
+<li><p>List the features of the returns on individual equities that have been suggested by time series analyses</p>
+<ul>
+<li>See Module 22 Section “Features of Equity Market Returns”</li>
+</ul></li>
+<li><p>List the factors which are reflected in a credit spread and state the 3 most common measures of credit spread</p>
+<ul>
+<li>See Module 22 Section “Corporate Bonds”</li>
+</ul></li>
+<li><p>Explain how the op-risk capital can be calculate under the following models</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Implied capital model</p>
+<p>See Module 24 Section “Top-down Models”</p></li>
+<li><p>Income volatility model</p>
+<p>See Module 24 Section “Top-down Models”</p></li>
+<li><p>Capital asset pricing model</p>
+<p>See Module 24 Section “Top-down Models”</p></li>
+</ol></li>
+<li><p>Advice on actively managing operational risk in a formal way</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Reasons why the company’s directors might have become interested in op-risk management</p>
+<p>See Module 24 Section “Need to Assess Op-Risk” Point 1-5</p></li>
+<li><p>Advantages of a more formal approach to op-risk</p>
+<p>See Module 24 Section “Need to Assess Op-Risk” Point 6-8</p></li>
+<li><p>Benefits that the directors could expect to see if they enforce an effective op-risk management process</p>
+<p>See Module 24 Section “Need to Assess Op-Risk” Benfits bullet points</p></li>
+</ol></li>
+<li><p>More op-risk related questions</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Distinguish between bottom-up and top-down approaches for op-risk</p>
+<p><strong>Top-down</strong>: The company as a whole is considered</p>
+<ul>
+<li>Use readily available data and fairly simple calculations to give a general picture of the op-risk</li>
+</ul>
+<p><strong>Bottom-up</strong></p>
+<ul>
+<li>Each activity of the company is considered first and then the results are aggregated</li>
+</ul></li>
+<li><p>Describe bottom-up approaches to assess op-risk</p>
+<ul>
+<li><p>See Module 24 Section “Bottom up models” for the following key points</p></li>
+<li><p>Model frequency and severity of day-to-day op-risk losses</p></li>
+<li><p>Insufficient data so need to suppliment with external data</p></li>
+<li><p>If there is sufficient data, use Monte Carlo</p></li>
+<li><p>Model needs to cope well with the outer tail (e.g. EVT) but is not widely use due to limitation on internal data</p></li>
+<li><p>Simpler approach can be used that assumes losses are related to the volume of transactions</p></li>
+<li><p>Bottom up includes statistical and scenario analysis</p></li>
+</ul></li>
+<li><p>State 4 top-down models that can be used in assessing operational risk</p>
+<ul>
+<li>See Module 24 Section “Top-down Models”</li>
+</ul></li>
+<li><p>Main problems with the top-down models</p>
+<ul>
+<li><p>All these models fail to capture successfully low probability, high consequence risk events</p></li>
+<li><p>Do not consider specific individual activities / incidents</p></li>
+<li><p>No assessment of the effect of individual events, so these models do not help in minimizing future losses by improving procedures in this area</p></li>
+</ul></li>
+</ol></li>
+<li><p>CAPM: risk free = 2%, market risk premium = 4%, <span class="math inline">\(\beta\)</span> = 1.25</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Expected return from the market = 2% + 4% = 6%</p></li>
+<li><p>Expected return from shares in company = 2% + 1.25 <span class="math inline">\(\times\)</span> 4% = 7%</p></li>
+<li><p>Cost of capital used by management in evaluting projects</p>
+<p>Should be 7% to meet investors expectations</p>
+<p>This assumes no tax is payable, and that a project that yields a return of 7% would offer the same return to equity shareholders</p></li>
+</ol></li>
+<li><p>Extreme events</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Examples of extreme events</p>
+<p>See Module 20 Section “Low Freq/ High Sev Events”</p></li>
+<li><p>Importance to consider extreme events separately from other types in ERM</p>
+<p>See Module 20 Section “Low Freq/ High Sev Events”</p></li>
+</ol></li>
+<li><p>Generalized Extreme Value distribution</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Describe the GEV distribution</p>
+<p>See Module 20 Section “GEV Distribution”</p>
+<ul>
+<li><p>The distribution of the maximum value <span class="math inline">\(X_M\)</span> in a sample on <span class="math inline">\(n\)</span> <em>iid</em> r.v. when <span class="math inline">\(n \rightarrow \infty\)</span></p></li>
+<li><p>Discuss the different parameters and the different classes corresponding to each <span class="math inline">\(\gamma\)</span></p></li>
+</ul></li>
+<li><p>Describe how GEV can be used to model extreme events in ERM</p>
+<p>See Module 20 Section “Generalized Extreme Value Distribution”</p>
+<p>Extreme loss events correspond to the maximum values experienced over a period, so we might expect them to conform to the GEV distribution</p>
+<p>We can calculate the maximum loss event from past data by dividing it into blocks and calculating the maximum within each block</p>
+<p>We can do it 2 ways (max in a block or threshold)</p>
+<p>Estimate the parameters with MLE or moments</p>
+<p>Use the fitting distribution for percentiles, means and variances</p></li>
+<li><p>Alternate approach to the GEV</p>
+<p>Theshold approach with GPD</p>
+<p>See Module 20 Section “Generalized Pareto Distribution”</p></li>
+</ol></li>
+<li><p>Mean excess function</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Define the mean excess function</p>
+<p>See Module 20 Section “Mean XS Function”</p></li>
+<li><p>Formula for mean XS loss for exponential with mean <span class="math inline">\(1 / \lambda\)</span></p>
+<p>If <span class="math inline">\(X\)</span> has exponential with mean <span class="math inline">\(1 / \lambda\)</span>:</p>
+<p><span class="math inline">\(\Pr(X &gt;u) = \int \limits_u^{\infty} \lambda e^{-\lambda x} dx = e^{-\lambda u}\)</span> The conditional probabilities:</p>
+<p><span class="math inline">\(\begin{align}  \Pr(X &gt; x + u \mid X &gt;u ) &amp;= \dfrac{\Pr(X &gt; x + u \&amp; X &gt; u)}{\Pr(X &gt; u)} \\  &amp;= \dfrac{\Pr(X &gt; x +u )}{\Pr(X&gt;u)} \\  &amp;= \dfrac{e^{-\lambda(x+u)}}{e^{-\lambda u}} \\  &amp;= e^{-\lambda x} \\ \end{align}\)</span></p>
+<p>Therefore:</p>
+<p><span class="math inline">\(\Pr(X - u \leq x \mid X &gt; u) = 1 - e^{-\lambda x}\)</span></p>
+<p>So the mean XS loss function has a constant value <span class="math inline">\(e(u) = \dfrac{1}{\lambda}\)</span></p></li>
+<li><p>Shapes of the mean XS loss function for different loss distribution</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Exponential</p>
+<p>Constant, so graph would be horizontal</p></li>
+<li><p>Normal</p>
+<p>Symmetrical and tails off quicker than exponential on the right handside</p>
+<p>Mean XS will tail off as the threshold increases (but always remains positive)</p></li>
+<li><p>Uniform</p>
+<p>Has finite upper limit</p>
+<p>Once threshold hits the limit, the XS will always be 0</p>
+<p>Before this point, the mean excess decrease linearly</p></li>
+</ol></li>
+</ol></li>
+<li><p>Reasons why op-risk might NOT be best measured simply as a % of revenue</p>
+<p>See Module 24 Section “Factor-based models”</p></li>
+<li><p>1 year term insurance contracts with sum insured of $350,000 to a group of 100 lives</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Probability it will pay out $1m or more for lives aged 50 where <span class="math inline">\(q_{50} = 0.002\)</span></p>
+<p>Need at least 3 deaths during the year <span class="math inline">\(Binomial(100, q_x)\)</span></p>
+<p><span class="math inline">\(1 - (1-q_x)^{100} + {{100}\choose{1}} q_x(1-q_x)^{99} - {{100}\choose{2}} (q_X)^2 (1-q_x)^{98}\)</span></p>
+<p>Just plug and play</p></li>
+<li><p>For <span class="math inline">\(q_{60}\)</span> Just plug the above</p></li>
+</ol>
+<ul>
+<li><p>This example shows that <span class="math inline">\(q_{60} \gg q_{50}\)</span>, so a 1% change in all mortality rates has a greater effect for higher ages</p>
+<p>Hence the volatility risk is much higher for the older lives in (b)</p></li>
+</ul></li>
+</ol>
 </div>
 <div id="applied-calculation-questions" class="section level2">
 <h2>Applied Calculation Questions</h2>

@@ -13,8 +13,211 @@ output:
 
 ## Development Questions
 
-1. 
+1. Main sources of uncertainty when using models in ERM
 
+    * See Module 21 Section "Sources of uncertainty"
+    
+    * Parameter uncertainty, model uncertainty and stochastic uncertainty
+    
+2. List the steps involved in developing and applying a model
+
+    * See Module 21 Section "Modeling Process"
+    
+3. List the features of the returns on individual equities that have been suggested by time series analyses
+
+    * See Module 22 Section "Features of Equity Market Returns"
+    
+4. List the factors which are reflected in a credit spread and state the 3 most common measures of credit spread
+
+    * See Module 22 Section "Corporate Bonds"
+    
+5. Explain how the op-risk capital can be calculate under the following models
+
+    i. Implied capital model
+    
+        See Module 24 Section "Top-down Models"
+    
+    ii. Income volatility model
+    
+        See Module 24 Section "Top-down Models"
+        
+    iii. Capital asset pricing model
+    
+        See Module 24 Section "Top-down Models"
+        
+6. Advice on actively managing operational risk in a formal way
+
+    i. Reasons why the company's directors might have become interested in op-risk management
+    
+        See Module 24 Section "Need to Assess Op-Risk" Point 1-5
+        
+    ii. Advantages of a more formal approach to op-risk
+    
+        See Module 24 Section "Need to Assess Op-Risk" Point 6-8
+    
+    iii. Benefits that the directors could expect to see if they enforce an effective op-risk management process
+    
+        See Module 24 Section "Need to Assess Op-Risk" Benfits bullet points
+        
+7. More op-risk related questions
+
+    i. Distinguish between bottom-up and top-down approaches for op-risk
+    
+        **Top-down**: The company as a whole is considered
+        
+        * Use readily available data and fairly simple calculations to give a general picture of the op-risk
+        
+        **Bottom-up**
+        
+        * Each activity of the company is considered first and then the results are aggregated
+        
+    ii. Describe bottom-up approaches to assess op-risk
+    
+        * See Module 24 Section "Bottom up models" for the following key points
+        
+        * Model frequency and severity of day-to-day op-risk losses
+        
+        * Insufficient data so need to suppliment with external data
+        
+        * If there is sufficient data, use Monte Carlo
+        
+        * Model needs to cope well with the outer tail (e.g. EVT) but is not widely use due to limitation on internal data
+        
+        * Simpler approach can be used that assumes losses are related to the volume of transactions
+        
+        * Bottom up includes statistical and scenario analysis
+        
+    iii. State 4 top-down models that can be used in assessing operational risk
+    
+        * See Module 24 Section "Top-down Models"
+        
+    iv. Main problems with the top-down models
+    
+        * All these models fail to capture successfully low probability, high consequence risk events
+        
+        * Do not consider specific individual activities / incidents
+        
+        * No assessment of the effect of individual events, so these models do not help in minimizing future losses by improving procedures in this area
+        
+8. CAPM: risk free = 2%, market risk premium = 4%, $\beta$ = 1.25
+
+    i. Expected return from the market = 2% + 4% = 6%
+    
+    ii. Expected return from shares in company = 2% + 1.25 $\times$ 4% = 7%
+    
+    iii. Cost of capital used by management in evaluting projects
+    
+        Should be 7% to meet investors expectations
+        
+        This assumes no tax is payable, and that a project that yields a return of 7% would offer the same return to equity shareholders
+        
+9. Extreme events
+
+    i. Examples of extreme events
+    
+        See Module 20 Section "Low Freq/ High Sev Events"
+        
+    ii. Importance to consider extreme events separately from other types in ERM
+    
+        See Module 20 Section "Low Freq/ High Sev Events"
+        
+10. Generalized Extreme Value distribution
+
+    i. Describe the GEV distribution
+    
+        See Module 20 Section "GEV Distribution"
+        
+        * The distribution of the maximum value $X_M$ in a sample on $n$ *iid* r.v. when $n \rightarrow \infty$
+        
+        * Discuss the different parameters and the different classes corresponding to each $\gamma$
+        
+    ii. Describe how GEV can be used to model extreme events in ERM
+    
+        See Module 20 Section "Generalized Extreme Value Distribution
+"
+        
+        Extreme loss events correspond to the maximum values experienced over a period, so we might expect them to conform to the GEV distribution
+        
+        We can calculate the maximum loss event from past data by dividing it into blocks and calculating the maximum within each block
+        
+        We can do it 2 ways (max in a block or threshold)
+        
+        Estimate the parameters with MLE or moments
+        
+        Use the fitting distribution for percentiles, means and variances
+        
+    iii. Alternate approach to the GEV
+    
+        Theshold approach with GPD
+        
+        See Module 20 Section "Generalized Pareto Distribution"
+        
+11. Mean excess function
+
+    i. Define the mean excess function
+    
+        See Module 20 Section "Mean XS Function"
+        
+    ii. Formula for mean XS loss for exponential with mean $1 / \lambda$
+    
+        If $X$ has exponential with mean $1 / \lambda$:
+        
+        $\Pr(X >u) = \int \limits_u^{\infty} \lambda e^{-\lambda x} dx = e^{-\lambda u}$
+        The conditional probabilities:
+        
+        $\begin{align}
+          \Pr(X > x + u \mid X >u ) &= \dfrac{\Pr(X > x + u \& X > u)}{\Pr(X > u)} \\
+          &= \dfrac{\Pr(X > x +u )}{\Pr(X>u)} \\
+          &= \dfrac{e^{-\lambda(x+u)}}{e^{-\lambda u}} \\
+          &= e^{-\lambda x} \\
+        \end{align}$
+        
+        Therefore:
+        
+        $\Pr(X - u \leq x \mid X > u) = 1 - e^{-\lambda x}$
+        
+        So the mean XS loss function has a constant value $e(u) = \dfrac{1}{\lambda}$
+        
+    iii. Shapes of the mean XS loss function for different loss distribution
+    
+        a. Exponential
+        
+            Constant, so graph would be horizontal
+            
+        b. Normal
+            
+            Symmetrical and tails off quicker than exponential on the right handside
+            
+            Mean XS will tail off as the threshold increases (but always remains positive)
+            
+        c. Uniform
+        
+            Has finite upper limit
+            
+            Once threshold hits the limit, the XS will always be 0
+            
+            Before this point, the mean excess decrease linearly
+            
+12. Reasons why op-risk might NOT be best measured simply as a % of revenue
+
+    See Module 24 Section "Factor-based models"
+    
+13. 1 year term insurance contracts with sum insured of $350,000 to a group of 100 lives
+
+    a. Probability it will pay out $1m or more for lives aged 50 where $q_{50} = 0.002$
+    
+        Need at least 3 deaths during the year $Binomial(100, q_x)$
+        
+        $1 - (1-q_x)^{100} + {{100}\choose{1}} q_x(1-q_x)^{99} - {{100}\choose{2}} (q_X)^2 (1-q_x)^{98}$ 
+        
+        Just plug and play
+        
+    b. For $q_{60}$ Just plug the above
+    
+    * This example shows that $q_{60} \gg q_{50}$, so a 1% change in all mortality rates has a greater effect for higher ages
+    
+        Hence the volatility risk is much higher for the older lives in (b)
+        
 ## Applied Calculation Questions
 
 ## Exam Style Questions

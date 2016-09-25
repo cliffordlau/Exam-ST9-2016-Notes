@@ -235,6 +235,12 @@ Simpler approach (due to lack of data) that *assumed* losses are related to the 
 
 ***Disadvantage***: Op-risk exposure may no be proportional to business volumes (might not a good proxy)
 
+* Does not account for complexity of risk the org. faces
+
+* International companies faces additional difficulties and potential op-risk
+
+* Some companies have taken great steps to avoid op-risk by documenting procedures, having well trainged staff etc
+
 ***Basel indicator approach*** (BIA)
 
 * Operational risk capital ($K_{BIA}$)

@@ -215,7 +215,7 @@ Result **applies for all commonly used statistical distributions** from which th
       &= 1 - \dfrac{1}{n}e^{-x} \\
     \end{align}$
 
-* Taking the limit $\right \infty$
+* Taking the limit $\rightarrow \infty$
 
     $\begin{align}
       \lim \limits_{n \rightarrow \infty} F^n(\beta_n x + \alpha_n) &= \lim \limits_{n \rightarrow \infty} \left( 1 - \dfrac{1}{n}e^{-x} \right)^n & \\
