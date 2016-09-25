@@ -27,6 +27,8 @@ Discuss the assessment of operational, liquidity and insurance risks
 
 4. There is **no inherent upside to op-risk**
 
+5. **High profile problems** at other companies caused by op-risk failures
+
 Reasons why a more ***formal approach is advantageous***:
 
 5. Op-risk has been the **main driver** behind many cases of major **financial disaster**
