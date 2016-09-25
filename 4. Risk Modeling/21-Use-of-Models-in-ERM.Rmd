@@ -43,9 +43,13 @@ $\hookrightarrow$ Incorrect of **sub optimal decisions** may be made
 
 Risk arising from the use of an **inappropriate or inaccurate model** when assessing or managing risks
 
+* [True model of class of model](#model-ass) is rarely known with certainty
+
 ***Parameter risk***:
 
 Use of **inappropriate or inaccurate parameters** or **assumptions** within such models
+
+* Use of [simulated parameters](#sim-para) to account for this
 
 ***Stochastic uncertainty***:
 
@@ -55,7 +59,7 @@ Arises from the **randomness of a finite set of observations**
 
 * Stochastic models acknowledge this by producing a range of results
 
-### Use of simulated parameters
+### Use of simulated parameters {#sim-para}
 
 Due to limited observations, fitted parameters are never certain
 
@@ -81,7 +85,8 @@ Approach to determining the CI for the parameters by estimating a **joint distri
 
 Obtaining a joint distribution for the parameters this way means that rather than using a static set of parameters to carry out the simulations, dynamic parameters can be used instead
 
-***Three assumptions*** that can be made in **relation to the choice of model**
+***Three assumptions*** that can be made in **relation to the choice of model**  
+<a name="model-ass"></a>
 
 1. **True model** or class of model is **known**
 

@@ -11,7 +11,7 @@
 
 <meta name="author" content="C. Lau" />
 
-<meta name="date" content="2016-09-23" />
+<meta name="date" content="2016-09-24" />
 
 <title>Module 21: Use of Models in ERM</title>
 
@@ -222,7 +222,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Module 21: Use of Models in ERM</h1>
 <h4 class="author"><em>C. Lau</em></h4>
-<h4 class="date"><em>September 23, 2016</em></h4>
+<h4 class="date"><em>September 24, 2016</em></h4>
 
 </div>
 
@@ -251,8 +251,14 @@ div.tocify {
 <h3>Sources of uncertainty</h3>
 <p><strong><em>Model risk</em></strong>:</p>
 <p>Risk arising from the use of an <strong>inappropriate or inaccurate model</strong> when assessing or managing risks</p>
+<ul>
+<li><a href="#model-ass">True model of class of model</a> is rarely known with certainty</li>
+</ul>
 <p><strong><em>Parameter risk</em></strong>:</p>
 <p>Use of <strong>inappropriate or inaccurate parameters</strong> or <strong>assumptions</strong> within such models</p>
+<ul>
+<li>Use of <a href="#sim-para">simulated parameters</a> to account for this</li>
+</ul>
 <p><strong><em>Stochastic uncertainty</em></strong>:</p>
 <p>Arises from the <strong>randomness of a finite set of observations</strong></p>
 <ul>
@@ -260,7 +266,7 @@ div.tocify {
 <li><p>Stochastic models acknowledge this by producing a range of results</p></li>
 </ul>
 </div>
-<div id="use-of-simulated-parameters" class="section level3">
+<div id="sim-para" class="section level3">
 <h3>Use of simulated parameters</h3>
 <p>Due to limited observations, fitted parameters are never certain</p>
 <ul>
@@ -278,7 +284,8 @@ div.tocify {
 <li><p>Repeat the process a large number of times, starting with the original data set each time</p></li>
 </ol>
 <p>Obtaining a joint distribution for the parameters this way means that rather than using a static set of parameters to carry out the simulations, dynamic parameters can be used instead</p>
-<p><strong><em>Three assumptions</em></strong> that can be made in <strong>relation to the choice of model</strong></p>
+<p><strong><em>Three assumptions</em></strong> that can be made in <strong>relation to the choice of model</strong><br />
+<a name="model-ass"></a></p>
 <ol style="list-style-type: decimal">
 <li><p><strong>True model</strong> or class of model is <strong>known</strong></p></li>
 <li><p>Model used is a <strong>simplification</strong> of a <strong>known</strong>, more complex reality</p></li>
