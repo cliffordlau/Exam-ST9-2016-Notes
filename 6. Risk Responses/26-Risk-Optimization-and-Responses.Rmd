@@ -377,53 +377,53 @@ The response chosen is necessary to :
 
 Ways in which risks can be reduced through transfer:
 
-* **Insurance** / Reinsurance / Co-insurance
+1. **Insurance** / Reinsurance / Co-insurance
 
     Provides capital if an event occurs (contingent capital) in return for a premium
 
-* Sharing the risk with a policyholder via **product design**
+2. Sharing the risk with a policyholder via **product design**
 
     Common form of risk transfer within insurance is policy XS or co-payment, which returns some of the risk to the policyholder
 
-* **Securitization**:
+3. **Securitization**:
 
     Packaging risk into a marketable investment
 
-* Purchase of some forms of **derivative**
+4. Purchase of some forms of **derivative**
 
-* Alternative risk transfer (**ART**):
+5. Alternative risk transfer (**ART**):
 
     Combine features of derivatives and insurance
 
-* **Outsourcing**
+6. **Outsourcing**
 
-***Some more risk transfer "Must"***
+***Factors to consider on risk transfer***
 
-* Based on good **mutual understanding** of each of the parties' **objectives**
+1. Must be based on good **mutual understanding** of each of the parties' **objectives**
 
-* Recognize the ability of the party assuming the risk to take action and understand the context of the risk
+2. Must recognize the **ability of the party assuming the risk** to take action and understand the context of the risk
 
-* **Cost efficient**
+3. **Cost effectiveness**
 
-***Cost***
+    Cost is typically over and above the expected loss
 
-Cost is typically over and above the expected loss
+    * Cost includes the price that the assuming party requires in order to accept the risk
 
-* Cost includes the price that the assuming party requires in order to accept the risk
-
-* When risk are transferred, the **upside potential** may also be **removed** as well
+4. When risk are transferred, the **upside potential** may also be **removed** as well
 
 ***Counterparty Risk*** (Secondary risk)
 
-* Risk transfer **introduces counterparty risk** as it involves a 3^rd^ party
+5. Risk transfer **introduces counterparty risk** as it involves a 3^rd^ party
 
-* There may be **regulatory restrictions** that reduce the effectiveness of risk transfer
+***Effectiveness***
+
+6. There may be **regulatory restrictions** that reduce the effectiveness of risk transfer
 
     (e.g. maximum permissible amount that can be transferred to a single counterparty)
     
     (e.g. permitted reduction in regulatory capital may be capped for some forms of transfer)
 
-* The effectiveness of transfer might also be **limited by the capacity of the market** to which it is being transferred
+7. The effectiveness of transfer might also be **limited by the capacity of the market** to which it is being transferred
 
     (e.g. there may be no appetite in the reinsurance market to accept significant quantities of longevity risk on immediate annuities)
 
@@ -697,11 +697,59 @@ ART is relatively new (started in 1970s) and a rapidly developing area
 
 4. **Staff need to be educated** about ART so they can
 
-    * Understand the product
+    * Understand the product[^understanding-ART]
 
-    * Assess any seller of ART products
+    * Assess any seller[^assessing-ART-seller] of ART products
 
     * Appreciate the impact of regulations and accounting standards
+
+[^understanding-ART]: ***Understanding the product***
+
+    Questions purchaser should ask:
+    
+    1. How does the product work?
+    
+        * How are the **triggers** determined?
+        
+        * What would the **payoff** be, in a range of scenarios?
+        
+    2. Have similar products been purchased in the past?
+    
+        * How were they **price**?
+        
+        * Are the purchasers **satisfied**?
+        
+    3. What is the impact of the prodcut on the organization's economic capital requirements?
+    
+    4. Could the same cover be provided through conventional prodcuts?
+    
+        * If so, **how does the cost compare**?
+        
+        * Does one approach offer **tax** or **regulatory** advantages?
+
+[^assessing-ART-seller]: ***Assessing the seller***
+
+    Question purchaser should ask:
+    
+    1. Has the seller much **experience** of ART deals?
+    
+        * If so, were the **deals similar** to the deal proposed now?
+        
+        * How have the **previous deals performed**?
+        
+    2. Are any previous puchasers willing to provide **reference**
+    
+    3. If the organization has not done ART deals in the past, does it have the requisite skills?
+    
+    4. How does the **seller measure and assess risk**?
+    
+        * What models and methods does it use?
+        
+        * Does it outsource the risk management? If so, how reliable the organization offering the measurement service?
+        
+    5. Does the seller have **sufficient capital** and/or reinsurance to meet potential claims?
+    
+        * Likewise, do the reinsurers have sufficient capital?
 
 ### Future of ART
 
