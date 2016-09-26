@@ -26,7 +26,7 @@ output:
       &= \lim \limits_{u \rightarrow 1^-} \dfrac{1 - 2u + { _{Gu} }C_{\theta}(u,u)}{1-u} \\
       &= \lim \limits_{u \rightarrow 1^-} \dfrac{2(1-u) -1+ { _{Gu} }C_{\theta}(u,u)}{1-u} \\
       &= 2+ \lim \limits_{u \rightarrow 1^-} \dfrac{-1+ { _{Gu} }C_{\theta}(u,u)}{1-u} \\
-      &= 2+ \lim \limits_{u \rightarrow 1^-} \dfrac{{ _{Gu} }C_{\theta}(u,u)-1}{1-u}
+      &= 2+ \lim \limits_{u \rightarrow 1^-} \dfrac{ { _{Gu} }C_{\theta}(u,u)-1}{1-u}
     \end{align}$
     
     Based on L'Hôpital's rule:
