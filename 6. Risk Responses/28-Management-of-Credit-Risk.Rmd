@@ -320,7 +320,7 @@ When **settling claims** the insurer will ensure:
 
 ### Credit Derivatives
 
-2 types of instrument that can be used to manage credit risk are **Credit Default Swaps(()) (CDS) and **Total Rate of Return Swaps** (TRORS)
+2 types of instrument that can be used to manage credit risk are **Credit Default Swaps** (CDS) and **Total Rate of Return Swaps** (TRORS)
 
 Liquidity of both the TRORS and CDS maybe better than the underlying asset
 

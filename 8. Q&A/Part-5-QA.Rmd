@@ -1,0 +1,184 @@
+---
+title: "Part 5 (Module 26 - 29): Q&A"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## Development Questions
+
+1. Key steps in a process to develop risk responses
+
+    * See Module 26 Section "Developing a Response to Each Risk"
+    
+    * 4 steps process to developing risk responses
+    
+2. 6 ways of transferring risk
+
+    * See Module 26 Section "Risk Transfer"
+    
+3. 5 fundamental concepts in portfolio management
+
+    * See Module 26 Section "Fundamental Concepts of Portfolio Management"
+
+4. Ways in which risks may be reduced without transfer
+
+    * See Module 26 Section "Risk Reduction without Transfer"
+    
+5. Factors that should be considered when deciding whether to transfer a risk
+
+    * See Module 26 Section "Risk Transfer"
+    
+6. Reasons a company may decide to retain a risk
+
+    * See Module 26 Section "Risk Retention"
+    
+7. Quanlities of good risk response
+
+    * See Module 26 Section "Developing a Response to Each Risk"
+
+8. ART Products
+
+    * See Module 26 Section "Summary of ART Products"
+    
+    * See links to the notes appendix 1 and 2
+    
+9. Questions that should be asked when considering an ART product in order to:
+
+    i. Understand the product
+    
+    ii. Assess the seller
+    
+    * See Module 26 Section "Problems with ART", footnotes 3 and 4
+    
+10. Design of a CDS' credit events trigger
+
+    i. List the possible credit events that could be listed in the agreement
+    
+        See Module 28 Section "Credit Derivatives" $\rightarrow$ "Types of Credit Events"
+    
+    ii. <span style="background:yellow">Attributes of the counterparty and the economic environment that will impact the likelihood of the credit events</span>
+    
+        * See Module 23 Section "Qualitative Credit Models"
+        
+        * Counterparty charateristics:
+        
+            * Profitability and stability of profit
+          
+            * Industry it operates in (better if profits are immune to business cycle)
+          
+            * Level of operational and financial gearing
+          
+            * Competitiveness of the industry
+            
+            * Quality of management
+            
+            * Ability to generate cash
+            
+            * Commitment of shareholders (to growth)
+            
+        * General economic outlook over the terms of the CDS
+        
+11. <span style="background:yellow">Considering between 2 CLNs, single reference bond vs reference of 20 credits</span>
+
+    * Assuming all the underlying have equal credit worthiness, then the portfolio option has the effect of reducing the credit risk dramatically
+    
+    * If it's a portfolio of junk, it is likely to be worst:
+    
+    * Assessing credit worthiness:
+    
+        * Looking at the external ratings
+        
+        * Calculating the average income cover and asset cover
+        
+        * Assessing the correlation between the defaul risk
+        
+        * Looking at the restrictions for further borrowing for the reference bonds
+        
+12. <span style="background:yellow">Compare CDS cost and use</span>
+
+    i. Single reference bond
+    
+        * Hedge the credit exposure on a particular bond
+        
+        * Cost depends on the credit rating of the reference entity and seniority of the reference bond
+        
+    ii. First to default on 20 bonds
+    
+        * Expensive due to the likelihood
+        
+        * If uncorrelated, chance of 1 defaul will increase, more expensive
+        
+        * Use by cautious investors to hedge against any credit risk in a bond portfolio
+        
+    iii. Third to default on 20 bonds
+    
+        * Inexpensive due to low chance
+        
+        * More expensive if correlated
+        
+        * Use as cat insurance for an institution who was willing to cope with a couple of defaults
+        
+13. Advantages and disadvantages of ART
+
+    * See Module 26 Section "Advantages of ART" and "Problems with ART"
+
+14. Explain the following terms in the context of MVPT:
+
+    i. Efficient portfolio
+    
+        Combination of one or more investments that gives the highest expected rate of return for a given level of risks
+    
+    ii. Efficient frontier
+    
+        Line that joins the points in expected return-s.d. space that represent efficient portfolios
+    
+    iii. indifference curves
+    
+        Join together points representing all the portfolios that give the investor equal levels of expected utility, given the risk-return preferences of that investor
+        
+        They slope upwards for a risk-averse investors
+    
+    iv. Optimal portfolio
+    
+        Portfolio on the efficient frontier that gives the highest possible level of expected utility
+        
+        Represented by the point where the efficient frontier is tangential to the highest attainable indifference curve
+        
+15. Describe the use of CDS and the TRORS to manage credit risk
+
+    * See Module 28 Section "Credit Derivatives"
+    
+16. Potential responses to risk identified as part of a risk planning process
+
+    * See Module 26 Section "Risk Responses"
+    
+    * Details on the 4 main responses
+    
+17. Benefits of portfolio management in ERM
+
+    * See Module 26 Section "Benefits of Portfolio Management in ERM"
+
+18. Live cattle futures to hedge a decrease (on 240 cows each 1,000 lb) and the futures is on 40,000 pounds
+
+    * $\sigma_s = 0.1$ s.d. of change in spot prices of Angus per pound
+    
+    * $\sigma_F = 0.08$ s.d. of movement in the live cattle futures per pount 
+    
+    * Correlation between the two $\rho = 0.92$
+    
+    Optimal hedge ratio:
+    
+    $h = \rho \dfrac{\sigma_s}{\sigma_f} = 0.92 \times \dfrac{0.1}{0.08} = 1.15$
+    
+    Number of contracts needed = $dfrac{240 \times 1,00}{40,000}$
+    
+    And then scale by 1.15 we get 6.9, so 7 contracts
+    
+## Exam Style Questions
