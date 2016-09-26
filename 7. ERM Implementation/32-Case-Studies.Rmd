@@ -13,10 +13,10 @@ output:
 
 ## Module Objective
 
-Demostrate the application of ERM to real and hypothetical contexts
+Demonstrate the application of ERM to real and hypothetical contexts
 
 * Discuss important past examples of both good risk management practices and risk failure, and discuss how better risk management might have prevented these failures
-* Analyse hypothetical examples ex ante and discuss how the situations described benefti from risk management
+* Analyse hypothetical examples ex ante and discuss how the situations described benefit from risk management
 
 ***
 
@@ -38,7 +38,7 @@ Purpose of the module is to demonstrate the application of ERM to real-life situ
 
 * Need to be able to apply these lessons and the broader knowledge gained throughout the course to hypothetical situations ex ante
 
-* Discribe how risk management may be applied in any given situation
+* Describe how risk management may be applied in any given situation
 
 * This include the analysis of financial statements
 
@@ -94,7 +94,7 @@ Should identify the **root causes** of a major loss or failure
 
 * e.g. root cause of the failure of Barings Bank was an op-risk, inadequate internal management controls; while the collapse of the bank was ultimately caused by a different op-risk (Kobe EQ) and market risk but the collapse would not have happened if proper internal controls had been in place
 
-Sweeting cases are largy self-explanatory
+Sweeting cases are largely self-explanatory
 
 Useful to be familiar with the details on the case, the key is to **understand the lessons** from each case study and **to be able to relate** those to other institutions
 
@@ -110,9 +110,9 @@ Notes below provide more detail on some of the case studies and provide referenc
 
 * Overdependence on cheap debt
 
-* Remuneration that encourage short-termism and valued subjective accounting profits above ris management and cash
+* Remuneration that encourage short-termism and valued subjective accounting profits above risk management and cash
 
-* Unbundling of business models (esp. outsourcing of mortage sales), meaning many business had poor (or even unethical) sales practices
+* Unbundling of business models (esp. outsourcing of mortgage sales), meaning many business had poor (or even unethical) sales practices
 
     (e.g. lending to sub-prime borrowers at rates that failed to reflect the risks)
     
@@ -198,7 +198,7 @@ Notes below provide more detail on some of the case studies and provide referenc
 
     (i.e. not just the one that is recommended)
     
-* Strengtenging of professional guidance
+* Strengthening of professional guidance
 
     (e.g. making it more specific regarding the AA role)
 
@@ -210,7 +210,7 @@ Notes below provide more detail on some of the case studies and provide referenc
 
 ### Korean Air
 
-* Problem of junior memebers of staff deferring to the authority of more senior members
+* Problem of junior members of staff deferring to the authority of more senior members
 
 * Lesson of poor communication is a significant risk
 
@@ -240,11 +240,11 @@ Notes below provide more detail on some of the case studies and provide referenc
 
 * Questions where asked over employers' access to surplus
 
-    e.g. To what degree should surplus be available for withdrawl or to fund contribution holidays?
+    e.g. To what degree should surplus be available for withdrawal or to fund contribution holidays?
     
 * Misappropriations of about £700m were made from pension were made from pension schemes of the Maxwell group
 
-    This was made possible because control lay with a small group of individual with overlapping accountabilities plus custory of assets being undertaken by an in-house entity
+    This was made possible because control lay with a small group of individual with overlapping accountabilities plus custody of assets being undertaken by an in-house entity
     
 ***Mis-selling of Personal Pension***
 
@@ -254,7 +254,7 @@ Notes below provide more detail on some of the case studies and provide referenc
     
 * Where the review found the firm has mis-sold the policy then they were required to make redress
 
-    This invovled putting the customer back, as far as possible, into the position they would have been in if the firm had not advised them to take out a personal pension
+    This involved putting the customer back, as far as possible, into the position they would have been in if the firm had not advised them to take out a personal pension
     
 ***Legal and political change***
 
@@ -282,7 +282,7 @@ Notes below provide more detail on some of the case studies and provide referenc
 
 * Pension Act 1995 and subsequent associated regulations
 
-* Stronger pensions surperivsory body established (Occupational Pensions Regulatory Authority - Opra)
+* Stronger pensions supervisory body established (Occupational Pensions Regulatory Authority - Opra)
 
 * Compensation scheme enhanced
 
@@ -298,7 +298,7 @@ Notes below provide more detail on some of the case studies and provide referenc
     
     * Required for all funded schemes
     
-    * Produces annual solvency reports for memebers
+    * Produces annual solvency reports for members
     
     * Empowered to "whistle blow"
     
@@ -308,13 +308,13 @@ Notes below provide more detail on some of the case studies and provide referenc
 
     * Obligation on employers to maintain sufficient assets
     
-    * Increased securityt for members
+    * Increased security for members
     
 #### Other Consequences
 
 * Greater mistrust of financial institutions by the public
 
-    Perhaps fuelled by little publicity being given to the extensive recoveries (Maxwell) and redress actions (mis-selling)
+    Perhaps fueled by little publicity being given to the extensive recoveries (Maxwell) and redress actions (mis-selling)
     
 * Increased blame culture
 
@@ -364,7 +364,7 @@ See appendix 3 of IAA
 
 * Borrowing short and investing long leads to liquidity risk
 
-* Wise investors must tie investment objectives to investment actions by means of a strict framework of investment policies, guidelines, risk reporting and independent overisght by experts
+* Wise investors must tie investment objectives to investment actions by means of a strict framework of investment policies, guidelines, risk reporting and independent oversight by experts
 
 * Risk reporting should be complete, and easily comprehensible to independent professionals
 
@@ -386,7 +386,7 @@ In order to avoid major losses and disasters, companies must have organizational
 
 These learning processes may include:
 
-* Internatl meetings of senior executives and managers
+* Internal meetings of senior executives and managers
 
 * Examination of external events and problems
 
@@ -402,7 +402,7 @@ These learning processes may include:
 
 ### Lesson 1 - Know your Business
 
-* Everyone from the front-line empoloyees to the Board should "know the business"
+* Everyone from the front-line employees to the Board should "know the business"
 
 * In credit risk management, "know your customer" is a key tenet
 
@@ -412,15 +412,15 @@ These learning processes may include:
     
 ***Examples***    
 
-* Failure to know the risks led to problems with Kidder Peadbody where management failed to supervise, understand and monitor the activities of the trading desk
+* Failure to know the risks led to problems with Kidder Peabody where management failed to supervise, understand and monitor the activities of the trading desk
 
     The supervisors and auditors did not understand the risks in the trading being undertaken
     
-* In the case of Metallgesellschaft, the company failed to understand the cashflow risks inherent in its hedging strategyt
+* In the case of Metallgesellschaft, the company failed to understand the cash flow risks inherent in its hedging strategy
 
 ### Lesson 2 - Establish Checks and Balances
 
-* Effective risk mamangement requires a system of checks and balances to prevent any individual or group taking on too much risk for the business
+* Effective risk management requires a system of checks and balances to prevent any individual or group taking on too much risk for the business
 
 * Rather than concentrate market risk in a specific market or credit risk in a specific counterparty, it is desirable to diversify a portfolio
 
@@ -476,15 +476,15 @@ Limits on business risks should also be put in place, which will depend on the n
 
 * Whenever the cash is stored in an organization is often the source of fraud
 
-* Cash transactions require speiclay scrutiny, with cross chekcing, authorization and checks and balances to ensure that fraud is picked up early
+* Cash transactions require specialty scrutiny, with cross checking, authorization and checks and balances to ensure that fraud is picked up early
 
-* If a business generats a substantial profit over the extended period, yet produces very little cash this may also be a warning that the accounting policies need to be checked
+* If a business generates a substantial profit over the extended period, yet produces very little cash this may also be a warning that the accounting policies need to be checked
 
 ### Lesson 5 - Use the Right Yardstick
 
 * The way that employees' and managers' performances are measured and the targets that are set for them can have a large effect on the way they behave
 
-* It is importand to ensure that the performance targets do not motivate people to take excessive risks
+* It is important to ensure that the performance targets do not motivate people to take excessive risks
 
 * Often a "balances scorecard" approach is used that brings in such measures as:
 
@@ -500,7 +500,7 @@ Limits on business risks should also be put in place, which will depend on the n
 
 ### Lesson 6 - Pay for the Performance You Want
 
-* In addition to selecting targets carefully, it is important to designe reward structures for staff in a manner that does not incentivise them to take risks, or to pursue one aspect of the business at the expense of another
+* In addition to selecting targets carefully, it is important to design reward structures for staff in a manner that does not incentivise them to take risks, or to pursue one aspect of the business at the expense of another
 
 * If an individual can earn significant sums of money in a short period by achieving a particular goal, then problems often arise
 
@@ -508,7 +508,7 @@ Limits on business risks should also be put in place, which will depend on the n
 
 ### Lesson 7 - Balance the Yin and the Yang
 
-There are money "soft" skills of managment, which affect the feel of an organization and which can affect the way that staff respect their company
+There are money "soft" skills of management, which affect the feel of an organization and which can affect the way that staff respect their company
 
 Examples
 
@@ -522,7 +522,7 @@ Examples
 
 * Rewarding staff that behave in a certain way (to build a sense of community)
 
-The soft side of a firm drives the risk taking activities and the hard side (rules, limits and reporting) suppor the risk management activities
+The soft side of a firm drives the risk taking activities and the hard side (rules, limits and reporting) support the risk management activities
 
 ## Hypothetical Examples
 
@@ -534,6 +534,6 @@ All the material that has been covered in the rest of the material also covers t
 
 * To produce coherent advice and recommendations for the application of ERM techniques in the management of a range of different hypothetical business scenarios
 
-* Need to be able to interpret hypotheical balance sheets and financial statements
+* Need to be able to interpret hypothetical balance sheets and financial statements
 
 ### Example 1

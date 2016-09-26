@@ -33,7 +33,7 @@ The term is sometimes used to refer to specific risk that the management of an o
 
 ART is an umbrella term fro non-traditional methods by which organization can transfer risk to 3^rd^ parties
 
-Boradly these products combine traditional insurance and reinsurance protection with financial risk protection, often utilizing the capital markets
+Broadly these products combine traditional insurance and reinsurance protection with financial risk protection, often utilizing the capital markets
 
 ### AS/NZS 4360
 
@@ -47,11 +47,11 @@ Basel II is an international capital adequacy framework for banking organization
 
 It is based on a 3 pillar approach and has been adopted by the EU and other countries
 
-Some aspsects are likely to be strengthened under proposals for Basel III
+Some aspects are likely to be strengthened under proposals for Basel III
 
 ### Basis Risk
 
-Basis risk is the risk arising from differenes in the movements of two comparable indices
+Basis risk is the risk arising from differences in the movements of two comparable indices
 
 e.g. different stock market indices, so that offsetting investments in a hedging strategy will not experience exactly offsetting movements
 
@@ -67,13 +67,13 @@ It is a relevance when considering the relationship between risks under extreme 
 
 ### Coherent Risk Measure
 
-A risk measure is said to be coherent if it satisfies a number of conditions which are deemed to represent a good measure of risk, particulary relating to its aggregation properties
+A risk measure is said to be coherent if it satisfies a number of conditions which are deemed to represent a good measure of risk, particularly relating to its aggregation properties
 
 ### Concentration of Risk
 
 Concentration of risk occurs when it is not possible to (or it has been decided not to) diversify across a range of different exposures
 
-### Contagion
+### Contagion{#contagion}
 
 Contagion is the knock-on effect arising when one risk event generates another
 
@@ -109,5 +109,347 @@ Counterparty risk is the risk that another party to a transaction or agreement f
 
 Credit risk in its general sense is the risk that a counterparty to an agreement will be unable or unwilling to make the payments required under that agreement
 
-Some organizations define credit risk more narrowly as the risk that a borrower will partially or wholly default on repayment of debt (interest and/or capital payments), and it may also include risks retlating to variations in credit spreads in the markets
+Some organizations define credit risk more narrowly as the risk that a borrower will partially or wholly default on repayment of debt (interest and/or capital payments), and it may also include risks relating to variations in credit spreads in the markets
 
+### Credit Spread
+
+Measure of the difference between the yield on a risky and risk free security, typically a corporate bond and a government bond respectively (Although other reference assets maybe used, e.g. swaps)
+
+It reflects the expected cost of default, a risk premiums relating to the risk of default, and a liquidity premium.
+
+There are 3 common measures of credit spread:
+
+1. Nominal spread is simply the difference between the gross redemption yields of risky and risk-free bonds
+
+2. Static spread is the addition to the risk-free rate at which discounted cash flows from a risky bond will equate to its price
+
+3. The option-adjusted spread further adjusts this discount rate through the use of stochastic modeling to allow for any options embedded in the bond
+
+### Demoegraphic Risk
+
+Demographic risk arises from demographic changes such as mortality rates, impacting both customers and employment
+
+It can also be a component of insurance risk
+
+### Derivatives
+
+These are financial instruments of varying design, which are transacted with third parties and permit the hedging and transfer of market and/or credit risk
+
+### Diversification
+
+The is a method of reducing overall risk exposure to uncorrelated risk
+
+### Dynamic Hedging
+
+Process of frequently re-balancing a hedging position in order to maintain the effectiveness of the hedge
+
+See also ["Hedging"](#hedging)
+
+### Economic Capital
+
+An organization's economic capital is an assessment of the capital required to cover its risks
+
+It is the amount of capital that an organization requires to cover its liabilities and obligations (or to remain solvent) under adverse outcomes, with a given degree of confidence and over a given time horizon
+
+### Economic Risk
+
+Economic risk is the risk arising from the impact of macroeconomic factors on an organization and/or its customers
+
+Examples are inflation risks and changes in demand
+
+### Economic Value
+
+Economic value is the present value of all future shareholder profits, determined on a realistic economic basis
+
+It is also known as "shareholder value" or "embedded value"
+
+### Economic Value Added
+
+It is expressed as a %, this is the different between the increase in economic value (expressed as a return on capital) and the weighted average cost of capital
+
+### Efficient Frontier
+
+An efficient portfolio is one for which it is no possible to increase the expected return without accepting more risk and not possible to reduce the risk without accepting a lower return.
+
+The efficient frontier is the line joining all efficient portfolios in a risk-return space.
+
+In portfolio theory, risk is defined as variance or standard deviation of return
+
+### Emerging Risk
+
+An emerging risk can represent either a change in nature of (or in the underlying effectiveness of risk management approaches to) an existing or know risk, or the development of a new risk
+
+* i.e. a risk for which there has been no explicit allowance already made within the existing risk management framework
+
+Generally, such risks are characterized by a much higher level of uncertainty
+
+### Enterprise Risk Management
+
+ERM is a holistic risk management process which considers the risks of the enterprise as a whole, rather than considering individual risks and business units in isolation
+
+### Expected Shortfall
+
+Expected shortfall at a given confidence level x% (and given time horizon) is the expected loss over the worst (1 - x%) of possible outcomes
+
+It is closely related to TVaR
+
+### Exposure
+
+The state of being subject to the possibility of loss, or the maximum amount of loss that would be suffered under a risk if that event occurred
+
+### Extreme Value Theory
+
+This is a statistically methodology for dealing with low probability but potentially high severity events
+
+### Foreign Exchange Risks
+
+Foreign exchange risk is risk arising due to exposure to movement in foreign exchange rates
+
+### Hedging{#hedging}
+
+This is a strategy designed to minimize exposure to given risks (particularly market risk), for example by taking an equal but opposite position or by using derivatives.
+
+Hedging may or may not remove the potential to benefit from upside, depending on its design
+
+### Insurance Risk
+
+Insurance risk arises from fluctuations in the timing, frequency and severity of insured events, relative to the expectations of the firm at the time of underwriting or pricing
+
+This will include mortality, morbidity, property and casualty risks
+
+The definition can be extended to include persistency and expense risks
+
+### Interest Rate Risks
+
+Interest rate risk arises from changes in interest rates, which could include impact on customer behavior as well as financial impact
+
+### ISO 31000
+
+ISO 31000 is a global Risk Management Guidance Standard issued by the International Organization for Standardization
+
+It provides generic guidelines for the principles underlying best practice risk management rather than dealing with specific risk or sectors
+
+### Legal Risk
+
+Legal risk is risk arising from the understanding of and adherence to legislation including changes in accepted interpretation
+
+### Liquditity Risk
+
+Liquidity risk can refer to the risk of money markets not being able to supply funding to business when required, or more broadly to the management of short-term cashflow requirements.
+
+Alternatively it may refer to an insufficient capacity in the market to handle asset transactions at the time when the deal is required (without a material impact on price)
+
+### Loss Given Default
+
+Loss given default is the loss that occurs if a counterparty default on an agreement
+
+For example, in relation to corporate bonds in enables determination of the residual value of the bond after the issuer has defaulted
+
+### Market Risk
+
+Market risk is risk arising from changes in investment market values or other features correlated with investment markets, such as interest and inflation rates
+
+### Model Risk
+
+Model risk is risk arising from the use of an inappropriate or inaccurate model when assessing or managing risks
+
+It may result in incorrect or sub optimal decisions being made
+
+### Monte Carlo Simulation
+
+Monte Carlo simulation is a sampling or modeling technique which considers a large number of randomly generated scenarios
+
+### Moral Hazard
+
+Moral hazard refers to the action of a party who behaves differently from the way they would behave if they were fully exposed to the consequences of the action
+
+The party behaves inappropriately or less carefully than they would otherwise, leaving the organization to bear some of the consequences of the action
+
+Moral hazard is related to information asymmetry, with the party causing the action generally having more information than the organization that bears the consequences
+
+### Operational Risk
+
+Operational risk is the risk of losses resulting from inadequate of failed internal processes, people and systems, or from external events
+
+### Own Risk and Solvency Assessment
+
+The ORSA is part of the Solvency II framework, with similar versions having been introduced in other jurisdictions, including the US.
+
+The ORSA requires each insurer to identify all the risks to which it is exposed, to identify the risk management processes and controls in place, and to quantify its ongoing ability to continue to meet is solvency capital requirements
+
+### Parameter Risk
+
+Parameter risk refers to the use of inappropriate or inaccurate parameters or assumptions within a model when assessing or managing risks, which may result in incorrect or sub optimal decisions being made
+
+### Political Risk
+
+Political risk encompasses a wide range of risks, including those related to political decisions (both social and fiscal) or indecision, change in government, or events related to political instability including terrorism and wars
+
+### Probability of Ruin
+
+The probability of ruin is the probability that the net financial position of an organization or line of business falls below 0 over a defined time horizon
+
+### Project Risk
+
+Project risk is the risk of failure relating to a specific project undertaken by an organization
+
+### Regulatory Risk
+
+Regulatory risk is the risk of losses arising from changes in legislation or regulation
+
+### Reinsurance
+
+This is a risk transfer arrangement whereby one party (the reinsurer), in consideration for a premium, agrees to indemnify another party (the cedant) against part of all of the liability assumed by the cedant under one or more insurance policies, or under one or more reinsurance contracts
+
+Reinsurance obtained by a reinsurer is know as retrocession
+
+### Reputational Risk
+
+Reputation risk is the risk that events or circumstances could have an adverse impact on an organization's reputation or brand value
+
+### Residual Risk
+
+This is a risk that remains with the organization following part of all of its risk management process
+
+It maybe due to a positive decision to retain that risk, or an inability to mitigate or transfer it
+
+It may also be a secondary risk resulting from another risk response action
+
+### Risk Appetite
+
+Risk appetite is the degree of risk that an organization or individual is willing to accept in order to achieve objectives, both in terms of levels and types of risk
+
+### Risk Capacity
+
+Risk capacity is the volume of risk that an organization can take as measured by some consistent measure, such as economic capital
+
+### Risk Discount Rate
+
+Risk discount rate is the rate a which future uncertain cash flows are discounted
+
+It typically arises when carrying out a discounted cashflow assessment of value of a project
+
+It represents the risk-free rate of return that providers of capital demand plus an amount to allow for the risk that profits may not emerge from the projects as expected
+
+### Risk Limits
+
+This refers to limits on acceptable actions that might be taken by an organization
+
+TI can be regarded as a component of risk capacity
+
+
+### Risk Management Control Cycle
+
+This is a systematic method of planning, managing, and reviewing an organization's business in the context of the risk undertaken by that organization
+
+The cyclical process involves analysis, quantification, management, monitoring and modification
+
+### Risk Matrix (or Map)
+
+There are tools used in the identification and initial assessment of risk typically plotting severity against probability (or frequency)
+
+### Risk Optimization
+
+Risk optimization is the process of achieving the optimal balance between risk and return within any given portfolio
+
+This should be carried out not just in relation to the characteristics of the portfolio but also the risk appetite of the investor
+
+### Risk Profile
+
+This phrase is complete description of the risk exposures of an organization including risks that might emerge in the future and that will affect the current business of the organization
+
+### Risk Responses
+
+Theses are the ways in which an organization reacts to risk
+
+The key responses to risk are avoidance, acceptance, transfer and management
+
+### Risk Tolerance
+
+This phrase may refer to a detailed set of statements, many being quantitative or statistical in nature, that describe how much risk the organization is prepared to retain or how much variability it is prepared to withstand
+
+### Sarbanes-Oxley
+
+The SOX act of 2002 is US legislation that was introduced following a number of high profile corporate scandals, including the collapse of Enron
+
+It introduced measures to improve the accuracy and reliability of corporate disclosures in order to improve investor protection
+
+### Scenario Analysis
+
+Scenario analysis looks at outcomes under devised "what if" scenarios, normally measuring loss under several related stressed variables without considering the probability of occurrence of that scenario
+
+Selection appropriate and comprehensive scenarios often involves cross-discipline discussions
+
+### Securitization
+
+A form of ART, securitization packages risks into capital market instruments
+
+### Severity
+
+This is the amount of loss that is likely to suffered under a risk if that event occurred
+
+### Solvency II
+
+SII is the set of regulatory requirements that apply to insurance firms in EU from the beginning of 2016
+
+The aim of EU solvency rules is to ensure that insurance undertakings are financially sound and can withstand adverse events, in order to protect policyholders and the stability of the financial system as a whole
+
+SII is based on a 3 pillar approach similar to Basel Ii but adapted for insurance
+
+### Specific Risk
+
+Specific risk (also known as non-systematic risk) are risk factors that are uncorrelated with or possibly independent from other sources of risk
+
+Such risk are largely diversifiable
+
+### Strategic Risk
+
+Strategic risk relates to the achievement of an organization's overall strategic business plans and objectives
+
+### Stress Testing
+
+Stress testing measures loss under extreme values of the chosen variable without necessarily considering the probability of that extreme event
+
+The phrase "sensitivity analysis" is often used to describe a similar test but under less extreme variation
+
+### Swiss Solvency Test
+
+The Swiss Solvency Test is a risk based regulation capital regime which has similarities to Pillar 1 of SII, although uses a different calibration measure
+
+### Systematic Risk
+
+Systematic risk is risk that cannot be eliminated through diversification
+
+### Systemic Risk
+
+The phrase "systemic risk" can be used to mean the same as "systematic risk", but also often used more specifically to refer to the risk of problems spreading between entities following a trigger event (see also "[Contagion](#contagion")
+
+### Tail Correlation
+
+This is the correlation between observations in the tails of underlying distributions (extreme events)
+
+In many cases, tail correlations will differ from the normal correlation
+
+### Tail Value at Risk
+
+TVaR is a measure of risk that is defined at a given confidence level as the expected loss given that the loss exceeds the Value at Risk at the same confidence level
+
+### Time Horizon
+
+This phrase is the period over which an organization expects to be exposed to risk and/or the period over which it chooses to model is exposure
+
+### Value at Risk
+
+VaR is a simple measure of risk, representing the maximum loss expected with a given probability (the confidence level) over a defined time horizon
+
+### Volatility
+
+Volatility refers to the variability of potential outcomes
+
+In respect of some risks it has a specific meaning
+
+e.g. under market risk it is equivalent to the standard deviation of returns on investments
+
+### Weighted Average Cost of Capital
+
+This is the aggregate return required by the providers of debt and equity capital, allowing for the effects of tax and the risk borne by the capital providers
