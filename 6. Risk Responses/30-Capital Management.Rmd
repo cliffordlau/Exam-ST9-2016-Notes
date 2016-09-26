@@ -964,7 +964,7 @@ There are other methodologies that use risk measures calculations as the basis f
 
 Results from different approaches can be very different, even for the same risk measure
 
-#### 3. Allocation by Marginal Capitl Costs
+#### 3. Allocation by Marginal Capital Costs
 
 Capital is allocated to LoBs in accordance with the **marginal additional capital required** for writing that business (given that the other LoB are already in place)
 
