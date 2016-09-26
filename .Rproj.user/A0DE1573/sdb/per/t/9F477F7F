@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"Part 6 (Module 30 - 34): Q&A\"\nauthor: \"C. Lau\"\ndate: \"`r format(Sys.time(), '%B %d, %Y')`\"\noutput: \n  html_document:\n    toc: true\n    toc_float:\n      collapsed: false\n      smooth_scroll: false\n    toc_depth: 4\n---\n\n## Development Questions\n\n1. Definition of: CRO, ART, COSO, AS/NZS 43600, ISO 3100\n\n    See Module 33 Section \"Glossary\"\n    \n2. Define volatility and its use in ERM\n\n    See Module 33 Section \"Glossary\"\n    \n3. Outline Basel II, SII and SOX\n\n    See Module 33 Section \"Glossary\"\n    \n4. Outline how a factor table approach maybe used to calculate a company's capital\n\n    * Break down a company's business into a number of specific risk types\n    \n    * Record the amount of business activity for each risk types\n    \n    * Use models to calculate factors to be applied to a specific unit of each risk type\n    \n    * Tables can be tailored to an individual company or industry wide tables can be used\n    \n    * Factors and the units of risk exposure are multiplied together and summed to determine the net capital requirement\n    \n    * Allowance can be made for correlation between risk types if desired\n    \n5. How credit risk model maybe used to assess capital requirement\n\n    * Estimate expected loss based on historical data from company with a certain credit ratings\n    \n    * Companies in the same industry are assumed to behave in the same way w.r.t. credit default over a given time period\n    \n    * Correlations between different industry types are allowed for separately\n    \n    * Merton Model can be used and evaluated the chance of default based on the level of debt in the company, the current share price and the volatility of the share price\n    \n    * Separate model is needed to model the actual loss and loss amount given default\n    \n6. Main use of an internal capital model\n\n    See Module 30 Section \"Internal Capital Models\"\n    \n7. Principle of the Merton Model\n\n    See Module 23 Section \"Merton Model\"\n    \n8. Marginal allocation approach\n\n    ![](figures/figure-QA6.01.png)\n    \n    i. Gross just sum up the losses and net just include the diversification\n    \n    ii. Explain how the marginal approach may have been used to derive the figures\n    \n        See Module 30 Section \"Allocation by Marginal Capital Costs\"\n    \n    iii. Explain how this information could be used by the company\n    \n        * Allocating capital to LoBs\n        \n        * Determining appropriate risk limits for each LoB\n        \n        * Calculating return on capital for each LoB\n        \n        * Formulating investment strategies for each LoB\n        \n9. Capital and use of internal model\n\n    i. Definitions of capital\n    \n        See Module 30 Section \"Definitions of Capital\"\n        \n    ii. Use of internal capital model\n    \n        See Module 30 Section \"Internal Capital Models\" $\\rightarrow$ \"Use of internal CM\"\n        \n10. Describe the behaviors that a company with an advanced ERM program would be expected to exhibit\n\n    See Module 31 Section \"IAA Stages of ERM Maturity\" links to the appendix\n    \n11. Description of a bunch of different risk\n\n    See Module 33 Section \"Glossary\"\n\n12. Give an example of each of the above risk\n\n    See Module 33 Section \"Glossary\"\n\n## Exam Style Questions",
+    "created" : 1474907342852.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4273713338",
+    "id" : "9F477F7F",
+    "lastKnownWriteTime" : 1474914732,
+    "last_content_update" : 1474914732467,
+    "path" : "~/Git Repos/Exam ST9 2016 Notes/8. Q&A/Part-6-QA.Rmd",
+    "project_path" : "8. Q&A/Part-6-QA.Rmd",
+    "properties" : {
+        "ignored_words" : "LoBs,LoB\n"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
