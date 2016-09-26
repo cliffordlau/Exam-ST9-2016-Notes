@@ -25,33 +25,47 @@ Need to be able to apply the principle described in earlier modules, in the cont
 Purpose of the module is to demonstrate the application of ERM to real-life situations
 
 * Most important module for ST9
+
 * **Expectation from ST9**:
+
     * Discuss past examples of good risk management practices
+
     * Discuss past examples of risk failures
+
     * Discuss how better risk management might have prevented these failures
     
 **Important** to read the case studied in the Core Reading and are prepared to discuss the key learning points and outcomes of these real-life examples
 
 * Need to be able to apply these lessons and the broader knowledge gained throughout the course to hypothetical situations ex ante
+
 * Discribe how risk management may be applied in any given situation
+
 * This include the analysis of financial statements
 
 ### Reading the Case Studies
 
-Tips:
+***Tips***:
 
 * Read the case study in full
+
 * Read again more critically
 
-Questions to consider on 2^nd^ pass:
+***Questions to consider*** on 2^nd^ pass:
 
 * Why is this case study interesting from ST9's perspective?
+
 * How would you describe the companies' risk management practices?
+
 * What types of risks is this case study concentrating on?
+
 * What were the key risk management failure and/or successes in this case?
+
 * Could any failures have been foreseen or mitigated by better risk management practices?
+
 * What are the key lessons to be learnt from this case study?
+
 * Did the company learn from its failures, or benefit from its good practices?
+
 * Can you relate any of these lessons to your own business or other businesses you work with?
 
 ### Task list
@@ -88,3 +102,438 @@ Notes below provide more detail on some of the case studies and provide referenc
 
 ### Global Financial Crisis
 
+***Lessons learned***
+
+* Failure to understand and report the risk inherent in business activities
+
+* Products that were over-complex and were not well understood by those buying and selling them
+
+* Overdependence on cheap debt
+
+* Remuneration that encourage short-termism and valued subjective accounting profits above ris management and cash
+
+* Unbundling of business models (esp. outsourcing of mortage sales), meaning many business had poor (or even unethical) sales practices
+
+    (e.g. lending to sub-prime borrowers at rates that failed to reflect the risks)
+    
+* De-regulation of the financial sector, which allowed risk to propagate unchecked through the system
+
+* Poor corporate governance, which led to come bad decision making at Board level
+
+    (e.g. RBS's acquisition of ABN-AMRO)
+    
+* Credit rating agencies that struggled to keep pace with the complex products and banks that gamed the system
+
+    CODs were deliberately engineered to AAA using the agencies' own (flawed) models resulting in widespread mispricing of risk
+    
+### Baring Banks
+
+***Key ERM lessons***:
+
+* Need for internal checks and balances
+
+* Need for proper supervision of employees with clear reporting lines
+
+* Auditors and top management should understand the business
+
+    (e.g. management did not understand derivative tradings and the profits claimed by Leeson were too big for the type of the trading he was supposed to be doing)
+    
+* Bonuses should be based on profits over a longer time horizon so as to discourage inappropriate short-term-risk-taking
+
+### Equitable Life
+
+#### Sources of risk at Equitable Life
+
+***Unique business practices***
+
+* Combing the roles of AA and CEO
+
+* Absence of estate (as each generation of policyholders receives full asset share) leading to a lack of free reserves which might otherwise have acted as a cushion against adverse experience
+
+* Open ended options (e.g. granting the original GAR terms to future investments)
+
+* Reliance on flexible final bonus philosophy (differential bonuses) to reduce the (perceived) need to reserve for future GAR liabilities
+
+* Higher with profit bonuses, due to lack of reserve build-up, leading to higher business volumes and lower administration costs
+
+***Unique culture***
+
+* Unassailable image within the industry
+
+* Arrogant superiority of management
+
+* Isolated position with insufficient attention to market changes
+
+* Management working under the impression of having an implicit wide reaching mandate from policyholders
+
+***Specific business decisions***
+
+* Pooling polices with and without GARs, rather than establishing a new bonus series
+
+* Not informing policyholders of the consequences of such pooling in the subsequent event of the guarantees biting
+
+* Over reliance upon contract wording, thereby underestimating the importance and enforceability of policyholder's reasonable expectations
+
+* Not informing the regulator of an intention to support a class action to clarify understanding of the legal position
+
+* Failure to consider (along with the regulator) the possibility and consequences of not winning a case set before the House of Lords
+
+#### Regulatory Failures
+
+* Over-tolerant attitude by the regulator, especially in light of the GAD warning upon handover to the FSA
+
+    (With regard to the AA also holding the post of CEO and the acceptance of complex reinsurance arrangements to cover uncertain GAR liabilities)
+
+* Shortage of supervisory staff leading to arms-length monitoring
+
+* Over tolerant attitude by the profession with regard to the AA also holding the post of CEO, especially given the need for actuarial independence is stress so much in professional guidance
+
+* Failure of prior investigations (e.g. Maturity Guarantees Working Party) to identify potential future related guarantee risks
+
+#### Consequences
+
+* Requirement for external peer review of the work of AA, thereby recognizing the challenges of regulating an organization that operates very differently to others
+
+* Requiring AA to present multiple possible course of action to the board
+
+    (i.e. not just the one that is recommended)
+    
+* Strengtenging of professional guidance
+
+    (e.g. making it more specific regarding the AA role)
+
+* Tightening up procedures for reviewing communications with policyholders
+
+* Improving rigor in the setting of bonus policy
+
+* More to more proactive regulation
+
+### Korean Air
+
+* Problem of junior memebers of staff deferring to the authority of more senior members
+
+* Lesson of poor communication is a significant risk
+
+### LTCM
+
+***Key ERM lessons***
+
+* Liquidity itself is a risk factor
+
+* Models must be stress-tested and used to inform decisions rather than make them
+
+* Financial institutions should understand aggregate exposures to common risk factors
+
+### Bernard Madoff
+
+***Key lessons***:
+
+* For investors, if it looks too good to be true, it probably is
+
+* ERM, make sure you do your due diligence
+
+### Robert Maxwell Pensions Mis-selling
+
+#### Drivers for Legislative change
+
+***Inappropriate control of occupational pension funds***
+
+* Questions where asked over employers' access to surplus
+
+    e.g. To what degree should surplus be available for withdrawl or to fund contribution holidays?
+    
+* Misappropriations of about £700m were made from pension were made from pension schemes of the Maxwell group
+
+    This was made possible because control lay with a small group of individual with overlapping accountabilities plus custory of assets being undertaken by an in-house entity
+    
+***Mis-selling of Personal Pension***
+
+* Regulators ordered firms to review every personal pension they had sold in the 6 years preceding June 1994
+
+    Each review had to ascertain whether of not the customer would have been better off staying in, or joining, and occupational pension scheme
+    
+* Where the review found the firm has mis-sold the policy then they were required to make redress
+
+    This invovled putting the customer back, as far as possible, into the position they would have been in if the firm had not advised them to take out a personal pension
+    
+***Legal and political change***
+
+* There was a European Court ruling (Barber decision) outlawing retirement age sex discrimination
+
+#### Specific Areas of Concern
+
+* Inappropriate appointment and accountability of trustees
+
+* Inadequate trust law
+
+* Failure to secure pension scheme assets
+
+* Poor disclosure of information
+
+* Lack of clarity over the rights of employees under employment law
+
+* Lack of a single regulatory body
+
+* Lack of formalized actuarial oversight with "whistle blowing" accountability
+
+* Absence of a compensation fund providing protection against fraud and theft
+
+#### Key Consequences
+
+* Pension Act 1995 and subsequent associated regulations
+
+* Stronger pensions surperivsory body established (Occupational Pensions Regulatory Authority - Opra)
+
+* Compensation scheme enhanced
+
+* Trustees responsibilities clarified and independence improves
+
+    * At least 1/3 to be chosen by scheme members
+    
+    * Responsibilities and compliance procedures laid down by legislation
+    
+* Scheme Actuary role created
+
+    * Appointed by the trustees
+    
+    * Required for all funded schemes
+    
+    * Produces annual solvency reports for memebers
+    
+    * Empowered to "whistle blow"
+    
+* Scheme Auditor role created
+
+* Minimum Funding Requirement (MRF)
+
+    * Obligation on employers to maintain sufficient assets
+    
+    * Increased securityt for members
+    
+#### Other Consequences
+
+* Greater mistrust of financial institutions by the public
+
+    Perhaps fuelled by little publicity being given to the extensive recoveries (Maxwell) and redress actions (mis-selling)
+    
+* Increased blame culture
+
+* Imposition of MFR resulted in restricted investment policy, increased costs and consequently an unwillingness of employers to maintain defined benefit schemes
+
+* Greater engagement by the public with financial issues and improved financial sophistication of investors
+
+* Growing demand for greater disclosure of information, transparency of operations and accountability of agents
+
+### Space Shuttle Challenger
+
+***Key ERM lessons***
+
+* Ensure the decision-makers and leaders understand the risk that are being taken in the enterprise
+
+* Not to succumb to pressure to hit artificial targets at the cost of good risk management
+
+### ERM Implementation Case Studies
+
+See appendix 3 of IAA
+
+### Other Case Studies
+
+* Confederation Life (1994)
+
+* Orange County (1994)
+
+#### Confederation Life
+
+***Key ERM lessons***
+
+* Apply checks and balances on the activities of those in position of power
+
+* Concentration kills (set limits and establish a balance)
+
+* Understand the business
+
+#### Orange County
+
+***Key ERM lessons***
+
+* Beware of the unconstrained "star performer", even when he or she has a long track record
+
+* Where there is excess return, there is risk (though it might take time to surface)
+
+* Powerful individuals can hide risk if the organization structure, planning and risk oversight mechanisms of an institution have any gaps
+
+* Borrowing short and investing long leads to liquidity risk
+
+* Wise investors must tie investment objectives to investment actions by means of a strict framework of investment policies, guidelines, risk reporting and independent overisght by experts
+
+* Risk reporting should be complete, and easily comprehensible to independent professionals
+
+    Strategies that are not possible to explain to 3^rd^ parties should not be employed by those with limited risk appetites
+    
+## Lessons Learned
+
+Companies' processes should allow them to learn from their own mistakes and from the mistakes of other companies
+
+In order to avoid major losses and disasters, companies must have organizational learning process that enable them to:
+
+* Be open to discuss their own past mistakes
+
+* Be able to learn from those mistakes
+
+* Be aware of the mistakes of others
+
+* Adopt industry best practices
+
+These learning processes may include:
+
+* Internatl meetings of senior executives and managers
+
+* Examination of external events and problems
+
+* Visits to other institutions to benchmark practices
+
+* Building a widely accessible and searchable database of insights
+
+* Training new starters in risk management
+
+* Recording losses in a risk event log
+
+* Reviewing important incidents and policy violations
+
+### Lesson 1 - Know your Business
+
+* Everyone from the front-line empoloyees to the Board should "know the business"
+
+* In credit risk management, "know your customer" is a key tenet
+
+* Everyone must understand how their acountabilities affect the risks of the organizations
+
+    Business managers should "know the risks" in the business
+    
+***Examples***    
+
+* Failure to know the risks led to problems with Kidder Peadbody where management failed to supervise, understand and monitor the activities of the trading desk
+
+    The supervisors and auditors did not understand the risks in the trading being undertaken
+    
+* In the case of Metallgesellschaft, the company failed to understand the cashflow risks inherent in its hedging strategyt
+
+### Lesson 2 - Establish Checks and Balances
+
+* Effective risk mamangement requires a system of checks and balances to prevent any individual or group taking on too much risk for the business
+
+* Rather than concentrate market risk in a specific market or credit risk in a specific counterparty, it is desirable to diversify a portfolio
+
+    Similarly, it is desirable to diversity power across people and groups
+    
+* Checks and balance can be viewed as redundant processes (i.e. they add no intrinsic value)
+
+    There is a danger that such processes are re-engineered out of the system
+    
+    However, checks and balances, along with segregation of duties, are key safeguards against errors and dishonesty
+    
+* Checks and balances include everything from independent directors and audit committees to the proof reading of documents
+
+***Examples***
+
+* Lack of checks and balances in the accounting systems enabled Nick Leeson to conceal mounting losses at Barings Bank for a year
+
+* At Morgan Grenfell, the checks were in place but were not effective
+
+### Lesson 3 - Set Limits and boundaries
+
+Limits and boundaries tell a business "when to stop"
+
+Market risk maybe limited in a firm by using:
+
+* Trading limits
+
+* Product limits
+
+* Duration limits
+
+* Equity market limits
+
+    (and deltas, gammas etc for option)
+    
+* VaR limits
+
+* Stop loss limits
+
+For credit risk they may be:
+
+* Counterparty limits
+
+* Industry exposure limits
+
+* Country limits
+
+For op-risk these may be quality standards by operation, system or process
+
+Limits on business risks should also be put in place, which will depend on the nature of the company's business, but checks on the personnel being hired (along with many others) are generic to all business
+
+### Lesson 4 - Keey Your Eye on the Cash
+
+* Whenever the cash is stored in an organization is often the source of fraud
+
+* Cash transactions require speiclay scrutiny, with cross chekcing, authorization and checks and balances to ensure that fraud is picked up early
+
+* If a business generats a substantial profit over the extended period, yet produces very little cash this may also be a warning that the accounting policies need to be checked
+
+### Lesson 5 - Use the Right Yardstick
+
+* The way that employees' and managers' performances are measured and the targets that are set for them can have a large effect on the way they behave
+
+* It is importand to ensure that the performance targets do not motivate people to take excessive risks
+
+* Often a "balances scorecard" approach is used that brings in such measures as:
+
+    * Quality
+    
+    * Customer satisfaction
+    
+    * Internal processes
+    
+* If companies focus excessively on one aspect of the business, it can cause staff to ignore other (important) aspects
+
+* Management performance and risk reports should cover a broad selection of information and not be overly focused on any one
+
+### Lesson 6 - Pay for the Performance You Want
+
+* In addition to selecting targets carefully, it is important to designe reward structures for staff in a manner that does not incentivise them to take risks, or to pursue one aspect of the business at the expense of another
+
+* If an individual can earn significant sums of money in a short period by achieving a particular goal, then problems often arise
+
+* Staff are less concerned about what they leave behind in a firm, if they leave it with enough money to retire on
+
+### Lesson 7 - Balance the Yin and the Yang
+
+There are money "soft" skills of managment, which affect the feel of an organization and which can affect the way that staff respect their company
+
+Examples
+
+* Demonstrating senior management commitment to the business
+
+* Establishing good corporate values
+
+* Facilitating open communication
+
+* Providing training and development programs to show commitment to staff
+
+* Rewarding staff that behave in a certain way (to build a sense of community)
+
+The soft side of a firm drives the risk taking activities and the hard side (rules, limits and reporting) suppor the risk management activities
+
+## Hypothetical Examples
+
+All the material that has been covered in the rest of the material also covers this objective
+
+***Exam notes***:
+
+* Able to apply the knowledge and understanding developed through the study of this Core Reading to propose ERM solutions and strategies
+
+* To produce coherent advice and recommendations for the application of ERM techniques in the management of a range of different hypothetical business scenarios
+
+* Need to be able to interpret hypotheical balance sheets and financial statements
+
+### Example 1
