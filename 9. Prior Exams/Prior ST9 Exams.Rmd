@@ -198,4 +198,60 @@ Information needed for modeling flood risk
 
 Overall corporate risk exposure and importance of each risk after allowing for the impact of likely mitigation strategies
 
-* Module 13, 
+* Module 13
+
+* Use Categorization technique to rank the risk
+
+* State what are the objectives used to judge the risk
+
+* Define what high risk is
+
+* Categories of risk:
+
+    * Operational
+
+    list out the rating for freq and sev and any mitigations
+
+    * Financial
+
+    * Customer demand
+
+    * Other
+
+* Other considerations
+
+    * Correlations
+    
+    * Company's mitigation process
+
+* Conclusions
+
+### Question 3
+
+![](figures/figure-2016-April.04.png)
+
+#### Q3.i
+
+Ways to reduce financial market risk exposure without risk transfer
+
+* Module 26, 27, 28
+
+* Avoidance
+
+* Diversification
+
+* ALM
+
+* Internal control
+
+#### Q3.ii
+
+ALM risk
+
+* Module 22, 27
+
+#### Q3.iii
+
+Cashflow matching
+
+* Module 22, 27
