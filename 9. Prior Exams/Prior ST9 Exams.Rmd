@@ -646,21 +646,155 @@ Additional analysis
 
 ![](figures/figure-2014-Sep.01.png)
 
+Pros and cons of having joint or seperate actuarial and risk fucntion
+
+* See Module 12 Section "Risk Management Function"
+
+* Seperate is mostly key ERM talking points
+
+* Together is mostly based on cost savings, more integrated, quicker, less duplication
+
 ### Question 2
 
 ![](figures/figure-2014-Sep.02.png)
+
+#### Q2.i
+
+Person's $\rho$
+
+#### Q2.ii
+
+Kendall's $\tau$
+
+#### Q2.iii
+
+Merits of the 2 sets of data
+
+#### Q2.iv
+
+Suggest insurance class for the data
+
+* Consider the correlations
 
 ### Question 3
 
 ![](figures/figure-2014-Sep.03.png)
 
+#### Q3.i
+
+Define op risk
+
+* Risk of losses resulting from inadequate or failed internal processes, people and systems or from external events
+
+#### Q3.ii
+
+How a life company can measure op risk
+
+* Measure as the impact of op-risk events on one or more on stuff such as: cost of stagging, fines, turnover, reduced customer satisfaction, impact on surplus
+
+* Get data or expert to consider freq and sev
+
+* Scenario analysis, correlations
+
+#### Q3.iii
+
+Interview approach pros and cons
+
+#### Q3.iv
+
+Need for disaster recovery
+
+* Discuss the impact and then importance
+
+#### Q3.v
+
+Including diaster risk in op-risk
+
+* Raise profile on diaster risk
+
+* Might be difficult to find data and calibrate
+
+#### Q3.vi
+
+Risk appetite statement and examples
+
+#### Q3.vii
+
+What accounting basis should the risk appetite statement be based on
+
+* Go through the whole logic and discuss all the pros and cons
+
+#### Q3.viii
+
+Disadvantage of basing risk appetite only on profit
+
+* Short termism
+
+* mis-selling risk
+
+* Can create solvency issues
+
+* Just not necessarily align with what's best for shareholders
+
 ### Question 4
 
 ![](figures/figure-2014-Sep.04.png)
 
+#### Q4.i
+
+Risk faced by ERMI (a ERM professional qualification)
+
+* Business risk, strategic risk, reputational risk for APB
+
+#### Q4.ii
+
+How to mitigate some of the above risk
+
+#### Q4.iii
+
+Outline a bunch of processes
+
 ### Question 5
 
 ![](figures/figure-2014-Sep.05.png)
+
+#### Q5.i
+
+Components of mortality risk
+
+#### Q5.ii
+
+Process of GLM modeling for mortality risk
+
+#### Q5.iii
+
+Why rate will be different from model
+
+* Market driven
+
+#### Q5.iv
+
+RM rationale for the loss leader strategy
+
+* diversification
+
+#### Q5.v
+
+KRI or KPI to monitor this strategy
+
+#### Q5.vi
+
+Compare the likely life insurance risk exposure between the 2 companies
+
+#### Q5.vii
+
+Contrast the 3rd company's life insurance risk exposure to the other 2
+
+#### Q5.viii
+
+Why internal model might benefit the 3rd company
+
+* Size, niche, data limitations
 
 ### Question 6
 
@@ -669,13 +803,25 @@ Additional analysis
 ![](figures/figure-2014-Sep.08.png)
 ![](figures/figure-2014-Sep.09.png)
 
+#### Q6.i
 
+Minimum regulatory capital requirement
 
+* Long ass questions to calculate all the risk
 
+#### Q6.ii
 
+Reasons to hold more than the minimum
 
+* See the list quite good
 
+#### Q6.iii
 
+Investigation into the high market premium
+
+* Reasons for high claims (maybe only from certain firm)
+
+* Systemic loss
 
 ## 2010
 
