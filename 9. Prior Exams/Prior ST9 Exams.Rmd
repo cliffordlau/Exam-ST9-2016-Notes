@@ -255,3 +255,401 @@ ALM risk
 Cashflow matching
 
 * Module 22, 27
+
+## 2015 April
+
+[2015 Exam and Examiners' Report](#https://www.actuaries.org.uk/documents/subject-st9-enterprise-risk-management-exam-papers-and-examiners-reports-2015)
+
+### Question 1
+
+![](figures/figure-2015-April.01.png)
+![](figures/figure-2015-April.02.png)
+![](figures/figure-2015-April.03.png)
+![](figures/figure-2015-April.04.png)
+![](figures/figure-2015-April.05.png)
+![](figures/figure-2015-April.06.png)
+![](figures/figure-2015-April.07.png)
+![](figures/figure-2015-April.08.png)
+![](figures/figure-2015-April.09.png)
+![](figures/figure-2015-April.10.png)
+
+#### Q1.i
+
+Assess the fitted *t* distribution
+
+* Module 15, 16, 19
+
+* Discuss data set size, applicability for future (regime shift)
+
+* Shapes of the empirical
+
+* Fitted vs empirical
+
+* Data excludes dividend income
+
+#### Q1.ii
+
+Propose further analysis or adjustments
+
+* Remove dependencies and overlap
+
+* Longer period of data
+
+#### Q1.iii
+
+Assess the stress scenario picked
+
+* See how it stacks with a normal distribution with the observed s.d.
+
+* diversification (not bad at the same time)
+
+* Comprae the series
+
+#### Q1.iv
+
+Discuss features on spread and how it should behave
+
+#### Q1.v
+
+Suggest possible extensions to the analysis
+
+* Other consideration that impact the spread
+
+* Split by industry, include other countries
+
+#### Q1.vi
+
+Model future risk free bond yields using PCA
+
+* Module 22 and 16 (Maybe 19)
+
+* Straight from the notes
+
+* Module 22 talks about how to fit the data
+
+* Modeul 16 talks about how to simulate with PCA
+
+#### Q1.vii
+
+How many PC are likely to be used
+
+* 3: parallel shift, slope, yield curve to bend
+
+#### Q1.viii
+
+Currency movement impact on solvency ratio and how to hedge
+
+* Explain why it would impact the ratio
+
+* Propose how to hedge with forward
+
+#### Q1.ix
+
+Disadvantage of the above viii
+
+* Ignores dependencies between risks
+
+#### Q1.x
+
+Propose alternative objectives for the currency risk hedging
+
+* Intead of a fix 200%
+
+* Introduce probabilitys
+
+#### Q1.xi
+
+Why hold captial for currency risk
+
+* Not accounting for interdependences, regulatory requirement, counterparty risk, other assets
+
+#### Q1.xii
+
+How ERM will help with sovereign deft crisis before, during and after the crisis
+
+* List out ERM benefits first
+
+    * On risk identification, quantification, limits
+    
+    * Crisis plan
+    
+* Before crisis
+
+    * Plan and prepare
+    
+* During
+
+    * Reporting, operational effectiveness
+    
+    * Profit off the crisis, minimize impact
+    
+* After
+
+    * Lessons learned, market confidence, contagion
+
+#### Q1.xiii
+
+Buying CBI insurance, risk that could arise during sovereign debt crisis (and how hard it is to quantify)
+
+* lapse risk, new business volume, op-risk
+
+### Question 2
+
+![](figures/figure-2015-April.12.png)
+
+#### Q2.i
+
+Evaluate the risk culture
+
+#### Q2.ii
+
+Identify and analyse emerging risk
+
+* horizon scanning
+
+* holistic view
+
+#### Q2.iii
+
+Implications on diminishing natural resources
+
+* On asset, liabilities and deficit
+
+#### Q2.iv
+
+Actions to take on the above
+
+* Invest in energy and commodity
+
+### Question 3
+
+![](figures/figure-2015-April.12.png)
+
+#### Q3.i
+
+How to hedge the guarantee using HPI floors
+
+#### Q3.ii
+
+Describe the weakness of the hedge
+
+* Basis risk (actual outperforming or underperformaing the HPI)
+
+* High cost
+
+* Liquidity, credit risks
+
+#### Q3.iii
+
+Using RPI instead of HPI
+
+* Assess the basis risk
+
+* Should remove trend before accessing correlation
+
+* Time period chosen
+
+* Difference in the cumulative increase
+
+#### Q3.iv
+
+Additional analysis
+
+## 2015 October
+
+[2015 Exam and Examiners' Report](#https://www.actuaries.org.uk/documents/subject-st9-enterprise-risk-management-exam-papers-and-examiners-reports-2015)
+
+### Question 1
+
+![](figures/figure-2015-Oct.01.png)
+
+Reasons to have a global ethics officer
+
+* Reduce, op-risk, reputational risk (examples)
+
+* Improve future growth
+
+### Question 2
+
+![](figures/figure-2015-Oct.02.png)
+
+#### Q2.i
+
+ORSA and SII
+
+* Quantitative, qualitative, dislosure
+
+* ORSA: identify all risk, RM processes and controls and quntify ongoing ability to continue to meet its MCR and SCR
+
+#### Q2.ii
+
+Advantages of a standardized ORSA for local offices
+
+#### Q2.iii
+
+Challenge for pushing out standard risk report
+
+#### Q2.iv
+
+Scenario testing for local office based on local standard
+
+* List both for and against
+
+### Quesiton 3
+
+![](figures/figure-2015-Oct.03.png)
+![](figures/figure-2015-Oct.04.png)
+
+#### Q3.i
+
+Features of GEV
+
+* Definition, location, scale and shape
+
+#### Q3.ii
+
+Fitting a GEV
+
+* See Module 20
+
+#### Q3.iii
+
+Appropriateness of the GEV
+
+* GEV assumes *iid* observations (not true, volatility cluster, different distribution due to different underlying mix)
+
+* Lack of data
+
+### Question 4
+
+![](figures/figure-2015-Oct.05.png)
+![](figures/figure-2015-Oct.06.png)
+
+#### Q4.i
+
+Risk associated with investing in the securitized bonds from solar
+
+* Main risk is credit/counterparty risk (also discuss mitigation )
+
+* Lower than expected revenue
+
+    * What might impact the revenue
+    
+    * diversification of panels
+    
+* Legal risk
+
+* Impact to the capital required
+
+* Op-risk from lack of expertise
+
+* Consider the limited time to make a decision and also losing first mover advantage
+
+* Basis risk from the inflation linked
+
+* ALM
+
+#### Q4.ii
+
+Suitability of asset based on the liability
+
+* Duration
+
+* Inflation sensitivity
+
+* Currency
+
+#### Q4.iii
+
+How to set up stress test for 2 of the more material risk
+
+* Collection of data and from where (suppliment form expert opinion if needed)
+
+* Project historical trends and fit distribution
+
+* How to se capital charge
+
+### Question 5
+
+![](figures/figure-2015-Oct.07.png)
+![](figures/figure-2015-Oct.08.png)
+![](figures/figure-2015-Oct.09.png)
+![](figures/figure-2015-Oct.10.png)
+![](figures/figure-2015-Oct.11.png)
+![](figures/figure-2015-Oct.12.png)
+
+#### Q5.i
+
+Put option, spread, futures payoff and graph
+
+#### Q5.ii
+
+Pros and cons of each
+
+* Future
+
+    * Can fully hedge minus basis risk (best in an economic basis)
+    
+    * May introduce volatility due to the way Basis 1 is measured
+    
+    * Admissablity as well as hedging off balance sheet risk
+    
+    * Making margin call
+    
+* Put/spreads
+
+    * Talk about the cost
+    
+* Other considerations
+
+    * Exchange traded or not
+    
+#### Q5.iii
+
+Justify the spread formula
+
+#### Q5.iv
+
+Plug an play on the put spread formula
+
+#### Q5.v
+
+Assess alternative scenarios under Basis 2
+
+* look at the change in put spread price
+
+#### Q5.vi
+
+Impact of purchasing the put spread under Basis 1
+
+#### Q5.vii
+
+Stress (sensitivity) test
+
+#### Q5.viii
+
+Purchase or not
+
+* Assess cost of captial
+
+* Look at capital impact
+
+* Internal expertise on handling derivatives
+
+* Counterparty risk
+
+## 2010 
+
+[2010 Exam and Examiners' Report](https://www.actuaries.org.uk/documents/subject-st9-enterprise-risk-management-exam-papers-and-examiners-reports-2010-2014)
+
+### Question 1
+
+### Question 2
+
+### Question 3
+
+### Question 4
+
+### Question 5
+
+### Question 6
