@@ -1,0 +1,201 @@
+---
+title: "Prior ST9 Exams"
+author: "C. Lau"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    toc_depth: 4
+---
+
+## 2016 April
+
+[2016 April Exam](https://www.actuaries.org.uk/documents/subject-st9-enterprise-risk-management-exam-paper-april-2016)
+
+[2016 April Examiners' Report](https://www.actuaries.org.uk/documents/subject-st9-enterprise-risk-management-examiners-report-april-2016)
+
+### Question 1
+
+![](figures/figure-2016-April.01.png)
+
+#### Q1.i
+
+Reasons to build an internal model for ERM
+
+* Module 30 Section "Internal Capital Models"
+
+* Module 21 Section "Model Development"
+
+#### Q1.ii
+
+Pros and cons of using standard formula vs internal model for SII
+
+* Module 30 Section "Internal vs Generic Models"
+
+* Key to focus is on the small size and niche risk of the company
+
+* Make sure to discuss both sides
+
+#### Q1.iii
+
+Selection of models between 3 options
+
+Some key points:
+
+* Model 1:
+
+    * Runtime okay
+    
+    * Less human error
+    
+    * Some approximation
+    
+    * Appropriate matching assets might be hard to find
+    
+* Model 2:
+
+    * Least approximation
+    
+    * Hard to calibrate (due to high number of real world scenarios needed)
+    
+    * Long run time
+    
+    * Too complex hard to test
+    
+* Model 3:
+
+    * Greatest level of simplification
+    
+#### Q1.iv
+
+Additional information on the software to request
+
+* A bunch of stuff easy
+
+### Question 2
+
+![](figures/figure-2016-April.02.png)
+![](figures/figure-2016-April.03.png)
+
+#### Q2.i
+
+Propose practical cost effective ERM activities
+
+* Make sure we're not just proposing mitigation activities
+
+* Key is on the early steps of the ERM process and more focus on the governance
+
+    * Identify
+    
+    * Risk register
+    
+    * Risk appetite and tolerance statement
+    
+    * RMC and have meetings and risk reports
+    
+    * Appoint risk manager
+    
+* Module 13 Section "Risk Identification and Assessment Process"
+
+* Module 9 Section "Risk Management Policy"
+
+    * Risk appetite, risk tolerance, risk limits
+
+* Module 10 Section "Risk Reporting"
+
+    * Not as much from here, mostly just report
+    
+#### Q2.ii
+
+How bank would evaluate the credit risk of the company
+
+* Should be mostly from Module 23 and 28
+
+    * Module 28 Section: `Credit Granting`, `Underwriting`, `Due Diligence`
+
+* List out the assumptions, how to access probability of default and loss given default
+
+* Key is to have a wide range of ideas
+
+* PD
+
+    * Assess this for key possible reasons for default
+    
+    * 1 reason would be due to non payment
+    
+    * Another reason could be macro driven (e.g. property value < loan principal)
+    
+* LGD
+
+    * Walk through what the LGD would be
+    
+#### Q2.iii
+
+Improvement on corporate governance
+
+* Module 4, 11, 12 (maybe 8 and 9)
+
+* Some key themes
+
+    * BoD structure
+    
+        * NEDs and its benefits
+    
+    * Incentivise the BoD
+    
+    * Expand shareholders
+    
+    * Board committees
+    
+    * Audit structure
+    
+#### Q2.iv
+
+Risk identification tools
+
+* Module 3
+
+    * Section "Risk Identification Tools"
+    
+#### Q2.v
+
+10 potential op risk
+
+* List a bunch of op risk...
+
+#### Q2.vi
+
+Whether holding additiona capital is a suitable risk mitigation technique for op-risk
+
+* Modeul 29 (maybe 24)
+
+#### Q2.vii
+
+Alternative mitigation techniques for the op-risk in v
+
+* Modeul 29 (maybe 24)
+
+#### Q2.viii
+
+Modeling for flood risk
+
+* EVT
+
+#### Q2.ix
+
+Information needed for modeling flood risk
+
+* Module 20, 15
+
+* Amount of data, for freq and sev
+
+* Repair cost and expert judgement (for trends and changes)
+
+#### Q2.x
+
+Overall corporate risk exposure and importance of each risk after allowing for the impact of likely mitigation strategies
+
+* Module 13, 
