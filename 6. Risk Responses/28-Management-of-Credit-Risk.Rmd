@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 28 Objective
 
 Describe the tools and techniques for identifying and managing credit and counterparty risk
 
@@ -25,9 +25,7 @@ Sec 3: Consider managing a company's **own credit worthiness** (i.e. risk that t
 
 * Need to **recommend strategies** for dealing with market and operational risks and likely applied to credit risk too
 
-## Credit Risk Management
-
-### Credit Risk Management Process
+## Credit Risk Management Process
 
 5 stages in the credit risk management process:
 
@@ -41,7 +39,7 @@ Sec 3: Consider managing a company's **own credit worthiness** (i.e. risk that t
 
 5. **Credit review**
 
-#### 1. Policy and Infrastructure
+### 1. Policy and Infrastructure
 
 ***Goal*** of this stage:
 
@@ -71,7 +69,7 @@ This stage ***involves***:
 
 5. *Defining* **data standards** and **conventions**
 
-#### 2. Credit Granting
+### 2. Credit Granting
 
 ***Extending credit*** to customers or other counterparties:
 
@@ -95,21 +93,21 @@ Credit rating can be applied to the `transaction` or to the `counterparty`
 
     (e.g. ratings being review regularly)
 
-Ratings should reflect the following ***factors***:
+***Ratings*** should reflect the following ***factors***:
 
-* Borrower's repayment **history**
+1. Borrower's repayment **history**
 
-* Analysis of the borrower's **ability to pay**
+2. Analysis of the borrower's **ability to pay**
 
-* **Reputation**
+3. **Reputation**
 
-* Availability and enforceability of **guarantees** or **collateral**
+4. Availability and enforceability of **guarantees** or **collateral**
 
-#### 3. Exposure Monitoring, Management and Reporting
+### 3. Exposure Monitoring, Management and Reporting
 
 ***Purpose*** of this stage:
 
-* **Prevent undue exposure** to and individual counterparty
+* **Prevent undue exposure** to an individual counterparty
 
 * Ensure appropriate portfolio **diversification**
 
@@ -177,7 +175,7 @@ Exposure may be calculated from the current exposure or using some rule of thumb
     
     * Exceptions
 
-#### 4. Portfolio Management
+### 4. Portfolio Management
 
 ***Credit portfolio management function***:
 
@@ -202,7 +200,7 @@ Current trend is to **disaggregate** the business into: **origination**, **portf
 
 * *However*, a **lack of controls** across these dis-aggregated business components is one of the key reasons for the credit crisis
 
-#### 5. Credit Review
+### 5. Credit Review
 
 ***Role of credit review***:
 
@@ -220,7 +218,7 @@ Results of the review should be communicated to management
 
 ### Best Practices
 
-| Level | Basic | Standard | Best |
+|  | Basic | Standard | Best |
 | --------------------- | --------------------- | --------------------- | --------------------- |
 | ***Credit risk ratings*** | **Common definitions** of `risk` and `exposure` measurement across the business; Very **few risk ratings**; Focus on **individual transactions** | Better risk rating **linking** into `pricing`, `reserve` and `capital requirements`; Credit exposure **limits** by `counterparty`, `industry`, `country` | Risk managed at **individual** transaction and **portfolio** level |
 | ***Modeling*** | Simple **spreadsheet** models and **credit bureau reports** | **Internal** and **3^rd^ party** model consider a **variety of indicators** | **Sophisticated tools** (incl. `simulation` models, `scenario` analysis and planning, `advanced credit scoring`, `surveillance` and `migration` models) |
@@ -240,7 +238,7 @@ Results of the review should be communicated to management
 
 **Transfer** of credit risk is often achieved by `credit insurance`, `credit derivatives` and or by the `securitization` of assets
 
-### Underwriting
+### 1. Underwriting
 
 **Approaches** to check creditworthiness
 
@@ -260,7 +258,7 @@ Results of the review should be communicated to management
 
     (e.g. interest rate, requirement to provide collateral)
 
-### Due Diligence
+### 2. Due Diligence
 
 ***Due diligence***: Refers to the **care** a *reasonable person* should take *before* entering into any agreement or transaction with another party
 
@@ -284,7 +282,7 @@ Results of the review should be communicated to management
 
 Optional reading of an extensive due diligence checklist: "The Financial Risk Manual - A Systematic Guide to Identifying and Managing Financial Risk" J Holliwell
 
-### Credit Insurance
+### 3.1 Credit Insurance
 
 ***Credit insurance***: One way to mitigate large exposures to particular types of credit risk
 
@@ -318,7 +316,7 @@ When **settling claims** the insurer will ensure:
 
 4. Insurance premium has been paid
 
-### Credit Derivatives
+### 3.2 Credit Derivatives
 
 2 types of instrument that can be used to manage credit risk are **Credit Default Swaps** (CDS) and **Total Rate of Return Swaps** (TRORS)
 
@@ -338,19 +336,19 @@ Both TRORS and CDS introduce counterparty risk
 
 ***Types of Credit Events***
 
-* **Bankruptcy**
+1. **Bankruptcy**
 
     (e.g. insolvency, winding-up, appointment of a receiver)
 
-* Rating **downgrade**
+2. Rating **downgrade**
 
-* **Repudiation**
+3. **Repudiation**
 
     When debt issuer simply chooses to cancel all of the o/s interest payments and the capital repayment of the debt
 
-* **Failure to pay** a particular coupon
+4. **Failure to pay** a particular coupon
 
-* **Cross-default**
+5. **Cross-default**
 
     A cross default clause on a bond means that a credit event on another security of the issuing firm will also be considered a credit even on the referenced bond
 
@@ -364,7 +362,7 @@ Both TRORS and CDS introduce counterparty risk
 
 ***Settlement types***
 
-* **Cash settlement**:
+1. **Cash settlement**:
 
     Amount of the protection payment = **original price** of the reference asset $-$ **recovery value** of the reference asset
     
@@ -376,7 +374,7 @@ Both TRORS and CDS introduce counterparty risk
     
         If it's the market value, it is important to specify the time
     
-* **Physical settlement**:
+2. **Physical settlement**:
 
     The seller pays the full notional amount and receives the defaulted security
     
@@ -402,11 +400,11 @@ Both TRORS and CDS introduce counterparty risk
 
 ***Use case***:
 
-* **Increase diversification**:
+1. **Increase diversification**:
 
     Swapping one type of exposure for another without physically swapping the underlying assets
 
-* **Manage specific risk**
+2. **Manage specific risk**
 
     (e.g. credit risk)
 
@@ -424,7 +422,7 @@ Both TRORS and CDS introduce counterparty risk
 
 * If $B$ default, $C$ will receive from $A$ a net payment on default based on the face value of bond from $B$ less recovery
 
-### Securitization
+### 3.3 Securitization
 
 Involves **pooling** together a group of assets, combined with the issue of one or more tranches of asset backed securities (ABS)
 
@@ -466,7 +464,7 @@ SPV will be ***structured to be bankruptcy remote*** in the event of the failure
 
 3. An **alternate source of finance** to issuing "normal" secured or unsecured bonds
 
-4. A way of *8passing the risk** in the assets to a 3^rd^ party, removing them from the b/s and reducing capital
+4. A way of **passing the risk** in the assets to a 3^rd^ party, removing them from the b/s and reducing capital
 
 5. A way of effectively **selling exposure** to what may be an **otherwise unmarketable pool of assets**
 
@@ -478,19 +476,19 @@ Originally they are **homogeneous** debt obligations (residential mortgages or t
 
 ***Examples of ABS***
 
-* **MBS** residential and commercial mortgage backed securities:
+1. **MBS** residential and commercial mortgage backed securities:
 
     Payments are secured or collateralized on the interest and capital payments made under mortgages used to buy property
 
-* **CCABS** credit card receivables:
+2. **CCABS** credit card receivables:
 
     Based on the payments made by credit card holders to the credit card company
 
-* **CLO, CBO, CDO** Collateralized loan, bond and debt obligations:
+3. **CLO, CBO, CDO** Collateralized loan, bond and debt obligations:
 
     Typically collateralized on existing bank loans, bonds and a mixture of both bank loans and bonds respectively
 
-* **Insurance securitization**:
+4. **Insurance securitization**:
 
     Backed by the receivables arising from an insurance book
 

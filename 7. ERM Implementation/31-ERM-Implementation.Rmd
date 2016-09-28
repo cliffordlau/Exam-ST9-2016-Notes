@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 31 Objective
 
 Discuss the framework for risk management and control within a company
 
@@ -113,7 +113,7 @@ Company should ensure that its ERM framework is **commensurate** with the `risks
 
     How (ex-post) will such decisions be monitored?
 
-### Strage of Implementation
+### Stage of Implementation
 
 3 main ***business applications*** of RM (from Lam):
 
@@ -307,7 +307,7 @@ Many version of ERM maturity models promoted by consultancies but there is no on
 
     * **Integrating** ERM into strategic planning processes
 
-    *** Allocating capital** and **resources** to optimize risk-adjusted performance
+    **Allocating capital** and **resources** to optimize risk-adjusted performance
     
 ### McKinsey 4-Stage Risk Maturity Model
 

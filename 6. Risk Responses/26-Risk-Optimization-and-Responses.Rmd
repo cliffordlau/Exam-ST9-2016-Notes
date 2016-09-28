@@ -81,15 +81,15 @@ Risk management can **optimize** the `risk/return profile` of the organization b
 
 4. Employ techniques to **manage existing risks**
 
-    i. **Active portfolio management**:
+    i. [**Active portfolio management**:](#ptf-mgmt)
     
         Manage the company's portfolio of activities where each has their own risk/return characteristics
     
-    ii. **Reduce risk**:
+    ii. [**Reduce risk**](#risk-reduce):
     
         e.g. duration matching to reduce interest rate risk
     
-    iii. **Transfer risk** to a 3^rd^ party:
+    iii. [**Transfer risk**](#risk-transfer) to a 3^rd^ party:
     
         e.g. with insurance or derivatives
     
@@ -97,7 +97,11 @@ Risk management can **optimize** the `risk/return profile` of the organization b
     
     `Risk transfer` tend to be **quicker** and **easier** to implement
     
-## Portfolio Management Techniques and ERM
+## Portfolio Management Techniques and ERM{#ptf-mgmt}
+
+Recall from Module 4 Section "Internal Risk Framework Components":
+
+* Portfolio managment is one of the 7 major components of the ERM framework
 
 ### Fundamental Concepts of Portfolio Management
 
@@ -369,7 +373,7 @@ The response chosen is necessary to :
 
 * **Optimize risk-adjusted performance** through appropriate *resource allocation*
 
-### Risk Transfer
+### Risk Transfer{#risk-transfer}
 
 **Risk transfer** = reassigning risk = deflecting risk
 
@@ -437,7 +441,7 @@ Ways in which risks can be reduced through transfer:
 
 * Helping to establish **consistent** risk transfer policies across an org.
 
-### Risk Reduction without Transfer
+### Risk Reduction without Transfer{#risk-reduce}
 
 Risk reduction without transfer = risk management = risk treatment = **risk mitigation**
 

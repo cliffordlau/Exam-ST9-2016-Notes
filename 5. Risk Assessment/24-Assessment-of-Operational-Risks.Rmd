@@ -93,7 +93,7 @@ Based on initial analysis of publicly available data:
     
 ***Model approach***
 
-1. **Bottom up model**:
+1. [**Bottom up model**](#b-up):
 
     Estimates the operational risk capital by **starting the analysis at a low level of detail** 
       
@@ -101,13 +101,13 @@ Based on initial analysis of publicly available data:
         
     and then aggregating the results
 
-2. **Top down model**:
+2. [**Top down model**](#t-down):
 
     Use `readily available data` and `fairly simple calculations` to give a **general picture of the operational risk** of a company
 
     * Insurance companies are more likely to practice to use a high level scenario analysis technique from a top down perspective
 
-### Bottom-up Models
+### Bottom-up Models{#b-up}
 
 Estimates the operational risk capital by **starting the analysis at a low level of detail** (i.e. looking at each category of op-risk in return) and then aggregating the results
 
@@ -261,7 +261,7 @@ Simpler approach (due to lack of data) that *assumed* losses are related to the 
 
     * $GI_{j,t}$ is the gross income for business line $j$ in the prior year $t$
 
-### Top-down Models
+### Top-down Models{#t-down}
 
 Use `readily available data` and `fairly simple calculations` to give a **general picture of the operational risk** of a company
 
@@ -339,37 +339,37 @@ Useful if there is little internal data available (but debatable how accurately 
 
 ***Systematic process*** for managing a company's op-risk
 
-* Risk **policy** and organization (focus of the module)
+1. [Risk **policy** and organization](#risk-po) 
 
-* Risk **identification** and **assessment** (focus of the module)
+2. [Risk **identification** and **assessment**](#risk-i)
 
-* **Capital allocation** and **performance measurement** (cover in later module)
+3. **Capital allocation** and **performance measurement** (cover in later module)
 
-* Risk **mitigation** and **control** (cover in later module)
+4. Risk **mitigation** and **control** (cover in later module)
 
-* Risk **transfer** and **finance** (cover in later module)
+5. Risk **transfer** and **finance** (cover in later module)
 
-#### Risk Policy and Organization
+#### 1. Risk Policy and Organization{#risk-po}
 
 A ***comprehensive*** operational risk management policy should include:
 
-1. **Principles** for operational risk management
+i. **Principles** for operational risk management
 
-2. Definitions and **taxonomy** for op-risk
+ii. Definitions and **taxonomy** for op-risk
 
-3. **Objectives** and **goals** of op-risk management
+iii. **Objectives** and **goals** of op-risk management
 
-4. Op-risk management **processes** and **tools**
+iv. Op-risk management **processes** and **tools**
 
-5. **Org structure**, as it applies to operational risk management
+v. **Org structure**, as it applies to operational risk management
 
-6. **Roles** and **responsibilities** of different business areas involved in operational risk management
+vi. **Roles** and **responsibilities** of different business areas involved in operational risk management
 
-#### Risk Identification and Assessment
+#### 2. Risk Identification and Assessment{#risk-i}
 
 Need a ***wide range of tools and techniques*** as it covers a broad range of issues
 
-1. ***Loss incident databases***
+i. ***Loss incident databases***
 
     * Help a company to **learn** from previous loss incidents
     
@@ -379,11 +379,11 @@ Need a ***wide range of tools and techniques*** as it covers a broad range of is
     
     * Support any **mitigation strategies** applied
 
-2. ***Controls self-assessment***
+ii. ***Controls self-assessment***
 
     Internal analysis of the key risks and their controls and management implications
 
-3. ***Risk mapping***
+iii. ***Risk mapping***
 
     * (Discussed in Mod 13) **Ranks** the company's key risk exposures by severity and frequency
 
@@ -391,7 +391,7 @@ Need a ***wide range of tools and techniques*** as it covers a broad range of is
     
         Ensure resources are targeted to the most important risks
 
-4. ***Risk indicators and minimum acceptable performance triggers***
+iv. ***Risk indicators and minimum acceptable performance triggers***
 
     * Quantitative measures can be set up (e.g. \# of customer complaints)
     

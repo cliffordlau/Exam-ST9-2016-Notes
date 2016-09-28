@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 30 Objective
 
 ***Understand capital calculations***
 
@@ -51,17 +51,15 @@ Recall Module 7's S&P paper "Insurance Criteria: Evaluating the Enterprise Risk 
 
 * Can use for review
 
-## Capital
-
-### Definitions of Capital
+## Definitions of Capital
 
 Main concern is with **risk capital** (or **economic capital**, or simply just capital)
 
 ***Common definitions*** of capital in use:
 
-Capital should provide sufficient surplus to **cover adverse outcomes** with a given level of **risk tolerance** over a specified **time horizon**
+Capital should provide sufficient surplus to *cover* [**adverse outcomes**](#adv-outcome) with a given level of [**risk tolerance**](#risk-tol) over a specified **time horizon**
 
-#### Adverse Outcomes
+### Adverse Outcomes{#adv-outcome}
 
 3 main interpretations of ***adverse outcomes*** result in the following **definition of capital**:
 
@@ -75,7 +73,7 @@ Capital should provide sufficient surplus to **cover adverse outcomes** with a g
     
     * Rather than the funding position (cashflow or surplus) of the company **throughout** the time period concerned
     
-#### Risk Tolerance
+### Risk Tolerance{#risk-tol}
 
 **Metrics** used to set an appropriate level of risk tolerance
 
@@ -85,7 +83,7 @@ Capital should provide sufficient surplus to **cover adverse outcomes** with a g
 
 * Possibility of some key **indicator** (e.g. credit rating) *falling outside* an acceptable level
 
-#### Other Definitions
+### Other Definitions
 
 There may be other ways to assess capital requirements within an org, such as 
 
@@ -95,7 +93,7 @@ There may be other ways to assess capital requirements within an org, such as
 
 Where relevant these are also an important part of the capital management process
 
-### Capital Models
+## Capital Models
 
 CMs can be used for a number of purpose within an org
 
@@ -103,7 +101,7 @@ CMs can be used for a number of purpose within an org
 
 Best-practice models are also able to allocate the capital across the company
 
-#### Generic Capital Models
+### Generic Capital Models
 
 Used by capital providers and regulators to gain a **consistent assessment** of capital requirement *across different firms*
 
@@ -117,7 +115,7 @@ Generic model are ***becoming more complex***:
 
 * Increasing **pressure on companies to optimize** their capital resources
 
-#### Internal Capital Models
+### Internal Capital Models
 
 Internal CM is use to simulate a **company specific view** of the capital needed
 
@@ -125,7 +123,52 @@ Internal CM is use to simulate a **company specific view** of the capital needed
 
 * Internal CMs can also be used to calculate regulatory capital (instead of using generic CM), but will require detailed scrutiny by the regulator
 
-***Use of internal CM***:
+Internal CM typically comprises of an **asset** and **liability** model, which may be **dynamic** in nature
+
+***Key outputs*** of an internal CM:
+
+* Forecast **future b/s**, **P&L account** or **cashflow** statements
+
+***Desirable features***
+
+* `Asset` model allows for **correlations** between different `asset classes` *over time*
+
+* `Liability` model considers **reinsurance** and **correlations** between `classes of risk`
+
+* `Asset` and `liability` model should be **integrated** and allow for **correlation** between asset and liabilities
+
+* Model is **dynamic**
+
+***Dynamic asset-liability model*** has the following benefits:  
+(i.e. Asset and liability cashflows are linked by equivalent economic variables)
+
+* **Improved understanding** of the dynamics of the current strategy
+
+* Consideration of the *impacts* of implementing *different* **strategies**
+
+    (i.e. mix of business)
+
+* Examination of the *impact* of using *different* **source of capital**
+
+* Useful for **due diligence** for corporate transaction
+
+* Assesses the **risk-adjusted performance** of *different BUs*
+
+* Determines an **optimal asset mix**
+
+* Helps understand the *impact* of **extreme events**
+
+* Useful in producing **Financial Condition Reports**
+
+Regulators require long term projections of the capital needs of the business and these are often incorporated into a **Financial Condition Rerport** (FCR)
+
+* A formal assessment of the **financial viability** of the insurer
+
+* FCR includes output from internal CM and other hard-to-quantify factors
+
+    (e.g. reputational risk and effectiveness of the ERM framework)
+
+#### Use of Internal Model
 
 1. Model is a subjective tool and the results should be used with care
 
@@ -181,52 +224,7 @@ Internal CM is use to simulate a **company specific view** of the capital needed
 
 13. **Disaster planning**
 
-Internal CM typically comprises of an **asset** and **liability** model, which may be **dynamic** in nature
-
-***Key outputs*** of an internal CM:
-
-* Forecast **future b/s**, **P&L account** or **cashflow** statements
-
-***Desirable features***
-
-* `Asset` model allows for **correlations** between different `asset classes` *over time*
-
-* `Liability` model considers **reinsurance** and **correlations** between `classes of risk`
-
-* `Asset` and `liability` model should be **integrated** and allow for **correlation** between asset and liabilities
-
-* Model is **dynamic**
-
-***Dynamic asset-liability model*** has the following benefits:  
-(i.e. Asset and liability cashflows are linked by equivalent economic variables)
-
-* **Improved understanding** of the dynamics of the current strategy
-
-* Consideration of the *impacts* of implementing *different* **strategies**
-
-    (i.e. mix of business)
-
-* Examination of the *impact* of using *different* **source of capital**
-
-* Useful for **due diligence** for corporate transaction
-
-* Assesses the **risk-adjusted performance** of *different BUs*
-
-* Determines an **optimal asset mix**
-
-* Helps understand the *impact* of **extreme events**
-
-* Useful in producing **Financial Condition Reports**
-
-Regulators require long term projections of the capital needs of the business and these are often incorporated into a **Financial Condition Rerport** (FCR)
-
-* A formal assessment of the **financial viability** of the insurer
-
-* FCR includes output from internal CM and other hard-to-quantify factors
-
-    (e.g. reputational risk and effectiveness of the ERM framework)
-
-#### Internal vs Generic Models
+### Internal vs Generic Models
 
 Likely to have **similar** {underlying **assumptions** and **parameters**} but likely to have **different** {**risk measures** and **calibrations**} associated with them
 
@@ -234,19 +232,19 @@ Likely to have **similar** {underlying **assumptions** and **parameters**} but l
 
 ***Key differences***
 
-* Views as to **volatility** of various `classes of business`
+1. Views as to **volatility** of various `classes of business`
 
-* Allowances for **diversification** between risk type
+2. Allowances for **diversification** between risk type
 
-* **Objectives** of the model
+3. **Objectives** of the model
 
-* **Inclusion of different risk types** or **different treatment** of the same risks
+4. **Inclusion of different risk types** or **different treatment** of the same risks
 
-* Different views regarding the **availability of certain types of assets** as capital
+5. Different views regarding the **availability of certain types of assets** as capital
 
 Within regulatory and economic capital models there may also be different scenarios run to allow for some of the accounting requirements of specific countries that are not appropriate when considering either regulatory or economic capital requirements
 
-### Capital Modeling Process
+## Capital Modeling Process
 
 ***6 stages*** required in operating a ***successful capital model***:
 
@@ -298,7 +296,7 @@ Within regulatory and economic capital models there may also be different scenar
       
     Could be a set of univariate models together with a method by which to combine them (e.g. copula) or a single fully integrated model
 
-### Use of a Capital Model in ORSA
+## Use of a Capital Model in ORSA
 
 *IAA Note (Key Feature 7)*:
 
@@ -314,25 +312,25 @@ Within regulatory and economic capital models there may also be different scenar
 
 ***Factors to consider*** when using a capital model as part of such a ***continuity analysis***
 
-* What **time period** should be used
+1. What **time period** should be used
 
     * Longer time periods means the models results need more interpretation and the model's limitation need to be clearly articulated
 
     * Different models may need to be developed for the longer term
 
-* Should the financial position of the insurer be assessed at a **particular point in time**, *or* **once specific liabilities have run off**
+2. Should the financial position of the insurer be assessed at a **particular point in time**, *or* **once specific liabilities have run off**
 
-* What **capital reduction/injection policies** can be *assumed*
+3. What **capital reduction/injection policies** can be *assumed*
 
-* What **management actions** need to be modeled
+4. What **management actions** need to be modeled
 
     * In *general* (e.g. `premium setting`, `asset allocation`, `discretionary benefits`, `dividend policy` and `risk mitigation`)
 
     * In times of *crisis*
 
-* **Reliability** of the insurer's long term forecasts?
+5. **Reliability** of the insurer's long term forecasts?
 
-### Benefits of Effective Capital Management
+## Benefits of Effective Capital Management
 
 Capital management is more than a company simply holding more capital to cover possible losses
 
@@ -372,7 +370,7 @@ Capital management is more than a company simply holding more capital to cover p
 
 Higher solvency standard or more risk means more capital needs to be held
 
-### Theoretical Method of Calculating Capital Requirements
+### Theoretical Method
 
 $K_t$: Capital required at time $t$ is the difference between value of assets ($A_t$) and liabilities ($L_t$)
 
@@ -424,7 +422,7 @@ We would expect $K_t$ ***varies as follows***:
 
     (Possible that ruin occurs between these time points)
 
-### Practical Methods of calculating capital
+### Practical Methods
 
 Basic **bottom-up** approach generalized from the preceding example:
 
@@ -484,7 +482,7 @@ Amount key stakeholder (e.g policyholder of an insurance company or depositors w
 
 Other methods to assess capital requirements
 
-* **Full economic scenarios**
+1. **Full economic scenarios**
 
     * A chosen set of economic scenarios is detailed
     
@@ -494,37 +492,37 @@ Other methods to assess capital requirements
 
     * Results are then aggregated across all units and assessed under a given risk measure (e.g. VaR)
 
-* **Stress test**
+2. **Stress test**
 
     * One of more highly adverse economic scenarios are set as the basis for assessing economic capital
 
-* **Factor tables**
+3. **Factor tables**
 
     * Tables of capital requirement per unit risk exposure by risk type are published by supervisors
 
     * Capital requirement is then calculated as the number of units of each activity undertaken by the business multiplied by the relevant factor from the table
 
-* **Stochastic models**
+4. **Stochastic models**
 
     * Either univariate or multivariate
 
     * Scenarios are generated at random and capital calculated on the basis of the results of these scenarios
 
-* **Statistical methods**
+5. **Statistical methods**
 
     * Mean, variance, co-variance of the loss distribution are estimated and combined with the normal distribution to estimate capital
 
-* **Credit risk methods**
+6. **Credit risk methods**
 
     * Historical data from rating agencies is used, or
 
     * Merton model approach
 
-* **Operational risk methods**
+7. **Operational risk methods**
 
     * Company and industry data is used and combined with "expert opinion" to enable quantitative results to be obtained
 
-* **Option pricing theory/ Black Scholes**
+8. **Option pricing theory/ Black Scholes**
 
     * Effective where the risk event can be assumed to occur only at one certain point in time
 
@@ -682,23 +680,23 @@ SCR Must be achievable with 99.5% confidence over 1 year horizon and maybe based
 
 ***Internal Model*** must satisfy certain standards including:
 
-* **Use test**:  
+1. **Use test**:  
 
     Company must actually use the model in its decision making and risk management systems
 
-* **Statistical quality standards**:  
+2. **Statistical quality standards**:  
 
     Ensure assumptions are realistic and reliable
 
-* **Calibration standard**:  
+3. **Calibration standard**:  
 
     Ensure the output can be used to properly calculate the SCR
 
-* **P&L attribution**
+4. **P&L attribution**
 
-* **Validation** standards
+5. **Validation** standards
 
-* **Documentation** standards
+6. **Documentation** standards
 
 #### Minimum Capital Requirement
 
@@ -752,7 +750,7 @@ EIC is a monetary amount and can be used to **encourage marginal growth** opport
 
 * i.e. those activities that do add value, yet may not meet RAROC targets
 
-### Shareholder Value and Shareholder Value Added
+### S/H Value and S/H Value Added
 
 SHV and SVA assess the intrinsic economic value of a business as a going concern (i.e. over an extended period)
 
@@ -812,7 +810,7 @@ Amount of capital that is allocated to each BU:
 
     (e.g. a minimum price might be determined by a stipulated minimum RAROC)
 
-### Allowing for Concentration/Diversification of Risk
+### Diversification of Risk
 
 Allocation needs to allow for concentration / diversification of risk between the BUs
 
@@ -820,7 +818,7 @@ Allocation needs to allow for concentration / diversification of risk between th
 
 * Some allocation of capital may result in the less risky areas subsidizing the more risky area
 
-#### Adjustments for Correlation and Dependency
+#### Correlation and Dependency
 
 Important to remember that the level of dependency might be **different during times of stress**
 
@@ -846,13 +844,11 @@ Fair approach is important as the allocation impacts the pricing and subsequent 
 
 * However, a significant element of judgement to ensure that a suitable answer is obtained
 
-### Allocation Methods
+### General Allocation Principles
 
 This is an area of continuing development and no specific methodology is currently an industry standard
 
 Care should always be taken to consider the **purpose** of the allocation and the **practical implications** of the chosen methodology before results are used
-
-#### General Allocation Principles
 
 Method of allocation should have regard to **the use** to which the results will be put and should consider **desirable properties** of the results (e.g. stability over time)
 
@@ -866,7 +862,7 @@ There can be **conflict between desired properties** of capital allocation exerc
 
 * Different methodologies will each fulfill different desired properties to a greater or lesser extent, making it very important to consider the **purpose of the allocation** and the **practical impact** of the methodologies before a final selection is made
 
-#### Capital Allocation Approaches
+### Capital Allocation Approaches
 
 Approaches to allocate total capital to BUs
 
@@ -894,7 +890,7 @@ Approach of ***not allocating capital***
 
 * Can lead to **potential over-investment** in *risky* BUs
 
-#### 2. Allocation Using a Risk Measure
+#### 2. Alloc. Using Risk Measure
 
 Allocate capital by reference to some measure of risk
 
@@ -964,7 +960,7 @@ There are other methodologies that use risk measures calculations as the basis f
 
 Results from different approaches can be very different, even for the same risk measure
 
-#### 3. Allocation by Marginal Capital Costs
+#### 3. Alloc. by Marginal Capital Costs
 
 Capital is allocated to LoBs in accordance with the **marginal additional capital required** for writing that business (given that the other LoB are already in place)
 
@@ -984,7 +980,7 @@ Capital is allocated to LoBs in accordance with the **marginal additional capita
 
     (i.e. sum of the marginal capital requirements $\neq$ sum of the total)
 
-#### 4. Allocation using Game Theory
+#### 4. Alloc. w/ Game Theory
 
 **Shapley method**
 
@@ -1002,7 +998,7 @@ Capital is allocated to LoBs in accordance with the **marginal additional capita
 
 * Similar answer can be achieved using other methods that are easier to implement
 
-#### 5. Allocation using Pro-rata Approach
+#### 5. Alloc. w/ Pro-rata Approach
 
 Allocation according to some basis:
 
@@ -1016,7 +1012,7 @@ Allocation according to some basis:
 
 * Unless the basis is risk-based, large amounts of capital might be allocated to BUs that generate little risk
 
-#### 6. Allocation using Stand-alone Approach
+#### 6. Alloc. w/ Stand-alone Approach
 
 Treating each **BU in isolation**
 
@@ -1028,7 +1024,7 @@ Treating each **BU in isolation**
 
 ### Other Considerations
 
-#### Coherence of Selected Risk Measure
+#### Coherence of Risk Measure
 
 Recall (Module 14) on coherent risk measures
 

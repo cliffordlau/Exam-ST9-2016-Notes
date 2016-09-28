@@ -47,25 +47,25 @@ Typically ***quantitative techniques are not possible*** for liquidity risk
 
 ### Scenario Analysis
 
-**Common approach** to assessing liquidity risk
+Common approach to assessing liquidity risk
 
 ***Cash inflows and outflows projection*** under a range of scenarios
 
 * ***Cash outflows***
 
-    **Retail banks**
+    * **Retail banks**
     
-    * **Predicting** outflow **is problematic**
+        **Predicting** outflow **is problematic**
   
         $\because$ Much of a bank's liabilities will be in the form of deposits from customers who may withdraw with little or no notice
 
-    Large mature **pension scheme**
+    * Large mature **pension scheme**
     
-    * May have reasonably **predictable** cash outflows in respect of size and timing of liability payments
+        May have reasonably **predictable** cash outflows in respect of size and timing of liability payments
 
-    **General insurance company**
+    * **General insurance company**
     
-    * May have very **unpredictable** cash outflows as both the *size* and *frequency* of the claims may be unknown
+        May have very **unpredictable** cash outflows as both the *size* and *frequency* of the claims may be unknown
 
 * ***Cash inflows***
 
@@ -281,7 +281,7 @@ Similarly can be broken into the following
 
 * ***Reserving risk***:
 
-    incl. volatility, CAT risk, trend or cycle risk
+    incl. `volatility`, `CAT` risk, `trend` or cycle risk
 
 ***Difference with demographic risk***
 

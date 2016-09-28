@@ -33,13 +33,13 @@ Discuss the management of market risk
 
 ***Market risk management strategies*** include:
 
-* **Diversification**:
+1. **Diversification**:
 
     Holding a range of assets so as to limit losses within a portfolio investment strategy
     
     Ensuring it is appropriate for the liabilities of the org
 
-* **Hedging**:
+2. **Hedging**:
 
     Use derivatives to manage risk
 
@@ -55,7 +55,7 @@ Discuss the management of market risk
     
         (i.e. compared to the diversity of a suitable benchmark)
 
-* Use **factor analysis** (e.g. SVD) to determine how broad a range of `economic` and `financial` variables influence the market value of the portfolio
+* Use **factor analysis** (e.g. SVD from Module 23) to determine how broad a range of `economic` and `financial` variables influence the market value of the portfolio
 
 ***Key activities*** of market risk management:
 
@@ -75,41 +75,41 @@ Discuss the management of market risk
 
 ### Policies
 
-Documented ***market risk policies*** to *ensure*:
+***Purpose*** of documented ***market risk policies*** is to *ensure*:
 
 * All market risks are **identified**, **measured**, **monitored**, **controlled** and regularly **reported**
 
 * Policies should **reflect the complexity** of businesses and be **tailored** to the activities of the company
 
-Policies should ***cover***:
+***Scope of policies ***:
 
-* **Roles and responsibilities**:
+1. **Roles and responsibilities**:
 
     Person responsible for **developing**, **implementing**, **monitoring** and **reviewing** policies
 
-* **Delegation of authority and limits**:
+2. **Delegation of authority and limits**:
 
     Who has **permission** to execute market risk positions and to **what extent**
 
-    **Seperation of duty**: Trading (`front office`) and settlement (`back office`) functions should be segregated
+    * **Seperation of duty**: Trading (`front office`) and settlement (`back office`) functions should be segregated
 
-* **Risk measurement and reporting**:
+3. **Risk measurement and reporting**:
 
     How risks are measured and reported (esp. critical issues e.g. **limit violation**)
 
-* **Valuation and back-testing**:
+4. **Valuation and back-testing**:
 
     How positions are valued (esp. when no market price exist)
 
-* **Hedging policy**:
+5. **Hedging policy**:
 
     What risk to hedge, the products, limits and strategies for hedging and how the effectiveness is measured
 
-* **Liquidity policy**:
+6. **Liquidity policy**:
 
     How to measure liquidity and what the contingency plan is during distress
 
-* **Exception management**:
+7. **Exception management**:
 
     How to handle and exceptions
 
@@ -117,7 +117,7 @@ Be aware that no policies or risk measuring will protect fully against **rogue t
 
 ### Best Practices
 
-| Level | Basic | Standard | Best |
+|  | Basic | Standard | Best |
 | --------------------- | ------------------------ | --------------------- | --------------------- |
 | ***Market risk factors*** | Evaluates **earning impact** of `interest rate` and `FX changes`, perform **gap analysis** | **Central management** of interest rate and FX risk through `internal transfer pricing`; Considers **internal hedges** | Seeks **competitive advantage** (e.g. `exploiting mispriced securities` and `better intelligence`) |
 | ***Modeling*** | **Spreadsheet** | **Robust capabilities** (incl. `sensitivity analysis` and `simulation`) | **Sophisticated tools** (incl. `hot-spot analysis`, `best hedge analysis`, `best replicating portfolio` and `implied view`) | 
@@ -149,7 +149,7 @@ Derivative **redistribute** risk from those who wish to **hedge** to those who a
 
     Obligation (for both parties) to exchange a series of cash flows
 
-#### Exchange-traded Derivatives
+### Exchange-traded Derivatives
 
 **Futures** (and some options) are exchange-traded contracts
 
@@ -177,7 +177,7 @@ Derivative **redistribute** risk from those who wish to **hedge** to those who a
     
     * Comparatively low transaction cost
 
-#### Over-the-counter Derivatives
+### Over-the-counter Derivatives
 
 ***Characteristics*** of OTC markets:
 
@@ -225,7 +225,7 @@ Main ***factors*** that *influences* the ***price*** of an OTC contract
 
     (incl. opportunity cost of providing collateral; cost of storage if a commodity)
 
-#### Collateral
+### Collateral
 
 May be held by one or both parties to provide protection from the costs of any potential default (cash deposit or other securities)
 
@@ -377,7 +377,7 @@ Difference between the {spot price of the underlying} and the {corresponding fut
 
 * **Cost of carry** can be considered as **negative income** and dealt with similarly
 
-#### Spot and Future Prices Relationship
+#### Spot and Future Relationship
 
 **Normal backwardation**:  
 `Future price` is **below** the expected value of the `future spot price`
@@ -437,7 +437,7 @@ $= \dfrac{\text{Value of the portfolio}}{\text{Value of one contract}}$
 
 ***Currency hedging***:
 
-* **Currency forward**:
+1. **Currency forward**:
 
     Agree to buy/sell foreign currency at an agreed rate at a future date
 
@@ -445,15 +445,15 @@ $= \dfrac{\text{Value of the portfolio}}{\text{Value of one contract}}$
     
         Based on current (spot) rate of exchange adjusted for the different in interest rates between two currencies
 
-* **Currency swap**:
+2. **Currency swap**:
 
     Effectively a series of currency forwards
 
-* **Currency future**:
+3. **Currency future**:
 
     Similar to currency forward but via exchange
 
-* **Currency option**:
+4. **Currency option**:
 
     Company buys the right to buy/sell foreign currency at an agreed date for an agreed price
 
@@ -495,7 +495,7 @@ Will go through the key points on the Greeks
 
 * Need to be able to **recommend suitable hedging strategies** given numerical information about the `delta`, `gamma` and `vega` of a portfolio and relevant derivatives where there are one or two underlying indices or asset prices
 
-### Delta, Gamma, Vega Hedging: Single Underlying
+### Single Underlying Hedging
 
 *Consider a portfolio* ($p$):
 
@@ -583,7 +583,7 @@ Options and assets *available for hedge*:
 
 Plug in the above and solved we get the same answer
 
-### Delta, Gamma, Vega Hedging: Many Underlying
+### Many Underlying Hedging
 
 More often a portfolio is linked to the value of **many underlying** indices or asset prices ($m$)
 
@@ -681,19 +681,19 @@ Component of market risk arises when **assets and/or liabilities** are **sensiti
 
 ***Types of interest rate risk***:
 
-* **Direct exposure**:
+1. [**Direct exposure**](#dir-exp):
 
     Direct effect on the **size** of company's cashflows
     
     (e.g. rise in interest rates increase the cost of a floating rate loan)
 
-* **Indirect exposure**:
+2. [**Indirect exposure**](#ind-exp):
 
     Affect the **value** of future cashflows
     
     (e.g. change in interest rates altering the PV of future payments due on an annuity portfolio)
 
-### Direct Exposure
+### 1. Direct Exposure{#dir-exp}
 
 Direct exposure can be hedged using **forward rate agreement** (FRA) or can be limited by using **interest rate caps** and **floors**
 
@@ -725,17 +725,17 @@ OTC, provide insurance against the rate of interest on an underlying *floating r
 
 * Floor provide insurance against a fall in floating rate, which might be useful for those receiving the floating rate (e.g. a saver)
 
-### Indirect Exposure
+### 2. Indirect Exposure{#ind-exp}
 
 ***Common techniques***:
 
-* Cashflow matching
+i. [Cashflow matching](#cf-matching)
 
-* Immunization
+ii. [Immunization](#immun)
 
-* Hedging using model points
+iii. [Hedging using model points](#model-points)
 
-#### Cashflow matching
+#### Cashflow matching{#cf-matching}
 
 Assets and liabilities with **exactly matching cashflow** (`size` and `timing`)
 
@@ -781,7 +781,7 @@ Also might **not** be **desirable to eliminate all risks**
     
     (Can eliminate the downside interest rate risk while retaining the upside)
 
-#### Immunization
+#### Immunization{#immun}
 
 ***Similar purpose to matching***:
 
@@ -811,7 +811,7 @@ Also might **not** be **desirable to eliminate all risks**
 
 5. Requires *8regular rebalancing** of the assets
 
-#### Hedging useing Model Points
+#### Hedging useing Model Points{#model-points}
 
 May be acceptable to hedge cashflows at **key reference points** in the future
 

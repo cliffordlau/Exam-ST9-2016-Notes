@@ -377,7 +377,7 @@ Equation needs to be solve with both $X_t$ and $\sigma_X$ (which is normally imp
 
 * **Probability (at time 0) of default occurring at time $T$**
 
-    $P(X_t \leq B) = \Phi(-d_2) = 1- \Phi(-d_2)$
+    $P(X_t \leq B) = \Phi(-d_2) = 1- \Phi(d_2)$
 
 * **Value of debt (at time 0)**
 

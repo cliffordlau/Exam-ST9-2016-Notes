@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 29 Objective
 
 Discuss the management of operational, liquidity, insurance and other key risks
 
@@ -35,7 +35,7 @@ Need an op-risk *framework* that is **integrated** into the business
 
 ***Controls***: Combination of **information**, **assessment** and **response**  
 
-* What information do we have that we can use to decide what course of action to take)
+* What information do we have that we can use to decide what course of action to take
 
 * Key to manage op-risk is to have **sufficient controls** in the business
 
@@ -71,7 +71,7 @@ Companies now outsource non-core activities to 3^rd^ party
 
 ***Considerations*** for entering into an outsourcing agreement
 
-1. **Regulatory evnironment** and the **status** of the 3^rd^ party
+1. **Regulatory environment** and the **status** of the 3^rd^ party
 
 2. **Financial standing** of the 3^rd^ party
 
@@ -99,7 +99,7 @@ Need to pay attention to the innumerable external risks that can disrupt the ope
 
 7. **Terrorist** damage
 
-### Business Continuity and Crisis Management
+### BCM and Crisis Management
 
 **Business continuity**:  
 Includes **safeguarding** the business's **reputation**, **brand** and other **value creating activities**
@@ -178,19 +178,19 @@ It is possible to spend more money managing the risk of small losses than is sav
 
 Employment related people risk can be managed through appropriate:
 
-* **Recruitment processes**
+1. **Recruitment processes**
 
     * Cost effective recruitment of the right individuals
 
     * Enforceable contracts of employment
 
-* **Competency management processes**
+2. **Competency management processes**
 
     * Training requirements (incl. new employee induction, CPD and professional qualifications)
 
     * Risk training increases the understanding of risk management in the business
 
-* **Appraisals and performance management processes**
+3. **Appraisals and performance management processes**
 
     * Talent management (i.e. promotion and transfer)
 
@@ -200,7 +200,7 @@ Employment related people risk can be managed through appropriate:
 
     * NEDs should regularly appraise their skills, knowledge and expertise and undertake professional development where necessary
 
-* **Relationship management**
+4. **Relationship management**
 
     * With employee related collective bodies (e.g. unions)
     
@@ -264,13 +264,13 @@ Introduction of changes into the business processes or IT systems introduces the
 
 ***Managing process risk***
 
-* Undertaking **pilot** studies
+1. Undertaking **pilot** studies
 
-* **Precise definition** of the requirements of any new solution to best meet the needs of the whole enterprise
+2. **Precise definition** of the requirements of any new solution to best meet the needs of the whole enterprise
 
-* **Designing** systems that can be *easily maintained*, *enhanced* and *upgraded*
+3. **Designing** systems that can be *easily maintained*, *enhanced* and *upgraded*
 
-* **Careful deployment** of the new systems with user education
+4. **Careful deployment** of the new systems with user education
 
 **Stress test** of any new process or system should be done both in isolation of and within the larger structure into which it is to be placed
 
@@ -308,7 +308,7 @@ Recall discussion from Module 21
 
 * **Strong relationships** with *key stakeholders*
 
-## Operational Risk Mitigation and Control
+## Op-Risk Mitigation and Control
 
 There is **no upside** to op-risk but a **cost-benefit** analysis may result in some operational risks being accepted rather than mitigated
 
@@ -346,8 +346,8 @@ Some companies self-insure against op-losses by establishing reserves
 
 ### Best Practices
 
-| Level | Basic | Standard | Best |
-| --------------------- | --------------------- | --------------------- | --------------------- |
+|  | Basic | Standard | Best |
+| ------------ | ------------------ | --------------------- | --------------------- |
 | ***Operational risks*** | **Loss indicators** are reported | Full set of risk indicators *by BUs* with **goals** and **minimum acceptable performance** targets; **Early warning** indicators developed | **Broad definition** of op-risk; **Internal** and **external** `early warning` indicators; **Economic capital** *allocated* to op-risk |
 | ***Systems*** | Losses are **tracked** | Op-risk database **linked** to `industry` database | **Qualitative** and **quantitative** tools (incl. `scenario` and `simulation` risk models) |
 | ***Op-risk function*** | **Op-risk manager** and **committee** in place; **Audit** and **compliance** *police* the policies | **Team of risk professionals**; **Response** and **contingency plans** *developed*; `Audit` is *independent* | `Insurance function` **fully integrated** with op-risk function |
@@ -370,20 +370,20 @@ Monitoring must be both **within** and **across legal entities**
 
 ***Methods of managing market liquidity risk***
 
-* Varying **investment strategy**
+1. Varying **investment strategy**
 
-* Using **swaps**
+2. Using **swaps**
 
-* Having a **contingency funding** consisting of high-quality, liquid assets
+3. Having a **contingency funding** consisting of high-quality, liquid assets
 
 ***Methods of managing funding liquidity risk***  
 (Should be considered alongside credit risks for banks)
 
-* **Diversifying** sources of funding (by type and term)
+1. **Diversifying** sources of funding (by type and term)
 
-* Continuously **monitoring** the ability to raise additional capital
+2. Continuously **monitoring** the ability to raise additional capital
 
-* **Contingency sources** of funding from their banks (e.g. line of credit) to draw upon in times of stress
+3. **Contingency sources** of funding from their banks (e.g. line of credit) to draw upon in times of stress
 
 ### Systemic Risk
 
@@ -393,21 +393,21 @@ Business can manage some systemic risks by ensuring it deals with a wide range o
 
 Activities to ***reduce or eliminate feedback risk*** (spread of risk through a financial system)
 
-* Investing only in **exchange-traded** instruments, so as to pool counterparty risk
+1. Investing only in **exchange-traded** instruments, so as to pool counterparty risk
 
-* Suspension of trading on the stock exchange by **circuit breakers** if there is a large market movement
+2. Suspension of trading on the stock exchange by **circuit breakers** if there is a large market movement
 
-* Governments of central banks intervening to prop up a bank (by acting as a **lender of last resort**) or **reduce financial consequences** (e.g. by reducing interest rate)
+3. Governments of central banks intervening to prop up a bank (by acting as a **lender of last resort**) or **reduce financial consequences** (e.g. by reducing interest rate)
 
-* **Regulations** that require establishment of **additional reserve** 
+4. **Regulations** that require establishment of **additional reserve** 
 
     (e.g. Basel III requires companies to build up additional reserves in the good times)
 
-* **Avoid regulations that increase pro-cyclicality**
+5. **Avoid regulations that increase pro-cyclicality**
 
     (e.g. solvency regulation that encourage all similar organization to adopt similar investment and risk-mitigation strategies)
 
-* Physically **separating types of business**
+6. Physically **separating types of business**
 
     (e.g. the separation of investment banking and retail banking under the US 1933 Glass-Steagall Act, which was repealed but is now being actively pursued following the financial crisis)
 
@@ -419,20 +419,20 @@ Activities to ***reduce or eliminate feedback risk*** (spread of risk through a 
 
 * After the risk has been accepted
 
-    * **Risk transfer**
+    1. **Risk transfer**
     
         (e.g. reinsurance, annuities, longevity swap, securitization)
 
-    * Reduce **risk concentration**
+    2. Reduce **risk concentration**
     
         (e.g. by growing business)
 
-    * Improved **diversification**
+    3. Improved **diversification**
     
         (e.g. by LoB)
 
-    * Implied **hedging**
+    4. Implied **hedging**
     
         (e.g. mortality and longevity)
     
-Many of the ART (Module 26 are designed to manage these risk)
+Many of the ART (Module 26) are designed to manage these risk
