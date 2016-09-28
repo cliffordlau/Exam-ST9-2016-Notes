@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 19 Objective
 
 Recommend a specific choice of model based on the results of both quantitative and qualitative analysis of financial or insurance data
 
@@ -234,7 +234,7 @@ $Y_t = \beta_1 X_{t,1} + \beta_2 X_{t,2} + \dots + \beta_N X_{t,N} + \epsilon_t$
 
     (i.e. has full column rank, no column is a linear transformation or combination of any others)
 
-3. **Error terms properties***
+3. **Error terms properties**
 
     a. **Not correlated** with each other  
 

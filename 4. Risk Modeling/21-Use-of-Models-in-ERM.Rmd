@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 21 Objective
 
 Understand **model** and **parameter risk**
 
@@ -230,21 +230,21 @@ Overall objective is to achieve a **balanced** (not unduly exaggerated or smooth
 
 ***Reasons to build models*** for ERM decision making:
 
-* **Pricing** of products or service
+1. **Pricing** of products or service
 
-* Assess **economic value** of the company
+2. Assess **economic value** of the company
 
-* Estimate possible **volatility** of future profits and **earnings**
+3. Estimate possible **volatility** of future profits and **earnings**
 
-* Determine **capital adequacy requirements** (`regulatory` and `internal`)
+4. Determine **capital adequacy requirements** (`regulatory` and `internal`)
 
-* Project **future capital or solvency**
+5. Project **future capital or solvency**
 
-* Assess the **effect of risk management** and **mitigation techniques** on both `profits` and `capital requirements`
+6. Assess the **effect of risk management** and **mitigation techniques** on both `profits` and `capital requirements`
 
-* Assess the **effect of other strategic decisions** (e.g. changes in investment or new business strategy)
+7. Assess the **effect of other strategic decisions** (e.g. changes in investment or new business strategy)
 
-* **Evaluate projects**
+8. **Evaluate projects**
 
 ### Modeling Process
 
