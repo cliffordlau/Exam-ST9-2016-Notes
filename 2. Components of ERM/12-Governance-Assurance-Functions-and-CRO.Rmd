@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 12 Objective
 
 Discuss the framework for risk management and control within a company
 
@@ -93,7 +93,7 @@ CRO is *accountable to the Board* for **developing**, **implementing** and **mai
 
 * Providing **leadership** and **direction**
 
-* **Designing** and **implementing** and **ERM framework** across the company
+* **Designing** and **implementing** an **ERM framework** across the company
 
 * Ongoing **risk policy development**
 

@@ -11,9 +11,9 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 6 Objective
 
-Same as Mod 5
+Same as Module 5
 
 Now we focus on advisory corporate governance regimes that encourage good RM processes
 

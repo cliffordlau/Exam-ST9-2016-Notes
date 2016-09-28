@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 2 Objective
 
 Describe the concept of ERM:
 
@@ -20,9 +20,13 @@ Describe the concept of ERM:
 ## Benefits of RM
 
 1. RM can benefit society
+
 2. RM is part of the job of management
+
 3. Reduce earnings volatility
+
 4. Maximize shareholder value
+
 5. Enhance job security and rewards
 
 ### 1. Benefit Society
@@ -111,9 +115,13 @@ $\hookrightarrow$ *Improve* **risk transparency**
 $\hookrightarrow$ **Management more informed** when making decisions due to:
 
 * *Better understanding* of **risk exposure**
+
 * *Better comprehension* of the **links** between `growth`, `corporate risk/return`
+
 * *Better understanding* of the impact of **$\Delta$-ing external factors** (e.g. interest rate)
+
 * *More accureate* accessment of a decisions's **risk/return trade-offs**
+
 * **Align strategy** more closely with `risk appetite`
 
 $\hookrightarrow$ *Improve* **business performance**
@@ -123,8 +131,11 @@ $\hookrightarrow$ *Improve* **business performance**
 **Co-ordinating** risk management activities *across all parts* of the organization
 
 * E.g. corrdinate existing risk and oversight functions such as finance, audit/compliance and other specialist risk units
+
 * CRO can provide top down coordination
+
 * Centralization enable firms to react quickly to emerging risk
+
 * Prioritize various risks arising from various areas of an organization
 
 *Encourage* and *facilitating* the **sharing of risk information**
@@ -134,6 +145,7 @@ $\hookrightarrow$ *Improve* **business performance**
 **Improving efficiency** (w/ management time and business resources)
 
 * Cost savings from dealing with it firm wide
+
 * Or just natural hedge
 
 ### 3. Enhance Business Performance
@@ -141,14 +153,22 @@ $\hookrightarrow$ *Improve* **business performance**
 ERM's **support on key management decisions** leads to:
 
 * More efficient use and allocation of capital
+
 * Minimize losses
+
 * Early warning of risk
+
 * Improve pricing, managing, transferring risks better
+
     * Achieving adequate risk-adjusted return
+
 * Optimizing risk mitigation strategies (e.g. natural hedges between BUs)
+
 * Reacting more quickly to opportunities (or risks)
+
 * Gain value from RM by understanding the true risk/return economics of a business  
-$\hookrightarrow$ Take more of the profitable risks that make sense
+
+    $\hookrightarrow$ Take more of the profitable risks that make sense
 
 ### 4. Integration Adds Value
 
@@ -173,21 +193,29 @@ Risks faced by companies are highly interdependent
 $\hookrightarrow$ Silo based RM is not efficient or effective
 
 * Missing the interdependencies, associated risks maybe not be captured and the big picture maybe be overlooked
+
 * Challenge of aggregating risk exposures across the organization
 
 ***Benefits of ERM*** w.r.t intergration
 
 * Has **integrated** `analyses`, `strategies`, and `reporting`  
-$\hookrightarrow$ Addresses interdependencies and aggregate expsoures
+
+    $\hookrightarrow$ Addresses interdependencies and aggregate expsoures
+
 * Supports the **alignment** of `oversight functions` (risk, audit, compliance)
+
 * **Rationalize** `risk assessment`, `risk mitigation`, and `reporting activities`
+
 * **Consider** how macro factors impact the organization's risk/return profile
 
 **System integration** allows for :
 
 * Enterprise level data management
+
 * Robust business and data analytics
+
 * Straight through transaction processing
+
 * More effective reporting and information sharing
 
 Integration of **strategy and risk** allows:
@@ -201,14 +229,19 @@ Integration of **strategy and risk** allows:
 Company usually pressured to implement ERM due to:
 
 * Previous management failures
+
 * Near miss
+
 * High profile disaster in another organization
+
 * Regulator/auditor criticism or demands
+
 * Other influential stakeholders concerns (s/h, employees, rating agnecies, etc)
 
 Stakeholder's expectation of effective risk management practice due to increased in available tools to assess and manage risk
 
 * e.g. VaR and RAROC to measure risk
+
 * e.g. Credit derivatives and CAT bonds for risk risk transfer
 
 ## Case Study: How ERM Addes Value
@@ -216,13 +249,17 @@ Stakeholder's expectation of effective risk management practice due to increased
 Based on Lam Ch.21 case studies
 
 * Investors will pay a premium for well governed companies
+
 * On the flip side, they would avoid companies with poor governance standards
 
 Companies with strong governance structures:
 
 * Sought after by investors at a premium (12-30%) and weak ones are avoided
+
 * Tend to outperform (ROE) companies with weaker governance
+
 * Lower volatility of returns, improved s/h value, financial stability, commands ~16% equity premium (For insurance companies)
+
 * Perform better during stock market crashes (e.g. 2008, companies with excellent S&P EMR rating did better)
 
 Effect is amplified for larger companies

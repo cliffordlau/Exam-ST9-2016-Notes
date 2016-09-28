@@ -1,7 +1,6 @@
 ---
 title: "Module 1: What is ERM?"
 author: "C. Lau"
-layout: default
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: 
   html_document:
@@ -12,16 +11,22 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 1 Objective
 
 Describe the concept of ERM:
 
 * Define what does ERM mean
+
 * Describe the difference concepts of ERM
+
     * Holistic approach
+
     * Downside and upside risk
+
     * Measurement of risk
+
     * Quantifiable risks
+
     * Responses to risk and risk management
 
 ## ERM Considerations
@@ -45,20 +50,27 @@ Company can engage in traditional RM without engaging in ERM
 ***Typically applied in a silo approach***
 
 * Applied within individual departments or BU
+
 * Each parts of a business work independently
 
 ***Problem with the silo approach***
 
 * Misses the **interactions** between risks from different BUs
+
 * Diversification or concentration of risk from comment risk between different silos
+
 * Risks can fall through the cracks or **mismanaged** due to the `lack of ownership`
 
 ***Risk management is the process of***:
 
 * **Identifying** the risks faced
+
 * **Assessing** the likelihood of these risks materializing and their impact
+
 * How to **deal with** each risk
+
     * `Retain`? If so the risk needs to be `monitored`
+
     * `Remove`, `reduce` or `transfer` the risk
     
 **Key objective**:  
@@ -77,7 +89,9 @@ Maximize risk adjusted return
     A **comprehensive** and **integrated** `framework` for managing `key risks` in order to:
     
     * *Achieve* **business objectives**
+    
     * *Minimize* unexpected earnings **volatility**
+    
     * *Maximize* **firm value**
 
 2. COSO 2004
@@ -85,23 +99,35 @@ Maximize risk adjusted return
     ***ERM*** is a `process`:
       
     * *Effected by* an entity's:
+    
         * **Board of directors**
+    
         * **Managment**
+    
         * **Other personnel**
+    
     * *Applied in*: 
+    
         * **Strategy setting**
+    
         * **Across the enterprise**
+    
     * *Desinged to*: 
+    
         * **Identify** potential `events` that may affect the entity
+    
         * **Manage risk** to be *within* its `appetite`
+    
         * Provide reasonable **assurance** regarding the `achievement of entity objectives`
 
 3. ISO 31000
 
     ***Risk***:  
+    
     *Effect* of **uncertainty** on `objectives`
       
     ***Risk management***:  
+    
     Coordinated activities to **direct** and **control** an organization with regard to `risk`
 
 4. CAS ERM Research Committee: Overview of Enterprise Risk Management 2002
@@ -109,18 +135,24 @@ Maximize risk adjusted return
     ***ERM***:
     
     * Discipline by which an organization in any industry **assesses**, **controls**, **exploits**, **finances**, and **monitors** `risks from all sources` 
+    
     * To **Increase** the organisation’s short- and long-term **value** to its `stakeholders`
 
 ### ERM Framework
 
 Formalized process of details on how to accomplish the following:
 
-* **Recognize** the `context`
-* **Identify** the `risks`
-* **Assess** and **comparing** the `risks` *with* `risk appetite`
-* Deciding on the **extent** to which risks are `managed`
-* Taking the **appropriate action**
-* **Reporting** on and **reviewing** the `action taken`
+1. **Recognize** the `context`
+
+2. **Identify** the `risks`
+
+3. **Assess** and **comparing** the `risks` *with* `risk appetite`
+
+4. Deciding on the **extent** to which risks are `managed`
+
+5. Taking the **appropriate action**
+
+6. **Reporting** on and **reviewing** the `action taken`
 
 ### History of ERM
 
@@ -187,6 +219,7 @@ Take a `strategic` and `holistic` perspective to **ensure long term sustainabili
 * *Realism* about:
 
     1. **expected “pain”** through early stages of implementation and **support required**
+
     2. **complexity**, **cost** and **time frames**
 
 * *Thorough* **risk management** / **mitigation strategies** and **support processes**
@@ -196,7 +229,8 @@ Take a `strategic` and `holistic` perspective to **ensure long term sustainabili
     1. **Objective** and **transparent** `project reporting`
     
     2. **Rapid escalation** (and welcoming) of “bad news”  
-    $\Rightarrow$ problems get addressed earlier and at less cost
+    
+        $\Rightarrow$ problems get addressed earlier and at less cost
 
 ### Key Concepts of ERM
 
@@ -211,18 +245,22 @@ This is one of the main additional elements of ERM to traditional RM
 **Holistic consideration** of risk information relating:
 
 1. `Past events` (e.g. losses)
+
 2. `Current performance` (e.g. risk indicators)
+
 3. `Future outcomes` (e.g. the risk profile or risk assessment)
 
 Considering the `risks of the enterprise` **as a whole** (concern with all risk faced by the enterprise)
 
 * Can appreciate the **concentration** of risk that arise from *variety of sources* within the enterprise
+
 * Account for **diversification** across the enterprise
 
 RM techniques are *applied* **consistently** across the whole enterprise  
 (e.g. *Common* `definitions`, `classifications` and `recording` of risk)
 
 * This is necessary for RM to operate effectively
+
 * Ensure all risks are **covered consistently** in terms of the way they are `identified`, `reported` and `treated`
 
 | ***Structure***
@@ -235,7 +273,9 @@ RM techniques are *applied* **consistently** across the whole enterprise
 ***Ensures***
 
 * All risks faced by an enterprise are considered
+
     * Taken into account **links** *between risks* from different parts of the business
+
 * **Same risk appetite** for the whole enterprise
 
 #### 2. Upside & downside Risk
@@ -267,22 +307,29 @@ Risk that can be measured in some way
 **Measurement of risk** (after the risk is identified)
 
 * E.g. `ranking`, `assessment` of the *absolute* levels of risk
+
 * To determine whether the *level of risk* is **acceptable?**
 
 Good risk measurement practices are essential to ERM
 
 * **Severity**  
-Financial impact of a risk
+
+    Financial impact of a risk
+    
     * e.g. risk of counter-party default, risk of interest rate $\Delta$
+
 * **Frequency**:  
-Likelihood of its occurrence over a given time horizon
+
+    Likelihood of its occurrence over a given time horizon
 
 #### 4. Unquantifiable Risks
 
 Risk that cannot be measured
 
-* E.g. due to **unidentifiable** `loss distribution`;  
-**difficult to assess** `nature` of the risk
+* E.g. due to **unidentifiable** `loss distribution`
+
+    **difficult to assess** `nature` of the risk
+
 * Often these are **operational risks**, e.g. terrorist attack on firm HQ
 
 Important to consider these risks and assess them in a *qualitative* way
@@ -292,6 +339,7 @@ Important to consider these risks and assess them in a *qualitative* way
 ERM is concerned:
 
 1. **Behaviors** (the risk management "culture")
+
 2. **Risk control processes**
 
 #### 5. Risk Responses
@@ -304,6 +352,7 @@ Need to consider responses after identification (and quantified)
 Company is happy to live with the risk
 
 * E.g. small risk; type of risk the company is well place to deal with
+
 * Or just the other options are unfeasible
 
 **Remove**:
@@ -317,4 +366,5 @@ Company is happy to live with the risk
 **Transfer**:
 
 * e.g. Purchase insurance or outsourcing (like IT or security)
+
 * Need to compensate the party assuming the risk

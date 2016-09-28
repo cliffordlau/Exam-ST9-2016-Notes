@@ -11,14 +11,18 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 4 Objective
 
 Framework for RM and control
 
 * Appropriate framework for ERM
+
     * Shows how strong governance and compliance practices can support ERM
+
 * How to adopt best practice in ERM in compliance and corporate governance
+
 * Cultural aspects of risk assessment and management including the problems of bias
+
     * Shows the importance of risk culture
 
 Cover good practice in terms of framework, governance and culture (in detail)
@@ -39,9 +43,11 @@ Need to be able to **evaluate** the quality of these aspects with a hypothetical
     
     *Integrate* risk management into business processes
 
-3. **Portfolio management**:  
+3. **Portfolio management**:
 
     *Aggregate* risk exposures and identify `diversification` effects and `concentrations` of risk
+    
+    * Module 26
 
 4. **Risk transfer**:  
 
@@ -162,7 +168,7 @@ $\therefore$ Responsible for ensuring the full range of risks face by the compan
 
 * Refer explicitly to RM and to the sysmtem of internal controls used to ensure that a company operate in a sound and secure way
 
-***Main aims of the internal controls*** these codes refer to are:
+***Main aims of the internal controls***:
 
 * Ensuring `accurate` and `adequate` **record-keeping**
 
@@ -213,7 +219,7 @@ committee** with a majority of NEDs
 
 * Act in the best long term interest of the company while avoiding (or declare) any conflict of interest
 
-### Corporate Governance outside the UK
+### Corporate Governance outside UK
 
 ***Canada***:  
 Also adopted the method of **voluntary compliance** (UK standard) after the 1994 Dey report
@@ -237,7 +243,7 @@ Follows a more statutory approach
 
 ***Principles for excellence*** in corporate governance
 
-* **Communication** with stakeholders
+1. **Communication** with stakeholders
     
     * Board has a duty to **disclose certain into** to `stakeholders`
     
@@ -245,13 +251,13 @@ Follows a more statutory approach
     
     * Faciliates **more informed decision making**
 
-* **Indenpendence** of the Board
+2. **Indenpendence** of the Board
     
     * Board should **distanced from the day-to-day running** of the company
     
         $\hookrightarrow$ Better oversee and monitor its management
 
-* Board **performance** review
+3. Board **performance** review
     
     * Board should engage in **regular formal self assessments** to rate its performance against any best practice codes is is subject to
     
@@ -259,7 +265,7 @@ Follows a more statutory approach
     
     * **Regular independent reviews** and **training** for new Board apointees
 
-* Board **componesation** arrangements
+4. Board **componesation** arrangements
     
     * Compensation should **reflect the responsibility and risk** of being a director (not over compensate)
     
@@ -268,9 +274,9 @@ Follows a more statutory approach
     * Also important to **align with RM objectives** for the implementation of ERM  
     (e.g. bonus based on risk adjusted returns)
 
-* **Fairness**
+5. **Fairness**
 
-* **Social responsibility**
+6. **Social responsibility**
 
 ### Risk Subcommittee
 
@@ -376,19 +382,19 @@ Culture in which people know and **do the right thing** even if there is **no sp
 
 Board needs to ensure the organziation has a good risk culture that ***encourages***
 
-* Consultative leadership
+1. Consultative leadership
 
-* Participation in decision-making on risks
+2. Participation in decision-making on risks
 
-* Openness
+3. Openness
 
-* Accountability (rather than blame)
+4. Accountability (rather than blame)
 
-* Organizational learning
+5. Organizational learning
 
-* Knowledge sharing
+6. Knowledge sharing
 
-* Good internal communication
+7. Good internal communication
 
 ***Value of good risk culture***
 
@@ -436,7 +442,7 @@ RM process should be **embedded in the mainstream management** processes of the 
 
 * Culture should encourage such reporting without inhibitions, though this maybe difficult to achieve
 
-### Key features of a Supportive Risk Culture
+### Features of a Supportive Risk Culture
 
 1. Focus on **developing positive employee behaviors** w.r.t risk
     

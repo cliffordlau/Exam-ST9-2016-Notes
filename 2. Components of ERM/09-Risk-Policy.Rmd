@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 9 Objective
 
 Describe how to *determine* a company's **risk appetite**, **risk capacity** and **risk objectives**
 
@@ -205,33 +205,33 @@ Sets out how an org. will manage each category of risk to which it is exposed
 
 Includes the following 3 sections
 
-***Objective and definitions***
+1. ***Objective and definitions***
 
-* **Aim** of the ERM activities
+    * **Aim** of the ERM activities
 
-    (e.g. how it **links** to the company's `objectives` and `strategy`, `benefits`, `success criteria`)
+        (e.g. how it **links** to the company's `objectives` and `strategy`, `benefits`, `success criteria`)
     
-* Statement of the organiztion's philosophy as to risk management (e.g. **guiding principles**) and **desired risk culture**
+    * Statement of the organiztion's philosophy as to risk management (e.g. **guiding principles**) and **desired risk culture**
 
-* Risk categories and definitions (**risk taxonomy**)
+    * Risk categories and definitions (**risk taxonomy**)
 
-***Risk management structure***
+2. ***Risk management structure***
 
-* **Role** of `risk managers`
+    * **Role** of `risk managers`
 
-    (e.g. CEO, CRO, exec. mgrs, risk sponsors, risk owners, risk committee members)
+        (e.g. CEO, CRO, exec. mgrs, risk sponsors, risk owners, risk committee members)
 
-* **Structure** of the `corporate governance`
+    * **Structure** of the `corporate governance`
 
     (e.g. committee roles, delineation of accountabilities)
 
-***Risk management processes and benchmarks***
+3. ***Risk management processes and benchmarks***
 
-* **Overview of each stage** of the risk management process
+    * **Overview of each stage** of the risk management process
 
-* **Risk appetite** and **tolerance statements**
+    * **Risk appetite** and **tolerance statements**
 
-* **Risk policy standards**, to ensure risk policies are consistent across the org.
+    * **Risk policy standards**, to ensure risk policies are consistent across the org.
 
 ***
 
@@ -543,7 +543,7 @@ Needs to be done in a **holistic** way to take advantage of synergies and to avo
       
     (e.g. no more than 0.5% that losses attributable to market risk should exceed $100M over the next 12mo)
     
-    * $\star$ Should have a statement for **each category of risk** and a full set of statements for **each combination** of category of `risk` and `BU`
+    * Should have a statement for **each category of risk** and a full set of statements for **each combination** of category of `risk` and `BU`
 
 * **Non-quantifiable**:
 

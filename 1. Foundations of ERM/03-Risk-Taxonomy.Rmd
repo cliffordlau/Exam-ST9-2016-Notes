@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 3 Objective
 
 Definitions and concepts of risks
 
@@ -24,6 +24,7 @@ Understanding of risk categories
 Relationship between:
 
 * systematic risk and non-systematic risk
+
 * Specific risk and concentration risk
 
 How contagion affects different stakeholders
@@ -36,27 +37,40 @@ Definitions and categorizations of risks
 **Risk**:
 
 * **Uncertainty** of possible future random events
+
 * **Nature** and **degree of harm** associated with each such event
 
 **Risk hierarchy** based on `Basel` or `SII`
 
 * **Market risk**:  
-Risks arising from changes in market values
+
+    Risks arising from changes in market values
+
 * **Credit risk**:  
-Risk of failure of a 3rd party to meet its obligations
+
+    Risk of failure of a 3rd party to meet its obligations
+
 * **Op risk**:  
-Risk of loss resulting from deficient internal processes, people, or systems, or external events
+
+    Risk of loss resulting from deficient internal processes, people, or systems, or external events
+
 * **Insurance (Business) risk**:  
-Risk of accepting risks which turn out to be inappropriate or pricing accepted risks inappropriately
+
+    Risk of accepting risks which turn out to be inappropriate or pricing accepted risks inappropriately
 
 Additional major categorize from Lam
 
 * **Strategic risk**:  
-Risk that corporate and business strategies are flawed or ineffectively executed
+
+    Risk that corporate and business strategies are flawed or ineffectively executed
+
 * **Compliance risk**:  
-Risk that the company may violate laws and regulations
+
+    Risk that the company may violate laws and regulations
+
 * **Liquidity risk**:  
-Risk that a company cannot raise cash to meet its requirements in a timely and cost effective manner
+
+    Risk that a company cannot raise cash to meet its requirements in a timely and cost effective manner
 
 ## Categorization of risk
 

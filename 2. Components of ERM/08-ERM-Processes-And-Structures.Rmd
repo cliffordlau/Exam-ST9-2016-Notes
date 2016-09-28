@@ -11,12 +11,14 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 8 Objective
 
 Describe and assess the elements and structure of a successful RM function
 
 * ERM **roles and responsibilities** of the people within an organization
+
 * How the `different groups` should **interact**
+
 * **Recommand a structure** for an organization's RM function
 
 Describe how `financial` and `other risk` and `opportunities` **influence the selection of strategy**

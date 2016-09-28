@@ -11,13 +11,16 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 5 Objective
 
 Understand risk frameworks in regulatory environments
 
 * Role of regulators in ERM and effective management of the supervisor relationship
+
 * Basel Accord and SII frameworks incl. underlying principles and approaches to RM
+
 * Understand SOX and other regulatory risk frameworks and their underlying principles
+
 * Demonstrate an awareness of how different parts of an organization and different parts of a portfolio may be subject to different capital adequacy standards
 
 This discuss external risk frameworks (regulators and credit rating agency etc) that can influence an organization's approach to ERM
@@ -25,6 +28,7 @@ This discuss external risk frameworks (regulators and credit rating agency etc) 
 External parties may prescribe or limit a company's activities or demand certain standards (e.g. capital requirement) to minimize risk to various stakeholders
 
 * External risk frameworks are usually applied as a whole
+
 * They can be mandatory (Basel Accords), advisory (ISO 31000) or voluntary (S&P credit rating criteria)
 
 ## External superivision
@@ -32,9 +36,13 @@ External parties may prescribe or limit a company's activities or demand certain
 ***Prudential supervisory processes***:
 
 * **Oversight** (e.g. financial)
+
 * **Licensing**
+
 * Requirement to **maintain minimum standards** (e.g operational)
+
 * Procedures of **monitoring** compliance with standards and licences
+
 * Processes to **take action** against those who fail to comply
 
 ### Supervising and Controlling Parties

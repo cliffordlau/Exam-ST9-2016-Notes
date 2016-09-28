@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 10 Objective
 
 Discuss the **framework** for `risk management` and `control` within a company
 

@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 7 Objective
 
 Describe role of the credit agencies in the evaluation of RM functions, including the RM grading criteria used and discuss the relevance of these criteria
 
@@ -76,7 +76,7 @@ $\hookrightarrow$ Pressure to assign good ratings
 
     e.g. profit level, cashflow, capital structure and flexibility
     
-### S&P Assessment of EMR Capability
+### S&P Assessment of ERM Capability
 
 The assessment process is **still in its infancy**; Will develop as ERM practices develop
 
@@ -100,87 +100,87 @@ Programs that have been **tested** or **operated in adverse situations** will be
 
 **Five areas** that S&P measure to access ERM capability
 
-***1. Risk Management Culture***
+1. ***Risk Management Culture***
 
-Indicators of positive risk management culture
+    Indicators of positive risk management culture
 
+    i. **Communication** of risk through all levels of the company
 
-* **Communication** of risk through all levels of the company
+    ii. **Documenting** and **analysis** of **past errors**
 
-* **Documenting** and **analysis** of **past errors**
+    iii. **Consistency** of risk management across all pars of the business
 
-* **Consistency** of risk management across all pars of the business
+    iv. **Incentivizing** of good RM practices within the firm
 
-* **Incentivizing** of good RM practices within the firm
+    Other areas of evaluation
 
-Other areas of evaluation
+    v. **Governance** structure
 
-* **Governance** structure
+    vi. **Risk tolerance** statements
 
-* **Risk tolerance** statements
+    vii. *Capabilities* of **individual risk managers**
 
-* *Capabilities* of **individual risk managers**
+2. ***Risk Control***
 
-***2. Risk Control***
+    Rating considerations:
 
-Rating considerations:
+    * How well the **risk identification procedures** are carried out
 
-* How well the **risk identification procedures** are carried out
+    * How well risks are **monitored** on an ongoing basis
 
-* How well risks are **monitored** on an ongoing basis
-
-* How the **risk retention limits** will be **adhered** to and the 
+    * How the **risk retention limits** will be **adhered** to and the 
 **consequences** for *non compliance*
 
-* **Execution** of the RM process
+    * **Execution** of the RM process
 
-***3. Extreme Event Management***
+3. ***Extreme Event Management***
 
-Low frequency high severity events
+    Low frequency high severity events
 
-Company must prove that it **considers various possible events**  
-(e.g. Terrorism, natural disaster, reputational incidents etc)
+    Company must prove that it **considers various possible events**  
 
-* Adopts an appropriate course to *measure* the **potential impact** and **prepare** for the events
+    (e.g. Terrorism, natural disaster, reputational incidents etc)
 
-    Should have **early warning** indicator reporting and **CAT insurance** as mitigators
+    * Adopts an appropriate course to *measure* the **potential impact** and **prepare** for the events
 
-***4. Risk Models and Capital Models***
+        Should have **early warning** indicator reporting and **CAT insurance** as mitigators
 
-Models that determine how much (risk) capital a company should have to withstand a certain level of shock
+4. ***Risk Models and Capital Models***
 
-Rating considerations:
+    Models that determine how much (risk) capital a company should have to withstand a certain level of shock
 
-* The **models used**, **inputs and assumptions** and the modeling **formulae**
+    Rating considerations:
 
-* Good model should be **consistent** across all business areas and regions
+    * The **models used**, **inputs and assumptions** and the modeling **formulae**
 
-* **Modification** of standard formula to better suit the particular LoB the company operates in
+    * Good model should be **consistent** across all business areas and regions
 
-***5. Strategic Risk Management***
+    * **Modification** of standard formula to better suit the particular LoB the company operates in
 
-Assess the *focus* that the organization puts on the risks to its **key corporate goals**
+5. ***Strategic Risk Management***
 
-6 positive features in strategic risk management
+    Assess the *focus* that the organization puts on the risks to its **key corporate goals**
 
-1. *Clear decision making* w.r.t. the **retained risks**
+    6 positive features in strategic risk management
 
-    Whether the company should refocus to `avoid` or `diversify` the risks
+    i. *Clear decision making* w.r.t. the **retained risks**
 
-2. *Clear strategy* for **assets investment**
+        Whether the company should refocus to `avoid` or `diversify` the risks
 
-    Focusing on the allocation across `broad categories` (e.g. equities vs bonds) and across `countries`
+    ii. *Clear strategy* for **assets investment**
 
-3. **Pricing strategy** that *reflects* **risk/return trade off**
+        Focusing on the allocation across `broad categories` (e.g. equities vs bonds) and across `countries`
 
-    Clear standards set of acceptable risk/return profiles
+    iii. **Pricing strategy** that *reflects* **risk/return trade off**
 
-4. *Appropriate* **capital allocation** between the different BUs based on the capital model
+        Clear standards set of acceptable risk/return profiles
 
-5. *Appropriate* **dividend policy**
+    iv. *Appropriate* **capital allocation** between the different BUs based on the capital model
+
+    v. *Appropriate* **dividend policy**
     
-    * Influenced by the level of risk-adjusted return on retained capital
+        * Influenced by the level of risk-adjusted return on retained capital
     
-    * Should be able to discuss how the dividend decision was made
+        * Should be able to discuss how the dividend decision was made
 
-6. Good risk-adjusted returns should be **rewarded** within the company
+    vi. Good risk-adjusted returns should be **rewarded** within the company
