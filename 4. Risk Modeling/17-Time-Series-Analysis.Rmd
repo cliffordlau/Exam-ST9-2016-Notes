@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 17 Objective
 
 Analyze univariate and multivariate financial and insurance data (incl. asset prices, credit spreads and defaults, interest rates and insurance losses) using appropriate statistical methods
 
@@ -324,7 +324,7 @@ $\begin{align}
   &= \hat{\alpha}_0 \sum \limits_{i=0}^{h-1} \hat{\alpha}^i_1 + \hat{\alpha}_1^h X_t + \hat{\alpha}_1^{h-1} \hat{\beta}_1 \hat{\epsilon}_t \\
 \end{align}$
 
-### Modeling Specific Features of the Data
+### Modeling Features of the Data
 
 #### Seasonality
 

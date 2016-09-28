@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 16 Objective
 
 Analyze univariate and multivariate financial and insurance data (incl. asset price, credit spreads and defaults, interest rates and insurance losses) using appropriate statistical methods
 
@@ -291,7 +291,7 @@ Poisson can be used as an **approximation to the binomial** if $p$ is small enou
     
     d. D'Agostino
     
-### Normal Mean-Variance Mixture{normal-mix}
+### Normal Mean-Variance Mixture{#normal-mix}
 
 $X = m(W) + \sqrt{W}\beta Z$
 

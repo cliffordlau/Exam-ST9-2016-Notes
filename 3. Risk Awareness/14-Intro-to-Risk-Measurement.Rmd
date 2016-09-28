@@ -11,13 +11,16 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 14 Objective
 
 Properties and limitations of common risk measures
 
 * VaR
+
 * TVaR
+
 * Probability of ruin
+
 * Expected shortfall
 
 Describe how to choose a suitable time horizon and risk discount rate
@@ -115,7 +118,7 @@ $F(\lambda L_1 + (1 - \lambda) L_2) \leq \lambda F(L_1) + (1- \lambda) F(L_2)$ w
 2. Factor sensitivity approach
 3. Scenario sensitivity approach
 
-### Notional Approach
+### 1. Notional Approach
 
 Broad-brush risk measures
 
@@ -145,7 +148,7 @@ Broad-brush risk measures
 
 * **Probability of the changes** considered (in the values of assets and liabilities) is **not quantified**
 
-### Factor Sensitivity Approach
+### 2. Factor Sensitivity Approach
 
 Determines the degree to which an org's *financial position* (e.g. solvency) is affected by the impact that **change in a single underlying risk factor** (e.g. short term interest rates) has on the *value of assets and liabilities*
 
@@ -161,7 +164,7 @@ Determines the degree to which an org's *financial position* (e.g. solvency) is 
 
 * **Probability of the changes** considered (in the values of assets and/or liabilities) is **not quantified**
 
-### Scenario Sensitivity Approach
+### 3. Scenario Sensitivity Approach
 
 Similar to factor sensitivity
 
@@ -186,7 +189,7 @@ Similar to factor sensitivity
 4. Tail Value at Risk (Conditional Value at Risk)
 5. Expected shortfall
 
-### Deviation
+### 1. Deviation
 
 1. Standard deviation
 
@@ -287,7 +290,7 @@ A risk-adjusted return measure
 * **Aggregations** of deviations **can be misleading**  
 (e.g. if the component distributions are not normally distributed)
 
-### Value at Risk (VaR)
+### 2. Value at Risk (VaR)
 
 $\mathrm{VaR}_{\alpha} = \inf \left \{ l \in \mathbb{R} : \Pr(L>l) \leq 1 - \alpha \right\}$
 
@@ -468,7 +471,7 @@ Can accommodate:
 
 * Different choices of confidence level
 
-### Probability of Ruin
+### 3. Probability of Ruin
 
 Probability that the **net financial position falls below zero** over a defined time horizon
 
@@ -476,7 +479,7 @@ Probability that the **net financial position falls below zero** over a defined 
 
 * e.g. if net financial position is < $VaR_{95\%}$ then the probability of ruin is > 5% over the same time horizon as the one we used in $VaR$
 
-### Tail Value at Risk (TVaR)
+### 4. Tail Value at Risk (TVaR)
 
 Aka **conditional Value at Risk** or **expected shortfall**
 
@@ -530,7 +533,7 @@ e.g. For Gaussian loss distribution $TVaR_{\alpha} = \mu + \sigma \dfrac{\phi\bi
 
 Similar to the empirical approach but the data is based on simulation or bootstrap
 
-### Expected Shortfall (ES)
+### 5. Expected Shortfall (ES)
 
 Can use empirical, parametric, stochastic approach similar to VaR
 

@@ -11,7 +11,7 @@ output:
     toc_depth: 4
 ---
 
-## Module Objective
+## Module 18 Objective
 
 Demonstrate understanding of the use of copulas as part of the process of modeling multivariate risks, including recommendation of an appropriate copula
 
