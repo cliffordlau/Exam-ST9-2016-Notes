@@ -195,27 +195,27 @@ Can generate subjective assessment of default and credit spread risk
 
 ***Assessments*** are based on relevant ***factors***:
 
-* **Nature** of the `contractural obligation`
+1. **Nature** of the `contractural obligation`
 
     (e.g. loan's seniority)
 
-* Level and nature of any **security**
+2. Level and nature of any **security**
 
     (e.g.  parental guarantees, collateral)
 
-* **Nature** of the `borrower`
+3. **Nature** of the `borrower`
 
     (e.g. company's industry sector or individual's employment status)
 
-* **Economic indicators**
+4. **Economic indicators**
 
     (e.g. inflation rates)
 
-* **Financial ratios**
+5. **Financial ratios**
 
     (e.g. company's gearing)
 
-* **Face to face meetings** with the credit issuer and/or counterparty
+6. **Face to face meetings** with the credit issuer and/or counterparty
 
 Assessment should consider how the **risk may change over time** (e.g. over the life of the contract or over an economic cycle)
 
@@ -225,7 +225,7 @@ Assessment will ultimately consider **risk of default** and **perceived creditwo
 
 ***Advantages***
 
-A **wide range** of (subjective) factors can be incorporated into the assessment
+* A **wide range** of (subjective) factors can be incorporated into the assessment
 
 ***Disadvantages***
 
